@@ -2567,19 +2567,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "User_License_Page.License_Back.AccessibleLabel"
+                  "fullyQualifiedName": "User_Page.UserPage_Back.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "User_License_Page.License_Back.AccessibleLabel",
+                  "fullyQualifiedName": "User_Page.UserPage_Back.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_Back"
+                "module": "User_Page",
+                "type": "User_Page.UserPage_Back"
               }
             }
           ],
@@ -2597,19 +2597,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "User_License_Page.License_Back.TabIndex"
+                  "fullyQualifiedName": "User_Page.UserPage_Back.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "User_License_Page.License_Back.TabIndex",
+                  "fullyQualifiedName": "User_Page.UserPage_Back.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_Back"
+                "module": "User_Page",
+                "type": "User_Page.UserPage_Back"
               }
             }
           ],
@@ -2621,516 +2621,6 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_Home.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_Home.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_Home"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_Home.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_Home.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_Home"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'AZ-104_DataCard'.DatePicker1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'AZ-104_DataCard'.DatePicker1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_Input.'AZ-104_DataCard'.DatePicker1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'AZ-104_DataCard'.Toggle1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'AZ-104_DataCard'.Toggle1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_Input.'AZ-104_DataCard'.Toggle1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'AZ-305_DataCard'.'AZ-305_DataCardValue'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'AZ-305_DataCard'.'AZ-305_DataCardValue'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_Input.'AZ-305_DataCard'.'AZ-305_DataCardValue'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'MS-100_DataCard'.'MS-100_DataCardValue'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'MS-100_DataCard'.'MS-100_DataCardValue'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_Input.'MS-100_DataCard'.'MS-100_DataCardValue'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'MS-101_DataCard'.'MS-101_DataCardValue'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'MS-101_DataCard'.'MS-101_DataCardValue'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_Input.'MS-101_DataCard'.'MS-101_DataCardValue'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'MS-700_DataCard'.'MS-700_DataCardValue'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'MS-700_DataCard'.'MS-700_DataCardValue'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_Input.'MS-700_DataCard'.'MS-700_DataCardValue'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'MS-900_DataCard'.'MS-900_DataCardValue'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'MS-900_DataCard'.'MS-900_DataCardValue'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_Input.'MS-900_DataCard'.'MS-900_DataCardValue'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'PL-200_DataCard'.'PL-200_DataCardValue'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'PL-200_DataCard'.'PL-200_DataCardValue'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_Input.'PL-200_DataCard'.'PL-200_DataCardValue'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'PL-300_DataCard'.'PL-300_DataCardValue'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'PL-300_DataCard'.'PL-300_DataCardValue'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_Input.'PL-300_DataCard'.'PL-300_DataCardValue'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'PL-400_DataCard'.'PL-400_DataCardValue'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'PL-400_DataCard'.'PL-400_DataCardValue'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_Input.'PL-400_DataCard'.'PL-400_DataCardValue'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'PL-600_DataCard'.'PL-600_DataCardValue'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'PL-600_DataCard'.'PL-600_DataCardValue'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_Input.'PL-600_DataCard'.'PL-600_DataCardValue'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'PL-900_DataCard'.'PL-900_DataCardValue'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'PL-900_DataCard'.'PL-900_DataCardValue'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_Input.'PL-900_DataCard'.'PL-900_DataCardValue'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'License_E-mail_DataCard'.'License_E-mail_DataCardValue'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'License_E-mail_DataCard'.'License_E-mail_DataCardValue'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_Input.'License_E-mail_DataCard'.'License_E-mail_DataCardValue'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_Input.License_Name_DataCard.License_Name_DataCardValue.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_Input.License_Name_DataCard.License_Name_DataCardValue.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_Input.License_Name_DataCard.License_Name_DataCardValue"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_Input.License_Date_DataCard.License_Date_DataCardValue.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_Input.License_Date_DataCard.License_Date_DataCardValue.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_Input.License_Date_DataCard.License_Date_DataCardValue"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
         },
         {
           "locations": [
@@ -3287,36 +2777,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "User_Address_Page.Address_Input.Zipcode_DataCard.Zipcode_DataCardValue.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_Address_Page.Address_Input.Zipcode_DataCard.Zipcode_DataCardValue.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_Address_Page",
-                "type": "User_Address_Page.Address_Input.Zipcode_DataCard.Zipcode_DataCardValue"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "User_Address_Page.Address_Input.'Address_E-mail_DataCard'.'Address_E-mail_DataCardValue'.AccessibleLabel"
                 }
               ],
@@ -3360,6 +2820,36 @@
                 "member": "AccessibleLabel",
                 "module": "User_Address_Page",
                 "type": "User_Address_Page.Address_Input.Address_Name_DataCard.Address_Name_DataCardValue"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_Address_Page.Address_Input.Zipcode_DataCard.Zipcode_DataCardValue.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_Address_Page.Address_Input.Zipcode_DataCard.Zipcode_DataCardValue.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User_Address_Page",
+                "type": "User_Address_Page.Address_Input.Zipcode_DataCard.Zipcode_DataCardValue"
               }
             }
           ],
@@ -3947,19 +3437,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "User_Page.UserPage_Back.AccessibleLabel"
+                  "fullyQualifiedName": "User_License_Page.License_Back.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "User_Page.UserPage_Back.AccessibleLabel",
+                  "fullyQualifiedName": "User_License_Page.License_Back.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "User_Page",
-                "type": "User_Page.UserPage_Back"
+                "module": "User_License_Page",
+                "type": "User_License_Page.License_Back"
               }
             }
           ],
@@ -3977,19 +3467,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "User_Page.UserPage_Back.TabIndex"
+                  "fullyQualifiedName": "User_License_Page.License_Back.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "User_Page.UserPage_Back.TabIndex",
+                  "fullyQualifiedName": "User_License_Page.License_Back.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "User_Page",
-                "type": "User_Page.UserPage_Back"
+                "module": "User_License_Page",
+                "type": "User_License_Page.License_Back"
               }
             }
           ],
@@ -4001,6 +3491,516 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_License_Page.License_Home.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_License_Page.License_Home.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User_License_Page",
+                "type": "User_License_Page.License_Home"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_License_Page.License_Home.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_License_Page.License_Home.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "User_License_Page",
+                "type": "User_License_Page.License_Home"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_License_Page.License_Input.'AZ-104_DataCard'.DatePicker1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_License_Page.License_Input.'AZ-104_DataCard'.DatePicker1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User_License_Page",
+                "type": "User_License_Page.License_Input.'AZ-104_DataCard'.DatePicker1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_License_Page.License_Input.'AZ-305_DataCard'.'AZ-305_DataCardValue'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_License_Page.License_Input.'AZ-305_DataCard'.'AZ-305_DataCardValue'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User_License_Page",
+                "type": "User_License_Page.License_Input.'AZ-305_DataCard'.'AZ-305_DataCardValue'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_License_Page.License_Input.'MS-100_DataCard'.'MS-100_DataCardValue'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_License_Page.License_Input.'MS-100_DataCard'.'MS-100_DataCardValue'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User_License_Page",
+                "type": "User_License_Page.License_Input.'MS-100_DataCard'.'MS-100_DataCardValue'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_License_Page.License_Input.'MS-101_DataCard'.'MS-101_DataCardValue'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_License_Page.License_Input.'MS-101_DataCard'.'MS-101_DataCardValue'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User_License_Page",
+                "type": "User_License_Page.License_Input.'MS-101_DataCard'.'MS-101_DataCardValue'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_License_Page.License_Input.'MS-700_DataCard'.'MS-700_DataCardValue'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_License_Page.License_Input.'MS-700_DataCard'.'MS-700_DataCardValue'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User_License_Page",
+                "type": "User_License_Page.License_Input.'MS-700_DataCard'.'MS-700_DataCardValue'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_License_Page.License_Input.'MS-900_DataCard'.'MS-900_DataCardValue'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_License_Page.License_Input.'MS-900_DataCard'.'MS-900_DataCardValue'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User_License_Page",
+                "type": "User_License_Page.License_Input.'MS-900_DataCard'.'MS-900_DataCardValue'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_License_Page.License_Input.'PL-200_DataCard'.'PL-200_DataCardValue'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_License_Page.License_Input.'PL-200_DataCard'.'PL-200_DataCardValue'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User_License_Page",
+                "type": "User_License_Page.License_Input.'PL-200_DataCard'.'PL-200_DataCardValue'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_License_Page.License_Input.'PL-300_DataCard'.'PL-300_DataCardValue'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_License_Page.License_Input.'PL-300_DataCard'.'PL-300_DataCardValue'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User_License_Page",
+                "type": "User_License_Page.License_Input.'PL-300_DataCard'.'PL-300_DataCardValue'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_License_Page.License_Input.'PL-400_DataCard'.'PL-400_DataCardValue'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_License_Page.License_Input.'PL-400_DataCard'.'PL-400_DataCardValue'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User_License_Page",
+                "type": "User_License_Page.License_Input.'PL-400_DataCard'.'PL-400_DataCardValue'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_License_Page.License_Input.'PL-600_DataCard'.'PL-600_DataCardValue'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_License_Page.License_Input.'PL-600_DataCard'.'PL-600_DataCardValue'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User_License_Page",
+                "type": "User_License_Page.License_Input.'PL-600_DataCard'.'PL-600_DataCardValue'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_License_Page.License_Input.'PL-900_DataCard'.'PL-900_DataCardValue'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_License_Page.License_Input.'PL-900_DataCard'.'PL-900_DataCardValue'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User_License_Page",
+                "type": "User_License_Page.License_Input.'PL-900_DataCard'.'PL-900_DataCardValue'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_License_Page.License_Input.'License_E-mail_DataCard'.'License_E-mail_DataCardValue'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_License_Page.License_Input.'License_E-mail_DataCard'.'License_E-mail_DataCardValue'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User_License_Page",
+                "type": "User_License_Page.License_Input.'License_E-mail_DataCard'.'License_E-mail_DataCardValue'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_License_Page.License_Input.License_Name_DataCard.License_Name_DataCardValue.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_License_Page.License_Input.License_Name_DataCard.License_Name_DataCardValue.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User_License_Page",
+                "type": "User_License_Page.License_Input.License_Name_DataCard.License_Name_DataCardValue"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_License_Page.License_Input.License_Date_DataCard.License_Date_DataCardValue.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_License_Page.License_Input.License_Date_DataCard.License_Date_DataCardValue.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User_License_Page",
+                "type": "User_License_Page.License_Input.License_Date_DataCard.License_Date_DataCardValue"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_License_Page.License_Input.'AZ-104_DataCard'.Toggle1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_License_Page.License_Input.'AZ-104_DataCard'.Toggle1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User_License_Page",
+                "type": "User_License_Page.License_Input.'AZ-104_DataCard'.Toggle1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
         }
       ],
       "tool": {
