@@ -1,0 +1,111 @@
+[
+  {
+    "DisplayName": "ability_skill (뷰)",
+    "Name": "_cr778_ability_skill_views",
+    "RelatedEntityName": "ability_skill",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "1b77d001-f776-4208-a05e-a4f5a5557576": "ability_skill Associated View",
+      "33f5d2fa-d376-4272-8b2b-1693e8da2218": "Active ability_skill",
+      "ae2d8e3a-0d92-4d2c-ae51-62ee477471d2": "ability_skill Advanced Find View",
+      "b0d0adba-9a9a-4f22-af79-b3dcedc2ddfa": "Inactive ability_skill",
+      "d23a072d-d5f4-49e4-aef0-e23989e17f84": "ability_skill Lookup View"
+    }
+  },
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr778_ability_skills",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr778_ability_skill",
+    "MaxGetRowsCount": 500,
+    "Name": "ability_skill",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr778_ability_skill_AsyncOperations": "System Jobs",
+      "cr778_ability_skill_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr778_ability_skill_DuplicateBaseRecord": "Duplicate Records (cr778_ability_skill_DuplicateBaseRecord)",
+      "cr778_ability_skill_DuplicateMatchingRecord": "Duplicate Records (cr778_ability_skill_DuplicateMatchingRecord)",
+      "cr778_ability_skill_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr778_ability_skill_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr778_ability_skill_ProcessSession": "Process Sessions",
+      "cr778_ability_skill_SyncErrors": "Sync Errors",
+      "cr778_ability_skillid": "ability_skill",
+      "cr778_aibuilder": "AI Builder",
+      "cr778_apimanagement": "Api management",
+      "cr778_dateverse": "DataVerse",
+      "cr778_email": "E-mail",
+      "cr778_name": "Name",
+      "cr778_powerappscanvas": "Power Apps Canvas",
+      "cr778_powerappsmodel": "Power Apps Model",
+      "cr778_powerautomate": "Power Automate",
+      "cr778_powerautomatedesktop": "Power Automate Desktop",
+      "cr778_powerbi": "Power BI",
+      "cr778_powerpage": "Power Page",
+      "cr778_powerpagejavacss": "Power Page JAVA/CSS",
+      "cr778_powervirtualagents": "Power Virtual Agents",
+      "cr778_processadvisor": "Process Advisor",
+      "cr778_solution": "365 Solution",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "ability_skill",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Status (ability_skill)",
+    "Name": "cr778_ability_skill_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "ability_skill"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "ability_skill",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (ability_skill)",
+    "Name": "cr778_ability_skill_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "ability_skill"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "ability_skill",
+    "Type": "OptionSetInfo"
+  }
+]

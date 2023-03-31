@@ -1,0 +1,89 @@
+User_Page As screen:
+    BackgroundImage: =MainPagePicture
+
+    UserPage_Address_Button As button:
+        BorderColor: =RGBA(102, 182, 227, 0.7)
+        BorderThickness: =9
+        DisabledFill: =RGBA(241, 244, 249, 1)
+        Fill: =RGBA(102, 182, 227, 0.2)
+        Height: =86
+        HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -20%)
+        OnSelect: =Navigate(User_Address_Page)
+        PressedFill: =RGBA(102, 182, 227, 0.2)
+        Size: =35
+        Text: ="주소지 입력"
+        Width: =676
+        X: =345
+        Y: =236
+        ZIndex: =1
+
+    UserPage_Profile_Button As button:
+        BorderColor: =RGBA(102, 182, 227, 0.7)
+        BorderThickness: =9
+        DisabledFill: =RGBA(241, 244, 249, 1)
+        Fill: =RGBA(102, 182, 227, 0.2)
+        Height: =86
+        HoverFill: |
+            =ColorFade(RGBA(102, 182, 227, 0.7), -20%)
+        OnSelect: =Navigate(User_Profile_Page)
+        PressedFill: =RGBA(102, 182, 227, 0.2)
+        Size: =35
+        Text: ="프로필 입력"
+        Width: =676
+        X: =345
+        Y: =568
+        ZIndex: =2
+
+    UserPage_Skill_Button As button:
+        BorderColor: =RGBA(102, 182, 227, 0.7)
+        BorderThickness: =9
+        DisabledFill: =RGBA(241, 244, 249, 1)
+        Fill: =RGBA(102, 182, 227, 0.2)
+        Height: =86
+        HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -20%)
+        OnSelect: =Navigate(User_Skill_Page)
+        PressedFill: =RGBA(102, 182, 227, 0.2)
+        Size: =35
+        Text: ="자격증 입력"
+        Width: =320
+        X: =345
+        Y: =402
+        ZIndex: =3
+
+    UserPage_Title As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(102, 182, 227, 0.7)
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =186
+        Size: =40
+        Text: ="User Page"
+        Width: =1366
+        ZIndex: =4
+
+    UserPage_License_Button As button:
+        BorderColor: =RGBA(102, 182, 227, 0.7)
+        BorderThickness: =9
+        DisabledFill: =RGBA(241, 244, 249, 1)
+        Fill: =RGBA(102, 182, 227, 0.2)
+        Height: =86
+        HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -20%)
+        OnSelect: =Navigate(User_License_Page)
+        PressedFill: =RGBA(102, 182, 227, 0.2)
+        Size: =35
+        Text: ="기술 입력"
+        Width: =320
+        X: =701
+        Y: =402
+        ZIndex: =5
+
+    UserPage_Back As icon.BackArrow:
+        Color: =RGBA(102, 182, 227, 0.7)
+        Height: =110
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate(Main_Page)
+        Width: =110
+        X: =110
+        Y: =40
+        ZIndex: =6
+

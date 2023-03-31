@@ -1,0 +1,109 @@
+[
+  {
+    "DisplayName": "ability_license (뷰)",
+    "Name": "_cr778_ability_license_views",
+    "RelatedEntityName": "ability_license",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "14322e58-6c0c-48ce-9185-fb49886e1698": "ability_license Associated View",
+      "36dedff1-46b8-4f65-b3b7-7b586a4b3bb2": "ability_license Advanced Find View",
+      "b4daaeca-1bb8-4e0a-a80a-24b91ee143bd": "ability_license Lookup View",
+      "c9c35edc-14c6-4025-977b-4e47e1e685f9": "Inactive ability_license",
+      "f7151e1c-1128-4143-b715-5b3b714a7b06": "Active ability_license"
+    }
+  },
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr778_ability_licenses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr778_ability_license",
+    "Name": "ability_license",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr778_ability_license_AsyncOperations": "System Jobs",
+      "cr778_ability_license_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr778_ability_license_DuplicateBaseRecord": "Duplicate Records (cr778_ability_license_DuplicateBaseRecord)",
+      "cr778_ability_license_DuplicateMatchingRecord": "Duplicate Records (cr778_ability_license_DuplicateMatchingRecord)",
+      "cr778_ability_license_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr778_ability_license_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr778_ability_license_ProcessSession": "Process Sessions",
+      "cr778_ability_license_SyncErrors": "Sync Errors",
+      "cr778_ability_licenseid": "ability_license",
+      "cr778_az104": "AZ-104",
+      "cr778_az305": "AZ-305",
+      "cr778_date": "Date",
+      "cr778_email": "E-mail",
+      "cr778_ms100": "MS-100",
+      "cr778_ms101": "MS-101",
+      "cr778_ms700": "MS-700",
+      "cr778_ms900": "MS-900",
+      "cr778_name": "Name",
+      "cr778_pl200": "PL-200",
+      "cr778_pl300": "PL-300",
+      "cr778_pl400": "PL-400",
+      "cr778_pl600": "PL-600",
+      "cr778_pl900": "PL-900",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "ability_license",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Status (ability_license)",
+    "Name": "cr778_ability_license_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "ability_license"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "ability_license",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (ability_license)",
+    "Name": "cr778_ability_license_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "ability_license"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "ability_license",
+    "Type": "OptionSetInfo"
+  }
+]
