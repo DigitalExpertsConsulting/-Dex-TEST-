@@ -16,7 +16,7 @@ User_Address_Page As screen:
         DataSource: =ability_adress
         DefaultMode: =FormMode.New
         Height: =400
-        Width: =1142
+        Width: =1000
         X: =110
         Y: =200
         ZIndex: =2
@@ -32,7 +32,7 @@ User_Address_Page As screen:
             MaxLength: =DataSourceInfo([@ability_adress], DataSourceInfo.MaxLength, "cr778_address")
             Required: =false
             Update: =Address_DataCardValue.Text
-            Width: =1140
+            Width: =1029
             X: =0
             Y: =0
             ZIndex: =1
@@ -69,7 +69,7 @@ User_Address_Page As screen:
                 RadiusTopRight: =0
                 Size: =30
                 Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =950
                 X: =30
                 Y: =Address_DataCardKey.Y + Address_DataCardKey.Height + 5
                 ZIndex: =2
@@ -110,7 +110,7 @@ User_Address_Page As screen:
             MaxLength: =DataSourceInfo([@ability_adress], DataSourceInfo.MaxLength, "cr778_zipcode")
             Required: =false
             Update: =Zipcode_DataCardValue.Text
-            Width: =1140
+            Width: =1029
             X: =0
             Y: =1
             ZIndex: =1
@@ -147,7 +147,7 @@ User_Address_Page As screen:
                 RadiusTopRight: =0
                 Size: =30
                 Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =950
                 X: =30
                 Y: =Zipcode_DataCardKey.Y + Zipcode_DataCardKey.Height + 5
                 ZIndex: =2
@@ -189,9 +189,9 @@ User_Address_Page As screen:
             Required: =false
             Update: ='Address_E-mail_DataCardValue'.Text
             Visible: =false
-            Width: =380
-            X: =1
-            Y: =1
+            Width: =343
+            X: =0
+            Y: =2
             ZIndex: =1
 
             "'Address_E-mail_DataCardKey' As label":
@@ -259,9 +259,9 @@ User_Address_Page As screen:
             Update: =Address_Name_DataCardValue.Text
             Visible: |
                 =false
-            Width: =380
-            X: =2
-            Y: =1
+            Width: =343
+            X: =1
+            Y: =2
             ZIndex: =1
 
             Address_Name_DataCardKey As label:
@@ -321,8 +321,8 @@ User_Address_Page As screen:
         Height: =110
         Icon: =Icon.Send
         Width: =110
-        X: =1180
-        Y: =600
+        X: =1140
+        Y: =350
         ZIndex: =3
 
     Address_Back As icon.BackArrow:
