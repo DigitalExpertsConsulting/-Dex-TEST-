@@ -14,2559 +14,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'AZ-104_DataCard'.Update"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'AZ-104_DataCard'.Update",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 22,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "'AZ-104_DataCardValue'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Update",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_Input.'AZ-104_DataCard'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "AZ-104_DataCardValue"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'AZ-104_DataCard'.Update"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'AZ-104_DataCard'.Update",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 22,
-                  "snippet": {
-                    "text": ".Text"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Update",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_Input.'AZ-104_DataCard'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'AZ-104_DataCard'.'AZ-104_ErrorMessage'.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'AZ-104_DataCard'.'AZ-104_ErrorMessage'.Y",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 22,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "'AZ-104_DataCardValue'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_Input.'AZ-104_DataCard'.'AZ-104_ErrorMessage'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "AZ-104_DataCardValue"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'AZ-104_DataCard'.'AZ-104_ErrorMessage'.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'AZ-104_DataCard'.'AZ-104_ErrorMessage'.Y",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 2,
-                  "charOffset": 22,
-                  "snippet": {
-                    "text": ".Y"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_Input.'AZ-104_DataCard'.'AZ-104_ErrorMessage'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'AZ-104_DataCard'.'AZ-104_ErrorMessage'.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'AZ-104_DataCard'.'AZ-104_ErrorMessage'.Y",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 22,
-                  "charOffset": 27,
-                  "snippet": {
-                    "text": "'AZ-104_DataCardValue'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_Input.'AZ-104_DataCard'.'AZ-104_ErrorMessage'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "AZ-104_DataCardValue"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'AZ-104_DataCard'.'AZ-104_ErrorMessage'.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'AZ-104_DataCard'.'AZ-104_ErrorMessage'.Y",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 49,
-                  "snippet": {
-                    "text": ".Height"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_Input.'AZ-104_DataCard'.'AZ-104_ErrorMessage'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 25,
-                  "charOffset": 203,
-                  "snippet": {
-                    "text": "'Skill_E-mail_DataCard_1'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_send"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Skill_E-mail_DataCard_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 228,
-                  "snippet": {
-                    "text": ".Update"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_send"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 201,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_send"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Text",
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 20,
-                  "charOffset": 268,
-                  "snippet": {
-                    "text": "PowerPage_DropDown_1"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_send"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "PowerPage_DropDown_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 13,
-                  "charOffset": 288,
-                  "snippet": {
-                    "text": ".SelectedText"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_send"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 301,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_send"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 28,
-                  "charOffset": 346,
-                  "snippet": {
-                    "text": "'Process Advisor_DataCard_1'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_send"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Process Advisor_DataCard_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 374,
-                  "snippet": {
-                    "text": ".Update"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_send"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 33,
-                  "charOffset": 416,
-                  "snippet": {
-                    "text": "'Power Virtual Agents_DataCard_1'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_send"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Power Virtual Agents_DataCard_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 449,
-                  "snippet": {
-                    "text": ".Update"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_send"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 32,
-                  "charOffset": 490,
-                  "snippet": {
-                    "text": "'Power Page JAVA/CSS_DataCard_1'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_send"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Power Page JAVA/CSS_DataCard_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 522,
-                  "snippet": {
-                    "text": ".Update"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_send"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 21,
-                  "charOffset": 558,
-                  "snippet": {
-                    "text": "'Power BI_DataCard_1'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_send"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Power BI_DataCard_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 579,
-                  "snippet": {
-                    "text": ".Update"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_send"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 35,
-                  "charOffset": 622,
-                  "snippet": {
-                    "text": "'Power Automate Desktop_DataCard_1'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_send"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Power Automate Desktop_DataCard_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 657,
-                  "snippet": {
-                    "text": ".Update"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_send"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 27,
-                  "charOffset": 692,
-                  "snippet": {
-                    "text": "'Power Automate_DataCard_1'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_send"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Power Automate_DataCard_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 719,
-                  "snippet": {
-                    "text": ".Update"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_send"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 29,
-                  "charOffset": 756,
-                  "snippet": {
-                    "text": "'Power Apps Model_DataCard_1'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_send"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Power Apps Model_DataCard_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 785,
-                  "snippet": {
-                    "text": ".Update"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_send"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 30,
-                  "charOffset": 823,
-                  "snippet": {
-                    "text": "'Power Apps Canvas_DataCard_1'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_send"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Power Apps Canvas_DataCard_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 853,
-                  "snippet": {
-                    "text": ".Update"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_send"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 27,
-                  "charOffset": 888,
-                  "snippet": {
-                    "text": "'Api Management_DataCard_1'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_send"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Api Management_DataCard_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 915,
-                  "snippet": {
-                    "text": ".Update"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_send"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 23,
-                  "charOffset": 946,
-                  "snippet": {
-                    "text": "'AI Builder_DataCard_1'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_send"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "AI Builder_DataCard_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 969,
-                  "snippet": {
-                    "text": ".Update"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_send"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 23,
-                  "charOffset": 997,
-                  "snippet": {
-                    "text": "'Date Verse_DataCard_1'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_send"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Date Verse_DataCard_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 1020,
-                  "snippet": {
-                    "text": ".Update"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_send"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 913,
-                  "charOffset": 150,
-                  "snippet": {
-                    "text": "Patch(ability_skill,LookUp(ability_skill, 'E-mail' = 'Skill_E-mail_DataCard_1'.Update),\r\n    {\r\n        'Power Page': PowerPage_DropDown_1.SelectedText.Value,        \r\n        'Process Advisor'  :'Process Advisor_DataCard_1'.Update,\r\n        'Power Virtual Agents': 'Power Virtual Agents_DataCard_1'.Update,\r\n        'Power Page JAVA/CSS': 'Power Page JAVA/CSS_DataCard_1'.Update,       \r\n        'Power BI':'Power BI_DataCard_1'.Update,\r\n        'Power Automate Desktop':'Power Automate Desktop_DataCard_1'.Update,\r\n        'Power Automate':'Power Automate_DataCard_1'.Update,\r\n        'Power Apps Model':'Power Apps Model_DataCard_1'.Update,\r\n        'Power Apps Canvas':'Power Apps Canvas_DataCard_1'.Update,\r\n        'Api management':'Api Management_DataCard_1'.Update,\r\n        'AI Builder':'AI Builder_DataCard_1'.Update,\r\n        DataVerse:'Date Verse_DataCard_1'.Update    \r\n        \r\n       \r\n    }\r\n   )"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_send"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Patch"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_send.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 814,
-                  "charOffset": 243,
-                  "snippet": {
-                    "text": "{\r\n        'Power Page': PowerPage_DropDown_1.SelectedText.Value,        \r\n        'Process Advisor'  :'Process Advisor_DataCard_1'.Update,\r\n        'Power Virtual Agents': 'Power Virtual Agents_DataCard_1'.Update,\r\n        'Power Page JAVA/CSS': 'Power Page JAVA/CSS_DataCard_1'.Update,       \r\n        'Power BI':'Power BI_DataCard_1'.Update,\r\n        'Power Automate Desktop':'Power Automate Desktop_DataCard_1'.Update,\r\n        'Power Automate':'Power Automate_DataCard_1'.Update,\r\n        'Power Apps Model':'Power Apps Model_DataCard_1'.Update,\r\n        'Power Apps Canvas':'Power Apps Canvas_DataCard_1'.Update,\r\n        'Api management':'Api Management_DataCard_1'.Update,\r\n        'AI Builder':'AI Builder_DataCard_1'.Update,\r\n        DataVerse:'Date Verse_DataCard_1'.Update    \r\n        \r\n       \r\n    }"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_send"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "cr778_aibuilder",
-              "Text",
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrTypeError-Arg-Expected-Found",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 25,
-                  "charOffset": 205,
-                  "snippet": {
-                    "text": "'Skill_E-mail_DataCard_1'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.'License_Send_Button(참고용)'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Skill_E-mail_DataCard_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 230,
-                  "snippet": {
-                    "text": ".Update"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.'License_Send_Button(참고용)'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 203,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.'License_Send_Button(참고용)'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Text",
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 20,
-                  "charOffset": 270,
-                  "snippet": {
-                    "text": "PowerPage_DropDown_1"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.'License_Send_Button(참고용)'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "PowerPage_DropDown_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 13,
-                  "charOffset": 290,
-                  "snippet": {
-                    "text": ".SelectedText"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.'License_Send_Button(참고용)'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 303,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.'License_Send_Button(참고용)'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 28,
-                  "charOffset": 348,
-                  "snippet": {
-                    "text": "'Process Advisor_DataCard_1'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.'License_Send_Button(참고용)'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Process Advisor_DataCard_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 376,
-                  "snippet": {
-                    "text": ".Update"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.'License_Send_Button(참고용)'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 33,
-                  "charOffset": 418,
-                  "snippet": {
-                    "text": "'Power Virtual Agents_DataCard_1'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.'License_Send_Button(참고용)'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Power Virtual Agents_DataCard_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 451,
-                  "snippet": {
-                    "text": ".Update"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.'License_Send_Button(참고용)'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 32,
-                  "charOffset": 492,
-                  "snippet": {
-                    "text": "'Power Page JAVA/CSS_DataCard_1'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.'License_Send_Button(참고용)'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Power Page JAVA/CSS_DataCard_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 524,
-                  "snippet": {
-                    "text": ".Update"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.'License_Send_Button(참고용)'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 21,
-                  "charOffset": 560,
-                  "snippet": {
-                    "text": "'Power BI_DataCard_1'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.'License_Send_Button(참고용)'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Power BI_DataCard_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 581,
-                  "snippet": {
-                    "text": ".Update"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.'License_Send_Button(참고용)'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 35,
-                  "charOffset": 624,
-                  "snippet": {
-                    "text": "'Power Automate Desktop_DataCard_1'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.'License_Send_Button(참고용)'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Power Automate Desktop_DataCard_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 659,
-                  "snippet": {
-                    "text": ".Update"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.'License_Send_Button(참고용)'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 27,
-                  "charOffset": 694,
-                  "snippet": {
-                    "text": "'Power Automate_DataCard_1'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.'License_Send_Button(참고용)'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Power Automate_DataCard_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 721,
-                  "snippet": {
-                    "text": ".Update"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.'License_Send_Button(참고용)'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 29,
-                  "charOffset": 758,
-                  "snippet": {
-                    "text": "'Power Apps Model_DataCard_1'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.'License_Send_Button(참고용)'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Power Apps Model_DataCard_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 787,
-                  "snippet": {
-                    "text": ".Update"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.'License_Send_Button(참고용)'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 30,
-                  "charOffset": 825,
-                  "snippet": {
-                    "text": "'Power Apps Canvas_DataCard_1'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.'License_Send_Button(참고용)'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Power Apps Canvas_DataCard_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 855,
-                  "snippet": {
-                    "text": ".Update"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.'License_Send_Button(참고용)'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 27,
-                  "charOffset": 890,
-                  "snippet": {
-                    "text": "'Api Management_DataCard_1'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.'License_Send_Button(참고용)'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Api Management_DataCard_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 917,
-                  "snippet": {
-                    "text": ".Update"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.'License_Send_Button(참고용)'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 23,
-                  "charOffset": 948,
-                  "snippet": {
-                    "text": "'AI Builder_DataCard_1'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.'License_Send_Button(참고용)'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "AI Builder_DataCard_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 971,
-                  "snippet": {
-                    "text": ".Update"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.'License_Send_Button(참고용)'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 23,
-                  "charOffset": 999,
-                  "snippet": {
-                    "text": "'Date Verse_DataCard_1'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.'License_Send_Button(참고용)'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Date Verse_DataCard_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 1022,
-                  "snippet": {
-                    "text": ".Update"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.'License_Send_Button(참고용)'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 913,
-                  "charOffset": 152,
-                  "snippet": {
-                    "text": "Patch(ability_skill,LookUp(ability_skill, 'E-mail' = 'Skill_E-mail_DataCard_1'.Update),\r\n    {\r\n        'Power Page': PowerPage_DropDown_1.SelectedText.Value,        \r\n        'Process Advisor'  :'Process Advisor_DataCard_1'.Update,\r\n        'Power Virtual Agents': 'Power Virtual Agents_DataCard_1'.Update,\r\n        'Power Page JAVA/CSS': 'Power Page JAVA/CSS_DataCard_1'.Update,       \r\n        'Power BI':'Power BI_DataCard_1'.Update,\r\n        'Power Automate Desktop':'Power Automate Desktop_DataCard_1'.Update,\r\n        'Power Automate':'Power Automate_DataCard_1'.Update,\r\n        'Power Apps Model':'Power Apps Model_DataCard_1'.Update,\r\n        'Power Apps Canvas':'Power Apps Canvas_DataCard_1'.Update,\r\n        'Api management':'Api Management_DataCard_1'.Update,\r\n        'AI Builder':'AI Builder_DataCard_1'.Update,\r\n        DataVerse:'Date Verse_DataCard_1'.Update    \r\n        \r\n       \r\n    }\r\n   )"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.'License_Send_Button(참고용)'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Patch"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.'License_Send_Button(참고용)'.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 814,
-                  "charOffset": 245,
-                  "snippet": {
-                    "text": "{\r\n        'Power Page': PowerPage_DropDown_1.SelectedText.Value,        \r\n        'Process Advisor'  :'Process Advisor_DataCard_1'.Update,\r\n        'Power Virtual Agents': 'Power Virtual Agents_DataCard_1'.Update,\r\n        'Power Page JAVA/CSS': 'Power Page JAVA/CSS_DataCard_1'.Update,       \r\n        'Power BI':'Power BI_DataCard_1'.Update,\r\n        'Power Automate Desktop':'Power Automate Desktop_DataCard_1'.Update,\r\n        'Power Automate':'Power Automate_DataCard_1'.Update,\r\n        'Power Apps Model':'Power Apps Model_DataCard_1'.Update,\r\n        'Power Apps Canvas':'Power Apps Canvas_DataCard_1'.Update,\r\n        'Api management':'Api Management_DataCard_1'.Update,\r\n        'AI Builder':'AI Builder_DataCard_1'.Update,\r\n        DataVerse:'Date Verse_DataCard_1'.Update    \r\n        \r\n       \r\n    }"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "User_License_Page",
-                "type": "User_License_Page.'License_Send_Button(참고용)'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "cr778_aibuilder",
-              "Text",
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrTypeError-Arg-Expected-Found",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "User_License_Page.License_Back.AccessibleLabel"
                 }
               ],
@@ -2590,7 +37,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -2620,7 +67,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -2650,7 +97,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -2680,26 +127,56 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
+          "ruleIndex": 1
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'AZ-104_DataCard'.DatePicker1.AccessibleLabel"
+                  "fullyQualifiedName": "User_Profile_Page.Profile_Home.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'AZ-104_DataCard'.DatePicker1.AccessibleLabel",
+                  "fullyQualifiedName": "User_Profile_Page.Profile_Home.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "User_Profile_Page",
+                "type": "User_Profile_Page.Profile_Home"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_Profile_Page.Profile_Home.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_Profile_Page.Profile_Home.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_Input.'AZ-104_DataCard'.DatePicker1"
+                "module": "User_Profile_Page",
+                "type": "User_Profile_Page.Profile_Home"
               }
             }
           ],
@@ -2710,26 +187,56 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 0
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'AZ-104_DataCard'.Toggle1.AccessibleLabel"
+                  "fullyQualifiedName": "User_Profile_Page.Profile_Back.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'AZ-104_DataCard'.Toggle1.AccessibleLabel",
+                  "fullyQualifiedName": "User_Profile_Page.Profile_Back.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "User_Profile_Page",
+                "type": "User_Profile_Page.Profile_Back"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_Profile_Page.Profile_Back.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_Profile_Page.Profile_Back.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_Input.'AZ-104_DataCard'.Toggle1"
+                "module": "User_Profile_Page",
+                "type": "User_Profile_Page.Profile_Back"
               }
             }
           ],
@@ -2740,26 +247,56 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 0
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'AZ-305_DataCard'.'AZ-305_DataCardValue'.AccessibleLabel"
+                  "fullyQualifiedName": "User_License_Page.License_send.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'AZ-305_DataCard'.'AZ-305_DataCardValue'.AccessibleLabel",
+                  "fullyQualifiedName": "User_License_Page.License_send.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "User_License_Page",
+                "type": "User_License_Page.License_send"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_License_Page.License_send.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_License_Page.License_send.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "User_License_Page",
-                "type": "User_License_Page.License_Input.'AZ-305_DataCard'.'AZ-305_DataCardValue'"
+                "type": "User_License_Page.License_send"
               }
             }
           ],
@@ -2770,367 +307,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'MS-100_DataCard'.'MS-100_DataCardValue'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'MS-100_DataCard'.'MS-100_DataCardValue'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_Input.'MS-100_DataCard'.'MS-100_DataCardValue'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'MS-101_DataCard'.'MS-101_DataCardValue'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'MS-101_DataCard'.'MS-101_DataCardValue'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_Input.'MS-101_DataCard'.'MS-101_DataCardValue'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'MS-700_DataCard'.'MS-700_DataCardValue'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'MS-700_DataCard'.'MS-700_DataCardValue'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_Input.'MS-700_DataCard'.'MS-700_DataCardValue'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'MS-900_DataCard'.'MS-900_DataCardValue'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'MS-900_DataCard'.'MS-900_DataCardValue'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_Input.'MS-900_DataCard'.'MS-900_DataCardValue'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'PL-200_DataCard'.'PL-200_DataCardValue'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'PL-200_DataCard'.'PL-200_DataCardValue'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_Input.'PL-200_DataCard'.'PL-200_DataCardValue'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'PL-300_DataCard'.'PL-300_DataCardValue'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'PL-300_DataCard'.'PL-300_DataCardValue'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_Input.'PL-300_DataCard'.'PL-300_DataCardValue'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'PL-400_DataCard'.'PL-400_DataCardValue'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'PL-400_DataCard'.'PL-400_DataCardValue'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_Input.'PL-400_DataCard'.'PL-400_DataCardValue'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'PL-600_DataCard'.'PL-600_DataCardValue'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'PL-600_DataCard'.'PL-600_DataCardValue'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_Input.'PL-600_DataCard'.'PL-600_DataCardValue'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'PL-900_DataCard'.'PL-900_DataCardValue'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'PL-900_DataCard'.'PL-900_DataCardValue'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_Input.'PL-900_DataCard'.'PL-900_DataCardValue'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'License_E-mail_DataCard'.'License_E-mail_DataCardValue'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'License_E-mail_DataCard'.'License_E-mail_DataCardValue'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_Input.'License_E-mail_DataCard'.'License_E-mail_DataCardValue'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_Input.License_Name_DataCard.License_Name_DataCardValue.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_Input.License_Name_DataCard.License_Name_DataCardValue.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_Input.License_Name_DataCard.License_Name_DataCardValue"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.License_Input.License_Date_DataCard.License_Date_DataCardValue.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.License_Input.License_Date_DataCard.License_Date_DataCardValue.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_License_Page",
-                "type": "User_License_Page.License_Input.License_Date_DataCard.License_Date_DataCardValue"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -3160,7 +337,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -3190,7 +367,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -3220,7 +397,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -3250,7 +427,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -3280,7 +457,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -3310,7 +487,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -3340,7 +517,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -3370,7 +547,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -3400,7 +577,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -3430,7 +607,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -3460,7 +637,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -3490,7 +667,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -3520,7 +697,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -3550,7 +727,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -3580,7 +757,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -3610,7 +787,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -3640,7 +817,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -3670,7 +847,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -3700,7 +877,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -3730,7 +907,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -3760,7 +937,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -3790,7 +967,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -3820,7 +997,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -3850,7 +1027,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -3880,7 +1057,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -3910,7 +1087,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -3940,7 +1117,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -3970,7 +1147,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -4000,7 +1177,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -4030,7 +1207,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 7
+          "ruleIndex": 2
         }
       ],
       "tool": {
@@ -4038,83 +1215,6 @@
           "fullName": "PowerApps app checker",
           "name": "PowerApps app checker",
           "rules": [
-            {
-              "id": "app-ErrInvalidName",
-              "messageStrings": {
-                "issue": {
-                  "text": "Name isn't valid. '{0}' isn't recognized."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Remove or correct the reference to the name that isn't valid."
-                ],
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
-              "id": "app-ErrInvalidDot",
-              "messageStrings": {
-                "issue": {
-                  "text": "Invalid use of '.'"
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
-              "id": "app-ErrIncompatibleTypesForEquality-Left-Right",
-              "messageStrings": {
-                "issue": {
-                  "text": "Incompatible types for comparison. These types can't be compared: {0}, {1}."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "You might need to convert the value to be the same type, such as converting a date string (e.g., \"12/31/2018\") to a date value.",
-                  "If you’re comparing records or tables, the field or column types must match exactly."
-                ],
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
-              "id": "app-ErrInvalidArgs-Func",
-              "messageStrings": {
-                "issue": {
-                  "text": "The function '{0}' has some invalid arguments."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
-              "id": "app-ErrTypeError-Arg-Expected-Found",
-              "messageStrings": {
-                "issue": {
-                  "text": "The type of this argument '{0}' does not match the expected type '{1}'. Found type '{2}'."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
             {
               "id": "acc-AccessibleLabelNeeded",
               "messageStrings": {

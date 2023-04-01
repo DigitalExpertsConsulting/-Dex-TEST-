@@ -1,2 +1,34 @@
 User_Profile_Page As screen:
+    BackgroundImage: =MainPagePicture
+
+    Profile_Title As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(102, 182, 227, 0.7)
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =186
+        Size: =40
+        Text: ="Profile Page"
+        Width: =1366
+        ZIndex: =1
+
+    Profile_Home As icon.Home:
+        Color: =RGBA(102, 182, 227, 0.7)
+        Height: =110
+        Icon: =Icon.Home
+        OnSelect: =Navigate(Main_Page)
+        Width: =110
+        X: =1120
+        Y: =40
+        ZIndex: =2
+
+    Profile_Back As icon.BackArrow:
+        Color: =RGBA(102, 182, 227, 0.7)
+        Height: =110
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate(User_Page)
+        Width: =110
+        X: =110
+        Y: =40
+        ZIndex: =3
 

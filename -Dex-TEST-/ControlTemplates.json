@@ -27,20 +27,6 @@
     "OverridableProperties": {},
     "Version": "2.2.0"
   },
-  "datepicker": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/datepicker",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": false,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": true,
-    "LastModifiedTimestamp": "0",
-    "Name": "datepicker",
-    "OverridableProperties": {},
-    "Version": "2.6.0"
-  },
   "dropdown": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
@@ -54,20 +40,6 @@
     "Name": "dropdown",
     "OverridableProperties": {},
     "Version": "2.3.1"
-  },
-  "export": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/export",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": false,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": true,
-    "LastModifiedTimestamp": "0",
-    "Name": "export",
-    "OverridableProperties": {},
-    "Version": "2.1.0"
   },
   "form": {
     "CustomGroupControlTemplateName": "",
@@ -106,31 +78,6 @@
     "Name": "icon",
     "OverridableProperties": {},
     "Version": "2.5.0"
-  },
-  "import": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/import",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": false,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": true,
-    "LastModifiedTimestamp": "0",
-    "Name": "import",
-    "OverridableProperties": {
-      "Data": {
-        "Type": {
-          "EnumString": "",
-          "Kind": "Table",
-          "Name": "Root",
-          "Type": []
-        },
-        "Version": "1.330"
-      }
-    },
-    "PCFDynamicSchemaForIRRetrieval": {},
-    "Version": "2.1.0"
   },
   "label": {
     "CustomGroupControlTemplateName": "",
@@ -173,20 +120,6 @@
     "Name": "text",
     "OverridableProperties": {},
     "Version": "2.3.2"
-  },
-  "toggleSwitch": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/toggleSwitch",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": false,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": true,
-    "LastModifiedTimestamp": "0",
-    "Name": "toggleSwitch",
-    "OverridableProperties": {},
-    "Version": "2.1.0"
   },
   "typedDataCard": {
     "CustomGroupControlTemplateName": "",
