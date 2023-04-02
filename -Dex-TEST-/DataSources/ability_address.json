@@ -1,5 +1,19 @@
 [
   {
+    "DisplayName": "ability_address (뷰)",
+    "Name": "_cr778_ability_address_views",
+    "RelatedEntityName": "ability_address",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "18579517-6ed4-43a1-92e8-8a1a41f4b0ad": "Active ability_address",
+      "5606784f-6947-4d47-8da9-8cb06388fb29": "ability_address Advanced Find View",
+      "be5938f0-d61e-4dca-a194-4a6c6943fe1f": "ability_address Associated View",
+      "d20bbe74-f50d-471b-9b0b-0f377553b992": "Inactive ability_address",
+      "d96e2120-0f15-4cab-b326-5ccc4be85c96": "ability_address Lookup View"
+    }
+  },
+  {
     "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
     "EntitySetName": "cr778_ability_addresses",
     "IsHidden": false,
@@ -18,9 +32,10 @@
       "cr778_ability_address_ProcessSession": "Process Sessions",
       "cr778_ability_address_SyncErrors": "Sync Errors",
       "cr778_ability_addressid": "ability_address",
-      "cr778_address": "address",
+      "cr778_address": "Address",
       "cr778_email": "E-mail",
       "cr778_name": "Name",
+      "cr778_zipcode": "Zipcode",
       "createdby": "Created By",
       "createdon": "Created On",
       "createdonbehalfby": "Created By (Delegate)",
