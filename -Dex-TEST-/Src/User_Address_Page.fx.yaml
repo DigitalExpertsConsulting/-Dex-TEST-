@@ -326,7 +326,7 @@ User_Address_Page As screen:
             =If(
                 IsEmpty(
                     Search(
-                        ability_adress,
+                        ability_address,
                         varUser.Email,
                         "cr778_email"
                     )
@@ -336,14 +336,14 @@ User_Address_Page As screen:
                 ResetForm(Address_Input);
                 ,
                 Patch(
-                    ability_adress,
+                    ability_address,
                     LookUp(
-                        ability_adress,
+                        ability_address,
                         'E-mail' = 'Address_E-mail_DataCard'.Update
                     ),
                     {
-                        Address: Address_DataCard.Update,
-                        Zipcode: Zipcode_DataCard.Update
+                        address: 'Address_DataCard'.Update,
+                        zipcode: 'Zipcode_DataCard'.Update
                     }
                 );
                 NewForm(Address_Input);
@@ -373,4 +373,10 @@ User_Address_Page As screen:
         X: =1120
         Y: =40
         ZIndex: =5
+
+    Form1 As form:
+        DataSource: =ability_address
+        X: =60
+        Y: =60
+        ZIndex: =6
 

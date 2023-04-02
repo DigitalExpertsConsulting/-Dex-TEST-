@@ -1,0 +1,84 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr778_ability_addresses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr778_ability_address",
+    "Name": "ability_address",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr778_ability_address_AsyncOperations": "System Jobs",
+      "cr778_ability_address_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr778_ability_address_DuplicateBaseRecord": "Duplicate Records (cr778_ability_address_DuplicateBaseRecord)",
+      "cr778_ability_address_DuplicateMatchingRecord": "Duplicate Records (cr778_ability_address_DuplicateMatchingRecord)",
+      "cr778_ability_address_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr778_ability_address_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr778_ability_address_ProcessSession": "Process Sessions",
+      "cr778_ability_address_SyncErrors": "Sync Errors",
+      "cr778_ability_addressid": "ability_address",
+      "cr778_address": "address",
+      "cr778_email": "E-mail",
+      "cr778_name": "Name",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "ability_address",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Status (ability_address)",
+    "Name": "cr778_ability_address_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "ability_address"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "ability_address",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (ability_address)",
+    "Name": "cr778_ability_address_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "ability_address"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "ability_address",
+    "Type": "OptionSetInfo"
+  }
+]
