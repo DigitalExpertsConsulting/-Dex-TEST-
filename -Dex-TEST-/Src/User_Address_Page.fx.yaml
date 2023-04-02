@@ -36,7 +36,7 @@ User_Address_Page As screen:
                         'E-mail' = 'Address_E-mail_DataCard'.Update
                     ),
                     {
-                        Address: Address_DataCard.Update,
+                        Address: Address_DataCard.DataField,
                         Zipcode: Zipcode_DataCard.Update
                     }
                 );
