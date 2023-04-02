@@ -19,10 +19,9 @@ User_Address_Page As screen:
         OnSelect: |-
             =If(
                 IsEmpty(
-                    Search(
+                    LookUp(
                         ability_address,
-                        varUser.Email,
-                        "cr778_email"
+                        'E-mail'=varUser.Email
                     )
                 ),
                 SubmitForm(Address_Input);
