@@ -37,7 +37,7 @@ User_Address_Page As screen:
                     ),
                     {
                         Address: Address_DataCardValue.Text,
-                        Zipcode: Zipcode_DataCard.Update
+                        Zipcode: Zipcode_DataCardValue.Text
                     }
                 );
                 NewForm(Address_Input);
