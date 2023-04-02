@@ -21,7 +21,7 @@ User_Address_Page As screen:
                 IsEmpty(
                     Search(
                         ability_address,
-                        User().Email,
+                        varUser.Email,
                         "cr778_email"
                     )
                 ),
@@ -37,7 +37,7 @@ User_Address_Page As screen:
                     ),
                     {
                         Address: Address_DataCardValue.Text,
-                        Zipcode: Zipcode_DataCardValue.Text
+                        Zipcode: Zipcode_DataCard.Update
                     }
                 );
                 NewForm(Address_Input);
