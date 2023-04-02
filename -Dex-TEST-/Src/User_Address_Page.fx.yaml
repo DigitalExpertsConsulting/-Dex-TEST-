@@ -21,7 +21,7 @@ User_Address_Page As screen:
                 IsEmpty(
                     Search(
                         ability_address,
-                        varUser.Email,
+                        User().Email,
                         "cr778_email"
                     )
                 ),
