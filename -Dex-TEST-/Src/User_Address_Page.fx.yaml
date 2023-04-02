@@ -58,6 +58,7 @@ User_Address_Page As screen:
                 DisplayMode: =Parent.DisplayMode
                 Fill: =RGBA(102, 182, 227, 0.2)
                 Height: =100
+                HintText: ="주소 입력"
                 HoverBorderColor: =RGBA(102, 182, 227, 0.7)
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -20%)
@@ -136,6 +137,7 @@ User_Address_Page As screen:
                 DisplayMode: =Parent.DisplayMode
                 Fill: =RGBA(102, 182, 227, 0.2)
                 Height: =100
+                HintText: ="우편번호 입력"
                 HoverBorderColor: =RGBA(102, 182, 227, 0.7)
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -20%)
