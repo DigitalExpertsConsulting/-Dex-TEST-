@@ -342,8 +342,8 @@ User_Address_Page As screen:
                         'E-mail' = 'Address_E-mail_DataCard'.Update
                     ),
                     {
-                        address: 'Address_DataCard'.Update,
-                        zipcode: 'Zipcode_DataCard'.Update
+                        address: Address_DataCard.Update,
+                        z: Zipcode_DataCard.Update
                     }
                 );
                 NewForm(Address_Input);
@@ -373,10 +373,4 @@ User_Address_Page As screen:
         X: =1120
         Y: =40
         ZIndex: =5
-
-    Form1 As form:
-        DataSource: =ability_address
-        X: =60
-        Y: =60
-        ZIndex: =6
 
