@@ -107,11 +107,13 @@ User_Address_Page As screen:
 
             DataCardValue4 As text:
                 BorderColor: =RGBA(102, 182, 227, 0.7)
+                Color: =RGBA(255, 255, 255, 1)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Fill: =RGBA(102, 182, 227, 0.5)
                 Height: =80
+                HintText: ="주소를 입력하세요."
                 HoverBorderColor: =RGBA(102, 182, 227, 0.7)
                 HoverFill: =RGBA(102, 182, 227, 0.2)
                 MaxLength: =Parent.MaxLength
@@ -120,6 +122,7 @@ User_Address_Page As screen:
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =25
                 Tooltip: =Parent.DisplayName
                 Width: |
                     =900
@@ -182,11 +185,13 @@ User_Address_Page As screen:
 
             DataCardValue3 As text:
                 BorderColor: =RGBA(102, 182, 227, 0.7)
+                Color: =RGBA(255, 255, 255, 1)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Fill: =RGBA(102, 182, 227, 0.5)
                 Height: =80
+                HintText: ="우편번호를 입력하세요."
                 HoverBorderColor: =RGBA(102, 182, 227, 0.7)
                 HoverFill: =RGBA(102, 182, 227, 0.2)
                 MaxLength: =Parent.MaxLength
@@ -195,6 +200,7 @@ User_Address_Page As screen:
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =25
                 Tooltip: =Parent.DisplayName
                 Width: =900
                 X: =30
