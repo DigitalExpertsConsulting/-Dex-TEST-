@@ -112,7 +112,8 @@ User_Address_Page As screen:
                 DisplayMode: =Parent.DisplayMode
                 Fill: =RGBA(102, 182, 227, 0.5)
                 Height: =80
-                HoverBorderColor: =RGBA(102, 182, 227, 0.2)
+                HoverBorderColor: =RGBA(102, 182, 227, 0.7)
+                HoverFill: =RGBA(102, 182, 227, 0.2)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -186,6 +187,8 @@ User_Address_Page As screen:
                 DisplayMode: =Parent.DisplayMode
                 Fill: =RGBA(102, 182, 227, 0.5)
                 Height: =80
+                HoverBorderColor: =RGBA(102, 182, 227, 0.7)
+                HoverFill: =RGBA(102, 182, 227, 0.2)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
