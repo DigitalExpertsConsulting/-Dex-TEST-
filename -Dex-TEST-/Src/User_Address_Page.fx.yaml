@@ -323,12 +323,13 @@ User_Address_Page As screen:
         OnSelect: |+
             =If(IsEmpty(Search(ability_adress,varUser.Email,"cr778_email")), 
                 SubmitForm(Address_Input);NewForm(Address_Input);ResetForm(Address_Input);,
-                Patch(ability_adress,LookUp(ability_adress, 'E-mail' = Address_DataCard.Update),
+                Patch(ability_adress,LookUp(ability_adress, 'E-mail' = 'Address_E-mail_DataCard'.Update),
                 {
                     'Address' : 'Address_DataCard'.Update,
                     'Zipcode': 'Zipcode_DataCard'.Update
                 }
-               );NewForm(Address_Input);ResetForm(Address_Input);
+               )
+               ;NewForm(Address_Input);ResetForm(Address_Input);
             )
             
             
