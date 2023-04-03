@@ -106,7 +106,10 @@ User_License_Page As screen:
                 ZIndex: =4
 
             "'AZ-104_Toggle' As toggleSwitch":
+                Color: =RGBA(255, 255, 255, 1)
+                FalseText: ="없다"
                 Height: =40
+                TrueText: ="있다"
                 Width: =125
                 X: =160
                 Y: =81
@@ -218,7 +221,9 @@ User_License_Page As screen:
 
             "'AZ-305_Toggle' As toggleSwitch":
                 Color: =RGBA(255, 255, 255, 1)
+                FalseText: ="없다"
                 Height: =40
+                TrueText: ="있다"
                 Width: =125
                 X: =160
                 Y: =81
@@ -328,7 +333,9 @@ User_License_Page As screen:
 
             "'MS-100_Toggle' As toggleSwitch":
                 Color: =RGBA(255, 255, 255, 1)
+                FalseText: ="없다"
                 Height: =40
+                TrueText: ="있다"
                 Width: =125
                 X: =160
                 Y: =81
@@ -961,7 +968,7 @@ User_License_Page As screen:
             MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_name")
             Required: =true
             Update: =DataCardValue73.Text
-            Visible: =true
+            Visible: =false
             Width: =266
             X: =0
             Y: =11
@@ -971,6 +978,7 @@ User_License_Page As screen:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
+                Visible: =false
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
