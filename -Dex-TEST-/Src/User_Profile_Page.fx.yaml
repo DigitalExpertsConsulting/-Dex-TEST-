@@ -32,3 +32,14 @@ User_Profile_Page As screen:
         Y: =40
         ZIndex: =3
 
+    License_send_1 As icon.Send:
+        Color: =RGBA(102, 182, 227, 0.7)
+        Height: =110
+        Icon: =Icon.Send
+        OnSelect: |
+            =
+        Width: =110
+        X: =1140
+        Y: =620
+        ZIndex: =4
+

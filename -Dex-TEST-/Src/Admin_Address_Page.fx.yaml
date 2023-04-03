@@ -1,2 +1,45 @@
 Admin_Address_Page As screen:
+    BackgroundImage: =MainPagePicture
+
+    License_Title_2 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(102, 182, 227, 0.7)
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =186
+        Size: =40
+        Text: ="Admin Address Page"
+        Width: =1366
+        ZIndex: =1
+
+    Profile_Back_2 As icon.BackArrow:
+        Color: =RGBA(102, 182, 227, 0.7)
+        Height: =110
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate(User_Page)
+        Width: =110
+        X: =110
+        Y: =40
+        ZIndex: =2
+
+    License_Home_2 As icon.Home:
+        Color: =RGBA(102, 182, 227, 0.7)
+        Height: =110
+        Icon: =Icon.Home
+        OnSelect: =Navigate(Main_Page)
+        Width: =110
+        X: =1120
+        Y: =40
+        ZIndex: =3
+
+    License_send_3 As icon.Send:
+        Color: =RGBA(102, 182, 227, 0.7)
+        Height: =110
+        Icon: =Icon.Send
+        OnSelect: |
+            =
+        Width: =110
+        X: =1120
+        Y: =600
+        ZIndex: =4
 
