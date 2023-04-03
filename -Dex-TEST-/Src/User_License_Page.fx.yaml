@@ -122,6 +122,8 @@ User_License_Page As screen:
             "'MS-100 PDF_1' As icon.DocumentPDF":
                 Color: =RGBA(255, 255, 255, 1)
                 Icon: =Icon.DocumentPDF
+                OnSelect: |-
+                    =ClearCollect(Products, {Name:"Europa", Price:"10.99"}, {Name:"Ganymede", Price:"12.49"}, {Name:"Callisto", Price:"11.79"})
                 X: =632
                 Y: =60
                 ZIndex: =7
