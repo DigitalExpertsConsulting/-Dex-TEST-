@@ -22,3 +22,51 @@ Admin_Page As screen:
         Y: =40
         ZIndex: =2
 
+    UserPage_Address_Button_1 As button:
+        BorderColor: =RGBA(102, 182, 227, 0.7)
+        BorderThickness: =9
+        DisabledFill: =RGBA(241, 244, 249, 1)
+        Fill: =RGBA(102, 182, 227, 0.2)
+        Height: =86
+        HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -20%)
+        OnSelect: =Navigate(User_Address_Page)
+        PressedFill: =RGBA(102, 182, 227, 0.2)
+        Size: =35
+        Text: ="주소지 입력"
+        Width: =676
+        X: =345
+        Y: =236
+        ZIndex: =3
+
+    UserPage_Skill_Button_1 As button:
+        BorderColor: =RGBA(102, 182, 227, 0.7)
+        BorderThickness: =9
+        DisabledFill: =RGBA(241, 244, 249, 1)
+        Fill: =RGBA(102, 182, 227, 0.2)
+        Height: =86
+        HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -20%)
+        OnSelect: =Navigate(User_Skill_Page)
+        PressedFill: =RGBA(102, 182, 227, 0.2)
+        Size: =35
+        Text: ="자격증 입력"
+        Width: =676
+        X: =345
+        Y: =402
+        ZIndex: =4
+
+    UserPage_License_Button_1 As button:
+        BorderColor: =RGBA(102, 182, 227, 0.7)
+        BorderThickness: =9
+        DisabledFill: =RGBA(241, 244, 249, 1)
+        Fill: =RGBA(102, 182, 227, 0.2)
+        Height: =86
+        HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -20%)
+        OnSelect: =Navigate(User_License_Page)
+        PressedFill: =RGBA(102, 182, 227, 0.2)
+        Size: =35
+        Text: ="기술 입력"
+        Width: =676
+        X: =345
+        Y: =556
+        ZIndex: =5
+
