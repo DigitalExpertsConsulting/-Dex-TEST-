@@ -46,41 +46,39 @@ User_License_Page As screen:
     License_Input As form:
         DataSource: =ability_license
         DefaultMode: =FormMode.New
-        Fill: =RGBA(102, 182, 227, 0.5)
-        X: =274
-        Y: =191
+        Fill: =RGBA(102, 182, 227, 0.7)
+        Width: =686
+        X: =42
+        Y: =186
         ZIndex: =8
 
-        "'AZ-104_DataCard' As typedDataCard.textualEditCard":
-            BorderColor: =RGBA(255, 255, 255, 1)
+        "'AZ-104_DataCard4' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
-            BorderThickness: =3
             DataField: ="cr778_az104"
             Default: =ThisItem.'AZ-104'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@ability_license],DataSourceInfo.DisplayName,"cr778_az104")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =140
+            Height: =130
             MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_az104")
             Required: =false
-            Update: ='AZ-104_Toggle'.Value
-            Width: =800
+            Update: =Toggle1.Value
+            Width: =684
             X: =0
             Y: =0
             ZIndex: =1
 
-            DataCardKey63 As label:
-                AutoHeight: =true
+            DataCardKey39 As label:
                 Color: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Bold
-                Height: =34
-                Size: =25
+                Height: =65
+                Size: =30
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =160
                 Wrap: =false
                 ZIndex: =1
 
-            ErrorMessage58 As label:
+            ErrorMessage34 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -92,113 +90,87 @@ User_License_Page As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: ='AZ-104_Toggle'.Y + 'AZ-104_Toggle'.Height
+                Y: =Toggle1.Y + Toggle1.Height
                 ZIndex: =3
 
-            StarVisible58 As label:
+            StarVisible34 As label:
                 Align: =Align.Center
-                Height: =DataCardKey63.Height
+                Height: =DataCardKey39.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey63.Y
+                Y: =DataCardKey39.Y
                 ZIndex: =4
 
-            "'AZ-104_Toggle' As toggleSwitch":
+            Toggle1 As toggleSwitch:
                 Color: =RGBA(255, 255, 255, 1)
                 FalseText: ="없다"
-                Height: =40
+                Height: =50
                 TrueText: ="있다"
-                Width: =125
-                X: =160
-                Y: =81
+                Width: =150
+                X: =182
+                Y: =75
                 ZIndex: =5
 
-            "'AZ-104_DatePicker' As datepicker":
-                DisplayMode: |-
-                    =
-                    If('AZ-104_Toggle'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
-                Height: =50
-                Width: =184
-                X: =356
-                Y: =75
+            DatePicker4 As datepicker:
+                DisplayMode: =If(Toggle1.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
+                Height: =59
+                Width: =246
+                X: =400
+                Y: =71
                 ZIndex: =6
 
-            "'AZ-104_PDF' As icon.DocumentPDF":
-                Color: =RGBA(215, 223, 240, 1)
-                DisplayMode: |-
-                    =
-                    If('AZ-104_Toggle'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
-                Icon: =Icon.DocumentPDF
-                X: =632
-                Y: =60
+            Label2 As label:
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =53
+                Size: =17
+                Text: ="취득 여부"
+                Width: =127
+                X: =193
+                Y: =16
                 ZIndex: =7
 
-            "'AZ-104_Toggle_Label' As label":
-                Align: =Align.Center
+            Label2_1 As label:
                 Color: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Semibold
-                Size: =15
-                Text: ="취득 여부"
-                Width: =219
-                X: =114
-                Y: =34
+                Height: =53
+                Size: =17
+                Text: ="취득 일자"
+                Width: =127
+                X: =459
+                Y: =16
                 ZIndex: =8
 
-            "'AZ-104_Date_Label' As label":
-                Align: =Align.Center
-                Color: =RGBA(255, 255, 255, 1)
-                FontWeight: =FontWeight.Semibold
-                Height: =34
-                Size: =15
-                Text: ="취득 일자"
-                Width: =178
-                X: =359
-                Y: =37
-                ZIndex: =9
-
-            "'AZ-104_PDF_Label' As label":
-                Align: =Align.Center
-                Color: =RGBA(255, 255, 255, 1)
-                FontWeight: =FontWeight.Semibold
-                Size: =15
-                Text: ="인증서 첨부"
-                Width: =127
-                X: =600
-                Y: =15
-                ZIndex: =10
-
-        "'AZ-305_DataCard' As typedDataCard.textualEditCard":
-            BorderColor: =RGBA(255, 255, 255, 1)
+        "'AZ-305_DataCard3' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
-            BorderThickness: =3
             DataField: ="cr778_az305"
             Default: =ThisItem.'AZ-305'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@ability_license],DataSourceInfo.DisplayName,"cr778_az305")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =140
+            Height: =135
             MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_az305")
             Required: =false
-            Update: ='AZ-305_Toggle'.Value
-            Width: =800
+            Update: =Toggle1_1.Value
+            Width: =684
             X: =0
             Y: =1
             ZIndex: =1
 
-            DataCardKey64 As label:
+            DataCardKey40 As label:
                 AutoHeight: =true
                 Color: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Bold
-                Height: =34
-                Size: =25
+                Height: =65
+                Size: =30
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =160
                 Wrap: =false
                 ZIndex: =1
 
-            ErrorMessage59 As label:
+            ErrorMessage35 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -210,113 +182,87 @@ User_License_Page As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: ='AZ-305_Toggle'.Y + 'AZ-305_Toggle'.Height
+                Y: =Toggle1_1.Y + Toggle1_1.Height
                 ZIndex: =3
 
-            StarVisible59 As label:
+            StarVisible35 As label:
                 Align: =Align.Center
-                Height: =DataCardKey64.Height
+                Height: =DataCardKey40.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey64.Y
+                Y: =DataCardKey40.Y
                 ZIndex: =4
 
-            "'AZ-305_Toggle' As toggleSwitch":
+            Toggle1_1 As toggleSwitch:
                 Color: =RGBA(255, 255, 255, 1)
                 FalseText: ="없다"
-                Height: =40
+                Height: =50
                 TrueText: ="있다"
-                Width: =125
-                X: =160
-                Y: =81
+                Width: =150
+                X: =182
+                Y: =75
                 ZIndex: =5
 
-            "'AZ-305_DatePicker' As datepicker":
-                DisplayMode: |-
-                    =
-                    If('AZ-305_Toggle'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
-                Height: =50
-                Width: =184
-                X: =356
-                Y: =75
+            Label2_2 As label:
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =53
+                Size: =17
+                Text: ="취득 여부"
+                Width: =127
+                X: =193
+                Y: =16
                 ZIndex: =6
 
-            "'AZ-305_PDF' As icon.DocumentPDF":
-                Color: =RGBA(215, 223, 240, 1)
-                DisplayMode: |-
-                    =
-                    If('AZ-305_Toggle'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
-                Icon: =Icon.DocumentPDF
-                X: =632
-                Y: =60
+            DatePicker4_1 As datepicker:
+                DisplayMode: =If(Toggle1_1.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
+                Height: =59
+                Width: =246
+                X: =400
+                Y: =71
                 ZIndex: =7
 
-            "'AZ-305_Toggle_Label' As label":
-                Align: =Align.Center
+            Label2_3 As label:
                 Color: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Semibold
-                Size: =15
-                Text: ="취득 여부"
-                Width: =219
-                X: =114
-                Y: =34
+                Height: =53
+                Size: =17
+                Text: ="취득 일자"
+                Width: =127
+                X: =459
+                Y: =16
                 ZIndex: =8
 
-            "'AZ-305_Date_Label' As label":
-                Align: =Align.Center
-                Color: =RGBA(255, 255, 255, 1)
-                FontWeight: =FontWeight.Semibold
-                Height: =34
-                Size: =15
-                Text: ="취득 일자"
-                Width: =178
-                X: =359
-                Y: =37
-                ZIndex: =9
-
-            "'AZ-305_PDF_Label' As label":
-                Align: =Align.Center
-                Color: =RGBA(255, 255, 255, 1)
-                FontWeight: =FontWeight.Semibold
-                Size: =15
-                Text: ="인증서 첨부"
-                Width: =127
-                X: =600
-                Y: =15
-                ZIndex: =10
-
-        "'MS-100_DataCard' As typedDataCard.textualEditCard":
-            BorderColor: =RGBA(255, 255, 255, 1)
+        "'MS-100_DataCard3' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
-            BorderThickness: =3
             DataField: ="cr778_ms100"
             Default: =ThisItem.'MS-100'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@ability_license],DataSourceInfo.DisplayName,"cr778_ms100")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =112
+            Height: =135
             MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_ms100")
             Required: =false
-            Update: ='MS-100_Toggle'.Value
-            Width: =800
+            Update: =Toggle1_2.Value
+            Width: =684
             X: =0
             Y: =2
             ZIndex: =1
 
-            DataCardKey65 As label:
+            DataCardKey41 As label:
                 AutoHeight: =true
                 Color: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Bold
-                Height: =34
-                Size: =25
+                Height: =65
+                Size: =30
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =160
                 Wrap: =false
                 ZIndex: =1
 
-            ErrorMessage60 As label:
+            ErrorMessage36 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -328,113 +274,87 @@ User_License_Page As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: ='MS-100_Toggle'.Y + 'MS-100_Toggle'.Height
+                Y: =Toggle1_2.Y + Toggle1_2.Height
                 ZIndex: =3
 
-            StarVisible60 As label:
+            StarVisible36 As label:
                 Align: =Align.Center
-                Height: =DataCardKey65.Height
+                Height: =DataCardKey41.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey65.Y
+                Y: =DataCardKey41.Y
                 ZIndex: =4
 
-            "'MS-100_Toggle' As toggleSwitch":
+            Toggle1_2 As toggleSwitch:
                 Color: =RGBA(255, 255, 255, 1)
                 FalseText: ="없다"
-                Height: =40
+                Height: =50
                 TrueText: ="있다"
-                Width: =125
-                X: =160
-                Y: =81
+                Width: =150
+                X: =182
+                Y: =75
                 ZIndex: =5
 
-            "'MS-100_Toggle_Label' As label":
-                Align: =Align.Center
+            Label2_4 As label:
                 Color: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Semibold
-                Size: =15
+                Height: =53
+                Size: =17
                 Text: ="취득 여부"
-                Width: =219
-                X: =114
-                Y: =34
+                Width: =127
+                X: =193
+                Y: =16
                 ZIndex: =6
 
-            "'MS-100_Date_Label' As label":
-                Align: =Align.Center
-                Color: =RGBA(255, 255, 255, 1)
-                FontWeight: =FontWeight.Semibold
-                Height: =34
-                Size: =15
-                Text: ="취득 일자"
-                Width: =178
-                X: =359
-                Y: =37
+            DatePicker4_2 As datepicker:
+                DisplayMode: =If(Toggle1_1.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
+                Height: =59
+                Width: =246
+                X: =400
+                Y: =71
                 ZIndex: =7
 
-            "'MS-100_PDF_Label' As label":
-                Align: =Align.Center
+            Label2_5 As label:
                 Color: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Semibold
-                Size: =15
-                Text: ="인증서 첨부"
+                Height: =53
+                Size: =17
+                Text: ="취득 일자"
                 Width: =127
-                X: =600
-                Y: =15
+                X: =459
+                Y: =16
                 ZIndex: =8
 
-            "'MS-100 DatePicker' As datepicker":
-                DisplayMode: |-
-                    =
-                    If('MS-100_Toggle'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
-                Height: =50
-                Width: =184
-                X: =356
-                Y: =75
-                ZIndex: =9
-
-            "'MS-100 PDF' As icon.DocumentPDF":
-                Color: =RGBA(215, 223, 240, 1)
-                DisplayMode: |-
-                    =
-                    If('MS-100_Toggle'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
-                Icon: =Icon.DocumentPDF
-                X: =632
-                Y: =60
-                ZIndex: =10
-
-        "'MS-101_DataCard' As typedDataCard.textualEditCard":
-            BorderColor: =RGBA(255, 255, 255, 1)
+        "'MS-101_DataCard3' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
-            BorderThickness: =3
             DataField: ="cr778_ms101"
             Default: =ThisItem.'MS-101'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@ability_license],DataSourceInfo.DisplayName,"cr778_ms101")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =140
+            Height: =135
             MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_ms101")
             Required: =false
-            Update: =DataCardValue65.Text
-            Width: =800
+            Update: =DataCardValue41.Text
+            Width: =684
             X: =0
             Y: =3
             ZIndex: =1
 
-            DataCardKey66 As label:
+            DataCardKey42 As label:
                 AutoHeight: =true
                 Color: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Bold
-                Height: =34
-                Size: =25
+                Height: =65
+                Size: =30
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =160
                 Wrap: =false
                 ZIndex: =1
 
-            DataCardValue65 As text:
+            DataCardValue41 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -448,10 +368,10 @@ User_License_Page As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey66.Y + DataCardKey66.Height + 5
+                Y: =DataCardKey42.Y + DataCardKey42.Height + 5
                 ZIndex: =2
 
-            ErrorMessage61 As label:
+            ErrorMessage37 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -463,49 +383,47 @@ User_License_Page As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue65.Y + DataCardValue65.Height
+                Y: =DataCardValue41.Y + DataCardValue41.Height
                 ZIndex: =3
 
-            StarVisible61 As label:
+            StarVisible37 As label:
                 Align: =Align.Center
-                Height: =DataCardKey66.Height
+                Height: =DataCardKey42.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey66.Y
+                Y: =DataCardKey42.Y
                 ZIndex: =4
 
-        "'MS-700_DataCard' As typedDataCard.textualEditCard":
-            BorderColor: =RGBA(255, 255, 255, 1)
+        "'MS-700_DataCard3' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
-            BorderThickness: =3
             DataField: ="cr778_ms700"
             Default: =ThisItem.'MS-700'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@ability_license],DataSourceInfo.DisplayName,"cr778_ms700")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =140
+            Height: =135
             MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_ms700")
             Required: =false
-            Update: =DataCardValue66.Text
-            Width: =800
+            Update: =DataCardValue42.Text
+            Width: =684
             X: =0
             Y: =4
             ZIndex: =1
 
-            DataCardKey67 As label:
+            DataCardKey43 As label:
                 AutoHeight: =true
                 Color: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =25
+                Size: =30
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =160
                 Wrap: =false
                 ZIndex: =1
 
-            DataCardValue66 As text:
+            DataCardValue42 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -519,10 +437,10 @@ User_License_Page As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey67.Y + DataCardKey67.Height + 5
+                Y: =DataCardKey43.Y + DataCardKey43.Height + 5
                 ZIndex: =2
 
-            ErrorMessage62 As label:
+            ErrorMessage38 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -534,49 +452,47 @@ User_License_Page As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue66.Y + DataCardValue66.Height
+                Y: =DataCardValue42.Y + DataCardValue42.Height
                 ZIndex: =3
 
-            StarVisible62 As label:
+            StarVisible38 As label:
                 Align: =Align.Center
-                Height: =DataCardKey67.Height
+                Height: =DataCardKey43.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey67.Y
+                Y: =DataCardKey43.Y
                 ZIndex: =4
 
-        "'MS-900_DataCard' As typedDataCard.textualEditCard":
-            BorderColor: =RGBA(255, 255, 255, 1)
+        "'MS-900_DataCard3' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
-            BorderThickness: =3
             DataField: ="cr778_ms900"
             Default: =ThisItem.'MS-900'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@ability_license],DataSourceInfo.DisplayName,"cr778_ms900")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =140
+            Height: =135
             MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_ms900")
             Required: =false
-            Update: =DataCardValue67.Text
-            Width: =800
+            Update: =DataCardValue43.Text
+            Width: =684
             X: =0
             Y: =5
             ZIndex: =1
 
-            DataCardKey68 As label:
+            DataCardKey44 As label:
                 AutoHeight: =true
                 Color: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =25
+                Size: =30
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =160
                 Wrap: =false
                 ZIndex: =1
 
-            DataCardValue67 As text:
+            DataCardValue43 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -590,10 +506,10 @@ User_License_Page As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey68.Y + DataCardKey68.Height + 5
+                Y: =DataCardKey44.Y + DataCardKey44.Height + 5
                 ZIndex: =2
 
-            ErrorMessage63 As label:
+            ErrorMessage39 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -605,49 +521,47 @@ User_License_Page As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue67.Y + DataCardValue67.Height
+                Y: =DataCardValue43.Y + DataCardValue43.Height
                 ZIndex: =3
 
-            StarVisible63 As label:
+            StarVisible39 As label:
                 Align: =Align.Center
-                Height: =DataCardKey68.Height
+                Height: =DataCardKey44.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey68.Y
+                Y: =DataCardKey44.Y
                 ZIndex: =4
 
-        "'PL-200_DataCard' As typedDataCard.textualEditCard":
-            BorderColor: =RGBA(255, 255, 255, 1)
+        "'PL-200_DataCard3' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
-            BorderThickness: =3
             DataField: ="cr778_pl200"
             Default: =ThisItem.'PL-200'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@ability_license],DataSourceInfo.DisplayName,"cr778_pl200")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =140
+            Height: =135
             MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_pl200")
             Required: =false
-            Update: =DataCardValue68.Text
-            Width: =800
+            Update: =DataCardValue44.Text
+            Width: =684
             X: =0
             Y: =6
             ZIndex: =1
 
-            DataCardKey69 As label:
+            DataCardKey45 As label:
                 AutoHeight: =true
                 Color: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =25
+                Size: =30
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =160
                 Wrap: =false
                 ZIndex: =1
 
-            DataCardValue68 As text:
+            DataCardValue44 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -661,10 +575,10 @@ User_License_Page As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey69.Y + DataCardKey69.Height + 5
+                Y: =DataCardKey45.Y + DataCardKey45.Height + 5
                 ZIndex: =2
 
-            ErrorMessage64 As label:
+            ErrorMessage40 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -676,49 +590,47 @@ User_License_Page As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue68.Y + DataCardValue68.Height
+                Y: =DataCardValue44.Y + DataCardValue44.Height
                 ZIndex: =3
 
-            StarVisible64 As label:
+            StarVisible40 As label:
                 Align: =Align.Center
-                Height: =DataCardKey69.Height
+                Height: =DataCardKey45.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey69.Y
+                Y: =DataCardKey45.Y
                 ZIndex: =4
 
-        "'PL-300_DataCard' As typedDataCard.textualEditCard":
-            BorderColor: =RGBA(255, 255, 255, 1)
+        "'PL-300_DataCard3' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
-            BorderThickness: =3
             DataField: ="cr778_pl300"
             Default: =ThisItem.'PL-300'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@ability_license],DataSourceInfo.DisplayName,"cr778_pl300")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =140
+            Height: =135
             MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_pl300")
             Required: =false
-            Update: =DataCardValue69.Text
-            Width: =800
+            Update: =DataCardValue45.Text
+            Width: =684
             X: =0
             Y: =7
             ZIndex: =1
 
-            DataCardKey70 As label:
+            DataCardKey46 As label:
                 AutoHeight: =true
                 Color: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =25
+                Size: =30
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =160
                 Wrap: =false
                 ZIndex: =1
 
-            DataCardValue69 As text:
+            DataCardValue45 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -732,10 +644,10 @@ User_License_Page As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey70.Y + DataCardKey70.Height + 5
+                Y: =DataCardKey46.Y + DataCardKey46.Height + 5
                 ZIndex: =2
 
-            ErrorMessage65 As label:
+            ErrorMessage41 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -747,49 +659,47 @@ User_License_Page As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue69.Y + DataCardValue69.Height
+                Y: =DataCardValue45.Y + DataCardValue45.Height
                 ZIndex: =3
 
-            StarVisible65 As label:
+            StarVisible41 As label:
                 Align: =Align.Center
-                Height: =DataCardKey70.Height
+                Height: =DataCardKey46.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey70.Y
+                Y: =DataCardKey46.Y
                 ZIndex: =4
 
-        "'PL-400_DataCard' As typedDataCard.textualEditCard":
-            BorderColor: =RGBA(255, 255, 255, 1)
+        "'PL-400_DataCard3' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
-            BorderThickness: =3
             DataField: ="cr778_pl400"
             Default: =ThisItem.'PL-400'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@ability_license],DataSourceInfo.DisplayName,"cr778_pl400")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =140
+            Height: =135
             MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_pl400")
             Required: =false
-            Update: =DataCardValue70.Text
-            Width: =800
+            Update: =DataCardValue46.Text
+            Width: =684
             X: =0
             Y: =8
             ZIndex: =1
 
-            DataCardKey71 As label:
+            DataCardKey47 As label:
                 AutoHeight: =true
                 Color: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =25
+                Size: =30
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =160
                 Wrap: =false
                 ZIndex: =1
 
-            DataCardValue70 As text:
+            DataCardValue46 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -803,10 +713,10 @@ User_License_Page As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey71.Y + DataCardKey71.Height + 5
+                Y: =DataCardKey47.Y + DataCardKey47.Height + 5
                 ZIndex: =2
 
-            ErrorMessage66 As label:
+            ErrorMessage42 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -818,49 +728,47 @@ User_License_Page As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue70.Y + DataCardValue70.Height
+                Y: =DataCardValue46.Y + DataCardValue46.Height
                 ZIndex: =3
 
-            StarVisible66 As label:
+            StarVisible42 As label:
                 Align: =Align.Center
-                Height: =DataCardKey71.Height
+                Height: =DataCardKey47.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey71.Y
+                Y: =DataCardKey47.Y
                 ZIndex: =4
 
-        "'PL-600_DataCard' As typedDataCard.textualEditCard":
-            BorderColor: =RGBA(255, 255, 255, 1)
+        "'PL-600_DataCard3' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
-            BorderThickness: =3
             DataField: ="cr778_pl600"
             Default: =ThisItem.'PL-600'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@ability_license],DataSourceInfo.DisplayName,"cr778_pl600")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =140
+            Height: =135
             MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_pl600")
             Required: =false
-            Update: =DataCardValue71.Text
-            Width: =800
+            Update: =DataCardValue47.Text
+            Width: =684
             X: =0
             Y: =9
             ZIndex: =1
 
-            DataCardKey72 As label:
+            DataCardKey48 As label:
                 AutoHeight: =true
                 Color: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =25
+                Size: =30
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =160
                 Wrap: =false
                 ZIndex: =1
 
-            DataCardValue71 As text:
+            DataCardValue47 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -874,10 +782,10 @@ User_License_Page As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey72.Y + DataCardKey72.Height + 5
+                Y: =DataCardKey48.Y + DataCardKey48.Height + 5
                 ZIndex: =2
 
-            ErrorMessage67 As label:
+            ErrorMessage43 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -889,49 +797,47 @@ User_License_Page As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue71.Y + DataCardValue71.Height
+                Y: =DataCardValue47.Y + DataCardValue47.Height
                 ZIndex: =3
 
-            StarVisible67 As label:
+            StarVisible43 As label:
                 Align: =Align.Center
-                Height: =DataCardKey72.Height
+                Height: =DataCardKey48.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey72.Y
+                Y: =DataCardKey48.Y
                 ZIndex: =4
 
-        "'PL-900_DataCard' As typedDataCard.textualEditCard":
-            BorderColor: =RGBA(255, 255, 255, 1)
+        "'PL-900_DataCard3' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
-            BorderThickness: =3
             DataField: ="cr778_pl900"
             Default: =ThisItem.'PL-900'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@ability_license],DataSourceInfo.DisplayName,"cr778_pl900")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =140
+            Height: =135
             MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_pl900")
             Required: =false
-            Update: =DataCardValue72.Text
-            Width: =800
+            Update: =DataCardValue48.Text
+            Width: =684
             X: =0
             Y: =10
             ZIndex: =1
 
-            DataCardKey73 As label:
+            DataCardKey49 As label:
                 AutoHeight: =true
                 Color: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =25
+                Size: =30
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =160
                 Wrap: =false
                 ZIndex: =1
 
-            DataCardValue72 As text:
+            DataCardValue48 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -945,10 +851,10 @@ User_License_Page As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey73.Y + DataCardKey73.Height + 5
+                Y: =DataCardKey49.Y + DataCardKey49.Height + 5
                 ZIndex: =2
 
-            ErrorMessage68 As label:
+            ErrorMessage44 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -960,20 +866,20 @@ User_License_Page As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue72.Y + DataCardValue72.Height
+                Y: =DataCardValue48.Y + DataCardValue48.Height
                 ZIndex: =3
 
-            StarVisible68 As label:
+            StarVisible44 As label:
                 Align: =Align.Center
-                Height: =DataCardKey73.Height
+                Height: =DataCardKey49.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey73.Y
+                Y: =DataCardKey49.Y
                 ZIndex: =4
 
-        License_Name_DataCard As typedDataCard.textualEditCard:
+        Name_DataCard8 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr778_name"
             Default: =ThisItem.Name
@@ -983,25 +889,24 @@ User_License_Page As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_name")
             Required: =true
-            Update: =DataCardValue73.Text
+            Update: =DataCardValue49.Text
             Visible: =false
-            Width: =266
+            Width: =228
             X: =0
             Y: =11
             ZIndex: =1
 
-            DataCardKey74 As label:
+            DataCardKey50 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
-                Visible: =false
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue73 As text:
+            DataCardValue49 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: |-
                     =With(
@@ -1017,13 +922,12 @@ User_License_Page As screen:
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Tooltip: =Parent.DisplayName
-                Visible: =false
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey74.Y + DataCardKey74.Height + 5
+                Y: =DataCardKey50.Y + DataCardKey50.Height + 5
                 ZIndex: =2
 
-            ErrorMessage69 As label:
+            ErrorMessage45 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -1035,20 +939,20 @@ User_License_Page As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue73.Y + DataCardValue73.Height
+                Y: =DataCardValue49.Y + DataCardValue49.Height
                 ZIndex: =3
 
-            StarVisible69 As label:
+            StarVisible45 As label:
                 Align: =Align.Center
-                Height: =DataCardKey74.Height
+                Height: =DataCardKey50.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey74.Y
+                Y: =DataCardKey50.Y
                 ZIndex: =4
 
-        "'License_E-mail_DataCard' As typedDataCard.textualEditCard":
+        "'E-mail_DataCard3' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr778_email"
             Default: =ThisItem.'E-mail'
@@ -1058,14 +962,14 @@ User_License_Page As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_email")
             Required: =false
-            Update: =DataCardValue74.Text
+            Update: =DataCardValue50.Text
             Visible: =false
-            Width: =266
+            Width: =228
             X: =1
             Y: =11
             ZIndex: =1
 
-            DataCardKey75 As label:
+            DataCardKey51 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -1075,9 +979,9 @@ User_License_Page As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue74 As text:
+            DataCardValue50 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =varUser.Email
+                Default: =User().Email
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 MaxLength: =Parent.MaxLength
@@ -1087,13 +991,12 @@ User_License_Page As screen:
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Tooltip: =Parent.DisplayName
-                Visible: =false
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey75.Y + DataCardKey75.Height + 5
+                Y: =DataCardKey51.Y + DataCardKey51.Height + 5
                 ZIndex: =2
 
-            ErrorMessage70 As label:
+            ErrorMessage46 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -1105,16 +1008,973 @@ User_License_Page As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue74.Y + DataCardValue74.Height
+                Y: =DataCardValue50.Y + DataCardValue50.Height
                 ZIndex: =3
 
-            StarVisible70 As label:
+            StarVisible46 As label:
                 Align: =Align.Center
-                Height: =DataCardKey75.Height
+                Height: =DataCardKey51.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey75.Y
+                Y: =DataCardKey51.Y
+                ZIndex: =4
+
+    Form7 As form:
+        DataSource: =ability_file
+        DefaultMode: =FormMode.New
+        Height: =410
+        Width: =596
+        X: =743
+        Y: =186
+        ZIndex: =9
+
+        "'AZ-104_DataCard5' As typedDataCard.fileEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_az104"
+            Default: |-
+                =If(!IsBlank(ThisItem.'AZ-104'.FileName), Table({DisplayName: ThisItem.'AZ-104'.FileName, Value: ThisItem.'AZ-104'.Value}), Blank())
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_az104")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue53.Attachments
+            Visible: =If(Toggle1.Value=true,true,false)
+            Width: =594
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            DataCardKey54 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue53 As attachments:
+                AddAttachmentText: ="파일 업로드"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DisplayMode: =Parent.DisplayMode
+                Height: =90
+                IsInDataCard: =true
+                Items: =Parent.Default
+                MaxAttachments: =1
+                MaxAttachmentsText: =""
+                NoAttachmentsText: ="파일이 없습니다."
+                PaddingBottom: =5
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =5
+                PaddingTop: =5
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey54.Y + DataCardKey54.Height + 5
+                ZIndex: =2
+
+            ErrorMessage48 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue53.Y + DataCardValue53.Height
+                ZIndex: =3
+
+            StarVisible48 As label:
+                Align: =Align.Center
+                Height: =DataCardKey54.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey54.Y
+                ZIndex: =4
+
+        "'AZ-305_DataCard4' As typedDataCard.fileEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_az305"
+            Default: |-
+                =If(!IsBlank(ThisItem.'AZ-305'.FileName), Table({DisplayName: ThisItem.'AZ-305'.FileName, Value: ThisItem.'AZ-305'.Value}), Blank())
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_az305")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue54.Attachments
+            Visible: =If(Toggle1_1.Value=true,true,false)
+            Width: =594
+            X: =0
+            Y: =1
+            ZIndex: =1
+
+            DataCardKey55 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue54 As attachments:
+                AddAttachmentText: ="파일 업로드"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DisplayMode: =Parent.DisplayMode
+                Height: =90
+                IsInDataCard: =true
+                Items: =Parent.Default
+                MaxAttachments: =1
+                MaxAttachmentsText: =""
+                NoAttachmentsText: ="파일이 없습니다."
+                PaddingBottom: =5
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =5
+                PaddingTop: =5
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey55.Y + DataCardKey55.Height + 5
+                ZIndex: =2
+
+            ErrorMessage49 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue54.Y + DataCardValue54.Height
+                ZIndex: =3
+
+            StarVisible49 As label:
+                Align: =Align.Center
+                Height: =DataCardKey55.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey55.Y
+                ZIndex: =4
+
+        "'MS-100_DataCard4' As typedDataCard.fileEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_ms100"
+            Default: |-
+                =If(!IsBlank(ThisItem.'MS-100'.FileName), Table({DisplayName: ThisItem.'MS-100'.FileName, Value: ThisItem.'MS-100'.Value}), Blank())
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_ms100")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue55.Attachments
+            Visible: =If(Toggle1_2.Value=true,true,false)
+            Width: =594
+            X: =0
+            Y: =2
+            ZIndex: =1
+
+            DataCardKey56 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue55 As attachments:
+                AddAttachmentText: ="파일 업로드"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DisplayMode: =Parent.DisplayMode
+                Height: =90
+                IsInDataCard: =true
+                Items: =Parent.Default
+                MaxAttachments: =1
+                MaxAttachmentsText: =""
+                NoAttachmentsText: ="파일이 없습니다."
+                PaddingBottom: =5
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =5
+                PaddingTop: =5
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey56.Y + DataCardKey56.Height + 5
+                ZIndex: =2
+
+            ErrorMessage50 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue55.Y + DataCardValue55.Height
+                ZIndex: =3
+
+            StarVisible50 As label:
+                Align: =Align.Center
+                Height: =DataCardKey56.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey56.Y
+                ZIndex: =4
+
+        "'MS-101_DataCard4' As typedDataCard.fileEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_ms101"
+            Default: |-
+                =If(!IsBlank(ThisItem.'MS-101'.FileName), Table({DisplayName: ThisItem.'MS-101'.FileName, Value: ThisItem.'MS-101'.Value}), Blank())
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_ms101")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue56.Attachments
+            Width: =594
+            X: =0
+            Y: =3
+            ZIndex: =1
+
+            DataCardKey57 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue56 As attachments:
+                AddAttachmentText: ="파일 업로드"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DisplayMode: =Parent.DisplayMode
+                Height: =90
+                IsInDataCard: =true
+                Items: =Parent.Default
+                MaxAttachments: =1
+                MaxAttachmentsText: =""
+                NoAttachmentsText: ="파일이 없습니다."
+                PaddingBottom: =5
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =5
+                PaddingTop: =5
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey57.Y + DataCardKey57.Height + 5
+                ZIndex: =2
+
+            ErrorMessage51 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue56.Y + DataCardValue56.Height
+                ZIndex: =3
+
+            StarVisible51 As label:
+                Align: =Align.Center
+                Height: =DataCardKey57.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey57.Y
+                ZIndex: =4
+
+        "'MS-700_DataCard4' As typedDataCard.fileEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_ms700"
+            Default: |-
+                =If(!IsBlank(ThisItem.'MS-700'.FileName), Table({DisplayName: ThisItem.'MS-700'.FileName, Value: ThisItem.'MS-700'.Value}), Blank())
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_ms700")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue57.Attachments
+            Width: =594
+            X: =0
+            Y: =4
+            ZIndex: =1
+
+            DataCardKey58 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue57 As attachments:
+                AddAttachmentText: ="파일 업로드"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DisplayMode: =Parent.DisplayMode
+                Height: =90
+                IsInDataCard: =true
+                Items: =Parent.Default
+                MaxAttachments: =1
+                MaxAttachmentsText: =""
+                NoAttachmentsText: ="파일이 없습니다."
+                PaddingBottom: =5
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =5
+                PaddingTop: =5
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey58.Y + DataCardKey58.Height + 5
+                ZIndex: =2
+
+            ErrorMessage52 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue57.Y + DataCardValue57.Height
+                ZIndex: =3
+
+            StarVisible52 As label:
+                Align: =Align.Center
+                Height: =DataCardKey58.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey58.Y
+                ZIndex: =4
+
+        "'MS-900_DataCard4' As typedDataCard.fileEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_ms900"
+            Default: |-
+                =If(!IsBlank(ThisItem.'MS-900'.FileName), Table({DisplayName: ThisItem.'MS-900'.FileName, Value: ThisItem.'MS-900'.Value}), Blank())
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_ms900")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue58.Attachments
+            Width: =594
+            X: =0
+            Y: =5
+            ZIndex: =1
+
+            DataCardKey59 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue58 As attachments:
+                AddAttachmentText: ="파일 업로드"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DisplayMode: =Parent.DisplayMode
+                Height: =90
+                IsInDataCard: =true
+                Items: =Parent.Default
+                MaxAttachments: =1
+                MaxAttachmentsText: =""
+                NoAttachmentsText: ="파일이 없습니다."
+                PaddingBottom: =5
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =5
+                PaddingTop: =5
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey59.Y + DataCardKey59.Height + 5
+                ZIndex: =2
+
+            ErrorMessage53 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue58.Y + DataCardValue58.Height
+                ZIndex: =3
+
+            StarVisible53 As label:
+                Align: =Align.Center
+                Height: =DataCardKey59.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey59.Y
+                ZIndex: =4
+
+        "'PL-200_DataCard4' As typedDataCard.fileEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_pl200"
+            Default: |-
+                =If(!IsBlank(ThisItem.'PL-200'.FileName), Table({DisplayName: ThisItem.'PL-200'.FileName, Value: ThisItem.'PL-200'.Value}), Blank())
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_pl200")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue59.Attachments
+            Width: =594
+            X: =0
+            Y: =6
+            ZIndex: =1
+
+            DataCardKey60 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue59 As attachments:
+                AddAttachmentText: ="파일 업로드"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DisplayMode: =Parent.DisplayMode
+                Height: =90
+                IsInDataCard: =true
+                Items: =Parent.Default
+                MaxAttachments: =1
+                MaxAttachmentsText: =""
+                NoAttachmentsText: ="파일이 없습니다."
+                PaddingBottom: =5
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =5
+                PaddingTop: =5
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey60.Y + DataCardKey60.Height + 5
+                ZIndex: =2
+
+            ErrorMessage54 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue59.Y + DataCardValue59.Height
+                ZIndex: =3
+
+            StarVisible54 As label:
+                Align: =Align.Center
+                Height: =DataCardKey60.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey60.Y
+                ZIndex: =4
+
+        "'PL-300_DataCard4' As typedDataCard.fileEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_pl300"
+            Default: |-
+                =If(!IsBlank(ThisItem.'PL-300'.FileName), Table({DisplayName: ThisItem.'PL-300'.FileName, Value: ThisItem.'PL-300'.Value}), Blank())
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_pl300")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue60.Attachments
+            Width: =594
+            X: =0
+            Y: =7
+            ZIndex: =1
+
+            DataCardKey61 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue60 As attachments:
+                AddAttachmentText: ="파일 업로드"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DisplayMode: =Parent.DisplayMode
+                Height: =90
+                IsInDataCard: =true
+                Items: =Parent.Default
+                MaxAttachments: =1
+                MaxAttachmentsText: =""
+                NoAttachmentsText: ="파일이 없습니다."
+                PaddingBottom: =5
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =5
+                PaddingTop: =5
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey61.Y + DataCardKey61.Height + 5
+                ZIndex: =2
+
+            ErrorMessage55 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue60.Y + DataCardValue60.Height
+                ZIndex: =3
+
+            StarVisible55 As label:
+                Align: =Align.Center
+                Height: =DataCardKey61.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey61.Y
+                ZIndex: =4
+
+        "'PL-400_DataCard4' As typedDataCard.fileEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_pl400"
+            Default: |-
+                =If(!IsBlank(ThisItem.'PL-400'.FileName), Table({DisplayName: ThisItem.'PL-400'.FileName, Value: ThisItem.'PL-400'.Value}), Blank())
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_pl400")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue61.Attachments
+            Width: =594
+            X: =0
+            Y: =8
+            ZIndex: =1
+
+            DataCardKey62 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue61 As attachments:
+                AddAttachmentText: ="파일 업로드"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DisplayMode: =Parent.DisplayMode
+                Height: =90
+                IsInDataCard: =true
+                Items: =Parent.Default
+                MaxAttachments: =1
+                MaxAttachmentsText: =""
+                NoAttachmentsText: ="파일이 없습니다."
+                PaddingBottom: =5
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =5
+                PaddingTop: =5
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey62.Y + DataCardKey62.Height + 5
+                ZIndex: =2
+
+            ErrorMessage56 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue61.Y + DataCardValue61.Height
+                ZIndex: =3
+
+            StarVisible56 As label:
+                Align: =Align.Center
+                Height: =DataCardKey62.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey62.Y
+                ZIndex: =4
+
+        "'PL-600_DataCard4' As typedDataCard.fileEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_pl600"
+            Default: |-
+                =If(!IsBlank(ThisItem.'PL-600'.FileName), Table({DisplayName: ThisItem.'PL-600'.FileName, Value: ThisItem.'PL-600'.Value}), Blank())
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_pl600")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue62.Attachments
+            Width: =594
+            X: =0
+            Y: =9
+            ZIndex: =1
+
+            DataCardKey63 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue62 As attachments:
+                AddAttachmentText: ="파일 업로드"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DisplayMode: =Parent.DisplayMode
+                Height: =90
+                IsInDataCard: =true
+                Items: =Parent.Default
+                MaxAttachments: =1
+                MaxAttachmentsText: =""
+                NoAttachmentsText: ="파일이 없습니다."
+                PaddingBottom: =5
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =5
+                PaddingTop: =5
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey63.Y + DataCardKey63.Height + 5
+                ZIndex: =2
+
+            ErrorMessage57 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue62.Y + DataCardValue62.Height
+                ZIndex: =3
+
+            StarVisible57 As label:
+                Align: =Align.Center
+                Height: =DataCardKey63.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey63.Y
+                ZIndex: =4
+
+        "'PL-900_DataCard4' As typedDataCard.fileEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_pl900"
+            Default: |-
+                =If(!IsBlank(ThisItem.'PL-900'.FileName), Table({DisplayName: ThisItem.'PL-900'.FileName, Value: ThisItem.'PL-900'.Value}), Blank())
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_pl900")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue63.Attachments
+            Width: =594
+            X: =0
+            Y: =10
+            ZIndex: =1
+
+            DataCardKey64 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue63 As attachments:
+                AddAttachmentText: ="파일 업로드"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DisplayMode: =Parent.DisplayMode
+                Height: =90
+                IsInDataCard: =true
+                Items: =Parent.Default
+                MaxAttachments: =1
+                MaxAttachmentsText: =""
+                NoAttachmentsText: ="파일이 없습니다."
+                PaddingBottom: =5
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =5
+                PaddingTop: =5
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey64.Y + DataCardKey64.Height + 5
+                ZIndex: =2
+
+            ErrorMessage58 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue63.Y + DataCardValue63.Height
+                ZIndex: =3
+
+            StarVisible58 As label:
+                Align: =Align.Center
+                Height: =DataCardKey64.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey64.Y
+                ZIndex: =4
+
+        Name_DataCard10 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_name"
+            Default: =ThisItem.Name
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_name")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@ability_file], DataSourceInfo.MaxLength, "cr778_name")
+            Required: =true
+            Update: =DataCardValue64.Text
+            Visible: =false
+            Width: =198
+            X: =0
+            Y: =11
+            ZIndex: =1
+
+            DataCardKey65 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue64 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: |-
+                    =With(
+                        { wName: Split(User().FullName, " ") },
+                        Last(wName).Value & First(wName).Value
+                    )
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey65.Y + DataCardKey65.Height + 5
+                ZIndex: =2
+
+            ErrorMessage59 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue64.Y + DataCardValue64.Height
+                ZIndex: =3
+
+            StarVisible59 As label:
+                Align: =Align.Center
+                Height: =DataCardKey65.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey65.Y
+                ZIndex: =4
+
+        "'E-mail_DataCard4' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_email"
+            Default: =ThisItem.'E-mail'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_email")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@ability_file], DataSourceInfo.MaxLength, "cr778_email")
+            Required: =false
+            Update: =DataCardValue65.Text
+            Visible: =false
+            Width: =198
+            X: =1
+            Y: =11
+            ZIndex: =1
+
+            DataCardKey66 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue65 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =User().Email
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey66.Y + DataCardKey66.Height + 5
+                ZIndex: =2
+
+            ErrorMessage60 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue65.Y + DataCardValue65.Height
+                ZIndex: =3
+
+            StarVisible60 As label:
+                Align: =Align.Center
+                Height: =DataCardKey66.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey66.Y
                 ZIndex: =4
 
