@@ -1,5 +1,5 @@
 User_License_Page As screen:
-    BackgroundImage: =
+    BackgroundImage: =MainPagePicture
 
     License_Title As label:
         Align: =Align.Center
@@ -10,7 +10,7 @@ User_License_Page As screen:
         Size: =40
         Text: ="License Page"
         Width: =1366
-        ZIndex: =3
+        ZIndex: =4
 
     License_send As icon.Send:
         Color: =RGBA(102, 182, 227, 0.7)
@@ -21,7 +21,7 @@ User_License_Page As screen:
         Width: =110
         X: =1120
         Y: =600
-        ZIndex: =4
+        ZIndex: =5
 
     License_Back As icon.BackArrow:
         Color: =RGBA(102, 182, 227, 0.7)
@@ -31,7 +31,7 @@ User_License_Page As screen:
         Width: =110
         X: =110
         Y: =40
-        ZIndex: =5
+        ZIndex: =6
 
     License_Home As icon.Home:
         Color: =RGBA(102, 182, 227, 0.7)
@@ -41,43 +41,63 @@ User_License_Page As screen:
         Width: =110
         X: =1120
         Y: =40
-        ZIndex: =6
-
-    Form2 As form:
-        DataSource: =ability_license
-        DefaultMode: =FormMode.New
-        Width: =938
-        X: =159
-        Y: =199
         ZIndex: =7
 
-        "'AZ-104_DataCard1' As typedDataCard.textualEditCard":
+    License_Input As form:
+        DataSource: =ability_license
+        DefaultMode: =FormMode.New
+        Fill: =RGBA(102, 182, 227, 0.2)
+        X: =274
+        Y: =191
+        ZIndex: =8
+
+        "'AZ-104_DataCard' As typedDataCard.textualEditCard":
+            BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.Solid
+            BorderThickness: =3
             DataField: ="cr778_az104"
             Default: =ThisItem.'AZ-104'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@ability_license],DataSourceInfo.DisplayName,"cr778_az104")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =155
+            Height: =140
             MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_az104")
             Required: =false
-            Update: =Toggle1.Value
-            Width: =936
+            Update: =DataCardValue62.Text
+            Width: =800
             X: =0
             Y: =0
             ZIndex: =1
 
-            DataCardKey5 As label:
-                Height: =57
+            DataCardKey63 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =34
                 Size: =25
                 Text: =Parent.DisplayName
-                Width: =167
+                Width: =Parent.Width - 60
                 Wrap: =false
-                X: =30
-                Y: =15
                 ZIndex: =1
 
-            ErrorMessage3 As label:
+            DataCardValue62 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey63.Y + DataCardKey63.Height + 5
+                ZIndex: =2
+
+            ErrorMessage58 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -89,96 +109,56 @@ User_License_Page As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =Toggle1.Y + Toggle1.Height
+                Y: =DataCardValue62.Y + DataCardValue62.Height
                 ZIndex: =3
 
-            StarVisible3 As label:
+            StarVisible58 As label:
                 Align: =Align.Center
-                Height: =DataCardKey5.Height
+                Height: =DataCardKey63.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey5.Y
+                Y: =DataCardKey63.Y
                 ZIndex: =4
 
-            Toggle1 As toggleSwitch:
-                Height: =47
-                Width: =156
-                X: =246
-                Y: =25
-                ZIndex: =6
+            Toggle2 As toggleSwitch:
+                Height: =40
+                Width: =125
+                X: =160
+                Y: =60
+                ZIndex: =5
 
-            DatePicker1 As datepicker:
-                Width: =199
-                X: =501
-                Y: =21
-                ZIndex: =8
-
-            Label2 As label:
-                BorderThickness: =1
-                Height: =74
-                Text: ="취득일자"
-                Width: =294
-                X: =418
-                Y: =8
-                ZIndex: =9
-
-            Label3 As label:
-                BorderThickness: =1
-                Height: =77
-                Text: ="취득여부"
-                Width: =244
-                X: =158
-                Y: =5
-                ZIndex: =10
-
-            Icon1 As icon.DocumentPDF:
-                Icon: =Icon.DocumentPDF
-                OnSelect: |-
-                    =SubmitForm(Address_Input);
-                    NewForm(Address_Input);
-                    ResetForm(Address_Input);
-                X: =842
-                Y: =16
-                ZIndex: =11
-
-            Label2_1 As label:
-                BorderThickness: =1
-                Height: =77
-                Text: ="인증서 첨부"
-                Width: =176
-                X: =730
-                Y: =5
-                ZIndex: =12
-
-        "'AZ-305_DataCard1' As typedDataCard.textualEditCard":
+        "'AZ-305_DataCard' As typedDataCard.textualEditCard":
+            BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.Solid
+            BorderThickness: =3
             DataField: ="cr778_az305"
             Default: =ThisItem.'AZ-305'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@ability_license],DataSourceInfo.DisplayName,"cr778_az305")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =140
             MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_az305")
             Required: =false
-            Update: =DataCardValue6.Text
-            Width: =936
+            Update: =DataCardValue63.Text
+            Width: =800
             X: =0
             Y: =1
             ZIndex: =1
 
-            DataCardKey6 As label:
+            DataCardKey64 As label:
                 AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =25
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
-                X: =30
-                Y: =10
                 ZIndex: =1
 
-            DataCardValue6 As text:
+            DataCardValue63 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -192,10 +172,10 @@ User_License_Page As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey6.Y + DataCardKey6.Height + 5
+                Y: =DataCardKey64.Y + DataCardKey64.Height + 5
                 ZIndex: =2
 
-            ErrorMessage4 As label:
+            ErrorMessage59 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -207,63 +187,49 @@ User_License_Page As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue6.Y + DataCardValue6.Height
+                Y: =DataCardValue63.Y + DataCardValue63.Height
                 ZIndex: =3
 
-            StarVisible4 As label:
+            StarVisible59 As label:
                 Align: =Align.Center
-                Height: =DataCardKey6.Height
+                Height: =DataCardKey64.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey6.Y
+                Y: =DataCardKey64.Y
                 ZIndex: =4
 
-        "'MS-100_DataCard1' As typedDataCard.textualEditCard":
+        "'MS-100_DataCard' As typedDataCard.textualEditCard":
+            BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.Solid
+            BorderThickness: =3
             DataField: ="cr778_ms100"
             Default: =ThisItem.'MS-100'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@ability_license],DataSourceInfo.DisplayName,"cr778_ms100")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =112
             MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_ms100")
             Required: =false
-            Update: =DataCardValue7.Text
-            Width: =936
+            Update: ='MS-100_Toggle'.Value
+            Width: =800
             X: =0
             Y: =2
             ZIndex: =1
 
-            DataCardKey7 As label:
+            DataCardKey65 As label:
                 AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =25
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
-                X: =30
-                Y: =10
                 ZIndex: =1
 
-            DataCardValue7 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey7.Y + DataCardKey7.Height + 5
-                ZIndex: =2
-
-            ErrorMessage5 As label:
+            ErrorMessage60 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -275,46 +241,105 @@ User_License_Page As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue7.Y + DataCardValue7.Height
+                Y: ='MS-100_Toggle'.Y + 'MS-100_Toggle'.Height
                 ZIndex: =3
 
-            StarVisible5 As label:
+            StarVisible60 As label:
                 Align: =Align.Center
-                Height: =DataCardKey7.Height
+                Height: =DataCardKey65.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey7.Y
+                Y: =DataCardKey65.Y
                 ZIndex: =4
 
-        "'MS-101_DataCard1' As typedDataCard.textualEditCard":
+            "'MS-100_Toggle' As toggleSwitch":
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =40
+                Width: =125
+                X: =160
+                Y: =90
+                ZIndex: =5
+
+            "'MS-100_Toggle_Label' As label":
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Semibold
+                Size: =15
+                Text: ="취득 여부"
+                Width: =219
+                X: =114
+                Y: =43
+                ZIndex: =6
+
+            "'MS-100_Date_Label' As label":
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Size: =15
+                Text: ="취득 일자"
+                Width: =178
+                X: =359
+                Y: =46
+                ZIndex: =7
+
+            "'MS-100_PDF_Label' As label":
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Semibold
+                Size: =15
+                Text: ="인증서 첨부"
+                Width: =127
+                X: =600
+                Y: =15
+                ZIndex: =8
+
+            "'MS-100 DatePicker' As datepicker":
+                Height: =50
+                Width: =184
+                X: =356
+                Y: =84
+                ZIndex: =9
+
+            "'MS-100 PDF' As icon.DocumentPDF":
+                Color: =RGBA(255, 255, 255, 1)
+                Icon: =Icon.DocumentPDF
+                X: =632
+                Y: =60
+                ZIndex: =10
+
+        "'MS-101_DataCard5' As typedDataCard.textualEditCard":
+            BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.Solid
+            BorderThickness: =3
             DataField: ="cr778_ms101"
             Default: =ThisItem.'MS-101'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@ability_license],DataSourceInfo.DisplayName,"cr778_ms101")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =140
             MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_ms101")
             Required: =false
-            Update: =DataCardValue8.Text
-            Width: =936
+            Update: =DataCardValue65.Text
+            Width: =800
             X: =0
             Y: =3
             ZIndex: =1
 
-            DataCardKey8 As label:
+            DataCardKey66 As label:
                 AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =25
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
-                X: =30
-                Y: =10
                 ZIndex: =1
 
-            DataCardValue8 As text:
+            DataCardValue65 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -328,10 +353,10 @@ User_License_Page As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey8.Y + DataCardKey8.Height + 5
+                Y: =DataCardKey66.Y + DataCardKey66.Height + 5
                 ZIndex: =2
 
-            ErrorMessage6 As label:
+            ErrorMessage61 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -343,46 +368,49 @@ User_License_Page As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue8.Y + DataCardValue8.Height
+                Y: =DataCardValue65.Y + DataCardValue65.Height
                 ZIndex: =3
 
-            StarVisible6 As label:
+            StarVisible61 As label:
                 Align: =Align.Center
-                Height: =DataCardKey8.Height
+                Height: =DataCardKey66.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey8.Y
+                Y: =DataCardKey66.Y
                 ZIndex: =4
 
-        "'MS-700_DataCard1' As typedDataCard.textualEditCard":
+        "'MS-700_DataCard5' As typedDataCard.textualEditCard":
+            BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.Solid
+            BorderThickness: =3
             DataField: ="cr778_ms700"
             Default: =ThisItem.'MS-700'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@ability_license],DataSourceInfo.DisplayName,"cr778_ms700")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =140
             MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_ms700")
             Required: =false
-            Update: =DataCardValue9.Text
-            Width: =936
+            Update: =DataCardValue66.Text
+            Width: =800
             X: =0
             Y: =4
             ZIndex: =1
 
-            DataCardKey9 As label:
+            DataCardKey67 As label:
                 AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =25
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
-                X: =30
-                Y: =10
                 ZIndex: =1
 
-            DataCardValue9 As text:
+            DataCardValue66 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -396,10 +424,10 @@ User_License_Page As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey9.Y + DataCardKey9.Height + 5
+                Y: =DataCardKey67.Y + DataCardKey67.Height + 5
                 ZIndex: =2
 
-            ErrorMessage7 As label:
+            ErrorMessage62 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -411,46 +439,49 @@ User_License_Page As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue9.Y + DataCardValue9.Height
+                Y: =DataCardValue66.Y + DataCardValue66.Height
                 ZIndex: =3
 
-            StarVisible7 As label:
+            StarVisible62 As label:
                 Align: =Align.Center
-                Height: =DataCardKey9.Height
+                Height: =DataCardKey67.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey9.Y
+                Y: =DataCardKey67.Y
                 ZIndex: =4
 
-        "'MS-900_DataCard1' As typedDataCard.textualEditCard":
+        "'MS-900_DataCard5' As typedDataCard.textualEditCard":
+            BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.Solid
+            BorderThickness: =3
             DataField: ="cr778_ms900"
             Default: =ThisItem.'MS-900'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@ability_license],DataSourceInfo.DisplayName,"cr778_ms900")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =140
             MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_ms900")
             Required: =false
-            Update: =DataCardValue10.Text
-            Width: =936
+            Update: =DataCardValue67.Text
+            Width: =800
             X: =0
             Y: =5
             ZIndex: =1
 
-            DataCardKey10 As label:
+            DataCardKey68 As label:
                 AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =25
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
-                X: =30
-                Y: =10
                 ZIndex: =1
 
-            DataCardValue10 As text:
+            DataCardValue67 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -464,10 +495,10 @@ User_License_Page As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey10.Y + DataCardKey10.Height + 5
+                Y: =DataCardKey68.Y + DataCardKey68.Height + 5
                 ZIndex: =2
 
-            ErrorMessage8 As label:
+            ErrorMessage63 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -479,46 +510,49 @@ User_License_Page As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue10.Y + DataCardValue10.Height
+                Y: =DataCardValue67.Y + DataCardValue67.Height
                 ZIndex: =3
 
-            StarVisible8 As label:
+            StarVisible63 As label:
                 Align: =Align.Center
-                Height: =DataCardKey10.Height
+                Height: =DataCardKey68.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey10.Y
+                Y: =DataCardKey68.Y
                 ZIndex: =4
 
-        "'PL-200_DataCard1' As typedDataCard.textualEditCard":
+        "'PL-200_DataCard5' As typedDataCard.textualEditCard":
+            BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.Solid
+            BorderThickness: =3
             DataField: ="cr778_pl200"
             Default: =ThisItem.'PL-200'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@ability_license],DataSourceInfo.DisplayName,"cr778_pl200")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =140
             MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_pl200")
             Required: =false
-            Update: =DataCardValue11.Text
-            Width: =936
+            Update: =DataCardValue68.Text
+            Width: =800
             X: =0
             Y: =6
             ZIndex: =1
 
-            DataCardKey11 As label:
+            DataCardKey69 As label:
                 AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =25
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
-                X: =30
-                Y: =10
                 ZIndex: =1
 
-            DataCardValue11 As text:
+            DataCardValue68 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -532,10 +566,10 @@ User_License_Page As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey11.Y + DataCardKey11.Height + 5
+                Y: =DataCardKey69.Y + DataCardKey69.Height + 5
                 ZIndex: =2
 
-            ErrorMessage9 As label:
+            ErrorMessage64 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -547,46 +581,49 @@ User_License_Page As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue11.Y + DataCardValue11.Height
+                Y: =DataCardValue68.Y + DataCardValue68.Height
                 ZIndex: =3
 
-            StarVisible9 As label:
+            StarVisible64 As label:
                 Align: =Align.Center
-                Height: =DataCardKey11.Height
+                Height: =DataCardKey69.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey11.Y
+                Y: =DataCardKey69.Y
                 ZIndex: =4
 
-        "'PL-300_DataCard1' As typedDataCard.textualEditCard":
+        "'PL-300_DataCard5' As typedDataCard.textualEditCard":
+            BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.Solid
+            BorderThickness: =3
             DataField: ="cr778_pl300"
             Default: =ThisItem.'PL-300'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@ability_license],DataSourceInfo.DisplayName,"cr778_pl300")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =140
             MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_pl300")
             Required: =false
-            Update: =DataCardValue12.Text
-            Width: =936
+            Update: =DataCardValue69.Text
+            Width: =800
             X: =0
             Y: =7
             ZIndex: =1
 
-            DataCardKey12 As label:
+            DataCardKey70 As label:
                 AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =25
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
-                X: =30
-                Y: =10
                 ZIndex: =1
 
-            DataCardValue12 As text:
+            DataCardValue69 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -600,10 +637,10 @@ User_License_Page As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey12.Y + DataCardKey12.Height + 5
+                Y: =DataCardKey70.Y + DataCardKey70.Height + 5
                 ZIndex: =2
 
-            ErrorMessage10 As label:
+            ErrorMessage65 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -615,46 +652,49 @@ User_License_Page As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue12.Y + DataCardValue12.Height
+                Y: =DataCardValue69.Y + DataCardValue69.Height
                 ZIndex: =3
 
-            StarVisible10 As label:
+            StarVisible65 As label:
                 Align: =Align.Center
-                Height: =DataCardKey12.Height
+                Height: =DataCardKey70.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey12.Y
+                Y: =DataCardKey70.Y
                 ZIndex: =4
 
-        "'PL-400_DataCard1' As typedDataCard.textualEditCard":
+        "'PL-400_DataCard5' As typedDataCard.textualEditCard":
+            BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.Solid
+            BorderThickness: =3
             DataField: ="cr778_pl400"
             Default: =ThisItem.'PL-400'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@ability_license],DataSourceInfo.DisplayName,"cr778_pl400")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =140
             MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_pl400")
             Required: =false
-            Update: =DataCardValue13.Text
-            Width: =936
+            Update: =DataCardValue70.Text
+            Width: =800
             X: =0
             Y: =8
             ZIndex: =1
 
-            DataCardKey13 As label:
+            DataCardKey71 As label:
                 AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =25
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
-                X: =30
-                Y: =10
                 ZIndex: =1
 
-            DataCardValue13 As text:
+            DataCardValue70 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -668,10 +708,10 @@ User_License_Page As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey13.Y + DataCardKey13.Height + 5
+                Y: =DataCardKey71.Y + DataCardKey71.Height + 5
                 ZIndex: =2
 
-            ErrorMessage11 As label:
+            ErrorMessage66 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -683,46 +723,49 @@ User_License_Page As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue13.Y + DataCardValue13.Height
+                Y: =DataCardValue70.Y + DataCardValue70.Height
                 ZIndex: =3
 
-            StarVisible11 As label:
+            StarVisible66 As label:
                 Align: =Align.Center
-                Height: =DataCardKey13.Height
+                Height: =DataCardKey71.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey13.Y
+                Y: =DataCardKey71.Y
                 ZIndex: =4
 
-        "'PL-600_DataCard1' As typedDataCard.textualEditCard":
+        "'PL-600_DataCard5' As typedDataCard.textualEditCard":
+            BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.Solid
+            BorderThickness: =3
             DataField: ="cr778_pl600"
             Default: =ThisItem.'PL-600'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@ability_license],DataSourceInfo.DisplayName,"cr778_pl600")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =140
             MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_pl600")
             Required: =false
-            Update: =DataCardValue14.Text
-            Width: =936
+            Update: =DataCardValue71.Text
+            Width: =800
             X: =0
             Y: =9
             ZIndex: =1
 
-            DataCardKey14 As label:
+            DataCardKey72 As label:
                 AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =25
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
-                X: =30
-                Y: =10
                 ZIndex: =1
 
-            DataCardValue14 As text:
+            DataCardValue71 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -736,10 +779,10 @@ User_License_Page As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey14.Y + DataCardKey14.Height + 5
+                Y: =DataCardKey72.Y + DataCardKey72.Height + 5
                 ZIndex: =2
 
-            ErrorMessage12 As label:
+            ErrorMessage67 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -751,46 +794,49 @@ User_License_Page As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue14.Y + DataCardValue14.Height
+                Y: =DataCardValue71.Y + DataCardValue71.Height
                 ZIndex: =3
 
-            StarVisible12 As label:
+            StarVisible67 As label:
                 Align: =Align.Center
-                Height: =DataCardKey14.Height
+                Height: =DataCardKey72.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey14.Y
+                Y: =DataCardKey72.Y
                 ZIndex: =4
 
-        "'PL-900_DataCard1' As typedDataCard.textualEditCard":
+        "'PL-900_DataCard5' As typedDataCard.textualEditCard":
+            BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.Solid
+            BorderThickness: =3
             DataField: ="cr778_pl900"
             Default: =ThisItem.'PL-900'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@ability_license],DataSourceInfo.DisplayName,"cr778_pl900")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =140
             MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_pl900")
             Required: =false
-            Update: =DataCardValue15.Text
-            Width: =936
+            Update: =DataCardValue72.Text
+            Width: =800
             X: =0
             Y: =10
             ZIndex: =1
 
-            DataCardKey15 As label:
+            DataCardKey73 As label:
                 AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =25
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
-                X: =30
-                Y: =10
                 ZIndex: =1
 
-            DataCardValue15 As text:
+            DataCardValue72 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -804,10 +850,10 @@ User_License_Page As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey15.Y + DataCardKey15.Height + 5
+                Y: =DataCardKey73.Y + DataCardKey73.Height + 5
                 ZIndex: =2
 
-            ErrorMessage13 As label:
+            ErrorMessage68 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -819,20 +865,20 @@ User_License_Page As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue15.Y + DataCardValue15.Height
+                Y: =DataCardValue72.Y + DataCardValue72.Height
                 ZIndex: =3
 
-            StarVisible13 As label:
+            StarVisible68 As label:
                 Align: =Align.Center
-                Height: =DataCardKey15.Height
+                Height: =DataCardKey73.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey15.Y
+                Y: =DataCardKey73.Y
                 ZIndex: =4
 
-        Name_DataCard3 As typedDataCard.textualEditCard:
+        Name_DataCard10 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr778_name"
             Default: =ThisItem.Name
@@ -842,14 +888,14 @@ User_License_Page As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_name")
             Required: =true
-            Update: =DataCardValue16.Text
+            Update: =DataCardValue73.Text
             Visible: =false
-            Width: =312
+            Width: =266
             X: =0
             Y: =11
             ZIndex: =1
 
-            DataCardKey16 As label:
+            DataCardKey74 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -859,7 +905,7 @@ User_License_Page As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue16 As text:
+            DataCardValue73 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -873,10 +919,10 @@ User_License_Page As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey16.Y + DataCardKey16.Height + 5
+                Y: =DataCardKey74.Y + DataCardKey74.Height + 5
                 ZIndex: =2
 
-            ErrorMessage14 As label:
+            ErrorMessage69 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -888,20 +934,20 @@ User_License_Page As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue16.Y + DataCardValue16.Height
+                Y: =DataCardValue73.Y + DataCardValue73.Height
                 ZIndex: =3
 
-            StarVisible14 As label:
+            StarVisible69 As label:
                 Align: =Align.Center
-                Height: =DataCardKey16.Height
+                Height: =DataCardKey74.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey16.Y
+                Y: =DataCardKey74.Y
                 ZIndex: =4
 
-        "'E-mail_DataCard1' As typedDataCard.textualEditCard":
+        "'E-mail_DataCard5' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr778_email"
             Default: =ThisItem.'E-mail'
@@ -911,14 +957,14 @@ User_License_Page As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_email")
             Required: =false
-            Update: =DataCardValue17.Text
+            Update: =DataCardValue74.Text
             Visible: =false
-            Width: =312
+            Width: =266
             X: =1
             Y: =11
             ZIndex: =1
 
-            DataCardKey17 As label:
+            DataCardKey75 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -928,7 +974,7 @@ User_License_Page As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue17 As text:
+            DataCardValue74 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -942,10 +988,10 @@ User_License_Page As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey17.Y + DataCardKey17.Height + 5
+                Y: =DataCardKey75.Y + DataCardKey75.Height + 5
                 ZIndex: =2
 
-            ErrorMessage15 As label:
+            ErrorMessage70 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -957,16 +1003,16 @@ User_License_Page As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue17.Y + DataCardValue17.Height
+                Y: =DataCardValue74.Y + DataCardValue74.Height
                 ZIndex: =3
 
-            StarVisible15 As label:
+            StarVisible70 As label:
                 Align: =Align.Center
-                Height: =DataCardKey17.Height
+                Height: =DataCardKey75.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey17.Y
+                Y: =DataCardKey75.Y
                 ZIndex: =4
 
