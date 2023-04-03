@@ -429,7 +429,7 @@ User_License_Page As screen:
             Height: =135
             MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_ms700")
             Required: =false
-            Update: =DataCardValue42.Text
+            Update: =Toggle1_4.Value
             Width: =684
             X: =0
             Y: =4
@@ -446,23 +446,6 @@ User_License_Page As screen:
                 Wrap: =false
                 ZIndex: =1
 
-            DataCardValue42 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey43.Y + DataCardKey43.Height + 5
-                ZIndex: =2
-
             ErrorMessage38 As label:
                 AutoHeight: =true
                 Height: =10
@@ -475,7 +458,7 @@ User_License_Page As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue42.Y + DataCardValue42.Height
+                Y: =Toggle1_4.Y + Toggle1_4.Height
                 ZIndex: =3
 
             StarVisible38 As label:
@@ -488,6 +471,46 @@ User_License_Page As screen:
                 Y: =DataCardKey43.Y
                 ZIndex: =4
 
+            Toggle1_4 As toggleSwitch:
+                Color: =RGBA(255, 255, 255, 1)
+                FalseText: ="없다"
+                Height: =50
+                TrueText: ="있다"
+                Width: =150
+                X: =182
+                Y: =75
+                ZIndex: =5
+
+            Label2_8 As label:
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =53
+                Size: =17
+                Text: ="취득 여부"
+                Width: =127
+                X: =193
+                Y: =16
+                ZIndex: =6
+
+            DatePicker4_4 As datepicker:
+                DisplayMode: =If(Toggle1_4.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
+                Height: =59
+                Width: =246
+                X: =400
+                Y: =71
+                ZIndex: =7
+
+            Label2_9 As label:
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =53
+                Size: =17
+                Text: ="취득 일자"
+                Width: =127
+                X: =459
+                Y: =16
+                ZIndex: =8
+
         "'MS-900_DataCard3' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr778_ms900"
@@ -498,7 +521,7 @@ User_License_Page As screen:
             Height: =135
             MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_ms900")
             Required: =false
-            Update: =DataCardValue43.Text
+            Update: =Toggle1_5.Value
             Width: =684
             X: =0
             Y: =5
@@ -515,23 +538,6 @@ User_License_Page As screen:
                 Wrap: =false
                 ZIndex: =1
 
-            DataCardValue43 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey44.Y + DataCardKey44.Height + 5
-                ZIndex: =2
-
             ErrorMessage39 As label:
                 AutoHeight: =true
                 Height: =10
@@ -544,7 +550,7 @@ User_License_Page As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue43.Y + DataCardValue43.Height
+                Y: =Toggle1_5.Y + Toggle1_5.Height
                 ZIndex: =3
 
             StarVisible39 As label:
@@ -556,6 +562,46 @@ User_License_Page As screen:
                 Wrap: =false
                 Y: =DataCardKey44.Y
                 ZIndex: =4
+
+            Toggle1_5 As toggleSwitch:
+                Color: =RGBA(255, 255, 255, 1)
+                FalseText: ="없다"
+                Height: =50
+                TrueText: ="있다"
+                Width: =150
+                X: =182
+                Y: =75
+                ZIndex: =5
+
+            Label2_10 As label:
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =53
+                Size: =17
+                Text: ="취득 여부"
+                Width: =127
+                X: =193
+                Y: =16
+                ZIndex: =6
+
+            DatePicker4_5 As datepicker:
+                DisplayMode: =If(Toggle1_5.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
+                Height: =59
+                Width: =246
+                X: =400
+                Y: =71
+                ZIndex: =7
+
+            Label2_11 As label:
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =53
+                Size: =17
+                Text: ="취득 일자"
+                Width: =127
+                X: =459
+                Y: =16
+                ZIndex: =8
 
         "'PL-200_DataCard3' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
@@ -1360,6 +1406,7 @@ User_License_Page As screen:
             Height: =50
             Required: =false
             Update: =DataCardValue57.Attachments
+            Visible: =If(Toggle1_4.Value=true,true,false)
             Width: =594
             X: =0
             Y: =4
@@ -1433,6 +1480,7 @@ User_License_Page As screen:
             Height: =50
             Required: =false
             Update: =DataCardValue58.Attachments
+            Visible: =If(Toggle1_5.Value=true,true,false)
             Width: =594
             X: =0
             Y: =5
