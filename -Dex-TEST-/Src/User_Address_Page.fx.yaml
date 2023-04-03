@@ -310,12 +310,12 @@ User_Address_Page As screen:
             DisplayMode: =DisplayMode.Disabled
             DisplayName: =DataSourceInfo([@ability_address],DataSourceInfo.DisplayName,"cr778_name")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =182
             MaxLength: =DataSourceInfo([@ability_address], DataSourceInfo.MaxLength, "cr778_name")
             Required: =true
             Update: =Address_Name_DataCardValue.Text
-            Visible: =true
-            Width: =321
+            Visible: =false
+            Width: =322
             X: =0
             Y: =2
             ZIndex: =7
@@ -346,7 +346,6 @@ User_Address_Page As screen:
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Tooltip: =Parent.DisplayName
-                Visible: =false
                 Width: =Parent.Width - 60
                 X: =30
                 Y: =Address_Name_DataCardKey.Y + Address_Name_DataCardKey.Height + 5
