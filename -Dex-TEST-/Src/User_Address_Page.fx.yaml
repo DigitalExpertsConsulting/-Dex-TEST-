@@ -238,7 +238,7 @@ User_Address_Page As screen:
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr778_email"
             Default: =ThisItem.'E-mail'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@ability_address],DataSourceInfo.DisplayName,"cr778_email")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -307,7 +307,7 @@ User_Address_Page As screen:
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr778_name"
             Default: =ThisItem.Name
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@ability_address],DataSourceInfo.DisplayName,"cr778_name")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
