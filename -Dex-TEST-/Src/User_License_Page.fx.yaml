@@ -1,5 +1,6 @@
 User_License_Page As screen:
-    BackgroundImage: =MainPagePicture
+    BackgroundImage: =Earth
+    ImagePosition: =ImagePosition.Fill
 
     License_Title As label:
         Align: =Align.Center
@@ -46,7 +47,7 @@ User_License_Page As screen:
     License_Input As form:
         DataSource: =ability_license
         DefaultMode: =FormMode.New
-        Fill: =RGBA(102, 182, 227, 0.7)
+        Fill: =RGBA( 135, 206, 250, 0.5 )
         Width: =686
         X: =42
         Y: =186
