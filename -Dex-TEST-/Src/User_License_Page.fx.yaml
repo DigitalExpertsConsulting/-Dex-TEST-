@@ -115,15 +115,21 @@ User_License_Page As screen:
                 Y: =81
                 ZIndex: =5
 
-            DatePicker3 As datepicker:
+            "'AZ-104_DatePicker' As datepicker":
+                DisplayMode: |-
+                    =
+                    If('AZ-104_Toggle'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
                 Height: =50
                 Width: =184
                 X: =356
                 Y: =75
                 ZIndex: =6
 
-            "'MS-100 PDF_1' As icon.DocumentPDF":
-                Color: =RGBA(255, 255, 255, 1)
+            "'AZ-104_PDF' As icon.DocumentPDF":
+                Color: =RGBA(215, 223, 240, 1)
+                DisplayMode: |-
+                    =
+                    If('AZ-104_Toggle'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
                 Icon: =Icon.DocumentPDF
                 OnSelect: |-
                     =ClearCollect(Products, {Name:"Europa", Price:"10.99"}, {Name:"Ganymede", Price:"12.49"}, {Name:"Callisto", Price:"11.79"})
@@ -131,7 +137,7 @@ User_License_Page As screen:
                 Y: =60
                 ZIndex: =7
 
-            "'MS-100_Toggle_Label_1' As label":
+            "'AZ-104_Toggle_Label' As label":
                 Align: =Align.Center
                 Color: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Semibold
@@ -142,7 +148,7 @@ User_License_Page As screen:
                 Y: =34
                 ZIndex: =8
 
-            "'MS-100_Date_Label_1' As label":
+            "'AZ-104_Date_Label' As label":
                 Align: =Align.Center
                 Color: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Semibold
@@ -154,7 +160,7 @@ User_License_Page As screen:
                 Y: =37
                 ZIndex: =9
 
-            "'MS-100_PDF_Label_1' As label":
+            "'AZ-104_PDF_Label' As label":
                 Align: =Align.Center
                 Color: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Semibold
@@ -229,21 +235,27 @@ User_License_Page As screen:
                 Y: =81
                 ZIndex: =5
 
-            "'MS-100 DatePicker_1' As datepicker":
+            "'AZ-305_DatePicker' As datepicker":
+                DisplayMode: |-
+                    =
+                    If('AZ-305_Toggle'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
                 Height: =50
                 Width: =184
                 X: =356
                 Y: =75
                 ZIndex: =6
 
-            "'MS-100 PDF_2' As icon.DocumentPDF":
-                Color: =RGBA(255, 255, 255, 1)
+            "'AZ-305_PDF' As icon.DocumentPDF":
+                Color: =RGBA(215, 223, 240, 1)
+                DisplayMode: |-
+                    =
+                    If('AZ-305_Toggle'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
                 Icon: =Icon.DocumentPDF
                 X: =632
                 Y: =60
                 ZIndex: =7
 
-            "'MS-100_Toggle_Label_2' As label":
+            "'AZ-305_Toggle_Label' As label":
                 Align: =Align.Center
                 Color: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Semibold
@@ -254,7 +266,7 @@ User_License_Page As screen:
                 Y: =34
                 ZIndex: =8
 
-            "'MS-100_Date_Label_2' As label":
+            "'AZ-305_Date_Label' As label":
                 Align: =Align.Center
                 Color: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Semibold
@@ -266,7 +278,7 @@ User_License_Page As screen:
                 Y: =37
                 ZIndex: =9
 
-            "'MS-100_PDF_Label_2' As label":
+            "'AZ-305_PDF_Label' As label":
                 Align: =Align.Center
                 Color: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Semibold
@@ -376,6 +388,9 @@ User_License_Page As screen:
                 ZIndex: =8
 
             "'MS-100 DatePicker' As datepicker":
+                DisplayMode: |-
+                    =
+                    If('MS-100_Toggle'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
                 Height: =50
                 Width: =184
                 X: =356
@@ -383,7 +398,10 @@ User_License_Page As screen:
                 ZIndex: =9
 
             "'MS-100 PDF' As icon.DocumentPDF":
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(215, 223, 240, 1)
+                DisplayMode: |-
+                    =
+                    If('MS-100_Toggle'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
                 Icon: =Icon.DocumentPDF
                 X: =632
                 Y: =60
