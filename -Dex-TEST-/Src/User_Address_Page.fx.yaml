@@ -1,5 +1,6 @@
 User_Address_Page As screen:
-    BackgroundImage: =MainPagePicture
+    BackgroundImage: =Earth
+    ImagePosition: =ImagePosition.Tile
 
     Address_Title As label:
         Align: =Align.Center
