@@ -71,7 +71,7 @@ User_Address_Page As screen:
     Address_Input As form:
         DataSource: =ability_address
         DefaultMode: =FormMode.New
-        Height: =406
+        Height: =537
         Width: =968
         X: =193
         Y: =214
@@ -307,7 +307,7 @@ User_Address_Page As screen:
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr778_name"
             Default: =ThisItem.Name
-            DisplayMode: =DisplayMode.View
+            DisplayMode: =DisplayMode.Disabled
             DisplayName: =DataSourceInfo([@ability_address],DataSourceInfo.DisplayName,"cr778_name")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -327,7 +327,7 @@ User_Address_Page As screen:
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
-                Y: =10
+                Y: =15
                 ZIndex: =1
 
             Address_Name_DataCardValue As text:
