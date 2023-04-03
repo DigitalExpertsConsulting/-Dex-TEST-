@@ -309,7 +309,7 @@ User_License_Page As screen:
                 ZIndex: =6
 
             DatePicker4_2 As datepicker:
-                DisplayMode: =If(Toggle1_1.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
+                DisplayMode: =If(Toggle1_2.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
                 Height: =59
                 Width: =246
                 X: =400
