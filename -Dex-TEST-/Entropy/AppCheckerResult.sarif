@@ -854,6 +854,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "User_License_Page.License_Input.'MS-101_DataCard3'.DatePicker4_3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_License_Page.License_Input.'MS-101_DataCard3'.DatePicker4_3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User_License_Page",
+                "type": "User_License_Page.License_Input.'MS-101_DataCard3'.DatePicker4_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "User_License_Page.Form7.'E-mail_DataCard4'.DataCardValue65.AccessibleLabel"
                 }
               ],
@@ -3222,19 +3252,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'MS-101_DataCard3'.DataCardValue41.AccessibleLabel"
+                  "fullyQualifiedName": "User_License_Page.License_Input.'MS-101_DataCard3'.Toggle1_3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "User_License_Page.License_Input.'MS-101_DataCard3'.DataCardValue41.AccessibleLabel",
+                  "fullyQualifiedName": "User_License_Page.License_Input.'MS-101_DataCard3'.Toggle1_3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "User_License_Page",
-                "type": "User_License_Page.License_Input.'MS-101_DataCard3'.DataCardValue41"
+                "type": "User_License_Page.License_Input.'MS-101_DataCard3'.Toggle1_3"
               }
             }
           ],
