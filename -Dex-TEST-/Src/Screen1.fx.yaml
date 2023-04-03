@@ -17,7 +17,7 @@ Screen1 As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@ability_licenseDay], DataSourceInfo.MaxLength, "cr778_az104")
             Required: =false
-            Update: =DatePicker2.SelectedDate
+            Update: =DatePicker2_1.SelectedDate
             Width: =798
             X: =0
             Y: =0
@@ -29,8 +29,7 @@ Screen1 As screen:
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
-                X: =30
-                Y: =10
+                X: =45
                 ZIndex: =1
 
             ErrorMessage2 As label:
@@ -45,7 +44,7 @@ Screen1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DatePicker2.Y + DatePicker2.Height
+                Y: =DatePicker2_1.Y + DatePicker2_1.Height
                 ZIndex: =3
 
             StarVisible2 As label:
@@ -58,21 +57,19 @@ Screen1 As screen:
                 Y: =DataCardKey3.Y
                 ZIndex: =4
 
-            DatePicker2 As datepicker:
-                Height: =36
-                OnSelect: =DateAdd(DatePicker2.SelectedDate,365,TimeUnit.Days)
-                Width: =186
-                X: =30
-                Y: =44
-                ZIndex: =5
-
             DatePicker2_1 As datepicker:
+                DefaultDate: =DateAdd(DateValue(DatePicker2.SelectedDate), 365 -100)
                 Height: =36
                 OnSelect: =DateAdd(DatePicker2_1.SelectedDate,-100,TimeUnit.Days)
                 Width: =186
-                X: =252
-                Y: =44
+                X: =186
+                Y: =34
                 ZIndex: =6
+
+            DatePicker2 As datepicker:
+                X: =405
+                Y: =27
+                ZIndex: =7
 
         Name_DataCard2 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -226,4 +223,10 @@ Screen1 As screen:
         X: =1134
         Y: =627
         ZIndex: =3
+
+    DatePicker1 As datepicker:
+        DefaultDate: =DateAdd(DateValue(DatePicker2.SelectedDate), 365 -100)
+        X: =916
+        Y: =74
+        ZIndex: =4
 
