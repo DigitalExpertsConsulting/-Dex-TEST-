@@ -42,7 +42,7 @@ User_Address_Page As screen:
                 NewForm(Address_Input);
                 ResetForm(Address_Input);
             )
-        Visible: =
+        Visible: =tru
         Width: =110
         X: =1120
         Y: =600
