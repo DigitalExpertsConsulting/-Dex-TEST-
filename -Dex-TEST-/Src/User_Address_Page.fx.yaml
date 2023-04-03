@@ -346,6 +346,7 @@ User_Address_Page As screen:
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Tooltip: =Parent.DisplayName
+                Visible: =false
                 Width: =Parent.Width - 60
                 X: =30
                 Y: =Address_Name_DataCardKey.Y + Address_Name_DataCardKey.Height + 5
