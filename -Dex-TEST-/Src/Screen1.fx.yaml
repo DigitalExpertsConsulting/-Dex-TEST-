@@ -59,11 +59,20 @@ Screen1 As screen:
                 ZIndex: =4
 
             DatePicker2 As datepicker:
-                OnSelect: |-
-                    =UpdateContext({newDate: DateAdd(DatePicker2.SelectedDate,365,TimeUnit.Days)})
+                Height: =36
+                OnSelect: =DateAdd(DatePicker2.SelectedDate,365,TimeUnit.Days)
+                Width: =186
                 X: =30
-                Y: =40
+                Y: =44
                 ZIndex: =5
+
+            DatePicker2_1 As datepicker:
+                Height: =36
+                OnSelect: =DateAdd(DatePicker2_1.SelectedDate,-100,TimeUnit.Days)
+                Width: =186
+                X: =252
+                Y: =44
+                ZIndex: =6
 
         Name_DataCard2 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -211,10 +220,10 @@ Screen1 As screen:
         Icon: =Icon.Send
         OnSelect: |-
             =SubmitForm(Form1);
+            DateAdd(DatePicker2.SelectedDate,365,TimeUnit.Days);
             NewForm(Form1);
-            ResetForm(Form1);
         Width: =110
-        X: =1120
-        Y: =600
+        X: =1134
+        Y: =627
         ZIndex: =3
 
