@@ -3,8 +3,8 @@ Screen1 As screen:
     Form1 As form:
         DataSource: =ability_licenseDay
         DefaultMode: =FormMode.New
-        X: =356
-        Y: =210
+        X: =268
+        Y: =176
         ZIndex: =2
 
         "'AZ-104_DataCard1' As typedDataCard.textualEditCard":
@@ -59,7 +59,8 @@ Screen1 As screen:
                 ZIndex: =4
 
             DatePicker2 As datepicker:
-                OnSelect: =(Today()+365)-100
+                OnSelect: |-
+                    =UpdateContext({newDate: DateAdd(DatePicker2.SelectedDate, -100,TimeUnit.Days)})
                 X: =30
                 Y: =40
                 ZIndex: =5
