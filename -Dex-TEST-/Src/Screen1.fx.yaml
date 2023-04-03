@@ -60,7 +60,7 @@ Screen1 As screen:
 
             DatePicker2 As datepicker:
                 OnSelect: |-
-                    =UpdateContext({newDate: DateAdd(DatePicker2.SelectedDate, -100,TimeUnit.Days)})
+                    =UpdateContext({newDate: DateAdd(DatePicker2.SelectedDate,365,TimeUnit.Days)})
                 X: =30
                 Y: =40
                 ZIndex: =5
