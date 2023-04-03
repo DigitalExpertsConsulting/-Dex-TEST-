@@ -1,13 +1,6 @@
 User_License_Page As screen:
     BackgroundImage: =MainPagePicture
 
-    "'License_Send_Button(참고용)' As button":
-        OnSelect: =
-        Text: ="갱신"
-        Visible: =false
-        Y: =726
-        ZIndex: =2
-
     License_Title As label:
         Align: =Align.Center
         BorderColor: =RGBA(102, 182, 227, 0.7)
