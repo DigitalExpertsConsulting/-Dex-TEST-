@@ -314,7 +314,7 @@ User_Address_Page As screen:
             MaxLength: =DataSourceInfo([@ability_address], DataSourceInfo.MaxLength, "cr778_name")
             Required: =true
             Update: =Address_Name_DataCardValue.Text
-            Visible: =false
+            Visible: =true
             Width: =321
             X: =0
             Y: =2
@@ -332,7 +332,11 @@ User_Address_Page As screen:
 
             Address_Name_DataCardValue As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =varUser.FullName
+                Default: |-
+                    =With(
+                        { wName: Split(User().FullName, " ") },
+                        Last(wName).Value & First(wName).Value
+                    )
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 MaxLength: =Parent.MaxLength
