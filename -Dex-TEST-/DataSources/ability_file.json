@@ -1,0 +1,96 @@
+[
+  {
+    "DisplayName": "ability_file (뷰)",
+    "Name": "_cr778_ability_file_views",
+    "RelatedEntityName": "ability_file",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "16cc1c1c-b8af-4c47-a763-af8a0602d594": "ability_file Lookup View",
+      "72b4a905-f205-4f66-87e2-43c5686736bf": "ability_file Associated View",
+      "772ef5d2-2cc6-4c7d-aeac-fd5d4c2a1e43": "ability_file Advanced Find View",
+      "7952126c-d2c1-4c7e-b7fb-e75c732e0314": "Inactive ability_file",
+      "d24f7c32-057c-45c8-af58-37a4f1b1a5f5": "Active ability_file"
+    }
+  },
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr778_ability_files",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr778_ability_file",
+    "Name": "ability_file",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr778_ability_file_AsyncOperations": "System Jobs",
+      "cr778_ability_file_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr778_ability_file_DuplicateBaseRecord": "Duplicate Records (cr778_ability_file_DuplicateBaseRecord)",
+      "cr778_ability_file_DuplicateMatchingRecord": "Duplicate Records (cr778_ability_file_DuplicateMatchingRecord)",
+      "cr778_ability_file_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr778_ability_file_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr778_ability_file_ProcessSession": "Process Sessions",
+      "cr778_ability_file_SyncErrors": "Sync Errors",
+      "cr778_ability_fileid": "ability_file",
+      "cr778_name": "Name",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "ability_file",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Status (ability_file)",
+    "Name": "cr778_ability_file_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "ability_file"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "ability_file",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (ability_file)",
+    "Name": "cr778_ability_file_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "ability_file"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "ability_file",
+    "Type": "OptionSetInfo"
+  }
+]
