@@ -131,8 +131,6 @@ User_License_Page As screen:
                     =
                     If('AZ-104_Toggle'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
                 Icon: =Icon.DocumentPDF
-                OnSelect: |-
-                    =ClearCollect(Products, {Name:"Europa", Price:"10.99"}, {Name:"Ganymede", Price:"12.49"}, {Name:"Callisto", Price:"11.79"})
                 X: =632
                 Y: =60
                 ZIndex: =7
