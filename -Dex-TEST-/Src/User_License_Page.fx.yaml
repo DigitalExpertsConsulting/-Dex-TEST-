@@ -46,7 +46,7 @@ User_License_Page As screen:
     License_Input As form:
         DataSource: =ability_license
         DefaultMode: =FormMode.New
-        Fill: =RGBA(102, 182, 227, 0.2)
+        Fill: =RGBA(102, 182, 227, 0.5)
         X: =274
         Y: =191
         ZIndex: =8
@@ -63,7 +63,7 @@ User_License_Page As screen:
             Height: =140
             MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_az104")
             Required: =false
-            Update: =DataCardValue62.Text
+            Update: ='AZ-104_Toggle'.Value
             Width: =800
             X: =0
             Y: =0
@@ -80,23 +80,6 @@ User_License_Page As screen:
                 Wrap: =false
                 ZIndex: =1
 
-            DataCardValue62 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey63.Y + DataCardKey63.Height + 5
-                ZIndex: =2
-
             ErrorMessage58 As label:
                 AutoHeight: =true
                 Height: =10
@@ -109,7 +92,7 @@ User_License_Page As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue62.Y + DataCardValue62.Height
+                Y: ='AZ-104_Toggle'.Y + 'AZ-104_Toggle'.Height
                 ZIndex: =3
 
             StarVisible58 As label:
@@ -122,12 +105,60 @@ User_License_Page As screen:
                 Y: =DataCardKey63.Y
                 ZIndex: =4
 
-            Toggle2 As toggleSwitch:
+            "'AZ-104_Toggle' As toggleSwitch":
                 Height: =40
                 Width: =125
                 X: =160
-                Y: =90
+                Y: =81
                 ZIndex: =5
+
+            DatePicker3 As datepicker:
+                Height: =50
+                Width: =184
+                X: =356
+                Y: =75
+                ZIndex: =6
+
+            "'MS-100 PDF_1' As icon.DocumentPDF":
+                Color: =RGBA(255, 255, 255, 1)
+                Icon: =Icon.DocumentPDF
+                X: =632
+                Y: =60
+                ZIndex: =7
+
+            "'MS-100_Toggle_Label_1' As label":
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Semibold
+                Size: =15
+                Text: ="취득 여부"
+                Width: =219
+                X: =114
+                Y: =34
+                ZIndex: =8
+
+            "'MS-100_Date_Label_1' As label":
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Size: =15
+                Text: ="취득 일자"
+                Width: =178
+                X: =359
+                Y: =37
+                ZIndex: =9
+
+            "'MS-100_PDF_Label_1' As label":
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Semibold
+                Size: =15
+                Text: ="인증서 첨부"
+                Width: =127
+                X: =600
+                Y: =15
+                ZIndex: =10
 
         "'AZ-305_DataCard' As typedDataCard.textualEditCard":
             BorderColor: =RGBA(255, 255, 255, 1)
@@ -141,7 +172,7 @@ User_License_Page As screen:
             Height: =140
             MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_az305")
             Required: =false
-            Update: =DataCardValue63.Text
+            Update: ='AZ-305_Toggle'.Value
             Width: =800
             X: =0
             Y: =1
@@ -158,23 +189,6 @@ User_License_Page As screen:
                 Wrap: =false
                 ZIndex: =1
 
-            DataCardValue63 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey64.Y + DataCardKey64.Height + 5
-                ZIndex: =2
-
             ErrorMessage59 As label:
                 AutoHeight: =true
                 Height: =10
@@ -187,7 +201,7 @@ User_License_Page As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue63.Y + DataCardValue63.Height
+                Y: ='AZ-305_Toggle'.Y + 'AZ-305_Toggle'.Height
                 ZIndex: =3
 
             StarVisible59 As label:
@@ -199,6 +213,62 @@ User_License_Page As screen:
                 Wrap: =false
                 Y: =DataCardKey64.Y
                 ZIndex: =4
+
+            "'AZ-305_Toggle' As toggleSwitch":
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =40
+                Width: =125
+                X: =160
+                Y: =81
+                ZIndex: =5
+
+            "'MS-100 DatePicker_1' As datepicker":
+                Height: =50
+                Width: =184
+                X: =356
+                Y: =75
+                ZIndex: =6
+
+            "'MS-100 PDF_2' As icon.DocumentPDF":
+                Color: =RGBA(255, 255, 255, 1)
+                Icon: =Icon.DocumentPDF
+                X: =632
+                Y: =60
+                ZIndex: =7
+
+            "'MS-100_Toggle_Label_2' As label":
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Semibold
+                Size: =15
+                Text: ="취득 여부"
+                Width: =219
+                X: =114
+                Y: =34
+                ZIndex: =8
+
+            "'MS-100_Date_Label_2' As label":
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =34
+                Size: =15
+                Text: ="취득 일자"
+                Width: =178
+                X: =359
+                Y: =37
+                ZIndex: =9
+
+            "'MS-100_PDF_Label_2' As label":
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Semibold
+                Size: =15
+                Text: ="인증서 첨부"
+                Width: =127
+                X: =600
+                Y: =15
+                ZIndex: =10
 
         "'MS-100_DataCard' As typedDataCard.textualEditCard":
             BorderColor: =RGBA(255, 255, 255, 1)
@@ -259,7 +329,7 @@ User_License_Page As screen:
                 Height: =40
                 Width: =125
                 X: =160
-                Y: =90
+                Y: =81
                 ZIndex: =5
 
             "'MS-100_Toggle_Label' As label":
@@ -270,7 +340,7 @@ User_License_Page As screen:
                 Text: ="취득 여부"
                 Width: =219
                 X: =114
-                Y: =43
+                Y: =34
                 ZIndex: =6
 
             "'MS-100_Date_Label' As label":
@@ -282,7 +352,7 @@ User_License_Page As screen:
                 Text: ="취득 일자"
                 Width: =178
                 X: =359
-                Y: =46
+                Y: =37
                 ZIndex: =7
 
             "'MS-100_PDF_Label' As label":
@@ -300,7 +370,7 @@ User_License_Page As screen:
                 Height: =50
                 Width: =184
                 X: =356
-                Y: =84
+                Y: =75
                 ZIndex: =9
 
             "'MS-100 PDF' As icon.DocumentPDF":
@@ -310,7 +380,7 @@ User_License_Page As screen:
                 Y: =60
                 ZIndex: =10
 
-        "'MS-101_DataCard5' As typedDataCard.textualEditCard":
+        "'MS-101_DataCard' As typedDataCard.textualEditCard":
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.Solid
             BorderThickness: =3
@@ -381,7 +451,7 @@ User_License_Page As screen:
                 Y: =DataCardKey66.Y
                 ZIndex: =4
 
-        "'MS-700_DataCard5' As typedDataCard.textualEditCard":
+        "'MS-700_DataCard' As typedDataCard.textualEditCard":
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.Solid
             BorderThickness: =3
@@ -452,7 +522,7 @@ User_License_Page As screen:
                 Y: =DataCardKey67.Y
                 ZIndex: =4
 
-        "'MS-900_DataCard5' As typedDataCard.textualEditCard":
+        "'MS-900_DataCard' As typedDataCard.textualEditCard":
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.Solid
             BorderThickness: =3
@@ -523,7 +593,7 @@ User_License_Page As screen:
                 Y: =DataCardKey68.Y
                 ZIndex: =4
 
-        "'PL-200_DataCard5' As typedDataCard.textualEditCard":
+        "'PL-200_DataCard' As typedDataCard.textualEditCard":
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.Solid
             BorderThickness: =3
@@ -594,7 +664,7 @@ User_License_Page As screen:
                 Y: =DataCardKey69.Y
                 ZIndex: =4
 
-        "'PL-300_DataCard5' As typedDataCard.textualEditCard":
+        "'PL-300_DataCard' As typedDataCard.textualEditCard":
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.Solid
             BorderThickness: =3
@@ -665,7 +735,7 @@ User_License_Page As screen:
                 Y: =DataCardKey70.Y
                 ZIndex: =4
 
-        "'PL-400_DataCard5' As typedDataCard.textualEditCard":
+        "'PL-400_DataCard' As typedDataCard.textualEditCard":
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.Solid
             BorderThickness: =3
@@ -736,7 +806,7 @@ User_License_Page As screen:
                 Y: =DataCardKey71.Y
                 ZIndex: =4
 
-        "'PL-600_DataCard5' As typedDataCard.textualEditCard":
+        "'PL-600_DataCard' As typedDataCard.textualEditCard":
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.Solid
             BorderThickness: =3
@@ -807,7 +877,7 @@ User_License_Page As screen:
                 Y: =DataCardKey72.Y
                 ZIndex: =4
 
-        "'PL-900_DataCard5' As typedDataCard.textualEditCard":
+        "'PL-900_DataCard' As typedDataCard.textualEditCard":
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.Solid
             BorderThickness: =3
@@ -878,7 +948,7 @@ User_License_Page As screen:
                 Y: =DataCardKey73.Y
                 ZIndex: =4
 
-        Name_DataCard10 As typedDataCard.textualEditCard:
+        License_Name_DataCard As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr778_name"
             Default: =ThisItem.Name
@@ -889,7 +959,7 @@ User_License_Page As screen:
             MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_name")
             Required: =true
             Update: =DataCardValue73.Text
-            Visible: =false
+            Visible: =true
             Width: =266
             X: =0
             Y: =11
@@ -907,7 +977,11 @@ User_License_Page As screen:
 
             DataCardValue73 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
+                Default: |-
+                    =With(
+                        { wName: Split(User().FullName, " ") },
+                        Last(wName).Value & First(wName).Value
+                    )
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 MaxLength: =Parent.MaxLength
@@ -917,6 +991,7 @@ User_License_Page As screen:
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Tooltip: =Parent.DisplayName
+                Visible: =false
                 Width: =Parent.Width - 60
                 X: =30
                 Y: =DataCardKey74.Y + DataCardKey74.Height + 5
@@ -947,7 +1022,7 @@ User_License_Page As screen:
                 Y: =DataCardKey74.Y
                 ZIndex: =4
 
-        "'E-mail_DataCard5' As typedDataCard.textualEditCard":
+        "'License_E-mail_DataCard' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr778_email"
             Default: =ThisItem.'E-mail'
@@ -976,7 +1051,7 @@ User_License_Page As screen:
 
             DataCardValue74 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
+                Default: =varUser.Email
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 MaxLength: =Parent.MaxLength
@@ -986,6 +1061,7 @@ User_License_Page As screen:
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Tooltip: =Parent.DisplayName
+                Visible: =false
                 Width: =Parent.Width - 60
                 X: =30
                 Y: =DataCardKey75.Y + DataCardKey75.Height + 5
