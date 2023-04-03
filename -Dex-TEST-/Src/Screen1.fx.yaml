@@ -1,13 +1,8 @@
 Screen1 As screen:
 
-    DatePicker4 As datepicker:
-        DefaultDate: =(Today()+365)-100
-        X: =300
-        Y: =111
-        ZIndex: =1
-
     Form1 As form:
         DataSource: =ability_licenseDay
+        DefaultMode: =FormMode.New
         X: =356
         Y: =210
         ZIndex: =2
