@@ -2337,6 +2337,7 @@ User_License_Page As screen:
         DataSource: =ability_licenseDay
         DefaultMode: =FormMode.New
         Height: =600
+        Visible: =false
         Width: =568
         X: =798
         Y: =168
@@ -2353,6 +2354,7 @@ User_License_Page As screen:
             MaxLength: =DataSourceInfo([@ability_licenseDay], DataSourceInfo.MaxLength, "cr778_email")
             Required: =false
             Update: ='LicenseDay_E-mail_DataCardValue'.Text
+            Visible: =false
             Width: =567
             X: =0
             Y: =1
@@ -2423,7 +2425,7 @@ User_License_Page As screen:
             Update: |-
                 =If(
                     'AZ-104_Toggle'.Value=true,
-                    'LicenseDay_AZ-104_DataCardValue'.Text,
+                    DateAdd(DateValue('AZ-104_DatePicker'.SelectedDate),356-30),
                     ""
                 )
             Width: =189
@@ -2443,7 +2445,7 @@ User_License_Page As screen:
 
             "'LicenseDay_AZ-104_DataCardValue' As text":
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =DateAdd(DateValue('AZ-104_DatePicker'.SelectedDate), 365-30)
+                Default: ='LicenseDay_AZ-104_DataCard'.Update
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 MaxLength: =Parent.MaxLength
@@ -2496,7 +2498,7 @@ User_License_Page As screen:
             Update: |-
                 =If(
                     'AZ-305_Toggle'.Value=true,
-                    'LicenseDay_AZ-305_DataCardValue'.Text,
+                    DateAdd(DateValue('AZ-305_DatePicker'.SelectedDate),356-30),
                     ""
                 )
             Width: =189
@@ -2516,7 +2518,7 @@ User_License_Page As screen:
 
             "'LicenseDay_AZ-305_DataCardValue' As text":
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =DateAdd(DateValue('AZ-305_DatePicker'.SelectedDate), 365-30)
+                Default: ='LicenseDay_AZ-305_DataCard'.Update
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 MaxLength: =Parent.MaxLength
@@ -2569,7 +2571,7 @@ User_License_Page As screen:
             Update: |-
                 =If(
                     'MS-100_Toggle'.Value=true,
-                    'LicenseDay_MS-100_DataCardValue'.Text,
+                    DateAdd(DateValue('MS-100_DatePicker'.SelectedDate),356-30),
                     ""
                 )
             Width: =189
@@ -2589,7 +2591,7 @@ User_License_Page As screen:
 
             "'LicenseDay_MS-100_DataCardValue' As text":
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =DateAdd(DateValue('MS-100_DatePicker'.SelectedDate), 365-30)
+                Default: ='LicenseDay_MS-100_DataCard'.Update
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 MaxLength: =Parent.MaxLength
@@ -2641,9 +2643,9 @@ User_License_Page As screen:
             Required: =false
             Update: |-
                 =If(
-                    'MS-101_Toggle'.Value,
-                    'LicenseDay_MS-101_DataCardValue'.Text,
-                    " "
+                    'MS-101_Toggle'.Value=true,
+                    DateAdd(DateValue('MS-101_DatePicker'.SelectedDate),356-30),
+                    ""
                 )
             Width: =189
             X: =0
@@ -2662,7 +2664,7 @@ User_License_Page As screen:
 
             "'LicenseDay_MS-101_DataCardValue' As text":
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =DateAdd(DateValue('MS-101_DatePicker'.SelectedDate), 365-30)
+                Default: ='LicenseDay_MS-101_DataCard'.Update
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 MaxLength: =Parent.MaxLength
@@ -2712,10 +2714,10 @@ User_License_Page As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@ability_licenseDay], DataSourceInfo.MaxLength, "cr778_ms700")
             Required: =false
-            Update: |-
+            Update: |
                 =If(
                     'MS-700_Toggle'.Value=true,
-                    'LicenseDay_MS-700_DataCardValue'.Text,
+                    DateAdd(DateValue('MS-700_DatePicker'.SelectedDate),356-30),
                     ""
                 )
             Width: =189
@@ -2735,7 +2737,7 @@ User_License_Page As screen:
 
             "'LicenseDay_MS-700_DataCardValue' As text":
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =DateAdd(DateValue('MS-700_DatePicker'.SelectedDate), 365-30)
+                Default: ='LicenseDay_MS-700_DataCard'.Update
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 MaxLength: =Parent.MaxLength
@@ -2788,7 +2790,7 @@ User_License_Page As screen:
             Update: |-
                 =If(
                     'MS-900_Toggle'.Value=true,
-                    'LicenseDay_MS-900_DataCardValue'.Text,
+                    DateAdd(DateValue('MS-900_DatePicker'.SelectedDate),356-30),
                     ""
                 )
             Width: =189
@@ -2808,7 +2810,7 @@ User_License_Page As screen:
 
             "'LicenseDay_MS-900_DataCardValue' As text":
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =DateAdd(DateValue('MS-900_DatePicker'.SelectedDate), 365-30)
+                Default: ='LicenseDay_MS-900_DataCard'.Update
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 MaxLength: =Parent.MaxLength
@@ -2848,7 +2850,7 @@ User_License_Page As screen:
                 Y: ='LicenseDay_MS-900_DataCardKey'.Y
                 ZIndex: =4
 
-        "'LicenseDay_PL-200_DataCar' As typedDataCard.textualEditCard":
+        "'LicenseDay_PL-200_DataCard' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr778_pl200"
             Default: =ThisItem.'PL-200'
@@ -2861,7 +2863,7 @@ User_License_Page As screen:
             Update: |-
                 =If(
                     'PL-200_Toggle'.Value=true,
-                    'LicenseDay_PL-200_DataCardValue'.Text,
+                    DateAdd(DateValue('PL-200_DatePicker'.SelectedDate),356-30),
                     ""
                 )
             Width: =189
@@ -2881,7 +2883,7 @@ User_License_Page As screen:
 
             "'LicenseDay_PL-200_DataCardValue' As text":
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =DateAdd(DateValue('PL-200_DatePicker'.SelectedDate), 365-30)
+                Default: ='LicenseDay_PL-200_DataCard'.Update
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 MaxLength: =Parent.MaxLength
@@ -2934,7 +2936,7 @@ User_License_Page As screen:
             Update: |-
                 =If(
                     'PL-300_Toggle'.Value=true,
-                    'LicenseDay_PL-300_DataCardValue'.Text,
+                    DateAdd(DateValue('PL-300_DatePicker'.SelectedDate),356-30),
                     ""
                 )
             Width: =189
@@ -2954,7 +2956,8 @@ User_License_Page As screen:
 
             "'LicenseDay_PL-300_DataCardValue' As text":
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =DateAdd(DateValue('PL-300_DatePicker'.SelectedDate), 365-30)
+                Default: |
+                    ='LicenseDay_PL-300_DataCard'.Update
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 MaxLength: =Parent.MaxLength
@@ -3007,7 +3010,7 @@ User_License_Page As screen:
             Update: |-
                 =If(
                     'PL-400_Toggle'.Value=true,
-                    'LicenseDay_PL-400_DataCardValue'.Text,
+                    DateAdd(DateValue('PL-400_DatePicker'.SelectedDate),356-30),
                     ""
                 )
             Width: =189
@@ -3027,7 +3030,8 @@ User_License_Page As screen:
 
             "'LicenseDay_PL-400_DataCardValue' As text":
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =DateAdd(DateValue('PL-400_DatePicker'.SelectedDate), 365-30)
+                Default: |
+                    ='LicenseDay_PL-400_DataCard'.Update
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 MaxLength: =Parent.MaxLength
@@ -3080,7 +3084,7 @@ User_License_Page As screen:
             Update: |-
                 =If(
                     'PL-600_Toggle'.Value=true,
-                    'LicenseDay_PL-600_DataCardValue'.Text,
+                    DateAdd(DateValue('PL-600_DatePicker'.SelectedDate),356-30),
                     ""
                 )
             Width: =189
@@ -3100,7 +3104,7 @@ User_License_Page As screen:
 
             "'LicenseDay_PL-600_DataCardValue' As text":
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =DateAdd(DateValue('PL-600_DatePicker'.SelectedDate), 365-30)
+                Default: ='LicenseDay_PL-600_DataCard'.Update
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 MaxLength: =Parent.MaxLength
@@ -3153,7 +3157,7 @@ User_License_Page As screen:
             Update: |-
                 =If(
                     'PL-900_Toggle'.Value=true,
-                    'LicenseDay_PL-900_DataCardValue'.Text,
+                    DateAdd(DateValue('PL-900_DatePicker'.SelectedDate),356-30),
                     ""
                 )
             Width: =189
@@ -3173,7 +3177,7 @@ User_License_Page As screen:
 
             "'LicenseDay_PL-900_DataCardValue' As text":
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =DateAdd(DateValue('PL-900_DatePicker'.SelectedDate), 365-30)
+                Default: ='LicenseDay_PL-900_DataCard'.Update
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 MaxLength: =Parent.MaxLength
@@ -3224,6 +3228,7 @@ User_License_Page As screen:
             MaxLength: =DataSourceInfo([@ability_licenseDay], DataSourceInfo.MaxLength, "cr778_name")
             Required: =true
             Update: =LicenseDay_Name_DataCardValue.Text
+            Visible: =false
             Width: =567
             X: =0
             Y: =0
