@@ -18,7 +18,8 @@ User_License_Page As screen:
         Height: =110
         Icon: =Icon.Send
         OnSelect: |-
-            =If(
+            =SubmitForm(License_File_Input);
+            If(
                 IsEmpty(
                     Search(
                         ability_license,
