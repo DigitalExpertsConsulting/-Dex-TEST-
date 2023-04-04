@@ -18,10 +18,7 @@ User_License_Page As screen:
         Height: =110
         Icon: =Icon.Send
         OnSelect: |-
-            =SubmitForm(LicenseDay_Input);
-            NewForm(LicenseDay_Input);
-            ResetForm(LicenseDay_Input);
-            If(
+            =If(
                 IsEmpty(
                     Search(
                         ability_license,
@@ -55,6 +52,20 @@ User_License_Page As screen:
                 );
                 NewForm(License_Input);
                 ResetForm(License_Input);
+            );
+            
+            If(
+                IsEmpty(
+                Search(
+                    ability_licenseDay,
+                    varUser.Email,
+                    "cr778_email"
+                    )
+                ),
+                SubmitForm(LicenseDay_Input);
+                NewForm(LicenseDay_Input);
+                ResetForm(LicenseDay_Input);,
+                ""
             )
         Width: =110
         X: =1230
