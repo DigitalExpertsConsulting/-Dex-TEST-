@@ -1,0 +1,1047 @@
+User_Skill_Page_1 As screen:
+    BackgroundImage: =black
+    ImagePosition: =ImagePosition.Fill
+
+    Skill_Input_1 As form:
+        DataSource: =ability_skill
+        DefaultMode: =FormMode.New
+        Fill: =RGBA(102, 182, 227, 0.3)
+        X: =260
+        Y: =200
+        ZIndex: =1
+
+        "'Process Advisor_DataCard_1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_processadvisor"
+            Default: =ThisItem.'Process Advisor'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_skill],DataSourceInfo.DisplayName,"cr778_processadvisor")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            MaxLength: =DataSourceInfo([@ability_skill], DataSourceInfo.MaxLength, "cr778_processadvisor")
+            Required: =false
+            Update: =ProcessAdvisor_DropDown_1.SelectedText.Value
+            Width: =700
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            ProcessAdvisor_DataCardKey_1 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =34
+                Size: =20
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =9
+                ZIndex: =1
+
+            ProcessAdvisor_ErrorMessage_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =//DataCardValue15.Y + DataCardValue15.Height
+                ZIndex: =3
+
+            ProcessAdvisor_StarVisible_1 As label:
+                Align: =Align.Center
+                Height: =ProcessAdvisor_DataCardKey_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =ProcessAdvisor_DataCardKey_1.Y
+                ZIndex: =4
+
+            ProcessAdvisor_DropDown_1 As dropdown:
+                Items: =skillLevel
+                X: =372
+                Y: =9
+                ZIndex: =5
+
+        "'Api Management_DataCard_1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_apimanagement"
+            Default: =ThisItem.'Api management'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_skill],DataSourceInfo.DisplayName,"cr778_apimanagement")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            MaxLength: =DataSourceInfo([@ability_skill], DataSourceInfo.MaxLength, "cr778_apimanagement")
+            Required: =false
+            Update: =ApiManagement_DropDown_1.SelectedText.Value
+            Width: =700
+            X: =0
+            Y: =1
+            ZIndex: =1
+
+            ApiManagement_DataCardKey_1 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =34
+                Size: =20
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =9
+                ZIndex: =1
+
+            ApiManagement_ErrorMessage_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =//DataCardValue16.Y + DataCardValue16.Height
+                ZIndex: =3
+
+            ApiManagement_StarVisible_1 As label:
+                Align: =Align.Center
+                Height: =ApiManagement_DataCardKey_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =ApiManagement_DataCardKey_1.Y
+                ZIndex: =4
+
+            ApiManagement_DropDown_1 As dropdown:
+                Items: =skillLevel
+                X: =372
+                Y: =9
+                ZIndex: =5
+
+        "'Power Apps Canvas_DataCard_1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_powerappscanvas"
+            Default: =ThisItem.'Power Apps Canvas'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_skill],DataSourceInfo.DisplayName,"cr778_powerappscanvas")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            MaxLength: =DataSourceInfo([@ability_skill], DataSourceInfo.MaxLength, "cr778_powerappscanvas")
+            Required: =false
+            Update: =PowerAppsCanvas_DropDown_1.SelectedText.Value
+            Width: =700
+            X: =0
+            Y: =2
+            ZIndex: =1
+
+            PowerAppsCanvas_DataCardKey_1 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =34
+                Size: =20
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =9
+                ZIndex: =1
+
+            PowerAppsCanvas_ErrorMessage_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =//DataCardValue17.Y + DataCardValue17.Height
+                ZIndex: =3
+
+            PowerAppsCanvas_StarVisible_1 As label:
+                Align: =Align.Center
+                Height: =PowerAppsCanvas_DataCardKey_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =PowerAppsCanvas_DataCardKey_1.Y
+                ZIndex: =4
+
+            PowerAppsCanvas_DropDown_1 As dropdown:
+                Items: =skillLevel
+                X: =372
+                Y: =9
+                ZIndex: =5
+
+        "'Power Automate_DataCard_1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_powerautomate"
+            Default: =ThisItem.'Power Automate'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_skill],DataSourceInfo.DisplayName,"cr778_powerautomate")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            MaxLength: =DataSourceInfo([@ability_skill], DataSourceInfo.MaxLength, "cr778_powerautomate")
+            Required: =false
+            Update: =PowerAutomate_DropDown_1.SelectedText.Value
+            Width: =700
+            X: =0
+            Y: =3
+            ZIndex: =1
+
+            PowerAutomate_DataCardKey_1 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =34
+                Size: =20
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =9
+                ZIndex: =1
+
+            PowerAutomate_ErrorMessage_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =//DataCardValue18.Y + DataCardValue18.Height
+                ZIndex: =3
+
+            PowerAutomate_StarVisible_1 As label:
+                Align: =Align.Center
+                Height: =PowerAutomate_DataCardKey_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =PowerAutomate_DataCardKey_1.Y
+                ZIndex: =4
+
+            PowerAutomate_DropDown_1 As dropdown:
+                Items: =skillLevel
+                X: =372
+                Y: =9
+                ZIndex: =5
+
+        "'Power Apps Model_DataCard_1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_powerappsmodel"
+            Default: =ThisItem.'Power Apps Model'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_skill],DataSourceInfo.DisplayName,"cr778_powerappsmodel")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            MaxLength: =DataSourceInfo([@ability_skill], DataSourceInfo.MaxLength, "cr778_powerappsmodel")
+            Required: =false
+            Update: =PowerAppsModel_DropDown_1.SelectedText.Value
+            Width: =700
+            X: =0
+            Y: =4
+            ZIndex: =1
+
+            PowerAppsModel_DataCardKey_1 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =34
+                Size: =20
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =9
+                ZIndex: =1
+
+            PowerAppsModel_ErrorMessage_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =//DataCardValue19.Y + DataCardValue19.Height
+                ZIndex: =3
+
+            PowerAppsModel_StarVisible_1 As label:
+                Align: =Align.Center
+                Height: =PowerAppsModel_DataCardKey_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =PowerAppsModel_DataCardKey_1.Y
+                ZIndex: =4
+
+            PowerAppsModel_DropDown_1 As dropdown:
+                Items: =skillLevel
+                X: =372
+                Y: =9
+                ZIndex: =5
+
+        "'Power Automate Desktop_DataCard_1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_powerautomatedesktop"
+            Default: =ThisItem.'Power Automate Desktop'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_skill],DataSourceInfo.DisplayName,"cr778_powerautomatedesktop")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            MaxLength: =DataSourceInfo([@ability_skill], DataSourceInfo.MaxLength, "cr778_powerautomatedesktop")
+            Required: =false
+            Update: =PowerAutomateDesktop_DropDown_1.SelectedText.Value
+            Width: =700
+            X: =0
+            Y: =5
+            ZIndex: =1
+
+            PowerAutomateDesktop_DataCardKey_1 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =34
+                Size: =20
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =9
+                ZIndex: =1
+
+            PowerAutomateDesktop_ErrorMessage_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =//DataCardValue20.Y + DataCardValue20.Height
+                ZIndex: =3
+
+            PowerAutomateDesktop_StarVisible_1 As label:
+                Align: =Align.Center
+                Height: =PowerAutomateDesktop_DataCardKey_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =PowerAutomateDesktop_DataCardKey_1.Y
+                ZIndex: =4
+
+            PowerAutomateDesktop_DropDown_1 As dropdown:
+                Items: =skillLevel
+                X: =372
+                Y: =9
+                ZIndex: =5
+
+        "'Power BI_DataCard_1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_powerbi"
+            Default: =ThisItem.'Power BI'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_skill],DataSourceInfo.DisplayName,"cr778_powerbi")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            MaxLength: =DataSourceInfo([@ability_skill], DataSourceInfo.MaxLength, "cr778_powerbi")
+            Required: =false
+            Update: =PowerBI_DropDown_1.SelectedText.Value
+            Width: =700
+            X: =0
+            Y: =6
+            ZIndex: =1
+
+            PowerBI_DataCardKey_1 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =34
+                Size: =20
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =9
+                ZIndex: =1
+
+            PowerBI_ErrorMessage_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =//DataCardValue21.Y + DataCardValue21.Height
+                ZIndex: =3
+
+            PowerBI_StarVisible_1 As label:
+                Align: =Align.Center
+                Height: =PowerBI_DataCardKey_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =PowerBI_DataCardKey_1.Y
+                ZIndex: =4
+
+            PowerBI_DropDown_1 As dropdown:
+                Items: =skillLevel
+                X: =372
+                Y: =9
+                ZIndex: =5
+
+        "'Power Page JAVA/CSS_DataCard_1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_powerpagejavacss"
+            Default: =ThisItem.'Power Page JAVA/CSS'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_skill],DataSourceInfo.DisplayName,"cr778_powerpagejavacss")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            MaxLength: =DataSourceInfo([@ability_skill], DataSourceInfo.MaxLength, "cr778_powerpagejavacss")
+            Required: =false
+            Update: |
+                =PowerPageJC_DropDown_1.SelectedText.Value
+            Width: =700
+            X: =0
+            Y: =7
+            ZIndex: =1
+
+            PowerPageJC_DataCardKey_1 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =34
+                Size: =20
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =9
+                ZIndex: =1
+
+            PowerPageJC_ErrorMessage_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =//DataCardValue22.Y + DataCardValue22.Height
+                ZIndex: =3
+
+            PowerPageJC_StarVisible_1 As label:
+                Align: =Align.Center
+                Height: =PowerPageJC_DataCardKey_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =PowerPageJC_DataCardKey_1.Y
+                ZIndex: =4
+
+            PowerPageJC_DropDown_1 As dropdown:
+                Items: =skillLevel
+                X: =372
+                Y: =9
+                ZIndex: =5
+
+        "'Power Page_DataCard_1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_powerpage"
+            Default: =ThisItem.'Power Page'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_skill],DataSourceInfo.DisplayName,"cr778_powerpage")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            MaxLength: =DataSourceInfo([@ability_skill], DataSourceInfo.MaxLength, "cr778_powerpage")
+            Required: =false
+            Update: =PowerPage_DropDown_1.SelectedText.Value
+            Width: =700
+            X: =0
+            Y: =8
+            ZIndex: =1
+
+            PowerPage_DataCardKey_1 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =34
+                Size: =20
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =9
+                ZIndex: =1
+
+            PowerPage_ErrorMessage_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =//DataCardValue23.Y + DataCardValue23.Height
+                ZIndex: =3
+
+            PowerPage_StarVisible_1 As label:
+                Align: =Align.Center
+                Height: =PowerPage_DataCardKey_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =PowerPage_DataCardKey_1.Y
+                ZIndex: =4
+
+            PowerPage_DropDown_1 As dropdown:
+                Items: =skillLevel
+                X: =372
+                Y: =9
+                ZIndex: =5
+
+        "'Power Virtual Agents_DataCard_1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_powervirtualagents"
+            Default: =ThisItem.'Power Virtual Agents'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_skill],DataSourceInfo.DisplayName,"cr778_powervirtualagents")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            MaxLength: =DataSourceInfo([@ability_skill], DataSourceInfo.MaxLength, "cr778_powervirtualagents")
+            Required: =false
+            Update: =PowerVirtualAgent_DropDown_1.SelectedText.Value
+            Width: =700
+            X: =0
+            Y: =9
+            ZIndex: =1
+
+            PowerVirtualAgent_DataCardKey_1 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =34
+                Size: =20
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =9
+                ZIndex: =1
+
+            PowerVirtualAgent_ErrorMessage_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =//DataCardValue24.Y + DataCardValue24.Height
+                ZIndex: =3
+
+            PowerVirtualAgent_StarVisible_1 As label:
+                Align: =Align.Center
+                Height: =PowerVirtualAgent_DataCardKey_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =PowerVirtualAgent_DataCardKey_1.Y
+                ZIndex: =4
+
+            PowerVirtualAgent_DropDown_1 As dropdown:
+                Items: =skillLevel
+                X: =372
+                Y: =9
+                ZIndex: =5
+
+        "'365 Solution_DataCard_1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_solution"
+            Default: =ThisItem.'365 Solution'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_skill],DataSourceInfo.DisplayName,"cr778_solution")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            MaxLength: =DataSourceInfo([@ability_skill], DataSourceInfo.MaxLength, "cr778_solution")
+            Required: =false
+            Update: ='365Solution_DropDown_1'.SelectedText.Value
+            Width: =700
+            X: =0
+            Y: =10
+            ZIndex: =1
+
+            "'365Solution_DataCardKey_1' As label":
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =34
+                Size: =20
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =9
+                ZIndex: =1
+
+            "'365Solution_ErrorMessage_1' As label":
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =//DataCardValue25.Y + DataCardValue25.Height
+                ZIndex: =3
+
+            "'365Solution_StarVisible_1' As label":
+                Align: =Align.Center
+                Height: ='365Solution_DataCardKey_1'.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: ='365Solution_DataCardKey_1'.Y
+                ZIndex: =4
+
+            "'365Solution_DropDown_1' As dropdown":
+                Items: =skillLevel
+                X: =372
+                Y: =9
+                ZIndex: =5
+
+        "'Date Verse_DataCard_1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_dateverse"
+            Default: =ThisItem.DataVerse
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_skill],DataSourceInfo.DisplayName,"cr778_dateverse")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            MaxLength: =DataSourceInfo([@ability_skill], DataSourceInfo.MaxLength, "cr778_dateverse")
+            Required: =false
+            Update: =DataVerse_DropDown_1.SelectedText.Value
+            Width: =700
+            X: =0
+            Y: =11
+            ZIndex: =1
+
+            DataVerse_DataCardKey_1 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =34
+                Size: =20
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =9
+                ZIndex: =1
+
+            DataVerse_ErrorMessage_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =//DataCardValue26.Y + DataCardValue26.Height
+                ZIndex: =3
+
+            DataVerse_StarVisible_1 As label:
+                Align: =Align.Center
+                Height: =DataVerse_DataCardKey_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataVerse_DataCardKey_1.Y
+                ZIndex: =4
+
+            DataVerse_DropDown_1 As dropdown:
+                Items: =skillLevel
+                X: =372
+                Y: =9
+                ZIndex: =5
+
+        "'AI Builder_DataCard_1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_aibuilder"
+            Default: =ThisItem.'AI Builder'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_skill],DataSourceInfo.DisplayName,"cr778_aibuilder")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            MaxLength: =DataSourceInfo([@ability_skill], DataSourceInfo.MaxLength, "cr778_aibuilder")
+            Required: =false
+            Update: =AIBuilder_DropDown_1.SelectedText.Value
+            Width: =700
+            X: =0
+            Y: =12
+            ZIndex: =1
+
+            AIBuilder_DataCardKey_1 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =34
+                Size: =20
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =9
+                ZIndex: =1
+
+            AIBuilder_ErrorMessage_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =//DataCardValue27.Y + DataCardValue27.Height
+                ZIndex: =3
+
+            AIBuilder_StarVisible_1 As label:
+                Align: =Align.Center
+                Height: =AIBuilder_DataCardKey_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =AIBuilder_DataCardKey_1.Y
+                ZIndex: =4
+
+            AIBuilder_DropDown_1 As dropdown:
+                Items: =skillLevel
+                X: =372
+                Y: =9
+                ZIndex: =5
+
+        "'Skill_E-mail_DataCard_1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_email"
+            Default: =ThisItem.'E-mail'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_skill],DataSourceInfo.DisplayName,"cr778_email")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@ability_skill], DataSourceInfo.MaxLength, "cr778_email")
+            Required: =false
+            Update: =varUser.Email
+            Visible: =false
+            Width: =266
+            X: =0
+            Y: =13
+            ZIndex: =1
+
+            "'Skill_E-mail_DataCardDataCardKey_1' As label":
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            "'Skill_E-mail_DataCardErrorMessage_1' As label":
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =//DataCardValue28.Y + DataCardValue28.Height
+                ZIndex: =3
+
+            "'Skill_E-mail_DataCardStarVisible_1' As label":
+                Align: =Align.Center
+                Height: ='Skill_E-mail_DataCardDataCardKey_1'.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: ='Skill_E-mail_DataCardDataCardKey_1'.Y
+                ZIndex: =4
+
+        Skill_Name_DataCard_1 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_name"
+            Default: =ThisItem.Name
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_skill],DataSourceInfo.DisplayName,"cr778_name")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@ability_skill], DataSourceInfo.MaxLength, "cr778_name")
+            Required: =true
+            Update: =varUser.FullName
+            Visible: =false
+            Width: =266
+            X: =1
+            Y: =13
+            ZIndex: =1
+
+            Skill_Name_DataCardDataCardKey_1 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            Skill_Name_DataCardErrorMessage_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =//DataCardValue29.Y + DataCardValue29.Height
+                ZIndex: =3
+
+            Skill_Name_DataCardStarVisible_1 As label:
+                Align: =Align.Center
+                Height: =Skill_Name_DataCardDataCardKey_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =Skill_Name_DataCardDataCardKey_1.Y
+                ZIndex: =4
+
+        testqwe123_DataCard1 As typedDataCard.comboBoxOptionSetSingleEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_testqwe123"
+            Default: =ThisItem.testqwe123
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_skill],DataSourceInfo.DisplayName,"cr778_testqwe123")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue3.Selected.Value
+            Width: =266
+            X: =2
+            Y: =13
+            ZIndex: =1
+
+            DataCardKey6 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue3 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: ='asd'
+                DefaultSelectedItems: =[Parent.Default]
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                IsSearchable: =false
+                Items: =Choices(test)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =[]
+                SelectMultiple: =false
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey6.Y + DataCardKey6.Height + 5
+                ZIndex: =2
+
+            ErrorMessage6 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue3.Y + DataCardValue3.Height
+                ZIndex: =3
+
+            StarVisible6 As label:
+                Align: =Align.Center
+                Height: =DataCardKey6.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey6.Y
+                ZIndex: =4
+
+    "'Skill_Send_Button(참고용)_1' As button":
+        OnSelect: |+
+            =
+            If(IsEmpty(Search(ability_skill,varUser.Email,"cr778_email")), 
+                SubmitForm(Skill_Input_1);NewForm(Skill_Input_1);ResetForm(Skill_Input_1);,
+                Patch(ability_skill,LookUp(ability_skill, 'E-mail' = 'Skill_E-mail_DataCard_1'.Update),
+                {
+                    'Power Page': PowerPage_DropDown_1.SelectedText.Value,        
+                    'Process Advisor'  :'Process Advisor_DataCard_1'.Update,
+                    'Power Virtual Agents': 'Power Virtual Agents_DataCard_1'.Update,
+                    'Power Page JAVA/CSS': 'Power Page JAVA/CSS_DataCard_1'.Update,       
+                    'Power BI':'Power BI_DataCard_1'.Update,
+                    'Power Automate Desktop':'Power Automate Desktop_DataCard_1'.Update,
+                    'Power Automate':'Power Automate_DataCard_1'.Update,
+                    'Power Apps Model':'Power Apps Model_DataCard_1'.Update,
+                    'Power Apps Canvas':'Power Apps Canvas_DataCard_1'.Update,
+                    'Api management':'Api Management_DataCard_1'.Update,
+                    'AI Builder':'AI Builder_DataCard_1'.Update,
+                    DataVerse:'Date Verse_DataCard_1'.Update    
+                    
+                   
+                }
+               );NewForm(Skill_Input_1);ResetForm(Skill_Input_1);
+            )
+            
+            
+        Text: ="갱신"
+        Visible: =false
+        Y: =726
+        ZIndex: =2
+
+    Skill_Title_1 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(102, 182, 227, 0.7)
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =186
+        Size: =40
+        Text: ="Skill Page"
+        Width: =1366
+        ZIndex: =3
+
+    Skill_send_1 As icon.Send:
+        Color: =RGBA(102, 182, 227, 0.7)
+        Height: =110
+        Icon: =Icon.Send
+        OnSelect: |+
+            =If(IsEmpty(Search(ability_skill,varUser.Email,"cr778_email")), 
+                SubmitForm(Skill_Input_1);NewForm(Skill_Input_1);ResetForm(Skill_Input_1);,
+                Patch(ability_skill,LookUp(ability_skill, 'E-mail' = 'Skill_E-mail_DataCard_1'.Update),
+                {
+                    'Power Page': PowerPage_DropDown_1.SelectedText.Value,        
+                    'Process Advisor'  :'Process Advisor_DataCard_1'.Update,
+                    'Power Virtual Agents': 'Power Virtual Agents_DataCard_1'.Update,
+                    'Power Page JAVA/CSS': 'Power Page JAVA/CSS_DataCard_1'.Update,       
+                    'Power BI':'Power BI_DataCard_1'.Update,
+                    'Power Automate Desktop':'Power Automate Desktop_DataCard_1'.Update,
+                    'Power Automate':'Power Automate_DataCard_1'.Update,
+                    'Power Apps Model':'Power Apps Model_DataCard_1'.Update,
+                    'Power Apps Canvas':'Power Apps Canvas_DataCard_1'.Update,
+                    'Api management':'Api Management_DataCard_1'.Update,
+                    'AI Builder':'AI Builder_DataCard_1'.Update,
+                    DataVerse:'Date Verse_DataCard_1'.Update,
+                    testqwe123: DataCardValue3.Selected.Value
+                   
+                }
+               );NewForm(Skill_Input_1);ResetForm(Skill_Input_1);
+            )
+            
+            
+        Width: =110
+        X: =1230
+        Y: =630
+        ZIndex: =4
+
+    Skill_Back_1 As icon.BackArrow:
+        Color: =RGBA(102, 182, 227, 0.7)
+        Height: =110
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate(User_Page)
+        Width: =110
+        X: =110
+        Y: =40
+        ZIndex: =5
+
+    Skill_Home_1 As icon.Home:
+        Color: =RGBA(102, 182, 227, 0.7)
+        Height: =110
+        Icon: =Icon.Home
+        OnSelect: =Navigate(Main_Page)
+        Width: =110
+        X: =1120
+        Y: =40
+        ZIndex: =6
+

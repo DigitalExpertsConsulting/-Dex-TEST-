@@ -49,6 +49,7 @@
       "cr778_powervirtualagents": "Power Virtual Agents",
       "cr778_processadvisor": "Process Advisor",
       "cr778_solution": "365 Solution",
+      "cr778_testqwe123": "testqwe123",
       "createdby": "Created By",
       "createdon": "Created On",
       "createdonbehalfby": "Created By (Delegate)",
@@ -106,6 +107,28 @@
     },
     "OptionSetTypeKey": "StatusType",
     "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "ability_skill",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "test",
+    "Name": "cr778_test",
+    "OptionSetInfoNameMapping": {
+      "340830000": "None",
+      "340830001": "Basic",
+      "340830002": "Intermediate",
+      "340830003": "Advanced"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr778_testqwe123",
+        "OptionSetReferenceEntityName": "ability_skill"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "cr778_testqwe123",
     "RelatedEntityName": "ability_skill",
     "Type": "OptionSetInfo"
   }

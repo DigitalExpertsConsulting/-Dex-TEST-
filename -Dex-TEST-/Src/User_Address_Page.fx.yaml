@@ -336,6 +336,7 @@ User_Address_Page As screen:
 
             Gift_Address_DataCardValue As text:
                 BorderColor: =RGBA(102, 182, 227, 0.7)
+                Color: =RGBA(255, 255, 255, 1)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -409,6 +410,7 @@ User_Address_Page As screen:
 
             Gift_Zipcode_DataCardValue As text:
                 BorderColor: =RGBA(102, 182, 227, 0.7)
+                Color: =RGBA(255, 255, 255, 1)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
