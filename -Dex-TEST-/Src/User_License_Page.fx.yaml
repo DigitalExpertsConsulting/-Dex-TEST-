@@ -18,8 +18,7 @@ User_License_Page As screen:
         Height: =110
         Icon: =Icon.Send
         OnSelect: |-
-            =
-            If(
+            =If(
                 IsEmpty(
                     Search(
                         ability_license,
@@ -2336,11 +2335,10 @@ User_License_Page As screen:
     LicenseDay_Input As form:
         DataSource: =ability_licenseDay
         DefaultMode: =FormMode.New
-        Height: =600
-        Visible: =false
-        Width: =568
-        X: =798
-        Y: =168
+        Height: =0
+        Width: =388
+        X: =608
+        Y: =40
         ZIndex: =10
 
         "'LicenseDay_E-mail_DataCard' As typedDataCard.textualEditCard":
@@ -2355,7 +2353,7 @@ User_License_Page As screen:
             Required: =false
             Update: ='LicenseDay_E-mail_DataCardValue'.Text
             Visible: =false
-            Width: =567
+            Width: =387
             X: =0
             Y: =1
             ZIndex: =1
@@ -2428,7 +2426,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('AZ-104_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =189
+            Width: =129
             X: =0
             Y: =2
             ZIndex: =1
@@ -2501,7 +2499,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('AZ-305_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =189
+            Width: =129
             X: =1
             Y: =2
             ZIndex: =1
@@ -2574,7 +2572,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('MS-100_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =189
+            Width: =129
             X: =2
             Y: =2
             ZIndex: =1
@@ -2647,7 +2645,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('MS-101_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =189
+            Width: =129
             X: =0
             Y: =3
             ZIndex: =1
@@ -2720,7 +2718,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('MS-700_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =189
+            Width: =129
             X: =1
             Y: =3
             ZIndex: =1
@@ -2793,7 +2791,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('MS-900_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =189
+            Width: =129
             X: =2
             Y: =3
             ZIndex: =1
@@ -2866,7 +2864,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('PL-200_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =189
+            Width: =129
             X: =0
             Y: =4
             ZIndex: =1
@@ -2939,7 +2937,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('PL-300_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =189
+            Width: =129
             X: =1
             Y: =4
             ZIndex: =1
@@ -3013,7 +3011,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('PL-400_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =189
+            Width: =129
             X: =2
             Y: =4
             ZIndex: =1
@@ -3087,7 +3085,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('PL-600_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =189
+            Width: =129
             X: =0
             Y: =5
             ZIndex: =1
@@ -3160,7 +3158,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('PL-900_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =189
+            Width: =129
             X: =1
             Y: =5
             ZIndex: =1
@@ -3229,7 +3227,7 @@ User_License_Page As screen:
             Required: =true
             Update: =LicenseDay_Name_DataCardValue.Text
             Visible: =false
-            Width: =567
+            Width: =387
             X: =0
             Y: =0
             ZIndex: =11
@@ -3296,6 +3294,41 @@ User_License_Page As screen:
         Icon: =Icon.Send
         OnSelect: |-
             =If(
+                IsEmpty(
+                    Search(
+                        ability_license,
+                        varUser.Email,
+                        "cr778_email"
+                    )
+                ),
+                SubmitForm(License_Input);
+                NewForm(License_Input);
+                ResetForm(License_Input);
+                ,
+                Patch(
+                    ability_license,
+                    LookUp(
+                        ability_license,
+                        'E-mail' = 'E-mail_License_DataCard'.Update
+                    ),
+                    {
+                        'AZ-104': 'AZ-104_DataCard'.Update,
+                        'AZ-305': 'AZ-305_DataCard'.Update,
+                        'MS-100': 'MS-100_DataCard'.Update,
+                        'MS-101': 'MS-101_DataCard'.Update,
+                        'MS-700': 'MS-700_DataCard'.Update,
+                        'MS-900': 'MS-900_DataCard'.Update,
+                        'PL-200': 'PL-200_DataCard'.Update,
+                        'PL-300': 'PL-300_DataCard'.Update,
+                        'PL-400': 'PL-400_DataCard'.Update,
+                        'PL-600': 'PL-600_DataCard'.Update,
+                        'PL-900': 'PL-900_DataCard'.Update            
+                    }
+                );
+                NewForm(License_Input);
+                ResetForm(License_Input);
+            );
+            If(
                 IsEmpty(
                     Search(
                         ability_licenseDay,
