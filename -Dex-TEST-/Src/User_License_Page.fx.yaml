@@ -1,5 +1,5 @@
 User_License_Page As screen:
-    BackgroundImage: =black
+    BackgroundImage: =
     ImagePosition: =ImagePosition.Fill
 
     License_Title As label:
@@ -82,6 +82,8 @@ User_License_Page As screen:
         DataSource: =ability_license
         DefaultMode: =FormMode.New
         Fill: =RGBA( 135, 206, 250, 0.5 )
+        Visible: |
+            =true
         Width: =686
         X: =42
         Y: =186
@@ -2291,5 +2293,903 @@ User_License_Page As screen:
                 Width: =30
                 Wrap: =false
                 Y: ='E-mail_File_DataCardKey'.Y
+                ZIndex: =4
+
+    LicenseDay_Input As form:
+        DataSource: =ability_licenseDay
+        DefaultMode: =FormMode.New
+        Height: =164
+        Visible: =false
+        Width: =232
+        X: =781
+        Y: =603
+        ZIndex: =10
+
+        "'LicenseDay_E-mail_DataCard' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_email"
+            Default: =ThisItem.'E-mail'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_licenseDay],DataSourceInfo.DisplayName,"cr778_email")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@ability_licenseDay], DataSourceInfo.MaxLength, "cr778_email")
+            Required: =false
+            Update: ='LicenseDay_E-mail_DataCardValue'.Text
+            Width: =231
+            X: =0
+            Y: =1
+            ZIndex: =1
+
+            "'LicenseDay_E-mail_DataCardKey' As label":
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            "'LicenseDay_E-mail_DataCardValue' As text":
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =User().Email
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: ='LicenseDay_E-mail_DataCardKey'.Y + 'LicenseDay_E-mail_DataCardKey'.Height + 5
+                ZIndex: =2
+
+            ErrorMessage20 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: ='LicenseDay_E-mail_DataCardValue'.Y + 'LicenseDay_E-mail_DataCardValue'.Height
+                ZIndex: =3
+
+            StarVisible20 As label:
+                Align: =Align.Center
+                Height: ='LicenseDay_E-mail_DataCardKey'.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: ='LicenseDay_E-mail_DataCardKey'.Y
+                ZIndex: =4
+
+        "'LicenseDay_AZ-104_DataCard' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_az104"
+            Default: =ThisItem.'AZ-104'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_licenseDay],DataSourceInfo.DisplayName,"cr778_az104")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@ability_licenseDay], DataSourceInfo.MaxLength, "cr778_az104")
+            Required: =false
+            Update: ='LicenseDay_AZ-104_DataCardValue'.Text
+            Width: =77
+            X: =0
+            Y: =2
+            ZIndex: =1
+
+            "'LicenseDay_AZ-104_DataCardKey' As label":
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            "'LicenseDay_AZ-104_DataCardValue' As text":
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =DateAdd(DateValue('AZ-104_DatePicker'.SelectedDate), 365-30)
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: ='LicenseDay_AZ-104_DataCardKey'.Y + 'LicenseDay_AZ-104_DataCardKey'.Height + 5
+                ZIndex: =2
+
+            ErrorMessage21 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: ='LicenseDay_AZ-104_DataCardValue'.Y + 'LicenseDay_AZ-104_DataCardValue'.Height
+                ZIndex: =3
+
+            StarVisible21 As label:
+                Align: =Align.Center
+                Height: ='LicenseDay_AZ-104_DataCardKey'.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: ='LicenseDay_AZ-104_DataCardKey'.Y
+                ZIndex: =4
+
+        "'LicenseDay_AZ-305_DataCard' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_az305"
+            Default: =ThisItem.'AZ-305'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_licenseDay],DataSourceInfo.DisplayName,"cr778_az305")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@ability_licenseDay], DataSourceInfo.MaxLength, "cr778_az305")
+            Required: =false
+            Update: ='LicenseDay_AZ-305_DataCardValue'.Text
+            Width: =77
+            X: =1
+            Y: =2
+            ZIndex: =1
+
+            "'LicenseDay_AZ-305_DataCardKey' As label":
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            "'LicenseDay_AZ-305_DataCardValue' As text":
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =DateAdd(DateValue('AZ-305_DatePicker'.SelectedDate), 365-30)
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: ='LicenseDay_AZ-305_DataCardKey'.Y + 'LicenseDay_AZ-305_DataCardKey'.Height + 5
+                ZIndex: =2
+
+            ErrorMessage22 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: ='LicenseDay_AZ-305_DataCardValue'.Y + 'LicenseDay_AZ-305_DataCardValue'.Height
+                ZIndex: =3
+
+            StarVisible22 As label:
+                Align: =Align.Center
+                Height: ='LicenseDay_AZ-305_DataCardKey'.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: ='LicenseDay_AZ-305_DataCardKey'.Y
+                ZIndex: =4
+
+        "'LicenseDay_MS-100_DataCard' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_ms100"
+            Default: =ThisItem.'MS-100'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_licenseDay],DataSourceInfo.DisplayName,"cr778_ms100")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@ability_licenseDay], DataSourceInfo.MaxLength, "cr778_ms100")
+            Required: =false
+            Update: ='LicenseDay_MS-100_DataCardValue'.Text
+            Width: =77
+            X: =2
+            Y: =2
+            ZIndex: =1
+
+            "'LicenseDay_MS-100_DataCardKey' As label":
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            "'LicenseDay_MS-100_DataCardValue' As text":
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =DateAdd(DateValue('MS-100_DatePicker'.SelectedDate), 365-30)
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: ='LicenseDay_MS-100_DataCardKey'.Y + 'LicenseDay_MS-100_DataCardKey'.Height + 5
+                ZIndex: =2
+
+            ErrorMessage23 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: ='LicenseDay_MS-100_DataCardValue'.Y + 'LicenseDay_MS-100_DataCardValue'.Height
+                ZIndex: =3
+
+            StarVisible23 As label:
+                Align: =Align.Center
+                Height: ='LicenseDay_MS-100_DataCardKey'.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: ='LicenseDay_MS-100_DataCardKey'.Y
+                ZIndex: =4
+
+        "'LicenseDay_MS-101_DataCard' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_ms101"
+            Default: =ThisItem.'MS-101'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_licenseDay],DataSourceInfo.DisplayName,"cr778_ms101")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@ability_licenseDay], DataSourceInfo.MaxLength, "cr778_ms101")
+            Required: =false
+            Update: ='LicenseDay_MS-101_DataCardValue'.Text
+            Width: =77
+            X: =0
+            Y: =3
+            ZIndex: =1
+
+            "'LicenseDay_MS-101_DataCardKey' As label":
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            "'LicenseDay_MS-101_DataCardValue' As text":
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =DateAdd(DateValue('MS-101_DatePicker'.SelectedDate), 365-30)
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: ='LicenseDay_MS-101_DataCardKey'.Y + 'LicenseDay_MS-101_DataCardKey'.Height + 5
+                ZIndex: =2
+
+            ErrorMessage24 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: ='LicenseDay_MS-101_DataCardValue'.Y + 'LicenseDay_MS-101_DataCardValue'.Height
+                ZIndex: =3
+
+            StarVisible24 As label:
+                Align: =Align.Center
+                Height: ='LicenseDay_MS-101_DataCardKey'.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: ='LicenseDay_MS-101_DataCardKey'.Y
+                ZIndex: =4
+
+        "'LicenseDay_MS-700_DataCard' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_ms700"
+            Default: =ThisItem.'MS-700'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_licenseDay],DataSourceInfo.DisplayName,"cr778_ms700")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@ability_licenseDay], DataSourceInfo.MaxLength, "cr778_ms700")
+            Required: =false
+            Update: ='LicenseDay_MS-700_DataCardValue'.Text
+            Width: =77
+            X: =1
+            Y: =3
+            ZIndex: =1
+
+            "'LicenseDay_MS-700_DataCardKey' As label":
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            "'LicenseDay_MS-700_DataCardValue' As text":
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =DateAdd(DateValue('MS-700_DatePicker'.SelectedDate), 365-30)
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: ='LicenseDay_MS-700_DataCardKey'.Y + 'LicenseDay_MS-700_DataCardKey'.Height + 5
+                ZIndex: =2
+
+            ErrorMessage25 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: ='LicenseDay_MS-700_DataCardValue'.Y + 'LicenseDay_MS-700_DataCardValue'.Height
+                ZIndex: =3
+
+            StarVisible25 As label:
+                Align: =Align.Center
+                Height: ='LicenseDay_MS-700_DataCardKey'.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: ='LicenseDay_MS-700_DataCardKey'.Y
+                ZIndex: =4
+
+        "'LicenseDay_MS-900_DataCard' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_ms900"
+            Default: =ThisItem.'MS-900'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_licenseDay],DataSourceInfo.DisplayName,"cr778_ms900")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@ability_licenseDay], DataSourceInfo.MaxLength, "cr778_ms900")
+            Required: =false
+            Update: ='LicenseDay_MS-900_DataCardValue'.Text
+            Width: =77
+            X: =2
+            Y: =3
+            ZIndex: =1
+
+            "'LicenseDay_MS-900_DataCardKey' As label":
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            "'LicenseDay_MS-900_DataCardValue' As text":
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =DateAdd(DateValue('MS-900_DatePicker'.SelectedDate), 365-30)
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: ='LicenseDay_MS-900_DataCardKey'.Y + 'LicenseDay_MS-900_DataCardKey'.Height + 5
+                ZIndex: =2
+
+            ErrorMessage26 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: ='LicenseDay_MS-900_DataCardValue'.Y + 'LicenseDay_MS-900_DataCardValue'.Height
+                ZIndex: =3
+
+            StarVisible26 As label:
+                Align: =Align.Center
+                Height: ='LicenseDay_MS-900_DataCardKey'.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: ='LicenseDay_MS-900_DataCardKey'.Y
+                ZIndex: =4
+
+        "'LicenseDay_PL-200_DataCar' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_pl200"
+            Default: =ThisItem.'PL-200'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_licenseDay],DataSourceInfo.DisplayName,"cr778_pl200")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@ability_licenseDay], DataSourceInfo.MaxLength, "cr778_pl200")
+            Required: =false
+            Update: ='LicenseDay_PL-200_DataCardValue'.Text
+            Width: =77
+            X: =0
+            Y: =4
+            ZIndex: =1
+
+            "'LicenseDay_PL-200_DataCardKey' As label":
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            "'LicenseDay_PL-200_DataCardValue' As text":
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =DateAdd(DateValue('PL-200_DatePicker'.SelectedDate), 365-30)
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: ='LicenseDay_PL-200_DataCardKey'.Y + 'LicenseDay_PL-200_DataCardKey'.Height + 5
+                ZIndex: =2
+
+            ErrorMessage27 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: ='LicenseDay_PL-200_DataCardValue'.Y + 'LicenseDay_PL-200_DataCardValue'.Height
+                ZIndex: =3
+
+            StarVisible27 As label:
+                Align: =Align.Center
+                Height: ='LicenseDay_PL-200_DataCardKey'.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: ='LicenseDay_PL-200_DataCardKey'.Y
+                ZIndex: =4
+
+        "'LicenseDay_PL-300_DataCard' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_pl300"
+            Default: =ThisItem.'PL-300'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_licenseDay],DataSourceInfo.DisplayName,"cr778_pl300")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@ability_licenseDay], DataSourceInfo.MaxLength, "cr778_pl300")
+            Required: =false
+            Update: ='LicenseDay_PL-300_DataCardValue'.Text
+            Width: =77
+            X: =1
+            Y: =4
+            ZIndex: =1
+
+            "'LicenseDay_PL-300_DataCardKey' As label":
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            "'LicenseDay_PL-300_DataCardValue' As text":
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =DateAdd(DateValue('PL-300_DatePicker'.SelectedDate), 365-30)
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: ='LicenseDay_PL-300_DataCardKey'.Y + 'LicenseDay_PL-300_DataCardKey'.Height + 5
+                ZIndex: =2
+
+            ErrorMessage28 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: ='LicenseDay_PL-300_DataCardValue'.Y + 'LicenseDay_PL-300_DataCardValue'.Height
+                ZIndex: =3
+
+            StarVisible28 As label:
+                Align: =Align.Center
+                Height: ='LicenseDay_PL-300_DataCardKey'.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: ='LicenseDay_PL-300_DataCardKey'.Y
+                ZIndex: =4
+
+        "'LicenseDay_PL-400_DataCard' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_pl400"
+            Default: =ThisItem.'PL-400'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_licenseDay],DataSourceInfo.DisplayName,"cr778_pl400")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@ability_licenseDay], DataSourceInfo.MaxLength, "cr778_pl400")
+            Required: =false
+            Update: ='LicenseDay_PL-400_DataCardValue'.Text
+            Width: =77
+            X: =2
+            Y: =4
+            ZIndex: =1
+
+            "'LicenseDay_PL-400_DataCardKey' As label":
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            "'LicenseDay_PL-400_DataCardValue' As text":
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =DateAdd(DateValue('PL-400_DatePicker'.SelectedDate), 365-30)
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: ='LicenseDay_PL-400_DataCardKey'.Y + 'LicenseDay_PL-400_DataCardKey'.Height + 5
+                ZIndex: =2
+
+            ErrorMessage29 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: ='LicenseDay_PL-400_DataCardValue'.Y + 'LicenseDay_PL-400_DataCardValue'.Height
+                ZIndex: =3
+
+            StarVisible29 As label:
+                Align: =Align.Center
+                Height: ='LicenseDay_PL-400_DataCardKey'.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: ='LicenseDay_PL-400_DataCardKey'.Y
+                ZIndex: =4
+
+        "'LicenseDay_PL-600_DataCard' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_pl600"
+            Default: =ThisItem.'PL-600'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_licenseDay],DataSourceInfo.DisplayName,"cr778_pl600")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@ability_licenseDay], DataSourceInfo.MaxLength, "cr778_pl600")
+            Required: =false
+            Update: ='LicenseDay_PL-600_DataCardValue'.Text
+            Width: =77
+            X: =0
+            Y: =5
+            ZIndex: =1
+
+            "'LicenseDay_PL-600_DataCardKey' As label":
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            "'LicenseDay_PL-600_DataCardValue' As text":
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =DateAdd(DateValue('PL-600_DatePicker'.SelectedDate), 365-30)
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: ='LicenseDay_PL-600_DataCardKey'.Y + 'LicenseDay_PL-600_DataCardKey'.Height + 5
+                ZIndex: =2
+
+            ErrorMessage30 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: ='LicenseDay_PL-600_DataCardValue'.Y + 'LicenseDay_PL-600_DataCardValue'.Height
+                ZIndex: =3
+
+            StarVisible30 As label:
+                Align: =Align.Center
+                Height: ='LicenseDay_PL-600_DataCardKey'.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: ='LicenseDay_PL-600_DataCardKey'.Y
+                ZIndex: =4
+
+        "'LicenseDay_PL-900_DataCard' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_pl900"
+            Default: =ThisItem.'PL-900'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_licenseDay],DataSourceInfo.DisplayName,"cr778_pl900")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@ability_licenseDay], DataSourceInfo.MaxLength, "cr778_pl900")
+            Required: =false
+            Update: ='LicenseDay_PL-900_DataCardValue'.Text
+            Width: =77
+            X: =1
+            Y: =5
+            ZIndex: =1
+
+            "'LicenseDay_PL-900_DataCardKey' As label":
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            "'LicenseDay_PL-900_DataCardValue' As text":
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =DateAdd(DateValue('PL-900_DatePicker'.SelectedDate), 365-30)
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: ='LicenseDay_PL-900_DataCardKey'.Y + 'LicenseDay_PL-900_DataCardKey'.Height + 5
+                ZIndex: =2
+
+            ErrorMessage31 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: ='LicenseDay_PL-900_DataCardValue'.Y + 'LicenseDay_PL-900_DataCardValue'.Height
+                ZIndex: =3
+
+            StarVisible31 As label:
+                Align: =Align.Center
+                Height: ='LicenseDay_PL-900_DataCardKey'.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: ='LicenseDay_PL-900_DataCardKey'.Y
+                ZIndex: =4
+
+        LicenseDay_Name_DataCard As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_name"
+            Default: =ThisItem.Name
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_licenseDay],DataSourceInfo.DisplayName,"cr778_name")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@ability_licenseDay], DataSourceInfo.MaxLength, "cr778_name")
+            Required: =true
+            Update: =LicenseDay_Name_DataCardValue.Text
+            Width: =231
+            X: =0
+            Y: =0
+            ZIndex: =11
+
+            LicenseDay_Name_DataCardKey As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            LicenseDay_Name_DataCardValue As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: |-
+                    =With(
+                        { wName: Split(User().FullName, " ") },
+                        Last(wName).Value & First(wName).Value
+                    )
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =LicenseDay_Name_DataCardKey.Y + LicenseDay_Name_DataCardKey.Height + 5
+                ZIndex: =2
+
+            ErrorMessage19 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =LicenseDay_Name_DataCardValue.Y + LicenseDay_Name_DataCardValue.Height
+                ZIndex: =3
+
+            StarVisible19 As label:
+                Align: =Align.Center
+                Height: =LicenseDay_Name_DataCardKey.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =LicenseDay_Name_DataCardKey.Y
                 ZIndex: =4
 
