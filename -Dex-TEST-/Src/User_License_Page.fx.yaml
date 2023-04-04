@@ -17,8 +17,33 @@ User_License_Page As screen:
         Color: =RGBA(102, 182, 227, 0.7)
         Height: =110
         Icon: =Icon.Send
-        OnSelect: |
-            =
+        OnSelect: |-
+            =If(
+                IsEmpty(
+                    Search(
+                        ability_license,
+                        varUser.Email,
+                        "cr778_email"
+                    )
+                ),
+                SubmitForm(License_Input);
+                NewForm(License_Input);
+                ResetForm(License_Input);
+                ,
+                Patch(
+                    ability_license,
+                    LookUp(
+                        ability_license,
+                        'E-mail' = 'E-mail_License_DataCard'.Update
+                    ),
+                    {
+                        'AZ-104': 'AZ-104_Toggle'.Value,
+                        test: Text('AZ-104_DatePicker'.SelectedDate,"yyyy-mm-dd")
+                    }
+                );
+                NewForm(Address_Input);
+                ResetForm(Address_Input);
+            )
         Width: =110
         X: =1230
         Y: =630
