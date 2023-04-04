@@ -123,11 +123,19 @@ User_Skill_Page As screen:
                                     "cr778_email"
                                 ),
                                 'E-mail' = User().Email,
-                                '365 Solution_SkillLevel'
+                                '365 Solution'
                             )
                         ),
-                        "None"    
-                         
+                        "None",
+                         LookUp(
+                             Search(
+                                 ability_skill,
+                                 User().Email,
+                                 "cr778_email"
+                             ),
+                             'E-mail'= User().Email,
+                             '365 Solution'
+                         )
                     )
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
