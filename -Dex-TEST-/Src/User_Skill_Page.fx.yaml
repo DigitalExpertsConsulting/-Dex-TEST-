@@ -663,7 +663,7 @@ User_Skill_Page As screen:
         "'Date Verse_DataCard' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr778_dateverse"
-            Default: =ThisItem.DataVerse
+            Default: =ThisItem.cr778_dateverse
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@ability_skill],DataSourceInfo.DisplayName,"cr778_dateverse")
             Fill: =RGBA(0, 0, 0, 0)
