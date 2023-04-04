@@ -19,25 +19,26 @@ User_Skill_Page As screen:
         Icon: =Icon.Send
         OnSelect: |+
             =If(
-                IsEmpty(
-                    Search(
-                        ability_skill,varUser.Email,"cr778_email"
-                        )
-                        ), 
-                SubmitForm(Skill_Input);
-                NewForm(Skill_Input);
-                ResetForm(Skill_Input);,
-                Patch(
-                    ability_skill,
-                    LookUp(
-                        ability_skill, 'E-mail' = 'Skill_E-mail_DataCard'.Update),
-                {
-            
-               
-                }
-               );
-               NewForm(Skill_Input);
-               ResetForm(Skill_Input);
+                IsBlank(
+                    LookUp(
+                        Search(
+                            ability_skill,User().Email,
+                            "cr778_email"
+                        ),
+                        'E-mail'= User().Email,
+                        '365 Solution_SkillLevel'
+                    )
+                ),
+                "None",
+                LookUp(
+                    Search(
+                        ability_skill,
+                        User().Email,
+                        "cr778_email"
+                    ),
+                    'E-mail'= User().Email,
+                    '365 Solution_SkillLevel'
+                )
             )
             
             
