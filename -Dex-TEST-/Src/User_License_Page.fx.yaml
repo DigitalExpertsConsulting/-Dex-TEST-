@@ -24,7 +24,7 @@ User_License_Page As screen:
                         ability_license,
                         varUser.Email,
                         "cr778_email"
-                    );
+                    )
                 ),
                 SubmitForm(License_Input);
                 NewForm(License_Input);
