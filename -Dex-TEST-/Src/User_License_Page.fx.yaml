@@ -19,6 +19,8 @@ User_License_Page As screen:
         Icon: =Icon.Send
         OnSelect: |-
             =SubmitForm(License_File_Input);
+            NewForm(License_File_Input);
+            ResetForm(License_File_Input);
             If(
                 IsEmpty(
                     Search(
@@ -51,8 +53,8 @@ User_License_Page As screen:
                         'PL-900': 'PL-900_DataCard'.Update            
                     }
                 );
-                NewForm(Address_Input);
-                ResetForm(Address_Input);
+                NewForm(License_Input);
+                ResetForm(License_Input);
             )
         Width: =110
         X: =1230
