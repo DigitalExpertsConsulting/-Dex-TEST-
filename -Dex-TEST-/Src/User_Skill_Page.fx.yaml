@@ -126,7 +126,7 @@ User_Skill_Page As screen:
                                 '365 Solution_SkillLevel'
                             )
                         ),
-                        "None",     
+                        "None"    
                          
                     )
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
