@@ -2336,9 +2336,8 @@ User_License_Page As screen:
         DataSource: =ability_licenseDay
         DefaultMode: =FormMode.New
         Height: =0
-        Width: =388
-        X: =608
-        Y: =40
+        Width: =0
+        Y: =768
         ZIndex: =10
 
         "'LicenseDay_E-mail_DataCard' As typedDataCard.textualEditCard":
@@ -2353,7 +2352,7 @@ User_License_Page As screen:
             Required: =false
             Update: ='LicenseDay_E-mail_DataCardValue'.Text
             Visible: =false
-            Width: =387
+            Width: =0
             X: =0
             Y: =1
             ZIndex: =1
@@ -2426,7 +2425,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('AZ-104_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =129
+            Width: =0
             X: =0
             Y: =2
             ZIndex: =1
@@ -2499,7 +2498,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('AZ-305_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =129
+            Width: =0
             X: =1
             Y: =2
             ZIndex: =1
@@ -2572,7 +2571,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('MS-100_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =129
+            Width: =0
             X: =2
             Y: =2
             ZIndex: =1
@@ -2645,7 +2644,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('MS-101_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =129
+            Width: =0
             X: =0
             Y: =3
             ZIndex: =1
@@ -2718,7 +2717,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('MS-700_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =129
+            Width: =0
             X: =1
             Y: =3
             ZIndex: =1
@@ -2791,7 +2790,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('MS-900_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =129
+            Width: =0
             X: =2
             Y: =3
             ZIndex: =1
@@ -2864,7 +2863,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('PL-200_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =129
+            Width: =0
             X: =0
             Y: =4
             ZIndex: =1
@@ -2937,7 +2936,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('PL-300_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =129
+            Width: =0
             X: =1
             Y: =4
             ZIndex: =1
@@ -3011,7 +3010,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('PL-400_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =129
+            Width: =0
             X: =2
             Y: =4
             ZIndex: =1
@@ -3085,7 +3084,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('PL-600_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =129
+            Width: =0
             X: =0
             Y: =5
             ZIndex: =1
@@ -3158,7 +3157,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('PL-900_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =129
+            Width: =0
             X: =1
             Y: =5
             ZIndex: =1
@@ -3227,9 +3226,9 @@ User_License_Page As screen:
             Required: =true
             Update: =LicenseDay_Name_DataCardValue.Text
             Visible: =false
-            Width: =387
+            Width: =0
             X: =0
-            Y: =0
+            Y: =-81
             ZIndex: =11
 
             LicenseDay_Name_DataCardKey As label:
