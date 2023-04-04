@@ -23,10 +23,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 780,
+                  "charLength": 777,
                   "charOffset": 1283,
                   "snippet": {
-                    "text": "Patch(\r\n        ability_file,\r\n        LookUp(\r\n            ability_file,\r\n            'E-mail' = 'E-mail_License_DataCard'.Update\r\n        ),\r\n        {\r\n            'AZ-104': 'AZ-104_DataCard'.Update\r\n            //'AZ-305': 'AZ-305_File_DataCard'.Update,\r\n            //'MS-100': 'MS-100_File_DataCard'.Update,\r\n           // 'MS-101': 'MS-101_File_DataCard'.Update,\r\n           //// 'MS-700': 'MS-700_File_DataCard'.Update,\r\n           // 'MS-900': 'MS-900_File_DataCard'.Update,\r\n           // 'PL-200': 'PL-200_File_DataCard'.Update,\r\n          //  'PL-300': 'PL-300_File_DataCard'.Update,\r\n          //  'PL-400': 'PL-400_File_DataCard'.Update,\r\n         //   'PL-600': 'PL-600_File_DataCard'.Update,\r\n          //  'PL-900': 'PL-900_File_DataCard'.Update\r\n        }\r\n    )"
+                    "text": "Patch(\r\n        ability_file,\r\n        LookUp(\r\n            ability_file,\r\n            'E-mail' = 'E-mail_File_DataCard'.Update\r\n        ),\r\n        {\r\n            'AZ-104': 'AZ-104_DataCard'.Update\r\n            //'AZ-305': 'AZ-305_File_DataCard'.Update,\r\n            //'MS-100': 'MS-100_File_DataCard'.Update,\r\n           // 'MS-101': 'MS-101_File_DataCard'.Update,\r\n           //// 'MS-700': 'MS-700_File_DataCard'.Update,\r\n           // 'MS-900': 'MS-900_File_DataCard'.Update,\r\n           // 'PL-200': 'PL-200_File_DataCard'.Update,\r\n          //  'PL-300': 'PL-300_File_DataCard'.Update,\r\n          //  'PL-400': 'PL-400_File_DataCard'.Update,\r\n         //   'PL-600': 'PL-600_File_DataCard'.Update,\r\n          //  'PL-900': 'PL-900_File_DataCard'.Update\r\n        }\r\n    )"
                   }
                 }
               },
@@ -64,7 +64,7 @@
                 },
                 "region": {
                   "charLength": 621,
-                  "charOffset": 1435,
+                  "charOffset": 1432,
                   "snippet": {
                     "text": "{\r\n            'AZ-104': 'AZ-104_DataCard'.Update\r\n            //'AZ-305': 'AZ-305_File_DataCard'.Update,\r\n            //'MS-100': 'MS-100_File_DataCard'.Update,\r\n           // 'MS-101': 'MS-101_File_DataCard'.Update,\r\n           //// 'MS-700': 'MS-700_File_DataCard'.Update,\r\n           // 'MS-900': 'MS-900_File_DataCard'.Update,\r\n           // 'PL-200': 'PL-200_File_DataCard'.Update,\r\n          //  'PL-300': 'PL-300_File_DataCard'.Update,\r\n          //  'PL-400': 'PL-400_File_DataCard'.Update,\r\n         //   'PL-600': 'PL-600_File_DataCard'.Update,\r\n          //  'PL-900': 'PL-900_File_DataCard'.Update\r\n        }"
                   }

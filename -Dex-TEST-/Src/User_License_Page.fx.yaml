@@ -62,7 +62,7 @@ User_License_Page As screen:
                     ability_file,
                     LookUp(
                         ability_file,
-                        'E-mail' = 'E-mail_License_DataCard'.Update
+                        'E-mail' = 'E-mail_File_DataCard'.Update
                     ),
                     {
                         'AZ-104': 'AZ-104_DataCard'.Update
