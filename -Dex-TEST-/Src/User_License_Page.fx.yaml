@@ -2337,7 +2337,6 @@ User_License_Page As screen:
         DataSource: =ability_licenseDay
         DefaultMode: =FormMode.New
         Height: =600
-        Visible: =false
         Width: =568
         X: =798
         Y: =168
@@ -2642,9 +2641,9 @@ User_License_Page As screen:
             Required: =false
             Update: |-
                 =If(
-                    'MS-101_Toggle'.Value=true,
+                    'MS-101_Toggle'.Value,
                     'LicenseDay_MS-101_DataCardValue'.Text,
-                    ""
+                    " "
                 )
             Width: =189
             X: =0
