@@ -97,7 +97,14 @@ User_License_Page As screen:
             Height: =130
             MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_az104")
             Required: =false
-            Update: ='AZ-104_Toggle'.Value
+            Update: |-
+                =//'AZ-104_Toggle'.Value
+                
+                If(
+                    'AZ-104_Toggle'.Value,
+                    'AZ-104_DatePicker'.SelectedDate,
+                    ""
+                )
             Width: =684
             X: =0
             Y: =0
@@ -189,7 +196,14 @@ User_License_Page As screen:
             Height: =135
             MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_az305")
             Required: =false
-            Update: ='AZ-305_Toggle'.Value
+            Update: |-
+                =//'AZ-305_Toggle'.Value
+                
+                If(
+                    'AZ-305_Toggle'.Value,
+                    'AZ-305_DatePicker'.SelectedDate,
+                    ""
+                )
             Width: =684
             X: =0
             Y: =1
@@ -282,7 +296,14 @@ User_License_Page As screen:
             Height: =135
             MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_ms100")
             Required: =false
-            Update: ='MS-100_Toggle'.Value
+            Update: |-
+                =//'MS-100_Toggle'.Value
+                
+                If(
+                    'MS-100_Toggle'.Value,
+                    'MS-100_DatePicker'.SelectedDate,
+                    ""
+                )
             Width: =684
             X: =0
             Y: =2
@@ -375,7 +396,14 @@ User_License_Page As screen:
             Height: =135
             MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_ms101")
             Required: =false
-            Update: ='MS-101_Toggle'.Value
+            Update: |-
+                =//'MS-101_Toggle'.Value
+                
+                If(
+                    'MS-101_Toggle'.Value,
+                    'MS-101_DatePicker'.SelectedDate,
+                    ""
+                )
             Width: =684
             X: =0
             Y: =3
@@ -468,7 +496,14 @@ User_License_Page As screen:
             Height: =135
             MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_ms700")
             Required: =false
-            Update: ='MS-700_Toggle'.Value
+            Update: |-
+                =//'MS-700_Toggle'.Value
+                
+                If(
+                    'MS-700_Toggle'.Value,
+                    'MS-700_DatePicker'.SelectedDate,
+                    ""
+                )
             Width: =684
             X: =0
             Y: =4
@@ -561,7 +596,14 @@ User_License_Page As screen:
             Height: =135
             MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_ms900")
             Required: =false
-            Update: ='MS-900_Toggle'.Value
+            Update: |-
+                =//'MS-900_Toggle'.Value
+                
+                If(
+                    'MS-900_Toggle'.Value,
+                    'MS-900_DatePicker'.SelectedDate,
+                    ""
+                )
             Width: =684
             X: =0
             Y: =5
@@ -654,7 +696,14 @@ User_License_Page As screen:
             Height: =135
             MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_pl200")
             Required: =false
-            Update: ='PL-200_Toggle'.Value
+            Update: |-
+                =//'PL-200_Toggle'.Value
+                
+                If(
+                    'PL-200_Toggle'.Value,
+                    'PL-200_DatePicker'.SelectedDate,
+                    ""
+                )
             Width: =684
             X: =0
             Y: =6
@@ -747,7 +796,14 @@ User_License_Page As screen:
             Height: =135
             MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_pl300")
             Required: =false
-            Update: ='PL-300_Toggle'.Value
+            Update: |-
+                =//'PL-300_Toggle'.Value
+                
+                If(
+                    'PL-300_Toggle'.Value,
+                    'PL-300_DatePicker'.SelectedDate,
+                    ""
+                )
             Width: =684
             X: =0
             Y: =7
@@ -840,7 +896,14 @@ User_License_Page As screen:
             Height: =135
             MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_pl400")
             Required: =false
-            Update: ='PL-400_Toggle'.Value
+            Update: |-
+                =//'PL-400_Toggle'.Value
+                
+                If(
+                    'PL-400_Toggle'.Value,
+                    'PL-400_DatePicker'.SelectedDate,
+                    ""
+                )
             Width: =684
             X: =0
             Y: =8
@@ -933,7 +996,14 @@ User_License_Page As screen:
             Height: =135
             MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_pl600")
             Required: =false
-            Update: ='PL-600_Toggle'.Value
+            Update: |-
+                =//'PL-600_Toggle'.Value
+                
+                If(
+                    'PL-600_Toggle'.Value,
+                    'PL-600_DatePicker'.SelectedDate,
+                    ""
+                )
             Width: =684
             X: =0
             Y: =9
@@ -1026,7 +1096,14 @@ User_License_Page As screen:
             Height: =135
             MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_pl900")
             Required: =false
-            Update: ='PL-900_Toggle'.Value
+            Update: |-
+                =//'PL-900_Toggle'.Value
+                
+                If(
+                    'PL-900_Toggle'.Value,
+                    'PL-900_DatePicker'.SelectedDate,
+                    ""
+                )
             Width: =684
             X: =0
             Y: =10
