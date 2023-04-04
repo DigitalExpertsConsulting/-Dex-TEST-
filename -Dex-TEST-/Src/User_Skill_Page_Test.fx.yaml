@@ -1,4 +1,4 @@
-User_Skill_Page_1 As screen:
+User_Skill_Page_Test As screen:
     BackgroundImage: =black
     ImagePosition: =ImagePosition.Fill
 
@@ -909,6 +909,7 @@ User_Skill_Page_1 As screen:
 
             DataCardValue3 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =ThisItem.ability_skill()
                 DefaultSelectedItems: =[Parent.Default]
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
