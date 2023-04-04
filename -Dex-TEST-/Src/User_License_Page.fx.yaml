@@ -236,14 +236,6 @@ User_License_Page As screen:
                 FalseText: ="없다"
                 Height: =50
                 TrueText: ="있다"
-                Visible: |
-                    =If(
-                        'AZ-104_Toggle'.Value=true,
-                        true,
-                        false
-                        
-                        
-                        )
                 Width: =150
                 X: =182
                 Y: =65
