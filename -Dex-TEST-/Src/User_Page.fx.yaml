@@ -1,5 +1,6 @@
 User_Page As screen:
-    BackgroundImage: =MainPagePicture
+    BackgroundImage: =black
+    ImagePosition: =ImagePosition.Fill
 
     UserPage_Address_Button As button:
         BorderColor: =RGBA(102, 182, 227, 0.7)

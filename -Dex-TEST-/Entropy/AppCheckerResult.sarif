@@ -1872,36 +1872,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "User_Address_Page.Address_Send.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_Address_Page.Address_Send.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_Address_Page",
-                "type": "User_Address_Page.Address_Send"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "User_Address_Page.Address_Send.TabIndex"
                 }
               ],
@@ -1926,6 +1896,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_Address_Page.Address_Send.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_Address_Page.Address_Send.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User_Address_Page",
+                "type": "User_Address_Page.Address_Send"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -3642,19 +3642,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "User_Address_Page.Address_Input.Gift_Address_DataCard.DataCardValue1.AccessibleLabel"
+                  "fullyQualifiedName": "User_Address_Page.Address_Input.Gift_Address_DataCard.Gift_Address_DataCardValue.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "User_Address_Page.Address_Input.Gift_Address_DataCard.DataCardValue1.AccessibleLabel",
+                  "fullyQualifiedName": "User_Address_Page.Address_Input.Gift_Address_DataCard.Gift_Address_DataCardValue.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "User_Address_Page",
-                "type": "User_Address_Page.Address_Input.Gift_Address_DataCard.DataCardValue1"
+                "type": "User_Address_Page.Address_Input.Gift_Address_DataCard.Gift_Address_DataCardValue"
               }
             }
           ],
@@ -3672,19 +3672,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "User_Address_Page.Address_Input.Gift_Zipcode_DataCard.DataCardValue2.AccessibleLabel"
+                  "fullyQualifiedName": "User_Address_Page.Address_Input.Gift_Zipcode_DataCard.Gift_Zipcode_DataCardValue.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "User_Address_Page.Address_Input.Gift_Zipcode_DataCard.DataCardValue2.AccessibleLabel",
+                  "fullyQualifiedName": "User_Address_Page.Address_Input.Gift_Zipcode_DataCard.Gift_Zipcode_DataCardValue.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "User_Address_Page",
-                "type": "User_Address_Page.Address_Input.Gift_Zipcode_DataCard.DataCardValue2"
+                "type": "User_Address_Page.Address_Input.Gift_Zipcode_DataCard.Gift_Zipcode_DataCardValue"
               }
             }
           ],
@@ -3743,6 +3743,36 @@
               },
               "properties": {
                 "member": "picture",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.Earth"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.Earth",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Earth",
                 "module": "App",
                 "type": "App"
               }

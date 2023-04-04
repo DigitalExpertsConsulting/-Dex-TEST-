@@ -1,5 +1,5 @@
 User_License_Page As screen:
-    BackgroundImage: =Earth
+    BackgroundImage: =black
     ImagePosition: =ImagePosition.Fill
 
     License_Title As label:
@@ -20,8 +20,8 @@ User_License_Page As screen:
         OnSelect: |
             =
         Width: =110
-        X: =1120
-        Y: =600
+        X: =1230
+        Y: =630
         ZIndex: =5
 
     License_Back As icon.BackArrow:

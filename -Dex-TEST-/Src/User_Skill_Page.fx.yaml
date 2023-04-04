@@ -1,5 +1,6 @@
 User_Skill_Page As screen:
-    BackgroundImage: =MainPagePicture
+    BackgroundImage: =black
+    ImagePosition: =ImagePosition.Fill
 
     Skill_Input As form:
         DataSource: =ability_skill
@@ -952,8 +953,8 @@ User_Skill_Page As screen:
             
             
         Width: =110
-        X: =1120
-        Y: =600
+        X: =1230
+        Y: =630
         ZIndex: =4
 
     Skill_Back As icon.BackArrow:
