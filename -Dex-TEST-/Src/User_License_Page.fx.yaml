@@ -29,9 +29,6 @@ User_License_Page As screen:
                 SubmitForm(License_Input);
                 NewForm(License_Input);
                 ResetForm(License_Input);
-                SubmitForm(License_File_Input);
-                NewForm(License_File_Input);
-                ResetForm(License_File_Input);
                 ,
                 Patch(
                     ability_license,
@@ -51,26 +48,6 @@ User_License_Page As screen:
                         'PL-400': 'PL-400_DatePicker'.SelectedDate,
                         'PL-600': 'PL-600_DatePicker'.SelectedDate,
                         'PL-900': 'PL-900_DatePicker'.SelectedDate            
-                    }
-                );
-                Patch(
-                    ability_file,
-                    LookUp(
-                        ability_file,
-                        'E-mail' = 'E-mail_File_DataCard'.Update
-                    ),
-                    {
-                        'AZ-104': 'AZ-104_File_DataCardValue'
-                        //'AZ-305': 'AZ-305_File_DataCard'.Update,
-                        //'MS-100': 'MS-100_File_DataCard'.Update,
-                       // 'MS-101': 'MS-101_File_DataCard'.Update,
-                       //// 'MS-700': 'MS-700_File_DataCard'.Update,
-                       // 'MS-900': 'MS-900_File_DataCard'.Update,
-                       // 'PL-200': 'PL-200_File_DataCard'.Update,
-                      //  'PL-300': 'PL-300_File_DataCard'.Update,
-                      //  'PL-400': 'PL-400_File_DataCard'.Update,
-                     //   'PL-600': 'PL-600_File_DataCard'.Update,
-                      //  'PL-900': 'PL-900_File_DataCard'.Update
                     }
                 );
                 NewForm(Address_Input);
