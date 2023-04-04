@@ -23,10 +23,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 1433,
-                  "charOffset": 461,
+                  "charLength": 785,
+                  "charOffset": 1283,
                   "snippet": {
-                    "text": "Patch(\r\n        ability_license,\r\n        LookUp(\r\n            ability_license,\r\n            'E-mail' = 'E-mail_License_DataCard'.Update\r\n        ),\r\n        {\r\n            'AZ-104': 'AZ-104_DatePicker'.SelectedDate,\r\n            'AZ-305': 'AZ-305_DatePicker'.SelectedDate,\r\n            'MS-100': 'MS-100_DatePicker'.SelectedDate,\r\n            'MS-101': 'MS-101_DatePicker'.SelectedDate,\r\n            'MS-700': 'MS-700_DatePicker'.SelectedDate,\r\n            'MS-900': 'MS-900_DatePicker'.SelectedDate,\r\n            'PL-200': 'PL-200_DatePicker'.SelectedDate,\r\n            'PL-300': 'PL-300_DatePicker'.SelectedDate,\r\n            'PL-400': 'PL-400_DatePicker'.SelectedDate,\r\n            'PL-600': 'PL-600_DatePicker'.SelectedDate,\r\n            'PL-900': 'PL-900_DatePicker'.SelectedDate\r\n            \r\n        },\r\n        {\r\n            'AZ-104': 'AZ-104_File_DataCard'.Update,\r\n            'AZ-305': 'AZ-305_File_DataCard'.Update,\r\n            'MS-100': 'MS-100_File_DataCard'.Update,\r\n            'MS-101': 'MS-101_File_DataCard'.Update,\r\n            'MS-700': 'MS-700_File_DataCard'.Update,\r\n            'MS-900': 'MS-900_File_DataCard'.Update,\r\n            'PL-200': 'PL-200_File_DataCard'.Update,\r\n            'PL-300': 'PL-300_File_DataCard'.Update,\r\n            'PL-400': 'PL-400_File_DataCard'.Update,\r\n            'PL-600': 'PL-600_File_DataCard'.Update,\r\n            'PL-900': 'PL-900_File_DataCard'.Update\r\n        }\r\n    )"
+                    "text": "Patch(\r\n        ability_file,\r\n        LookUp(\r\n            ability_file,\r\n            'E-mail' = 'E-mail_License_DataCard'.Update\r\n        ),\r\n        {\r\n            'AZ-104': 'AZ-104_File_DataCard'.Update\r\n            //'AZ-305': 'AZ-305_File_DataCard'.Update,\r\n            //'MS-100': 'MS-100_File_DataCard'.Update,\r\n           // 'MS-101': 'MS-101_File_DataCard'.Update,\r\n           //// 'MS-700': 'MS-700_File_DataCard'.Update,\r\n           // 'MS-900': 'MS-900_File_DataCard'.Update,\r\n           // 'PL-200': 'PL-200_File_DataCard'.Update,\r\n          //  'PL-300': 'PL-300_File_DataCard'.Update,\r\n          //  'PL-400': 'PL-400_File_DataCard'.Update,\r\n         //   'PL-600': 'PL-600_File_DataCard'.Update,\r\n          //  'PL-900': 'PL-900_File_DataCard'.Update\r\n        }\r\n    )"
                   }
                 }
               },
@@ -63,10 +63,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 605,
-                  "charOffset": 1282,
+                  "charLength": 626,
+                  "charOffset": 1435,
                   "snippet": {
-                    "text": "{\r\n            'AZ-104': 'AZ-104_File_DataCard'.Update,\r\n            'AZ-305': 'AZ-305_File_DataCard'.Update,\r\n            'MS-100': 'MS-100_File_DataCard'.Update,\r\n            'MS-101': 'MS-101_File_DataCard'.Update,\r\n            'MS-700': 'MS-700_File_DataCard'.Update,\r\n            'MS-900': 'MS-900_File_DataCard'.Update,\r\n            'PL-200': 'PL-200_File_DataCard'.Update,\r\n            'PL-300': 'PL-300_File_DataCard'.Update,\r\n            'PL-400': 'PL-400_File_DataCard'.Update,\r\n            'PL-600': 'PL-600_File_DataCard'.Update,\r\n            'PL-900': 'PL-900_File_DataCard'.Update\r\n        }"
+                    "text": "{\r\n            'AZ-104': 'AZ-104_File_DataCard'.Update\r\n            //'AZ-305': 'AZ-305_File_DataCard'.Update,\r\n            //'MS-100': 'MS-100_File_DataCard'.Update,\r\n           // 'MS-101': 'MS-101_File_DataCard'.Update,\r\n           //// 'MS-700': 'MS-700_File_DataCard'.Update,\r\n           // 'MS-900': 'MS-900_File_DataCard'.Update,\r\n           // 'PL-200': 'PL-200_File_DataCard'.Update,\r\n          //  'PL-300': 'PL-300_File_DataCard'.Update,\r\n          //  'PL-400': 'PL-400_File_DataCard'.Update,\r\n         //   'PL-600': 'PL-600_File_DataCard'.Update,\r\n          //  'PL-900': 'PL-900_File_DataCard'.Update\r\n        }"
                   }
                 }
               },
@@ -80,7 +80,7 @@
           "message": {
             "arguments": [
               "cr778_az104",
-              "Text",
+              "Record",
               "Table"
             ],
             "id": "issue"
