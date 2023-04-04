@@ -115,27 +115,29 @@ User_Skill_Page As screen:
                 Items: =Choices('365 Solution_SkillLevel')
                 NoSelectionText: |-
                     =If(
-                        IsBlank(
-                            LookUp(
-                                Search(
-                                    ability_skill,
+                        IsBlank(
+                            LookUp(
+                                Search(
+                                    ability_skill,
                                     User().Email,
-                                    "cr778_email"
-                                ),
-                                'E-mail'= User().Email,
-                                '365 Solution_SkillLevel'
-                            )
-                        ),
-                        "None",
-                        LookUp(
-                            Search(
-                                ability_skill,
-                                User().Email,
-                                "cr778_email"
-                            ),
-                            'E-mail'= User().Email,
-                            '365 Solution_SkillLevel'
-                        )
+                                    "cr778_email"
+                                ),
+                                'E-mail' = User().Email,
+                                '365 Solution_SkillLevel'
+                            )
+                        ),
+                        "None",
+                         IsBlank(
+                            LookUp(
+                                Search(
+                                    ability_skill,
+                                    User().Email,
+                                    "cr778_email"
+                                ),
+                                'E-mail' = User().Email,
+                                '365 Solution_SkillLevel'
+                            )
+                        )
                     )
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
