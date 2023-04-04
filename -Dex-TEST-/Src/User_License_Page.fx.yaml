@@ -62,10 +62,10 @@ User_License_Page As screen:
                     "cr778_email"
                     )
                 ),
+                "",
                 SubmitForm(LicenseDay_Input);
                 NewForm(LicenseDay_Input);
-                ResetForm(LicenseDay_Input);,
-                ""
+                ResetForm(LicenseDay_Input);
             )
         Width: =110
         X: =1230
