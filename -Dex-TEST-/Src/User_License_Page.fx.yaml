@@ -2421,7 +2421,12 @@ User_License_Page As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@ability_licenseDay], DataSourceInfo.MaxLength, "cr778_az104")
             Required: =false
-            Update: ='LicenseDay_AZ-104_DataCardValue'.Text
+            Update: |-
+                =If(
+                    'AZ-104_Toggle'.Value=true,
+                    'LicenseDay_AZ-104_DataCardValue'.Text,
+                    ""
+                )
             Width: =189
             X: =0
             Y: =2
@@ -2489,7 +2494,12 @@ User_License_Page As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@ability_licenseDay], DataSourceInfo.MaxLength, "cr778_az305")
             Required: =false
-            Update: ='LicenseDay_AZ-305_DataCardValue'.Text
+            Update: |-
+                =If(
+                    'AZ-305_Toggle'.Value=true,
+                    'LicenseDay_AZ-305_DataCardValue'.Text,
+                    ""
+                )
             Width: =189
             X: =1
             Y: =2
@@ -2557,7 +2567,12 @@ User_License_Page As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@ability_licenseDay], DataSourceInfo.MaxLength, "cr778_ms100")
             Required: =false
-            Update: ='LicenseDay_MS-100_DataCardValue'.Text
+            Update: |-
+                =If(
+                    'MS-100_Toggle'.Value=true,
+                    'LicenseDay_MS-100_DataCardValue'.Text,
+                    ""
+                )
             Width: =189
             X: =2
             Y: =2
@@ -2625,7 +2640,12 @@ User_License_Page As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@ability_licenseDay], DataSourceInfo.MaxLength, "cr778_ms101")
             Required: =false
-            Update: ='LicenseDay_MS-101_DataCardValue'.Text
+            Update: |-
+                =If(
+                    'MS-101_Toggle'.Value=true,
+                    'LicenseDay_MS-101_DataCardValue'.Text,
+                    ""
+                )
             Width: =189
             X: =0
             Y: =3
@@ -2693,7 +2713,12 @@ User_License_Page As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@ability_licenseDay], DataSourceInfo.MaxLength, "cr778_ms700")
             Required: =false
-            Update: ='LicenseDay_MS-700_DataCardValue'.Text
+            Update: |-
+                =If(
+                    'MS-700_Toggle'.Value=true,
+                    'LicenseDay_MS-700_DataCardValue'.Text,
+                    ""
+                )
             Width: =189
             X: =1
             Y: =3
@@ -2761,7 +2786,12 @@ User_License_Page As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@ability_licenseDay], DataSourceInfo.MaxLength, "cr778_ms900")
             Required: =false
-            Update: ='LicenseDay_MS-900_DataCardValue'.Text
+            Update: |-
+                =If(
+                    'MS-900_Toggle'.Value=true,
+                    'LicenseDay_MS-900_DataCardValue'.Text,
+                    ""
+                )
             Width: =189
             X: =2
             Y: =3
@@ -2829,7 +2859,12 @@ User_License_Page As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@ability_licenseDay], DataSourceInfo.MaxLength, "cr778_pl200")
             Required: =false
-            Update: ='LicenseDay_PL-200_DataCardValue'.Text
+            Update: |-
+                =If(
+                    'PL-200_Toggle'.Value=true,
+                    'LicenseDay_PL-200_DataCardValue'.Text,
+                    ""
+                )
             Width: =189
             X: =0
             Y: =4
@@ -2897,7 +2932,12 @@ User_License_Page As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@ability_licenseDay], DataSourceInfo.MaxLength, "cr778_pl300")
             Required: =false
-            Update: ='LicenseDay_PL-300_DataCardValue'.Text
+            Update: |-
+                =If(
+                    'PL-300_Toggle'.Value=true,
+                    'LicenseDay_PL-300_DataCardValue'.Text,
+                    ""
+                )
             Width: =189
             X: =1
             Y: =4
@@ -2965,7 +3005,12 @@ User_License_Page As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@ability_licenseDay], DataSourceInfo.MaxLength, "cr778_pl400")
             Required: =false
-            Update: ='LicenseDay_PL-400_DataCardValue'.Text
+            Update: |-
+                =If(
+                    'PL-400_Toggle'.Value=true,
+                    'LicenseDay_PL-400_DataCardValue'.Text,
+                    ""
+                )
             Width: =189
             X: =2
             Y: =4
@@ -3033,7 +3078,12 @@ User_License_Page As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@ability_licenseDay], DataSourceInfo.MaxLength, "cr778_pl600")
             Required: =false
-            Update: ='LicenseDay_PL-600_DataCardValue'.Text
+            Update: |-
+                =If(
+                    'PL-600_Toggle'.Value=true,
+                    'LicenseDay_PL-600_DataCardValue'.Text,
+                    ""
+                )
             Width: =189
             X: =0
             Y: =5
@@ -3101,7 +3151,12 @@ User_License_Page As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@ability_licenseDay], DataSourceInfo.MaxLength, "cr778_pl900")
             Required: =false
-            Update: ='LicenseDay_PL-900_DataCardValue'.Text
+            Update: |-
+                =If(
+                    'PL-900_Toggle'.Value=true,
+                    'LicenseDay_PL-900_DataCardValue'.Text,
+                    ""
+                )
             Width: =189
             X: =1
             Y: =5
@@ -3274,7 +3329,6 @@ User_License_Page As screen:
                 ResetForm(LicenseDay_Input);
             );
         Width: =110
-        X: =1120
-        Y: =630
+        X: =273
         ZIndex: =11
 
