@@ -19,28 +19,30 @@ User_Skill_Page As screen:
         Icon: =Icon.Send
         OnSelect: |+
             =If(
-                IsBlank(
-                    LookUp(
-                        Search(
-                            ability_skill,User().Email,
-                            "cr778_email"
-                        ),
-                        'E-mail'= User().Email,
-                        '365 Solution_SkillLevel'
-                    )
-                ),
-                "None",
-                LookUp(
-                    Search(
-                        ability_skill,
-                        User().Email,
-                        "cr778_email"
-                    ),
-                    'E-mail'= User().Email,
-                    '365 Solution_SkillLevel'
-                )
+                IsEmpty(
+                    Search(
+                        ability_skill,
+                        varUser.Email,
+                        "cr778_email"
+                    )
+                ),
+                SubmitForm(Skill_Input);
+                NewForm(Skill_Input);
+                ResetForm(Skill_Input);
+                ,
+                Patch(
+                    ability_skill,
+                    LookUp(
+                        ability_skill,
+                        'E-mail' = 'Skill_E-mail_DataCard'.Update
+                    ),
+                    {
+                        '365 Solution': '365 Solution_DataCardValue'.Selected.Value
+                    }
+                );
+                NewForm(Skill_Input);
+                ResetForm(Skill_Input);
             )
-            
             
         Width: =110
         X: =1230
@@ -111,7 +113,30 @@ User_Skill_Page As screen:
                 Height: =55
                 IsSearchable: =false
                 Items: =Choices('365 Solution_SkillLevel')
-                NoSelectionText: ="선택"
+                NoSelectionText: |-
+                    =If(
+                        IsBlank(
+                            LookUp(
+                                Search(
+                                    ability_skill,
+                                    User().Email,
+                                    "cr778_email"
+                                ),
+                                'E-mail'= User().Email,
+                                '365 Solution_SkillLevel'
+                            )
+                        ),
+                        "None",
+                        LookUp(
+                            Search(
+                                ability_skill,
+                                User().Email,
+                                "cr778_email"
+                            ),
+                            'E-mail'= User().Email,
+                            '365 Solution_SkillLevel'
+                        )
+                    )
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
                 SearchItems: =[]
