@@ -18,7 +18,8 @@ User_License_Page As screen:
         Height: =110
         Icon: =Icon.Send
         OnSelect: |-
-            =If(
+            =
+            If(
                 IsEmpty(
                     Search(
                         ability_license,
@@ -53,20 +54,43 @@ User_License_Page As screen:
                 NewForm(License_Input);
                 ResetForm(License_Input);
             );
-            
             If(
                 IsEmpty(
-                Search(
-                    ability_licenseDay,
-                    varUser.Email,
-                    "cr778_email"
+                    Search(
+                        ability_licenseDay,
+                        varUser.Email,
+                        "cr778_email"
                     )
                 ),
-                "",
                 SubmitForm(LicenseDay_Input);
                 NewForm(LicenseDay_Input);
                 ResetForm(LicenseDay_Input);
-            )
+                ,
+                Patch(
+                    ability_licenseDay,
+                    LookUp(
+                        ability_licenseDay,
+                        'E-mail' = 'E-mail_License_DataCard'.Update
+                    ),
+                    {
+                        'AZ-104': 'LicenseDay_AZ-104_DataCardValue'.Text,
+                        'AZ-305': 'LicenseDay_AZ-104_DataCardValue'.Text,
+                        'MS-100': 'LicenseDay_AZ-104_DataCardValue'.Text,
+                        'MS-101': 'LicenseDay_AZ-104_DataCardValue'.Text,
+                        'MS-700': 'LicenseDay_AZ-104_DataCardValue'.Text,
+                        'MS-900': 'LicenseDay_AZ-104_DataCardValue'.Text,
+                        'PL-200': 'LicenseDay_AZ-104_DataCardValue'.Text,
+                        'PL-300': 'LicenseDay_AZ-104_DataCardValue'.Text,
+                        'PL-400': 'LicenseDay_AZ-104_DataCardValue'.Text,
+                        'PL-600': 'LicenseDay_AZ-104_DataCardValue'.Text,
+                        'PL-900': 'LicenseDay_AZ-104_DataCardValue'.Text
+            
+            
+                    }
+                );
+                NewForm(LicenseDay_Input);
+                ResetForm(LicenseDay_Input);
+            );
         Width: =110
         X: =1230
         Y: =630
@@ -3206,4 +3230,51 @@ User_License_Page As screen:
                 Wrap: =false
                 Y: =LicenseDay_Name_DataCardKey.Y
                 ZIndex: =4
+
+    LicenseDay_send As icon.Send:
+        Color: =RGBA(102, 182, 227, 0.7)
+        Height: =110
+        Icon: =Icon.Send
+        OnSelect: |-
+            =If(
+                IsEmpty(
+                    Search(
+                        ability_licenseDay,
+                        varUser.Email,
+                        "cr778_email"
+                    )
+                ),
+                SubmitForm(LicenseDay_Input);
+                NewForm(LicenseDay_Input);
+                ResetForm(LicenseDay_Input);
+                ,
+                Patch(
+                    ability_licenseDay,
+                    LookUp(
+                        ability_licenseDay,
+                        'E-mail' = 'E-mail_License_DataCard'.Update
+                    ),
+                    {
+                        'AZ-104': 'LicenseDay_AZ-104_DataCardValue'.Text,
+                        'AZ-305': 'LicenseDay_AZ-104_DataCardValue'.Text,
+                        'MS-100': 'LicenseDay_AZ-104_DataCardValue'.Text,
+                        'MS-101': 'LicenseDay_AZ-104_DataCardValue'.Text,
+                        'MS-700': 'LicenseDay_AZ-104_DataCardValue'.Text,
+                        'MS-900': 'LicenseDay_AZ-104_DataCardValue'.Text,
+                        'PL-200': 'LicenseDay_AZ-104_DataCardValue'.Text,
+                        'PL-300': 'LicenseDay_AZ-104_DataCardValue'.Text,
+                        'PL-400': 'LicenseDay_AZ-104_DataCardValue'.Text,
+                        'PL-600': 'LicenseDay_AZ-104_DataCardValue'.Text,
+                        'PL-900': 'LicenseDay_AZ-104_DataCardValue'.Text
+            
+            
+                    }
+                );
+                NewForm(LicenseDay_Input);
+                ResetForm(LicenseDay_Input);
+            );
+        Width: =110
+        X: =1120
+        Y: =630
+        ZIndex: =11
 
