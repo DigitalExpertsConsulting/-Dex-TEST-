@@ -49,7 +49,18 @@ User_Skill_Page As screen:
                             ),
                             '365 Solution_DataCardValue'.Selected.Value
                         ),
-                        'AI Builder': 'AI Builder_DataCardValue'.Selected.Value,
+                        'AI Builder': 
+                        If(
+                            IsBlank(
+                                'AI Builder_DataCardValue'.Selected.Value
+                            ),
+                            LookUp(
+                                ability_skill,
+                                'E-mail' = User().Email,
+                                'AI Builder'
+                            ),
+                            'AI Builder_DataCardValue'.Selected.Value
+                        ),
                         'Api management' : 'Api management_DataCardValue'.Selected.Value,
                         DataVerse: DataVerse_DataCardValue.Selected.Value,
                         'Power Apps Canvas':'Power Apps Canvas_DataCardValue'.Selected.Value,
