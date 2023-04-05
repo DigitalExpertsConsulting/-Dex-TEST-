@@ -99,7 +99,7 @@ User_Skill_Page As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
-            Update: ='365 Solution_DataCardValue'.Selected.Value;
+            Update: ='365 Solution_DataCardValue'.Selected.Value
             Width: =870
             X: =0
             Y: =0
