@@ -37,11 +37,7 @@ User_Skill_Page As screen:
                         'E-mail' = 'Skill_E-mail_DataCard'.Update
                     ),
                     {
-                        '365 Solution': LookUp(
-                                        ability_skill,
-                                        'E-mail' = User().Email,
-                                        '365 Solution'
-                                     ) ,
+                        '365 Solution':'365 Solution_DataCardValue'.Selected.Value,
                         'AI Builder': 'AI Builder_DataCardValue'.Selected.Value,
                         'Api management' : 'Api management_DataCardValue'.Selected.Value,
                         DataVerse: DataVerse_DataCardValue.Selected.Value,
@@ -62,7 +58,7 @@ User_Skill_Page As screen:
             
         Width: =110
         X: =1230
-        Y: =650
+        Y: =658
         ZIndex: =4
 
     Skill_Back As icon.BackArrow:
