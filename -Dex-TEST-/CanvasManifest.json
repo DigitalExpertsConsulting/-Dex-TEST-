@@ -46,7 +46,7 @@
       "enablerpawarecomponentdependency": true,
       "enablerulespanel": false,
       "enableruntimepolicies": false,
-      "enablesaveloadcleardataonweb": true,
+      "enablesaveloadcleardataonweb": false,
       "enhanceddelegation": true,
       "enhancedgalleryinitialization": true,
       "errorhandling": true,
@@ -90,7 +90,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "ContainsThirdPartyPcfControls": true,
+    "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "DesktopOrTablet",
     "DocumentLayoutHeight": 768,
@@ -127,7 +127,6 @@
     "User_Profile_Page",
     "Admin_Page",
     "Admin_Address_Page",
-    "Admin_Address_Page_1",
     "Admin_Skill_Page",
     "Admin_License_Page",
     "Screen1"
