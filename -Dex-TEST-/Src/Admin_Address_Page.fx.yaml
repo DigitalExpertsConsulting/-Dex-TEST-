@@ -139,7 +139,8 @@ Admin_Address_Page As screen:
             ZIndex: =7
 
     Button1 As button:
-        OnSelect: =
+        OnSelect: |
+            ='PowerAppV2->작성'.Run()
         Text: ="버튼"
         X: =22
         Y: =364
