@@ -37,7 +37,7 @@ User_Skill_Page As screen:
                         'E-mail' = 'Skill_E-mail_DataCard'.Update
                     ),
                     {
-                        '365 Solution':'365 Solution_DataCardValue'.Selected.Value,
+                        '365 Solution': '365 Solution_DataCard'.Update,
                         'AI Builder': 'AI Builder_DataCardValue'.Selected.Value,
                         'Api management' : 'Api management_DataCardValue'.Selected.Value,
                         DataVerse: DataVerse_DataCardValue.Selected.Value,
