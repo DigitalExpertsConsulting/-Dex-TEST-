@@ -37,19 +37,164 @@ User_Skill_Page As screen:
                         'E-mail' = 'Skill_E-mail_DataCard'.Update
                     ),
                     {
-                        '365 Solution': '365 Solution_DataCard'.Update,
-                        'AI Builder': 'AI Builder_DataCardValue'.Selected.Value,
-                        'Api management' : 'Api management_DataCardValue'.Selected.Value,
-                        DataVerse: DataVerse_DataCardValue.Selected.Value,
-                        'Power Apps Canvas':'Power Apps Canvas_DataCardValue'.Selected.Value,
-                        'Power Apps Model':'Power Apps Model_DataCardValue'.Selected.Value,
-                        'Power Automate': 'Power Automate_DataCardValue'.Selected.Value,
-                        'Power Automate Desktop':'Power Automate Desktop_DataCardValue'.Selected.Value,
-                        'Power Page':'Power Page_DataCardValue'.Selected.Value,
-                        'Power Page JAVA/CSS':'Power Page JAVA/CSS_DataCardValue'.Selected.Value,
-                        'Power BI':'Power BI_DataCardValue'.Selected.Value,
-                        'Process Advisor':'Process Advisor_DataCardValue'.Selected.Value,
-                        'Power Virtual Agents':'Power Virtual Agents_DataCardValue'.Selected.Value
+                        '365 Solution':
+                        If(
+                            IsBlank(
+                                '365 Solution_DataCardValue'.Selected.Value
+                            ),
+                            LookUp(
+                                ability_skill,
+                                'E-mail' = User().Email,
+                                '365 Solution'
+                            ),
+                            '365 Solution_DataCardValue'.Selected.Value
+                        ),
+                        'AI Builder': 
+                        If(
+                            IsBlank(
+                                'AI Builder_DataCardValue'.Selected.Value
+                            ),
+                            LookUp(
+                                ability_skill,
+                                'E-mail' = User().Email,
+                                'AI Builder'
+                            ),
+                            'AI Builder_DataCardValue'.Selected.Value
+                        ),
+                        'Api management' : 
+                        If(
+                            IsBlank(
+                                'Api management_DataCardValue'.Selected.Value
+                            ),
+                            LookUp(
+                                ability_skill,
+                                'E-mail' = User().Email,
+                                'Api management'
+                            ),
+                            'Api management_DataCardValue'.Selected.Value
+                        ),
+                        DataVerse: 
+                        If(
+                            IsBlank(
+                                DataVerse_DataCardValue.Selected.Value
+                            ),
+                            LookUp(
+                                ability_skill,
+                                'E-mail' = User().Email,
+                                DataVerse
+                            ),
+                            DataVerse_DataCardValue.Selected.Value
+                        ),
+                        'Power Apps Canvas': 
+                        If(
+                            IsBlank(
+                                'Power Apps Canvas_DataCardValue'.Selected.Value
+                            ),
+                            LookUp(
+                                ability_skill,
+                                'E-mail' = User().Email,
+                                'Power Apps Canvas'
+                            ),
+                            'Power Apps Canvas_DataCardValue'.Selected.Value
+                        ),
+                        'Power Apps Model': 
+                        If(
+                            IsBlank(
+                                'Power Apps Model_DataCardValue'.Selected.Value
+                            ),
+                            LookUp(
+                                ability_skill,
+                                'E-mail' = User().Email,
+                                'Power Apps Model'
+                            ),
+                            'Power Apps Model_DataCardValue'.Selected.Value
+                        ),
+                        'Power Automate': 
+                        If(
+                            IsBlank(
+                                'Power Automate_DataCardValue'.Selected.Value
+                            ),
+                            LookUp(
+                                ability_skill,
+                                'E-mail' = User().Email,
+                                'Power Automate'
+                            ),
+                            'Power Automate_DataCardValue'.Selected.Value
+                        ),
+                        'Power Automate Desktop': 
+                        If(
+                            IsBlank(
+                                'Power Automate Desktop_DataCardValue'.Selected.Value
+                            ),
+                            LookUp(
+                                ability_skill,
+                                'E-mail' = User().Email,
+                                'Power Automate Desktop'
+                            ),
+                            'Power Automate Desktop_DataCardValue'.Selected.Value
+                        ),
+                        'Power Page': 
+                        If(
+                            IsBlank(
+                                'Power Page_DataCardValue'.Selected.Value
+                            ),
+                            LookUp(
+                                ability_skill,
+                                'E-mail' = User().Email,
+                                'Power Page'
+                            ),
+                            'Power Page_DataCardValue'.Selected.Value
+                        ),
+                        'Power Page JAVA/CSS': 
+                        If(
+                            IsBlank(
+                                'Power Page JAVA/CSS_DataCardValue'.Selected.Value
+                            ),
+                            LookUp(
+                                ability_skill,
+                                'E-mail' = User().Email,
+                                'Power Page JAVA/CSS'
+                            ),
+                            'Power Page JAVA/CSS_DataCardValue'.Selected.Value
+                        ),
+                        'Power BI': 
+                        If(
+                            IsBlank(
+                                'Power BI_DataCardValue'.Selected.Value
+                            ),
+                            LookUp(
+                                ability_skill,
+                                'E-mail' = User().Email,
+                                'Power BI'
+                            ),
+                            'Power BI_DataCardValue'.Selected.Value
+                        ),
+                        'Process Advisor': 
+                        If(
+                            IsBlank(
+                                'Process Advisor_DataCardValue'.Selected.Value
+                            ),
+                            LookUp(
+                                ability_skill,
+                                'E-mail' = User().Email,
+                                'Process Advisor'
+                            ),
+                            'Process Advisor_DataCardValue'.Selected.Value
+                        ),
+                        'Power Virtual Agents': 
+                        If(
+                            IsBlank(
+                                'Power Virtual Agents_DataCardValue'.Selected.Value
+                            ),
+                            LookUp(
+                                ability_skill,
+                                'E-mail' = User().Email,
+                                'Power Virtual Agents'
+                            ),
+                            'Power Virtual Agents_DataCardValue'.Selected.Value
+                        )
+            
+            
                     }
                 );
                 NewForm(Skill_Input);
@@ -126,22 +271,7 @@ User_Skill_Page As screen:
                 Height: =55
                 IsSearchable: =false
                 Items: =Choices('365 Solution_SkillLevel')
-                NoSelectionText: |-
-                    =If(
-                        IsEmpty(
-                            LookUp(
-                                ability_skill,
-                                'E-mail' = User().Email,
-                                '365 Solution'
-                            )
-                        ),
-                        "None",
-                        LookUp(
-                                ability_skill,
-                                'E-mail' = User().Email,
-                                '365 Solution'
-                        )
-                    )
+                NoSelectionText: ="선택"
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
                 SearchItems: =[]
