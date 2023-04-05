@@ -43,3 +43,104 @@ Admin_Address_Page As screen:
         Y: =600
         ZIndex: =4
 
+    DataTable1 As dataTable.datatable:
+        BorderStyle: =BorderStyle.Solid
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =500
+        Items: =ability_address
+        Width: =800
+        X: =220
+        Y: =168
+        ZIndex: =5
+
+        Name_열1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Name"
+            FieldName: ="cr778_name"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =1
+            Text: =ThisItem.Name
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+        "'E-mail_열1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="E-mail"
+            FieldName: ="cr778_email"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =3
+            Text: =ThisItem.'E-mail'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =3
+
+        Address_열1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Address"
+            FieldName: ="cr778_address"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =4
+            Text: =ThisItem.Address
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =4
+
+        Zipcode_열1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Zipcode"
+            FieldName: ="cr778_zipcode"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =5
+            Text: =ThisItem.Zipcode
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =5
+
+        Gift_Address_열1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Gift_Address"
+            FieldName: ="cr778_gift_address"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =6
+            Text: =ThisItem.Gift_Address
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =6
+
+        Gift_Zipcode_열1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Gift_Zipcode"
+            FieldName: ="cr778_gift_zipcode"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =7
+            Text: =ThisItem.Gift_Zipcode
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =7
+
+    Button1 As button:
+        Text: ="버튼"
+        X: =40
+        Y: =355
+        ZIndex: =6
+
