@@ -1,5 +1,5 @@
 Admin_Address_Page As screen:
-    BackgroundImage: =MainPagePicture
+    BackgroundImage: =
 
     License_Title_2 As label:
         Align: =Align.Center
@@ -143,4 +143,18 @@ Admin_Address_Page As screen:
         X: =40
         Y: =355
         ZIndex: =6
+
+    excelexport1 As excelexport:
+        dataToExport: |-
+            =Substitute(
+                Concatenate(
+                    "[",
+                    Concat(
+                        DataTable1.
+        DisplayMode: =DisplayMode.Edit
+        Height: =200
+        Width: =200
+        X: =1120
+        Y: =186
+        ZIndex: =7
 

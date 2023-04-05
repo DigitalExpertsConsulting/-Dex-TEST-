@@ -1,4 +1,14 @@
 {
+  "components": [
+    {
+      "Capabilities": {
+        "PCFExternalServiceUsageAllowed": false
+      },
+      "ComponentName": "CustomControl",
+      "Identifier": "btd_contoso.excelexport",
+      "IdentifierType": 0
+    }
+  ],
   "DatasetName": "default.cds",
   "EntityName": "ability_skill",
   "InstanceUrl": "https://org03f871d8.crm5.dynamics.com/",

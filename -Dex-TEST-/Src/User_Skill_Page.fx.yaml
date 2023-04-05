@@ -76,14 +76,14 @@ User_Skill_Page As screen:
                         DataVerse: 
                         If(
                             IsBlank(
-                                'DataVerse_DataCardValue'.Selected.Value
+                                DataVerse_DataCardValue.Selected.Value
                             ),
                             LookUp(
                                 ability_skill,
                                 'E-mail' = User().Email,
-                                'DataVerse'
+                                DataVerse
                             ),
-                            'DataVerse_DataCardValue'.Selected.Value
+                            DataVerse_DataCardValue.Selected.Value
                         ),
                         'Power Apps Canvas': 
                         If(
