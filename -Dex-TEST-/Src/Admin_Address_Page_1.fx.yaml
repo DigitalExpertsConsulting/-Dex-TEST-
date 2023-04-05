@@ -1,7 +1,7 @@
-Admin_Address_Page As screen:
+Admin_Address_Page_1 As screen:
     BackgroundImage: =
 
-    License_Title_2 As label:
+    License_Title_5 As label:
         Align: =Align.Center
         BorderColor: =RGBA(102, 182, 227, 0.7)
         Color: =RGBA(255, 255, 255, 1)
@@ -12,7 +12,7 @@ Admin_Address_Page As screen:
         Width: =1366
         ZIndex: =1
 
-    Profile_Back_2 As icon.BackArrow:
+    Profile_Back_5 As icon.BackArrow:
         Color: =RGBA(102, 182, 227, 0.7)
         Height: =110
         Icon: =Icon.BackArrow
@@ -22,7 +22,7 @@ Admin_Address_Page As screen:
         Y: =40
         ZIndex: =2
 
-    License_Home_2 As icon.Home:
+    License_Home_5 As icon.Home:
         Color: =RGBA(102, 182, 227, 0.7)
         Height: =110
         Icon: =Icon.Home
@@ -32,7 +32,7 @@ Admin_Address_Page As screen:
         Y: =40
         ZIndex: =3
 
-    License_send_3 As icon.Send:
+    License_send_6 As icon.Send:
         Color: =RGBA(102, 182, 227, 0.7)
         Height: =110
         Icon: =Icon.Send
@@ -43,7 +43,7 @@ Admin_Address_Page As screen:
         Y: =600
         ZIndex: =4
 
-    DataTable1 As dataTable.datatable:
+    DataTable1_1 As dataTable.datatable:
         BorderStyle: =BorderStyle.Solid
         DisplayMode: =DisplayMode.Edit
         Fill: =RGBA(0, 0, 0, 0)
@@ -54,7 +54,7 @@ Admin_Address_Page As screen:
         Y: =168
         ZIndex: =5
 
-        Name_열1 As dataTableColumn.textualColumn:
+        Name_열1_1 As dataTableColumn.textualColumn:
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="Name"
             FieldName: ="cr778_name"
@@ -68,7 +68,7 @@ Admin_Address_Page As screen:
             Y: =0
             ZIndex: =1
 
-        "'E-mail_열1' As dataTableColumn.textualColumn":
+        "'E-mail_열1_1' As dataTableColumn.textualColumn":
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="E-mail"
             FieldName: ="cr778_email"
@@ -82,7 +82,7 @@ Admin_Address_Page As screen:
             Y: =0
             ZIndex: =3
 
-        Address_열1 As dataTableColumn.textualColumn:
+        Address_열1_1 As dataTableColumn.textualColumn:
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="Address"
             FieldName: ="cr778_address"
@@ -96,7 +96,7 @@ Admin_Address_Page As screen:
             Y: =0
             ZIndex: =4
 
-        Zipcode_열1 As dataTableColumn.textualColumn:
+        Zipcode_열1_1 As dataTableColumn.textualColumn:
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="Zipcode"
             FieldName: ="cr778_zipcode"
@@ -110,7 +110,7 @@ Admin_Address_Page As screen:
             Y: =0
             ZIndex: =5
 
-        Gift_Address_열1 As dataTableColumn.textualColumn:
+        Gift_Address_열1_1 As dataTableColumn.textualColumn:
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="Gift_Address"
             FieldName: ="cr778_gift_address"
@@ -124,7 +124,7 @@ Admin_Address_Page As screen:
             Y: =0
             ZIndex: =6
 
-        Gift_Zipcode_열1 As dataTableColumn.textualColumn:
+        Gift_Zipcode_열1_1 As dataTableColumn.textualColumn:
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="Gift_Zipcode"
             FieldName: ="cr778_gift_zipcode"
@@ -138,23 +138,30 @@ Admin_Address_Page As screen:
             Y: =0
             ZIndex: =7
 
-    Button1 As button:
+    Button1_1 As button:
         Text: ="버튼"
         X: =40
         Y: =355
         ZIndex: =6
 
-    excelexport1 As excelexport:
+    excelexport1_1 As excelexport:
         dataToExport: |-
             =Substitute(
                 Concatenate(
                     "[",
                     Concat(
-                        DataTable1.allit
+                        DataTable1_1.allit
         DisplayMode: =DisplayMode.Edit
         Height: =200
         Width: =200
-        X: =1120
-        Y: =186
+        X: =1075
+        Y: =226
         ZIndex: =7
+
+    Button2 As button:
+        OnSelect: =Test.Run(JSON((,JSONFormat.IncludeBinaryData))
+        Text: ="버튼"
+        X: =1095
+        Y: =386
+        ZIndex: =8
 
