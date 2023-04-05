@@ -139,9 +139,18 @@ Admin_Address_Page As screen:
             ZIndex: =7
 
     Button1 As button:
+        OnSelect: |-
+            =testAppsFlowExcelExport.Run(
+                DataTable1.Selected.Name,
+                DataTable1.Selected.Email,
+                DataTable1.Selected.Address,
+                DataTable1.Selected.Zipcode,
+                DataTable1.Selected.Gift_Address,
+                DataTable1.Selected.Gift_Zipcode
+            )
         Text: ="버튼"
-        X: =40
-        Y: =355
+        X: =22
+        Y: =364
         ZIndex: =6
 
     excelexport1 As excelexport:
