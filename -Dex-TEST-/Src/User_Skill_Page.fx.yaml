@@ -100,16 +100,21 @@ User_Skill_Page As screen:
             Height: =50
             Required: =false
             Update: |-
-                ='365 Solution_DataCardValue'.Selected.Value
+                =//'365 Solution_DataCardValue'.Selected.Value;
                 
                 If(
                   '365 Solution_DataCardValue'.Selected.Value = 
                   LookUp(
                       ability_skill,
                       'E-mail' = User().Email,
-                
-                
-                  )  
+                      '365 Solution'
+                  ),
+                  LookUp(
+                      ability_skill,
+                      'E-mail' = User().Email,
+                      '365 Solution'
+                  ),
+                  '365 Solution_DataCardValue'.Selected.Value  
                 )
             Width: =870
             X: =0
