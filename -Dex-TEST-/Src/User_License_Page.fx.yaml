@@ -1,5 +1,5 @@
 User_License_Page As screen:
-    BackgroundImage: =black
+    BackgroundImage: =
     ImagePosition: =ImagePosition.Fill
 
     License_Title As label:
@@ -206,7 +206,6 @@ User_License_Page As screen:
             "'AZ-104_DatePicker' As datepicker":
                 DisplayMode: =If('AZ-104_Toggle'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
                 Height: =59
-                OnSelect: =Text('AZ-104_DatePicker'.SelectedDate, "yyyy-mm-dd")
                 Width: =246
                 X: =400
                 Y: =71
@@ -317,7 +316,6 @@ User_License_Page As screen:
             "'AZ-305_DatePicker' As datepicker":
                 DisplayMode: =If('AZ-305_Toggle'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
                 Height: =59
-                OnSelect: =Text('AZ-305_DatePicker'.SelectedDate, "yyyy-mm-dd")
                 Width: =246
                 X: =400
                 Y: =71
@@ -417,7 +415,6 @@ User_License_Page As screen:
             "'MS-100_DatePicker' As datepicker":
                 DisplayMode: =If('MS-100_Toggle'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
                 Height: =59
-                OnSelect: =Text('MS-100_DatePicker'.SelectedDate, "yyyy-mm-dd")
                 Width: =246
                 X: =400
                 Y: =71
@@ -517,7 +514,6 @@ User_License_Page As screen:
             "'MS-101_DatePicker' As datepicker":
                 DisplayMode: =If('MS-101_Toggle'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
                 Height: =59
-                OnSelect: =Text('MS-101_DatePicker'.SelectedDate, "yyyy-mm-dd")
                 Width: =246
                 X: =400
                 Y: =71
@@ -617,7 +613,6 @@ User_License_Page As screen:
             "'MS-700_DatePicker' As datepicker":
                 DisplayMode: =If('MS-700_Toggle'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
                 Height: =59
-                OnSelect: =Text('MS-700_DatePicker'.SelectedDate, "yyyy-mm-dd")
                 Width: =246
                 X: =400
                 Y: =71
@@ -717,7 +712,6 @@ User_License_Page As screen:
             "'MS-900_DatePicker' As datepicker":
                 DisplayMode: =If('MS-900_Toggle'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
                 Height: =59
-                OnSelect: =Text('MS-900_DatePicker'.SelectedDate, "yyyy-mm-dd")
                 Width: =246
                 X: =400
                 Y: =71
@@ -817,7 +811,6 @@ User_License_Page As screen:
             "'PL-200_DatePicker' As datepicker":
                 DisplayMode: =If('PL-200_Toggle'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
                 Height: =59
-                OnSelect: =Text('PL-200_DatePicker'.SelectedDate, "yyyy-mm-dd")
                 Width: =246
                 X: =400
                 Y: =71
@@ -917,7 +910,6 @@ User_License_Page As screen:
             "'PL-300_DatePicker' As datepicker":
                 DisplayMode: =If('PL-300_Toggle'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
                 Height: =59
-                OnSelect: =Text('PL-300_DatePicker'.SelectedDate, "yyyy-mm-dd")
                 Width: =246
                 X: =400
                 Y: =71
@@ -1017,7 +1009,6 @@ User_License_Page As screen:
             "'PL-400_DatePicker' As datepicker":
                 DisplayMode: =If('PL-400_Toggle'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
                 Height: =59
-                OnSelect: =Text('PL-400_DatePicker'.SelectedDate, "yyyy-mm-dd")
                 Width: =246
                 X: =400
                 Y: =71
@@ -1117,7 +1108,6 @@ User_License_Page As screen:
             "'PL-600_DatePicker' As datepicker":
                 DisplayMode: =If('PL-600_Toggle'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
                 Height: =59
-                OnSelect: =Text('PL-600_DatePicker'.SelectedDate, "yyyy-mm-dd")
                 Width: =246
                 X: =400
                 Y: =71
@@ -1217,7 +1207,6 @@ User_License_Page As screen:
             "'PL-900_DatePicker' As datepicker":
                 DisplayMode: =If('PL-900_Toggle'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
                 Height: =59
-                OnSelect: =Text('PL-900_DatePicker'.SelectedDate, "yyyy-mm-dd")
                 Width: =246
                 X: =400
                 Y: =71
@@ -2344,10 +2333,10 @@ User_License_Page As screen:
     LicenseDay_Input As form:
         DataSource: =ability_licenseDay
         DefaultMode: =FormMode.New
-        Height: =0
-        Width: =176
-        X: =789
-        Y: =768
+        Height: =590
+        Width: =330
+        X: =822
+        Y: =177
         ZIndex: =8
 
         "'LicenseDay_E-mail_DataCard' As typedDataCard.textualEditCard":
@@ -2362,7 +2351,7 @@ User_License_Page As screen:
             Required: =false
             Update: ='LicenseDay_E-mail_DataCardValue'.Text
             Visible: =false
-            Width: =116
+            Width: =220
             X: =0
             Y: =1
             ZIndex: =1
@@ -2435,7 +2424,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('AZ-104_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =116
+            Width: =220
             X: =0
             Y: =2
             ZIndex: =1
@@ -2508,7 +2497,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('AZ-305_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =116
+            Width: =220
             X: =1
             Y: =2
             ZIndex: =1
@@ -2581,7 +2570,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('MS-100_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =116
+            Width: =220
             X: =2
             Y: =2
             ZIndex: =1
@@ -2654,7 +2643,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('MS-101_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =116
+            Width: =220
             X: =0
             Y: =3
             ZIndex: =1
@@ -2727,7 +2716,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('MS-700_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =116
+            Width: =220
             X: =1
             Y: =3
             ZIndex: =1
@@ -2800,7 +2789,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('MS-900_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =116
+            Width: =220
             X: =2
             Y: =3
             ZIndex: =1
@@ -2873,7 +2862,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('PL-200_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =116
+            Width: =220
             X: =0
             Y: =4
             ZIndex: =1
@@ -2946,7 +2935,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('PL-300_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =116
+            Width: =220
             X: =1
             Y: =4
             ZIndex: =1
@@ -3020,7 +3009,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('PL-400_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =116
+            Width: =220
             X: =2
             Y: =4
             ZIndex: =1
@@ -3094,7 +3083,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('PL-600_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =116
+            Width: =220
             X: =0
             Y: =5
             ZIndex: =1
@@ -3167,7 +3156,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('PL-900_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =116
+            Width: =220
             X: =1
             Y: =5
             ZIndex: =1
@@ -3236,7 +3225,7 @@ User_License_Page As screen:
             Required: =true
             Update: =LicenseDay_Name_DataCardValue.Text
             Visible: =false
-            Width: =116
+            Width: =220
             X: =0
             Y: =-81
             ZIndex: =11
