@@ -126,7 +126,18 @@ User_Skill_Page As screen:
                 Height: =55
                 IsSearchable: =false
                 Items: =Choices('365 Solution_SkillLevel')
-                NoSelectionText: ="선택"
+                NoSelectionText: |-
+                    =If(
+                        IsEmpty(
+                            LookUp(
+                                ability_skill,
+                                'E-mail' = User().Email,
+                                '365 Solution'
+                            )
+                        ),
+                        "None",
+                        "Yes"
+                    )
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
                 SearchItems: =[]
