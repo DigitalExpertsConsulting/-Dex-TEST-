@@ -140,7 +140,7 @@ Admin_Address_Page As screen:
 
     Button1 As button:
         OnSelect: |
-            ='PowerAppV2->작성'.Run()
+            =
         Text: ="버튼"
         X: =22
         Y: =364
