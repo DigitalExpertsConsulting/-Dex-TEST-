@@ -40,7 +40,7 @@ User_Skill_Page As screen:
                         '365 Solution': '365 Solution_DataCardValue'.Selected.Value,
                         'AI Builder': 'AI Builder_DataCardValue'.Selected.Value,
                         'Api management' : 'Api management_DataCardValue'.Selected.Value,
-                        'DataVerse': DataVerse_DataCardValue.Selected.Value,
+                        DataVerse: DataVerse_DataCardValue.Selected.Value,
                         'Power Apps Canvas':'Power Apps Canvas_DataCardValue'.Selected.Value,
                         'Power Apps Model':'Power Apps Model_DataCardValue'.Selected.Value,
                         'Power Automate': 'Power Automate_DataCardValue'.Selected.Value,
@@ -119,7 +119,8 @@ User_Skill_Page As screen:
 
             "'365 Solution_DataCardValue' As combobox":
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultSelectedItems: =[Parent.Default]
+                DefaultSelectedItems: |
+                    =[Parent.Default]
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
                 Height: =55
