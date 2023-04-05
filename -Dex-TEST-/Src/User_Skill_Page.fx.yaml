@@ -128,7 +128,7 @@ User_Skill_Page As screen:
                 Items: =Choices('365 Solution_SkillLevel')
                 NoSelectionText: |-
                     =If(
-                        IsEmpty(
+                        IsBlank(
                             LookUp(
                                 ability_skill,
                                 'E-mail' = User().Email,
