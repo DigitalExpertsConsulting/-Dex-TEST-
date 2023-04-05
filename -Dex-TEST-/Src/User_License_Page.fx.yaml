@@ -1,5 +1,5 @@
 User_License_Page As screen:
-    BackgroundImage: =
+    BackgroundImage: =black
     ImagePosition: =ImagePosition.Fill
 
     License_Title As label:
@@ -11,14 +11,60 @@ User_License_Page As screen:
         Size: =40
         Text: ="License Page"
         Width: =1366
-        ZIndex: =4
+        ZIndex: =1
+
+    LicenseDay_send As icon.Send:
+        Color: =RGBA(102, 182, 227, 0.7)
+        Height: =0
+        Icon: =Icon.Send
+        OnSelect: |-
+            =If(
+                IsEmpty(
+                    Search(
+                        ability_licenseDay,
+                        varUser.Email,
+                        "cr778_email"
+                    )
+                ),
+                SubmitForm(LicenseDay_Input);
+                NewForm(LicenseDay_Input);
+                ResetForm(LicenseDay_Input);
+                ,
+                Patch(
+                    ability_licenseDay,
+                    LookUp(
+                        ability_licenseDay,
+                        'E-mail' = 'LicenseDay_E-mail_DataCard'.Update
+                    ),
+                    {
+                        'AZ-104': 'LicenseDay_AZ-104_DataCard'.Update,
+                        'AZ-305': 'LicenseDay_AZ-305_DataCard'.Update,
+                        'MS-100': 'LicenseDay_MS-100_DataCard'.Update,
+                        'MS-101': 'LicenseDay_MS-101_DataCard'.Update,
+                        'MS-700': 'LicenseDay_MS-700_DataCard'.Update,
+                        'MS-900': 'LicenseDay_MS-900_DataCard'.Update,
+                        'PL-200': 'LicenseDay_PL-200_DataCard'.Update,
+                        'PL-300': 'LicenseDay_PL-300_DataCard'.Update,
+                        'PL-400': 'LicenseDay_PL-400_DataCard'.Update,
+                        'PL-600': 'LicenseDay_PL-600_DataCard'.Update,
+                        'PL-900': 'LicenseDay_PL-900_DataCard'.Update            
+                    }
+                );
+                NewForm(LicenseDay_Input);
+                ResetForm(LicenseDay_Input);
+            );
+        Width: =36
+        X: =287
+        Y: =150
+        ZIndex: =2
 
     License_send As icon.Send:
         Color: =RGBA(102, 182, 227, 0.7)
         Height: =110
         Icon: =Icon.Send
         OnSelect: |-
-            =If(
+            =Select(LicenseDay_send);
+            If(
                 IsEmpty(
                     Search(
                         ability_license,
@@ -53,47 +99,10 @@ User_License_Page As screen:
                 NewForm(License_Input);
                 ResetForm(License_Input);
             );
-            If(
-                IsEmpty(
-                    Search(
-                        ability_licenseDay,
-                        varUser.Email,
-                        "cr778_email"
-                    )
-                ),
-                SubmitForm(LicenseDay_Input);
-                NewForm(LicenseDay_Input);
-                ResetForm(LicenseDay_Input);
-                ,
-                Patch(
-                    ability_licenseDay,
-                    LookUp(
-                        ability_licenseDay,
-                        'E-mail' = 'E-mail_License_DataCard'.Update
-                    ),
-                    {
-                        'AZ-104': 'LicenseDay_AZ-104_DataCardValue'.Text,
-                        'AZ-305': 'LicenseDay_AZ-104_DataCardValue'.Text,
-                        'MS-100': 'LicenseDay_AZ-104_DataCardValue'.Text,
-                        'MS-101': 'LicenseDay_AZ-104_DataCardValue'.Text,
-                        'MS-700': 'LicenseDay_AZ-104_DataCardValue'.Text,
-                        'MS-900': 'LicenseDay_AZ-104_DataCardValue'.Text,
-                        'PL-200': 'LicenseDay_AZ-104_DataCardValue'.Text,
-                        'PL-300': 'LicenseDay_AZ-104_DataCardValue'.Text,
-                        'PL-400': 'LicenseDay_AZ-104_DataCardValue'.Text,
-                        'PL-600': 'LicenseDay_AZ-104_DataCardValue'.Text,
-                        'PL-900': 'LicenseDay_AZ-104_DataCardValue'.Text
-            
-            
-                    }
-                );
-                NewForm(LicenseDay_Input);
-                ResetForm(LicenseDay_Input);
-            );
         Width: =110
         X: =1230
         Y: =630
-        ZIndex: =5
+        ZIndex: =3
 
     License_Back As icon.BackArrow:
         Color: =RGBA(102, 182, 227, 0.7)
@@ -103,7 +112,7 @@ User_License_Page As screen:
         Width: =110
         X: =110
         Y: =40
-        ZIndex: =6
+        ZIndex: =4
 
     License_Home As icon.Home:
         Color: =RGBA(102, 182, 227, 0.7)
@@ -113,7 +122,7 @@ User_License_Page As screen:
         Width: =110
         X: =1120
         Y: =40
-        ZIndex: =7
+        ZIndex: =5
 
     License_Input As form:
         DataSource: =ability_license
@@ -124,7 +133,7 @@ User_License_Page As screen:
         Width: =686
         X: =42
         Y: =186
-        ZIndex: =8
+        ZIndex: =6
 
         "'AZ-104_DataCard' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
@@ -1374,7 +1383,7 @@ User_License_Page As screen:
         Width: =596
         X: =743
         Y: =186
-        ZIndex: =9
+        ZIndex: =7
 
         "'AZ-104_File_DataCard' As typedDataCard.fileEditCard":
             BorderStyle: =BorderStyle.Solid
@@ -2336,9 +2345,10 @@ User_License_Page As screen:
         DataSource: =ability_licenseDay
         DefaultMode: =FormMode.New
         Height: =0
-        Width: =0
+        Width: =176
+        X: =789
         Y: =768
-        ZIndex: =10
+        ZIndex: =8
 
         "'LicenseDay_E-mail_DataCard' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
@@ -2352,7 +2362,7 @@ User_License_Page As screen:
             Required: =false
             Update: ='LicenseDay_E-mail_DataCardValue'.Text
             Visible: =false
-            Width: =0
+            Width: =116
             X: =0
             Y: =1
             ZIndex: =1
@@ -2425,7 +2435,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('AZ-104_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =0
+            Width: =116
             X: =0
             Y: =2
             ZIndex: =1
@@ -2498,7 +2508,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('AZ-305_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =0
+            Width: =116
             X: =1
             Y: =2
             ZIndex: =1
@@ -2571,7 +2581,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('MS-100_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =0
+            Width: =116
             X: =2
             Y: =2
             ZIndex: =1
@@ -2644,7 +2654,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('MS-101_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =0
+            Width: =116
             X: =0
             Y: =3
             ZIndex: =1
@@ -2717,7 +2727,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('MS-700_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =0
+            Width: =116
             X: =1
             Y: =3
             ZIndex: =1
@@ -2790,7 +2800,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('MS-900_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =0
+            Width: =116
             X: =2
             Y: =3
             ZIndex: =1
@@ -2863,7 +2873,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('PL-200_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =0
+            Width: =116
             X: =0
             Y: =4
             ZIndex: =1
@@ -2936,7 +2946,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('PL-300_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =0
+            Width: =116
             X: =1
             Y: =4
             ZIndex: =1
@@ -3010,7 +3020,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('PL-400_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =0
+            Width: =116
             X: =2
             Y: =4
             ZIndex: =1
@@ -3084,7 +3094,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('PL-600_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =0
+            Width: =116
             X: =0
             Y: =5
             ZIndex: =1
@@ -3157,7 +3167,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('PL-900_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =0
+            Width: =116
             X: =1
             Y: =5
             ZIndex: =1
@@ -3226,7 +3236,7 @@ User_License_Page As screen:
             Required: =true
             Update: =LicenseDay_Name_DataCardValue.Text
             Visible: =false
-            Width: =0
+            Width: =116
             X: =0
             Y: =-81
             ZIndex: =11
@@ -3286,85 +3296,4 @@ User_License_Page As screen:
                 Wrap: =false
                 Y: =LicenseDay_Name_DataCardKey.Y
                 ZIndex: =4
-
-    LicenseDay_send As icon.Send:
-        Color: =RGBA(102, 182, 227, 0.7)
-        Height: =110
-        Icon: =Icon.Send
-        OnSelect: |-
-            =If(
-                IsEmpty(
-                    Search(
-                        ability_license,
-                        varUser.Email,
-                        "cr778_email"
-                    )
-                ),
-                SubmitForm(License_Input);
-                NewForm(License_Input);
-                ResetForm(License_Input);
-                ,
-                Patch(
-                    ability_license,
-                    LookUp(
-                        ability_license,
-                        'E-mail' = 'E-mail_License_DataCard'.Update
-                    ),
-                    {
-                        'AZ-104': 'AZ-104_DataCard'.Update,
-                        'AZ-305': 'AZ-305_DataCard'.Update,
-                        'MS-100': 'MS-100_DataCard'.Update,
-                        'MS-101': 'MS-101_DataCard'.Update,
-                        'MS-700': 'MS-700_DataCard'.Update,
-                        'MS-900': 'MS-900_DataCard'.Update,
-                        'PL-200': 'PL-200_DataCard'.Update,
-                        'PL-300': 'PL-300_DataCard'.Update,
-                        'PL-400': 'PL-400_DataCard'.Update,
-                        'PL-600': 'PL-600_DataCard'.Update,
-                        'PL-900': 'PL-900_DataCard'.Update            
-                    }
-                );
-                NewForm(License_Input);
-                ResetForm(License_Input);
-            );
-            If(
-                IsEmpty(
-                    Search(
-                        ability_licenseDay,
-                        varUser.Email,
-                        "cr778_email"
-                    )
-                ),
-                SubmitForm(LicenseDay_Input);
-                NewForm(LicenseDay_Input);
-                ResetForm(LicenseDay_Input);
-                ,
-                Patch(
-                    ability_licenseDay,
-                    LookUp(
-                        ability_licenseDay,
-                        'E-mail' = 'E-mail_License_DataCard'.Update
-                    ),
-                    {
-                        'AZ-104': 'LicenseDay_AZ-104_DataCardValue'.Text,
-                        'AZ-305': 'LicenseDay_AZ-104_DataCardValue'.Text,
-                        'MS-100': 'LicenseDay_AZ-104_DataCardValue'.Text,
-                        'MS-101': 'LicenseDay_AZ-104_DataCardValue'.Text,
-                        'MS-700': 'LicenseDay_AZ-104_DataCardValue'.Text,
-                        'MS-900': 'LicenseDay_AZ-104_DataCardValue'.Text,
-                        'PL-200': 'LicenseDay_AZ-104_DataCardValue'.Text,
-                        'PL-300': 'LicenseDay_AZ-104_DataCardValue'.Text,
-                        'PL-400': 'LicenseDay_AZ-104_DataCardValue'.Text,
-                        'PL-600': 'LicenseDay_AZ-104_DataCardValue'.Text,
-                        'PL-900': 'LicenseDay_AZ-104_DataCardValue'.Text
-            
-            
-                    }
-                );
-                NewForm(LicenseDay_Input);
-                ResetForm(LicenseDay_Input);
-            );
-        Width: =110
-        X: =273
-        ZIndex: =11
 
