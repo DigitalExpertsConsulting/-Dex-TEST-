@@ -1,6 +1,4 @@
 App As appinfo:
     BackEnabled: =false
-    OnStart: |-
-        =Set(varUser,User());
-        Set(skillLevel, ["None", "Basic", "Intermediate", "Advanced"])
+    OnStart: =Set(varUser,User());
 
