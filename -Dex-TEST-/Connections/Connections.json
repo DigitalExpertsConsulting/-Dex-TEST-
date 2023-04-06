@@ -1,5 +1,33 @@
 {
-  "24aa18bd-4f35-4816-82ca-5557ed7d189c": {
+  "3905cb6a-b8b0-4b35-88b8-eb9f5b6c07d4": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1615/1.0.1615.3163/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "d4f52e86-edd8-47d1-87dd-63b4059eecad"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "d4f52e86-edd8-47d1-87dd-63b4059eecad"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "PowerApp->행나열"
+    ],
+    "dependencies": {
+      "shared_commondataserviceforapps": "efc1f88b-deeb-4a2b-889b-508329c7ac61"
+    },
+    "dependents": [],
+    "id": "3905cb6a-b8b0-4b35-88b8-eb9f5b6c07d4"
+  },
+  "ac5a0616-fc7c-4986-9e7a-ff3af9e0af4d": {
     "connectionRef": {
       "displayName": "Logic flows",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1615/1.0.1615.3163/logicflows/icon.png",
@@ -23,6 +51,20 @@
     ],
     "dependencies": {},
     "dependents": [],
-    "id": "24aa18bd-4f35-4816-82ca-5557ed7d189c"
+    "id": "ac5a0616-fc7c-4986-9e7a-ff3af9e0af4d"
+  },
+  "efc1f88b-deeb-4a2b-889b-508329c7ac61": {
+    "connectionRef": {
+      "displayName": "Microsoft Dataverse",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1628/1.0.1628.3245/commondataserviceforapps/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_commondataserviceforapps"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "3905cb6a-b8b0-4b35-88b8-eb9f5b6c07d4"
+    ],
+    "id": "efc1f88b-deeb-4a2b-889b-508329c7ac61"
   }
 }

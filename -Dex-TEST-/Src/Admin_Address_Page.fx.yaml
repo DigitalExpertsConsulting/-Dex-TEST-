@@ -139,8 +139,9 @@ Admin_Address_Page As screen:
             ZIndex: =7
 
     Button1 As button:
-        OnSelect: |
+        OnSelect: |-
             =
+            'PowerApp->행나열'.Run("cr778_name")
         Text: ="버튼"
         X: =22
         Y: =364
