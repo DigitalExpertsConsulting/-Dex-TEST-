@@ -44,13 +44,16 @@ Admin_Address_Page As screen:
         ZIndex: =4
 
     DataTable1 As dataTable.datatable:
+        BorderColor: =RGBA(0, 0, 0, 1)
         BorderStyle: =BorderStyle.Solid
+        BorderThickness: =1
         DisplayMode: =DisplayMode.Edit
-        Fill: =RGBA(0, 0, 0, 0)
-        Height: =500
+        Fill: =RGBA(241, 244, 249, 1)
+        Height: =409
         Items: =ability_address
-        Width: =800
-        X: =220
+        SelectedFill: =RGBA(241, 244, 249, 1)
+        Width: =1024
+        X: =160
         Y: =168
         ZIndex: =5
 
@@ -137,4 +140,11 @@ Admin_Address_Page As screen:
             X: =0
             Y: =0
             ZIndex: =7
+
+    Button1 As button:
+        OnSelect: =Test_csh_Excelexport_dataverse_list.Run("")
+        Text: ="버튼"
+        X: =1057
+        Y: =635
+        ZIndex: =6
 
