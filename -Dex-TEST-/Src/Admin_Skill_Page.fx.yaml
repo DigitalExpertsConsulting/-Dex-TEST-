@@ -12,6 +12,69 @@ Admin_Skill_Page As screen:
         Width: =1366
         ZIndex: =1
 
+    "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
+        Fill: =RGBA(255, 255, 255, 0.8)
+        Height: =537
+        Items: =ability_skill
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =96
+        Width: =919
+        X: =379
+        Y: =186
+        ZIndex: =1
+
+        Title3 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Name
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =16
+            ZIndex: =1
+
+        Subtitle3 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.'E-mail'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =Title3.Y + Title3.Height + 4
+            ZIndex: =2
+
+        NextArrow3 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Height: =60
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="항목 세부 정보 보기"
+            Width: =60
+            X: =Parent.TemplateWidth - Self.Width - 5
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =3
+
+        Separator3 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =4
+
     Profile_Back_3 As icon.BackArrow:
         Color: =RGBA(102, 182, 227, 0.7)
         Height: =110
@@ -32,14 +95,9 @@ Admin_Skill_Page As screen:
         Y: =40
         ZIndex: =3
 
-    License_send_4 As icon.Send:
-        Color: =RGBA(102, 182, 227, 0.7)
-        Height: =110
-        Icon: =Icon.Send
-        OnSelect: |
-            =
-        Width: =110
-        X: =1120
-        Y: =600
+    TextInput1 As text:
+        Default: ="텍스트 입력"
+        X: =40
+        Y: =260
         ZIndex: =4
 
