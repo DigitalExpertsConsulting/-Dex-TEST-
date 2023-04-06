@@ -18,7 +18,7 @@ Admin_Skill_Page As screen:
         Height: =537
         Items: |+
             =//Search(ability_skill,TextInput1.Text,"cr778_name")
-            
+            Search(ability_skill,TextInput1.Text,"cr778_name")
             
             
             
