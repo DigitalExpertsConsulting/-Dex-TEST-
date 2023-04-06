@@ -17,7 +17,7 @@ Admin_Skill_Page As screen:
         Fill: =RGBA(255, 255, 255, 0.8)
         Height: =537
         Items: |+
-            =//ability_skill
+            =ability_skill
             /*
             If(
                 Dropdown1.SelectedText.Value = "이름",
@@ -36,7 +36,7 @@ Admin_Skill_Page As screen:
         TemplateSize: =96
         Width: =919
         X: =379
-        Y: =186
+        Y: =176
         ZIndex: =1
 
         Title3 As label:
@@ -46,7 +46,7 @@ Admin_Skill_Page As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.'E-mail'
+            Text: =ThisItem.Name
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 104
             X: =32
@@ -60,7 +60,7 @@ Admin_Skill_Page As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.Name
+            Text: =ThisItem.'Created On'
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 104
             X: =32
