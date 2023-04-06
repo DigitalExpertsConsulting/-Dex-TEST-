@@ -18,7 +18,15 @@ Admin_Skill_Page As screen:
         Height: =537
         Items: |+
             =//Search(ability_skill,TextInput1.Text,"cr778_name")
-            ability_skill
+            //ability_skill
+            
+            If(
+                Dropdown2.SelectedText.Value = "이름",
+                Search(
+                    ability_skill,
+                    TextInput1.Text,
+                    "cr778_name"
+            )
             
             
             
@@ -39,7 +47,7 @@ Admin_Skill_Page As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.Name
+            Text: =ThisItem.'E-mail'
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 104
             X: =32
@@ -53,7 +61,7 @@ Admin_Skill_Page As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.'Created On'
+            Text: =ThisItem.Name
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 104
             X: =32
