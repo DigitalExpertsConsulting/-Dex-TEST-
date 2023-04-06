@@ -185,6 +185,7 @@ User_License_Page As screen:
         Icon: =Icon.Send
         OnSelect: |-
             =Select(LicenseDay_send);
+            
             If(
                 IsEmpty(
                     Search(
@@ -204,17 +205,138 @@ User_License_Page As screen:
                         'E-mail' = 'E-mail_License_DataCard'.Update
                     ),
                     {
-                        'AZ-104': 'AZ-104_DataCard'.Update,
-                        'AZ-305': 'AZ-305_DataCard'.Update,
-                        'MS-100': 'MS-100_DataCard'.Update,
-                        'MS-101': 'MS-101_DataCard'.Update,
-                        'MS-700': 'MS-700_DataCard'.Update,
-                        'MS-900': 'MS-900_DataCard'.Update,
-                        'PL-200': 'PL-200_DataCard'.Update,
-                        'PL-300': 'PL-300_DataCard'.Update,
-                        'PL-400': 'PL-400_DataCard'.Update,
-                        'PL-600': 'PL-600_DataCard'.Update,
-                        'PL-900': 'PL-900_DataCard'.Update            
+                        'AZ-104':
+                        If(
+                            IsBlank(
+                                'AZ-104_DataCard'.Update
+                            ),
+                            LookUp(
+                                ability_license,
+                                'E-mail' = 'E-mail_License_DataCard'.Update,
+                                'AZ-104'
+                            ),
+                            'AZ-104_DataCard'.Update
+                        ),
+                        'AZ-305':
+                        If(
+                            IsBlank(
+                                'AZ-305_DataCard'.Update
+                            ),
+                            LookUp(
+                                ability_license,
+                                'E-mail' = 'E-mail_License_DataCard'.Update,
+                                'AZ-305'
+                            ),
+                            'AZ-305_DataCard'.Update
+                        ),
+                        'MS-100':
+                        If(
+                            IsBlank(
+                                'MS-100_DataCard'.Update
+                            ),
+                            LookUp(
+                                ability_license,
+                                'E-mail' = 'E-mail_License_DataCard'.Update,
+                                'MS-100'
+                            ),
+                            'MS-100_DataCard'.Update
+                        ),
+                        'MS-101':
+                        If(
+                            IsBlank(
+                                'MS-101_DataCard'.Update
+                            ),
+                            LookUp(
+                                ability_license,
+                                'E-mail' = 'E-mail_License_DataCard'.Update,
+                                'MS-101'
+                            ),
+                            'MS-101_DataCard'.Update
+                        ),
+                        'MS-700':
+                        If(
+                            IsBlank(
+                                'MS-700_DataCard'.Update
+                            ),
+                            LookUp(
+                                ability_license,
+                                'E-mail' = 'E-mail_License_DataCard'.Update,
+                                'MS-700'
+                            ),
+                            'MS-700_DataCard'.Update
+                        ),
+                        'MS-900':
+                        If(
+                            IsBlank(
+                                'MS-900_DataCard'.Update
+                            ),
+                            LookUp(
+                                ability_license,
+                                'E-mail' = 'E-mail_License_DataCard'.Update,
+                                'MS-900'
+                            ),
+                            'MS-900_DataCard'.Update
+                        ),
+                        'PL-200':
+                        If(
+                            IsBlank(
+                                'PL-200_DataCard'.Update
+                            ),
+                            LookUp(
+                                ability_license,
+                                'E-mail' = 'E-mail_License_DataCard'.Update,
+                                'PL-200'
+                            ),
+                            'PL-200_DataCard'.Update
+                        ),
+                        'PL-300':
+                        If(
+                            IsBlank(
+                                'PL-300_DataCard'.Update
+                            ),
+                            LookUp(
+                                ability_license,
+                                'E-mail' = 'E-mail_License_DataCard'.Update,
+                                'PL-300'
+                            ),
+                            'PL-300_DataCard'.Update
+                        ),
+                        'PL-400':
+                        If(
+                            IsBlank(
+                                'PL-400_DataCard'.Update
+                            ),
+                            LookUp(
+                                ability_license,
+                                'E-mail' = 'E-mail_License_DataCard'.Update,
+                                'PL-400'
+                            ),
+                            'PL-400_DataCard'.Update
+                        ),
+                        'PL-600':
+                        If(
+                            IsBlank(
+                                'PL-200_DataCard'.Update
+                            ),
+                            LookUp(
+                                ability_license,
+                                'E-mail' = 'E-mail_License_DataCard'.Update,
+                                'PL-600'
+                            ),
+                            'PL-200_DataCard'.Update
+                        ),
+                        'PL-900':
+                        If(
+                            IsBlank(
+                                'PL-900_DataCard'.Update
+                            ),
+                            LookUp(
+                                ability_license,
+                                'E-mail' = 'E-mail_License_DataCard'.Update,
+                                'PL-900'
+                            ),
+                            'PL-900_DataCard'.Update
+                        )
                     }
                 );
                 NewForm(License_Input);
