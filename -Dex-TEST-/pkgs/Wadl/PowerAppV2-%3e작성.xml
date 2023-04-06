@@ -2,15 +2,8 @@
   <doc title="PowerAppV2 -&gt; 작성" />
   <grammars>
     <jsonTypes targetNamespace="https://asia-001.azure-apim.net/apim/logicflows" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
-      <string name="ManualTriggerInput_file_def_name_def" />
-      <base64Binary name="ManualTriggerInput_file_def_contentBytes_def" />
-      <object name="ManualTriggerInput_file_def">
-        <property name="name" type="string" />
-        <property name="contentBytes" typeRef="ManualTriggerInput_file_def_contentBytes_def" />
-      </object>
       <string name="ManualTriggerInput_text_def" />
       <object name="ManualTriggerInput">
-        <property name="file" typeRef="ManualTriggerInput_file_def" />
         <property name="text" type="string" />
       </object>
     </jsonTypes>
@@ -25,11 +18,8 @@
             <doc title="The api version" />
           </param>
           <representation mediaType="application/json">
-            <param style="plain" name="file" path="/file" type="service:ManualTriggerInput_file_def" required="true">
-              <doc title="파일 콘텐츠" />
-            </param>
             <param style="plain" name="text" path="/text" type="xs:string" required="true">
-              <doc title=" AddressList" />
+              <doc title="addressList" />
             </param>
           </representation>
         </request>
