@@ -17,7 +17,7 @@ Admin_Skill_Page As screen:
         Fill: =RGBA(255, 255, 255, 0.8)
         Height: =537
         Items: |+
-            =Search(ability_skill,TextInput1.Text,"cr778_name")
+            =//Search(ability_skill,TextInput1.Text,"cr778_name")
             
             
             
@@ -28,7 +28,7 @@ Admin_Skill_Page As screen:
         TemplateSize: =96
         Width: =919
         X: =379
-        Y: =176
+        Y: =164
         ZIndex: =1
 
         Title3 As label:
