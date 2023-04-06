@@ -1,5 +1,5 @@
 {
-  "3905cb6a-b8b0-4b35-88b8-eb9f5b6c07d4": {
+  "34373f1f-6945-48bd-b1d7-2c93557e786a": {
     "connectionRef": {
       "displayName": "Logic flows",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1615/1.0.1615.3163/logicflows/icon.png",
@@ -22,10 +22,25 @@
       "PowerApp->행나열"
     ],
     "dependencies": {
-      "shared_commondataserviceforapps": "efc1f88b-deeb-4a2b-889b-508329c7ac61"
+      "shared_commondataserviceforapps": "93719c53-df34-4b5f-a20d-d17916e05700",
+      "shared_sharepointonline": "eb1438dc-348d-48e7-b7c1-0d10cc1e05ca"
     },
     "dependents": [],
-    "id": "3905cb6a-b8b0-4b35-88b8-eb9f5b6c07d4"
+    "id": "34373f1f-6945-48bd-b1d7-2c93557e786a"
+  },
+  "93719c53-df34-4b5f-a20d-d17916e05700": {
+    "connectionRef": {
+      "displayName": "Microsoft Dataverse",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1628/1.0.1628.3245/commondataserviceforapps/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_commondataserviceforapps"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "34373f1f-6945-48bd-b1d7-2c93557e786a"
+    ],
+    "id": "93719c53-df34-4b5f-a20d-d17916e05700"
   },
   "ac5a0616-fc7c-4986-9e7a-ff3af9e0af4d": {
     "connectionRef": {
@@ -53,18 +68,18 @@
     "dependents": [],
     "id": "ac5a0616-fc7c-4986-9e7a-ff3af9e0af4d"
   },
-  "efc1f88b-deeb-4a2b-889b-508329c7ac61": {
+  "eb1438dc-348d-48e7-b7c1-0d10cc1e05ca": {
     "connectionRef": {
-      "displayName": "Microsoft Dataverse",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1628/1.0.1628.3245/commondataserviceforapps/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_commondataserviceforapps"
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1627/1.0.1627.3238/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
     },
     "datasets": {},
     "dataSources": [],
     "dependencies": {},
     "dependents": [
-      "3905cb6a-b8b0-4b35-88b8-eb9f5b6c07d4"
+      "34373f1f-6945-48bd-b1d7-2c93557e786a"
     ],
-    "id": "efc1f88b-deeb-4a2b-889b-508329c7ac61"
+    "id": "eb1438dc-348d-48e7-b7c1-0d10cc1e05ca"
   }
 }
