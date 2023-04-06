@@ -32,14 +32,211 @@ Admin_License_Page As screen:
         Y: =40
         ZIndex: =3
 
-    License_send_5 As icon.Send:
-        Color: =RGBA(102, 182, 227, 0.7)
-        Height: =110
-        Icon: =Icon.Send
-        OnSelect: |
-            =
-        Width: =110
-        X: =1120
-        Y: =600
-        ZIndex: =4
+    DataTable4 As dataTable.datatable:
+        BorderStyle: =BorderStyle.Solid
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(255, 255, 255, 0.7)
+        Height: =487
+        Items: |
+            =Search(ability_license,TextInput1_1.Text,"cr778_name")
+        Width: =1158
+        X: =108
+        Y: =225
+        ZIndex: =5
+
+        Name_열4 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Name"
+            FieldName: ="cr778_name"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =1
+            Text: =ThisItem.Name
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+        "'E-mail_열4' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="E-mail"
+            FieldName: ="cr778_email"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =ThisItem.'E-mail'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =2
+
+        "'PL-200_열1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="PL-200"
+            FieldName: ="cr778_pl200"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =3
+            Text: =ThisItem.'PL-200'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =3
+
+        "'PL-300_열1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="PL-300"
+            FieldName: ="cr778_pl300"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =4
+            Text: =ThisItem.'PL-300'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =4
+
+        "'PL-400_열1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="PL-400"
+            FieldName: ="cr778_pl400"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =5
+            Text: =ThisItem.'PL-400'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =5
+
+        "'PL-600_열1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="PL-600"
+            FieldName: ="cr778_pl600"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =6
+            Text: =ThisItem.'PL-600'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =6
+
+        "'PL-900_열1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="PL-900"
+            FieldName: ="cr778_pl900"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =7
+            Text: =ThisItem.'PL-900'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =7
+
+        "'MS-100_열1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="MS-100"
+            FieldName: ="cr778_ms100"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =8
+            Text: =ThisItem.'MS-100'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =8
+
+        "'MS-101_열1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="MS-101"
+            FieldName: ="cr778_ms101"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =9
+            Text: =ThisItem.'MS-101'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =9
+
+        "'MS-700_열1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="MS-700"
+            FieldName: ="cr778_ms700"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =10
+            Text: =ThisItem.'MS-700'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =10
+
+        "'MS-900_열1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="MS-900"
+            FieldName: ="cr778_ms900"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =11
+            Text: =ThisItem.'MS-900'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =11
+
+        "'AZ-104_열1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="AZ-104"
+            FieldName: ="cr778_az104"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =12
+            Text: =ThisItem.'AZ-104'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =12
+
+        "'AZ-305_열1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="AZ-305"
+            FieldName: ="cr778_az305"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =13
+            Text: =ThisItem.'AZ-305'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =13
+
+    Label1 As label:
+        Text: ="텍스트"
+        X: =60
+        Y: =60
+        ZIndex: =6
+
+    TextInput1_1 As text:
+        Default: =""
+        Height: =36
+        Width: =230
+        X: =108
+        Y: =169
+        ZIndex: =7
 

@@ -12,76 +12,6 @@ Admin_Skill_Page As screen:
         Width: =1366
         ZIndex: =1
 
-    "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
-        DisplayMode: =DisplayMode.View
-        Fill: =RGBA(255, 255, 255, 0.8)
-        Height: =537
-        Items: |+
-            =//Search(ability_skill,TextInput1.Text,"cr778_name")
-            Search(ability_skill,TextInput1.Text,"cr778_name")
-            
-            
-            
-            
-        Layout: =Layout.Vertical
-        TemplatePadding: =0
-        TemplateSize: =96
-        Width: =919
-        X: =379
-        Y: =164
-        ZIndex: =1
-
-        Title3 As label:
-            Height: =Self.Size * 1.8
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Text: =ThisItem.Name
-            VerticalAlign: =VerticalAlign.Top
-            Width: =Parent.TemplateWidth - 104
-            X: =32
-            Y: =16
-            ZIndex: =1
-
-        Subtitle3 As label:
-            Height: =Self.Size * 1.8
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Text: =ThisItem.'Created On'
-            VerticalAlign: =VerticalAlign.Top
-            Width: =Parent.TemplateWidth - 104
-            X: =32
-            Y: =Title3.Y + Title3.Height + 4
-            ZIndex: =2
-
-        NextArrow3 As icon.ChevronRight:
-            AccessibleLabel: =Self.Tooltip
-            Height: =60
-            Icon: =Icon.ChevronRight
-            OnSelect: =Select(Parent)
-            PaddingBottom: =10
-            PaddingLeft: =10
-            PaddingRight: =10
-            PaddingTop: =10
-            TabIndex: =0
-            Tooltip: ="항목 세부 정보 보기"
-            Width: =60
-            X: =Parent.TemplateWidth - Self.Width - 5
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-            ZIndex: =3
-
-        Separator3 As rectangle:
-            Height: =1
-            OnSelect: =Select(Parent)
-            Width: =Parent.TemplateWidth
-            Y: =Parent.TemplateHeight - 1
-            ZIndex: =4
-
     Profile_Back_3 As icon.BackArrow:
         Color: =RGBA(102, 182, 227, 0.7)
         Height: =110
@@ -104,40 +34,231 @@ Admin_Skill_Page As screen:
 
     TextInput1 As text:
         Default: ="텍스트 입력"
-        X: =40
-        Y: =244
+        Height: =36
+        Width: =230
+        X: =110
+        Y: =167
         ZIndex: =4
 
-    Dropdown2 As dropdown:
-        Items: =["이름","기술"]
-        X: =40
-        Y: =177
+    DataTable3 As dataTable.datatable:
+        BorderStyle: =BorderStyle.Solid
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(255,255,255, 0.7)
+        Height: =520
+        Items: =Search(ability_skill,TextInput1.Text,"cr778_name")
+        Width: =1268
+        X: =55
+        Y: =221
         ZIndex: =5
 
-    Dropdown3 As dropdown:
-        Items: |-
-            =[
-                "365 Solution",
-                "AI Builder",
-                "Api management",
-                "DataVerse",
-                "Power Apps Canvas",
-                "Power Apps Model",
-                "Power Automate",
-                "Power Automate Desktop",
-                "Power Page",
-                "Power Page JAVA/CSS",
-                "Power BI",
-                "Process Advisor",
-                "Power Virtual Agents"
-            ]
-        X: =40
-        Y: =388
-        ZIndex: =6
+        Name_열3 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Name"
+            FieldName: ="cr778_name"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =1
+            Text: =ThisItem.Name
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =1
 
-    Dropdown4 As dropdown:
-        Items: =["None","Basic","Intermate","Advanced"]
-        X: =40
-        Y: =453
-        ZIndex: =7
+        "'E-mail_열3' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="E-mail"
+            FieldName: ="cr778_email"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =ThisItem.'E-mail'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =2
+
+        "'365 Solution_열2' As dataTableColumn.complexOptionSetColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="365 Solution"
+            FieldName: ="cr778_solution"
+            FieldVariantName: ="complexOptionSetColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =3
+            Text: =ThisItem.'365 Solution'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =3
+
+        "'AI Builder_열2' As dataTableColumn.complexOptionSetColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="AI Builder"
+            FieldName: ="cr778_aibuilder"
+            FieldVariantName: ="complexOptionSetColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =4
+            Text: =ThisItem.'AI Builder'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =4
+
+        "'Api management_열2' As dataTableColumn.complexOptionSetColumn":
+            AutoWidth: =true
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Api management"
+            FieldName: ="cr778_apimanagement"
+            FieldVariantName: ="complexOptionSetColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =5
+            Text: =ThisItem.'Api management'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =5
+
+        DataVerse_열2 As dataTableColumn.complexOptionSetColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="DataVerse"
+            FieldName: ="cr778_dataverse"
+            FieldVariantName: ="complexOptionSetColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =6
+            Text: =ThisItem.DataVerse
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =6
+
+        "'Power Apps Canvas_열2' As dataTableColumn.complexOptionSetColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Power Apps Canvas"
+            FieldName: ="cr778_powerappscanvas"
+            FieldVariantName: ="complexOptionSetColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =7
+            Text: =ThisItem.'Power Apps Canvas'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =7
+
+        "'Power Apps Model_열2' As dataTableColumn.complexOptionSetColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Power Apps Model"
+            FieldName: ="cr778_powerappsmodel"
+            FieldVariantName: ="complexOptionSetColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =8
+            Text: =ThisItem.'Power Apps Model'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =8
+
+        "'Power Automate_열2' As dataTableColumn.complexOptionSetColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Power Automate"
+            FieldName: ="cr778_powerautomate"
+            FieldVariantName: ="complexOptionSetColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =9
+            Text: =ThisItem.'Power Automate'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =9
+
+        "'Power Automate Desktop_열2' As dataTableColumn.complexOptionSetColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Power Automate Desktop"
+            FieldName: ="cr778_powerautomatedesktop"
+            FieldVariantName: ="complexOptionSetColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =10
+            Text: =ThisItem.'Power Automate Desktop'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =10
+
+        "'Power BI_열2' As dataTableColumn.complexOptionSetColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Power BI"
+            FieldName: ="cr778_powerbi"
+            FieldVariantName: ="complexOptionSetColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =11
+            Text: =ThisItem.'Power BI'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =11
+
+        "'Power Page_열2' As dataTableColumn.complexOptionSetColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Power Page"
+            FieldName: ="cr778_powerpage"
+            FieldVariantName: ="complexOptionSetColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =12
+            Text: =ThisItem.'Power Page'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =12
+
+        "'Power Page JAVA/CSS_열2' As dataTableColumn.complexOptionSetColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Power Page JAVA/CSS"
+            FieldName: ="cr778_powerpagejavacss"
+            FieldVariantName: ="complexOptionSetColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =13
+            Text: =ThisItem.'Power Page JAVA/CSS'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =13
+
+        "'Power Virtual Agents_열2' As dataTableColumn.complexOptionSetColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Power Virtual Agents"
+            FieldName: ="cr778_powervirtualagents"
+            FieldVariantName: ="complexOptionSetColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =14
+            Text: =ThisItem.'Power Virtual Agents'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =14
+
+        "'Process Advisor_열2' As dataTableColumn.complexOptionSetColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Process Advisor"
+            FieldName: ="cr778_processadvisor"
+            FieldVariantName: ="complexOptionSetColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =15
+            Text: =ThisItem.'Process Advisor'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =15
 
