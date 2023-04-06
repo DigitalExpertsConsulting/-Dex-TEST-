@@ -142,9 +142,11 @@ Admin_Address_Page As screen:
             ZIndex: =7
 
     Button1 As button:
+        Height: =51
         OnSelect: =Test_csh_Excelexport_dataverse_list.Run("")
-        Text: ="버튼"
-        X: =1057
+        Text: ="주소 Table 다운"
+        Width: =199
+        X: =1016
         Y: =635
         ZIndex: =6
 
