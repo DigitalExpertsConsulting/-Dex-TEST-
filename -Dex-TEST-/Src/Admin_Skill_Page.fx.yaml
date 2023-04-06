@@ -17,16 +17,8 @@ Admin_Skill_Page As screen:
         Fill: =RGBA(255, 255, 255, 0.8)
         Height: =537
         Items: |+
-            =Search(ability_skill,TextInput1.Text,"cr778_name")
-            //ability_skill
-            /*
-            If(
-                Dropdown1.SelectedText.Value = "이름",
-                Search(Search(ability_skill,Dropdown1.Selected.Value,"cr778_name"),TextInput1.Text,"cr778_name"),
-                ability_skill
-            )
-            */
-            
+            =//Search(ability_skill,TextInput1.Text,"cr778_name")
+            ability_skill
             
             
             
@@ -113,7 +105,40 @@ Admin_Skill_Page As screen:
 
     TextInput1 As text:
         Default: ="텍스트 입력"
-        X: =32
-        Y: =240
+        X: =40
+        Y: =244
         ZIndex: =4
+
+    Dropdown2 As dropdown:
+        Items: =["이름","기술"]
+        X: =40
+        Y: =177
+        ZIndex: =5
+
+    Dropdown3 As dropdown:
+        Items: |-
+            =[
+                "365 Solution",
+                "AI Builder",
+                "Api management",
+                "DataVerse",
+                "Power Apps Canvas",
+                "Power Apps Model",
+                "Power Automate",
+                "Power Automate Desktop",
+                "Power Page",
+                "Power Page JAVA/CSS",
+                "Power BI",
+                "Process Advisor",
+                "Power Virtual Agents"
+            ]
+        X: =40
+        Y: =388
+        ZIndex: =6
+
+    Dropdown4 As dropdown:
+        Items: =["None","Basic","Intermate","Advanced"]
+        X: =40
+        Y: =453
+        ZIndex: =7
 
