@@ -3,8 +3,15 @@
   <grammars>
     <jsonTypes targetNamespace="https://asia-001.azure-apim.net/apim/logicflows" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
       <string name="ManualTriggerInput_text_def" />
+      <string name="ManualTriggerInput_file_def_name_def" />
+      <base64Binary name="ManualTriggerInput_file_def_contentBytes_def" />
+      <object name="ManualTriggerInput_file_def">
+        <property name="name" type="string" />
+        <property name="contentBytes" typeRef="ManualTriggerInput_file_def_contentBytes_def" />
+      </object>
       <object name="ManualTriggerInput">
         <property name="text" type="string" />
+        <property name="file" typeRef="ManualTriggerInput_file_def" />
       </object>
     </jsonTypes>
   </grammars>
@@ -20,6 +27,9 @@
           <representation mediaType="application/json">
             <param style="plain" name="text" path="/text" type="xs:string" required="true">
               <doc title="addressList" />
+            </param>
+            <param style="plain" name="file" path="/file" type="service:ManualTriggerInput_file_def">
+              <doc title="파일 콘텐츠" />
             </param>
           </representation>
         </request>

@@ -141,7 +141,7 @@ Admin_Address_Page As screen:
     Button1 As button:
         OnSelect: |-
             =
-            'PowerAppV2->작성'.Run("ads")
+            'PowerAppV2->작성'.Run("asd",DataTable1)
         Text: ="버튼"
         X: =22
         Y: =364
