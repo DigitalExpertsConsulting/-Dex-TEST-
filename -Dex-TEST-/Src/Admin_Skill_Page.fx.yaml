@@ -17,7 +17,8 @@ Admin_Skill_Page As screen:
         Fill: =RGBA(255, 255, 255, 0.8)
         Height: =537
         Items: |+
-            =ability_skill
+            =Search(ability_skill,TextInput1.Text,"cr778_name")
+            //ability_skill
             /*
             If(
                 Dropdown1.SelectedText.Value = "이름",
@@ -25,7 +26,7 @@ Admin_Skill_Page As screen:
                 ability_skill
             )
             */
-            //Search(Search(ability_skill,Dropdown1.Selected.Value,"cr778_email"),TextInput1.Text,"cr778_email")
+            
             
             
             
@@ -112,16 +113,7 @@ Admin_Skill_Page As screen:
 
     TextInput1 As text:
         Default: ="텍스트 입력"
-        X: =40
-        Y: =260
+        X: =32
+        Y: =240
         ZIndex: =4
-
-    Dropdown1 As dropdown:
-        Default: ="이름"
-        Height: =44
-        Items: =["이름","기술"]
-        Width: =320
-        X: =40
-        Y: =186
-        ZIndex: =5
 
