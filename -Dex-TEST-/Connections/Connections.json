@@ -71,7 +71,8 @@
     "dataSources": [],
     "dependencies": {},
     "dependents": [
-      "04bdc248-0962-4cb8-84c8-5fb92ab07b88"
+      "04bdc248-0962-4cb8-84c8-5fb92ab07b88",
+      "f3557f82-d3e2-45b6-a74a-22909f85fad3"
     ],
     "id": "9571b5ea-a429-41b8-b65b-dee168d7202a"
   },
@@ -114,5 +115,33 @@
       "04bdc248-0962-4cb8-84c8-5fb92ab07b88"
     ],
     "id": "e1261159-5cc4-4e6b-ac09-b371ba40b6ee"
+  },
+  "f3557f82-d3e2-45b6-a74a-22909f85fad3": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1615/1.0.1615.3163/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "a4c7519d-1bfa-44a5-aed4-d39c85c5ba8b"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "a4c7519d-1bfa-44a5-aed4-d39c85c5ba8b"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "역량강화AppstoDataversPDFDownload"
+    ],
+    "dependencies": {
+      "shared_commondataserviceforapps": "9571b5ea-a429-41b8-b65b-dee168d7202a"
+    },
+    "dependents": [],
+    "id": "f3557f82-d3e2-45b6-a74a-22909f85fad3"
   }
 }

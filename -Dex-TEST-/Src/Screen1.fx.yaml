@@ -1,2 +1,15 @@
 Screen1 As screen:
 
+    Button2 As button:
+        OnSelect: =역량강화AppstoDataversPDFDownload.Run()
+        Text: ="버튼"
+        X: =525
+        Y: =384
+        ZIndex: =1
+
+    Icon1 As icon.DocumentPDF:
+        Icon: =Icon.DocumentPDF
+        X: =510
+        Y: =504
+        ZIndex: =2
+
