@@ -37,10 +37,21 @@ User_License_Page As screen:
                         'E-mail' = 'E-mail_File_DataCard'.Update
                     ),
                     {
-                        'AZ-104': {
+                        'AZ-104': 
+                        If(
+                            IsEmpty(
+                                'AZ-104_File_DataCardValue'.Attachments
+                            ),
+                            LookUp(
+                                ability_file,
+                                'E-mail' = 'E-mail_File_DataCard'.Update,
+                                'AZ-104'
+                            ),
+                            {
                             FileName:First('AZ-104_File_DataCardValue'.Attachments).Name,
                             Value:First('AZ-104_File_DataCardValue'.Attachments).Value
-                        },
+                            }
+                        ),
             
                         'AZ-305': {
                             FileName:First('AZ-305_File_DataCardValue'.Attachments).Name,
@@ -83,7 +94,9 @@ User_License_Page As screen:
                             Value:First('PL-900_File_DataCardValue'.Attachments).Value
                         }
                     }
-                )
+                );
+                NewForm(License_File_Input);
+                ResetForm(License_File_Input);
             )
         Width: =110
         X: =633
