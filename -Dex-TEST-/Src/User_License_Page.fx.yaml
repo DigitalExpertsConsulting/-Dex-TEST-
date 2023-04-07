@@ -53,46 +53,165 @@ User_License_Page As screen:
                             }
                         ),
             
-                        'AZ-305': {
+                        'AZ-305':
+                        If(
+                            IsEmpty(
+                                'AZ-305_File_DataCard'.Update
+                            ),
+                            LookUp(
+                                ability_file,
+                                'E-mail' = 'E-mail_File_DataCard'.Update,
+                                'AZ-305'
+                            ),
+                            {
                             FileName:First('AZ-305_File_DataCardValue'.Attachments).Name,
                             Value:First('AZ-305_File_DataCardValue'.Attachments).Value
-                        },
-                        'MS-100': {
+                            }
+                        ),
+            
+                        'MS-100': 
+                        If(
+                            IsEmpty(
+                                'MS-100_File_DataCard'.Update
+                            ),
+                            LookUp(
+                                ability_file,
+                                'E-mail' = 'E-mail_File_DataCard'.Update,
+                                'MS-100'
+                            ),
+                            {
                             FileName:First('MS-100_File_DataCardValue'.Attachments).Name,
                             Value:First('MS-100_File_DataCardValue'.Attachments).Value
-                        },
-                        'MS-101': {
+                            }
+                        ),
+            
+                        'MS-101': 
+                        If(
+                            IsEmpty(
+                                'MS-100_File_DataCard'.Update
+                            ),
+                            LookUp(
+                                ability_file,
+                                'E-mail' = 'E-mail_File_DataCard'.Update,
+                                'MS-101'
+                            ),
+                            {
                             FileName:First('MS-101_File_DataCardValue'.Attachments).Name,
                             Value:First('MS-101_File_DataCardValue'.Attachments).Value
-                        },
-                        'MS-700': {
+                            }
+                        ),
+            
+                        'MS-700':
+                        If(
+                            IsEmpty(
+                                'MS-700_File_DataCard'.Update
+                            ),
+                            LookUp(
+                                ability_file,
+                                'E-mail' = 'E-mail_File_DataCard'.Update,
+                                'MS-700'
+                            ),
+                            {
                             FileName:First('MS-700_File_DataCardValue'.Attachments).Name,
                             Value:First('MS-700_File_DataCardValue'.Attachments).Value
-                        },
-                        'MS-900': {
+                            }
+                        ),
+            
+                        'MS-900':
+                        If(
+                            IsEmpty(
+                                'MS-900_File_DataCard'.Update
+                            ),
+                            LookUp(
+                                ability_file,
+                                'E-mail' = 'E-mail_File_DataCard'.Update,
+                                'MS-900'
+                            ),
+                            {
                             FileName:First('MS-900_File_DataCardValue'.Attachments).Name,
                             Value:First('MS-900_File_DataCardValue'.Attachments).Value
-                        },
-                        'PL-200': {
+                            }
+                        ),
+            
+                        'PL-200':
+                        If(
+                            IsEmpty(
+                                'PL-200_DataCard'.Update
+                            ),
+                            LookUp(
+                                ability_file,
+                                'E-mail' = 'E-mail_File_DataCard'.Update,
+                                'PL-200'
+                            ),
+                            {
                             FileName:First('PL-200_File_DataCardValue'.Attachments).Name,
                             Value:First('PL-200_File_DataCardValue'.Attachments).Value
-                        },
-                        'PL-300': {
+                            }
+                        ),
+            
+                        'PL-300': 
+                        If(
+                            IsEmpty(
+                                'PL-300_DataCard'.Update
+                            ),
+                            LookUp(
+                                ability_file,
+                                'E-mail' = 'E-mail_File_DataCard'.Update,
+                                'PL-300'
+                            ),
+                            {
                             FileName:First('PL-300_File_DataCardValue'.Attachments).Name,
                             Value:First('PL-300_File_DataCardValue'.Attachments).Value
-                        },
-                        'PL-400': {
-                            FileName:First('PL-400_File_DataCardValue'.Attachments).Name,
-                            Value:First('PL-400_File_DataCardValue'.Attachments).Value
-                        },
-                        'PL-600': {
-                            FileName:First('PL-600_File_DataCardValue'.Attachments).Name,
-                            Value:First('PL-600_File_DataCardValue'.Attachments).Value
-                        },
-                        'PL-900': {
-                            FileName:First('PL-900_File_DataCardValue'.Attachments).Name,
-                            Value:First('PL-900_File_DataCardValue'.Attachments).Value
-                        }
+                            }
+                        ),
+            
+                        'PL-400': 
+                        If(
+                            IsBlank(
+                                'PL-400_DataCard'.Update
+                            ),
+                            LookUp(
+                                ability_file,
+                                'E-mail' = 'E-mail_File_DataCard'.Update,
+                                'PL-400'
+                            ),
+                            {
+                            FileName : First('PL-400_File_DataCardValue'.Attachments).Name,
+                            Value : First('PL-400_File_DataCardValue'.Attachments).Value
+                            }
+                        ),
+            
+                        'PL-600': 
+                        If(
+                            IsEmpty(
+                                'PL-600_DataCard'.Update
+                            ),
+                            LookUp(
+                                ability_file,
+                                'E-mail' = 'E-mail_File_DataCard'.Update,
+                                'PL-600'
+                            ),
+                            {
+                                FileName : First('PL-600_File_DataCardValue'.Attachments).Name,
+                                Value : First('PL-600_File_DataCardValue'.Attachments).Value
+                            }
+                        ),
+            
+                        'PL-900': 
+                        If(
+                            IsEmpty(
+                                'PL-900_File_DataCard'.Update
+                            ),
+                            LookUp(
+                                ability_file,
+                                'E-mail' = 'E-mail_File_DataCard'.Update,
+                                'PL-900'
+                            ),
+                            {
+                                FileName:First('PL-900_File_DataCardValue'.Attachments).Name,
+                                Value : First('PL-900_File_DataCardValue'.Attachments).Value
+                            }
+                        )
                     }
                 );
                 NewForm(License_File_Input);
@@ -100,7 +219,7 @@ User_License_Page As screen:
             )
         Width: =110
         X: =633
-        Y: =80
+        Y: =100
         ZIndex: =2
 
     LicenseDay_send As icon.Send:
