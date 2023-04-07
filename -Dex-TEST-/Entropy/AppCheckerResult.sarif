@@ -3697,6 +3697,325 @@
           },
           "ruleId": "app-UnusedMediaResources",
           "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_License_Page.License_File_Input.'AZ-104_File_DataCard'.'AZ-104_File_DataCardValue'"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_License_Page.License_File_Input.'AZ-104_File_DataCard'.'AZ-104_File_DataCardValue'",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "module": "User_License_Page",
+                "type": "User_License_Page.License_File_Input.'AZ-104_File_DataCard'.'AZ-104_File_DataCardValue'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Low"
+          },
+          "ruleId": "app-NumericPropertySizeWarning",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_License_Page.License_File_Input.'AZ-305_File_DataCard'.'AZ-305_File_DataCardValue'"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_License_Page.License_File_Input.'AZ-305_File_DataCard'.'AZ-305_File_DataCardValue'",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "module": "User_License_Page",
+                "type": "User_License_Page.License_File_Input.'AZ-305_File_DataCard'.'AZ-305_File_DataCardValue'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Low"
+          },
+          "ruleId": "app-NumericPropertySizeWarning",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_License_Page.License_File_Input.'MS-100_File_DataCard'.'MS-100_File_DataCardValue'"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_License_Page.License_File_Input.'MS-100_File_DataCard'.'MS-100_File_DataCardValue'",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "module": "User_License_Page",
+                "type": "User_License_Page.License_File_Input.'MS-100_File_DataCard'.'MS-100_File_DataCardValue'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Low"
+          },
+          "ruleId": "app-NumericPropertySizeWarning",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_License_Page.License_File_Input.'MS-101_File_DataCard'.'MS-101_File_DataCardValue'"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_License_Page.License_File_Input.'MS-101_File_DataCard'.'MS-101_File_DataCardValue'",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "module": "User_License_Page",
+                "type": "User_License_Page.License_File_Input.'MS-101_File_DataCard'.'MS-101_File_DataCardValue'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Low"
+          },
+          "ruleId": "app-NumericPropertySizeWarning",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_License_Page.License_File_Input.'MS-700_File_DataCard'.'MS-700_File_DataCardValue'"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_License_Page.License_File_Input.'MS-700_File_DataCard'.'MS-700_File_DataCardValue'",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "module": "User_License_Page",
+                "type": "User_License_Page.License_File_Input.'MS-700_File_DataCard'.'MS-700_File_DataCardValue'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Low"
+          },
+          "ruleId": "app-NumericPropertySizeWarning",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_License_Page.License_File_Input.'MS-900_File_DataCard'.'MS-900_File_DataCardValue'"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_License_Page.License_File_Input.'MS-900_File_DataCard'.'MS-900_File_DataCardValue'",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "module": "User_License_Page",
+                "type": "User_License_Page.License_File_Input.'MS-900_File_DataCard'.'MS-900_File_DataCardValue'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Low"
+          },
+          "ruleId": "app-NumericPropertySizeWarning",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_License_Page.License_File_Input.'PL-200_File_DataCard'.'PL-200_File_DataCardValue'"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_License_Page.License_File_Input.'PL-200_File_DataCard'.'PL-200_File_DataCardValue'",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "module": "User_License_Page",
+                "type": "User_License_Page.License_File_Input.'PL-200_File_DataCard'.'PL-200_File_DataCardValue'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Low"
+          },
+          "ruleId": "app-NumericPropertySizeWarning",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_License_Page.License_File_Input.'PL-300_File_DataCard'.'PL-300_File_DataCardValue'"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_License_Page.License_File_Input.'PL-300_File_DataCard'.'PL-300_File_DataCardValue'",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "module": "User_License_Page",
+                "type": "User_License_Page.License_File_Input.'PL-300_File_DataCard'.'PL-300_File_DataCardValue'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Low"
+          },
+          "ruleId": "app-NumericPropertySizeWarning",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_License_Page.License_File_Input.'PL-400_File_DataCard'.'PL-400_File_DataCardValue'"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_License_Page.License_File_Input.'PL-400_File_DataCard'.'PL-400_File_DataCardValue'",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "module": "User_License_Page",
+                "type": "User_License_Page.License_File_Input.'PL-400_File_DataCard'.'PL-400_File_DataCardValue'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Low"
+          },
+          "ruleId": "app-NumericPropertySizeWarning",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_License_Page.License_File_Input.'PL-600_File_DataCard'.'PL-600_File_DataCardValue'"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_License_Page.License_File_Input.'PL-600_File_DataCard'.'PL-600_File_DataCardValue'",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "module": "User_License_Page",
+                "type": "User_License_Page.License_File_Input.'PL-600_File_DataCard'.'PL-600_File_DataCardValue'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Low"
+          },
+          "ruleId": "app-NumericPropertySizeWarning",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_License_Page.License_File_Input.'PL-900_File_DataCard'.'PL-900_File_DataCardValue'"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_License_Page.License_File_Input.'PL-900_File_DataCard'.'PL-900_File_DataCardValue'",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "module": "User_License_Page",
+                "type": "User_License_Page.License_File_Input.'PL-900_File_DataCard'.'PL-900_File_DataCardValue'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Low"
+          },
+          "ruleId": "app-NumericPropertySizeWarning",
+          "ruleIndex": 4
         }
       ],
       "tool": {
@@ -3770,6 +4089,23 @@
                 "level": "Medium",
                 "primaryCategory": "performance",
                 "whyFix": "이 미디어 파일은 어떤 컨트롤 수식에서도 참조되지 않으므로 필요하지 않습니다. 이 파일을 제거하면 성능이 개선됩니다."
+              }
+            },
+            {
+              "id": "app-NumericPropertySizeWarning",
+              "messageStrings": {
+                "issue": {
+                  "text": "최대 10MB까지 큰 파일을 업로드할 수 있도록 허용"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "이 크기의 첨부 파일이 필요한지 여부를 고려합니다."
+                ],
+                "level": "Low",
+                "primaryCategory": "performance",
+                "whyFix": "지원되는 모든 플랫폼에서 테스트하여 이 크기의 첨부 파일을 업로드할 수 있는지 확인하는 것이 좋습니다."
               }
             }
           ],

@@ -15,7 +15,7 @@ User_License_Page As screen:
 
     License_File_send As icon.Send:
         Color: =RGBA(102, 182, 227, 0.7)
-        Height: =110
+        Height: =0
         Icon: =Icon.Send
         OnSelect: |-
             =If(
@@ -217,9 +217,9 @@ User_License_Page As screen:
                 NewForm(License_File_Input);
                 ResetForm(License_File_Input);
             )
-        Width: =110
-        X: =633
-        Y: =100
+        Width: =46
+        X: =469
+        Y: =150
         ZIndex: =2
 
     LicenseDay_send As icon.Send:
@@ -394,6 +394,7 @@ User_License_Page As screen:
         Icon: =Icon.Send
         OnSelect: |-
             =Select(LicenseDay_send);
+            Select(License_File_send);
             
             If(
                 IsEmpty(
@@ -1863,6 +1864,7 @@ User_License_Page As screen:
                 IsInDataCard: =true
                 Items: =Parent.Default
                 MaxAttachments: =1
+                MaxAttachmentSize: =100
                 MaxAttachmentsText: =""
                 NoAttachmentsText: ="파일이 없습니다."
                 PaddingBottom: =5
@@ -1937,6 +1939,7 @@ User_License_Page As screen:
                 IsInDataCard: =true
                 Items: =Parent.Default
                 MaxAttachments: =1
+                MaxAttachmentSize: =100
                 MaxAttachmentsText: =""
                 NoAttachmentsText: ="파일이 없습니다."
                 PaddingBottom: =5
@@ -2011,6 +2014,7 @@ User_License_Page As screen:
                 IsInDataCard: =true
                 Items: =Parent.Default
                 MaxAttachments: =1
+                MaxAttachmentSize: =100
                 MaxAttachmentsText: =""
                 NoAttachmentsText: ="파일이 없습니다."
                 PaddingBottom: =5
@@ -2085,6 +2089,7 @@ User_License_Page As screen:
                 IsInDataCard: =true
                 Items: =Parent.Default
                 MaxAttachments: =1
+                MaxAttachmentSize: =100
                 MaxAttachmentsText: =""
                 NoAttachmentsText: ="파일이 없습니다."
                 PaddingBottom: =5
@@ -2159,6 +2164,7 @@ User_License_Page As screen:
                 IsInDataCard: =true
                 Items: =Parent.Default
                 MaxAttachments: =1
+                MaxAttachmentSize: =100
                 MaxAttachmentsText: =""
                 NoAttachmentsText: ="파일이 없습니다."
                 PaddingBottom: =5
@@ -2233,6 +2239,7 @@ User_License_Page As screen:
                 IsInDataCard: =true
                 Items: =Parent.Default
                 MaxAttachments: =1
+                MaxAttachmentSize: =100
                 MaxAttachmentsText: =""
                 NoAttachmentsText: ="파일이 없습니다."
                 PaddingBottom: =5
@@ -2307,6 +2314,7 @@ User_License_Page As screen:
                 IsInDataCard: =true
                 Items: =Parent.Default
                 MaxAttachments: =1
+                MaxAttachmentSize: =100
                 MaxAttachmentsText: =""
                 NoAttachmentsText: ="파일이 없습니다."
                 PaddingBottom: =5
@@ -2381,6 +2389,7 @@ User_License_Page As screen:
                 IsInDataCard: =true
                 Items: =Parent.Default
                 MaxAttachments: =1
+                MaxAttachmentSize: =100
                 MaxAttachmentsText: =""
                 NoAttachmentsText: ="파일이 없습니다."
                 PaddingBottom: =5
@@ -2455,6 +2464,7 @@ User_License_Page As screen:
                 IsInDataCard: =true
                 Items: =Parent.Default
                 MaxAttachments: =1
+                MaxAttachmentSize: =100
                 MaxAttachmentsText: =""
                 NoAttachmentsText: ="파일이 없습니다."
                 PaddingBottom: =5
@@ -2529,6 +2539,7 @@ User_License_Page As screen:
                 IsInDataCard: =true
                 Items: =Parent.Default
                 MaxAttachments: =1
+                MaxAttachmentSize: =100
                 MaxAttachmentsText: =""
                 NoAttachmentsText: ="파일이 없습니다."
                 PaddingBottom: =5
@@ -2603,6 +2614,7 @@ User_License_Page As screen:
                 IsInDataCard: =true
                 Items: =Parent.Default
                 MaxAttachments: =1
+                MaxAttachmentSize: =100
                 MaxAttachmentsText: =""
                 NoAttachmentsText: ="파일이 없습니다."
                 PaddingBottom: =5
