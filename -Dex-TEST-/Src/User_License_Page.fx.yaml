@@ -13,6 +13,83 @@ User_License_Page As screen:
         Width: =1366
         ZIndex: =1
 
+    License_File_send As icon.Send:
+        Color: =RGBA(102, 182, 227, 0.7)
+        Height: =110
+        Icon: =Icon.Send
+        OnSelect: |-
+            =If(
+                IsEmpty(
+                    Search(
+                        ability_file,
+                        varUser.Email,
+                        "cr778_email"
+                    )
+                ),
+                SubmitForm(License_File_Input);
+                NewForm(License_File_Input);
+                ResetForm(License_File_Input);
+                ,
+                Patch(
+                    ability_file,
+                     LookUp(
+                        ability_file,
+                        'E-mail' = 'E-mail_File_DataCard'.Update
+                    ),
+                    {
+                        'AZ-104': {
+                            FileName:First('AZ-104_File_DataCardValue'.Attachments).Name,
+                            Value:First('AZ-104_File_DataCardValue'.Attachments).Value
+                        },
+            
+                        'AZ-305': {
+                            FileName:First('AZ-305_File_DataCardValue'.Attachments).Name,
+                            Value:First('AZ-305_File_DataCardValue'.Attachments).Value
+                        },
+                        'MS-100': {
+                            FileName:First('MS-100_File_DataCardValue'.Attachments).Name,
+                            Value:First('MS-100_File_DataCardValue'.Attachments).Value
+                        },
+                        'MS-101': {
+                            FileName:First('MS-101_File_DataCardValue'.Attachments).Name,
+                            Value:First('MS-101_File_DataCardValue'.Attachments).Value
+                        },
+                        'MS-700': {
+                            FileName:First('MS-700_File_DataCardValue'.Attachments).Name,
+                            Value:First('MS-700_File_DataCardValue'.Attachments).Value
+                        },
+                        'MS-900': {
+                            FileName:First('MS-900_File_DataCardValue'.Attachments).Name,
+                            Value:First('MS-900_File_DataCardValue'.Attachments).Value
+                        },
+                        'PL-200': {
+                            FileName:First('PL-200_File_DataCardValue'.Attachments).Name,
+                            Value:First('PL-200_File_DataCardValue'.Attachments).Value
+                        },
+                        'PL-300': {
+                            FileName:First('PL-300_File_DataCardValue'.Attachments).Name,
+                            Value:First('PL-300_File_DataCardValue'.Attachments).Value
+                        },
+                        'PL-400': {
+                            FileName:First('PL-400_File_DataCardValue'.Attachments).Name,
+                            Value:First('PL-400_File_DataCardValue'.Attachments).Value
+                        },
+                        'PL-600': {
+                            FileName:First('PL-600_File_DataCardValue'.Attachments).Name,
+                            Value:First('PL-600_File_DataCardValue'.Attachments).Value
+                        },
+                        'PL-900': {
+                            FileName:First('PL-900_File_DataCardValue'.Attachments).Name,
+                            Value:First('PL-900_File_DataCardValue'.Attachments).Value
+                        }
+                    }
+                )
+            )
+        Width: =110
+        X: =633
+        Y: =80
+        ZIndex: =2
+
     LicenseDay_send As icon.Send:
         Color: =RGBA(102, 182, 227, 0.7)
         Height: =0
