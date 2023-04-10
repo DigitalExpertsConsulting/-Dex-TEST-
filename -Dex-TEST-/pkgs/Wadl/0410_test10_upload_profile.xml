@@ -6,6 +6,11 @@
       <object name="ManualTriggerInput">
         <property name="행나열_행필터" type="string" />
       </object>
+      <boolean name="ResponseActionOutput_sucsess_def" />
+      <object name="ResponseActionOutput">
+        <property name="sucsess" type="boolean" />
+      </object>
+      <object name="Run_responses_default_def" />
     </jsonTypes>
   </grammars>
   <resources siena:authenticationProviderHref="#PowerAppAuth" base="https://asia-001.azure-apim.net/apim/logicflows">
@@ -21,6 +26,9 @@
             <param style="plain" name="행나열_행필터" path="/행나열_행필터" type="xs:string" required="true" />
           </representation>
         </request>
+        <response>
+          <representation mediaType="application/json" element="service:ResponseActionOutput" />
+        </response>
       </method>
     </resource>
   </resources>
