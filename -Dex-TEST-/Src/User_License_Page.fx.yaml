@@ -392,12 +392,7 @@ User_License_Page As screen:
         Height: =110
         Icon: =Icon.Send
         OnSelect: |-
-            =
-            
-            
-            
-            
-            Select(LicenseDay_send);
+            =Select(LicenseDay_send);
             Select(License_File_send);
             
             

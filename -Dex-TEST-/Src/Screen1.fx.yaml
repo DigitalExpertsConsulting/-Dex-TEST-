@@ -2,14 +2,14 @@ Screen1 As screen:
 
     Icon1 As icon.DocumentPDF:
         Icon: =Icon.DocumentPDF
-        X: =135
-        Y: =351
+        X: =255
+        Y: =216
         ZIndex: =2
 
     Button3 As button:
         OnSelect: =역량강화AppstoDataversPDFDownload.Run("")
         Text: ="버튼"
-        X: =40
-        Y: =40
+        X: =415
+        Y: =195
         ZIndex: =3
 

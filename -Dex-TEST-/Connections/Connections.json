@@ -61,47 +61,6 @@
     ],
     "id": "28ecc422-593e-464d-b2c5-248bb6b5d6f7"
   },
-  "65fee6fd-5657-4c6e-9663-4e7b97bd0084": {
-    "connectionRef": {
-      "displayName": "Logic flows",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1615/1.0.1615.3163/logicflows/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
-      "parameterHints": {
-        "9571b5ea-a429-41b8-b65b-dee168d7202a": {
-          "value": "shared_commondataserviceforapps"
-        },
-        "e1261159-5cc4-4e6b-ac09-b371ba40b6ee": {
-          "value": "shared_onedriveforbusiness"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "a4c7519d-1bfa-44a5-aed4-d39c85c5ba8b"
-        }
-      },
-      "parameterHintsV2": {
-        "shared_commondataserviceforapps": {
-          "value": "9571b5ea-a429-41b8-b65b-dee168d7202a"
-        },
-        "shared_onedriveforbusiness": {
-          "value": "e1261159-5cc4-4e6b-ac09-b371ba40b6ee"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "a4c7519d-1bfa-44a5-aed4-d39c85c5ba8b"
-        }
-      }
-    },
-    "datasets": {},
-    "dataSources": [
-      "역량강화AppstoDataversPDFDownload"
-    ],
-    "dependencies": {
-      "shared_commondataserviceforapps": "9571b5ea-a429-41b8-b65b-dee168d7202a",
-      "shared_onedriveforbusiness": "e1261159-5cc4-4e6b-ac09-b371ba40b6ee"
-    },
-    "dependents": [],
-    "id": "65fee6fd-5657-4c6e-9663-4e7b97bd0084"
-  },
   "9571b5ea-a429-41b8-b65b-dee168d7202a": {
     "connectionRef": {
       "displayName": "Microsoft Dataverse",
@@ -112,8 +71,7 @@
     "dataSources": [],
     "dependencies": {},
     "dependents": [
-      "04bdc248-0962-4cb8-84c8-5fb92ab07b88",
-      "65fee6fd-5657-4c6e-9663-4e7b97bd0084"
+      "04bdc248-0962-4cb8-84c8-5fb92ab07b88"
     ],
     "id": "9571b5ea-a429-41b8-b65b-dee168d7202a"
   },
@@ -167,8 +125,7 @@
     "dataSources": [],
     "dependencies": {},
     "dependents": [
-      "04bdc248-0962-4cb8-84c8-5fb92ab07b88",
-      "65fee6fd-5657-4c6e-9663-4e7b97bd0084"
+      "04bdc248-0962-4cb8-84c8-5fb92ab07b88"
     ],
     "id": "e1261159-5cc4-4e6b-ac09-b371ba40b6ee"
   }
