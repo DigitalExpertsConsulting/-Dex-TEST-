@@ -26,8 +26,7 @@ User_License_Page As screen:
                         "cr778_email"
                     )
                 ),
-                SubmitForm(License_File_Input);
-                NewForm(License_File_Input);
+                SubmitForm(License_File_Input);    
                 ResetForm(License_File_Input);
                 ,
                 Patch(
