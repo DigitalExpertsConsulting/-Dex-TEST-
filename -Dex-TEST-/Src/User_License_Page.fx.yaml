@@ -4618,9 +4618,7 @@ User_License_Page As screen:
                 ),
                 SubmitForm(License_File_tem_Input);
                 NewForm(License_File_tem_Input);
-                ResetForm(License_File_tem_Input);    
-                NewForm(License_File_Input);
-                ResetForm(License_File_Input);    
+                ResetForm(License_File_tem_Input);       
                 ,
                 Patch(
                     ability_file_tem,
@@ -4790,7 +4788,9 @@ User_License_Page As screen:
                             }
                         )
                     }
-                )
+                );
+                NewForm(License_File_tem_Input);
+                ResetForm(License_File_tem_Input);       
             );
             
             
