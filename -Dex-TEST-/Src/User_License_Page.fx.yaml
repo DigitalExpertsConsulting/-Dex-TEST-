@@ -4611,45 +4611,32 @@ User_License_Page As screen:
             =If(
                 IsEmpty(
                     Search(
-                        ability_file,
+                        ability_file_tem,
                         varUser.Email,
                         "cr778_email"
                     )
                 ),
                 SubmitForm(License_File_tem_Input);
                 NewForm(License_File_tem_Input);
-                ResetForm(License_File_tem_Input);
+                ResetForm(License_File_tem_Input);    
+                NewForm(License_File_Input);
+                ResetForm(License_File_Input);    
                 ,
                 Patch(
-                    ability_file,
+                    ability_file_tem,
                      LookUp(
-                        ability_file,
+                        ability_file_tem,
                         'E-mail' = 'E-mail_File_DataCard'.Update
                     ),
                     {
-                        'AZ-104': 
-                        If(
-                            IsEmpty(
-                                'AZ-104_File_DataCardValue'.Attachments
-                            ),
-                            LookUp(
-                                ability_file,
-                                'E-mail' = 'E-mail_File_DataCard'.Update,
-                                'AZ-104'
-                            ),
-                            {
-                            FileName:First('AZ-104_File_DataCardValue'.Attachments).Name,
-                            Value:First('AZ-104_File_DataCardValue'.Attachments).Value
-                            }
-                        ),
-            
+                    
                         'AZ-305':
                         If(
                             IsEmpty(
                                 'AZ-305_File_DataCard'.Update
                             ),
                             LookUp(
-                                ability_file,
+                                ability_file_tem,
                                 'E-mail' = 'E-mail_File_DataCard'.Update,
                                 'AZ-305'
                             ),
@@ -4665,7 +4652,7 @@ User_License_Page As screen:
                                 'MS-100_File_DataCard'.Update
                             ),
                             LookUp(
-                                ability_file,
+                                ability_file_tem,
                                 'E-mail' = 'E-mail_File_DataCard'.Update,
                                 'MS-100'
                             ),
@@ -4681,7 +4668,7 @@ User_License_Page As screen:
                                 'MS-100_File_DataCard'.Update
                             ),
                             LookUp(
-                                ability_file,
+                                ability_file_tem,
                                 'E-mail' = 'E-mail_File_DataCard'.Update,
                                 'MS-101'
                             ),
@@ -4697,7 +4684,7 @@ User_License_Page As screen:
                                 'MS-700_File_DataCard'.Update
                             ),
                             LookUp(
-                                ability_file,
+                                ability_file_tem,
                                 'E-mail' = 'E-mail_File_DataCard'.Update,
                                 'MS-700'
                             ),
@@ -4713,7 +4700,7 @@ User_License_Page As screen:
                                 'MS-900_File_DataCard'.Update
                             ),
                             LookUp(
-                                ability_file,
+                                ability_file_tem,
                                 'E-mail' = 'E-mail_File_DataCard'.Update,
                                 'MS-900'
                             ),
@@ -4729,7 +4716,7 @@ User_License_Page As screen:
                                 'PL-200_DataCard'.Update
                             ),
                             LookUp(
-                                ability_file,
+                                ability_file_tem,
                                 'E-mail' = 'E-mail_File_DataCard'.Update,
                                 'PL-200'
                             ),
@@ -4745,7 +4732,7 @@ User_License_Page As screen:
                                 'PL-300_DataCard'.Update
                             ),
                             LookUp(
-                                ability_file,
+                                ability_file_tem,
                                 'E-mail' = 'E-mail_File_DataCard'.Update,
                                 'PL-300'
                             ),
@@ -4761,7 +4748,7 @@ User_License_Page As screen:
                                 'PL-400_DataCard'.Update
                             ),
                             LookUp(
-                                ability_file,
+                                ability_file_tem,
                                 'E-mail' = 'E-mail_File_DataCard'.Update,
                                 'PL-400'
                             ),
@@ -4777,7 +4764,7 @@ User_License_Page As screen:
                                 'PL-600_DataCard'.Update
                             ),
                             LookUp(
-                                ability_file,
+                                ability_file_tem,
                                 'E-mail' = 'E-mail_File_DataCard'.Update,
                                 'PL-600'
                             ),
@@ -4793,7 +4780,7 @@ User_License_Page As screen:
                                 'PL-900_File_DataCard'.Update
                             ),
                             LookUp(
-                                ability_file,
+                                ability_file_tem,
                                 'E-mail' = 'E-mail_File_DataCard'.Update,
                                 'PL-900'
                             ),
@@ -4803,10 +4790,64 @@ User_License_Page As screen:
                             }
                         )
                     }
+                )
+            );
+            
+            
+            
+            
+            
+            
+            Patch(
+                    ability_file_tem,
+                    LookUp(
+                        ability_file_tem,
+                        'E-mail' = 'E-mail_File_DataCard'.Update
+                    ),
+                    {
+                        
+                        'AZ-305': {
+                            FileName: Blank(),
+                            Value: Blank()
+                        },
+                        'MS-100': {
+                            FileName: Blank(),
+                            Value: Blank()
+                        },
+                        'MS-101': {
+                            FileName: Blank(),
+                            Value: Blank()
+                        },
+                        'MS-700': {
+                            FileName: Blank(),
+                            Value: Blank()
+                        },
+                        'MS-900': {
+                            FileName: Blank(),
+                            Value: Blank()
+                        },
+                        'PL-200': {
+                            FileName: Blank(),
+                            Value: Blank()
+                        },
+                        'PL-300': {
+                            FileName: Blank(),
+                            Value: Blank()
+                        },
+                        'PL-400': {
+                            FileName: Blank(),
+                            Value: Blank()
+                        },
+                        'PL-600': {
+                            FileName: Blank(),
+                            Value: Blank()
+                        },
+                        'PL-900': {
+                            FileName: Blank(),
+                            Value: Blank()
+                        }
+                    }
                 );
-                NewForm(License_File_Input);
-                ResetForm(License_File_Input);
-            )
         Width: =46
         X: =489
         Y: =170
