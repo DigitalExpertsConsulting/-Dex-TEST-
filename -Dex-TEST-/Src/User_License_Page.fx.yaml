@@ -4609,7 +4609,7 @@ User_License_Page As screen:
         Color: =RGBA(102, 182, 227, 0.7)
         Height: =0
         Icon: =Icon.Send
-        OnSelect: |
+        OnSelect: |+
             =If(
                 IsEmpty(
                     Search(
@@ -4756,12 +4756,11 @@ User_License_Page As screen:
                 
             );
             
-            '0410_test10_upload_profile'.Run(User().Email);
-            I
             
             
-            
-            Patch(
+            If(
+                '0410_test10_upload_profile'.Run(User().Email).sucsess,
+                Patch(
                 ability_file_tem,
                 LookUp(
                     ability_file_tem,
@@ -4810,6 +4809,11 @@ User_License_Page As screen:
                     }
                 }
             );
+            
+            )
+            
+            
+            
         Width: =46
         X: =489
         Y: =170
