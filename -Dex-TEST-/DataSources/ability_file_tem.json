@@ -1,0 +1,109 @@
+[
+  {
+    "DisplayName": "ability_file_tem (뷰)",
+    "Name": "_cr778_ability_file_tem_views",
+    "RelatedEntityName": "ability_file_tem",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "1743061a-eb1a-43df-91bf-220c66195eee": "ability_file_tem Advanced Find View",
+      "6647028f-5b91-4a34-99a0-1ec08039de6f": "ability_file_tem Lookup View",
+      "74951df0-2729-4193-bf11-a565356cac16": "Active ability_file_tem",
+      "d95aaa35-1e16-4577-bbca-ea7e3ecf74e4": "Inactive ability_file_tem",
+      "f6e69ea2-15c2-4d44-9b80-731c2db26d1d": "ability_file_tem Associated View"
+    }
+  },
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr778_ability_file_tems",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr778_ability_file_tem",
+    "MaxGetRowsCount": 500,
+    "Name": "ability_file_tem",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr778_ability_file_tem_AsyncOperations": "System Jobs",
+      "cr778_ability_file_tem_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr778_ability_file_tem_DuplicateBaseRecord": "Duplicate Records (cr778_ability_file_tem_DuplicateBaseRecord)",
+      "cr778_ability_file_tem_DuplicateMatchingRecord": "Duplicate Records (cr778_ability_file_tem_DuplicateMatchingRecord)",
+      "cr778_ability_file_tem_FileAttachments": "FileAttachments",
+      "cr778_ability_file_tem_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr778_ability_file_tem_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr778_ability_file_tem_ProcessSession": "Process Sessions",
+      "cr778_ability_file_tem_SyncErrors": "Sync Errors",
+      "cr778_ability_file_temid": "ability_file_tem",
+      "cr778_az305": "AZ-305",
+      "cr778_email": "E-mail",
+      "cr778_ms100": "MS-100",
+      "cr778_ms101": "MS-101",
+      "cr778_ms700": "MS-700",
+      "cr778_ms900": "MS-900",
+      "cr778_name": "Name",
+      "cr778_pl200": "PL-200",
+      "cr778_pl300": "PL-300",
+      "cr778_pl400": "PL-400",
+      "cr778_pl600": "PL-600",
+      "cr778_pl900": "PL-900",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "ability_file_tem",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Status (ability_file_tem)",
+    "Name": "cr778_ability_file_tem_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "ability_file_tem"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "ability_file_tem",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (ability_file_tem)",
+    "Name": "cr778_ability_file_tem_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "ability_file_tem"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "ability_file_tem",
+    "Type": "OptionSetInfo"
+  }
+]

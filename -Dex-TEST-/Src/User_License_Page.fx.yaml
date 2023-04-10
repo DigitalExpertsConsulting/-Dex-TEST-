@@ -3749,3 +3749,1066 @@ User_License_Page As screen:
                 Y: =LicenseDay_Name_DataCardKey.Y
                 ZIndex: =4
 
+    License_File_tem_Input As form:
+        DataSource: =ability_file_tem
+        Height: =0
+        Width: =0
+        X: =860
+        Y: =560
+        ZIndex: =10
+
+        "'E-mail_File_tem_DataCard' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_email"
+            Default: =ThisItem.'E-mail'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_file_tem],DataSourceInfo.DisplayName,"cr778_email")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@ability_file_tem], DataSourceInfo.MaxLength, "cr778_email")
+            Required: =false
+            Update: ='E-mail_File_DataCard'.Update
+            Width: =800
+            X: =1
+            Y: =0
+            ZIndex: =1
+
+            DataCardKey3 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue3 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey3.Y + DataCardKey3.Height + 5
+                ZIndex: =2
+
+            ErrorMessage3 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue3.Y + DataCardValue3.Height
+                ZIndex: =3
+
+            StarVisible3 As label:
+                Align: =Align.Center
+                Height: =DataCardKey3.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey3.Y
+                ZIndex: =4
+
+        "'AZ-305_File_tem_DataCard' As typedDataCard.fileEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_az305"
+            Default: |-
+                =If(!IsBlank(ThisItem.'AZ-305'.FileName), Table({DisplayName: ThisItem.'AZ-305'.FileName, Value: ThisItem.'AZ-305'.Value}), Blank())
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_file_tem],DataSourceInfo.DisplayName,"cr778_az305")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: ='AZ-305_File_DataCardValue'.Attachments
+            Width: =800
+            X: =2
+            Y: =0
+            ZIndex: =1
+
+            DataCardKey4 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue4 As attachments:
+                AddAttachmentText: ="파일 업로드"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DisplayMode: =Parent.DisplayMode
+                Height: =170
+                IsInDataCard: =true
+                Items: =Parent.Default
+                MaxAttachments: =1
+                MaxAttachmentsText: =""
+                NoAttachmentsText: ="파일이 없습니다."
+                PaddingBottom: =5
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =5
+                PaddingTop: =5
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey4.Y + DataCardKey4.Height + 5
+                ZIndex: =2
+
+            ErrorMessage4 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue4.Y + DataCardValue4.Height
+                ZIndex: =3
+
+            StarVisible4 As label:
+                Align: =Align.Center
+                Height: =DataCardKey4.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey4.Y
+                ZIndex: =4
+
+        "'MS-100_File_tem_DataCard' As typedDataCard.fileEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_ms100"
+            Default: |-
+                =If(!IsBlank(ThisItem.'MS-100'.FileName), Table({DisplayName: ThisItem.'MS-100'.FileName, Value: ThisItem.'MS-100'.Value}), Blank())
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_file_tem],DataSourceInfo.DisplayName,"cr778_ms100")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: ='MS-100_File_DataCardValue'.Attachments
+            Width: =800
+            X: =0
+            Y: =1
+            ZIndex: =1
+
+            DataCardKey5 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue5 As attachments:
+                AddAttachmentText: ="파일 업로드"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DisplayMode: =Parent.DisplayMode
+                Height: =170
+                IsInDataCard: =true
+                Items: =Parent.Default
+                MaxAttachments: =1
+                MaxAttachmentsText: =""
+                NoAttachmentsText: ="파일이 없습니다."
+                PaddingBottom: =5
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =5
+                PaddingTop: =5
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey5.Y + DataCardKey5.Height + 5
+                ZIndex: =2
+
+            ErrorMessage6 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue5.Y + DataCardValue5.Height
+                ZIndex: =3
+
+            StarVisible6 As label:
+                Align: =Align.Center
+                Height: =DataCardKey5.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey5.Y
+                ZIndex: =4
+
+        "'MS-101_File_tem_DataCard' As typedDataCard.fileEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_ms101"
+            Default: |-
+                =If(!IsBlank(ThisItem.'MS-101'.FileName), Table({DisplayName: ThisItem.'MS-101'.FileName, Value: ThisItem.'MS-101'.Value}), Blank())
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_file_tem],DataSourceInfo.DisplayName,"cr778_ms101")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: ='MS-101_File_DataCardValue'.Attachments
+            Width: =800
+            X: =1
+            Y: =1
+            ZIndex: =1
+
+            DataCardKey6 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue6 As attachments:
+                AddAttachmentText: ="파일 업로드"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DisplayMode: =Parent.DisplayMode
+                Height: =170
+                IsInDataCard: =true
+                Items: =Parent.Default
+                MaxAttachments: =1
+                MaxAttachmentsText: =""
+                NoAttachmentsText: ="파일이 없습니다."
+                PaddingBottom: =5
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =5
+                PaddingTop: =5
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey6.Y + DataCardKey6.Height + 5
+                ZIndex: =2
+
+            ErrorMessage7 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue6.Y + DataCardValue6.Height
+                ZIndex: =3
+
+            StarVisible7 As label:
+                Align: =Align.Center
+                Height: =DataCardKey6.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey6.Y
+                ZIndex: =4
+
+        "'MS-700_File_tem_DataCard' As typedDataCard.fileEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_ms700"
+            Default: |-
+                =If(!IsBlank(ThisItem.'MS-700'.FileName), Table({DisplayName: ThisItem.'MS-700'.FileName, Value: ThisItem.'MS-700'.Value}), Blank())
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_file_tem],DataSourceInfo.DisplayName,"cr778_ms700")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: ='MS-700_File_DataCardValue'.Attachments
+            Width: =800
+            X: =2
+            Y: =1
+            ZIndex: =1
+
+            DataCardKey7 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue7 As attachments:
+                AddAttachmentText: ="파일 업로드"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DisplayMode: =Parent.DisplayMode
+                Height: =170
+                IsInDataCard: =true
+                Items: =Parent.Default
+                MaxAttachments: =1
+                MaxAttachmentsText: =""
+                NoAttachmentsText: ="파일이 없습니다."
+                PaddingBottom: =5
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =5
+                PaddingTop: =5
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey7.Y + DataCardKey7.Height + 5
+                ZIndex: =2
+
+            ErrorMessage8 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue7.Y + DataCardValue7.Height
+                ZIndex: =3
+
+            StarVisible8 As label:
+                Align: =Align.Center
+                Height: =DataCardKey7.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey7.Y
+                ZIndex: =4
+
+        "'MS-900_File_tem_DataCard' As typedDataCard.fileEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_ms900"
+            Default: |-
+                =If(!IsBlank(ThisItem.'MS-900'.FileName), Table({DisplayName: ThisItem.'MS-900'.FileName, Value: ThisItem.'MS-900'.Value}), Blank())
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_file_tem],DataSourceInfo.DisplayName,"cr778_ms900")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: ='MS-900_File_DataCardValue'.Attachments
+            Width: =800
+            X: =0
+            Y: =2
+            ZIndex: =1
+
+            DataCardKey8 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue8 As attachments:
+                AddAttachmentText: ="파일 업로드"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DisplayMode: =Parent.DisplayMode
+                Height: =170
+                IsInDataCard: =true
+                Items: =Parent.Default
+                MaxAttachments: =1
+                MaxAttachmentsText: =""
+                NoAttachmentsText: ="파일이 없습니다."
+                PaddingBottom: =5
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =5
+                PaddingTop: =5
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey8.Y + DataCardKey8.Height + 5
+                ZIndex: =2
+
+            ErrorMessage9 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue8.Y + DataCardValue8.Height
+                ZIndex: =3
+
+            StarVisible9 As label:
+                Align: =Align.Center
+                Height: =DataCardKey8.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey8.Y
+                ZIndex: =4
+
+        "'PL-200_File_tem_DataCard' As typedDataCard.fileEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_pl200"
+            Default: |-
+                =If(!IsBlank(ThisItem.'PL-200'.FileName), Table({DisplayName: ThisItem.'PL-200'.FileName, Value: ThisItem.'PL-200'.Value}), Blank())
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_file_tem],DataSourceInfo.DisplayName,"cr778_pl200")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: ='PL-200_File_DataCardValue'.Attachments
+            Required: =false
+            Update: =DataCardValue9.Attachments
+            Width: =800
+            X: =1
+            Y: =2
+            ZIndex: =1
+
+            DataCardKey9 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue9 As attachments:
+                AddAttachmentText: ="파일 업로드"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DisplayMode: =Parent.DisplayMode
+                Height: =170
+                IsInDataCard: =true
+                Items: =Parent.Default
+                MaxAttachments: =1
+                MaxAttachmentsText: =""
+                NoAttachmentsText: ="파일이 없습니다."
+                PaddingBottom: =5
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =5
+                PaddingTop: =5
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey9.Y + DataCardKey9.Height + 5
+                ZIndex: =2
+
+            ErrorMessage10 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue9.Y + DataCardValue9.Height
+                ZIndex: =3
+
+            StarVisible10 As label:
+                Align: =Align.Center
+                Height: =DataCardKey9.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey9.Y
+                ZIndex: =4
+
+        "'PL-300_File_tem_DataCard' As typedDataCard.fileEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_pl300"
+            Default: |-
+                =If(!IsBlank(ThisItem.'PL-300'.FileName), Table({DisplayName: ThisItem.'PL-300'.FileName, Value: ThisItem.'PL-300'.Value}), Blank())
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_file_tem],DataSourceInfo.DisplayName,"cr778_pl300")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: ='PL-300_File_DataCardValue'.Attachments
+            Width: =800
+            X: =2
+            Y: =2
+            ZIndex: =1
+
+            DataCardKey10 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue10 As attachments:
+                AddAttachmentText: ="파일 업로드"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DisplayMode: =Parent.DisplayMode
+                Height: =170
+                IsInDataCard: =true
+                Items: =Parent.Default
+                MaxAttachments: =1
+                MaxAttachmentsText: =""
+                NoAttachmentsText: ="파일이 없습니다."
+                PaddingBottom: =5
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =5
+                PaddingTop: =5
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey10.Y + DataCardKey10.Height + 5
+                ZIndex: =2
+
+            ErrorMessage11 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue10.Y + DataCardValue10.Height
+                ZIndex: =3
+
+            StarVisible11 As label:
+                Align: =Align.Center
+                Height: =DataCardKey10.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey10.Y
+                ZIndex: =4
+
+        "'PL-400_File_tem_DataCard' As typedDataCard.fileEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_pl400"
+            Default: |-
+                =If(!IsBlank(ThisItem.'PL-400'.FileName), Table({DisplayName: ThisItem.'PL-400'.FileName, Value: ThisItem.'PL-400'.Value}), Blank())
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_file_tem],DataSourceInfo.DisplayName,"cr778_pl400")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: ='PL-400_File_DataCardValue'.Attachments
+            Width: =800
+            X: =0
+            Y: =3
+            ZIndex: =1
+
+            DataCardKey11 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue11 As attachments:
+                AddAttachmentText: ="파일 업로드"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DisplayMode: =Parent.DisplayMode
+                Height: =170
+                IsInDataCard: =true
+                Items: =Parent.Default
+                MaxAttachments: =1
+                MaxAttachmentsText: =""
+                NoAttachmentsText: ="파일이 없습니다."
+                PaddingBottom: =5
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =5
+                PaddingTop: =5
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey11.Y + DataCardKey11.Height + 5
+                ZIndex: =2
+
+            ErrorMessage12 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue11.Y + DataCardValue11.Height
+                ZIndex: =3
+
+            StarVisible12 As label:
+                Align: =Align.Center
+                Height: =DataCardKey11.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey11.Y
+                ZIndex: =4
+
+        "'PL-600_File_tem_DataCard' As typedDataCard.fileEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_pl600"
+            Default: |-
+                =If(!IsBlank(ThisItem.'PL-600'.FileName), Table({DisplayName: ThisItem.'PL-600'.FileName, Value: ThisItem.'PL-600'.Value}), Blank())
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_file_tem],DataSourceInfo.DisplayName,"cr778_pl600")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: ='PL-600_File_DataCardValue'.Attachments
+            Width: =800
+            X: =1
+            Y: =3
+            ZIndex: =1
+
+            DataCardKey12 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue12 As attachments:
+                AddAttachmentText: ="파일 업로드"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DisplayMode: =Parent.DisplayMode
+                Height: =170
+                IsInDataCard: =true
+                Items: =Parent.Default
+                MaxAttachments: =1
+                MaxAttachmentsText: =""
+                NoAttachmentsText: ="파일이 없습니다."
+                PaddingBottom: =5
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =5
+                PaddingTop: =5
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey12.Y + DataCardKey12.Height + 5
+                ZIndex: =2
+
+            ErrorMessage13 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue12.Y + DataCardValue12.Height
+                ZIndex: =3
+
+            StarVisible13 As label:
+                Align: =Align.Center
+                Height: =DataCardKey12.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey12.Y
+                ZIndex: =4
+
+        "'PL-900_File_tem_DataCard' As typedDataCard.fileEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_pl900"
+            Default: |-
+                =If(!IsBlank(ThisItem.'PL-900'.FileName), Table({DisplayName: ThisItem.'PL-900'.FileName, Value: ThisItem.'PL-900'.Value}), Blank())
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_file_tem],DataSourceInfo.DisplayName,"cr778_pl900")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: ='PL-900_File_DataCardValue'.Attachments
+            Width: =800
+            X: =2
+            Y: =3
+            ZIndex: =1
+
+            DataCardKey13 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue13 As attachments:
+                AddAttachmentText: ="파일 업로드"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DisplayMode: =Parent.DisplayMode
+                Height: =170
+                IsInDataCard: =true
+                Items: =Parent.Default
+                MaxAttachments: =1
+                MaxAttachmentsText: =""
+                NoAttachmentsText: ="파일이 없습니다."
+                PaddingBottom: =5
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =5
+                PaddingTop: =5
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey13.Y + DataCardKey13.Height + 5
+                ZIndex: =2
+
+            ErrorMessage14 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue13.Y + DataCardValue13.Height
+                ZIndex: =3
+
+            StarVisible14 As label:
+                Align: =Align.Center
+                Height: =DataCardKey13.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey13.Y
+                ZIndex: =4
+
+        Name_File_tem_DataCard As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr778_name"
+            Default: =ThisItem.Name
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@ability_file_tem],DataSourceInfo.DisplayName,"cr778_name")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@ability_file_tem], DataSourceInfo.MaxLength, "cr778_name")
+            Required: =true
+            Update: =Name_File_DataCard.Update
+            Width: =0
+            X: =0
+            Y: =0
+            ZIndex: =11
+
+            DataCardKey1 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue1 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey1.Y + DataCardKey1.Height + 5
+                ZIndex: =2
+
+            ErrorMessage2 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue1.Y + DataCardValue1.Height
+                ZIndex: =3
+
+            StarVisible2 As label:
+                Align: =Align.Center
+                Height: =DataCardKey1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey1.Y
+                ZIndex: =4
+
+    License_File_tem_send As icon.Send:
+        Color: =RGBA(102, 182, 227, 0.7)
+        Height: =0
+        Icon: =Icon.Send
+        OnSelect: |-
+            =If(
+                IsEmpty(
+                    Search(
+                        ability_file,
+                        varUser.Email,
+                        "cr778_email"
+                    )
+                ),
+                SubmitForm(License_File_tem_Input);
+                NewForm(License_File_tem_Input);
+                ResetForm(License_File_tem_Input);
+                ,
+                Patch(
+                    ability_file,
+                     LookUp(
+                        ability_file,
+                        'E-mail' = 'E-mail_File_DataCard'.Update
+                    ),
+                    {
+                        'AZ-104': 
+                        If(
+                            IsEmpty(
+                                'AZ-104_File_DataCardValue'.Attachments
+                            ),
+                            LookUp(
+                                ability_file,
+                                'E-mail' = 'E-mail_File_DataCard'.Update,
+                                'AZ-104'
+                            ),
+                            {
+                            FileName:First('AZ-104_File_DataCardValue'.Attachments).Name,
+                            Value:First('AZ-104_File_DataCardValue'.Attachments).Value
+                            }
+                        ),
+            
+                        'AZ-305':
+                        If(
+                            IsEmpty(
+                                'AZ-305_File_DataCard'.Update
+                            ),
+                            LookUp(
+                                ability_file,
+                                'E-mail' = 'E-mail_File_DataCard'.Update,
+                                'AZ-305'
+                            ),
+                            {
+                            FileName:First('AZ-305_File_DataCardValue'.Attachments).Name,
+                            Value:First('AZ-305_File_DataCardValue'.Attachments).Value
+                            }
+                        ),
+            
+                        'MS-100': 
+                        If(
+                            IsEmpty(
+                                'MS-100_File_DataCard'.Update
+                            ),
+                            LookUp(
+                                ability_file,
+                                'E-mail' = 'E-mail_File_DataCard'.Update,
+                                'MS-100'
+                            ),
+                            {
+                            FileName:First('MS-100_File_DataCardValue'.Attachments).Name,
+                            Value:First('MS-100_File_DataCardValue'.Attachments).Value
+                            }
+                        ),
+            
+                        'MS-101': 
+                        If(
+                            IsEmpty(
+                                'MS-100_File_DataCard'.Update
+                            ),
+                            LookUp(
+                                ability_file,
+                                'E-mail' = 'E-mail_File_DataCard'.Update,
+                                'MS-101'
+                            ),
+                            {
+                            FileName:First('MS-101_File_DataCardValue'.Attachments).Name,
+                            Value:First('MS-101_File_DataCardValue'.Attachments).Value
+                            }
+                        ),
+            
+                        'MS-700':
+                        If(
+                            IsEmpty(
+                                'MS-700_File_DataCard'.Update
+                            ),
+                            LookUp(
+                                ability_file,
+                                'E-mail' = 'E-mail_File_DataCard'.Update,
+                                'MS-700'
+                            ),
+                            {
+                            FileName:First('MS-700_File_DataCardValue'.Attachments).Name,
+                            Value:First('MS-700_File_DataCardValue'.Attachments).Value
+                            }
+                        ),
+            
+                        'MS-900':
+                        If(
+                            IsEmpty(
+                                'MS-900_File_DataCard'.Update
+                            ),
+                            LookUp(
+                                ability_file,
+                                'E-mail' = 'E-mail_File_DataCard'.Update,
+                                'MS-900'
+                            ),
+                            {
+                            FileName:First('MS-900_File_DataCardValue'.Attachments).Name,
+                            Value:First('MS-900_File_DataCardValue'.Attachments).Value
+                            }
+                        ),
+            
+                        'PL-200':
+                        If(
+                            IsEmpty(
+                                'PL-200_DataCard'.Update
+                            ),
+                            LookUp(
+                                ability_file,
+                                'E-mail' = 'E-mail_File_DataCard'.Update,
+                                'PL-200'
+                            ),
+                            {
+                            FileName:First('PL-200_File_DataCardValue'.Attachments).Name,
+                            Value:First('PL-200_File_DataCardValue'.Attachments).Value
+                            }
+                        ),
+            
+                        'PL-300': 
+                        If(
+                            IsEmpty(
+                                'PL-300_DataCard'.Update
+                            ),
+                            LookUp(
+                                ability_file,
+                                'E-mail' = 'E-mail_File_DataCard'.Update,
+                                'PL-300'
+                            ),
+                            {
+                            FileName:First('PL-300_File_DataCardValue'.Attachments).Name,
+                            Value:First('PL-300_File_DataCardValue'.Attachments).Value
+                            }
+                        ),
+            
+                        'PL-400': 
+                        If(
+                            IsBlank(
+                                'PL-400_DataCard'.Update
+                            ),
+                            LookUp(
+                                ability_file,
+                                'E-mail' = 'E-mail_File_DataCard'.Update,
+                                'PL-400'
+                            ),
+                            {
+                            FileName : First('PL-400_File_DataCardValue'.Attachments).Name,
+                            Value : First('PL-400_File_DataCardValue'.Attachments).Value
+                            }
+                        ),
+            
+                        'PL-600': 
+                        If(
+                            IsEmpty(
+                                'PL-600_DataCard'.Update
+                            ),
+                            LookUp(
+                                ability_file,
+                                'E-mail' = 'E-mail_File_DataCard'.Update,
+                                'PL-600'
+                            ),
+                            {
+                                FileName : First('PL-600_File_DataCardValue'.Attachments).Name,
+                                Value : First('PL-600_File_DataCardValue'.Attachments).Value
+                            }
+                        ),
+            
+                        'PL-900': 
+                        If(
+                            IsEmpty(
+                                'PL-900_File_DataCard'.Update
+                            ),
+                            LookUp(
+                                ability_file,
+                                'E-mail' = 'E-mail_File_DataCard'.Update,
+                                'PL-900'
+                            ),
+                            {
+                                FileName:First('PL-900_File_DataCardValue'.Attachments).Name,
+                                Value : First('PL-900_File_DataCardValue'.Attachments).Value
+                            }
+                        )
+                    }
+                );
+                NewForm(License_File_Input);
+                ResetForm(License_File_Input);
+            )
+        Width: =46
+        X: =489
+        Y: =170
+        ZIndex: =11
+
