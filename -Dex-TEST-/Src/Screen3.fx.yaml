@@ -2,7 +2,7 @@ Screen3 As screen:
 
     Button4 As button:
         Height: =212
-        OnSelect: =역량강화AppstoDataversPDFDownload.Run()
+        OnSelect: =PDFDownload.Run()
         Text: ="pdf"
         X: =40
         Y: =40
@@ -15,4 +15,10 @@ Screen3 As screen:
         X: =244
         Y: =40
         ZIndex: =2
+
+    HtmlText1 As htmlViewer:
+        Height: =521
+        Width: =576
+        X: =790
+        ZIndex: =3
 

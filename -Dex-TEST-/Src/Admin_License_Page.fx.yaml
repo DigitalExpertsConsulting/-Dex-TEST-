@@ -110,7 +110,7 @@ Admin_License_Page As screen:
             Order: =5
             Text: =ThisItem.'PL-400'
             Width: =100
-            X: =0
+            X: =1000
             Y: =0
             ZIndex: =5
 
@@ -242,7 +242,7 @@ Admin_License_Page As screen:
 
     Button5 As button:
         Height: =76
-        OnSelect: =역량강화AppstoDataversPDFDownload.Run()
+        OnSelect: =PDFDownload.Run()
         Text: ="라이센스 인증서 다운로드"
         Width: =280
         X: =999
