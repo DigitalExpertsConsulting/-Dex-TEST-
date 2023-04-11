@@ -411,9 +411,7 @@ User_License_Page As screen:
                     Defaults(ability_license),
                     {
                         Name : User().FullName,
-                        'E-mail':  'E-mail_License_DataCard'.Update
-                        
-                        
+                        'E-mail':  'E-mail_License_DataCard'.Update         
                     }
                 ); 
                 NewForm(License_Input);
