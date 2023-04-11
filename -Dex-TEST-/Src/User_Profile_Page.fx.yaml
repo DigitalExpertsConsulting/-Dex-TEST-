@@ -81,6 +81,7 @@ User_Profile_Page As screen:
                 varUploadProfile = false
             );
             
+            
             ability_user_upload_profile.Run(
                 User().Email,
                 "Profile 승인처리 부탁드립니다.",
