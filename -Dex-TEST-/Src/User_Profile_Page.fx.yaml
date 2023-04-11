@@ -69,17 +69,7 @@ User_Profile_Page As screen:
         OnSelect: |
             =Set(varUploadProfile, false);
             
-            If(
-                IsEmpty(
-                    Search(
-                        ability_file,
-                        User().Email,
-                        "cr778_email"
-                    )
-                ),
-                varUploadProfile = true,
-                varUploadProfile = false
-            );
+            
             
             
             ability_user_upload_profile.Run(
@@ -90,7 +80,17 @@ User_Profile_Page As screen:
                 First(Upload_Profile_DataCardValue.Attachments).Value,
                 User().FullName,
                 User().Email,
-                varUploadProfile
+                If(
+                IsEmpty(
+                    Search(
+                        ability_file,
+                        User().Email,
+                        "cr778_email"
+                    )
+                ),
+                true,
+                false
+            );
             );
         Text: ="업로드"
         Width: =282
