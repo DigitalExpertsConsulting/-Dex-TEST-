@@ -71,9 +71,7 @@
     "dataSources": [],
     "dependencies": {},
     "dependents": [
-      "04bdc248-0962-4cb8-84c8-5fb92ab07b88",
-      "ebc7306a-2558-43e4-b40a-8cfb1eb107b1",
-      "e06706e7-83a7-4403-86f1-7618e6b65780"
+      "04bdc248-0962-4cb8-84c8-5fb92ab07b88"
     ],
     "id": "9571b5ea-a429-41b8-b65b-dee168d7202a"
   },
@@ -158,9 +156,7 @@
     "dataSources": [],
     "dependencies": {},
     "dependents": [
-      "04bdc248-0962-4cb8-84c8-5fb92ab07b88",
-      "ebc7306a-2558-43e4-b40a-8cfb1eb107b1",
-      "e06706e7-83a7-4403-86f1-7618e6b65780"
+      "04bdc248-0962-4cb8-84c8-5fb92ab07b88"
     ],
     "id": "e1261159-5cc4-4e6b-ac09-b371ba40b6ee"
   },
@@ -170,18 +166,12 @@
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1615/1.0.1615.3163/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
-        "ab5b9c24-5c27-42f2-912d-451e96a6d6e0": {
-          "value": "shared_office365"
-        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "c4197094-d320-4543-955e-c70e44c33d26"
         }
       },
       "parameterHintsV2": {
-        "shared_office365": {
-          "value": "ab5b9c24-5c27-42f2-912d-451e96a6d6e0"
-        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "c4197094-d320-4543-955e-c70e44c33d26"
@@ -204,24 +194,12 @@
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1615/1.0.1615.3163/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
-        "9571b5ea-a429-41b8-b65b-dee168d7202a": {
-          "value": "shared_commondataserviceforapps"
-        },
-        "e1261159-5cc4-4e6b-ac09-b371ba40b6ee": {
-          "value": "shared_onedriveforbusiness"
-        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "3c1a2600-c3a5-4926-92a0-35d613d7b52b"
         }
       },
       "parameterHintsV2": {
-        "shared_commondataserviceforapps": {
-          "value": "9571b5ea-a429-41b8-b65b-dee168d7202a"
-        },
-        "shared_onedriveforbusiness": {
-          "value": "e1261159-5cc4-4e6b-ac09-b371ba40b6ee"
-        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "3c1a2600-c3a5-4926-92a0-35d613d7b52b"
