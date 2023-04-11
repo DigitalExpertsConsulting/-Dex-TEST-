@@ -143,6 +143,40 @@
     "dependents": [],
     "id": "65d5f003-7bac-462b-95b6-6f5ca2092382"
   },
+  "74a0364f-7199-49bc-9be4-2641a9000a1d": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1615/1.0.1615.3163/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "ab5b9c24-5c27-42f2-912d-451e96a6d6e0": {
+          "value": "shared_office365"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "ae745789-c5e5-496b-8fc1-6d645aaf2257"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_office365": {
+          "value": "ab5b9c24-5c27-42f2-912d-451e96a6d6e0"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "ae745789-c5e5-496b-8fc1-6d645aaf2257"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "ClickabuttoninPowerAppstosendanemailb"
+    ],
+    "dependencies": {
+      "shared_office365": "ab5b9c24-5c27-42f2-912d-451e96a6d6e0"
+    },
+    "dependents": [],
+    "id": "74a0364f-7199-49bc-9be4-2641a9000a1d"
+  },
   "9571b5ea-a429-41b8-b65b-dee168d7202a": {
     "connectionRef": {
       "displayName": "Microsoft Dataverse",
@@ -171,7 +205,8 @@
     ],
     "dependencies": {},
     "dependents": [
-      "e9ac1a0e-d748-4802-ac6e-0964b08007bc"
+      "ee8dc8c9-4935-4fe7-8f53-277a39e3b73d",
+      "74a0364f-7199-49bc-9be4-2641a9000a1d"
     ],
     "id": "ab5b9c24-5c27-42f2-912d-451e96a6d6e0"
   },
@@ -217,7 +252,7 @@
     ],
     "id": "e1261159-5cc4-4e6b-ac09-b371ba40b6ee"
   },
-  "e9ac1a0e-d748-4802-ac6e-0964b08007bc": {
+  "ee8dc8c9-4935-4fe7-8f53-277a39e3b73d": {
     "connectionRef": {
       "displayName": "Logic flows",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1615/1.0.1615.3163/logicflows/icon.png",
@@ -249,6 +284,6 @@
       "shared_office365": "ab5b9c24-5c27-42f2-912d-451e96a6d6e0"
     },
     "dependents": [],
-    "id": "e9ac1a0e-d748-4802-ac6e-0964b08007bc"
+    "id": "ee8dc8c9-4935-4fe7-8f53-277a39e3b73d"
   }
 }
