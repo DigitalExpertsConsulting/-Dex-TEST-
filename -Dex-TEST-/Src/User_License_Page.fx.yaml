@@ -405,6 +405,7 @@ User_License_Page As screen:
                     ).sendmail,
                     First('AZ-104_File_DataCardValue'.Attachments).Value = Blank();
                     First('AZ-104_File_DataCardValue'.Attachments).Name = Blank();
+                    
                 )
             );
             
