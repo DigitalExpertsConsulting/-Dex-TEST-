@@ -488,8 +488,8 @@ User_License_Page As screen:
                 If(
                     !ClickabuttoninPowerAppstosendanemail.Run(
                         User().Email,
-                        "'AZ-104' 승인 요청부탁드립니다.",
-                        "'AZ-104' 승인 요청부탁드립니다.",
+                        "'MS-900' 승인 요청부탁드립니다.",
+                        "'MS-900' 승인 요청부탁드립니다.",
                         First('MS-900_File_DataCardValue'.Attachments).Name,
                         First('MS-900_File_DataCardValue'.Attachments).Value
                     ).sendmail,
