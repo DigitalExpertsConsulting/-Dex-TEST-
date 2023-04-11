@@ -36,10 +36,10 @@ Admin_License_Page As screen:
         BorderStyle: =BorderStyle.Solid
         DisplayMode: =DisplayMode.Edit
         Fill: =RGBA(255, 255, 255, 0.7)
-        Height: =487
+        Height: =403
         Items: |
             =Search(ability_license,TextInput1_1.Text,"cr778_name")
-        Width: =1158
+        Width: =1160
         X: =108
         Y: =225
         ZIndex: =5
@@ -239,4 +239,13 @@ Admin_License_Page As screen:
         X: =108
         Y: =169
         ZIndex: =7
+
+    Button5 As button:
+        Height: =76
+        OnSelect: =역량강화AppstoDataversPDFDownload.Run()
+        Text: ="라이센스 인증서 다운로드"
+        Width: =280
+        X: =999
+        Y: =651
+        ZIndex: =8
 
