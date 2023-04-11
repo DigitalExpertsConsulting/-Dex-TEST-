@@ -143,40 +143,6 @@
     "dependents": [],
     "id": "65d5f003-7bac-462b-95b6-6f5ca2092382"
   },
-  "74a0364f-7199-49bc-9be4-2641a9000a1d": {
-    "connectionRef": {
-      "displayName": "Logic flows",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1615/1.0.1615.3163/logicflows/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
-      "parameterHints": {
-        "ab5b9c24-5c27-42f2-912d-451e96a6d6e0": {
-          "value": "shared_office365"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "ae745789-c5e5-496b-8fc1-6d645aaf2257"
-        }
-      },
-      "parameterHintsV2": {
-        "shared_office365": {
-          "value": "ab5b9c24-5c27-42f2-912d-451e96a6d6e0"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "ae745789-c5e5-496b-8fc1-6d645aaf2257"
-        }
-      }
-    },
-    "datasets": {},
-    "dataSources": [
-      "ClickabuttoninPowerAppstosendanemailb"
-    ],
-    "dependencies": {
-      "shared_office365": "ab5b9c24-5c27-42f2-912d-451e96a6d6e0"
-    },
-    "dependents": [],
-    "id": "74a0364f-7199-49bc-9be4-2641a9000a1d"
-  },
   "9571b5ea-a429-41b8-b65b-dee168d7202a": {
     "connectionRef": {
       "displayName": "Microsoft Dataverse",
@@ -189,7 +155,8 @@
     "dependents": [
       "04bdc248-0962-4cb8-84c8-5fb92ab07b88",
       "55455348-58c4-4e2d-8196-be1b9743210c",
-      "65d5f003-7bac-462b-95b6-6f5ca2092382"
+      "65d5f003-7bac-462b-95b6-6f5ca2092382",
+      "e6b735d8-6176-42c3-a4cd-aa46885d5869"
     ],
     "id": "9571b5ea-a429-41b8-b65b-dee168d7202a"
   },
@@ -205,8 +172,8 @@
     ],
     "dependencies": {},
     "dependents": [
-      "ee8dc8c9-4935-4fe7-8f53-277a39e3b73d",
-      "74a0364f-7199-49bc-9be4-2641a9000a1d"
+      "ec851dea-6610-4256-a5ef-3d45a6556b81",
+      "e6b735d8-6176-42c3-a4cd-aa46885d5869"
     ],
     "id": "ab5b9c24-5c27-42f2-912d-451e96a6d6e0"
   },
@@ -252,7 +219,36 @@
     ],
     "id": "e1261159-5cc4-4e6b-ac09-b371ba40b6ee"
   },
-  "ee8dc8c9-4935-4fe7-8f53-277a39e3b73d": {
+  "e6b735d8-6176-42c3-a4cd-aa46885d5869": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1615/1.0.1615.3163/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "6970ac8c-4222-47da-b10f-0851003285d4"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "6970ac8c-4222-47da-b10f-0851003285d4"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "0411_test2_csh_upload_profile"
+    ],
+    "dependencies": {
+      "shared_commondataserviceforapps": "9571b5ea-a429-41b8-b65b-dee168d7202a",
+      "shared_office365": "ab5b9c24-5c27-42f2-912d-451e96a6d6e0"
+    },
+    "dependents": [],
+    "id": "e6b735d8-6176-42c3-a4cd-aa46885d5869"
+  },
+  "ec851dea-6610-4256-a5ef-3d45a6556b81": {
     "connectionRef": {
       "displayName": "Logic flows",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1615/1.0.1615.3163/logicflows/icon.png",
@@ -263,7 +259,7 @@
         },
         "workflowEntityId": {},
         "workflowName": {
-          "value": "c4197094-d320-4543-955e-c70e44c33d26"
+          "value": "ae745789-c5e5-496b-8fc1-6d645aaf2257"
         }
       },
       "parameterHintsV2": {
@@ -272,18 +268,18 @@
         },
         "workflowEntityId": {},
         "workflowName": {
-          "value": "c4197094-d320-4543-955e-c70e44c33d26"
+          "value": "ae745789-c5e5-496b-8fc1-6d645aaf2257"
         }
       }
     },
     "datasets": {},
     "dataSources": [
-      "ClickabuttoninPowerAppstosendanemail"
+      "ClickabuttoninPowerAppstosendanemailb"
     ],
     "dependencies": {
       "shared_office365": "ab5b9c24-5c27-42f2-912d-451e96a6d6e0"
     },
     "dependents": [],
-    "id": "ee8dc8c9-4935-4fe7-8f53-277a39e3b73d"
+    "id": "ec851dea-6610-4256-a5ef-3d45a6556b81"
   }
 }

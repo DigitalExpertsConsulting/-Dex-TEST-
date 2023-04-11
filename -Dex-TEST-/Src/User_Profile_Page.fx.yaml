@@ -43,3 +43,41 @@ User_Profile_Page As screen:
         Y: =620
         ZIndex: =4
 
+    Upload_Profile_DataCardValue As attachments:
+        AddAttachmentText: ="파일 업로드"
+        BorderColor: =
+        DisplayMode: =
+        Height: =221
+        IsInDataCard: =true
+        Items: =
+        MaxAttachments: =1
+        MaxAttachmentSize: =100
+        MaxAttachmentsText: =""
+        NoAttachmentsText: ="파일이 없습니다."
+        PaddingBottom: =5
+        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+        PaddingRight: =5
+        PaddingTop: =5
+        Tooltip: =
+        Width: =282
+        X: =838
+        Y: =174
+        ZIndex: =5
+
+    Profile_upload_btn As button:
+        Height: =76
+        OnSelect: ='0411_test2_csh_upload_profile'.Run("","","","","")
+        Text: ="업로드"
+        Width: =282
+        X: =838
+        Y: =446
+        ZIndex: =6
+
+    Profile_form_down_btn As button:
+        Height: =76
+        Text: ="양식 다운로드"
+        Width: =282
+        X: =220
+        Y: =446
+        ZIndex: =7
+

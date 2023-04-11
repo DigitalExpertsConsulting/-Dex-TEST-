@@ -1,5 +1,5 @@
-<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://asia-001.azure-apim.net/apim/logicflows" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="ClickabuttoninPowerAppstosendanemailb" xmlns="http://wadl.dev.java.net/2009/02">
-  <doc title="Click a button in Power Apps to send an email b" />
+<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://asia-001.azure-apim.net/apim/logicflows" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="0411_test2_csh_upload_profile" xmlns="http://wadl.dev.java.net/2009/02">
+  <doc title="0411_test2_csh_upload_profile" />
   <grammars>
     <jsonTypes targetNamespace="https://asia-001.azure-apim.net/apim/logicflows" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
       <string name="ManualTriggerInput_Sendanemail_ux28_V2_ux29__To_def" />
@@ -14,11 +14,6 @@
         <property name="Sendanemail(V2)_첨부파일이름" type="string" />
         <property name="Sendanemail(V2)_첨부파일콘텐츠" typeRef="ManualTriggerInput_Sendanemail_ux28_V2_ux29___UxCCA8_UxBD80_UxD30C_UxC77C_UxCF58_UxD150_UxCE20__def" />
       </object>
-      <boolean name="ResponseActionOutput_sendmail_def" />
-      <object name="ResponseActionOutput">
-        <property name="sendmail" type="boolean" />
-      </object>
-      <object name="Run_responses_default_def" />
     </jsonTypes>
   </grammars>
   <resources siena:authenticationProviderHref="#PowerAppAuth" base="https://asia-001.azure-apim.net/apim/logicflows">
@@ -38,9 +33,6 @@
             <param style="plain" name="Sendanemail(V2)_첨부파일콘텐츠" path="/Sendanemail(V2)_첨부파일콘텐츠" type="service:ManualTriggerInput_Sendanemail_ux28_V2_ux29___UxCCA8_UxBD80_UxD30C_UxC77C_UxCF58_UxD150_UxCE20__def" required="true" />
           </representation>
         </request>
-        <response>
-          <representation mediaType="application/json" element="service:ResponseActionOutput" />
-        </response>
       </method>
     </resource>
   </resources>
