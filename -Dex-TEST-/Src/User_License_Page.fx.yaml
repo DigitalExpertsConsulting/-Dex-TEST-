@@ -423,6 +423,8 @@ User_License_Page As screen:
                     ).sendmail,
                     First('AZ-305_File_DataCardValue'.Attachments).Value = Blank();
                     First('AZ-305_File_DataCardValue'.Attachments).Name = Blank();
+                    'AZ-305_DataCard'.Update = Blank();
+                    'LicenseDay_AZ-305_DataCard'.Update = Blank();       
                 )
             );
             
