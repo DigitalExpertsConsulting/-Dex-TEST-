@@ -208,9 +208,32 @@ Screen3 As screen:
                 ZIndex: =4
 
     Checkbox2 As checkbox:
-        OnSelect: =
+        OnSelect: |-
+            =If(Checkbox2.Value = true,
+                Table(Index((DataTable5.Selected,1))
         Text: ="옵션"
         X: =834
         Y: =141
         ZIndex: =7
+
+    Checkbox2_1 As checkbox:
+        OnSelect: =
+        Text: ="옵션"
+        X: =834
+        Y: =191
+        ZIndex: =8
+
+    Checkbox2_2 As checkbox:
+        OnSelect: =
+        Text: ="옵션"
+        X: =834
+        Y: =241
+        ZIndex: =9
+
+    Button7 As button:
+        OnSelect: =FirstN(ability_profile,2)
+        Text: ="버튼"
+        X: =1101
+        Y: =40
+        ZIndex: =10
 
