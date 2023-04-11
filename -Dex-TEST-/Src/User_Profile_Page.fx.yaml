@@ -81,16 +81,16 @@ User_Profile_Page As screen:
                 User().FullName,
                 User().Email,
                 If(
-                IsEmpty(
-                    Search(
-                        ability_profile,
-                        User().Email,
-                        "cr778_email"
-                    )
-                ),
-                true,
-                false
-            );
+                    IsEmpty(
+                        Search(
+                            ability_profile,
+                            User().Email,
+                            "cr778_email"
+                        )
+                    ),
+                    "true",
+                    "false"
+                );
             );
         Text: ="업로드"
         Width: =282
