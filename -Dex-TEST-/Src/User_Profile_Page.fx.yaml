@@ -66,8 +66,10 @@ User_Profile_Page As screen:
 
     Profile_upload_btn As button:
         Height: =76
-        OnSelect: |-
-            =ability_user_upload_profile.Run(
+        OnSelect: |
+            =Set(varUploadProfile, false);
+            
+            ability_user_upload_profile.Run(
                 User().Email,
                 "Profile 승인처리 부탁드립니다.",
                 "Profile 승인처리 부탁드립니다.",
@@ -76,6 +78,19 @@ User_Profile_Page As screen:
                 User().FullName,
                 User().Email,
                 true
+            );
+            
+            If(
+                IsEmpty(
+                    LookUp(
+                        ability_profile,
+                        User().FullName = Name,
+                        Name
+                    )
+                ),
+                varUploadProfile = true,
+                varUploadProfile = false
+            
             )
         Text: ="업로드"
         Width: =282
