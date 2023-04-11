@@ -207,3 +207,10 @@ Screen3 As screen:
                 Y: =DataCardKey12.Y
                 ZIndex: =4
 
+    Checkbox2 As checkbox:
+        OnSelect: =Checkbox2.Value
+        Text: ="옵션"
+        X: =834
+        Y: =141
+        ZIndex: =7
+
