@@ -414,51 +414,51 @@ User_License_Page As screen:
                 If(
                     !ClickabuttoninPowerAppstosendanemail.Run(
                         User().Email,
-                        "'AZ-104' 승인 요청부탁드립니다.",
-                        "'AZ-104' 승인 요청부탁드립니다.",
-                        First('AZ-104_File_DataCardValue'.Attachments).Name,
-                        First('AZ-104_File_DataCardValue'.Attachments).Value
+                        "'AZ-305' 승인 요청부탁드립니다.",
+                        "'AZ-305' 승인 요청부탁드립니다.",
+                        First('AZ-305_File_DataCardValue'.Attachments).Name,
+                        First('AZ-305_File_DataCardValue'.Attachments).Value
                     ).sendmail,
-                    First('AZ-104_File_DataCardValue'.Attachments).Value = Blank();
-                    First('AZ-104_File_DataCardValue'.Attachments).Name = Blank();
+                    First('AZ-305_File_DataCardValue'.Attachments).Value = Blank();
+                    First('AZ-305_File_DataCardValue'.Attachments).Name = Blank();
                 )
             );
             
-            
+            //MS-100 승인/반려 처리
             If(
-                !IsBlank(First('AZ-104_File_DataCardValue'.Attachments).Value),
+                !IsBlank(First('MS-100_File_DataCardValue'.Attachments).Value),
                 If(
                     !ClickabuttoninPowerAppstosendanemail.Run(
                         User().Email,
-                        "'AZ-104' 승인 요청부탁드립니다.",
-                        "'AZ-104' 승인 요청부탁드립니다.",
-                        First('AZ-104_File_DataCardValue'.Attachments).Name,
-                        First('AZ-104_File_DataCardValue'.Attachments).Value
+                        "'MS-100' 승인 요청부탁드립니다.",
+                        "'MS-100' 승인 요청부탁드립니다.",
+                        First('MS-100_File_DataCardValue'.Attachments).Name,
+                        First('MS-100_File_DataCardValue'.Attachments).Value
                     ).sendmail,
-                    First('AZ-104_File_DataCardValue'.Attachments).Value = Blank();
-                    First('AZ-104_File_DataCardValue'.Attachments).Name = Blank();
+                    First('MS-100_File_DataCardValue'.Attachments).Value = Blank();
+                    First('MS-100_File_DataCardValue'.Attachments).Name = Blank();
                 )
             );
             
-            
+            //MS-101 승인/반려 처리
             If(
-                !IsBlank(First('AZ-104_File_DataCardValue'.Attachments).Value),
+                !IsBlank(First('MS-101_File_DataCardValue'.Attachments).Value),
                 If(
                     !ClickabuttoninPowerAppstosendanemail.Run(
                         User().Email,
-                        "'AZ-104' 승인 요청부탁드립니다.",
-                        "'AZ-104' 승인 요청부탁드립니다.",
-                        First('AZ-104_File_DataCardValue'.Attachments).Name,
-                        First('AZ-104_File_DataCardValue'.Attachments).Value
+                        "'MS-101' 승인 요청부탁드립니다.",
+                        "'MS-101' 승인 요청부탁드립니다.",
+                        First('MS-101_File_DataCardValue'.Attachments).Name,
+                        First('MS-101_File_DataCardValue'.Attachments).Value
                     ).sendmail,
-                    First('AZ-104_File_DataCardValue'.Attachments).Value = Blank();
-                    First('AZ-104_File_DataCardValue'.Attachments).Name = Blank();
+                    First('MS-101_File_DataCardValue'.Attachments).Value = Blank();
+                    First('MS-101_File_DataCardValue'.Attachments).Name = Blank();
                 )
             );
             
-            
+            //오후부터 작업하기 화이팅 최수현
             If(
-                !IsBlank(First('AZ-104_File_DataCardValue'.Attachments).Value),
+                !IsBlank(First('MS-101_File_DataCardValue'.Attachments).Value),
                 If(
                     !ClickabuttoninPowerAppstosendanemail.Run(
                         User().Email,
@@ -702,7 +702,7 @@ User_License_Page As screen:
             );
         Width: =110
         X: =1236
-        Y: =648
+        Y: =654
         ZIndex: =4
 
     License_Back As icon.BackArrow:
