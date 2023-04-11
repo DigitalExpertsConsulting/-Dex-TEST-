@@ -441,6 +441,8 @@ User_License_Page As screen:
                     ).sendmail,
                     First('MS-100_File_DataCardValue'.Attachments).Value = Blank();
                     First('MS-100_File_DataCardValue'.Attachments).Name = Blank();
+                    'MS-100_DataCard'.Update = Blank();
+                    'LicenseDay_MS-100_DataCard'.Update = Blank();       
                 )
             );
             
@@ -457,6 +459,8 @@ User_License_Page As screen:
                     ).sendmail,
                     First('MS-101_File_DataCardValue'.Attachments).Value = Blank();
                     First('MS-101_File_DataCardValue'.Attachments).Name = Blank();
+                    'MS-101_DataCard'.Update = Blank();
+                    'LicenseDay_MS-101_DataCard'.Update = Blank(); 
                 )
             );
             
@@ -473,6 +477,8 @@ User_License_Page As screen:
                     ).sendmail,
                     First('MS-700_File_DataCardValue'.Attachments).Value = Blank();
                     First('MS-700_File_DataCardValue'.Attachments).Name = Blank();
+                    'MS-700_DataCard'.Update = Blank();
+                    'LicenseDay_MS-700_DataCard'.Update = Blank(); 
                 )
             );
             
@@ -489,6 +495,8 @@ User_License_Page As screen:
                     ).sendmail,
                     First('MS-900_File_DataCardValue'.Attachments).Value = Blank();
                     First('MS-900_File_DataCardValue'.Attachments).Name = Blank();
+                    'MS-900_DataCard'.Update = Blank();
+                    'LicenseDay_MS-900_DataCard'.Update = Blank(); 
                 )
             );
             
@@ -505,6 +513,8 @@ User_License_Page As screen:
                     ).sendmail,
                     First('PL-200_File_DataCardValue'.Attachments).Value = Blank();
                     First('PL-200_File_DataCardValue'.Attachments).Name = Blank();
+                    'PL-200_DataCard'.Update = Blank();
+                    'LicenseDay_PL-200_DataCard'.Update = Blank(); 
                 )
             );
             
@@ -521,6 +531,8 @@ User_License_Page As screen:
                     ).sendmail,
                     First('PL-300_File_DataCardValue'.Attachments).Value = Blank();
                     First('PL-300_File_DataCardValue'.Attachments).Name = Blank();
+                    'PL-300_DataCard'.Update = Blank();
+                    'LicenseDay_PL-300_DataCard'.Update = Blank(); 
                 )
             );
             
@@ -537,6 +549,8 @@ User_License_Page As screen:
                     ).sendmail,
                     First('PL-600_File_DataCardValue'.Attachments).Value = Blank();
                     First('PL-600_File_DataCardValue'.Attachments).Name = Blank();
+                    'PL-600_DataCard'.Update = Blank();
+                    'LicenseDay_PL-600_DataCard'.Update = Blank(); 
                 )
             );
             
@@ -553,6 +567,8 @@ User_License_Page As screen:
                     ).sendmail,
                     First('PL-900_File_DataCardValue'.Attachments).Value = Blank();
                     First('PL-900_File_DataCardValue'.Attachments).Name = Blank();
+                    'PL-900_DataCard'.Update = Blank();
+                    'LicenseDay_PL-900_DataCard'.Update = Blank(); 
                 )
             );
             
@@ -721,8 +737,8 @@ User_License_Page As screen:
                 ResetForm(License_Input);
             );
         Width: =110
-        X: =1236
-        Y: =654
+        X: =1254
+        Y: =658
         ZIndex: =4
 
     License_Back As icon.BackArrow:
