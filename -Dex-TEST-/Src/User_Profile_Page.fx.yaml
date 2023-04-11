@@ -69,17 +69,6 @@ User_Profile_Page As screen:
         OnSelect: |
             =Set(varUploadProfile, false);
             
-            ability_user_upload_profile.Run(
-                User().Email,
-                "Profile 승인처리 부탁드립니다.",
-                "Profile 승인처리 부탁드립니다.",
-                First(Upload_Profile_DataCardValue.Attachments).Name,
-                First(Upload_Profile_DataCardValue.Attachments).Value,
-                User().FullName,
-                User().Email,
-                true
-            );
-            
             If(
                 IsEmpty(
                     LookUp(
@@ -90,12 +79,22 @@ User_Profile_Page As screen:
                 ),
                 varUploadProfile = true,
                 varUploadProfile = false
+            );
             
-            )
+            ability_user_upload_profile.Run(
+                User().Email,
+                "Profile 승인처리 부탁드립니다.",
+                "Profile 승인처리 부탁드립니다.",
+                First(Upload_Profile_DataCardValue.Attachments).Name,
+                First(Upload_Profile_DataCardValue.Attachments).Value,
+                User().FullName,
+                User().Email,
+                varUploadProfile
+            );
         Text: ="업로드"
         Width: =282
         X: =838
-        Y: =446
+        Y: =464
         ZIndex: =6
 
     Profile_form_down_btn As button:
