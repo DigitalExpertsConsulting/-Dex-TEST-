@@ -470,8 +470,8 @@ User_License_Page As screen:
                 If(
                     !ClickabuttoninPowerAppstosendanemail.Run(
                         User().Email,
-                        "'AZ-104' 승인 요청부탁드립니다.",
-                        "'AZ-104' 승인 요청부탁드립니다.",
+                        "'MS-700' 승인 요청부탁드립니다.",
+                        "'MS-700' 승인 요청부탁드립니다.",
                         First('MS-700_File_DataCardValue'.Attachments).Name,
                         First('MS-700_File_DataCardValue'.Attachments).Value
                     ).sendmail,
@@ -3950,25 +3950,4 @@ User_License_Page As screen:
                 Wrap: =false
                 Y: =LicenseDay_Name_DataCardKey.Y
                 ZIndex: =4
-
-    Empty_DataCardValue As attachments:
-        AddAttachmentText: ="파일 업로드"
-        BorderColor: =
-        DisplayMode: =
-        Height: =1
-        IsInDataCard: =true
-        Items: =
-        MaxAttachments: =1
-        MaxAttachmentSize: =100
-        MaxAttachmentsText: =""
-        NoAttachmentsText: ="파일이 없습니다."
-        PaddingBottom: =5
-        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-        PaddingRight: =5
-        PaddingTop: =5
-        Tooltip: =
-        Width: =0
-        X: =30
-        Y: ='AZ-104_File_DataCardKey'.Y + 'AZ-104_File_DataCardKey'.Height + 5
-        ZIndex: =10
 
