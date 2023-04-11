@@ -61,6 +61,76 @@
     ],
     "id": "28ecc422-593e-464d-b2c5-248bb6b5d6f7"
   },
+  "55455348-58c4-4e2d-8196-be1b9743210c": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1615/1.0.1615.3163/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "9571b5ea-a429-41b8-b65b-dee168d7202a": {
+          "value": "shared_commondataserviceforapps"
+        },
+        "e1261159-5cc4-4e6b-ac09-b371ba40b6ee": {
+          "value": "shared_onedriveforbusiness"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "3c1a2600-c3a5-4926-92a0-35d613d7b52b"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_commondataserviceforapps": {
+          "value": "9571b5ea-a429-41b8-b65b-dee168d7202a"
+        },
+        "shared_onedriveforbusiness": {
+          "value": "e1261159-5cc4-4e6b-ac09-b371ba40b6ee"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "3c1a2600-c3a5-4926-92a0-35d613d7b52b"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "역량강화AppstoDataVerseExcelDownload"
+    ],
+    "dependencies": {
+      "shared_commondataserviceforapps": "9571b5ea-a429-41b8-b65b-dee168d7202a",
+      "shared_onedriveforbusiness": "e1261159-5cc4-4e6b-ac09-b371ba40b6ee"
+    },
+    "dependents": [],
+    "id": "55455348-58c4-4e2d-8196-be1b9743210c"
+  },
+  "65d5f003-7bac-462b-95b6-6f5ca2092382": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1615/1.0.1615.3163/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "a4c7519d-1bfa-44a5-aed4-d39c85c5ba8b"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "a4c7519d-1bfa-44a5-aed4-d39c85c5ba8b"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "역량강화AppstoDataversPDFDownload"
+    ],
+    "dependencies": {
+      "shared_commondataserviceforapps": "9571b5ea-a429-41b8-b65b-dee168d7202a",
+      "shared_onedriveforbusiness": "e1261159-5cc4-4e6b-ac09-b371ba40b6ee"
+    },
+    "dependents": [],
+    "id": "65d5f003-7bac-462b-95b6-6f5ca2092382"
+  },
   "9571b5ea-a429-41b8-b65b-dee168d7202a": {
     "connectionRef": {
       "displayName": "Microsoft Dataverse",
@@ -72,8 +142,8 @@
     "dependencies": {},
     "dependents": [
       "04bdc248-0962-4cb8-84c8-5fb92ab07b88",
-      "ebc7306a-2558-43e4-b40a-8cfb1eb107b1",
-      "e06706e7-83a7-4403-86f1-7618e6b65780"
+      "15f4e405-fe49-4f17-a907-e1f047f18e86",
+      "ebc7306a-2558-43e4-b40a-8cfb1eb107b1"
     ],
     "id": "9571b5ea-a429-41b8-b65b-dee168d7202a"
   },
@@ -119,47 +189,6 @@
     "dependents": [],
     "id": "ac5a0616-fc7c-4986-9e7a-ff3af9e0af4d"
   },
-  "e06706e7-83a7-4403-86f1-7618e6b65780": {
-    "connectionRef": {
-      "displayName": "Logic flows",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1615/1.0.1615.3163/logicflows/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
-      "parameterHints": {
-        "9571b5ea-a429-41b8-b65b-dee168d7202a": {
-          "value": "shared_commondataserviceforapps"
-        },
-        "e1261159-5cc4-4e6b-ac09-b371ba40b6ee": {
-          "value": "shared_onedriveforbusiness"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "a4c7519d-1bfa-44a5-aed4-d39c85c5ba8b"
-        }
-      },
-      "parameterHintsV2": {
-        "shared_commondataserviceforapps": {
-          "value": "9571b5ea-a429-41b8-b65b-dee168d7202a"
-        },
-        "shared_onedriveforbusiness": {
-          "value": "e1261159-5cc4-4e6b-ac09-b371ba40b6ee"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "a4c7519d-1bfa-44a5-aed4-d39c85c5ba8b"
-        }
-      }
-    },
-    "datasets": {},
-    "dataSources": [
-      "역량강화AppstoDataversPDFDownload"
-    ],
-    "dependencies": {
-      "shared_commondataserviceforapps": "9571b5ea-a429-41b8-b65b-dee168d7202a",
-      "shared_onedriveforbusiness": "e1261159-5cc4-4e6b-ac09-b371ba40b6ee"
-    },
-    "dependents": [],
-    "id": "e06706e7-83a7-4403-86f1-7618e6b65780"
-  },
   "e1261159-5cc4-4e6b-ac09-b371ba40b6ee": {
     "connectionRef": {
       "displayName": "비즈니스용 OneDrive",
@@ -171,8 +200,8 @@
     "dependencies": {},
     "dependents": [
       "04bdc248-0962-4cb8-84c8-5fb92ab07b88",
-      "ebc7306a-2558-43e4-b40a-8cfb1eb107b1",
-      "e06706e7-83a7-4403-86f1-7618e6b65780"
+      "15f4e405-fe49-4f17-a907-e1f047f18e86",
+      "ebc7306a-2558-43e4-b40a-8cfb1eb107b1"
     ],
     "id": "e1261159-5cc4-4e6b-ac09-b371ba40b6ee"
   },
@@ -209,46 +238,5 @@
     },
     "dependents": [],
     "id": "e9ac1a0e-d748-4802-ac6e-0964b08007bc"
-  },
-  "ebc7306a-2558-43e4-b40a-8cfb1eb107b1": {
-    "connectionRef": {
-      "displayName": "Logic flows",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1615/1.0.1615.3163/logicflows/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
-      "parameterHints": {
-        "9571b5ea-a429-41b8-b65b-dee168d7202a": {
-          "value": "shared_commondataserviceforapps"
-        },
-        "e1261159-5cc4-4e6b-ac09-b371ba40b6ee": {
-          "value": "shared_onedriveforbusiness"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "3c1a2600-c3a5-4926-92a0-35d613d7b52b"
-        }
-      },
-      "parameterHintsV2": {
-        "shared_commondataserviceforapps": {
-          "value": "9571b5ea-a429-41b8-b65b-dee168d7202a"
-        },
-        "shared_onedriveforbusiness": {
-          "value": "e1261159-5cc4-4e6b-ac09-b371ba40b6ee"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "3c1a2600-c3a5-4926-92a0-35d613d7b52b"
-        }
-      }
-    },
-    "datasets": {},
-    "dataSources": [
-      "역량강화AppstoDataVerseExcelDownload완성본"
-    ],
-    "dependencies": {
-      "shared_commondataserviceforapps": "9571b5ea-a429-41b8-b65b-dee168d7202a",
-      "shared_onedriveforbusiness": "e1261159-5cc4-4e6b-ac09-b371ba40b6ee"
-    },
-    "dependents": [],
-    "id": "ebc7306a-2558-43e4-b40a-8cfb1eb107b1"
   }
 }

@@ -36,7 +36,7 @@ Main_Page As screen:
         Fill: =RGBA(102, 182, 227, 0.2)
         Height: =400
         HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -20%)
-        OnSelect: =//Navigate(Admin_Page)
+        OnSelect: =Navigate(Admin_PWD_Page)
         PressedFill: =RGBA(102, 182, 227, 0.2)
         Size: =40
         Text: ="Admin"
