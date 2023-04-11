@@ -411,17 +411,7 @@ User_License_Page As screen:
                     Defaults(ability_license),
                     {
                         Name : User().FullName,
-                        'E-mail':  'E-mail_License_DataCard'.Update,
-                        'AZ-104': If(
-                            ClickabuttoninPowerAppstosendanemail.Run(
-                                User().Email,
-                                User().FullName + "'AZ-104' 승인 요청부탁드립니다.",
-                                User().FullName + "'AZ-104' 승인 요청부탁드립니다.",
-                                First('AZ-104_File_DataCardValue'.Attachments).Name,
-                                First('AZ-104_File_DataCardValue'.Attachments).Value
-                            ).
-            
-                        )         
+                        'E-mail':  'E-mail_License_DataCard'.Update      
                     }
                 ); 
                 NewForm(License_Input);
