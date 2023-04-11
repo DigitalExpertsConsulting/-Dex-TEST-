@@ -208,7 +208,7 @@ Screen3 As screen:
                 ZIndex: =4
 
     Checkbox2 As checkbox:
-        OnSelect: =Checkbox2.Value
+        OnSelect: =
         Text: ="옵션"
         X: =834
         Y: =141
