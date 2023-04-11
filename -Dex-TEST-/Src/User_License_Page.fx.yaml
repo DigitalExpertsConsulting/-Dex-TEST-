@@ -392,7 +392,10 @@ User_License_Page As screen:
         Height: =110
         Icon: =Icon.Send
         OnSelect: |-
-            =Select(LicenseDay_send);
+            =
+            
+            
+            Select(LicenseDay_send);
             Select(License_File_send);
             
             If(
@@ -3747,4 +3750,25 @@ User_License_Page As screen:
                 Wrap: =false
                 Y: =LicenseDay_Name_DataCardKey.Y
                 ZIndex: =4
+
+    Empty_DataCardValue As attachments:
+        AddAttachmentText: ="파일 업로드"
+        BorderColor: =
+        DisplayMode: =
+        Height: =1
+        IsInDataCard: =true
+        Items: =
+        MaxAttachments: =1
+        MaxAttachmentSize: =100
+        MaxAttachmentsText: =""
+        NoAttachmentsText: ="파일이 없습니다."
+        PaddingBottom: =5
+        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+        PaddingRight: =5
+        PaddingTop: =5
+        Tooltip: =
+        Width: =0
+        X: =30
+        Y: ='AZ-104_File_DataCardKey'.Y + 'AZ-104_File_DataCardKey'.Height + 5
+        ZIndex: =10
 
