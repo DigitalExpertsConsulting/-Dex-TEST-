@@ -536,6 +536,24 @@ User_License_Page As screen:
                 )
             );
             
+            //PL-400 승인/반려 처리
+            If(
+                !IsBlank(First('PL-400_File_DataCardValue'.Attachments).Value),
+                If(
+                    !ClickabuttoninPowerAppstosendanemail.Run(
+                        User().Email,
+                        "'PL-400' 승인 요청부탁드립니다.",
+                        "'PL-400' 승인 요청부탁드립니다.",
+                        First('PL-400_File_DataCardValue'.Attachments).Name,
+                        First('PL-400_File_DataCardValue'.Attachments).Value
+                    ).sendmail,
+                    First('PL-400_File_DataCardValue'.Attachments).Value = Blank();
+                    First('PL-400_File_DataCardValue'.Attachments).Name = Blank();
+                    'PL-400_DataCard'.Update = Blank();
+                    'LicenseDay_PL-400_DataCard'.Update = Blank(); 
+                )
+            );
+            
             //PL-600 승인/반려 처리
             If(
                 !IsBlank(First('PL-600_File_DataCardValue'.Attachments).Value),
@@ -737,7 +755,7 @@ User_License_Page As screen:
                 ResetForm(License_Input);
             );
         Width: =110
-        X: =1254
+        X: =1248
         Y: =658
         ZIndex: =4
 
