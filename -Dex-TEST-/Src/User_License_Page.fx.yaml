@@ -395,6 +395,8 @@ User_License_Page As screen:
             =Select(LicenseDay_send);
             Select(License_File_send);
             
+            //SubmitForm(License_Input);
+            
             
             If(
                 IsEmpty(
@@ -404,7 +406,15 @@ User_License_Page As screen:
                         "cr778_email"
                     )
                 ),
-                SubmitForm(License_Input);
+                Patch(
+                    ability_license,
+                    Defaults(ability_license),
+                    {
+                        Name:User().FullName
+                    }
+                );
+            
+             
                 NewForm(License_Input);
                 ResetForm(License_Input);
                 ,
