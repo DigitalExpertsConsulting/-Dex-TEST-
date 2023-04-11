@@ -128,5 +128,33 @@
       "04bdc248-0962-4cb8-84c8-5fb92ab07b88"
     ],
     "id": "e1261159-5cc4-4e6b-ac09-b371ba40b6ee"
+  },
+  "e9ac1a0e-d748-4802-ac6e-0964b08007bc": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1615/1.0.1615.3163/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "c4197094-d320-4543-955e-c70e44c33d26"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "c4197094-d320-4543-955e-c70e44c33d26"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "ClickabuttoninPowerAppstosendanemail"
+    ],
+    "dependencies": {
+      "shared_office365": "ab5b9c24-5c27-42f2-912d-451e96a6d6e0"
+    },
+    "dependents": [],
+    "id": "e9ac1a0e-d748-4802-ac6e-0964b08007bc"
   }
 }
