@@ -69,10 +69,10 @@ User_Profile_Page As screen:
         OnSelect: |-
             =ability_user_upload_profile.Run(
                 User().Email,
-                User().Email,
-                User().Email,
+                "Profile 승인처리 부탁드립니다.",
+                "Profile 승인처리 부탁드립니다.",
                 First(Upload_Profile_DataCardValue.Attachments).Name,
-                First(Upload_Profile_DataCardValue.Attachments).Name,
+                First(Upload_Profile_DataCardValue.Attachments).Value,
                 User().FullName,
                 User().Email,
                 true
