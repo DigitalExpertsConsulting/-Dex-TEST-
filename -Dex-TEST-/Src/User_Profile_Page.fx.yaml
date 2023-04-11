@@ -66,7 +66,7 @@ User_Profile_Page As screen:
 
     Profile_upload_btn As button:
         Height: =76
-        OnSelect: ='0411_test2_csh_upload_profile'.Run("","","","","")
+        OnSelect: ='0411_test2_csh_upload_profile'.Run(User().Email,User().Email,User().Email,First(Upload_Profile_DataCardValue.Attachments).Name,First(Upload_Profile_DataCardValue.Attachments).Value)
         Text: ="업로드"
         Width: =282
         X: =838
