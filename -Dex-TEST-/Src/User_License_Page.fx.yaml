@@ -410,11 +410,12 @@ User_License_Page As screen:
                     ability_license,
                     Defaults(ability_license),
                     {
-                        Name:User().FullName
+                        Name : User().FullName,
+                        'E-mail':  'E-mail_License_DataCard'.Update
+                        
+                        
                     }
-                );
-            
-             
+                ); 
                 NewForm(License_Input);
                 ResetForm(License_Input);
                 ,
@@ -563,7 +564,7 @@ User_License_Page As screen:
                 ResetForm(License_Input);
             );
         Width: =110
-        X: =1230
+        X: =1236
         Y: =630
         ZIndex: =4
 
