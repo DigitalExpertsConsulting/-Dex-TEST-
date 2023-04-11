@@ -71,10 +71,10 @@ User_Profile_Page As screen:
             
             If(
                 IsEmpty(
-                    LookUp(
-                        ability_profile,
-                        User().FullName = Name,
-                        Name
+                    Search(
+                        ability_file,
+                        User().Email,
+                        "cr778_email"
                     )
                 ),
                 varUploadProfile = true,
