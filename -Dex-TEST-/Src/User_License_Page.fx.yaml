@@ -392,11 +392,25 @@ User_License_Page As screen:
         Height: =110
         Icon: =Icon.Send
         OnSelect: |-
-            =
+            =If(
+                !IsBlank(First('AZ-104_File_DataCardValue'.Attachments).Value),
+                If(
+                    !ClickabuttoninPowerAppstosendanemail.Run(
+                        User().Email,
+                        "'AZ-104' 승인 요청부탁드립니다.",
+                        "'AZ-104' 승인 요청부탁드립니다.",
+                        First('AZ-104_File_DataCardValue'.Attachments).Name,
+                        First('AZ-104_File_DataCardValue'.Attachments).Value
+                    ).sendmail,
+                    First('AZ-104_File_DataCardValue'.Attachments).Value = Blank();
+                    First('AZ-104_File_DataCardValue'.Attachments).Name = Blank();
+                )
+            );
             
             
             Select(LicenseDay_send);
             Select(License_File_send);
+            
             
             If(
                 IsEmpty(
