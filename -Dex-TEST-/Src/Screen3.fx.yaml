@@ -13,80 +13,71 @@ Screen3 As screen:
         X: =183
         ZIndex: =2
 
-    Gallery2 As gallery.galleryVertical:
+    Label7 As label:
+        Height: =44
+        Text: |-
+            =/*"Selected Checkboxes: "&*/
+            Concat(CheckboxTextValues, Value & ", ")
+        Width: =407
+        Y: =404
+        ZIndex: =14
+
+    Button12 As button:
+        Text: ="버튼"
+        Y: =364
+        ZIndex: =17
+
+    Gallery9 As gallery.galleryVertical:
         DelayItemLoading: =true
-        Height: =280
-        Items: =ability_address
-        Layout: =Layout.Vertical
-        LoadingSpinner: =LoadingSpinner.Data
-        TemplateSize: |-
-            =//If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
-            50
-        Width: =293
-        X: =343
-        ZIndex: =11
-
-        Label2_1 As label:
-            OnSelect: =Select(Parent)
-            Text: =ThisItem.Name
-            X: =150
-            ZIndex: =2
-
-        Checkbox1 As checkbox:
-            OnSelect: =Select(Parent)
-            Text: ="옵션"
-            ZIndex: =3
-
-    Gallery3 As gallery.galleryVertical:
-        DelayItemLoading: =true
-        Height: =363
+        Height: =307
         Items: =ability_profile
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
-        TemplateSize: |
-            =60
+        TemplateSize: =70
         Width: =1366
-        Y: =403
-        ZIndex: =12
+        Y: =461
+        ZIndex: =18
 
-        Checkbox2 As checkbox:
+        Checkbox6 As checkbox:
+            Height: =45
             OnSelect: |-
                 =If(
-                    Checkbox2.Value = true,
-                    Collect(CheckboxTextValues, Checkbox2.Text),
-                    Remove(CheckboxTextValues, LookUp(CheckboxTextValues, Value = Checkbox2.Text))
+                    Checkbox6.Value = true,
+                    Collect(CheckboxTextValues, Checkbox6.Text),
+                    Remove(CheckboxTextValues, LookUp(CheckboxTextValues, Value = Checkbox6.Text))
                 )
             Text: =ThisItem.Name
-            Width: =114
-            Y: =9
+            Width: =113
+            Y: =5
+            ZIndex: =1
+
+        Label18 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.ability_profile
+            Width: =351
+            X: =134
+            Y: =10
             ZIndex: =3
 
-        Button9 As button:
+        Label20 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Profile.FileName
+            Width: =335
+            X: =519
+            Y: =5
+            ZIndex: =4
+
+        Button13 As button:
             OnSelect: |-
-                =If(
-                    Checkbox2.Value=true,
-                    ability_user_down_profile_form.Run(),
+                =//PDFDownload_2.Run("")
+                
+                If(
+                    Checkbox6.Value=true,
+                    PDFDownload_2.Run(""),
                     ""
                 )
             Text: ="버튼"
-            X: =231
-            Y: =19
-            ZIndex: =4
-
-    RichTextEditor1 As richTextEditor:
-        Default: ="여기에 <strong>서식 있는 텍스트</strong>를 입력하세요."
-        Height: =184
-        X: =726
-        Y: =54
-        ZIndex: =13
-
-    Label7 As label:
-        Height: =135
-        Text: |-
-            =/*"Selected Checkboxes: "&*/
-            Concat(CheckboxTextValues, Value & "; ")
-        Width: =569
-        X: =795
-        Y: =267
-        ZIndex: =14
+            X: =677
+            Y: =10
+            ZIndex: =5
 
