@@ -18,7 +18,7 @@ Screen3 As screen:
         Height: =44
         Text: |-
             =/*"Selected Checkboxes: "&*/
-            Concat(CheckboxCollection,Value & " ")
+            Concat(CheckboxCollection,Value & ",")
         Width: =407
         X: =36
         Y: =417
@@ -77,8 +77,8 @@ Screen3 As screen:
             Height: =33
             OnSelect: =PPTDownload.Run()
             Text: ="버튼"
-            X: =624
-            Y: =13
+            X: =810
+            Y: =5
             ZIndex: =5
 
     Checkbox9 As checkbox:
