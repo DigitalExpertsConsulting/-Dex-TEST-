@@ -51,31 +51,23 @@ Screen3 As screen:
                     Collect(CheckboxCollection, Checkbox6.Text),
                     Remove(CheckboxCollection, LookUp(CheckboxCollection, Value = Checkbox6.Text))
                 )
-            Text: =ThisItem.Name
-            Width: =113
+            Text: =ThisItem.'E-mail'
+            Width: =328
             X: =21
             Y: =5
             ZIndex: =1
-
-        Label18 As label:
-            OnSelect: =Select(Parent)
-            Text: =ThisItem.ability_profile
-            Width: =351
-            X: =134
-            Y: =10
-            ZIndex: =3
 
         Label20 As label:
             OnSelect: =Select(Parent)
             Text: =ThisItem.Profile.FileName
             Width: =335
-            X: =519
-            Y: =5
+            X: =310
+            Y: =10
             ZIndex: =4
 
         Button13 As button:
             Height: =33
-            OnSelect: =PPTDownload.Run()
+            OnSelect: =PPTDownload.Run(Concat(CheckboxCollection,Value & ","))
             Text: ="버튼"
             X: =810
             Y: =5
