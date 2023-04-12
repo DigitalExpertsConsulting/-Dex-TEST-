@@ -25,7 +25,7 @@ Screen3 As screen:
         ZIndex: =14
 
     Button12 As button:
-        OnSelect: =PPTDownload.Run("")
+        OnSelect: =PPTDownload.Run()
         Text: ="전체 다운"
         X: =160
         Y: =372
@@ -75,7 +75,7 @@ Screen3 As screen:
 
         Button13 As button:
             Height: =33
-            OnSelect: =PPTDownload.Run("")
+            OnSelect: =PPTDownload.Run()
             Text: ="버튼"
             X: =624
             Y: =13
@@ -96,21 +96,4 @@ Screen3 As screen:
         X: =33
         Y: =367
         ZIndex: =19
-
-    Gallery10 As gallery.galleryVertical:
-        DelayItemLoading: =true
-        Items: =ability_profile
-        Layout: =Layout.Vertical
-        LoadingSpinner: =LoadingSpinner.Data
-        TemplateSize: |
-            =70
-        X: =528
-        ZIndex: =20
-
-        Label23 As label:
-            OnSelect: =Select(Parent)
-            Text: =ThisItem.Profile.FileName
-            X: =40
-            Y: =40
-            ZIndex: =1
 
