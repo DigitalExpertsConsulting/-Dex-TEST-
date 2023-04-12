@@ -1,0 +1,91 @@
+Admin_Profile_Page As screen:
+
+    Label7_1 As label:
+        BorderThickness: =3
+        Height: =44
+        Text: |-
+            =/*"Selected Checkboxes: "&*/
+            Concat(CheckboxCollection,Value & ",")
+        Width: =407
+        X: =63
+        Y: =198
+        ZIndex: =1
+
+    Button12_1 As button:
+        OnSelect: =PPTALLDOWNLOAD.Run()
+        Text: ="전체 다운"
+        X: =162
+        Y: =258
+        ZIndex: =2
+
+    Gallery9_1 As gallery.galleryVertical:
+        DelayItemLoading: =true
+        Height: =307
+        Items: =ability_profile
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplateSize: =70
+        Width: =1366
+        Y: =461
+        ZIndex: =3
+
+        Checkbox6_1 As checkbox:
+            Default: =Checkbox10Value
+            Height: =45
+            OnSelect: |-
+                =If(
+                    Checkbox6_1.Value = true,
+                    Collect(CheckboxCollection, Checkbox6_1.Text),
+                    Remove(CheckboxCollection, LookUp(CheckboxCollection, Value = Checkbox6_1.Text))
+                )
+            Text: =ThisItem.'E-mail'
+            Width: =43
+            X: =26
+            Y: =10
+            ZIndex: =1
+
+        Label20_1 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Profile.FileName
+            Width: =335
+            X: =310
+            Y: =10
+            ZIndex: =4
+
+        Button13_1 As button:
+            Height: =33
+            OnSelect: =PPTDownload.Run(Concat(CheckboxCollection,Value & ","))
+            Text: ="버튼"
+            X: =810
+            Y: =5
+            ZIndex: =5
+
+        Label4 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Name
+            X: =69
+            Y: =15
+            ZIndex: =6
+
+    Checkbox9_1 As checkbox:
+        OnCheck: |-
+            =UpdateContext({Checkbox10Value: true})
+        OnSelect: |-
+            =If(
+                Checkbox9_1.Value = true,
+                Collect(CheckboxCollection, Checkbox9_1.Text),
+                Remove(CheckboxCollection, LookUp(CheckboxCollection, Value = Checkbox9_1.Text))
+            )
+        OnUncheck: |-
+            =UpdateContext({Checkbox10Value: false})
+        Text: ="전체"
+        X: =12
+        Y: =258
+        ZIndex: =4
+
+    Label3 As label:
+        Text: ="E-mail"
+        X: =91
+        Y: =421
+        ZIndex: =5
+

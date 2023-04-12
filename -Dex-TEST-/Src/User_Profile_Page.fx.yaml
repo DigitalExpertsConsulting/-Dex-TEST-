@@ -70,15 +70,16 @@ User_Profile_Page As screen:
             =Set(varUploadProfile, false);
             
             
-            
-            
             ability_user_upload_profile.Run(
                 User().Email,
                 "Profile 승인처리 부탁드립니다.",
                 "Profile 승인처리 부탁드립니다.",
                 First(Upload_Profile_DataCardValue.Attachments).Name,
                 First(Upload_Profile_DataCardValue.Attachments).Value,
-                User().FullName,
+                With(
+                { wName: Split(User().FullName, " ") },
+                Last(wName).Value & First(wName).Value
+                ),
                 User().Email,
                 If(
                     IsEmpty(
