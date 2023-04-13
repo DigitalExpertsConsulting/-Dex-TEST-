@@ -34,23 +34,28 @@ Admin_Skill_Page As screen:
         ZIndex: =4
 
     Skill_Search As text:
+        BorderColor: =RGBA( 112, 128, 144, 0.7 )
+        BorderThickness: =5
         Default: =""
         Height: =35
         HintText: ="검색"
         Width: =245
-        X: =1060
-        Y: =219
+        X: =1040
+        Y: =250
         ZIndex: =5
 
     Admin_Skill_DataTable As dataTable.datatable:
+        BorderColor: =RGBA( 112, 128, 144, 0.7 )
         BorderStyle: =BorderStyle.Solid
+        BorderThickness: =5
         DisplayMode: =DisplayMode.Edit
-        Fill: =RGBA(255, 255, 255, 0.7)
-        Height: =474
+        Fill: =RGBA(255, 255, 255, 0.9)
+        HeadingFill: =RGBA( 106, 170, 205, 1 )
+        Height: =420
         Items: =Search(ability_skill,Skill_Search.Text,"cr778_name")
-        Width: =1199
-        X: =106
-        Y: =267
+        Width: =1200
+        X: =85
+        Y: =300
         ZIndex: =6
 
         Name_열6 As dataTableColumn.textualColumn:

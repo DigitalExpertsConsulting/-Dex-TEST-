@@ -40,12 +40,12 @@ Admin_License_Page As screen:
         DisplayMode: =DisplayMode.Edit
         Fill: =RGBA(255, 255, 255, 0.7)
         HeadingFill: =RGBA( 106, 170, 205, 1 )
-        Height: =403
+        Height: =420
         Items: |
             =Search(ability_license,License_Search.Text,"cr778_name")
-        Width: =1160
-        X: =106
-        Y: =293
+        Width: =1200
+        X: =85
+        Y: =300
         ZIndex: =5
 
         Name_열4 As dataTableColumn.textualColumn:
@@ -238,27 +238,27 @@ Admin_License_Page As screen:
         Height: =35
         HintText: ="검색"
         Width: =245
-        X: =1021
-        Y: =239
+        X: =1040
+        Y: =250
         ZIndex: =7
 
     License_DownLoad As button:
         BorderColor: =RGBA( 112, 128, 144, 0.7 )
         BorderThickness: =5
         Fill: =RGBA( 106, 170, 205, 1 )
-        Height: =51
+        Height: =45
         OnSelect: =PDFDownload.Run()
         Text: ="라이센스 인증서 다운로드"
         Width: =280
-        X: =110
-        Y: =223
+        X: =85
+        Y: =245
         ZIndex: =8
 
     Icon2 As icon.Reload:
         Color: =RGBA(255, 255, 255, 1)
         Icon: =Icon.Reload
         OnSelect: =Refresh(ability_license)
-        X: =1280
-        Y: =20
+        X: =383
+        Y: =226
         ZIndex: =9
 
