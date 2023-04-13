@@ -15,9 +15,9 @@ Admin_Profile_Page As screen:
         Text: |-
             =/*"Selected Checkboxes: "&*/
             Concat(CheckboxCollection,Value & ",")
+        Visible: =false
         Width: =407
-        X: =242
-        Y: =474
+        Y: =724
         ZIndex: =2
 
     AllDownload_Button As button:

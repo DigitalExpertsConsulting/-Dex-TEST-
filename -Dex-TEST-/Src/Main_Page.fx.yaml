@@ -1,47 +1,47 @@
 Main_Page As screen:
-    BackgroundImage: =MainPagePicture
-    ImagePosition: =ImagePosition.Fill
+    BackgroundImage: =wwwwww
+    ImagePosition: =ImagePosition.Stretch
 
     MainPage_Title As label:
         Align: =Align.Center
         BorderColor: =RGBA(102, 182, 227, 0.7)
         Color: =RGBA(255, 255, 255, 1)
-        FontWeight: =FontWeight.Semibold
-        Height: =186
+        FontWeight: =FontWeight.Bold
+        Height: =183
         Size: =40
         Text: ="Dexconsulting 역량 관리"
-        Width: =1366
+        Width: =839
         ZIndex: =3
 
     MainPage_User_Button As button:
         BorderColor: =RGBA(102, 182, 227, 0.7)
         BorderThickness: =9
         DisabledFill: =RGBA(241, 244, 249, 1)
-        Fill: =RGBA(102, 182, 227, 0.2)
-        Height: =400
+        Fill: =RGBA(102, 182, 227, 0.9)
+        Height: =100
         HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -20%)
         OnSelect: =Navigate(User_Page)
         PressedFill: =RGBA(102, 182, 227, 0.2)
         Size: =40
         Text: ="User"
-        Width: =300
-        X: =251
-        Y: =288
+        Width: =350
+        X: =930
+        Y: =405
         ZIndex: =5
 
     MainPage_Admin_Button As button:
         BorderColor: =RGBA(102, 182, 227, 0.7)
         BorderThickness: =9
         DisabledFill: =RGBA(241, 244, 249, 1)
-        Fill: =RGBA(102, 182, 227, 0.2)
-        Height: =400
+        Fill: =RGBA(102, 182, 227, 0.9)
+        Height: =100
         HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -20%)
         OnSelect: =Navigate(Admin_PWD_Page)
         PressedFill: =RGBA(102, 182, 227, 0.2)
         Size: =40
         Text: ="Admin"
-        Width: =300
-        X: =830
-        Y: =288
+        Width: =350
+        X: =930
+        Y: =563
         ZIndex: =6
 
