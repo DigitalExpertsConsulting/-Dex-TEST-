@@ -254,7 +254,7 @@ Admin_License_Page As screen:
         Y: =245
         ZIndex: =8
 
-    Icon2 As icon.Reload:
+    License_Refresh As icon.Reload:
         Color: =RGBA(255, 255, 255, 1)
         Icon: =Icon.Reload
         OnSelect: =Refresh(ability_license)
