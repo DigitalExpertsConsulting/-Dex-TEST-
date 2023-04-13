@@ -205,9 +205,9 @@ Admin_Profile_Page As screen:
     Button12_3 As button:
         OnSelect: |-
             =ability_admin_update_profileform.Run(
-                "",
-                "",
-                "",
+                "a",
+                "a",
+                "a",
                 First(Upload_Profile_DataCardValue_1.Attachments).Name,
                 First(Upload_Profile_DataCardValue_1.Attachments).Value
             )
