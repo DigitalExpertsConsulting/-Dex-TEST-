@@ -30,7 +30,7 @@ Admin_PWD_Page As screen:
         Y: =342
         ZIndex: =3
 
-    UserPage_Back_1 As icon.BackArrow:
+    Admin_Login_Back As icon.BackArrow:
         Color: =RGBA(102, 182, 227, 0.7)
         Height: =110
         Icon: =Icon.BackArrow
@@ -40,7 +40,7 @@ Admin_PWD_Page As screen:
         Y: =40
         ZIndex: =4
 
-    MainPage_Title_1 As label:
+    Admin_Login_Title As label:
         Align: =Align.Center
         BorderColor: =RGBA(102, 182, 227, 0.7)
         Color: =RGBA(255, 255, 255, 1)
