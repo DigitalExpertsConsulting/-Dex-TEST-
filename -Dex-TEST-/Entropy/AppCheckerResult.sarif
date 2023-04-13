@@ -3834,6 +3834,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Admin_Profile_Page.Upload_Profile_DataCardValue_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Admin_Profile_Page.Upload_Profile_DataCardValue_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Admin_Profile_Page",
+                "type": "Admin_Profile_Page.Upload_Profile_DataCardValue_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.varUploadProfile"
                 }
               ],
@@ -4285,6 +4315,35 @@
               "properties": {
                 "module": "User_Profile_Page",
                 "type": "User_Profile_Page.Upload_Profile_DataCardValue"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Low"
+          },
+          "ruleId": "app-NumericPropertySizeWarning",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Admin_Profile_Page.Upload_Profile_DataCardValue_1"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Admin_Profile_Page.Upload_Profile_DataCardValue_1",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "module": "Admin_Profile_Page",
+                "type": "Admin_Profile_Page.Upload_Profile_DataCardValue_1"
               }
             }
           ],

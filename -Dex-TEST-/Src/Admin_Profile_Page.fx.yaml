@@ -1,4 +1,12 @@
 Admin_Profile_Page As screen:
+    BackgroundImage: =MainPagePicture
+
+    Rectangle1 As rectangle:
+        BorderThickness: =3
+        Height: =56
+        Width: =1366
+        Y: =265
+        ZIndex: =1
 
     Label7_1 As label:
         BorderThickness: =3
@@ -6,28 +14,31 @@ Admin_Profile_Page As screen:
         Text: |-
             =/*"Selected Checkboxes: "&*/
             Concat(CheckboxCollection,Value & ",")
+        Visible: =false
         Width: =407
-        X: =63
-        Y: =198
-        ZIndex: =1
+        Y: =724
+        ZIndex: =2
 
     Button12_1 As button:
         OnSelect: =PPTALLDOWNLOAD.Run()
-        Text: ="전체 다운"
-        X: =162
-        Y: =258
-        ZIndex: =2
+        Text: |-
+            ="전체 다운로드
+            "
+        X: =1190
+        Y: =205
+        ZIndex: =3
 
     Gallery9_1 As gallery.galleryVertical:
+        BorderThickness: =3
         DelayItemLoading: =true
-        Height: =307
+        Height: =447
         Items: =ability_profile
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplateSize: =70
         Width: =1366
-        Y: =461
-        ZIndex: =3
+        Y: =321
+        ZIndex: =4
 
         Checkbox6_1 As checkbox:
             Default: =Checkbox10Value
@@ -40,34 +51,53 @@ Admin_Profile_Page As screen:
                 )
             Text: =ThisItem.'E-mail'
             Width: =43
-            X: =26
+            X: =54
             Y: =10
             ZIndex: =1
 
         Label20_1 As label:
+            Color: =RGBA(255, 255, 255, 1)
             OnSelect: =Select(Parent)
+            Size: =15
             Text: =ThisItem.Profile.FileName
             Width: =335
-            X: =310
-            Y: =10
+            X: =686
+            Y: =17
             ZIndex: =4
 
         Button13_1 As button:
             Height: =33
-            OnSelect: =PPTDownload.Run(Concat(CheckboxCollection,Value & ","))
-            Text: ="버튼"
-            X: =810
-            Y: =5
+            OnSelect: =PPTDownload.Run(Gallery9_1.Selected.'E-mail')
+            Text: ="다운로드"
+            X: =1108
+            Y: =20
             ZIndex: =5
 
         Label4 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =50
             OnSelect: =Select(Parent)
+            Size: =15
             Text: =ThisItem.Name
-            X: =69
-            Y: =15
+            Width: =102
+            X: =97
+            Y: =10
             ZIndex: =6
 
+        Label5 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =31
+            OnSelect: =Select(Parent)
+            Size: =15
+            Text: =ThisItem.'Created On'
+            Width: =311
+            X: =345
+            Y: =17
+            ZIndex: =7
+
     Checkbox9_1 As checkbox:
+        Color: =RGBA(255, 255, 255, 1)
         OnCheck: |-
             =UpdateContext({Checkbox10Value: true})
         OnSelect: |-
@@ -79,13 +109,96 @@ Admin_Profile_Page As screen:
         OnUncheck: |-
             =UpdateContext({Checkbox10Value: false})
         Text: ="전체"
-        X: =12
-        Y: =258
-        ZIndex: =4
+        X: =11
+        Y: =268
+        ZIndex: =5
 
     Label3 As label:
-        Text: ="E-mail"
-        X: =91
-        Y: =421
-        ZIndex: =5
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =52
+        Size: =19
+        Text: ="Name"
+        Width: =309
+        Y: =266
+        ZIndex: =6
+
+    Label3_1 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =52
+        Size: =20
+        Text: ="Profile"
+        Width: =332
+        X: =682
+        Y: =266
+        ZIndex: =7
+
+    Label3_2 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =52
+        Size: =20
+        Text: ="Download"
+        Width: =215
+        X: =1078
+        Y: =266
+        ZIndex: =8
+
+    UserPage_Title_1 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(102, 182, 227, 0.7)
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =186
+        Size: =40
+        Text: ="Admin Profile Page"
+        Width: =1366
+        ZIndex: =9
+
+    Label3_3 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =55
+        Size: =20
+        Text: ="수정한 날짜"
+        Width: =214
+        X: =367
+        Y: =265
+        ZIndex: =10
+
+    Button12_2 As button:
+        OnSelect: =PPTDownload.Run(Concat(CheckboxCollection,Value & ","))
+        Text: |-
+            ="선택 다운로드
+            "
+        X: =1003
+        Y: =205
+        ZIndex: =11
+
+    Upload_Profile_DataCardValue_1 As attachments:
+        AddAttachmentText: ="파일 업로드"
+        BorderColor: =
+        Color: =RGBA(255, 255, 255, 1)
+        DisplayMode: =
+        Fill: =RGBA(56, 96, 178, 0.4)
+        Height: =95
+        IsInDataCard: =true
+        Items: =
+        MaxAttachments: =1
+        MaxAttachmentSize: =100
+        MaxAttachmentsText: =""
+        NoAttachmentsText: =
+        PaddingBottom: =5
+        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+        PaddingRight: =5
+        PaddingTop: =5
+        Tooltip: =
+        Width: =456
+        Y: =150
+        ZIndex: =12
 
