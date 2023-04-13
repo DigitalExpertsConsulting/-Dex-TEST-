@@ -37,6 +37,7 @@ Admin_License_Page As screen:
         BorderStyle: =BorderStyle.Solid
         DisplayMode: =DisplayMode.Edit
         Fill: =RGBA(255, 255, 255, 0.7)
+        HeadingFill: =RGBA( 106, 170, 205, 1 )
         Height: =403
         Items: |
             =Search(ability_license,License_Search.Text,"cr778_name")
