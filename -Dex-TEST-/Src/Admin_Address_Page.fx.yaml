@@ -135,6 +135,8 @@ Admin_Address_Page As screen:
             ZIndex: =7
 
     AddressDownload_button As button:
+        BorderColor: =RGBA( 112, 128, 144, 0.7 )
+        BorderThickness: =5
         Height: =43
         OnSelect: |-
             =//Test_csh_Excelexport_dataverse_list.Run("")
