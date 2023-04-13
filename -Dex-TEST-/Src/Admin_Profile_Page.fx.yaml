@@ -187,14 +187,32 @@ Admin_Profile_Page As screen:
         ZIndex: =11
 
     Profile_Template_Upload As button:
-        OnSelect: |-
-            =ability_admin_update_profileform.Run(
+        OnSelect: |+
+            =ability_admin_upload_profile.Run(
+                User().Email,
+                User().Email,
+                User().Email,
+                First(Profile_Template_Upload_Card.Attachments).Name,
+                First(Profile_Template_Upload_Card.Attachments).Value,
+                "Admin",
+                User().Email,
+                "profile.pptx"
+            );
+            
+            /*
+            
+            ability_admin_update_profileform.Run(
                 User().Email,
                 User().Email,
                 User().Email,
                 First(Profile_Template_Upload_Card.Attachments).Name,
                 First(Profile_Template_Upload_Card.Attachments).Value
-            )
+            );
+            
+            */
+            
+            
+            
         Text: ="프로필양식 업데이트"
         Width: =208
         X: =489
