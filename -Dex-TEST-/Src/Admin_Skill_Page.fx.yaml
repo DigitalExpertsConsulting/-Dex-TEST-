@@ -137,6 +137,7 @@ Admin_Skill_Page As screen:
             ZIndex: =6
 
         "'Power Apps Canvas_열2' As dataTableColumn.complexOptionSetColumn":
+            AutoWidth: =false
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="Power Apps Canvas"
             FieldName: ="cr778_powerappscanvas"
@@ -145,12 +146,13 @@ Admin_Skill_Page As screen:
             LayoutHeight: =Parent.Height
             Order: =7
             Text: =ThisItem.'Power Apps Canvas'
-            Width: =100
+            Width: =195
             X: =0
             Y: =0
             ZIndex: =7
 
         "'Power Apps Model_열2' As dataTableColumn.complexOptionSetColumn":
+            AutoWidth: =false
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="Power Apps Model"
             FieldName: ="cr778_powerappsmodel"
@@ -159,7 +161,7 @@ Admin_Skill_Page As screen:
             LayoutHeight: =Parent.Height
             Order: =8
             Text: =ThisItem.'Power Apps Model'
-            Width: =100
+            Width: =196
             X: =0
             Y: =0
             ZIndex: =8
@@ -179,6 +181,7 @@ Admin_Skill_Page As screen:
             ZIndex: =9
 
         "'Power Automate Desktop_열2' As dataTableColumn.complexOptionSetColumn":
+            AutoWidth: =false
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="Power Automate Desktop"
             FieldName: ="cr778_powerautomatedesktop"
@@ -187,7 +190,7 @@ Admin_Skill_Page As screen:
             LayoutHeight: =Parent.Height
             Order: =10
             Text: =ThisItem.'Power Automate Desktop'
-            Width: =100
+            Width: =248
             X: =0
             Y: =0
             ZIndex: =10
@@ -221,6 +224,7 @@ Admin_Skill_Page As screen:
             ZIndex: =12
 
         "'Power Page JAVA/CSS_열2' As dataTableColumn.complexOptionSetColumn":
+            AutoWidth: =false
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="Power Page JAVA/CSS"
             FieldName: ="cr778_powerpagejavacss"
@@ -229,12 +233,13 @@ Admin_Skill_Page As screen:
             LayoutHeight: =Parent.Height
             Order: =13
             Text: =ThisItem.'Power Page JAVA/CSS'
-            Width: =100
+            Width: =190
             X: =0
             Y: =0
             ZIndex: =13
 
         "'Power Virtual Agents_열2' As dataTableColumn.complexOptionSetColumn":
+            AutoWidth: =false
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="Power Virtual Agents"
             FieldName: ="cr778_powervirtualagents"
@@ -243,7 +248,7 @@ Admin_Skill_Page As screen:
             LayoutHeight: =Parent.Height
             Order: =14
             Text: =ThisItem.'Power Virtual Agents'
-            Width: =100
+            Width: =200
             X: =0
             Y: =0
             ZIndex: =14

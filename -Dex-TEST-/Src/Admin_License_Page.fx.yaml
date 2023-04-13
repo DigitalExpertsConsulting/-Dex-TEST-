@@ -59,6 +59,7 @@ Admin_License_Page As screen:
             ZIndex: =1
 
         "'E-mail_열4' As dataTableColumn.textualColumn":
+            AutoWidth: =false
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="E-mail"
             FieldName: ="cr778_email"
@@ -67,8 +68,8 @@ Admin_License_Page As screen:
             LayoutHeight: =Parent.Height
             Order: =2
             Text: =ThisItem.'E-mail'
-            Width: =100
-            X: =0
+            Width: =221
+            X: =148
             Y: =0
             ZIndex: =2
 
@@ -79,7 +80,7 @@ Admin_License_Page As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
-            Order: =3
+            Order: =9
             Text: =ThisItem.'PL-200'
             Width: =100
             X: =0
@@ -93,7 +94,7 @@ Admin_License_Page As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
-            Order: =4
+            Order: =10
             Text: =ThisItem.'PL-300'
             Width: =100
             X: =0
@@ -107,7 +108,7 @@ Admin_License_Page As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
-            Order: =5
+            Order: =11
             Text: =ThisItem.'PL-400'
             Width: =100
             X: =1000
@@ -121,7 +122,7 @@ Admin_License_Page As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
-            Order: =6
+            Order: =12
             Text: =ThisItem.'PL-600'
             Width: =100
             X: =0
@@ -135,7 +136,7 @@ Admin_License_Page As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
-            Order: =7
+            Order: =13
             Text: =ThisItem.'PL-900'
             Width: =100
             X: =0
@@ -149,7 +150,7 @@ Admin_License_Page As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
-            Order: =8
+            Order: =5
             Text: =ThisItem.'MS-100'
             Width: =100
             X: =0
@@ -163,7 +164,7 @@ Admin_License_Page As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
-            Order: =9
+            Order: =6
             Text: =ThisItem.'MS-101'
             Width: =100
             X: =0
@@ -177,7 +178,7 @@ Admin_License_Page As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
-            Order: =10
+            Order: =7
             Text: =ThisItem.'MS-700'
             Width: =100
             X: =0
@@ -191,7 +192,7 @@ Admin_License_Page As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
-            Order: =11
+            Order: =8
             Text: =ThisItem.'MS-900'
             Width: =100
             X: =0
@@ -205,10 +206,10 @@ Admin_License_Page As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
-            Order: =12
+            Order: =3
             Text: =ThisItem.'AZ-104'
             Width: =100
-            X: =0
+            X: =1000
             Y: =0
             ZIndex: =12
 
@@ -219,7 +220,7 @@ Admin_License_Page As screen:
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
-            Order: =13
+            Order: =4
             Text: =ThisItem.'AZ-305'
             Width: =100
             X: =0
