@@ -1,7 +1,7 @@
 Admin_Skill_Page As screen:
     BackgroundImage: =MainPagePicture
 
-    License_Title_3 As label:
+    Admin_Skill_Title As label:
         Align: =Align.Center
         BorderColor: =RGBA(102, 182, 227, 0.7)
         Color: =RGBA(255, 255, 255, 1)
@@ -12,17 +12,17 @@ Admin_Skill_Page As screen:
         Width: =1366
         ZIndex: =1
 
-    Profile_Back_3 As icon.BackArrow:
+    Admin_Skill_Back As icon.BackArrow:
         Color: =RGBA(102, 182, 227, 0.7)
         Height: =110
         Icon: =Icon.BackArrow
-        OnSelect: =Navigate(User_Page)
+        OnSelect: =Navigate(Admin_Page)
         Width: =110
         X: =110
         Y: =40
         ZIndex: =2
 
-    License_Home_3 As icon.Home:
+    Admin_Skill_Home As icon.Home:
         Color: =RGBA(102, 182, 227, 0.7)
         Height: =110
         Icon: =Icon.Home
@@ -32,7 +32,7 @@ Admin_Skill_Page As screen:
         Y: =40
         ZIndex: =3
 
-    TextInput1 As text:
+    Skill_Search As text:
         Default: ="텍스트 입력"
         Height: =36
         Width: =230
@@ -40,12 +40,12 @@ Admin_Skill_Page As screen:
         Y: =167
         ZIndex: =4
 
-    DataTable3 As dataTable.datatable:
+    Admin_Skill_DataTable As dataTable.datatable:
         BorderStyle: =BorderStyle.Solid
         DisplayMode: =DisplayMode.Edit
         Fill: =RGBA(255,255,255, 0.7)
         Height: =520
-        Items: =Search(ability_skill,TextInput1.Text,"cr778_name")
+        Items: =Search(ability_skill,Skill_Search.Text,"cr778_name")
         Width: =1268
         X: =66
         Y: =219

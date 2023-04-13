@@ -3144,19 +3144,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Admin_Address_Page.Profile_Back_2.AccessibleLabel"
+                  "fullyQualifiedName": "Admin_Address_Page.Admin_Address_Back.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Admin_Address_Page.Profile_Back_2.AccessibleLabel",
+                  "fullyQualifiedName": "Admin_Address_Page.Admin_Address_Back.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Admin_Address_Page",
-                "type": "Admin_Address_Page.Profile_Back_2"
+                "type": "Admin_Address_Page.Admin_Address_Back"
               }
             }
           ],
@@ -3174,19 +3174,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Admin_Address_Page.Profile_Back_2.TabIndex"
+                  "fullyQualifiedName": "Admin_Address_Page.Admin_Address_Back.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Admin_Address_Page.Profile_Back_2.TabIndex",
+                  "fullyQualifiedName": "Admin_Address_Page.Admin_Address_Back.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Admin_Address_Page",
-                "type": "Admin_Address_Page.Profile_Back_2"
+                "type": "Admin_Address_Page.Admin_Address_Back"
               }
             }
           ],
@@ -3204,19 +3204,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Admin_Address_Page.License_Home_2.AccessibleLabel"
+                  "fullyQualifiedName": "Admin_Address_Page.Admin_Address_Home.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Admin_Address_Page.License_Home_2.AccessibleLabel",
+                  "fullyQualifiedName": "Admin_Address_Page.Admin_Address_Home.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Admin_Address_Page",
-                "type": "Admin_Address_Page.License_Home_2"
+                "type": "Admin_Address_Page.Admin_Address_Home"
               }
             }
           ],
@@ -3234,19 +3234,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Admin_Address_Page.License_Home_2.TabIndex"
+                  "fullyQualifiedName": "Admin_Address_Page.Admin_Address_Home.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Admin_Address_Page.License_Home_2.TabIndex",
+                  "fullyQualifiedName": "Admin_Address_Page.Admin_Address_Home.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Admin_Address_Page",
-                "type": "Admin_Address_Page.License_Home_2"
+                "type": "Admin_Address_Page.Admin_Address_Home"
               }
             }
           ],
@@ -3264,19 +3264,49 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Admin_Address_Page.License_send_3.AccessibleLabel"
+                  "fullyQualifiedName": "Admin_Profile_Page.Admin_Profile_Back.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Admin_Address_Page.License_send_3.AccessibleLabel",
+                  "fullyQualifiedName": "Admin_Profile_Page.Admin_Profile_Back.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Admin_Profile_Page",
+                "type": "Admin_Profile_Page.Admin_Profile_Back"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Admin_Profile_Page.Admin_Profile_Back.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Admin_Profile_Page.Admin_Profile_Back.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Admin_Address_Page",
-                "type": "Admin_Address_Page.License_send_3"
+                "module": "Admin_Profile_Page",
+                "type": "Admin_Profile_Page.Admin_Profile_Back"
               }
             }
           ],
@@ -3294,49 +3324,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Admin_Address_Page.License_send_3.TabIndex"
+                  "fullyQualifiedName": "Admin_License_Page.Admin_License_Back.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Admin_Address_Page.License_send_3.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Admin_Address_Page",
-                "type": "Admin_Address_Page.License_send_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Admin_License_Page.Profile_Back_4.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Admin_License_Page.Profile_Back_4.AccessibleLabel",
+                  "fullyQualifiedName": "Admin_License_Page.Admin_License_Back.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Admin_License_Page",
-                "type": "Admin_License_Page.Profile_Back_4"
+                "type": "Admin_License_Page.Admin_License_Back"
               }
             }
           ],
@@ -3354,19 +3354,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Admin_License_Page.Profile_Back_4.TabIndex"
+                  "fullyQualifiedName": "Admin_License_Page.Admin_License_Back.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Admin_License_Page.Profile_Back_4.TabIndex",
+                  "fullyQualifiedName": "Admin_License_Page.Admin_License_Back.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Admin_License_Page",
-                "type": "Admin_License_Page.Profile_Back_4"
+                "type": "Admin_License_Page.Admin_License_Back"
               }
             }
           ],
@@ -3384,19 +3384,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Admin_License_Page.License_Home_4.AccessibleLabel"
+                  "fullyQualifiedName": "Admin_License_Page.Admin_License_Home.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Admin_License_Page.License_Home_4.AccessibleLabel",
+                  "fullyQualifiedName": "Admin_License_Page.Admin_License_Home.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Admin_License_Page",
-                "type": "Admin_License_Page.License_Home_4"
+                "type": "Admin_License_Page.Admin_License_Home"
               }
             }
           ],
@@ -3414,19 +3414,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Admin_License_Page.License_Home_4.TabIndex"
+                  "fullyQualifiedName": "Admin_License_Page.Admin_License_Home.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Admin_License_Page.License_Home_4.TabIndex",
+                  "fullyQualifiedName": "Admin_License_Page.Admin_License_Home.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Admin_License_Page",
-                "type": "Admin_License_Page.License_Home_4"
+                "type": "Admin_License_Page.Admin_License_Home"
               }
             }
           ],
@@ -3444,19 +3444,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Admin_License_Page.TextInput1_1.AccessibleLabel"
+                  "fullyQualifiedName": "Admin_License_Page.License_Search.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Admin_License_Page.TextInput1_1.AccessibleLabel",
+                  "fullyQualifiedName": "Admin_License_Page.License_Search.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Admin_License_Page",
-                "type": "Admin_License_Page.TextInput1_1"
+                "type": "Admin_License_Page.License_Search"
               }
             }
           ],
@@ -3534,19 +3534,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Admin_Profile_Page.Upload_Profile_DataCardValue_1.AccessibleLabel"
+                  "fullyQualifiedName": "Admin_Profile_Page.Profile_Template_Upload_Card.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Admin_Profile_Page.Upload_Profile_DataCardValue_1.AccessibleLabel",
+                  "fullyQualifiedName": "Admin_Profile_Page.Profile_Template_Upload_Card.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Admin_Profile_Page",
-                "type": "Admin_Profile_Page.Upload_Profile_DataCardValue_1"
+                "type": "Admin_Profile_Page.Profile_Template_Upload_Card"
               }
             }
           ],
@@ -3564,19 +3564,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Admin_Profile_Page.Gallery9_1.AccessibleLabel"
+                  "fullyQualifiedName": "Admin_Profile_Page.Admin_Profile_Gallery.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Admin_Profile_Page.Gallery9_1.AccessibleLabel",
+                  "fullyQualifiedName": "Admin_Profile_Page.Admin_Profile_Gallery.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Admin_Profile_Page",
-                "type": "Admin_Profile_Page.Gallery9_1"
+                "type": "Admin_Profile_Page.Admin_Profile_Gallery"
               }
             }
           ],
@@ -3594,19 +3594,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Admin_Profile_Page.Gallery9_1.TabIndex"
+                  "fullyQualifiedName": "Admin_Profile_Page.Admin_Profile_Gallery.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Admin_Profile_Page.Gallery9_1.TabIndex",
+                  "fullyQualifiedName": "Admin_Profile_Page.Admin_Profile_Gallery.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Admin_Profile_Page",
-                "type": "Admin_Profile_Page.Gallery9_1"
+                "type": "Admin_Profile_Page.Admin_Profile_Gallery"
               }
             }
           ],
@@ -3654,19 +3654,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Admin_Skill_Page.Profile_Back_3.AccessibleLabel"
+                  "fullyQualifiedName": "Admin_Skill_Page.Admin_Skill_Back.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Admin_Skill_Page.Profile_Back_3.AccessibleLabel",
+                  "fullyQualifiedName": "Admin_Skill_Page.Admin_Skill_Back.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Admin_Skill_Page",
-                "type": "Admin_Skill_Page.Profile_Back_3"
+                "type": "Admin_Skill_Page.Admin_Skill_Back"
               }
             }
           ],
@@ -3684,19 +3684,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Admin_Skill_Page.Profile_Back_3.TabIndex"
+                  "fullyQualifiedName": "Admin_Skill_Page.Admin_Skill_Back.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Admin_Skill_Page.Profile_Back_3.TabIndex",
+                  "fullyQualifiedName": "Admin_Skill_Page.Admin_Skill_Back.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Admin_Skill_Page",
-                "type": "Admin_Skill_Page.Profile_Back_3"
+                "type": "Admin_Skill_Page.Admin_Skill_Back"
               }
             }
           ],
@@ -3714,19 +3714,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Admin_Skill_Page.License_Home_3.AccessibleLabel"
+                  "fullyQualifiedName": "Admin_Skill_Page.Admin_Skill_Home.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Admin_Skill_Page.License_Home_3.AccessibleLabel",
+                  "fullyQualifiedName": "Admin_Skill_Page.Admin_Skill_Home.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Admin_Skill_Page",
-                "type": "Admin_Skill_Page.License_Home_3"
+                "type": "Admin_Skill_Page.Admin_Skill_Home"
               }
             }
           ],
@@ -3744,19 +3744,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Admin_Skill_Page.License_Home_3.TabIndex"
+                  "fullyQualifiedName": "Admin_Skill_Page.Admin_Skill_Home.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Admin_Skill_Page.License_Home_3.TabIndex",
+                  "fullyQualifiedName": "Admin_Skill_Page.Admin_Skill_Home.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Admin_Skill_Page",
-                "type": "Admin_Skill_Page.License_Home_3"
+                "type": "Admin_Skill_Page.Admin_Skill_Home"
               }
             }
           ],
@@ -3774,19 +3774,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Admin_Skill_Page.TextInput1.AccessibleLabel"
+                  "fullyQualifiedName": "Admin_Skill_Page.Skill_Search.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Admin_Skill_Page.TextInput1.AccessibleLabel",
+                  "fullyQualifiedName": "Admin_Skill_Page.Skill_Search.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Admin_Skill_Page",
-                "type": "Admin_Skill_Page.TextInput1"
+                "type": "Admin_Skill_Page.Skill_Search"
               }
             }
           ],
@@ -3798,6 +3798,66 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Admin_Profile_Page.Admin_Profile_Home.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Admin_Profile_Page.Admin_Profile_Home.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Admin_Profile_Page",
+                "type": "Admin_Profile_Page.Admin_Profile_Home"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Admin_Profile_Page.Admin_Profile_Home.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Admin_Profile_Page.Admin_Profile_Home.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Admin_Profile_Page",
+                "type": "Admin_Profile_Page.Admin_Profile_Home"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -4272,18 +4332,18 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Admin_Profile_Page.Upload_Profile_DataCardValue_1"
+                  "fullyQualifiedName": "Admin_Profile_Page.Profile_Template_Upload_Card"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Admin_Profile_Page.Upload_Profile_DataCardValue_1",
+                  "fullyQualifiedName": "Admin_Profile_Page.Profile_Template_Upload_Card",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "module": "Admin_Profile_Page",
-                "type": "Admin_Profile_Page.Upload_Profile_DataCardValue_1"
+                "type": "Admin_Profile_Page.Profile_Template_Upload_Card"
               }
             }
           ],

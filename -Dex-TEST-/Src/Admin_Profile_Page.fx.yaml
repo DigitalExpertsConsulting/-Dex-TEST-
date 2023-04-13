@@ -1,14 +1,14 @@
 Admin_Profile_Page As screen:
     BackgroundImage: =MainPagePicture
 
-    Rectangle1 As rectangle:
+    Title_Color_Box As rectangle:
         BorderThickness: =3
         Height: =56
         Width: =1366
         Y: =265
         ZIndex: =1
 
-    Label7_1 As label:
+    ConcatBox As label:
         BorderThickness: =3
         Height: =44
         Text: |-
@@ -19,7 +19,7 @@ Admin_Profile_Page As screen:
         Y: =724
         ZIndex: =2
 
-    Button12_1 As button:
+    AllDownload_Button As button:
         OnSelect: =PPTALLDOWNLOAD.Run()
         Text: |-
             ="전체 다운로드
@@ -28,7 +28,7 @@ Admin_Profile_Page As screen:
         Y: =205
         ZIndex: =3
 
-    Gallery9_1 As gallery.galleryVertical:
+    Admin_Profile_Gallery As gallery.galleryVertical:
         BorderThickness: =3
         DelayItemLoading: =true
         Height: =447
@@ -67,7 +67,7 @@ Admin_Profile_Page As screen:
 
         Button13_1 As button:
             Height: =33
-            OnSelect: =PPTDownload.Run(Gallery9_1.Selected.'E-mail')
+            OnSelect: =PPTDownload.Run(Admin_Profile_Gallery.Selected.'E-mail')
             Text: ="다운로드"
             X: =1108
             Y: =20
@@ -96,15 +96,15 @@ Admin_Profile_Page As screen:
             Y: =17
             ZIndex: =7
 
-    Checkbox9_1 As checkbox:
+    Download_Checkbox As checkbox:
         Color: =RGBA(255, 255, 255, 1)
         OnCheck: |-
             =UpdateContext({Checkbox10Value: true})
         OnSelect: |-
             =If(
-                Checkbox9_1.Value = true,
-                Collect(CheckboxCollection, Checkbox9_1.Text),
-                Remove(CheckboxCollection, LookUp(CheckboxCollection, Value = Checkbox9_1.Text))
+                Download_Checkbox.Value = true,
+                Collect(CheckboxCollection, Download_Checkbox.Text),
+                Remove(CheckboxCollection, LookUp(CheckboxCollection, Value = Download_Checkbox.Text))
             )
         OnUncheck: |-
             =UpdateContext({Checkbox10Value: false})
@@ -113,7 +113,7 @@ Admin_Profile_Page As screen:
         Y: =268
         ZIndex: =5
 
-    Label3 As label:
+    User_Name As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
@@ -124,7 +124,7 @@ Admin_Profile_Page As screen:
         Y: =266
         ZIndex: =6
 
-    Label3_1 As label:
+    Profile_Name As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
@@ -136,7 +136,7 @@ Admin_Profile_Page As screen:
         Y: =266
         ZIndex: =7
 
-    Label3_2 As label:
+    Profile_Download As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
@@ -148,7 +148,7 @@ Admin_Profile_Page As screen:
         Y: =266
         ZIndex: =8
 
-    UserPage_Title_1 As label:
+    Admin_Profile_Title As label:
         Align: =Align.Center
         BorderColor: =RGBA(102, 182, 227, 0.7)
         Color: =RGBA(255, 255, 255, 1)
@@ -159,7 +159,7 @@ Admin_Profile_Page As screen:
         Width: =1366
         ZIndex: =9
 
-    Label3_3 As label:
+    Update_Date As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
@@ -171,7 +171,7 @@ Admin_Profile_Page As screen:
         Y: =265
         ZIndex: =10
 
-    Button12_2 As button:
+    SelectDownload_Button As button:
         OnSelect: =PPTDownload.Run(Concat(CheckboxCollection,Value & ","))
         Text: |-
             ="선택 다운로드
@@ -180,7 +180,7 @@ Admin_Profile_Page As screen:
         Y: =205
         ZIndex: =11
 
-    Upload_Profile_DataCardValue_1 As attachments:
+    Profile_Template_Upload_Card As attachments:
         AddAttachmentText: ="파일 업로드"
         BorderColor: =
         Color: =RGBA(255, 255, 255, 1)
@@ -202,18 +202,38 @@ Admin_Profile_Page As screen:
         Y: =150
         ZIndex: =12
 
-    Button12_3 As button:
+    Profile_Template_Upload As button:
         OnSelect: |-
             =ability_admin_update_profileform.Run(
                 "a",
                 "a",
                 "a",
-                First(Upload_Profile_DataCardValue_1.Attachments).Name,
-                First(Upload_Profile_DataCardValue_1.Attachments).Value
+                First(Profile_Template_Upload_Card.Attachments).Name,
+                First(Profile_Template_Upload_Card.Attachments).Value
             )
         Text: ="프로필양식 업데이트"
         Width: =208
         X: =489
         Y: =205
         ZIndex: =13
+
+    Admin_Profile_Back As icon.BackArrow:
+        Color: =RGBA(102, 182, 227, 0.7)
+        Height: =110
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate(Admin_Page)
+        Width: =110
+        X: =110
+        Y: =40
+        ZIndex: =14
+
+    Admin_Profile_Home As icon.Home:
+        Color: =RGBA(102, 182, 227, 0.7)
+        Height: =110
+        Icon: =Icon.Home
+        OnSelect: =Navigate(Main_Page)
+        Width: =110
+        X: =1120
+        Y: =40
+        ZIndex: =15
 
