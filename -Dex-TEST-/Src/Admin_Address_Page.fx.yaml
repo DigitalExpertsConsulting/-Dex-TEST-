@@ -1,5 +1,6 @@
 Admin_Address_Page As screen:
-    BackgroundImage: =MainPagePicture
+    BackgroundImage: =ere
+    ImagePosition: =ImagePosition.Stretch
 
     Admin_Address_Title As label:
         Align: =Align.Center
@@ -14,20 +15,20 @@ Admin_Address_Page As screen:
 
     Admin_Address_Back As icon.BackArrow:
         Color: =RGBA(102, 182, 227, 0.7)
-        Height: =110
+        Height: =130
         Icon: =Icon.BackArrow
         OnSelect: =Navigate(Admin_Page)
-        Width: =110
+        Width: =130
         X: =110
         Y: =40
         ZIndex: =2
 
     Admin_Address_Home As icon.Home:
         Color: =RGBA(102, 182, 227, 0.7)
-        Height: =110
+        Height: =130
         Icon: =Icon.Home
         OnSelect: =Navigate(Main_Page)
-        Width: =110
+        Width: =130
         X: =1120
         Y: =40
         ZIndex: =3
@@ -36,14 +37,15 @@ Admin_Address_Page As screen:
         BorderColor: =RGBA(0, 0, 0, 1)
         BorderStyle: =BorderStyle.Solid
         BorderThickness: =1
+        Color: =RGBA( 0, 0, 0, 1 )
         DisplayMode: =DisplayMode.Edit
         Fill: =RGBA(241, 244, 249, 1)
-        Height: =409
+        Height: =420
         Items: =ability_address
         SelectedFill: =RGBA(241, 244, 249, 1)
-        Width: =1024
-        X: =160
-        Y: =168
+        Width: =1047
+        X: =159
+        Y: =302
         ZIndex: =5
 
         Name_열1 As dataTableColumn.textualColumn:
@@ -136,8 +138,8 @@ Admin_Address_Page As screen:
             =//Test_csh_Excelexport_dataverse_list.Run("")
             ExcelDownload.Run("")
         Text: ="주소 Table 다운"
-        Width: =199
-        X: =1016
-        Y: =635
+        Width: =186
+        X: =1020
+        Y: =218
         ZIndex: =6
 

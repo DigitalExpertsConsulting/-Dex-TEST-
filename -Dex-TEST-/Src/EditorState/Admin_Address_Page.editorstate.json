@@ -115,7 +115,14 @@
         "PressedColor",
         "HoverColor",
         "DisplayMode",
-        "Fill",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "RGBA(56, 96, 178, 1)",
+          "InvariantPropertyName": "Fill",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DisabledFill",
         "PressedFill",
         "HoverFill",
@@ -157,7 +164,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "AddressDownload_button",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -562,7 +569,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "Color",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "RGBA(0, 0, 0, 1)",
+          "InvariantPropertyName": "Color",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DisabledColor",
         {
           "AFDDataSourceName": "",
@@ -638,7 +652,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Admin_Address_DataTable",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1011,7 +1025,14 @@
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Fill",
-        "ImagePosition",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "ImagePosition",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Height",
         "Width",
         "Size",

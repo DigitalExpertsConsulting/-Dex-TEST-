@@ -1,55 +1,57 @@
 Admin_Skill_Page As screen:
-    BackgroundImage: =MainPagePicture
+    BackgroundImage: =ere
+    ImagePosition: =ImagePosition.Stretch
 
     Admin_Skill_Title As label:
         Align: =Align.Center
         BorderColor: =RGBA(102, 182, 227, 0.7)
         Color: =RGBA(255, 255, 255, 1)
-        FontWeight: =FontWeight.Semibold
+        FontWeight: =FontWeight.Bold
         Height: =186
-        Size: =40
+        Size: =50
         Text: ="Admin Skill Page"
         Width: =1366
-        ZIndex: =1
-
-    Admin_Skill_Back As icon.BackArrow:
-        Color: =RGBA(102, 182, 227, 0.7)
-        Height: =110
-        Icon: =Icon.BackArrow
-        OnSelect: =Navigate(Admin_Page)
-        Width: =110
-        X: =110
-        Y: =40
         ZIndex: =2
 
-    Admin_Skill_Home As icon.Home:
-        Color: =RGBA(102, 182, 227, 0.7)
-        Height: =110
-        Icon: =Icon.Home
-        OnSelect: =Navigate(Main_Page)
-        Width: =110
-        X: =1120
+    Admin_Skill_Back As icon.BackArrow:
+        Color: =RGBA( 106, 170, 205, 1 )
+        Height: =130
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate(Admin_Page)
+        Width: =130
+        X: =110
         Y: =40
         ZIndex: =3
+
+    Admin_Skill_Home As icon.Home:
+        Color: =RGBA( 106, 170, 205, 1 )
+        Height: =130
+        Icon: =Icon.Home
+        OnSelect: =Navigate(Main_Page)
+        Width: =130
+        X: =1120
+        Y: =40
+        ZIndex: =4
 
     Skill_Search As text:
         Default: =""
         Height: =36
+        HintText: ="검색"
         Width: =230
-        X: =110
-        Y: =167
-        ZIndex: =4
+        X: =1060
+        Y: =219
+        ZIndex: =5
 
     Admin_Skill_DataTable As dataTable.datatable:
         BorderStyle: =BorderStyle.Solid
         DisplayMode: =DisplayMode.Edit
         Fill: =RGBA(255, 255, 255, 0.7)
-        Height: =500
+        Height: =474
         Items: =Search(ability_skill,Skill_Search.Text,"cr778_name")
-        Width: =1193
+        Width: =1199
         X: =106
-        Y: =243
-        ZIndex: =7
+        Y: =267
+        ZIndex: =6
 
         Name_열6 As dataTableColumn.textualColumn:
             DisplayMode: =DisplayMode.Edit
