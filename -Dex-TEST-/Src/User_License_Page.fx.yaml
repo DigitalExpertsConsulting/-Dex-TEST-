@@ -728,14 +728,14 @@ User_License_Page As screen:
                         'PL-600':
                         If(
                             IsBlank(
-                                'PL-200_DataCard'.Update
+                                'PL-600_DataCard'.Update
                             ),
                             LookUp(
                                 ability_license,
                                 'E-mail' = 'E-mail_License_DataCard'.Update,
                                 'PL-600'
                             ),
-                            'PL-200_DataCard'.Update
+                            'PL-600_DataCard'.Update
                         ),
                         'PL-900':
                         If(
