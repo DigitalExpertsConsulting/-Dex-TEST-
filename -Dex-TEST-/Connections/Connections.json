@@ -184,6 +184,47 @@
     "dependents": [],
     "id": "55455348-58c4-4e2d-8196-be1b9743210c"
   },
+  "7d548686-d5a9-4cee-8247-87313587bd0f": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1615/1.0.1615.3163/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "9571b5ea-a429-41b8-b65b-dee168d7202a": {
+          "value": "shared_commondataserviceforapps"
+        },
+        "ab5b9c24-5c27-42f2-912d-451e96a6d6e0": {
+          "value": "shared_office365"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "6970ac8c-4222-47da-b10f-0851003285d4"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_commondataserviceforapps": {
+          "value": "9571b5ea-a429-41b8-b65b-dee168d7202a"
+        },
+        "shared_office365": {
+          "value": "ab5b9c24-5c27-42f2-912d-451e96a6d6e0"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "6970ac8c-4222-47da-b10f-0851003285d4"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "ability_admin_update_profileform"
+    ],
+    "dependencies": {
+      "shared_commondataserviceforapps": "9571b5ea-a429-41b8-b65b-dee168d7202a",
+      "shared_office365": "ab5b9c24-5c27-42f2-912d-451e96a6d6e0"
+    },
+    "dependents": [],
+    "id": "7d548686-d5a9-4cee-8247-87313587bd0f"
+  },
   "9571b5ea-a429-41b8-b65b-dee168d7202a": {
     "connectionRef": {
       "displayName": "Microsoft Dataverse",
