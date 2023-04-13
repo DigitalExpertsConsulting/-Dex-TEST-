@@ -12,7 +12,7 @@ Admin_PWD_Page As screen:
         OnSelect: |
             =If(
                 PW_TextInput.Text="1234",
-                PW_TextInput.Text = "";
+                PW_TextInput.Clear;
                 Navigate(Admin_Page),
                 Notify("틀렸습니다.")
             );
@@ -22,7 +22,7 @@ Admin_PWD_Page As screen:
         ZIndex: =2
 
     PW_C_Button As button:
-        OnSelect: =Back()
+        OnSelect: =PW_TextInput.Clear;
         Text: ="취소"
         X: =877
         Y: =342
