@@ -159,13 +159,13 @@ Admin_Profile_Page As screen:
     SelectDownload_Button As button:
         OnSelect: |-
             =If(
-                IsEmpty(ConcatBox.Text),
+                !IsBlank(ConcatBox.Text),
                 PPTDownload.Run(Admin_Profile_Gallery.Selected.'E-mail')
             )
         Text: |-
             ="선택 다운로드
             "
-        X: =1003
+        X: =1002
         Y: =205
         ZIndex: =10
 
