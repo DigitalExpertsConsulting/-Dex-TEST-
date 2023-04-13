@@ -10,7 +10,7 @@ Admin_PWD_Page As screen:
 
     PW_S_Button As button:
         OnSelect: |-
-            =PW_TextInput.Clear;
+            =Reset(PW_TextInput);
             If(
                 PW_TextInput.Text="1234",
                 Navigate(Admin_Page),
@@ -22,7 +22,7 @@ Admin_PWD_Page As screen:
         ZIndex: =2
 
     PW_C_Button As button:
-        OnSelect: =PW_TextInput.Text = "";
+        OnSelect: =Reset(PW_TextInput);
         Text: ="취소"
         X: =877
         Y: =342
