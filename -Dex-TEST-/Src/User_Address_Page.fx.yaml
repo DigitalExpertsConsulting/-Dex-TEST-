@@ -1,5 +1,5 @@
 User_Address_Page As screen:
-    BackgroundImage: =MainPagePicture
+    BackgroundImage: =ere
     ImagePosition: =ImagePosition.Fill
 
     Address_Title As label:
@@ -13,72 +13,24 @@ User_Address_Page As screen:
         Width: =1366
         ZIndex: =1
 
-    Address_Send As icon.Send:
-        Color: =RGBA(102, 182, 227, 0.7)
-        Height: =110
-        Icon: =Icon.Send
-        OnSelect: |-
-            =If(
-                IsEmpty(
-                    Search(
-                        ability_address,
-                        varUser.Email,
-                        "cr778_email"
-                    )
-                ),
-                SubmitForm(Address_Input);
-                NewForm(Address_Input);
-                ResetForm(Address_Input);
-                ,
-                Patch(
-                    ability_address,
-                    LookUp(
-                        ability_address,
-                        'E-mail' = 'Address_E-mail_DataCard'.Update
-                    ),
-                    {
-                        Address: Address_DataCardValue.Text,
-                        Zipcode: Zipcode_DataCardValue.Text,
-                        Gift_Address: Gift_Address_DataCardValue.Text,
-                        Gift_Zipcode: Gift_Zipcode_DataCardValue.Text
-                    }
-                );
-                NewForm(Address_Input);
-                ResetForm(Address_Input);
-            )
-        Width: =110
-        X: =1230
-        Y: =630
-        ZIndex: =3
-
     Address_Back As icon.BackArrow:
-        Color: =RGBA(102, 182, 227, 0.7)
-        Height: =110
+        Color: =RGBA( 106, 170, 205, 1 )
+        Height: =130
         Icon: =Icon.BackArrow
         OnSelect: =Navigate(User_Page)
-        Width: =110
-        X: =110
-        Y: =40
-        ZIndex: =4
-
-    Address_Home As icon.Home:
-        Color: =RGBA(102, 182, 227, 0.7)
-        Height: =110
-        Icon: =Icon.Home
-        OnSelect: =Navigate(Main_Page)
-        Width: =110
-        X: =1120
-        Y: =40
-        ZIndex: =5
+        Width: =120
+        X: =50
+        Y: =30
+        ZIndex: =2
 
     Address_Input As form:
         DataSource: =ability_address
         DefaultMode: =FormMode.New
-        Height: =619
-        Width: =968
+        Height: =511
+        Width: =992
         X: =193
-        Y: =120
-        ZIndex: =6
+        Y: =226
+        ZIndex: =3
 
         Address_DataCard As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -87,11 +39,11 @@ User_Address_Page As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@ability_address],DataSourceInfo.DisplayName,"cr778_address")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =150
+            Height: =120
             MaxLength: =DataSourceInfo([@ability_address], DataSourceInfo.MaxLength, "cr778_address")
             Required: =false
             Update: =Address_DataCardValue.Text
-            Width: =966
+            Width: =990
             X: =0
             Y: =0
             ZIndex: =1
@@ -109,17 +61,17 @@ User_Address_Page As screen:
                 ZIndex: =1
 
             Address_DataCardValue As text:
-                BorderColor: =RGBA(102, 182, 227, 0.7)
+                BorderColor: =RGBA( 112, 128, 144, 0.7 )
                 Color: =RGBA(255, 255, 255, 1)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =RGBA(102, 182, 227, 0.5)
-                Height: =80
+                Fill: =RGBA( 106, 170, 205, 1)
+                Height: =50
                 HintText: ="주소를 입력하세요."
                 HoverBorderColor: =RGBA(102, 182, 227, 0.7)
                 HoverColor: =RGBA(255, 255, 255, 1)
-                HoverFill: =RGBA(102, 182, 227, 0.2)
+                HoverFill: =RGBA(102, 182, 227, 0.7)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -166,11 +118,11 @@ User_Address_Page As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@ability_address],DataSourceInfo.DisplayName,"cr778_zipcode")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =146
+            Height: =120
             MaxLength: =DataSourceInfo([@ability_address], DataSourceInfo.MaxLength, "cr778_zipcode")
             Required: =false
             Update: =Zipcode_DataCardValue.Text
-            Width: =966
+            Width: =990
             X: =0
             Y: =1
             ZIndex: =1
@@ -213,17 +165,17 @@ User_Address_Page As screen:
                 ZIndex: =4
 
             Zipcode_DataCardValue As text:
-                BorderColor: =RGBA(102, 182, 227, 0.7)
+                BorderColor: =RGBA( 112, 128, 144, 0.7 )
                 Color: =RGBA(255, 255, 255, 1)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =RGBA(102, 182, 227, 0.5)
-                Height: =80
+                Fill: =RGBA( 106, 170, 205, 1)
+                Height: =50
                 HintText: ="우편번호를 입력하세요."
                 HoverBorderColor: =RGBA(102, 182, 227, 0.7)
                 HoverColor: =RGBA(255, 255, 255, 1)
-                HoverFill: =RGBA(102, 182, 227, 0.2)
+                HoverFill: =RGBA(102, 182, 227, 0.7)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -249,7 +201,7 @@ User_Address_Page As screen:
             Required: =false
             Update: ='Address_E-mail_DataCardValue'.Text
             Visible: =false
-            Width: =321
+            Width: =330
             X: =0
             Y: =2
             ZIndex: =1
@@ -313,11 +265,11 @@ User_Address_Page As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@ability_address],DataSourceInfo.DisplayName,"cr778_gift_address")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =170
+            Height: =120
             MaxLength: =DataSourceInfo([@ability_address], DataSourceInfo.MaxLength, "cr778_gift_address")
             Required: =false
             Update: =Gift_Address_DataCardValue.Text
-            Width: =966
+            Width: =990
             X: =0
             Y: =3
             ZIndex: =1
@@ -335,14 +287,16 @@ User_Address_Page As screen:
                 ZIndex: =1
 
             Gift_Address_DataCardValue As text:
-                BorderColor: =RGBA(102, 182, 227, 0.7)
+                BorderColor: =RGBA( 112, 128, 144, 0.7 )
                 Color: =RGBA(255, 255, 255, 1)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =RGBA(102, 182, 227, 0.5)
-                Height: =80
+                Fill: =RGBA( 106, 170, 205, 1)
+                Height: =50
                 HintText: ="선물 받을 주소를 입력하세요."
+                HoverBorderColor: =RGBA(102, 182, 227, 0.7)
+                HoverFill: =RGBA(102, 182, 227, 0.7)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -388,11 +342,11 @@ User_Address_Page As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@ability_address],DataSourceInfo.DisplayName,"cr778_gift_zipcode")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =120
             MaxLength: =DataSourceInfo([@ability_address], DataSourceInfo.MaxLength, "cr778_gift_zipcode")
             Required: =false
             Update: =Gift_Zipcode_DataCardValue.Text
-            Width: =968
+            Width: =990
             X: =0
             Y: =4
             ZIndex: =1
@@ -409,14 +363,16 @@ User_Address_Page As screen:
                 ZIndex: =1
 
             Gift_Zipcode_DataCardValue As text:
-                BorderColor: =RGBA(102, 182, 227, 0.7)
+                BorderColor: =RGBA( 112, 128, 144, 0.7 )
                 Color: =RGBA(255, 255, 255, 1)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =RGBA(102, 182, 227, 0.5)
-                Height: =80
+                Fill: =RGBA( 106, 170, 205, 1)
+                Height: =50
                 HintText: ="선물 배송지의 우편번호를 입력하세요."
+                HoverBorderColor: =RGBA(102, 182, 227, 0.7)
+                HoverFill: =RGBA(102, 182, 227, 0.7)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -467,8 +423,8 @@ User_Address_Page As screen:
             Required: =true
             Update: =Address_Name_DataCardValue.Text
             Visible: =false
-            Width: =322
-            X: =3
+            Width: =330
+            X: =1
             Y: =2
             ZIndex: =7
 
@@ -528,4 +484,52 @@ User_Address_Page As screen:
                 Wrap: =false
                 Y: =Address_Name_DataCardKey.Y
                 ZIndex: =4
+
+    Address_Send As icon.Send:
+        Color: =RGBA( 106, 170, 205, 1 )
+        Height: =110
+        Icon: =Icon.Send
+        OnSelect: |-
+            =If(
+                IsEmpty(
+                    Search(
+                        ability_address,
+                        varUser.Email,
+                        "cr778_email"
+                    )
+                ),
+                SubmitForm(Address_Input);
+                NewForm(Address_Input);
+                ResetForm(Address_Input);
+                ,
+                Patch(
+                    ability_address,
+                    LookUp(
+                        ability_address,
+                        'E-mail' = 'Address_E-mail_DataCard'.Update
+                    ),
+                    {
+                        Address: Address_DataCardValue.Text,
+                        Zipcode: Zipcode_DataCardValue.Text,
+                        Gift_Address: Gift_Address_DataCardValue.Text,
+                        Gift_Zipcode: Gift_Zipcode_DataCardValue.Text
+                    }
+                );
+                NewForm(Address_Input);
+                ResetForm(Address_Input);
+            )
+        Width: =110
+        X: =1230
+        Y: =630
+        ZIndex: =4
+
+    Address_Home As icon.Home:
+        Color: =RGBA( 106, 170, 205, 1 )
+        Height: =130
+        Icon: =Icon.Home
+        OnSelect: =Navigate(Main_Page)
+        Width: =120
+        X: =1200
+        Y: =30
+        ZIndex: =5
 

@@ -4184,6 +4184,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.wwwwww"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.wwwwww",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "wwwwww",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Admin_Profile_Page.Profile_Template_Upload_Card"
                 }
               ],
