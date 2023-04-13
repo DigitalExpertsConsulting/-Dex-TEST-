@@ -66,6 +66,7 @@ Admin_Address_Page As screen:
             ZIndex: =1
 
         "'E-mail_열1' As dataTableColumn.textualColumn":
+            AutoWidth: =false
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="E-mail"
             FieldName: ="cr778_email"
@@ -74,12 +75,13 @@ Admin_Address_Page As screen:
             LayoutHeight: =Parent.Height
             Order: =3
             Text: =ThisItem.'E-mail'
-            Width: =100
+            Width: =271
             X: =0
             Y: =0
             ZIndex: =3
 
         Address_열1 As dataTableColumn.textualColumn:
+            AutoWidth: =false
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="Address"
             FieldName: ="cr778_address"
@@ -88,7 +90,7 @@ Admin_Address_Page As screen:
             LayoutHeight: =Parent.Height
             Order: =4
             Text: =ThisItem.Address
-            Width: =100
+            Width: =685
             X: =0
             Y: =0
             ZIndex: =4
@@ -108,6 +110,7 @@ Admin_Address_Page As screen:
             ZIndex: =5
 
         Gift_Address_열1 As dataTableColumn.textualColumn:
+            AutoWidth: =false
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="Gift_Address"
             FieldName: ="cr778_gift_address"
@@ -116,7 +119,7 @@ Admin_Address_Page As screen:
             LayoutHeight: =Parent.Height
             Order: =6
             Text: =ThisItem.Gift_Address
-            Width: =100
+            Width: =654
             X: =0
             Y: =0
             ZIndex: =6
