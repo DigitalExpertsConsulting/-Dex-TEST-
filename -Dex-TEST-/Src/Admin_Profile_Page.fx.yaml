@@ -10,13 +10,14 @@ Admin_Profile_Page As screen:
 
     ConcatBox As label:
         BorderThickness: =3
+        Color: =RGBA(255, 255, 255, 1)
         Height: =44
         Text: |-
             =/*"Selected Checkboxes: "&*/
             Concat(CheckboxCollection,Value & ",")
-        Visible: =false
         Width: =407
-        Y: =724
+        X: =242
+        Y: =474
         ZIndex: =2
 
     AllDownload_Button As button:
@@ -156,7 +157,11 @@ Admin_Profile_Page As screen:
         ZIndex: =9
 
     SelectDownload_Button As button:
-        OnSelect: =PPTDownload.Run(Admin_Profile_Gallery.Selected.'E-mail')
+        OnSelect: |-
+            =If(
+                IsEmpty(ConcatBox.Text),
+                PPTDownload.Run(Admin_Profile_Gallery.Selected.'E-mail')
+            )
         Text: |-
             ="선택 다운로드
             "
