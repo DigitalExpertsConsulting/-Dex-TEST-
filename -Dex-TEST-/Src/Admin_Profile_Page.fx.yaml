@@ -207,8 +207,8 @@ Admin_Profile_Page As screen:
         Icon: =Icon.BackArrow
         OnSelect: =Navigate(Admin_Page)
         Width: =110
-        X: =110
-        Y: =40
+        X: =99
+        Y: =20
         ZIndex: =13
 
     Admin_Profile_Home As icon.Home:
