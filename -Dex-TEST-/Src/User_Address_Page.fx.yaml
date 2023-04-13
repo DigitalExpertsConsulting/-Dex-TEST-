@@ -18,9 +18,9 @@ User_Address_Page As screen:
         Height: =130
         Icon: =Icon.BackArrow
         OnSelect: =Navigate(User_Page)
-        Width: =120
-        X: =50
-        Y: =30
+        Width: =130
+        X: =110
+        Y: =40
         ZIndex: =2
 
     Address_Input As form:
@@ -493,7 +493,7 @@ User_Address_Page As screen:
 
     Address_Send As icon.Send:
         Color: =RGBA( 106, 170, 205, 1 )
-        Height: =110
+        Height: =130
         Icon: =Icon.Send
         OnSelect: |-
             =If(
@@ -524,9 +524,9 @@ User_Address_Page As screen:
                 NewForm(Address_Input);
                 ResetForm(Address_Input);
             )
-        Width: =110
-        X: =1230
-        Y: =630
+        Width: =130
+        X: =1210
+        Y: =640
         ZIndex: =4
 
     Address_Home As icon.Home:
@@ -534,8 +534,8 @@ User_Address_Page As screen:
         Height: =130
         Icon: =Icon.Home
         OnSelect: =Navigate(Main_Page)
-        Width: =120
-        X: =1200
-        Y: =30
+        Width: =130
+        X: =1120
+        Y: =40
         ZIndex: =5
 

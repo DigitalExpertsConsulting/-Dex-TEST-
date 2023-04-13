@@ -1,6 +1,6 @@
 User_Skill_Page As screen:
-    BackgroundImage: =MainPagePicture
-    ImagePosition: =ImagePosition.Fill
+    BackgroundImage: =ere
+    ImagePosition: =ImagePosition.Stretch
 
     Skill_Title As label:
         Align: =Align.Center
@@ -14,8 +14,8 @@ User_Skill_Page As screen:
         ZIndex: =3
 
     Skill_send As icon.Send:
-        Color: =RGBA(102, 182, 227, 0.7)
-        Height: =110
+        Color: =RGBA( 106, 170, 205, 1 )
+        Height: =130
         Icon: =Icon.Send
         OnSelect: |+
             =If(
@@ -201,27 +201,28 @@ User_Skill_Page As screen:
                 ResetForm(Skill_Input);
             )
             
-        Width: =110
-        X: =1230
-        Y: =658
+        Width: =130
+        X: =1210
+        Y: =640
         ZIndex: =4
 
     Skill_Back As icon.BackArrow:
-        Color: =RGBA(102, 182, 227, 0.7)
-        Height: =110
+        Color: =RGBA( 106, 170, 205, 1 )
+        Height: =130
         Icon: =Icon.BackArrow
         OnSelect: =Navigate(User_Page)
-        Width: =110
+        Width: =130
         X: =110
         Y: =40
         ZIndex: =5
 
     Skill_Home As icon.Home:
-        Color: =RGBA(102, 182, 227, 0.7)
-        Height: =110
+        Color: |
+            =RGBA( 106, 170, 205, 1 )
+        Height: =130
         Icon: =Icon.Home
         OnSelect: =Navigate(Main_Page)
-        Width: =110
+        Width: =130
         X: =1120
         Y: =40
         ZIndex: =6
@@ -229,10 +230,10 @@ User_Skill_Page As screen:
     Skill_Input As form:
         DataSource: =ability_skill
         DefaultMode: =FormMode.New
-        Fill: =RGBA(102, 182, 227, 0.3)
+        Fill: =RGBA( 106, 170, 205, 1 )
         Width: =870
-        X: =283
-        Y: =172
+        X: =284
+        Y: =197
         ZIndex: =7
 
         "'365 Solution_DataCard' As typedDataCard.comboBoxOptionSetSingleEditCard":

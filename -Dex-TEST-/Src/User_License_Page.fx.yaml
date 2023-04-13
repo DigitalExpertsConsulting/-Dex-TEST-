@@ -1,5 +1,5 @@
 User_License_Page As screen:
-    BackgroundImage: =MainPagePicture
+    BackgroundImage: =ere
     ImagePosition: =ImagePosition.Fill
 
     License_Title As label:
@@ -388,8 +388,8 @@ User_License_Page As screen:
         ZIndex: =3
 
     License_send As icon.Send:
-        Color: =RGBA(102, 182, 227, 0.7)
-        Height: =110
+        Color: =RGBA( 106, 170, 205, 1 )
+        Height: =130
         Icon: =Icon.Send
         OnSelect: |-
             =//AZ-101 승인/반려 처리
@@ -754,27 +754,27 @@ User_License_Page As screen:
                 NewForm(License_Input);
                 ResetForm(License_Input);
             );
-        Width: =110
-        X: =1248
-        Y: =658
+        Width: =130
+        X: =1210
+        Y: =640
         ZIndex: =4
 
     License_Back As icon.BackArrow:
-        Color: =RGBA(102, 182, 227, 0.7)
-        Height: =110
+        Color: =RGBA( 106, 170, 205, 1 )
+        Height: =130
         Icon: =Icon.BackArrow
         OnSelect: =Navigate(User_Page)
-        Width: =110
+        Width: =130
         X: =110
         Y: =40
         ZIndex: =5
 
     License_Home As icon.Home:
-        Color: =RGBA(102, 182, 227, 0.7)
-        Height: =110
+        Color: =RGBA( 106, 170, 205, 1 )
+        Height: =130
         Icon: =Icon.Home
         OnSelect: =Navigate(Main_Page)
-        Width: =110
+        Width: =130
         X: =1120
         Y: =40
         ZIndex: =6
@@ -782,12 +782,12 @@ User_License_Page As screen:
     License_Input As form:
         DataSource: =ability_license
         DefaultMode: =FormMode.New
-        Fill: =RGBA( 135, 206, 250, 0.5 )
+        Fill: =RGBA( 106, 170, 205, 1 )
         Visible: |
             =true
         Width: =686
         X: =42
-        Y: =186
+        Y: =207
         ZIndex: =7
 
         "'AZ-104_DataCard' As typedDataCard.textualEditCard":
@@ -2023,7 +2023,7 @@ User_License_Page As screen:
     License_File_Input As form:
         DataSource: =ability_file
         DefaultMode: =FormMode.New
-        Height: =410
+        Height: =448
         Width: =596
         X: =743
         Y: =186
@@ -2051,6 +2051,7 @@ User_License_Page As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =34
+                Size: =15
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -2068,7 +2069,7 @@ User_License_Page As screen:
                 MaxAttachments: =1
                 MaxAttachmentSize: =100
                 MaxAttachmentsText: =""
-                NoAttachmentsText: ="파일이 없습니다."
+                NoAttachmentsText: ="License를 등록해주세요."
                 PaddingBottom: =5
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PaddingRight: =5
@@ -2126,6 +2127,7 @@ User_License_Page As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =34
+                Size: =15
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -2143,7 +2145,7 @@ User_License_Page As screen:
                 MaxAttachments: =1
                 MaxAttachmentSize: =100
                 MaxAttachmentsText: =""
-                NoAttachmentsText: ="파일이 없습니다."
+                NoAttachmentsText: ="License를 등록해주세요."
                 PaddingBottom: =5
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PaddingRight: =5
@@ -2201,6 +2203,7 @@ User_License_Page As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =34
+                Size: =15
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -2218,7 +2221,7 @@ User_License_Page As screen:
                 MaxAttachments: =1
                 MaxAttachmentSize: =100
                 MaxAttachmentsText: =""
-                NoAttachmentsText: ="파일이 없습니다."
+                NoAttachmentsText: ="License를 등록해주세요."
                 PaddingBottom: =5
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PaddingRight: =5
@@ -2276,6 +2279,7 @@ User_License_Page As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =34
+                Size: =15
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -2293,7 +2297,7 @@ User_License_Page As screen:
                 MaxAttachments: =1
                 MaxAttachmentSize: =100
                 MaxAttachmentsText: =""
-                NoAttachmentsText: ="파일이 없습니다."
+                NoAttachmentsText: ="License를 등록해주세요."
                 PaddingBottom: =5
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PaddingRight: =5
@@ -2351,6 +2355,7 @@ User_License_Page As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =34
+                Size: =15
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -2368,7 +2373,7 @@ User_License_Page As screen:
                 MaxAttachments: =1
                 MaxAttachmentSize: =100
                 MaxAttachmentsText: =""
-                NoAttachmentsText: ="파일이 없습니다."
+                NoAttachmentsText: ="License를 등록해주세요."
                 PaddingBottom: =5
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PaddingRight: =5
@@ -2426,6 +2431,7 @@ User_License_Page As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =34
+                Size: =15
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -2443,7 +2449,7 @@ User_License_Page As screen:
                 MaxAttachments: =1
                 MaxAttachmentSize: =100
                 MaxAttachmentsText: =""
-                NoAttachmentsText: ="파일이 없습니다."
+                NoAttachmentsText: ="License를 등록해주세요."
                 PaddingBottom: =5
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PaddingRight: =5
@@ -2501,6 +2507,7 @@ User_License_Page As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =34
+                Size: =15
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -2576,6 +2583,7 @@ User_License_Page As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =34
+                Size: =15
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -2593,7 +2601,7 @@ User_License_Page As screen:
                 MaxAttachments: =1
                 MaxAttachmentSize: =100
                 MaxAttachmentsText: =""
-                NoAttachmentsText: ="파일이 없습니다."
+                NoAttachmentsText: ="License를 등록해주세요."
                 PaddingBottom: =5
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PaddingRight: =5
@@ -2651,6 +2659,7 @@ User_License_Page As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =34
+                Size: =15
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -2668,7 +2677,7 @@ User_License_Page As screen:
                 MaxAttachments: =1
                 MaxAttachmentSize: =100
                 MaxAttachmentsText: =""
-                NoAttachmentsText: ="파일이 없습니다."
+                NoAttachmentsText: ="License를 등록해주세요."
                 PaddingBottom: =5
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PaddingRight: =5
@@ -2726,6 +2735,7 @@ User_License_Page As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =34
+                Size: =15
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -2743,7 +2753,7 @@ User_License_Page As screen:
                 MaxAttachments: =1
                 MaxAttachmentSize: =100
                 MaxAttachmentsText: =""
-                NoAttachmentsText: ="파일이 없습니다."
+                NoAttachmentsText: ="License를 등록해주세요."
                 PaddingBottom: =5
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PaddingRight: =5
@@ -2801,6 +2811,7 @@ User_License_Page As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =34
+                Size: =15
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -2818,7 +2829,7 @@ User_License_Page As screen:
                 MaxAttachments: =1
                 MaxAttachmentSize: =100
                 MaxAttachmentsText: =""
-                NoAttachmentsText: ="파일이 없습니다."
+                NoAttachmentsText: ="License를 등록해주세요."
                 PaddingBottom: =5
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PaddingRight: =5
