@@ -194,8 +194,6 @@ Admin_Profile_Page As screen:
                 User().Email,
                 First(Profile_Template_Upload_Card.Attachments).Name,
                 First(Profile_Template_Upload_Card.Attachments).Value,
-                "Admin",
-                User().Email,
                 "profile.pptx"
             );
             
