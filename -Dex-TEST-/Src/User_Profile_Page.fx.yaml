@@ -62,6 +62,7 @@ User_Profile_Page As screen:
         BorderThickness: =5
         Fill: =RGBA( 106, 170, 205, 1 )
         Height: =76
+        HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -50%)
         OnSelect: |
             =Set(varUploadProfile, false);
             
@@ -114,6 +115,7 @@ User_Profile_Page As screen:
         BorderThickness: =5
         Fill: =RGBA( 106, 170, 205, 1 )
         Height: =76
+        HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -50%)
         OnSelect: =ability_user_down_profile_form.Run()
         Text: ="양식 다운로드"
         Width: =282

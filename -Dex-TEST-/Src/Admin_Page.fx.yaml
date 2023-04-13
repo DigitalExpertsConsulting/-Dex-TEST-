@@ -1,5 +1,6 @@
 Admin_Page As screen:
-    BackgroundImage: =MainPagePicture
+    BackgroundImage: =ere
+    ImagePosition: =ImagePosition.Stretch
 
     AdminPage_Title As label:
         Align: =Align.Center
@@ -14,19 +15,20 @@ Admin_Page As screen:
 
     AdminPage_Back As icon.BackArrow:
         Color: =RGBA(102, 182, 227, 0.7)
-        Height: =110
+        Height: =130
         Icon: =Icon.BackArrow
         OnSelect: =Navigate(Main_Page)
-        Width: =110
+        Width: =130
         X: =110
         Y: =40
         ZIndex: =2
 
     AdminPage_Address_Button As button:
-        BorderColor: =RGBA(102, 182, 227, 0.7)
-        BorderThickness: =9
+        BorderColor: =RGBA( 112, 128, 144, 0.7 )
+        BorderThickness: |
+            =5
         DisabledFill: =RGBA(241, 244, 249, 1)
-        Fill: =RGBA(102, 182, 227, 0.2)
+        Fill: =RGBA( 106, 170, 205, 1 )
         Height: =86
         HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -20%)
         OnSelect: =Navigate(Admin_Address_Page)
@@ -39,10 +41,10 @@ Admin_Page As screen:
         ZIndex: =3
 
     AdminPage_Skill_Button As button:
-        BorderColor: =RGBA(102, 182, 227, 0.7)
-        BorderThickness: =9
+        BorderColor: =RGBA( 112, 128, 144, 0.7 )
+        BorderThickness: =5
         DisabledFill: =RGBA(241, 244, 249, 1)
-        Fill: =RGBA(102, 182, 227, 0.2)
+        Fill: =RGBA( 106, 170, 205, 1 )
         Height: =86
         HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -20%)
         OnSelect: =Navigate(Admin_License_Page)
@@ -55,10 +57,10 @@ Admin_Page As screen:
         ZIndex: =4
 
     AdminPage_License_Button As button:
-        BorderColor: =RGBA(102, 182, 227, 0.7)
-        BorderThickness: =9
+        BorderColor: =RGBA( 112, 128, 144, 0.7 )
+        BorderThickness: =5
         DisabledFill: =RGBA(241, 244, 249, 1)
-        Fill: =RGBA(102, 182, 227, 0.2)
+        Fill: =RGBA( 106, 170, 205, 1 )
         Height: =86
         HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -20%)
         OnSelect: =Navigate(Admin_Skill_Page)
@@ -71,10 +73,10 @@ Admin_Page As screen:
         ZIndex: =5
 
     AdminPage_Profile_Button As button:
-        BorderColor: =RGBA(102, 182, 227, 0.7)
-        BorderThickness: =9
+        BorderColor: =RGBA( 112, 128, 144, 0.7 )
+        BorderThickness: =5
         DisabledFill: =RGBA(241, 244, 249, 1)
-        Fill: =RGBA(102, 182, 227, 0.2)
+        Fill: =RGBA( 106, 170, 205, 1 )
         Height: =86
         HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -20%)
         OnSelect: =Navigate(Admin_Profile_Page)
