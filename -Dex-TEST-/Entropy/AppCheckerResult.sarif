@@ -4034,6 +4034,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.MainPagePicture"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.MainPagePicture",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "MainPagePicture",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.PagePicture"
                 }
               ],

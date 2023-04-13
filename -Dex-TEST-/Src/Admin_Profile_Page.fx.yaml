@@ -1,11 +1,14 @@
 Admin_Profile_Page As screen:
-    BackgroundImage: =MainPagePicture
+    BackgroundImage: =ere
+    ImagePosition: =ImagePosition.Stretch
 
     Title_Color_Box As rectangle:
+        BorderColor: =RGBA( 112, 128, 144, 0.7 )
         BorderThickness: =3
+        Fill: =RGBA( 106, 170, 205, 1 )
         Height: =56
-        Width: =1366
-        Y: =265
+        Width: =967
+        Y: =305
         ZIndex: =1
 
     ConcatBox As label:
@@ -21,25 +24,28 @@ Admin_Profile_Page As screen:
         ZIndex: =2
 
     AllDownload_Button As button:
+        Height: =60
         OnSelect: =PPTALLDOWNLOAD.Run()
         Text: |-
             ="전체 다운로드
             "
-        X: =1190
-        Y: =205
+        Width: =335
+        X: =1003
+        Y: =397
         ZIndex: =3
 
     Admin_Profile_Gallery As gallery.galleryVertical:
+        BorderColor: =RGBA( 112, 128, 144, 0.7 )
         BorderThickness: =3
         DelayItemLoading: =true
-        Height: =447
+        Height: =407
         Items: |
             =Search(ability_profile,Profile_Search.Text,"cr778_name")
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplateSize: =70
-        Width: =1366
-        Y: =321
+        Width: =967
+        Y: =361
         ZIndex: =4
 
         Checkbox6_1 As checkbox:
@@ -63,15 +69,15 @@ Admin_Profile_Page As screen:
             Size: =15
             Text: =ThisItem.Profile.FileName
             Width: =335
-            X: =686
-            Y: =17
+            X: =462
+            Y: =20
             ZIndex: =4
 
         Button13_1 As button:
             Height: =33
             OnSelect: =PPTDownload.Run(Admin_Profile_Gallery.Selected.'E-mail')
             Text: ="다운로드"
-            X: =1108
+            X: =797
             Y: =20
             ZIndex: =5
 
@@ -93,9 +99,9 @@ Admin_Profile_Page As screen:
             OnSelect: =Select(Parent)
             Size: =15
             Text: =ThisItem.'Created On'
-            Width: =311
-            X: =345
-            Y: =17
+            Width: =249
+            X: =199
+            Y: =22
             ZIndex: =7
 
     User_Name As label:
@@ -106,7 +112,7 @@ Admin_Profile_Page As screen:
         Size: =19
         Text: ="이름"
         Width: =309
-        Y: =266
+        Y: =306
         ZIndex: =5
 
     Profile_Name As label:
@@ -117,8 +123,8 @@ Admin_Profile_Page As screen:
         Size: =20
         Text: ="프로필"
         Width: =332
-        X: =682
-        Y: =266
+        X: =453
+        Y: =309
         ZIndex: =6
 
     Profile_Download As label:
@@ -129,17 +135,17 @@ Admin_Profile_Page As screen:
         Size: =20
         Text: ="다운로드"
         Width: =215
-        X: =1078
-        Y: =266
+        X: =785
+        Y: =309
         ZIndex: =7
 
     Admin_Profile_Title As label:
         Align: =Align.Center
         BorderColor: =RGBA(102, 182, 227, 0.7)
         Color: =RGBA(255, 255, 255, 1)
-        FontWeight: =FontWeight.Semibold
+        FontWeight: =FontWeight.Bold
         Height: =186
-        Size: =40
+        Size: =50
         Text: ="Admin Profile Page"
         Width: =1366
         ZIndex: =8
@@ -152,11 +158,12 @@ Admin_Profile_Page As screen:
         Size: =20
         Text: ="수정한 날짜"
         Width: =214
-        X: =367
-        Y: =265
+        X: =229
+        Y: =306
         ZIndex: =9
 
     SelectDownload_Button As button:
+        Height: =60
         OnSelect: |-
             =If(
                 !IsBlank(ConcatBox.Text),
@@ -165,8 +172,9 @@ Admin_Profile_Page As screen:
         Text: |-
             ="선택 다운로드
             "
-        X: =1002
-        Y: =205
+        Width: =335
+        X: =1000
+        Y: =315
         ZIndex: =10
 
     Profile_Template_Upload_Card As attachments:
@@ -174,8 +182,8 @@ Admin_Profile_Page As screen:
         BorderColor: =
         Color: =RGBA(255, 255, 255, 1)
         DisplayMode: =
-        Fill: =RGBA(56, 96, 178, 0.4)
-        Height: =95
+        Fill: =RGBA( 106, 170, 205, 0.5)
+        Height: =101
         IsInDataCard: =true
         Items: =
         MaxAttachments: =1
@@ -187,8 +195,9 @@ Admin_Profile_Page As screen:
         PaddingRight: =5
         PaddingTop: =5
         Tooltip: =
-        Width: =456
-        Y: =150
+        Width: =341
+        X: =1003
+        Y: =562
         ZIndex: =11
 
     Profile_Template_Upload As button:
@@ -218,39 +227,42 @@ Admin_Profile_Page As screen:
             
         Text: ="프로필양식 업데이트"
         Width: =208
-        X: =489
-        Y: =205
+        X: =1136
+        Y: =684
         ZIndex: =12
 
     Admin_Profile_Back As icon.BackArrow:
-        Color: =RGBA(102, 182, 227, 0.7)
-        Height: =110
+        Color: =RGBA( 106, 170, 205, 1 )
+        Height: =130
         Icon: =Icon.BackArrow
         OnSelect: =Navigate(Admin_Page)
-        Width: =110
+        Width: =130
         X: =99
         Y: =20
         ZIndex: =13
 
     Admin_Profile_Home As icon.Home:
-        Color: =RGBA(102, 182, 227, 0.7)
-        Height: =110
+        Color: =RGBA( 106, 170, 205, 1 )
+        Height: =130
         Icon: =Icon.Home
         OnSelect: =Navigate(Main_Page)
-        Width: =110
+        Width: =130
         X: =1120
         Y: =40
         ZIndex: =14
 
     Profile_Search As text:
         Default: =
-        X: =489
-        Y: =150
+        Height: =35
+        HintText: ="검색"
+        Width: =245
+        X: =721
+        Y: =257
         ZIndex: =15
 
     All_Checkbox As checkbox:
         Color: =RGBA(255, 255, 255, 1)
-        Height: =32
+        Height: =52
         OnCheck: |-
             =UpdateContext({Checkbox10Value: true})
         OnSelect: |-
@@ -262,9 +274,9 @@ Admin_Profile_Page As screen:
         OnUncheck: |-
             =UpdateContext({Checkbox10Value: false})
         Text: ="전체"
-        Width: =35
-        X: =61
-        Y: =277
+        Width: =37
+        X: =62
+        Y: =306
         ZIndex: =16
 
     Icon1 As icon.Reload:
@@ -272,7 +284,7 @@ Admin_Profile_Page As screen:
         Color: =RGBA(241, 244, 249, 1)
         Icon: =Icon.Reload
         OnSelect: =Refresh(ability_profile)
-        X: =911
-        Y: =193
+        X: =1280
+        Y: =20
         ZIndex: =17
 

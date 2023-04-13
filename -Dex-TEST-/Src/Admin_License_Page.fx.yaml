@@ -1,33 +1,34 @@
 Admin_License_Page As screen:
-    BackgroundImage: =MainPagePicture
+    BackgroundImage: =ere
+    ImagePosition: =ImagePosition.Stretch
 
     Admin_License_Title As label:
         Align: =Align.Center
         BorderColor: =RGBA(102, 182, 227, 0.7)
         Color: =RGBA(255, 255, 255, 1)
-        FontWeight: =FontWeight.Semibold
+        FontWeight: =FontWeight.Bold
         Height: =186
-        Size: =40
+        Size: =50
         Text: ="Admin License Page"
         Width: =1366
         ZIndex: =1
 
     Admin_License_Back As icon.BackArrow:
-        Color: =RGBA(102, 182, 227, 0.7)
-        Height: =110
+        Color: =RGBA( 106, 170, 205, 1 )
+        Height: =130
         Icon: =Icon.BackArrow
         OnSelect: =Navigate(Admin_Page)
-        Width: =110
+        Width: =130
         X: =110
         Y: =40
         ZIndex: =2
 
     Admin_License_Home As icon.Home:
-        Color: =RGBA(102, 182, 227, 0.7)
-        Height: =110
+        Color: =RGBA( 106, 170, 205, 1 )
+        Height: =130
         Icon: =Icon.Home
         OnSelect: =Navigate(Main_Page)
-        Width: =110
+        Width: =130
         X: =1120
         Y: =40
         ZIndex: =3
@@ -40,8 +41,8 @@ Admin_License_Page As screen:
         Items: |
             =Search(ability_license,License_Search.Text,"cr778_name")
         Width: =1160
-        X: =108
-        Y: =225
+        X: =106
+        Y: =293
         ZIndex: =5
 
         Name_열4 As dataTableColumn.textualColumn:
@@ -229,25 +230,27 @@ Admin_License_Page As screen:
 
     License_Search As text:
         Default: =""
-        Height: =36
-        Width: =230
-        X: =108
-        Y: =169
+        Height: =35
+        HintText: ="검색"
+        Width: =245
+        X: =1021
+        Y: =239
         ZIndex: =7
 
     License_DownLoad As button:
-        Height: =76
+        Height: =51
         OnSelect: =PDFDownload.Run()
         Text: ="라이센스 인증서 다운로드"
         Width: =280
-        X: =999
-        Y: =651
+        X: =110
+        Y: =223
         ZIndex: =8
 
     Icon2 As icon.Reload:
+        Color: =RGBA(255, 255, 255, 1)
         Icon: =Icon.Reload
         OnSelect: =Refresh(ability_license)
-        X: =1194
-        Y: =537
+        X: =1280
+        Y: =20
         ZIndex: =9
 
