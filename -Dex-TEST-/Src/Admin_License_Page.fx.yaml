@@ -32,7 +32,7 @@ Admin_License_Page As screen:
         Y: =40
         ZIndex: =3
 
-    DataTable4 As dataTable.datatable:
+    Admin_License_DataTable As dataTable.datatable:
         BorderStyle: =BorderStyle.Solid
         DisplayMode: =DisplayMode.Edit
         Fill: =RGBA(255, 255, 255, 0.7)
