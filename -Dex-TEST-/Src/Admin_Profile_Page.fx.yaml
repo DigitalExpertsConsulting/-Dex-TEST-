@@ -192,7 +192,7 @@ Admin_Profile_Page As screen:
         MaxAttachments: =1
         MaxAttachmentSize: =100
         MaxAttachmentsText: =""
-        NoAttachmentsText: =
+        NoAttachmentsText: ="업데이트할 프로필 양식을 등록해주세요."
         PaddingBottom: =5
         PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
         PaddingRight: =5
