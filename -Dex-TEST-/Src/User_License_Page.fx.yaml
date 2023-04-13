@@ -356,14 +356,14 @@ User_License_Page As screen:
                         'PL-600':
                         If(
                             IsBlank(
-                                'LicenseDay_PL-200_DataCard'.Update
+                                'LicenseDay_PL-600_DataCard'.Update
                             ),
                             LookUp(
                                 ability_licenseDay,
                                 'E-mail' = 'LicenseDay_E-mail_DataCard'.Update,
                                 'PL-600'
                             ),
-                            'LicenseDay_PL-200_DataCard'.Update
+                            'LicenseDay_PL-600_DataCard'.Update
                         ),
                         'PL-900':
                         If(
