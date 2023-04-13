@@ -163,3 +163,11 @@ Admin_Address_Page As screen:
         Y: =250
         ZIndex: =7
 
+    License_Refresh_2 As icon.Reload:
+        Color: =RGBA(255, 255, 255, 1)
+        Icon: =Icon.Reload
+        OnSelect: =Refresh(ability_address)
+        X: =294
+        Y: =224
+        ZIndex: =8
+
