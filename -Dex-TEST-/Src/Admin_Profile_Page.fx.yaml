@@ -202,3 +202,18 @@ Admin_Profile_Page As screen:
         Y: =150
         ZIndex: =12
 
+    Button12_3 As button:
+        OnSelect: |-
+            =ability_admin_update_profileform.Run(
+                "",
+                "",
+                "",
+                First(Upload_Profile_DataCardValue_1.Attachments).Name,
+                First(Upload_Profile_DataCardValue_1.Attachments).Value
+            )
+        Text: ="프로필양식 업데이트"
+        Width: =208
+        X: =489
+        Y: =205
+        ZIndex: =13
+
