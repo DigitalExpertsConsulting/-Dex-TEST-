@@ -132,7 +132,9 @@ Admin_Address_Page As screen:
 
     AddressDownload_button As button:
         Height: =51
-        OnSelect: =Test_csh_Excelexport_dataverse_list.Run("")
+        OnSelect: |-
+            =//Test_csh_Excelexport_dataverse_list.Run("")
+            ExcelDownload.Run("")
         Text: ="주소 Table 다운"
         Width: =199
         X: =1016
