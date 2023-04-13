@@ -10,11 +10,12 @@ Admin_PWD_Page As screen:
 
     PW_S_Button As button:
         OnSelect: |-
-            =Reset(PW_TextInput);
-            If(
+            =If(
                 PW_TextInput.Text="1234",
+                Reset(PW_TextInput);
                 Navigate(Admin_Page),
-                Notify("틀렸습니다.")
+                Notify("틀렸습니다.");
+                Reset(PW_TextInput);
             );
         Text: ="확인"
         X: =700
