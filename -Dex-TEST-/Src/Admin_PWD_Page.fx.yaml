@@ -1,16 +1,16 @@
 Admin_PWD_Page As screen:
 
-    TextInput2 As text:
+    PW_TextInput As text:
         Default: =
         HintText: ="비밀번호 입력하세요."
         X: =363
         Y: =342
         ZIndex: =1
 
-    Button2 As button:
+    PW_S_Button As button:
         OnSelect: |-
             =If(
-                TextInput2.Text="1234",
+                PW_TextInput.Text="1234",
                 Navigate(Admin_Page),
                 Notify("틀렸습니다.")
             )
@@ -19,7 +19,7 @@ Admin_PWD_Page As screen:
         Y: =342
         ZIndex: =2
 
-    Button3 As button:
+    PW_C_Button As button:
         OnSelect: =Back()
         Text: ="취소"
         X: =877
