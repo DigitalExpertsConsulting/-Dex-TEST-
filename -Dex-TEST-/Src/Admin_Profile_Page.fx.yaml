@@ -156,7 +156,7 @@ Admin_Profile_Page As screen:
         ZIndex: =9
 
     SelectDownload_Button As button:
-        OnSelect: =PPTDownload.Run(Concat(CheckboxCollection,Value & ","))
+        OnSelect: =PPTDownload.Run(Admin_Profile_Gallery.Selected.'E-mail')
         Text: |-
             ="선택 다운로드
             "
