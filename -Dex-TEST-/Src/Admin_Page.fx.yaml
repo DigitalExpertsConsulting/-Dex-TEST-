@@ -1,7 +1,7 @@
 Admin_Page As screen:
     BackgroundImage: =MainPagePicture
 
-    License_Title_1 As label:
+    AdminPage_Title As label:
         Align: =Align.Center
         BorderColor: =RGBA(102, 182, 227, 0.7)
         Color: =RGBA(255, 255, 255, 1)
@@ -12,11 +12,11 @@ Admin_Page As screen:
         Width: =1366
         ZIndex: =1
 
-    Profile_Back_1 As icon.BackArrow:
+    AdminPage_Back As icon.BackArrow:
         Color: =RGBA(102, 182, 227, 0.7)
         Height: =110
         Icon: =Icon.BackArrow
-        OnSelect: =Navigate(User_Page)
+        OnSelect: =Navigate(Main_Page)
         Width: =110
         X: =110
         Y: =40
@@ -29,7 +29,7 @@ Admin_Page As screen:
         Fill: =RGBA(102, 182, 227, 0.2)
         Height: =86
         HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -20%)
-        OnSelect: =Navigate(User_Address_Page)
+        OnSelect: =Navigate(Admin_Address_Page)
         PressedFill: =RGBA(102, 182, 227, 0.2)
         Size: =35
         Text: ="주소지 관리"
@@ -45,7 +45,7 @@ Admin_Page As screen:
         Fill: =RGBA(102, 182, 227, 0.2)
         Height: =86
         HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -20%)
-        OnSelect: =Navigate(User_Skill_Page)
+        OnSelect: =Navigate(Admin_License_Page)
         PressedFill: =RGBA(102, 182, 227, 0.2)
         Size: =35
         Text: ="자격증 관리"
@@ -61,7 +61,7 @@ Admin_Page As screen:
         Fill: =RGBA(102, 182, 227, 0.2)
         Height: =86
         HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -20%)
-        OnSelect: =Navigate(User_License_Page)
+        OnSelect: =Navigate(Admin_Skill_Page)
         PressedFill: =RGBA(102, 182, 227, 0.2)
         Size: =35
         Text: ="기술 관리"
@@ -77,12 +77,12 @@ Admin_Page As screen:
         Fill: =RGBA(102, 182, 227, 0.2)
         Height: =86
         HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -20%)
-        OnSelect: =Navigate(User_License_Page)
+        OnSelect: =Navigate(Admin_Profile_Page)
         PressedFill: =RGBA(102, 182, 227, 0.2)
         Size: =35
         Text: ="프로필 관리"
         Width: =676
         X: =345
-        Y: =572
+        Y: =582
         ZIndex: =6
 

@@ -29,13 +29,6 @@
       }
     },
     {
-      "Kind": "default.cds_cr778_ability_skill_forms",
-      "Namespace": "ability_skill (양식)",
-      "Values": {
-        "Information": "b9e2b183-3653-43b8-8112-ea2c8d005641"
-      }
-    },
-    {
       "Kind": "default.cds_cr778_ability_profile_forms",
       "Namespace": "ability_profile (양식)",
       "Values": {
@@ -43,13 +36,20 @@
       }
     },
     {
-      "Kind": "default.cds_fileattachment_forms",
-      "Namespace": "FileAttachments (양식)",
-      "Values": {}
+      "Kind": "default.cds_cr778_ability_skill_forms",
+      "Namespace": "ability_skill (양식)",
+      "Values": {
+        "Information": "b9e2b183-3653-43b8-8112-ea2c8d005641"
+      }
     },
     {
       "Kind": "default.cds_duplicaterecord_forms",
       "Namespace": "Duplicate Records (양식)",
+      "Values": {}
+    },
+    {
+      "Kind": "default.cds_fileattachment_forms",
+      "Namespace": "FileAttachments (양식)",
       "Values": {}
     },
     {
