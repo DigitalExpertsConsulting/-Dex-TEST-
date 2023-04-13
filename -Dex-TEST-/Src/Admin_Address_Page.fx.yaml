@@ -41,7 +41,9 @@ Admin_Address_Page As screen:
         DisplayMode: =DisplayMode.Edit
         Fill: =RGBA(241, 244, 249, 1)
         Height: =420
-        Items: =ability_address
+        Items: |-
+            =//ability_address
+            Search(ability_address,Address_Search.Text,"cr778_name")
         SelectedFill: =RGBA(241, 244, 249, 1)
         Width: =1047
         X: =159
@@ -133,13 +135,22 @@ Admin_Address_Page As screen:
             ZIndex: =7
 
     AddressDownload_button As button:
-        Height: =51
+        Height: =43
         OnSelect: |-
             =//Test_csh_Excelexport_dataverse_list.Run("")
             ExcelDownload.Run("")
         Text: ="주소 Table 다운"
         Width: =186
-        X: =1020
-        Y: =218
+        X: =159
+        Y: =249
         ZIndex: =6
+
+    Address_Search As text:
+        Default: =""
+        Height: =35
+        HintText: ="검색"
+        Width: =245
+        X: =961
+        Y: =249
+        ZIndex: =7
 
