@@ -1,5 +1,6 @@
 User_Profile_Page As screen:
-    BackgroundImage: =MainPagePicture
+    BackgroundImage: =ere
+    ImagePosition: =ImagePosition.Stretch
 
     Profile_Title As label:
         Align: =Align.Center
@@ -13,44 +14,47 @@ User_Profile_Page As screen:
         ZIndex: =1
 
     Profile_Home As icon.Home:
-        Color: =RGBA(102, 182, 227, 0.7)
-        Height: =110
+        Color: =RGBA( 106, 170, 205, 1 )
+        Height: =130
         Icon: =Icon.Home
         OnSelect: =Navigate(Main_Page)
-        Width: =110
+        Width: =130
         X: =1120
         Y: =40
         ZIndex: =2
 
     Profile_Back As icon.BackArrow:
-        Color: =RGBA(102, 182, 227, 0.7)
-        Height: =110
+        Color: =RGBA( 106, 170, 205, 1 )
+        Height: =130
         Icon: =Icon.BackArrow
         OnSelect: =Navigate(User_Page)
-        Width: =110
+        Width: =130
         X: =110
         Y: =40
         ZIndex: =3
 
     Upload_Profile_DataCardValue As attachments:
         AddAttachmentText: ="파일 업로드"
-        BorderColor: =
+        BorderColor: =RGBA( 112, 128, 144, 0.7 )
+        BorderThickness: =5
+        Color: =RGBA(255, 255, 255, 1)
         DisplayMode: =
-        Height: =221
+        Fill: =RGBA( 106, 170, 205, 1 )
+        Height: =220
         IsInDataCard: =true
         Items: =
         MaxAttachments: =1
         MaxAttachmentSize: =100
         MaxAttachmentsText: =""
-        NoAttachmentsText: ="파일이 없습니다."
+        NoAttachmentsText: ="Profile을 등록하세요."
         PaddingBottom: =5
         PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
         PaddingRight: =5
         PaddingTop: =5
         Tooltip: =
-        Width: =282
-        X: =838
-        Y: =174
+        Width: =280
+        X: =742
+        Y: =255
         ZIndex: =5
 
     Profile_upload_btn As button:
@@ -84,16 +88,22 @@ User_Profile_Page As screen:
             );
         Text: ="업로드"
         Width: =282
-        X: =838
-        Y: =464
+        X: =742
+        Y: =491
         ZIndex: =6
 
-    Profile_form_down_btn As button:
-        Height: =76
-        OnSelect: =ability_user_down_profile_form.Run();
-        Text: ="양식 다운로드"
-        Width: =282
-        X: =426
-        Y: =464
-        ZIndex: =7
+    Label1 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA( 112, 128, 144, 0.7 )
+        BorderThickness: =5
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA( 106, 170, 205, 1 )
+        Height: =220
+        Text: |-
+            ="Profile 양식 다운로드 후
+            업로드하세요."
+        Width: =280
+        X: =405
+        Y: =255
+        ZIndex: =8
 
