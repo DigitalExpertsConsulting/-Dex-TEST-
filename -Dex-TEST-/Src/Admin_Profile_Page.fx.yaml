@@ -98,6 +98,7 @@ Admin_Profile_Page As screen:
 
     All_Checkbox As checkbox:
         Color: =RGBA(255, 255, 255, 1)
+        Height: =52
         OnCheck: |-
             =UpdateContext({Checkbox10Value: true})
         OnSelect: |-
@@ -109,8 +110,9 @@ Admin_Profile_Page As screen:
         OnUncheck: |-
             =UpdateContext({Checkbox10Value: false})
         Text: ="전체"
-        X: =11
-        Y: =268
+        Width: =45
+        X: =56
+        Y: =267
         ZIndex: =5
 
     User_Name As label:
