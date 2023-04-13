@@ -196,7 +196,7 @@ Admin_Profile_Page As screen:
                 First(Profile_Template_Upload_Card.Attachments).Value,
                 "profile.pptx"
             );
-            
+            Reset(Profile_Template_Upload_Card)
             /*
             
             ability_admin_update_profileform.Run(
@@ -263,9 +263,11 @@ Admin_Profile_Page As screen:
         ZIndex: =16
 
     Icon1 As icon.Reload:
+        BorderColor: =RGBA(241, 244, 249, 1)
+        Color: =RGBA(241, 244, 249, 1)
         Icon: =Icon.Reload
         OnSelect: =Refresh(ability_profile)
-        X: =876
+        X: =911
         Y: =193
         ZIndex: =17
 
