@@ -33,25 +33,25 @@ Admin_Skill_Page As screen:
         ZIndex: =3
 
     Skill_Search As text:
-        Default: ="텍스트 입력"
+        Default: =""
         Height: =36
         Width: =230
         X: =110
         Y: =167
         ZIndex: =4
 
-    Admin_Skill_DataTable As dataTable.datatable:
+    DataTable3 As dataTable.datatable:
         BorderStyle: =BorderStyle.Solid
         DisplayMode: =DisplayMode.Edit
-        Fill: =RGBA(255,255,255, 0.7)
-        Height: =520
+        Fill: =RGBA(255, 255, 255, 0.7)
+        Height: =500
         Items: =Search(ability_skill,Skill_Search.Text,"cr778_name")
-        Width: =1268
-        X: =66
-        Y: =219
-        ZIndex: =5
+        Width: =1193
+        X: =106
+        Y: =243
+        ZIndex: =7
 
-        Name_열3 As dataTableColumn.textualColumn:
+        Name_열6 As dataTableColumn.textualColumn:
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="Name"
             FieldName: ="cr778_name"
@@ -63,9 +63,10 @@ Admin_Skill_Page As screen:
             Width: =100
             X: =0
             Y: =0
-            ZIndex: =1
+            ZIndex: =31
 
         "'E-mail_열3' As dataTableColumn.textualColumn":
+            AutoWidth: =false
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="E-mail"
             FieldName: ="cr778_email"
@@ -74,10 +75,10 @@ Admin_Skill_Page As screen:
             LayoutHeight: =Parent.Height
             Order: =2
             Text: =ThisItem.'E-mail'
-            Width: =100
+            Width: =252
             X: =0
             Y: =0
-            ZIndex: =2
+            ZIndex: =32
 
         "'365 Solution_열2' As dataTableColumn.complexOptionSetColumn":
             DisplayMode: =DisplayMode.Edit
@@ -91,7 +92,7 @@ Admin_Skill_Page As screen:
             Width: =100
             X: =0
             Y: =0
-            ZIndex: =3
+            ZIndex: =33
 
         "'AI Builder_열2' As dataTableColumn.complexOptionSetColumn":
             DisplayMode: =DisplayMode.Edit
@@ -105,10 +106,9 @@ Admin_Skill_Page As screen:
             Width: =100
             X: =0
             Y: =0
-            ZIndex: =4
+            ZIndex: =34
 
         "'Api management_열2' As dataTableColumn.complexOptionSetColumn":
-            AutoWidth: =true
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="Api management"
             FieldName: ="cr778_apimanagement"
@@ -120,7 +120,7 @@ Admin_Skill_Page As screen:
             Width: =100
             X: =0
             Y: =0
-            ZIndex: =5
+            ZIndex: =35
 
         DataVerse_열2 As dataTableColumn.complexOptionSetColumn:
             DisplayMode: =DisplayMode.Edit
@@ -134,7 +134,7 @@ Admin_Skill_Page As screen:
             Width: =100
             X: =0
             Y: =0
-            ZIndex: =6
+            ZIndex: =36
 
         "'Power Apps Canvas_열2' As dataTableColumn.complexOptionSetColumn":
             AutoWidth: =false
@@ -147,9 +147,9 @@ Admin_Skill_Page As screen:
             Order: =7
             Text: =ThisItem.'Power Apps Canvas'
             Width: =195
-            X: =0
+            X: =977
             Y: =0
-            ZIndex: =7
+            ZIndex: =37
 
         "'Power Apps Model_열2' As dataTableColumn.complexOptionSetColumn":
             AutoWidth: =false
@@ -161,10 +161,10 @@ Admin_Skill_Page As screen:
             LayoutHeight: =Parent.Height
             Order: =8
             Text: =ThisItem.'Power Apps Model'
-            Width: =196
+            Width: =186
             X: =0
             Y: =0
-            ZIndex: =8
+            ZIndex: =38
 
         "'Power Automate_열2' As dataTableColumn.complexOptionSetColumn":
             DisplayMode: =DisplayMode.Edit
@@ -178,7 +178,7 @@ Admin_Skill_Page As screen:
             Width: =100
             X: =0
             Y: =0
-            ZIndex: =9
+            ZIndex: =39
 
         "'Power Automate Desktop_열2' As dataTableColumn.complexOptionSetColumn":
             AutoWidth: =false
@@ -190,10 +190,10 @@ Admin_Skill_Page As screen:
             LayoutHeight: =Parent.Height
             Order: =10
             Text: =ThisItem.'Power Automate Desktop'
-            Width: =248
+            Width: =249
             X: =0
             Y: =0
-            ZIndex: =10
+            ZIndex: =40
 
         "'Power BI_열2' As dataTableColumn.complexOptionSetColumn":
             DisplayMode: =DisplayMode.Edit
@@ -207,7 +207,7 @@ Admin_Skill_Page As screen:
             Width: =100
             X: =0
             Y: =0
-            ZIndex: =11
+            ZIndex: =41
 
         "'Power Page_열2' As dataTableColumn.complexOptionSetColumn":
             DisplayMode: =DisplayMode.Edit
@@ -221,7 +221,7 @@ Admin_Skill_Page As screen:
             Width: =100
             X: =0
             Y: =0
-            ZIndex: =12
+            ZIndex: =42
 
         "'Power Page JAVA/CSS_열2' As dataTableColumn.complexOptionSetColumn":
             AutoWidth: =false
@@ -233,10 +233,10 @@ Admin_Skill_Page As screen:
             LayoutHeight: =Parent.Height
             Order: =13
             Text: =ThisItem.'Power Page JAVA/CSS'
-            Width: =190
+            Width: =211
             X: =0
             Y: =0
-            ZIndex: =13
+            ZIndex: =43
 
         "'Power Virtual Agents_열2' As dataTableColumn.complexOptionSetColumn":
             AutoWidth: =false
@@ -248,10 +248,10 @@ Admin_Skill_Page As screen:
             LayoutHeight: =Parent.Height
             Order: =14
             Text: =ThisItem.'Power Virtual Agents'
-            Width: =200
+            Width: =233
             X: =0
             Y: =0
-            ZIndex: =14
+            ZIndex: =44
 
         "'Process Advisor_열2' As dataTableColumn.complexOptionSetColumn":
             DisplayMode: =DisplayMode.Edit
@@ -265,5 +265,5 @@ Admin_Skill_Page As screen:
             Width: =100
             X: =0
             Y: =0
-            ZIndex: =15
+            ZIndex: =45
 
