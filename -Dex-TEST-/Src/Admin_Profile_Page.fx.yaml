@@ -96,15 +96,15 @@ Admin_Profile_Page As screen:
             Y: =17
             ZIndex: =7
 
-    Download_Checkbox As checkbox:
+    All_Checkbox As checkbox:
         Color: =RGBA(255, 255, 255, 1)
         OnCheck: |-
             =UpdateContext({Checkbox10Value: true})
         OnSelect: |-
             =If(
-                Download_Checkbox.Value = true,
-                Collect(CheckboxCollection, Download_Checkbox.Text),
-                Remove(CheckboxCollection, LookUp(CheckboxCollection, Value = Download_Checkbox.Text))
+                All_Checkbox.Value = true,
+                Collect(CheckboxCollection, All_Checkbox.Text),
+                Remove(CheckboxCollection, LookUp(CheckboxCollection, Value = All_Checkbox.Text))
             )
         OnUncheck: |-
             =UpdateContext({Checkbox10Value: false})
