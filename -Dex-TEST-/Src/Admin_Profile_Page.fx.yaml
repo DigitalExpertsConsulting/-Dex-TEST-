@@ -262,10 +262,10 @@ Admin_Profile_Page As screen:
         Y: =277
         ZIndex: =16
 
-    Icon3 As icon.Reload:
+    Icon1 As icon.Reload:
         Icon: =Icon.Reload
-        OnSelect: =ability_profile
-        X: =911
-        Y: =196
+        OnSelect: =Refresh(ability_profile)
+        X: =876
+        Y: =193
         ZIndex: =17
 
