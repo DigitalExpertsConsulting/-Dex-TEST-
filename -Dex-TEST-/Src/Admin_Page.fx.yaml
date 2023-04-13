@@ -6,15 +6,15 @@ Admin_Page As screen:
         Align: =Align.Center
         BorderColor: =RGBA(102, 182, 227, 0.7)
         Color: =RGBA(255, 255, 255, 1)
-        FontWeight: =FontWeight.Semibold
+        FontWeight: =FontWeight.Bold
         Height: =186
-        Size: =40
+        Size: =50
         Text: ="Admin Page"
         Width: =1366
         ZIndex: =1
 
     AdminPage_Back As icon.BackArrow:
-        Color: =RGBA(102, 182, 227, 0.7)
+        Color: =RGBA( 106, 170, 205, 1 )
         Height: =130
         Icon: =Icon.BackArrow
         OnSelect: =Navigate(Main_Page)
