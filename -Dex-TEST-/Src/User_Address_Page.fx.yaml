@@ -24,6 +24,7 @@ User_Address_Page As screen:
         ZIndex: =2
 
     Address_Input As form:
+        BorderColor: =RGBA(204, 231, 246, 1)
         DataSource: =ability_address
         DefaultMode: =FormMode.New
         Height: =511
@@ -34,12 +35,13 @@ User_Address_Page As screen:
 
         Address_DataCard As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
+            BorderThickness: =0
             DataField: ="cr778_address"
             Default: =ThisItem.Address
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@ability_address],DataSourceInfo.DisplayName,"cr778_address")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =120
+            Height: =122
             MaxLength: =DataSourceInfo([@ability_address], DataSourceInfo.MaxLength, "cr778_address")
             Required: =false
             Update: =Address_DataCardValue.Text
@@ -51,6 +53,7 @@ User_Address_Page As screen:
             Address_DataCardKey As label:
                 AutoHeight: =true
                 Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =20
                 Text: =Parent.DisplayName
@@ -130,6 +133,7 @@ User_Address_Page As screen:
             Zipcode_DataCardKey As label:
                 AutoHeight: =true
                 Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =20
                 Text: =Parent.DisplayName
@@ -182,7 +186,7 @@ User_Address_Page As screen:
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =25
+                Size: =17
                 Tooltip: =Parent.DisplayName
                 Width: =900
                 X: =30
@@ -277,6 +281,7 @@ User_Address_Page As screen:
             Gift_Address_DataCardKey As label:
                 AutoHeight: =true
                 Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =20
                 Text: ="Gift Address"
@@ -354,6 +359,7 @@ User_Address_Page As screen:
             Gift_Zipcode_DataCardKey As label:
                 AutoHeight: =true
                 Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =20
                 Text: ="Gift Zipcode"
@@ -379,7 +385,7 @@ User_Address_Page As screen:
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =25
+                Size: =17
                 Tooltip: =Parent.DisplayName
                 Width: =900
                 X: =30
