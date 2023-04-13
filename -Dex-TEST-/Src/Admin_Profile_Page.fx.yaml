@@ -189,9 +189,9 @@ Admin_Profile_Page As screen:
     Profile_Template_Upload As button:
         OnSelect: |-
             =ability_admin_update_profileform.Run(
-                "a",
-                "a",
-                "a",
+                User().Email,
+                User().Email,
+                User().Email,
                 First(Profile_Template_Upload_Card.Attachments).Name,
                 First(Profile_Template_Upload_Card.Attachments).Value
             )
