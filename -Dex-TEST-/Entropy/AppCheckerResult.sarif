@@ -3974,6 +3974,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.black"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.black",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "black",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.Earth"
                 }
               ],
