@@ -274,7 +274,7 @@ Admin_Skill_Page As screen:
             Y: =0
             ZIndex: =45
 
-    License_Refresh_1 As icon.Reload:
+    Skill_Refresh As icon.Reload:
         Color: =RGBA(255, 255, 255, 1)
         Icon: =Icon.Reload
         OnSelect: =Refresh(ability_skill)
