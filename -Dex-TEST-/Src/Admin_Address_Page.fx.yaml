@@ -145,8 +145,8 @@ Admin_Address_Page As screen:
         Height: =43
         OnSelect: |-
             =//Test_csh_Excelexport_dataverse_list.Run("")
-            ExcelDownload.Run("")
-        Text: ="주소 Table 다운"
+            'ExcelDownload(Address)'.Run("")
+        Text: ="다운로드"
         Width: =180
         X: =85
         Y: =245
