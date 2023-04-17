@@ -1,0 +1,69 @@
+Main_Page_test As screen:
+    BackgroundImage: =ere
+    ImagePosition: =ImagePosition.Stretch
+
+    Main_Container As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =9
+
+        Container13 As groupContainer.manualLayoutContainer:
+            FillPortions: =0
+            Height: =183
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            ZIndex: =1
+
+            MainPage_Title_1 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(102, 182, 227, 0.7)
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =183
+                Size: =50
+                Text: ="Dexconsulting 역량 관리"
+                Width: =1366
+                ZIndex: =1
+
+        Container14 As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.End
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            X: =Parent.X
+            Y: =Parent.Y
+            ZIndex: =2
+
+            MainPage_Admin_Button_1 As button:
+                BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                BorderThickness: =5
+                DisabledFill: =RGBA(241, 244, 249, 1)
+                Fill: =RGBA( 106, 170, 205, 1 )
+                Height: =100
+                HoverFill: =ColorFade(RGBA(102, 182, 227, 1), -20%)
+                OnSelect: =Navigate(Admin_PWD_Page)
+                PressedFill: =RGBA(102, 182, 227, 0.2)
+                Size: =40
+                Text: ="Admin"
+                Width: =350
+                X: =60
+                Y: =414
+                ZIndex: =1
+
+            MainPage_User_Button_1 As button:
+                BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                BorderThickness: =5
+                DisabledFill: =RGBA(241, 244, 249, 1)
+                Fill: =RGBA( 106, 170, 205, 1 )
+                Height: =100
+                HoverFill: =ColorFade(RGBA(102, 182, 227, 1), -20%)
+                OnSelect: =Navigate(User_Page)
+                PressedFill: =RGBA(102, 182, 227, 0.2)
+                Size: =40
+                Text: ="User"
+                Width: =350
+                X: =60
+                Y: =281
+                ZIndex: =2
+
