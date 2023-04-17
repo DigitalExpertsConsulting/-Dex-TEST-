@@ -3434,49 +3434,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Admin_Page.AdminPage_Back.AccessibleLabel"
+                  "fullyQualifiedName": "Admin_Page.User_Main_Container_1.User_Header_Container_1.AdminPage_Back.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Admin_Page.AdminPage_Back.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Admin_Page",
-                "type": "Admin_Page.AdminPage_Back"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Admin_Page.AdminPage_Back.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Admin_Page.AdminPage_Back.TabIndex",
+                  "fullyQualifiedName": "Admin_Page.User_Main_Container_1.User_Header_Container_1.AdminPage_Back.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Admin_Page",
-                "type": "Admin_Page.AdminPage_Back"
+                "type": "Admin_Page.User_Main_Container_1.User_Header_Container_1.AdminPage_Back"
               }
             }
           ],
@@ -3488,6 +3458,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Admin_Page.User_Main_Container_1.User_Header_Container_1.AdminPage_Back.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Admin_Page.User_Main_Container_1.User_Header_Container_1.AdminPage_Back.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Admin_Page",
+                "type": "Admin_Page.User_Main_Container_1.User_Header_Container_1.AdminPage_Back"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -4784,6 +4784,36 @@
                 "member": "PaddingRight",
                 "module": "Admin_PWD_Page",
                 "type": "Admin_PWD_Page.PWD_Main_Container.PWD_Header_Container.Admin_Login_Title"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Admin_Page.User_Main_Container_1.User_Header_Container_1.AdminPage_Title_1.Width"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Admin_Page.User_Main_Container_1.User_Header_Container_1.AdminPage_Title_1.Width",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Width",
+                "module": "Admin_Page",
+                "type": "Admin_Page.User_Main_Container_1.User_Header_Container_1.AdminPage_Title_1"
               }
             }
           ],

@@ -23,7 +23,7 @@ User_Page As screen:
                 Height: =130
                 Icon: =Icon.BackArrow
                 OnSelect: =Navigate(Main_Page)
-                Width: =130
+                Width: =Parent.Width * 0.1
                 X: =110
                 Y: =40
                 ZIndex: =1

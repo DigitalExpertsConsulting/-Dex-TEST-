@@ -2,89 +2,113 @@ Admin_Page As screen:
     BackgroundImage: =ere
     ImagePosition: =ImagePosition.Stretch
 
-    AdminPage_Title As label:
-        Align: =Align.Center
-        BorderColor: =RGBA(102, 182, 227, 0.7)
-        Color: =RGBA(255, 255, 255, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =186
-        Size: =50
-        Text: ="Admin Page"
-        Width: =1366
-        ZIndex: =1
+    User_Main_Container_1 As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =7
 
-    AdminPage_Back As icon.BackArrow:
-        Color: =RGBA( 106, 170, 205, 1 )
-        Height: =130
-        Icon: =Icon.BackArrow
-        OnSelect: =Navigate(Main_Page)
-        Width: =130
-        X: =110
-        Y: =40
-        ZIndex: =2
+        User_Header_Container_1 As groupContainer.horizontalAutoLayoutContainer:
+            FillPortions: =0
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =30
+            ZIndex: =1
 
-    AdminPage_Address_Button As button:
-        BorderColor: =RGBA( 112, 128, 144, 0.7 )
-        BorderThickness: |
-            =5
-        DisabledFill: =RGBA(241, 244, 249, 1)
-        Fill: =RGBA( 106, 170, 205, 1 )
-        Height: =86
-        HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -20%)
-        OnSelect: =Navigate(Admin_Address_Page)
-        PressedFill: =RGBA(102, 182, 227, 0.2)
-        Size: =35
-        Text: ="주소지 관리"
-        Width: =676
-        X: =345
-        Y: =236
-        ZIndex: =3
+            AdminPage_Back As icon.BackArrow:
+                AlignInContainer: =AlignInContainer.Center
+                Color: =RGBA( 106, 170, 205, 1 )
+                Height: =130
+                Icon: =Icon.BackArrow
+                OnSelect: =Navigate(Main_Page)
+                Width: =Parent.Width * 0.1
+                X: =110
+                Y: =40
+                ZIndex: =3
 
-    AdminPage_Skill_Button As button:
-        BorderColor: =RGBA( 112, 128, 144, 0.7 )
-        BorderThickness: =5
-        DisabledFill: =RGBA(241, 244, 249, 1)
-        Fill: =RGBA( 106, 170, 205, 1 )
-        Height: =86
-        HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -20%)
-        OnSelect: =Navigate(Admin_License_Page)
-        PressedFill: =RGBA(102, 182, 227, 0.2)
-        Size: =35
-        Text: ="자격증 관리"
-        Width: =676
-        X: =345
-        Y: =353
-        ZIndex: =4
+            AdminPage_Title_1 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(102, 182, 227, 0.7)
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =186
+                Size: =50
+                Text: ="Admin Page"
+                Width: =Parent.Width - Admin_Address_Back.Width - 40
+                ZIndex: =4
 
-    AdminPage_License_Button As button:
-        BorderColor: =RGBA( 112, 128, 144, 0.7 )
-        BorderThickness: =5
-        DisabledFill: =RGBA(241, 244, 249, 1)
-        Fill: =RGBA( 106, 170, 205, 1 )
-        Height: =86
-        HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -20%)
-        OnSelect: =Navigate(Admin_Skill_Page)
-        PressedFill: =RGBA(102, 182, 227, 0.2)
-        Size: =35
-        Text: ="기술 관리"
-        Width: =676
-        X: =345
-        Y: =466
-        ZIndex: =5
+        User_Container_1 As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.End
+            Height: =Parent.Height
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            Width: =Parent.Width
+            ZIndex: =2
 
-    AdminPage_Profile_Button As button:
-        BorderColor: =RGBA( 112, 128, 144, 0.7 )
-        BorderThickness: =5
-        DisabledFill: =RGBA(241, 244, 249, 1)
-        Fill: =RGBA( 106, 170, 205, 1 )
-        Height: =86
-        HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -20%)
-        OnSelect: =Navigate(Admin_Profile_Page)
-        PressedFill: =RGBA(102, 182, 227, 0.2)
-        Size: =35
-        Text: ="프로필 관리"
-        Width: =676
-        X: =345
-        Y: =582
-        ZIndex: =6
+            AdminPage_Address_Button As button:
+                BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                BorderThickness: |
+                    =5
+                DisabledFill: =RGBA(241, 244, 249, 1)
+                Fill: =RGBA( 106, 170, 205, 1 )
+                Height: =86
+                HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -20%)
+                OnSelect: =Navigate(Admin_Address_Page)
+                PressedFill: =RGBA(102, 182, 227, 0.2)
+                Size: =35
+                Text: ="주소지 관리"
+                Width: =Parent.Width * 0.5
+                X: =Parent.Width * 0.25
+                Y: =40
+                ZIndex: =1
+
+            AdminPage_Skill_Button As button:
+                BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                BorderThickness: =5
+                DisabledFill: =RGBA(241, 244, 249, 1)
+                Fill: =RGBA( 106, 170, 205, 1 )
+                Height: =86
+                HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -20%)
+                OnSelect: =Navigate(Admin_License_Page)
+                PressedFill: =RGBA(102, 182, 227, 0.2)
+                Size: =35
+                Text: ="자격증 관리"
+                Width: =Parent.Width * 0.5
+                X: =Parent.Width * 0.25
+                Y: =157
+                ZIndex: =2
+
+            AdminPage_License_Button As button:
+                BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                BorderThickness: =5
+                DisabledFill: =RGBA(241, 244, 249, 1)
+                Fill: =RGBA( 106, 170, 205, 1 )
+                Height: =86
+                HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -20%)
+                OnSelect: =Navigate(Admin_Skill_Page)
+                PressedFill: =RGBA(102, 182, 227, 0.2)
+                Size: =35
+                Text: ="기술 관리"
+                Width: =Parent.Width * 0.5
+                X: =Parent.Width * 0.25
+                Y: =270
+                ZIndex: =3
+
+            AdminPage_Profile_Button As button:
+                BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                BorderThickness: =5
+                DisabledFill: =RGBA(241, 244, 249, 1)
+                Fill: =RGBA( 106, 170, 205, 1 )
+                Height: =86
+                HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -20%)
+                OnSelect: =Navigate(Admin_Profile_Page)
+                PressedFill: =RGBA(102, 182, 227, 0.2)
+                Size: =35
+                Text: ="프로필 관리"
+                Width: =Parent.Width * 0.5
+                X: =Parent.Width * 0.25
+                Y: =386
+                ZIndex: =4
 
