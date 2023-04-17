@@ -21,7 +21,7 @@ Main_Page As screen:
             ZIndex: =1
 
         Main_Sub_Container As groupContainer.manualLayoutContainer:
-            AlignInContainer: =AlignInContainer.SetByContainer
+            AlignInContainer: =AlignInContainer.End
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             Width: =1365
