@@ -43,7 +43,7 @@ Admin_PWD_Page As screen:
                 ZIndex: =2
 
         PWD_Container As groupContainer.manualLayoutContainer:
-            AlignInContainer: =AlignInContainer.End
+            AlignInContainer: =AlignInContainer.Center
             Height: =500
             LayoutMinHeight: =100
             LayoutMinWidth: =250
@@ -108,10 +108,7 @@ Admin_PWD_Page As screen:
                 Size: =25
                 Text: ="확인"
                 Width: =200
-                X: |-
-                    =//Parent.Width *0.4
-                    //PW_TextInput.Width
-                    PW_TextInput.X + 100
+                X: =PW_TextInput.X +130
                 Y: =261
                 ZIndex: =3
 
