@@ -230,7 +230,7 @@ User_Skill_Page As screen:
     Skill_Input As form:
         DataSource: =ability_skill
         DefaultMode: =FormMode.New
-        Fill: =RGBA( 106, 170, 205, 1 )
+        Fill: =RGBA(255, 255, 255, 0.4)
         Width: =870
         X: =284
         Y: =197
