@@ -37,7 +37,7 @@ Admin_PWD_Page As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =186
                 PaddingRight: =Admin_Address_Back.Width * 0.5
-                Size: =50
+                Size: =(Parent.Width * 0.035)
                 Text: ="Admin Login"
                 Width: =1100
                 ZIndex: =2
@@ -59,7 +59,7 @@ Admin_PWD_Page As screen:
                 HoverBorderColor: =RGBA(102, 182, 227, 0.7)
                 Mode: =TextMode.Password
                 Size: =20
-                Width: =550
+                Width: =Parent.Width * 0.4
                 X: =Parent.Width * 0.3
                 Y: =160
                 ZIndex: =1
@@ -76,7 +76,7 @@ Admin_PWD_Page As screen:
                 RadiusBottomRight: =25
                 RadiusTopLeft: =25
                 RadiusTopRight: =25
-                Size: =25
+                Size: =(Parent.Width * 0.018)
                 Text: ="취소"
                 Width: =200
                 X: |-
@@ -105,7 +105,7 @@ Admin_PWD_Page As screen:
                 RadiusBottomRight: =25
                 RadiusTopLeft: =25
                 RadiusTopRight: =25
-                Size: =25
+                Size: =(Parent.Width * 0.018)
                 Text: ="확인"
                 Width: =200
                 X: =PW_TextInput.X +130

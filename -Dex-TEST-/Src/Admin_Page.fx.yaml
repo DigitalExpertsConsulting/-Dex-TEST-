@@ -11,6 +11,7 @@ Admin_Page As screen:
 
         User_Header_Container_1 As groupContainer.horizontalAutoLayoutContainer:
             FillPortions: =0
+            LayoutAlignItems: =LayoutAlignItems.Center
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
@@ -18,7 +19,6 @@ Admin_Page As screen:
             ZIndex: =1
 
             AdminPage_Back As icon.BackArrow:
-                AlignInContainer: =AlignInContainer.Center
                 Color: =RGBA( 106, 170, 205, 1 )
                 Height: =130
                 Icon: =Icon.BackArrow
@@ -34,7 +34,7 @@ Admin_Page As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =186
-                Size: =50
+                Size: =Parent.Width * 0.035
                 Text: ="Admin Page"
                 Width: =Parent.Width - Admin_Address_Back.Width - 40
                 ZIndex: =4
@@ -57,7 +57,7 @@ Admin_Page As screen:
                 HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -20%)
                 OnSelect: =Navigate(Admin_Address_Page)
                 PressedFill: =RGBA(102, 182, 227, 0.2)
-                Size: =35
+                Size: =Parent.Width * 0.025
                 Text: ="주소지 관리"
                 Width: =Parent.Width * 0.5
                 X: =Parent.Width * 0.25
@@ -73,7 +73,7 @@ Admin_Page As screen:
                 HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -20%)
                 OnSelect: =Navigate(Admin_License_Page)
                 PressedFill: =RGBA(102, 182, 227, 0.2)
-                Size: =35
+                Size: =Parent.Width * 0.025
                 Text: ="자격증 관리"
                 Width: =Parent.Width * 0.5
                 X: =Parent.Width * 0.25
@@ -89,7 +89,7 @@ Admin_Page As screen:
                 HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -20%)
                 OnSelect: =Navigate(Admin_Skill_Page)
                 PressedFill: =RGBA(102, 182, 227, 0.2)
-                Size: =35
+                Size: =Parent.Width * 0.025
                 Text: ="기술 관리"
                 Width: =Parent.Width * 0.5
                 X: =Parent.Width * 0.25
@@ -105,7 +105,7 @@ Admin_Page As screen:
                 HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -20%)
                 OnSelect: =Navigate(Admin_Profile_Page)
                 PressedFill: =RGBA(102, 182, 227, 0.2)
-                Size: =35
+                Size: =Parent.Width * 0.025
                 Text: ="프로필 관리"
                 Width: =Parent.Width * 0.5
                 X: =Parent.Width * 0.25

@@ -35,7 +35,7 @@ User_Page As screen:
                 FillPortions: =1
                 FontWeight: =FontWeight.Bold
                 Height: =186
-                Size: =50
+                Size: =(Parent.Width * 0.035)
                 Text: ="User Page"
                 Width: =1366
                 ZIndex: =2
@@ -57,7 +57,7 @@ User_Page As screen:
                 HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -50%)
                 OnSelect: =Navigate(User_Address_Page)
                 PressedFill: =RGBA(102, 182, 227, 0.2)
-                Size: =35
+                Size: =Parent.Width * 0.025
                 Text: ="주소지 입력"
                 Width: =Parent.Width * 0.5
                 X: =Parent.Width * 0.26
@@ -75,7 +75,7 @@ User_Page As screen:
                 HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -50%)
                 OnSelect: =Navigate(User_Profile_Page)
                 PressedFill: =RGBA(102, 182, 227, 0.2)
-                Size: =35
+                Size: =Parent.Width * 0.025
                 Text: ="프로필 입력"
                 Width: =Parent.Width * 0.5
                 X: =Parent.Width *0.26
@@ -92,7 +92,7 @@ User_Page As screen:
                 HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -50%)
                 OnSelect: =Navigate(User_License_Page)
                 PressedFill: =RGBA(102, 182, 227, 0.2)
-                Size: =35
+                Size: =Parent.Width * 0.025
                 Text: ="자격증 입력"
                 Width: =Parent.Width * 0.23
                 X: =Parent.Width *0.26
@@ -109,7 +109,7 @@ User_Page As screen:
                 HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -50%)
                 OnSelect: =Navigate(User_Skill_Page)
                 PressedFill: =RGBA(102, 182, 227, 0.2)
-                Size: =35
+                Size: =Parent.Width * 0.025
                 Text: ="기술 입력"
                 Width: =Parent.Width * 0.23
                 X: =Parent.Width *0.26 + (UserPage_Address_Button.Width - UserPage_License_Button.Width)

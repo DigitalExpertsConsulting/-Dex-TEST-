@@ -15,7 +15,7 @@ Main_Page As screen:
             Color: =RGBA(255, 255, 255, 1)
             FontWeight: =FontWeight.Bold
             Height: =183
-            Size: =50
+            Size: = (Parent.Width * 0.035) 
             Text: ="Dexconsulting 역량 관리"
             Width: =Parent.Width
             ZIndex: =1
@@ -38,7 +38,7 @@ Main_Page As screen:
                 HoverFill: =ColorFade(RGBA(102, 182, 227, 1), -20%)
                 OnSelect: =Navigate(User_Page)
                 PressedFill: =RGBA(102, 182, 227, 0.2)
-                Size: =40
+                Size: =(Parent.Width * 0.028)
                 Text: ="User"
                 Width: =350
                 X: =927
@@ -54,7 +54,7 @@ Main_Page As screen:
                 HoverFill: =ColorFade(RGBA(102, 182, 227, 1), -20%)
                 OnSelect: =Navigate(Admin_PWD_Page)
                 PressedFill: =RGBA(102, 182, 227, 0.2)
-                Size: =40
+                Size: =(Parent.Width * 0.028)
                 Text: ="Admin"
                 Width: =350
                 X: =927
