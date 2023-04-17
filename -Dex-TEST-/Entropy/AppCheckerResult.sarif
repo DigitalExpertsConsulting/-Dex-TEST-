@@ -2174,49 +2174,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "User_Page.UserPage_Back.AccessibleLabel"
+                  "fullyQualifiedName": "User_Page.User_Main_Container.User_Header_Container.UserPage_Back.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "User_Page.UserPage_Back.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_Page",
-                "type": "User_Page.UserPage_Back"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_Page.UserPage_Back.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_Page.UserPage_Back.TabIndex",
+                  "fullyQualifiedName": "User_Page.User_Main_Container.User_Header_Container.UserPage_Back.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "User_Page",
-                "type": "User_Page.UserPage_Back"
+                "type": "User_Page.User_Main_Container.User_Header_Container.UserPage_Back"
               }
             }
           ],
@@ -2228,6 +2198,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_Page.User_Main_Container.User_Header_Container.UserPage_Back.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_Page.User_Main_Container.User_Header_Container.UserPage_Back.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User_Page",
+                "type": "User_Page.User_Main_Container.User_Header_Container.UserPage_Back"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
         },
         {
           "locations": [

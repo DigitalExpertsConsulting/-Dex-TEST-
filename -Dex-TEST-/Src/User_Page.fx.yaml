@@ -2,92 +2,117 @@ User_Page As screen:
     BackgroundImage: =ere
     ImagePosition: =ImagePosition.Stretch
 
-    UserPage_Address_Button As button:
-        BorderColor: =RGBA( 112, 128, 144, 0.7 )
-        BorderThickness: =5
-        DisabledFill: =RGBA(241, 244, 249, 1)
-        Fill: =RGBA( 106, 170, 205, 1 )
-        Height: =86
-        HoverBorderColor: =ColorFade(Self.BorderColor, 90%)
-        HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -50%)
-        OnSelect: =Navigate(User_Address_Page)
-        PressedFill: =RGBA(102, 182, 227, 0.2)
-        Size: =35
-        Text: ="주소지 입력"
-        Width: =676
-        X: =345
-        Y: =236
-        ZIndex: =1
+    User_Main_Container As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =7
 
-    UserPage_Profile_Button As button:
-        BorderColor: =RGBA( 112, 128, 144, 0.7 )
-        BorderThickness: =5
-        DisabledFill: =RGBA(241, 244, 249, 1)
-        Fill: =RGBA( 106, 170, 205, 1 )
-        Height: =86
-        HoverBorderColor: =ColorFade(Self.BorderColor, 90%)
-        HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -50%)
-        OnSelect: =Navigate(User_Profile_Page)
-        PressedFill: =RGBA(102, 182, 227, 0.2)
-        Size: =35
-        Text: ="프로필 입력"
-        Width: =676
-        X: =345
-        Y: =568
-        ZIndex: =2
+        User_Header_Container As groupContainer.horizontalAutoLayoutContainer:
+            FillPortions: =0
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =30
+            ZIndex: =1
 
-    UserPage_Skill_Button As button:
-        BorderColor: =RGBA( 112, 128, 144, 0.7 )
-        BorderThickness: =5
-        DisabledFill: =RGBA(241, 244, 249, 1)
-        Fill: =RGBA( 106, 170, 205, 1 )
-        Height: =86
-        HoverBorderColor: =ColorFade(Self.BorderColor, 90%)
-        HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -50%)
-        OnSelect: =Navigate(User_License_Page)
-        PressedFill: =RGBA(102, 182, 227, 0.2)
-        Size: =35
-        Text: ="자격증 입력"
-        Width: =320
-        X: =345
-        Y: =402
-        ZIndex: =3
+            UserPage_Back As icon.BackArrow:
+                AlignInContainer: =AlignInContainer.Center
+                Color: =RGBA( 106, 170, 205, 1 )
+                Height: =130
+                Icon: =Icon.BackArrow
+                OnSelect: =Navigate(Main_Page)
+                Width: =130
+                X: =110
+                Y: =40
+                ZIndex: =1
 
-    UserPage_Title As label:
-        Align: =Align.Center
-        BorderColor: =RGBA(102, 182, 227, 0.7)
-        Color: =RGBA(255, 255, 255, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =186
-        Size: =50
-        Text: ="User Page"
-        Width: =1366
-        ZIndex: =4
+            UserPage_Title As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(102, 182, 227, 0.7)
+                Color: =RGBA(255, 255, 255, 1)
+                FillPortions: =1
+                FontWeight: =FontWeight.Bold
+                Height: =186
+                Size: =50
+                Text: ="User Page"
+                Width: =1366
+                ZIndex: =2
 
-    UserPage_License_Button As button:
-        BorderColor: =RGBA( 112, 128, 144, 0.7 )
-        BorderThickness: =5
-        DisabledFill: =RGBA(241, 244, 249, 1)
-        Fill: =RGBA( 106, 170, 205, 1 )
-        Height: =86
-        HoverBorderColor: =ColorFade(Self.BorderColor, 90%)
-        HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -50%)
-        OnSelect: =Navigate(User_Skill_Page)
-        PressedFill: =RGBA(102, 182, 227, 0.2)
-        Size: =35
-        Text: ="기술 입력"
-        Width: =320
-        X: =701
-        Y: =402
-        ZIndex: =5
+        User_Container As groupContainer.manualLayoutContainer:
+            Height: =Parent.Height
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            Width: =Parent.Width
+            ZIndex: =2
 
-    UserPage_Back As icon.BackArrow:
-        Color: =RGBA( 106, 170, 205, 1 )
-        Height: =130
-        Icon: =Icon.BackArrow
-        OnSelect: =Navigate(Main_Page)
-        Width: =130
-        X: =110
-        Y: =40
-        ZIndex: =6
+            UserPage_Address_Button As button:
+                BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                BorderThickness: =5
+                DisabledFill: =RGBA(241, 244, 249, 1)
+                Fill: =RGBA( 106, 170, 205, 1 )
+                Height: =86
+                HoverBorderColor: =ColorFade(Self.BorderColor, 90%)
+                HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -50%)
+                OnSelect: =Navigate(User_Address_Page)
+                PressedFill: =RGBA(102, 182, 227, 0.2)
+                Size: =35
+                Text: ="주소지 입력"
+                Width: =Parent.Width * 0.5
+                X: =Parent.Width * 0.26
+                Y: =72
+                ZIndex: =1
+
+            UserPage_Profile_Button As button:
+                BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                BorderThickness: =5
+                DisabledFill: =RGBA(241, 244, 249, 1)
+                Fill: =RGBA( 106, 170, 205, 1 )
+                FontWeight: =FontWeight.Bold
+                Height: =86
+                HoverBorderColor: =ColorFade(Self.BorderColor, 90%)
+                HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -50%)
+                OnSelect: =Navigate(User_Profile_Page)
+                PressedFill: =RGBA(102, 182, 227, 0.2)
+                Size: =35
+                Text: ="프로필 입력"
+                Width: =Parent.Width * 0.5
+                X: =Parent.Width *0.26
+                Y: =404
+                ZIndex: =2
+
+            UserPage_Skill_Button As button:
+                BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                BorderThickness: =5
+                DisabledFill: =RGBA(241, 244, 249, 1)
+                Fill: =RGBA( 106, 170, 205, 1 )
+                Height: =86
+                HoverBorderColor: =ColorFade(Self.BorderColor, 90%)
+                HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -50%)
+                OnSelect: =Navigate(User_License_Page)
+                PressedFill: =RGBA(102, 182, 227, 0.2)
+                Size: =35
+                Text: ="자격증 입력"
+                Width: =Parent.Width * 0.23
+                X: =Parent.Width *0.26
+                Y: =238
+                ZIndex: =3
+
+            UserPage_License_Button As button:
+                BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                BorderThickness: =5
+                DisabledFill: =RGBA(241, 244, 249, 1)
+                Fill: =RGBA( 106, 170, 205, 1 )
+                Height: =86
+                HoverBorderColor: =ColorFade(Self.BorderColor, 90%)
+                HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -50%)
+                OnSelect: =Navigate(User_Skill_Page)
+                PressedFill: =RGBA(102, 182, 227, 0.2)
+                Size: =35
+                Text: ="기술 입력"
+                Width: =320
+                X: =Parent.Width *0.26 + (UserPage_Address_Button.Width - UserPage_License_Button.Width)
+                Y: =238
+                ZIndex: =4
 
