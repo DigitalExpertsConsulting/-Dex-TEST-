@@ -61,24 +61,48 @@ Admin_PWD_Page As screen:
         Y: =373
         ZIndex: =3
 
-    Admin_Login_Title As label:
-        Align: =Align.Center
-        BorderColor: =RGBA(102, 182, 227, 0.7)
-        Color: =RGBA(255, 255, 255, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =186
-        Size: =50
-        Text: ="Admin Login"
-        Width: =1366
-        ZIndex: =4
+    PWD_Main_Container As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =6
 
-    Admin_Login_Back As icon.BackArrow:
-        Color: =RGBA( 106, 170, 205, 1 )
-        Height: =130
-        Icon: =Icon.BackArrow
-        OnSelect: =Navigate(Main_Page)
-        Width: =130
-        X: =110
-        Y: =40
-        ZIndex: =5
+        PWD_Header_Container As groupContainer.horizontalAutoLayoutContainer:
+            FillPortions: =0
+            Height: =180
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =30
+            ZIndex: =1
+
+            Admin_Login_Back As icon.BackArrow:
+                AlignInContainer: =AlignInContainer.Center
+                Color: =RGBA( 106, 170, 205, 1 )
+                Height: =130
+                Icon: =Icon.BackArrow
+                OnSelect: =Navigate(Main_Page)
+                Width: =130
+                X: =110
+                Y: =40
+                ZIndex: =1
+
+            Admin_Login_Title As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(102, 182, 227, 0.7)
+                Color: =RGBA(255, 255, 255, 1)
+                FillPortions: =1
+                FontWeight: =FontWeight.Bold
+                Height: =186
+                PaddingRight: =Admin_Address_Back.Width * 0.5
+                Size: =50
+                Text: ="Admin Login"
+                Width: =1100
+                ZIndex: =2
+
+        Container21 As groupContainer.horizontalAutoLayoutContainer:
+            LayoutMinHeight: =100
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =2
 

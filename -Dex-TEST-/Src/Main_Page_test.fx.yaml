@@ -2,35 +2,29 @@ Main_Page_test As screen:
     BackgroundImage: =ere
     ImagePosition: =ImagePosition.Stretch
 
-    Main_Container As groupContainer.verticalAutoLayoutContainer:
+    Main_Containeree As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
         Width: =Parent.Width
         ZIndex: =9
 
-        Container13 As groupContainer.manualLayoutContainer:
-            FillPortions: =0
+        MainPage_Title_1 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(102, 182, 227, 0.7)
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
             Height: =183
-            LayoutMinHeight: =100
-            LayoutMinWidth: =250
+            Size: =50
+            Text: ="Dexconsulting 역량 관리"
+            Width: =Parent.Width
             ZIndex: =1
-
-            MainPage_Title_1 As label:
-                Align: =Align.Center
-                BorderColor: =RGBA(102, 182, 227, 0.7)
-                Color: =RGBA(255, 255, 255, 1)
-                FontWeight: =FontWeight.Bold
-                Height: =183
-                Size: =50
-                Text: ="Dexconsulting 역량 관리"
-                Width: =1366
-                ZIndex: =1
 
         Container14 As groupContainer.manualLayoutContainer:
             AlignInContainer: =AlignInContainer.End
             LayoutMinHeight: =100
             LayoutMinWidth: =250
+            Width: =1365
             X: =Parent.X
             Y: =Parent.Y
             ZIndex: =2
@@ -47,8 +41,8 @@ Main_Page_test As screen:
                 Size: =40
                 Text: ="Admin"
                 Width: =350
-                X: =60
-                Y: =414
+                X: =896
+                Y: =400
                 ZIndex: =1
 
             MainPage_User_Button_1 As button:
@@ -63,7 +57,7 @@ Main_Page_test As screen:
                 Size: =40
                 Text: ="User"
                 Width: =350
-                X: =60
-                Y: =281
+                X: =896
+                Y: =256
                 ZIndex: =2
 

@@ -3794,49 +3794,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Admin_PWD_Page.Admin_Login_Back.AccessibleLabel"
+                  "fullyQualifiedName": "Admin_PWD_Page.PWD_Main_Container.PWD_Header_Container.Admin_Login_Back.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Admin_PWD_Page.Admin_Login_Back.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Admin_PWD_Page",
-                "type": "Admin_PWD_Page.Admin_Login_Back"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Admin_PWD_Page.Admin_Login_Back.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Admin_PWD_Page.Admin_Login_Back.TabIndex",
+                  "fullyQualifiedName": "Admin_PWD_Page.PWD_Main_Container.PWD_Header_Container.Admin_Login_Back.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Admin_PWD_Page",
-                "type": "Admin_PWD_Page.Admin_Login_Back"
+                "type": "Admin_PWD_Page.PWD_Main_Container.PWD_Header_Container.Admin_Login_Back"
               }
             }
           ],
@@ -3848,6 +3818,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Admin_PWD_Page.PWD_Main_Container.PWD_Header_Container.Admin_Login_Back.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Admin_PWD_Page.PWD_Main_Container.PWD_Header_Container.Admin_Login_Back.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Admin_PWD_Page",
+                "type": "Admin_PWD_Page.PWD_Main_Container.PWD_Header_Container.Admin_Login_Back"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -4765,6 +4765,36 @@
           },
           "ruleId": "app-NumericPropertySizeWarning",
           "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Admin_PWD_Page.PWD_Main_Container.PWD_Header_Container.Admin_Login_Title.PaddingRight"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Admin_PWD_Page.PWD_Main_Container.PWD_Header_Container.Admin_Login_Title.PaddingRight",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "PaddingRight",
+                "module": "Admin_PWD_Page",
+                "type": "Admin_PWD_Page.PWD_Main_Container.PWD_Header_Container.Admin_Login_Title"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 5
         }
       ],
       "tool": {
@@ -4855,6 +4885,23 @@
                 "level": "Low",
                 "primaryCategory": "performance",
                 "whyFix": "지원되는 모든 플랫폼에서 테스트하여 이 크기의 첨부 파일을 업로드할 수 있는지 확인하는 것이 좋습니다."
+              }
+            },
+            {
+              "id": "app-InefficientDelayLoading",
+              "messageStrings": {
+                "issue": {
+                  "text": "비효율적인 지연 로드"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "대신 변수, 컬렉션 및 탐색 컨텍스트를 사용하여 화면 전체에서 상태를 공유합니다."
+                ],
+                "level": "Medium",
+                "primaryCategory": "performance",
+                "whyFix": "다른 화면의 컨트롤을 참조하는 컨트롤은 앱 로딩 및 탐색 속도를 느리게 만들 수 있습니다. 그러면 사용자가 해당 화면으로 이동할 때까지 기다리지 않고 앱이 즉시 다른 화면을 로드할 수 있습니다."
               }
             }
           ],
