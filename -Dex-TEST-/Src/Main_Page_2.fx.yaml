@@ -1,35 +1,35 @@
-Main_Page As screen:
+Main_Page_2 As screen:
     BackgroundImage: =
     ImagePosition: =ImagePosition.Stretch
 
-    Container1 As groupContainer.manualLayoutContainer:
+    Container1_1 As groupContainer.manualLayoutContainer:
         Fill: =RGBA(0,0,0,0)
         Height: =Parent.Height
         Width: =Parent.Width
         ZIndex: =1
 
-        Image1 As image:
+        Image1_1 As image:
             Height: =Parent.Height
             Image: =ere
             ImagePosition: =ImagePosition.Fill
             Width: =Parent.Width
             ZIndex: =1
 
-    Container2 As groupContainer.verticalAutoLayoutContainer:
+    Container2_1 As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
         Width: =Parent.Width
         ZIndex: =5
 
-        Container3 As groupContainer.manualLayoutContainer:
+        Container3_1 As groupContainer.manualLayoutContainer:
             Height: =Parent.Width * 0.2
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             Width: =Parent.Width
             ZIndex: =1
 
-            MainPage_Title As label:
+            MainPage_Title_2 As label:
                 Align: =Align.Center
                 BorderColor: =RGBA(102, 182, 227, 0.7)
                 Color: =RGBA(255, 255, 255, 1)
@@ -40,23 +40,23 @@ Main_Page As screen:
                 Width: =Parent.Width
                 ZIndex: =1
 
-        Container4 As groupContainer.horizontalAutoLayoutContainer:
+        Container4_1 As groupContainer.horizontalAutoLayoutContainer:
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
             ZIndex: =2
 
-            Container5 As groupContainer.manualLayoutContainer:
+            Container5_2 As groupContainer.manualLayoutContainer:
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 ZIndex: =1
 
-            Container5_1 As groupContainer.manualLayoutContainer:
+            Container5_3 As groupContainer.manualLayoutContainer:
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 ZIndex: =2
 
-                MainPage_Admin_Button As button:
+                MainPage_Admin_Button_2 As button:
                     BorderColor: =RGBA( 112, 128, 144, 0.7 )
                     BorderThickness: =5
                     DisabledFill: =RGBA(241, 244, 249, 1)
@@ -72,7 +72,7 @@ Main_Page As screen:
                     Y: =180
                     ZIndex: =1
 
-                MainPage_User_Button As button:
+                MainPage_User_Button_2 As button:
                     BorderColor: =RGBA( 112, 128, 144, 0.7 )
                     BorderThickness: =5
                     DisabledFill: =RGBA(241, 244, 249, 1)

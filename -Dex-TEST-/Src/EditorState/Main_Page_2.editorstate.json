@@ -1,6 +1,6 @@
 {
   "ControlStates": {
-    "Container1": {
+    "Container1_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "BorderColor",
@@ -66,7 +66,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Container1",
+      "Name": "Container1_1",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -164,7 +164,7 @@
       "StyleName": "",
       "Type": "ControlInfo"
     },
-    "Container2": {
+    "Container2_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "BorderColor",
@@ -224,7 +224,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Container2",
+      "Name": "Container2_1",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -327,7 +327,7 @@
       "StyleName": "",
       "Type": "ControlInfo"
     },
-    "Container3": {
+    "Container3_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "BorderColor",
@@ -410,7 +410,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Container3",
+      "Name": "Container3_1",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -508,7 +508,7 @@
       "StyleName": "",
       "Type": "ControlInfo"
     },
-    "Container4": {
+    "Container4_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "BorderColor",
@@ -578,7 +578,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Container4",
+      "Name": "Container4_1",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -681,7 +681,7 @@
       "StyleName": "",
       "Type": "ControlInfo"
     },
-    "Container5": {
+    "Container5_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "BorderColor",
@@ -750,7 +750,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Container5",
+      "Name": "Container5_2",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -848,7 +848,7 @@
       "StyleName": "",
       "Type": "ControlInfo"
     },
-    "Container5_1": {
+    "Container5_3": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "BorderColor",
@@ -931,7 +931,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Container5_1",
+      "Name": "Container5_3",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1029,7 +1029,7 @@
       "StyleName": "",
       "Type": "ControlInfo"
     },
-    "Image1": {
+    "Image1_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -1113,7 +1113,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Image1",
+      "Name": "Image1_1",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1266,7 +1266,7 @@
       "StyleName": "defaultImageStyle",
       "Type": "ControlInfo"
     },
-    "Main_Page": {
+    "Main_Page_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Fill",
@@ -1301,7 +1301,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Main_Page",
+      "Name": "Main_Page_2",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1354,7 +1354,7 @@
       "StyleName": "defaultScreenStyle",
       "Type": "ControlInfo"
     },
-    "MainPage_Admin_Button": {
+    "MainPage_Admin_Button_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -1501,7 +1501,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "MainPage_Admin_Button",
+      "Name": "MainPage_Admin_Button_2",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1689,7 +1689,7 @@
       "StyleName": "defaultButtonStyle",
       "Type": "ControlInfo"
     },
-    "MainPage_Title": {
+    "MainPage_Title_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Live",
@@ -1818,7 +1818,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "MainPage_Title",
+      "Name": "MainPage_Title_2",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2021,7 +2021,7 @@
       "StyleName": "defaultLabelStyle",
       "Type": "ControlInfo"
     },
-    "MainPage_User_Button": {
+    "MainPage_User_Button_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -2168,7 +2168,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "MainPage_User_Button",
+      "Name": "MainPage_User_Button_2",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2357,5 +2357,5 @@
       "Type": "ControlInfo"
     }
   },
-  "TopParentName": "Main_Page"
+  "TopParentName": "Main_Page_2"
 }
