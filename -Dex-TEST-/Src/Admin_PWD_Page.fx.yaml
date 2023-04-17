@@ -24,7 +24,7 @@ Admin_PWD_Page As screen:
         HoverFill: =ColorFade(RGBA(102, 182, 227, 1), -20%)
         OnSelect: |-
             =If(
-                PW_TextInput.Text="1234",
+                PW_TextInput.Text="dex1234%",
                 Reset(PW_TextInput);
                 Navigate(Admin_Page),
                 Notify("틀렸습니다.");
