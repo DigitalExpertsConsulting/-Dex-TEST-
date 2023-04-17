@@ -35,7 +35,7 @@ User_Page As screen:
                 FillPortions: =1
                 FontWeight: =FontWeight.Bold
                 Height: =186
-                Size: =50 - (Parent.Width * 0.005)
+                Size: =50 + (Parent.Width * 0.005)
                 Text: ="User Page"
                 Width: =1366
                 ZIndex: =2
