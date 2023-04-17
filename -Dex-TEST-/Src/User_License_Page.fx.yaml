@@ -782,7 +782,7 @@ User_License_Page As screen:
     License_Input As form:
         DataSource: =ability_license
         DefaultMode: =FormMode.New
-        Fill: =RGBA( 106, 170, 205, 1 )
+        Fill: =RGBA(255, 255, 255, 0.4)
         Visible: |
             =true
         Width: =686
