@@ -2,17 +2,6 @@ Main_Page_1 As screen:
     BackgroundImage: =ere
     ImagePosition: =ImagePosition.Stretch
 
-    MainPage_Title_1 As label:
-        Align: =Align.Center
-        BorderColor: =RGBA(102, 182, 227, 0.7)
-        Color: =RGBA(255, 255, 255, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =183
-        Size: =50
-        Text: ="Dexconsulting 역량 관리"
-        Width: =1366
-        ZIndex: =3
-
     MainPage_User_Button_1 As button:
         BorderColor: =RGBA( 112, 128, 144, 0.7 )
         BorderThickness: =5
@@ -44,4 +33,29 @@ Main_Page_1 As screen:
         X: =930
         Y: =563
         ZIndex: =6
+
+    Maincontainer As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =7
+
+        headercon As groupContainer.manualLayoutContainer:
+            FillPortions: =0
+            Height: =182
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            ZIndex: =1
+
+            MainPage_Title_1 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(102, 182, 227, 0.7)
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =183
+                Size: =50
+                Text: ="Dexconsulting 역량 관리"
+                Width: =1366
+                ZIndex: =1
 
