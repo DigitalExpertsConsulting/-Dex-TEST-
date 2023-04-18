@@ -11,6 +11,7 @@ User_Profile_Page As screen:
 
         Profile_Header_Container As groupContainer.horizontalAutoLayoutContainer:
             FillPortions: =0
+            LayoutAlignItems: =LayoutAlignItems.Center
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
@@ -24,8 +25,8 @@ User_Profile_Page As screen:
                 Height: =130
                 Icon: =Icon.BackArrow
                 OnSelect: =Navigate(User_Page)
-                Width: =130
-                X: =110
+                Width: =Parent.Width * 0.08
+                X: =Parent.X * 0.01
                 Y: =40
                 ZIndex: =1
 
@@ -35,10 +36,10 @@ User_Profile_Page As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 FillPortions: =1
                 FontWeight: =FontWeight.Bold
-                Height: =186
-                Size: =50
+                Height: =Parent.Height
+                Size: =Parent.Width * 0.035
                 Text: ="Profile Page"
-                Width: =1366
+                Width: =Parent.Width - Profile_Back.Width - Profile_Home.Width
                 ZIndex: =2
 
             Profile_Home As icon.Home:
@@ -46,8 +47,8 @@ User_Profile_Page As screen:
                 Height: =130
                 Icon: =Icon.Home
                 OnSelect: =Navigate(Main_Page)
-                Width: =130
-                X: =1120
+                Width: =Parent.Width * 0.08
+                X: =Parent.Width * 0.9
                 Y: =40
                 ZIndex: =3
 
@@ -55,13 +56,13 @@ User_Profile_Page As screen:
             AlignInContainer: =AlignInContainer.Center
             LayoutMinHeight: =100
             LayoutMinWidth: =250
-            Width: =1000
+            Width: =Parent.Width * 0.78
             ZIndex: =2
 
             Profile_Down_Container As groupContainer.manualLayoutContainer:
                 Height: =375
-                Width: =360
-                X: =Parent.Width - 900
+                Width: =Parent.Width * 0.35
+                X: =Parent.Width * 0.16
                 Y: =100
                 ZIndex: =2
 
@@ -71,9 +72,9 @@ User_Profile_Page As screen:
                     BorderThickness: =5
                     Fill: =RGBA(237, 237, 237, 1)
                     Height: =200
-                    Size: =20
+                    Size: =Parent.Width * 0.055
                     Text: ="Profile 양식 다운로드 해주세요."
-                    Width: =280
+                    Width: =Parent.Width * 0.8
                     X: =42
                     Y: =16
                     ZIndex: =1
@@ -84,17 +85,18 @@ User_Profile_Page As screen:
                     Height: =76
                     HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -50%)
                     OnSelect: =ability_user_down_profile_form.Run()
+                    Size: =Parent.Width * 0.04
                     Text: ="양식 다운로드"
-                    Width: =282
+                    Width: =Parent.Width * 0.8
                     X: =40
                     Y: =273
                     ZIndex: =2
 
             Profile_Up_Container As groupContainer.manualLayoutContainer:
                 Height: =375
-                Width: =360
+                Width: =Parent.Width * 0.35
                 X: |
-                    =Parent.Width - 450
+                    =Parent.Width * 0.56
                 Y: =100
                 ZIndex: =3
 
@@ -116,9 +118,9 @@ User_Profile_Page As screen:
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     PaddingRight: =5
                     PaddingTop: =5
-                    Size: =20
+                    Size: =Parent.Width * 0.055
                     Tooltip: =
-                    Width: =280
+                    Width: =Parent.Width * 0.8
                     X: =40
                     Y: =15
                     ZIndex: =1
@@ -154,8 +156,9 @@ User_Profile_Page As screen:
                                 "false"
                             );
                         );
+                    Size: =Parent.Width * 0.04
                     Text: ="업로드"
-                    Width: =282
+                    Width: =Parent.Width * 0.8
                     X: =38
                     Y: =262
                     ZIndex: =2
