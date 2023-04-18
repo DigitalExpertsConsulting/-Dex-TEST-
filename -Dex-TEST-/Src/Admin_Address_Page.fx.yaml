@@ -33,111 +33,6 @@ Admin_Address_Page As screen:
         Y: =40
         ZIndex: =3
 
-    Admin_Address_DataTable As dataTable.datatable:
-        BorderColor: =RGBA( 112, 128, 144, 0.7 )
-        BorderStyle: =BorderStyle.Solid
-        BorderThickness: =5
-        Color: =RGBA( 0, 0, 0, 1 )
-        DisplayMode: =DisplayMode.Edit
-        Fill: =RGBA(255, 255, 255, 0.9)
-        HeadingFill: =RGBA( 106, 170, 205, 1 )
-        Height: =420
-        Items: |-
-            =//ability_address
-            Search(ability_address,Address_Search.Text,"cr778_name")
-        SelectedFill: =RGBA(241, 244, 249, 1)
-        Width: =1200
-        X: =85
-        Y: =300
-        ZIndex: =5
-
-        Name_열1 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Name"
-            FieldName: ="cr778_name"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =1
-            Text: =ThisItem.Name
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =1
-
-        "'E-mail_열1' As dataTableColumn.textualColumn":
-            AutoWidth: =false
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="E-mail"
-            FieldName: ="cr778_email"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =3
-            Text: =ThisItem.'E-mail'
-            Width: =271
-            X: =0
-            Y: =0
-            ZIndex: =3
-
-        Address_열1 As dataTableColumn.textualColumn:
-            AutoWidth: =false
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Address"
-            FieldName: ="cr778_address"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =4
-            Text: =ThisItem.Address
-            Width: =685
-            X: =0
-            Y: =0
-            ZIndex: =4
-
-        Zipcode_열1 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Zipcode"
-            FieldName: ="cr778_zipcode"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =5
-            Text: =ThisItem.Zipcode
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =5
-
-        Gift_Address_열1 As dataTableColumn.textualColumn:
-            AutoWidth: =false
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Gift_Address"
-            FieldName: ="cr778_gift_address"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =6
-            Text: =ThisItem.Gift_Address
-            Width: =654
-            X: =0
-            Y: =0
-            ZIndex: =6
-
-        Gift_Zipcode_열1 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Gift_Zipcode"
-            FieldName: ="cr778_gift_zipcode"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =7
-            Text: =ThisItem.Gift_Zipcode
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =7
-
     AddressDownload_button As button:
         BorderColor: =RGBA( 112, 128, 144, 0.7 )
         BorderThickness: =5
@@ -148,8 +43,8 @@ Admin_Address_Page As screen:
             'ExcelDownload(Address)'.Run("")
         Text: ="다운로드"
         Width: =180
-        X: =85
-        Y: =245
+        X: =21
+        Y: =219
         ZIndex: =6
 
     Address_Search As text:
@@ -159,15 +54,151 @@ Admin_Address_Page As screen:
         Height: =35
         HintText: ="검색"
         Width: =245
-        X: =1040
-        Y: =250
+        X: =1102
+        Y: =227
         ZIndex: =7
 
     Admin_Refresh As icon.Reload:
         Color: =RGBA(255, 255, 255, 1)
         Icon: =Icon.Reload
         OnSelect: =Refresh(ability_address)
-        X: =294
-        Y: =224
+        X: =222
+        Y: =212
         ZIndex: =8
+
+    Admin_Address_Gallery As gallery.galleryVertical:
+        DelayItemLoading: =true
+        Fill: =RGBA(255, 255, 255, 0.9)
+        Height: =434
+        Items: =ability_address
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplateSize: |-
+            =/*If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))*/
+            35
+        Width: =1366
+        Y: =334
+        ZIndex: =9
+
+        Label3_6 As label:
+            Height: =35
+            OnSelect: =Select(Parent)
+            Size: =10
+            Text: =ThisItem.Name
+            Width: =57
+            X: =10
+            ZIndex: =1
+
+        Label3_7 As label:
+            Height: =35
+            OnSelect: =Select(Parent)
+            Size: =10
+            Text: =ThisItem.'E-mail'
+            Width: =189
+            X: =82
+            ZIndex: =2
+
+        Label3_8 As label:
+            Height: =35
+            OnSelect: =Select(Parent)
+            Size: =10
+            Text: =ThisItem.Address
+            Width: =467
+            X: =271
+            ZIndex: =3
+
+        Label3_9 As label:
+            Height: =35
+            OnSelect: =Select(Parent)
+            Size: =10
+            Text: =ThisItem.Zipcode
+            Width: =57
+            X: =763
+            ZIndex: =4
+
+        Label3_10 As label:
+            Height: =35
+            OnSelect: =Select(Parent)
+            Size: =10
+            Text: =ThisItem.Gift_Address
+            Width: =415
+            X: =835
+            ZIndex: =5
+
+        Label3_11 As label:
+            Height: =35
+            OnSelect: =Select(Parent)
+            Size: =10
+            Text: =ThisItem.Gift_Zipcode
+            Width: =57
+            X: =1270
+            ZIndex: =6
+
+    Admin_Addresee_Gallery_Title As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =17
+
+        Rectangle1_1 As rectangle:
+            Fill: =RGBA( 106, 170, 205, 1 )
+            Height: =53
+            Width: =1366
+            Y: =281
+            ZIndex: =10
+
+        Label6_6 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Text: ="이름"
+            Width: =45
+            X: =16
+            Y: =287
+            ZIndex: =11
+
+        Label6_7 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Text: ="E-mail"
+            Width: =79
+            X: =143
+            Y: =287
+            ZIndex: =12
+
+        Label6_8 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Text: ="주소"
+            Width: =58
+            X: =472
+            Y: =287
+            ZIndex: =13
+
+        Label6_9 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Text: ="우편번호"
+            Width: =87
+            X: =752
+            Y: =287
+            ZIndex: =14
+
+        Label6_10 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Text: ="선물 주소"
+            Width: =87
+            X: =993
+            Y: =287
+            ZIndex: =15
+
+        Label6_11 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Text: ="선물 우편번호"
+            Width: =131
+            X: =1235
+            Y: =287
+            ZIndex: =16
 

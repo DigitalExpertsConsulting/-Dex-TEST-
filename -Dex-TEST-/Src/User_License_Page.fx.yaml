@@ -2515,75 +2515,6 @@ User_License_Page As screen:
                             Y: =16
                             ZIndex: =8
 
-                    "'E-mail_License_DataCard' As typedDataCard.textualEditCard":
-                        BorderStyle: =BorderStyle.Solid
-                        DataField: ="cr778_email"
-                        Default: =ThisItem.'E-mail'
-                        DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@ability_license],DataSourceInfo.DisplayName,"cr778_email")
-                        Fill: =RGBA(0, 0, 0, 0)
-                        Height: =50
-                        MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_email")
-                        Required: =false
-                        Update: ='E-mail_License_DataCardValue'.Text
-                        Visible: =false
-                        Width: =240
-                        X: =1
-                        Y: =11
-                        ZIndex: =1
-
-                        "'E-mail_License_DataCardKey' As label":
-                            AutoHeight: =true
-                            Height: =34
-                            Text: =Parent.DisplayName
-                            Width: =Parent.Width - 60
-                            Wrap: =false
-                            X: =30
-                            Y: =10
-                            ZIndex: =1
-
-                        "'E-mail_License_DataCardValue' As text":
-                            BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                            Default: =User().Email
-                            DelayOutput: =true
-                            DisplayMode: =Parent.DisplayMode
-                            MaxLength: =Parent.MaxLength
-                            PaddingLeft: =5
-                            RadiusBottomLeft: =0
-                            RadiusBottomRight: =0
-                            RadiusTopLeft: =0
-                            RadiusTopRight: =0
-                            Tooltip: =Parent.DisplayName
-                            Width: =Parent.Width - 60
-                            X: =30
-                            Y: ='E-mail_License_DataCardKey'.Y + 'E-mail_License_DataCardKey'.Height + 5
-                            ZIndex: =2
-
-                        ErrorMessage46 As label:
-                            AutoHeight: =true
-                            Height: =10
-                            Live: =Live.Assertive
-                            PaddingBottom: =0
-                            PaddingLeft: =0
-                            PaddingRight: =0
-                            PaddingTop: =0
-                            Text: =Parent.Error
-                            Visible: =Parent.DisplayMode=DisplayMode.Edit
-                            Width: =Parent.Width - 60
-                            X: =30
-                            Y: ='E-mail_License_DataCardValue'.Y + 'E-mail_License_DataCardValue'.Height
-                            ZIndex: =3
-
-                        StarVisible46 As label:
-                            Align: =Align.Center
-                            Height: ='E-mail_License_DataCardKey'.Height
-                            Text: ="*"
-                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                            Width: =30
-                            Wrap: =false
-                            Y: ='E-mail_License_DataCardKey'.Y
-                            ZIndex: =4
-
                     Name_License_DataCard As typedDataCard.textualEditCard:
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="cr778_name"
@@ -2657,6 +2588,75 @@ User_License_Page As screen:
                             Y: =Name_License_DataCardKey.Y
                             ZIndex: =4
 
+                    "'E-mail_License_DataCard' As typedDataCard.textualEditCard":
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="cr778_email"
+                        Default: =ThisItem.'E-mail'
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@ability_license],DataSourceInfo.DisplayName,"cr778_email")
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =50
+                        MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_email")
+                        Required: =false
+                        Update: ='E-mail_License_DataCardValue'.Text
+                        Visible: =false
+                        Width: =240
+                        X: =1
+                        Y: =11
+                        ZIndex: =1
+
+                        "'E-mail_License_DataCardKey' As label":
+                            AutoHeight: =true
+                            Height: =34
+                            Text: =Parent.DisplayName
+                            Width: =Parent.Width - 60
+                            Wrap: =false
+                            X: =30
+                            Y: =10
+                            ZIndex: =1
+
+                        "'E-mail_License_DataCardValue' As text":
+                            BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                            Default: =User().Email
+                            DelayOutput: =true
+                            DisplayMode: =Parent.DisplayMode
+                            MaxLength: =Parent.MaxLength
+                            PaddingLeft: =5
+                            RadiusBottomLeft: =0
+                            RadiusBottomRight: =0
+                            RadiusTopLeft: =0
+                            RadiusTopRight: =0
+                            Tooltip: =Parent.DisplayName
+                            Width: =Parent.Width - 60
+                            X: =30
+                            Y: ='E-mail_License_DataCardKey'.Y + 'E-mail_License_DataCardKey'.Height + 5
+                            ZIndex: =2
+
+                        ErrorMessage46 As label:
+                            AutoHeight: =true
+                            Height: =10
+                            Live: =Live.Assertive
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Text: =Parent.Error
+                            Visible: =Parent.DisplayMode=DisplayMode.Edit
+                            Width: =Parent.Width - 60
+                            X: =30
+                            Y: ='E-mail_License_DataCardValue'.Y + 'E-mail_License_DataCardValue'.Height
+                            ZIndex: =3
+
+                        StarVisible46 As label:
+                            Align: =Align.Center
+                            Height: ='E-mail_License_DataCardKey'.Height
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            Wrap: =false
+                            Y: ='E-mail_License_DataCardKey'.Y
+                            ZIndex: =4
+
             File_Container As groupContainer.manualLayoutContainer:
                 Height: =418
                 Width: =Parent.Width * 0.47
@@ -2671,24 +2671,24 @@ User_License_Page As screen:
                     Width: =Parent.Width
                     ZIndex: =1
 
-                    "'MS-100_File_DataCard' As typedDataCard.fileEditCard":
+                    "'AZ-104_File_DataCard' As typedDataCard.fileEditCard":
                         BorderStyle: =BorderStyle.Solid
-                        DataField: ="cr778_ms100"
+                        DataField: ="cr778_az104"
                         Default: |-
-                            =If(!IsBlank(ThisItem.'MS-100'.FileName), Table({DisplayName: ThisItem.'MS-100'.FileName, Value: ThisItem.'MS-100'.Value}), Blank())
+                            =If(!IsBlank(ThisItem.'AZ-104'.FileName), Table({DisplayName: ThisItem.'AZ-104'.FileName, Value: ThisItem.'AZ-104'.Value}), Blank())
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_ms100")
+                        DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_az104")
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         Required: =false
-                        Update: ='MS-100_File_DataCardValue'.Attachments
-                        Visible: =If('MS-100_Toggle'.Value=true,true,false)
+                        Update: ='AZ-104_File_DataCardValue'.Attachments
+                        Visible: =If('AZ-104_Toggle'.Value=true,true,false)
                         Width: =Parent.Width
                         X: =0
-                        Y: =2
+                        Y: =0
                         ZIndex: =1
 
-                        "'MS-100_File_DataCardKey' As label":
+                        "'AZ-104_File_DataCardKey' As label":
                             AutoHeight: =true
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Semibold
@@ -2701,7 +2701,7 @@ User_License_Page As screen:
                             Y: =10
                             ZIndex: =1
 
-                        "'MS-100_File_DataCardValue' As attachments":
+                        "'AZ-104_File_DataCardValue' As attachments":
                             AddAttachmentText: ="파일 업로드"
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                             DisplayMode: =Parent.DisplayMode
@@ -2718,12 +2718,12 @@ User_License_Page As screen:
                             PaddingTop: =5
                             Size: =Parent.Width * 0.02
                             Tooltip: =Parent.DisplayName
-                            Width: =Parent.Width * 0.88
+                            Width: = Parent.Width * 0.88
                             X: =Parent.Width * 0.045
-                            Y: ='MS-100_File_DataCardKey'.Y + 'MS-100_File_DataCardKey'.Height + 5
+                            Y: ='AZ-104_File_DataCardKey'.Y + 'AZ-104_File_DataCardKey'.Height + 5
                             ZIndex: =2
 
-                        ErrorMessage50 As label:
+                        ErrorMessage48 As label:
                             AutoHeight: =true
                             Height: =10
                             Live: =Live.Assertive
@@ -2735,17 +2735,17 @@ User_License_Page As screen:
                             Visible: =Parent.DisplayMode=DisplayMode.Edit
                             Width: =Parent.Width - 60
                             X: =30
-                            Y: ='MS-100_File_DataCardValue'.Y + 'MS-100_File_DataCardValue'.Height
+                            Y: ='AZ-104_File_DataCardValue'.Y + 'AZ-104_File_DataCardValue'.Height
                             ZIndex: =3
 
-                        StarVisible50 As label:
+                        StarVisible48 As label:
                             Align: =Align.Center
-                            Height: ='MS-100_File_DataCardKey'.Height
+                            Height: ='AZ-104_File_DataCardKey'.Height
                             Text: ="*"
                             Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                             Width: =30
                             Wrap: =false
-                            Y: ='MS-100_File_DataCardKey'.Y
+                            Y: ='AZ-104_File_DataCardKey'.Y
                             ZIndex: =4
 
                     "'AZ-305_File_DataCard' As typedDataCard.fileEditCard":
@@ -2825,24 +2825,24 @@ User_License_Page As screen:
                             Y: =DataCardKey55.Y
                             ZIndex: =4
 
-                    "'AZ-104_File_DataCard' As typedDataCard.fileEditCard":
+                    "'MS-100_File_DataCard' As typedDataCard.fileEditCard":
                         BorderStyle: =BorderStyle.Solid
-                        DataField: ="cr778_az104"
+                        DataField: ="cr778_ms100"
                         Default: |-
-                            =If(!IsBlank(ThisItem.'AZ-104'.FileName), Table({DisplayName: ThisItem.'AZ-104'.FileName, Value: ThisItem.'AZ-104'.Value}), Blank())
+                            =If(!IsBlank(ThisItem.'MS-100'.FileName), Table({DisplayName: ThisItem.'MS-100'.FileName, Value: ThisItem.'MS-100'.Value}), Blank())
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_az104")
+                        DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_ms100")
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         Required: =false
-                        Update: ='AZ-104_File_DataCardValue'.Attachments
-                        Visible: =If('AZ-104_Toggle'.Value=true,true,false)
+                        Update: ='MS-100_File_DataCardValue'.Attachments
+                        Visible: =If('MS-100_Toggle'.Value=true,true,false)
                         Width: =Parent.Width
                         X: =0
-                        Y: =0
+                        Y: =2
                         ZIndex: =1
 
-                        "'AZ-104_File_DataCardKey' As label":
+                        "'MS-100_File_DataCardKey' As label":
                             AutoHeight: =true
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Semibold
@@ -2855,7 +2855,7 @@ User_License_Page As screen:
                             Y: =10
                             ZIndex: =1
 
-                        "'AZ-104_File_DataCardValue' As attachments":
+                        "'MS-100_File_DataCardValue' As attachments":
                             AddAttachmentText: ="파일 업로드"
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                             DisplayMode: =Parent.DisplayMode
@@ -2872,12 +2872,12 @@ User_License_Page As screen:
                             PaddingTop: =5
                             Size: =Parent.Width * 0.02
                             Tooltip: =Parent.DisplayName
-                            Width: = Parent.Width * 0.88
+                            Width: =Parent.Width * 0.88
                             X: =Parent.Width * 0.045
-                            Y: ='AZ-104_File_DataCardKey'.Y + 'AZ-104_File_DataCardKey'.Height + 5
+                            Y: ='MS-100_File_DataCardKey'.Y + 'MS-100_File_DataCardKey'.Height + 5
                             ZIndex: =2
 
-                        ErrorMessage48 As label:
+                        ErrorMessage50 As label:
                             AutoHeight: =true
                             Height: =10
                             Live: =Live.Assertive
@@ -2889,17 +2889,17 @@ User_License_Page As screen:
                             Visible: =Parent.DisplayMode=DisplayMode.Edit
                             Width: =Parent.Width - 60
                             X: =30
-                            Y: ='AZ-104_File_DataCardValue'.Y + 'AZ-104_File_DataCardValue'.Height
+                            Y: ='MS-100_File_DataCardValue'.Y + 'MS-100_File_DataCardValue'.Height
                             ZIndex: =3
 
-                        StarVisible48 As label:
+                        StarVisible50 As label:
                             Align: =Align.Center
-                            Height: ='AZ-104_File_DataCardKey'.Height
+                            Height: ='MS-100_File_DataCardKey'.Height
                             Text: ="*"
                             Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                             Width: =30
                             Wrap: =false
-                            Y: ='AZ-104_File_DataCardKey'.Y
+                            Y: ='MS-100_File_DataCardKey'.Y
                             ZIndex: =4
 
                     "'MS-101_File_DataCard' As typedDataCard.fileEditCard":
@@ -3056,37 +3056,37 @@ User_License_Page As screen:
                             Y: ='MS-700_File_DataCardKey'.Y
                             ZIndex: =4
 
-                    "'PL-300_File_DataCard' As typedDataCard.fileEditCard":
+                    "'MS-900_File_DataCard' As typedDataCard.fileEditCard":
                         BorderStyle: =BorderStyle.Solid
-                        DataField: ="cr778_pl300"
+                        DataField: ="cr778_ms900"
                         Default: |-
-                            =If(!IsBlank(ThisItem.'PL-300'.FileName), Table({DisplayName: ThisItem.'PL-300'.FileName, Value: ThisItem.'PL-300'.Value}), Blank())
+                            =If(!IsBlank(ThisItem.'MS-900'.FileName), Table({DisplayName: ThisItem.'MS-900'.FileName, Value: ThisItem.'MS-900'.Value}), Blank())
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_pl300")
+                        DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_ms900")
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         Required: =false
-                        Update: ='PL-300_File_DataCardValue'.Attachments
-                        Visible: =If('PL-300_Toggle'.Value=true,true,false)
-                        Width: = Parent.Width
+                        Update: ='MS-900_File_DataCardValue'.Attachments
+                        Visible: =If('MS-900_Toggle'.Value=true,true,false)
+                        Width: =594
                         X: =0
-                        Y: =7
+                        Y: =5
                         ZIndex: =1
 
-                        "'PL-300_File_DataCardKey' As label":
+                        "'MS-900_File_DataCardKey' As label":
                             AutoHeight: =true
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Semibold
                             Height: =34
-                            Size: =Parent.Width * 0.025
+                            Size: =15
                             Text: =Parent.DisplayName
-                            Width: =Parent.Width * 0.88
+                            Width: =Parent.Width - 60
                             Wrap: =false
-                            X: =Parent.Width * 0.05
+                            X: =30
                             Y: =10
                             ZIndex: =1
 
-                        "'PL-300_File_DataCardValue' As attachments":
+                        "'MS-900_File_DataCardValue' As attachments":
                             AddAttachmentText: ="파일 업로드"
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                             DisplayMode: =Parent.DisplayMode
@@ -3101,14 +3101,13 @@ User_License_Page As screen:
                             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                             PaddingRight: =5
                             PaddingTop: =5
-                            Size: =Parent.Width * 0.02
                             Tooltip: =Parent.DisplayName
-                            Width: =Parent.Width * 0.88
-                            X: =Parent.Width * 0.045
-                            Y: ='PL-300_File_DataCardKey'.Y + 'PL-300_File_DataCardKey'.Height + 5
+                            Width: =Parent.Width - 60
+                            X: =30
+                            Y: ='MS-900_File_DataCardKey'.Y + 'MS-900_File_DataCardKey'.Height + 5
                             ZIndex: =2
 
-                        ErrorMessage55 As label:
+                        ErrorMessage53 As label:
                             AutoHeight: =true
                             Height: =10
                             Live: =Live.Assertive
@@ -3120,17 +3119,17 @@ User_License_Page As screen:
                             Visible: =Parent.DisplayMode=DisplayMode.Edit
                             Width: =Parent.Width - 60
                             X: =30
-                            Y: ='PL-300_File_DataCardValue'.Y + 'PL-300_File_DataCardValue'.Height
+                            Y: ='MS-900_File_DataCardValue'.Y + 'MS-900_File_DataCardValue'.Height
                             ZIndex: =3
 
-                        StarVisible55 As label:
+                        StarVisible53 As label:
                             Align: =Align.Center
-                            Height: ='PL-300_File_DataCardKey'.Height
+                            Height: ='MS-900_File_DataCardKey'.Height
                             Text: ="*"
                             Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                             Width: =30
                             Wrap: =false
-                            Y: ='PL-300_File_DataCardKey'.Y
+                            Y: ='MS-900_File_DataCardKey'.Y
                             ZIndex: =4
 
                     "'PL-200_File_DataCard' As typedDataCard.fileEditCard":
@@ -3210,37 +3209,37 @@ User_License_Page As screen:
                             Y: ='PL-200_File_DataCardKey'.Y
                             ZIndex: =4
 
-                    "'MS-900_File_DataCard' As typedDataCard.fileEditCard":
+                    "'PL-300_File_DataCard' As typedDataCard.fileEditCard":
                         BorderStyle: =BorderStyle.Solid
-                        DataField: ="cr778_ms900"
+                        DataField: ="cr778_pl300"
                         Default: |-
-                            =If(!IsBlank(ThisItem.'MS-900'.FileName), Table({DisplayName: ThisItem.'MS-900'.FileName, Value: ThisItem.'MS-900'.Value}), Blank())
+                            =If(!IsBlank(ThisItem.'PL-300'.FileName), Table({DisplayName: ThisItem.'PL-300'.FileName, Value: ThisItem.'PL-300'.Value}), Blank())
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_ms900")
+                        DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_pl300")
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         Required: =false
-                        Update: ='MS-900_File_DataCardValue'.Attachments
-                        Visible: =If('MS-900_Toggle'.Value=true,true,false)
-                        Width: =594
+                        Update: ='PL-300_File_DataCardValue'.Attachments
+                        Visible: =If('PL-300_Toggle'.Value=true,true,false)
+                        Width: = Parent.Width
                         X: =0
-                        Y: =5
+                        Y: =7
                         ZIndex: =1
 
-                        "'MS-900_File_DataCardKey' As label":
+                        "'PL-300_File_DataCardKey' As label":
                             AutoHeight: =true
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Semibold
                             Height: =34
-                            Size: =15
+                            Size: =Parent.Width * 0.025
                             Text: =Parent.DisplayName
-                            Width: =Parent.Width - 60
+                            Width: =Parent.Width * 0.88
                             Wrap: =false
-                            X: =30
+                            X: =Parent.Width * 0.05
                             Y: =10
                             ZIndex: =1
 
-                        "'MS-900_File_DataCardValue' As attachments":
+                        "'PL-300_File_DataCardValue' As attachments":
                             AddAttachmentText: ="파일 업로드"
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                             DisplayMode: =Parent.DisplayMode
@@ -3255,13 +3254,14 @@ User_License_Page As screen:
                             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                             PaddingRight: =5
                             PaddingTop: =5
+                            Size: =Parent.Width * 0.02
                             Tooltip: =Parent.DisplayName
-                            Width: =Parent.Width - 60
-                            X: =30
-                            Y: ='MS-900_File_DataCardKey'.Y + 'MS-900_File_DataCardKey'.Height + 5
+                            Width: =Parent.Width * 0.88
+                            X: =Parent.Width * 0.045
+                            Y: ='PL-300_File_DataCardKey'.Y + 'PL-300_File_DataCardKey'.Height + 5
                             ZIndex: =2
 
-                        ErrorMessage53 As label:
+                        ErrorMessage55 As label:
                             AutoHeight: =true
                             Height: =10
                             Live: =Live.Assertive
@@ -3273,17 +3273,17 @@ User_License_Page As screen:
                             Visible: =Parent.DisplayMode=DisplayMode.Edit
                             Width: =Parent.Width - 60
                             X: =30
-                            Y: ='MS-900_File_DataCardValue'.Y + 'MS-900_File_DataCardValue'.Height
+                            Y: ='PL-300_File_DataCardValue'.Y + 'PL-300_File_DataCardValue'.Height
                             ZIndex: =3
 
-                        StarVisible53 As label:
+                        StarVisible55 As label:
                             Align: =Align.Center
-                            Height: ='MS-900_File_DataCardKey'.Height
+                            Height: ='PL-300_File_DataCardKey'.Height
                             Text: ="*"
                             Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                             Width: =30
                             Wrap: =false
-                            Y: ='MS-900_File_DataCardKey'.Y
+                            Y: ='PL-300_File_DataCardKey'.Y
                             ZIndex: =4
 
                     "'PL-400_File_DataCard' As typedDataCard.fileEditCard":
@@ -3440,148 +3440,6 @@ User_License_Page As screen:
                             Y: ='PL-600_File_DataCardKey'.Y
                             ZIndex: =4
 
-                    "'E-mail_File_DataCard' As typedDataCard.textualEditCard":
-                        BorderStyle: =BorderStyle.Solid
-                        DataField: ="cr778_email"
-                        Default: =ThisItem.'E-mail'
-                        DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_email")
-                        Fill: =RGBA(0, 0, 0, 0)
-                        Height: =50
-                        MaxLength: =DataSourceInfo([@ability_file], DataSourceInfo.MaxLength, "cr778_email")
-                        Required: =false
-                        Update: ='E-mail_File_DataCardValue'.Text
-                        Visible: =false
-                        Width: =198
-                        X: =1
-                        Y: =11
-                        ZIndex: =1
-
-                        "'E-mail_File_DataCardKey' As label":
-                            AutoHeight: =true
-                            Height: =34
-                            Text: =Parent.DisplayName
-                            Width: =Parent.Width - 60
-                            Wrap: =false
-                            X: =30
-                            Y: =10
-                            ZIndex: =1
-
-                        "'E-mail_File_DataCardValue' As text":
-                            BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                            Default: =User().Email
-                            DelayOutput: =true
-                            DisplayMode: =Parent.DisplayMode
-                            MaxLength: =Parent.MaxLength
-                            PaddingLeft: =5
-                            RadiusBottomLeft: =0
-                            RadiusBottomRight: =0
-                            RadiusTopLeft: =0
-                            RadiusTopRight: =0
-                            Tooltip: =Parent.DisplayName
-                            Width: =Parent.Width - 60
-                            X: =30
-                            Y: ='E-mail_File_DataCardKey'.Y + 'E-mail_File_DataCardKey'.Height + 5
-                            ZIndex: =2
-
-                        ErrorMessage60 As label:
-                            AutoHeight: =true
-                            Height: =10
-                            Live: =Live.Assertive
-                            PaddingBottom: =0
-                            PaddingLeft: =0
-                            PaddingRight: =0
-                            PaddingTop: =0
-                            Text: =Parent.Error
-                            Visible: =Parent.DisplayMode=DisplayMode.Edit
-                            Width: =Parent.Width - 60
-                            X: =30
-                            Y: ='E-mail_File_DataCardValue'.Y + 'E-mail_File_DataCardValue'.Height
-                            ZIndex: =3
-
-                        StarVisible60 As label:
-                            Align: =Align.Center
-                            Height: ='E-mail_File_DataCardKey'.Height
-                            Text: ="*"
-                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                            Width: =30
-                            Wrap: =false
-                            Y: ='E-mail_File_DataCardKey'.Y
-                            ZIndex: =4
-
-                    Name_File_DataCard As typedDataCard.textualEditCard:
-                        BorderStyle: =BorderStyle.Solid
-                        DataField: ="cr778_name"
-                        Default: =ThisItem.Name
-                        DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_name")
-                        Fill: =RGBA(0, 0, 0, 0)
-                        Height: =50
-                        MaxLength: =DataSourceInfo([@ability_file], DataSourceInfo.MaxLength, "cr778_name")
-                        Required: =true
-                        Update: =Name_File_DataCardValue.Text
-                        Visible: =false
-                        Width: =198
-                        X: =0
-                        Y: =11
-                        ZIndex: =1
-
-                        Name_File_DataCardKey As label:
-                            AutoHeight: =true
-                            Height: =34
-                            Text: =Parent.DisplayName
-                            Width: =Parent.Width - 60
-                            Wrap: =false
-                            X: =30
-                            Y: =10
-                            ZIndex: =1
-
-                        Name_File_DataCardValue As text:
-                            BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                            Default: |-
-                                =With(
-                                    { wName: Split(User().FullName, " ") },
-                                    Last(wName).Value & First(wName).Value
-                                )
-                            DelayOutput: =true
-                            DisplayMode: =Parent.DisplayMode
-                            MaxLength: =Parent.MaxLength
-                            PaddingLeft: =5
-                            RadiusBottomLeft: =0
-                            RadiusBottomRight: =0
-                            RadiusTopLeft: =0
-                            RadiusTopRight: =0
-                            Tooltip: =Parent.DisplayName
-                            Width: =Parent.Width - 60
-                            X: =30
-                            Y: =Name_File_DataCardKey.Y + Name_File_DataCardKey.Height + 5
-                            ZIndex: =2
-
-                        ErrorMessage59 As label:
-                            AutoHeight: =true
-                            Height: =10
-                            Live: =Live.Assertive
-                            PaddingBottom: =0
-                            PaddingLeft: =0
-                            PaddingRight: =0
-                            PaddingTop: =0
-                            Text: =Parent.Error
-                            Visible: =Parent.DisplayMode=DisplayMode.Edit
-                            Width: =Parent.Width - 60
-                            X: =30
-                            Y: =Name_File_DataCardValue.Y + Name_File_DataCardValue.Height
-                            ZIndex: =3
-
-                        StarVisible59 As label:
-                            Align: =Align.Center
-                            Height: =Name_File_DataCardKey.Height
-                            Text: ="*"
-                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                            Width: =30
-                            Wrap: =false
-                            Y: =Name_File_DataCardKey.Y
-                            ZIndex: =4
-
                     "'PL-900_File_DataCard' As typedDataCard.fileEditCard":
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="cr778_pl900"
@@ -3657,6 +3515,148 @@ User_License_Page As screen:
                             Width: =30
                             Wrap: =false
                             Y: ='PL-900_File_DataCardKey'.Y
+                            ZIndex: =4
+
+                    Name_File_DataCard As typedDataCard.textualEditCard:
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="cr778_name"
+                        Default: =ThisItem.Name
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_name")
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =50
+                        MaxLength: =DataSourceInfo([@ability_file], DataSourceInfo.MaxLength, "cr778_name")
+                        Required: =true
+                        Update: =Name_File_DataCardValue.Text
+                        Visible: =false
+                        Width: =198
+                        X: =0
+                        Y: =11
+                        ZIndex: =1
+
+                        Name_File_DataCardKey As label:
+                            AutoHeight: =true
+                            Height: =34
+                            Text: =Parent.DisplayName
+                            Width: =Parent.Width - 60
+                            Wrap: =false
+                            X: =30
+                            Y: =10
+                            ZIndex: =1
+
+                        Name_File_DataCardValue As text:
+                            BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                            Default: |-
+                                =With(
+                                    { wName: Split(User().FullName, " ") },
+                                    Last(wName).Value & First(wName).Value
+                                )
+                            DelayOutput: =true
+                            DisplayMode: =Parent.DisplayMode
+                            MaxLength: =Parent.MaxLength
+                            PaddingLeft: =5
+                            RadiusBottomLeft: =0
+                            RadiusBottomRight: =0
+                            RadiusTopLeft: =0
+                            RadiusTopRight: =0
+                            Tooltip: =Parent.DisplayName
+                            Width: =Parent.Width - 60
+                            X: =30
+                            Y: =Name_File_DataCardKey.Y + Name_File_DataCardKey.Height + 5
+                            ZIndex: =2
+
+                        ErrorMessage59 As label:
+                            AutoHeight: =true
+                            Height: =10
+                            Live: =Live.Assertive
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Text: =Parent.Error
+                            Visible: =Parent.DisplayMode=DisplayMode.Edit
+                            Width: =Parent.Width - 60
+                            X: =30
+                            Y: =Name_File_DataCardValue.Y + Name_File_DataCardValue.Height
+                            ZIndex: =3
+
+                        StarVisible59 As label:
+                            Align: =Align.Center
+                            Height: =Name_File_DataCardKey.Height
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            Wrap: =false
+                            Y: =Name_File_DataCardKey.Y
+                            ZIndex: =4
+
+                    "'E-mail_File_DataCard' As typedDataCard.textualEditCard":
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="cr778_email"
+                        Default: =ThisItem.'E-mail'
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_email")
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =50
+                        MaxLength: =DataSourceInfo([@ability_file], DataSourceInfo.MaxLength, "cr778_email")
+                        Required: =false
+                        Update: ='E-mail_File_DataCardValue'.Text
+                        Visible: =false
+                        Width: =198
+                        X: =1
+                        Y: =11
+                        ZIndex: =1
+
+                        "'E-mail_File_DataCardKey' As label":
+                            AutoHeight: =true
+                            Height: =34
+                            Text: =Parent.DisplayName
+                            Width: =Parent.Width - 60
+                            Wrap: =false
+                            X: =30
+                            Y: =10
+                            ZIndex: =1
+
+                        "'E-mail_File_DataCardValue' As text":
+                            BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                            Default: =User().Email
+                            DelayOutput: =true
+                            DisplayMode: =Parent.DisplayMode
+                            MaxLength: =Parent.MaxLength
+                            PaddingLeft: =5
+                            RadiusBottomLeft: =0
+                            RadiusBottomRight: =0
+                            RadiusTopLeft: =0
+                            RadiusTopRight: =0
+                            Tooltip: =Parent.DisplayName
+                            Width: =Parent.Width - 60
+                            X: =30
+                            Y: ='E-mail_File_DataCardKey'.Y + 'E-mail_File_DataCardKey'.Height + 5
+                            ZIndex: =2
+
+                        ErrorMessage60 As label:
+                            AutoHeight: =true
+                            Height: =10
+                            Live: =Live.Assertive
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Text: =Parent.Error
+                            Visible: =Parent.DisplayMode=DisplayMode.Edit
+                            Width: =Parent.Width - 60
+                            X: =30
+                            Y: ='E-mail_File_DataCardValue'.Y + 'E-mail_File_DataCardValue'.Height
+                            ZIndex: =3
+
+                        StarVisible60 As label:
+                            Align: =Align.Center
+                            Height: ='E-mail_File_DataCardKey'.Height
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            Wrap: =false
+                            Y: ='E-mail_File_DataCardKey'.Y
                             ZIndex: =4
 
             License_Send_Container As groupContainer.manualLayoutContainer:
