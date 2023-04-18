@@ -1338,7 +1338,7 @@ User_Skill_Page As screen:
                             ResetForm(Skill_Input);
                         )
                         
-                    Width: =130
+                    Width: =Parent.Width * 0.88
                     X: =20
                     Y: =5
                     ZIndex: =1
