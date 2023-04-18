@@ -60,7 +60,7 @@ User_Address_Page As screen:
             ZIndex: =2
 
             Address_Container As groupContainer.manualLayoutContainer:
-                Height: =491
+                Height: =Parent.Height
                 Width: =Parent.Width * 0.7
                 X: =Parent.Width * 0.15
                 Y: =30
@@ -71,7 +71,7 @@ User_Address_Page As screen:
                     DataSource: =ability_address
                     DefaultMode: =FormMode.New
                     Fill: =RGBA(255, 255, 255, 0.4)
-                    Height: =491
+                    Height: =Parent.Height * 0.9
                     Width: =Parent.Width
                     ZIndex: =1
 
