@@ -18,6 +18,7 @@ User_Skill_Page As screen:
             PaddingLeft: =50
             PaddingRight: =50
             PaddingTop: =30
+            Width: =Parent.Width
             ZIndex: =1
 
             Skill_Back As icon.BackArrow:

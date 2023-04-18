@@ -11,12 +11,14 @@ User_Address_Page As screen:
 
         Address_Header_Container As groupContainer.horizontalAutoLayoutContainer:
             FillPortions: =0
+            LayoutAlignItems: =LayoutAlignItems.Center
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
             PaddingLeft: =50
             PaddingRight: =50
             PaddingTop: =30
+            Width: =Parent.Width
             ZIndex: =1
 
             Address_Back As icon.BackArrow:
@@ -24,8 +26,8 @@ User_Address_Page As screen:
                 Height: =130
                 Icon: =Icon.BackArrow
                 OnSelect: =Navigate(User_Page)
-                Width: =130
-                X: =110
+                Width: =Parent.Width * 0.08
+                X: =Parent.X * 0.01
                 Y: =40
                 ZIndex: =1
 
@@ -38,7 +40,7 @@ User_Address_Page As screen:
                 Height: =186
                 Size: =40
                 Text: ="Address Page"
-                Width: =1366
+                Width: =Parent.Width - Address_Back.Width - Address_Home.Width
                 ZIndex: =2
 
             Address_Home As icon.Home:
@@ -46,20 +48,21 @@ User_Address_Page As screen:
                 Height: =130
                 Icon: =Icon.Home
                 OnSelect: =Navigate(Main_Page)
-                Width: =130
-                X: =1120
+                Width: =Parent.Width * 0.08
+                X: =Parent.Width * 0.9
                 Y: =40
                 ZIndex: =3
 
         Address_Sub_Container As groupContainer.manualLayoutContainer:
             LayoutMinHeight: =100
             LayoutMinWidth: =250
+            Width: =Parent.Width
             ZIndex: =2
 
             Address_Container As groupContainer.manualLayoutContainer:
                 Height: =491
-                Width: =955
-                X: =225
+                Width: =Parent.Width * 0.7
+                X: =Parent.Width * 0.15
                 Y: =30
                 ZIndex: =1
 
@@ -69,7 +72,7 @@ User_Address_Page As screen:
                     DefaultMode: =FormMode.New
                     Fill: =RGBA(255, 255, 255, 0.4)
                     Height: =491
-                    Width: =955
+                    Width: =Parent.Width
                     ZIndex: =1
 
                     Address_DataCard As typedDataCard.textualEditCard:
@@ -84,7 +87,7 @@ User_Address_Page As screen:
                         MaxLength: =DataSourceInfo([@ability_address], DataSourceInfo.MaxLength, "cr778_address")
                         Required: =false
                         Update: =Address_DataCardValue.Text
-                        Width: =966
+                        Width: =Parent.Width
                         X: =0
                         Y: =0
                         ZIndex: =1
@@ -94,11 +97,11 @@ User_Address_Page As screen:
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Bold
                             Height: =34
-                            Size: =20
+                            Size: =Parent.Width * 0.021
                             Text: =Parent.DisplayName
-                            Width: =Parent.Width - 60
+                            Width: =Parent.Width * 0.88
                             Wrap: =false
-                            X: =30
+                            X: =Parent.Width * 0.032
                             Y: =10
                             ZIndex: =1
 
@@ -120,11 +123,10 @@ User_Address_Page As screen:
                             RadiusBottomRight: =0
                             RadiusTopLeft: =0
                             RadiusTopRight: =0
-                            Size: =17
+                            Size: =Parent.Width * 0.017
                             Tooltip: =Parent.DisplayName
-                            Width: |
-                                =900
-                            X: =30
+                            Width: =Parent.Width * 0.88
+                            X: =Parent.Width * 0.03
                             Y: =Address_DataCardKey.Y + Address_DataCardKey.Height + 5
                             ZIndex: =2
 
@@ -164,7 +166,7 @@ User_Address_Page As screen:
                         MaxLength: =DataSourceInfo([@ability_address], DataSourceInfo.MaxLength, "cr778_zipcode")
                         Required: =false
                         Update: =Zipcode_DataCardValue.Text
-                        Width: =966
+                        Width: =Parent.Width
                         X: =0
                         Y: =1
                         ZIndex: =1
@@ -174,11 +176,11 @@ User_Address_Page As screen:
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Bold
                             Height: =34
-                            Size: =20
+                            Size: =Parent.Width * 0.021
                             Text: =Parent.DisplayName
-                            Width: =Parent.Width - 60
+                            Width: =Parent.Width * 0.88
                             Wrap: =false
-                            X: =30
+                            X: =Parent.Width * 0.032
                             Y: =10
                             ZIndex: =1
 
@@ -225,10 +227,10 @@ User_Address_Page As screen:
                             RadiusBottomRight: =0
                             RadiusTopLeft: =0
                             RadiusTopRight: =0
-                            Size: =17
+                            Size: =Parent.Width * 0.017
                             Tooltip: =Parent.DisplayName
-                            Width: =900
-                            X: =30
+                            Width: =Parent.Width * 0.88
+                            X: =Parent.Width * 0.032
                             Y: =62
                             ZIndex: =5
 
@@ -312,7 +314,7 @@ User_Address_Page As screen:
                         MaxLength: =DataSourceInfo([@ability_address], DataSourceInfo.MaxLength, "cr778_gift_address")
                         Required: =false
                         Update: =Gift_Address_DataCardValue.Text
-                        Width: =966
+                        Width: =Parent.Width
                         X: =0
                         Y: =3
                         ZIndex: =1
@@ -322,11 +324,11 @@ User_Address_Page As screen:
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Bold
                             Height: =34
-                            Size: =20
+                            Size: =Parent.Width * 0.021
                             Text: ="Gift Address"
-                            Width: =Parent.Width - 60
+                            Width: =Parent.Width * 0.88
                             Wrap: =false
-                            X: =30
+                            X: =Parent.Width * 0.032
                             Y: =10
                             ZIndex: =1
 
@@ -347,10 +349,10 @@ User_Address_Page As screen:
                             RadiusBottomRight: =0
                             RadiusTopLeft: =0
                             RadiusTopRight: =0
-                            Size: =17
+                            Size: =Parent.Width * 0.017
                             Tooltip: =Parent.DisplayName
-                            Width: =900
-                            X: =30
+                            Width: =Parent.Width * 0.88
+                            X: =Parent.Width * 0.032
                             Y: =Gift_Address_DataCardKey.Y + Gift_Address_DataCardKey.Height + 5
                             ZIndex: =2
 
@@ -390,7 +392,7 @@ User_Address_Page As screen:
                         MaxLength: =DataSourceInfo([@ability_address], DataSourceInfo.MaxLength, "cr778_gift_zipcode")
                         Required: =false
                         Update: =Gift_Zipcode_DataCardValue.Text
-                        Width: =966
+                        Width: =Parent.Width
                         X: =0
                         Y: =4
                         ZIndex: =1
@@ -400,11 +402,11 @@ User_Address_Page As screen:
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Bold
                             Height: =34
-                            Size: =20
+                            Size: =Parent.Width * 0.021
                             Text: ="Gift Zipcode"
-                            Width: =Parent.Width - 60
+                            Width: =Parent.Width * 0.88
                             Wrap: =false
-                            X: =30
+                            X: =Parent.Width * 0.032
                             ZIndex: =1
 
                         Gift_Zipcode_DataCardValue As text:
@@ -424,10 +426,10 @@ User_Address_Page As screen:
                             RadiusBottomRight: =0
                             RadiusTopLeft: =0
                             RadiusTopRight: =0
-                            Size: =17
+                            Size: =Parent.Width * 0.017
                             Tooltip: =Parent.DisplayName
-                            Width: =900
-                            X: =30
+                            Width: =Parent.Width * 0.88
+                            X: =Parent.Width * 0.032
                             Y: =Gift_Zipcode_DataCardKey.Y + Gift_Zipcode_DataCardKey.Height + 5
                             ZIndex: =2
 
@@ -468,7 +470,7 @@ User_Address_Page As screen:
                         Required: =true
                         Update: =Address_Name_DataCardValue.Text
                         Visible: =false
-                        Width: =644
+                        Width: =Parent.Width
                         X: =1
                         Y: =2
                         ZIndex: =7
@@ -478,9 +480,9 @@ User_Address_Page As screen:
                             Height: =34
                             Size: =0
                             Text: =Parent.DisplayName
-                            Width: =Parent.Width - 60
+                            Width: =Parent.Width * 0.88
                             Wrap: =false
-                            X: =30
+                            X: =Parent.Width * 0.03
                             Y: =15
                             ZIndex: =1
 
@@ -499,9 +501,10 @@ User_Address_Page As screen:
                             RadiusBottomRight: =0
                             RadiusTopLeft: =0
                             RadiusTopRight: =0
+                            Size: =Parent.Width * 0.025
                             Tooltip: =Parent.DisplayName
-                            Width: =Parent.Width - 60
-                            X: =30
+                            Width: =Parent.Width * 0.88
+                            X: =Parent.Width * 0.03
                             Y: =Address_Name_DataCardKey.Y + Address_Name_DataCardKey.Height + 5
                             ZIndex: =2
 
@@ -532,8 +535,8 @@ User_Address_Page As screen:
 
             Address_Send_Container As groupContainer.manualLayoutContainer:
                 Height: =128
-                Width: =139
-                X: =1205
+                Width: =Parent.Width * 0.118
+                X: =Parent.Width * 0.88
                 Y: =410
                 ZIndex: =2
 
@@ -570,6 +573,6 @@ User_Address_Page As screen:
                             NewForm(Address_Input);
                             ResetForm(Address_Input);
                         )
-                    Width: =139
+                    Width: =Parent.Width * 0.88
                     ZIndex: =1
 
