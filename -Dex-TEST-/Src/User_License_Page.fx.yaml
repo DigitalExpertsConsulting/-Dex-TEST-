@@ -1368,9 +1368,8 @@ User_License_Page As screen:
                 Height: =186
                 Size: =Parent.Width * 0.035
                 Text: ="License Page"
-                Width: |-
+                Width: |
                     =Parent.Width - License_Back.Width - License_Back.Width
-                    // Parent.Width - License_Back.Width - License_Back.Width
                 ZIndex: =2
 
             License_Home As icon.Home:
@@ -2694,7 +2693,7 @@ User_License_Page As screen:
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Semibold
                             Height: =34
-                            Size: =15
+                            Size: =Parent.Width * 0.025
                             Text: =Parent.DisplayName
                             Width: =Parent.Width * 0.88
                             Wrap: =false
@@ -2717,8 +2716,9 @@ User_License_Page As screen:
                             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                             PaddingRight: =5
                             PaddingTop: =5
+                            Size: =Parent.Width * 0.02
                             Tooltip: =Parent.DisplayName
-                            Width: =Parent.Width * 0.83
+                            Width: =Parent.Width * 0.88
                             X: =Parent.Width * 0.045
                             Y: ='MS-100_File_DataCardKey'.Y + 'MS-100_File_DataCardKey'.Height + 5
                             ZIndex: =2
@@ -2760,7 +2760,7 @@ User_License_Page As screen:
                         Required: =false
                         Update: ='AZ-305_File_DataCardValue'.Attachments
                         Visible: =If('AZ-305_Toggle'.Value=true,true,false)
-                        Width: =594
+                        Width: =Parent.Width
                         X: =0
                         Y: =1
                         ZIndex: =1
@@ -2770,11 +2770,11 @@ User_License_Page As screen:
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Semibold
                             Height: =34
-                            Size: =15
+                            Size: =Parent.Width * 0.025
                             Text: =Parent.DisplayName
-                            Width: =Parent.Width - 60
+                            Width: =Parent.Width * 0.88
                             Wrap: =false
-                            X: =30
+                            X: =Parent.Width * 0.05
                             Y: =10
                             ZIndex: =1
 
@@ -2793,9 +2793,10 @@ User_License_Page As screen:
                             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                             PaddingRight: =5
                             PaddingTop: =5
+                            Size: =Parent.Width * 0.02
                             Tooltip: =Parent.DisplayName
-                            Width: =Parent.Width - 60
-                            X: =30
+                            Width: =Parent.Width * 0.88
+                            X: =Parent.Width * 0.045
                             Y: =DataCardKey55.Y + DataCardKey55.Height + 5
                             ZIndex: =2
 
@@ -2836,7 +2837,7 @@ User_License_Page As screen:
                         Required: =false
                         Update: ='AZ-104_File_DataCardValue'.Attachments
                         Visible: =If('AZ-104_Toggle'.Value=true,true,false)
-                        Width: =594
+                        Width: =Parent.Width
                         X: =0
                         Y: =0
                         ZIndex: =1
@@ -2846,11 +2847,11 @@ User_License_Page As screen:
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Semibold
                             Height: =34
-                            Size: =15
+                            Size: =Parent.Width * 0.025
                             Text: =Parent.DisplayName
-                            Width: =Parent.Width - 60
+                            Width: =Parent.Width * 0.88
                             Wrap: =false
-                            X: =30
+                            X: =Parent.Width * 0.05
                             Y: =10
                             ZIndex: =1
 
@@ -2869,9 +2870,10 @@ User_License_Page As screen:
                             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                             PaddingRight: =5
                             PaddingTop: =5
+                            Size: =Parent.Width * 0.02
                             Tooltip: =Parent.DisplayName
-                            Width: =Parent.Width - 60
-                            X: =30
+                            Width: = Parent.Width * 0.88
+                            X: =Parent.Width * 0.045
                             Y: ='AZ-104_File_DataCardKey'.Y + 'AZ-104_File_DataCardKey'.Height + 5
                             ZIndex: =2
 
@@ -2912,7 +2914,7 @@ User_License_Page As screen:
                         Required: =false
                         Update: ='MS-101_File_DataCardValue'.Attachments
                         Visible: =If('MS-101_Toggle'.Value=true,true,false)
-                        Width: =594
+                        Width: =Parent.Width
                         X: =0
                         Y: =3
                         ZIndex: =1
@@ -2922,11 +2924,11 @@ User_License_Page As screen:
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Semibold
                             Height: =34
-                            Size: =15
+                            Size: =Parent.Width * 0.025
                             Text: =Parent.DisplayName
-                            Width: =Parent.Width - 60
+                            Width: =Parent.Width * 0.88
                             Wrap: =false
-                            X: =30
+                            X: =Parent.Width * 0.05
                             Y: =10
                             ZIndex: =1
 
@@ -2945,9 +2947,10 @@ User_License_Page As screen:
                             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                             PaddingRight: =5
                             PaddingTop: =5
+                            Size: =Parent.Width * 0.02
                             Tooltip: =Parent.DisplayName
-                            Width: =Parent.Width - 60
-                            X: =30
+                            Width: =Parent.Width * 0.88
+                            X: =Parent.Width * 0.045
                             Y: ='MS-101_File_DataCardKey'.Y + 'MS-101_File_DataCardKey'.Height + 5
                             ZIndex: =2
 
@@ -2988,7 +2991,7 @@ User_License_Page As screen:
                         Required: =false
                         Update: ='MS-700_File_DataCardValue'.Attachments
                         Visible: =If('MS-700_Toggle'.Value=true,true,false)
-                        Width: =594
+                        Width: =Parent.Width
                         X: =0
                         Y: =4
                         ZIndex: =1
@@ -2998,11 +3001,11 @@ User_License_Page As screen:
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Semibold
                             Height: =34
-                            Size: =15
+                            Size: = Parent.Width * 0.025
                             Text: =Parent.DisplayName
-                            Width: =Parent.Width - 60
+                            Width: = Parent.Width * 0.88
                             Wrap: =false
-                            X: =30
+                            X: =Parent.Width * 0.05
                             Y: =10
                             ZIndex: =1
 
@@ -3021,9 +3024,10 @@ User_License_Page As screen:
                             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                             PaddingRight: =5
                             PaddingTop: =5
+                            Size: = Parent.Width * 0.02
                             Tooltip: =Parent.DisplayName
-                            Width: =Parent.Width - 60
-                            X: =30
+                            Width: =Parent.Width * 0.88
+                            X: =Parent.Width * 0.045
                             Y: ='MS-700_File_DataCardKey'.Y + 'MS-700_File_DataCardKey'.Height + 5
                             ZIndex: =2
 
@@ -3064,7 +3068,7 @@ User_License_Page As screen:
                         Required: =false
                         Update: ='PL-300_File_DataCardValue'.Attachments
                         Visible: =If('PL-300_Toggle'.Value=true,true,false)
-                        Width: =594
+                        Width: = Parent.Width
                         X: =0
                         Y: =7
                         ZIndex: =1
@@ -3074,11 +3078,11 @@ User_License_Page As screen:
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Semibold
                             Height: =34
-                            Size: =15
+                            Size: =Parent.Width * 0.025
                             Text: =Parent.DisplayName
-                            Width: =Parent.Width - 60
+                            Width: =Parent.Width * 0.88
                             Wrap: =false
-                            X: =30
+                            X: =Parent.Width * 0.05
                             Y: =10
                             ZIndex: =1
 
@@ -3097,9 +3101,10 @@ User_License_Page As screen:
                             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                             PaddingRight: =5
                             PaddingTop: =5
+                            Size: =Parent.Width * 0.02
                             Tooltip: =Parent.DisplayName
-                            Width: =Parent.Width - 60
-                            X: =30
+                            Width: =Parent.Width * 0.88
+                            X: =Parent.Width * 0.045
                             Y: ='PL-300_File_DataCardKey'.Y + 'PL-300_File_DataCardKey'.Height + 5
                             ZIndex: =2
 
@@ -3140,7 +3145,7 @@ User_License_Page As screen:
                         Required: =false
                         Update: ='PL-200_File_DataCardValue'.Attachments
                         Visible: =If('PL-200_Toggle'.Value=true,true,false)
-                        Width: =594
+                        Width: =Parent.Width
                         X: =0
                         Y: =6
                         ZIndex: =1
@@ -3150,11 +3155,11 @@ User_License_Page As screen:
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Semibold
                             Height: =34
-                            Size: =15
+                            Size: =Parent.Width * 0.025
                             Text: =Parent.DisplayName
-                            Width: =Parent.Width - 60
+                            Width: =Parent.Width * 0.88
                             Wrap: =false
-                            X: =30
+                            X: =Parent.Width * 0.05
                             Y: =10
                             ZIndex: =1
 
@@ -3173,9 +3178,10 @@ User_License_Page As screen:
                             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                             PaddingRight: =5
                             PaddingTop: =5
+                            Size: =Parent.Width * 0.02
                             Tooltip: =Parent.DisplayName
-                            Width: =Parent.Width - 60
-                            X: =30
+                            Width: =Parent.Width * 0.88
+                            X: =Parent.Width * 0.045
                             Y: ='PL-200_File_DataCardKey'.Y + 'PL-200_File_DataCardKey'.Height + 5
                             ZIndex: =2
 
@@ -3292,7 +3298,7 @@ User_License_Page As screen:
                         Required: =false
                         Update: ='PL-400_File_DataCardValue'.Attachments
                         Visible: =If('PL-400_Toggle'.Value=true,true,false)
-                        Width: =594
+                        Width: =Parent.Width
                         X: =0
                         Y: =8
                         ZIndex: =1
@@ -3302,11 +3308,11 @@ User_License_Page As screen:
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Semibold
                             Height: =34
-                            Size: =15
+                            Size: = Parent.Width * 0.025
                             Text: =Parent.DisplayName
-                            Width: =Parent.Width - 60
+                            Width: =Parent.Width * 0.88
                             Wrap: =false
-                            X: =30
+                            X: =Parent.Width * 0.05
                             Y: =10
                             ZIndex: =1
 
@@ -3325,9 +3331,10 @@ User_License_Page As screen:
                             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                             PaddingRight: =5
                             PaddingTop: =5
+                            Size: =Parent.Width * 0.02
                             Tooltip: =Parent.DisplayName
-                            Width: =Parent.Width - 60
-                            X: =30
+                            Width: =Parent.Width * 0.88
+                            X: =Parent.Width * 0.045
                             Y: ='PL-400_File_DataCardKey'.Y + 'PL-400_File_DataCardKey'.Height + 5
                             ZIndex: =2
 
@@ -3368,7 +3375,7 @@ User_License_Page As screen:
                         Required: =false
                         Update: ='PL-600_File_DataCardValue'.Attachments
                         Visible: =If('PL-600_Toggle'.Value=true,true,false)
-                        Width: =594
+                        Width: =Parent.Width
                         X: =0
                         Y: =9
                         ZIndex: =1
@@ -3378,11 +3385,11 @@ User_License_Page As screen:
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Semibold
                             Height: =34
-                            Size: =15
+                            Size: =Parent.Width * 0.025
                             Text: =Parent.DisplayName
-                            Width: =Parent.Width - 60
+                            Width: =Parent.Width * 0.88
                             Wrap: =false
-                            X: =30
+                            X: =Parent.Width * 0.05
                             Y: =10
                             ZIndex: =1
 
@@ -3401,9 +3408,10 @@ User_License_Page As screen:
                             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                             PaddingRight: =5
                             PaddingTop: =5
+                            Size: =Parent.Width * 0.02
                             Tooltip: =Parent.DisplayName
-                            Width: =Parent.Width - 60
-                            X: =30
+                            Width: =Parent.Width * 0.88
+                            X: =Parent.Width * 0.045
                             Y: ='PL-600_File_DataCardKey'.Y + 'PL-600_File_DataCardKey'.Height + 5
                             ZIndex: =2
 
@@ -3586,7 +3594,7 @@ User_License_Page As screen:
                         Required: =false
                         Update: ='PL-900_File_DataCardValue'.Attachments
                         Visible: =If('PL-900_Toggle'.Value=true,true,false)
-                        Width: =594
+                        Width: = Parent.Width
                         X: =0
                         Y: =10
                         ZIndex: =1
@@ -3596,11 +3604,11 @@ User_License_Page As screen:
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Semibold
                             Height: =34
-                            Size: =15
+                            Size: =Parent.Width * 0.025
                             Text: =Parent.DisplayName
-                            Width: =Parent.Width - 60
+                            Width: =Parent.Width * 0.88
                             Wrap: =false
-                            X: =30
+                            X: =Parent.Width * 0.05
                             Y: =10
                             ZIndex: =1
 
@@ -3619,9 +3627,10 @@ User_License_Page As screen:
                             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                             PaddingRight: =5
                             PaddingTop: =5
+                            Size: =Parent.Width * 0.02
                             Tooltip: =Parent.DisplayName
-                            Width: =Parent.Width - 60
-                            X: =30
+                            Width: =Parent.Width * 0.88
+                            X: =Parent.Width * 0.045
                             Y: ='PL-900_File_DataCardKey'.Y + 'PL-900_File_DataCardKey'.Height + 5
                             ZIndex: =2
 
