@@ -79,6 +79,7 @@ Admin_License_Page_1 As screen:
         ZIndex: =10
 
         Label8 As label:
+            FontWeight: =FontWeight.Semibold
             OnSelect: =Select(Parent)
             Text: =ThisItem.Name
             Width: =71
@@ -131,7 +132,7 @@ Admin_License_Page_1 As screen:
             Size: =9
             Text: =ThisItem.'MS-700'
             Width: =94
-            X: =547
+            X: =552
             ZIndex: =6
 
         Label8_6 As label:
@@ -141,7 +142,7 @@ Admin_License_Page_1 As screen:
             Size: =9
             Text: =ThisItem.'MS-900'
             Width: =94
-            X: =651
+            X: =656
             ZIndex: =7
 
         Label8_7 As label:
@@ -151,7 +152,7 @@ Admin_License_Page_1 As screen:
             Size: =9
             Text: =ThisItem.'PL-200'
             Width: =94
-            X: =760
+            X: =770
             ZIndex: =8
 
         Label8_8 As label:
@@ -161,7 +162,7 @@ Admin_License_Page_1 As screen:
             Size: =9
             Text: =ThisItem.'PL-300'
             Width: =94
-            X: =877
+            X: =887
             ZIndex: =9
 
         Label8_9 As label:
@@ -171,7 +172,7 @@ Admin_License_Page_1 As screen:
             Size: =9
             Text: =ThisItem.'PL-400'
             Width: =94
-            X: =1001
+            X: =1011
             ZIndex: =10
 
         Label8_10 As label:
@@ -181,7 +182,7 @@ Admin_License_Page_1 As screen:
             Size: =9
             Text: =ThisItem.'PL-600'
             Width: =94
-            X: =1123
+            X: =1128
             ZIndex: =11
 
         Label8_11 As label:
@@ -191,7 +192,7 @@ Admin_License_Page_1 As screen:
             Size: =9
             Text: =ThisItem.'PL-900'
             Width: =94
-            X: =1240
+            X: =1245
             ZIndex: =12
 
     Label6_20 As label:
@@ -230,7 +231,7 @@ Admin_License_Page_1 As screen:
         Height: =52
         Text: ="MS-700"
         Width: =75
-        X: =559
+        X: =564
         Y: =281
         ZIndex: =17
 
@@ -240,7 +241,7 @@ Admin_License_Page_1 As screen:
         Height: =52
         Text: ="MS-900"
         Width: =75
-        X: =659
+        X: =669
         Y: =282
         ZIndex: =18
 
@@ -250,7 +251,7 @@ Admin_License_Page_1 As screen:
         Height: =52
         Text: ="PL-200"
         Width: =75
-        X: =772
+        X: =782
         Y: =281
         ZIndex: =19
 
@@ -260,7 +261,7 @@ Admin_License_Page_1 As screen:
         Height: =52
         Text: ="PL-300"
         Width: =75
-        X: =889
+        X: =899
         Y: =281
         ZIndex: =20
 
@@ -270,7 +271,7 @@ Admin_License_Page_1 As screen:
         Height: =52
         Text: ="PL-400"
         Width: =75
-        X: =1010
+        X: =1020
         Y: =281
         ZIndex: =21
 
@@ -280,7 +281,7 @@ Admin_License_Page_1 As screen:
         Height: =52
         Text: ="PL-600"
         Width: =75
-        X: =1135
+        X: =1140
         Y: =281
         ZIndex: =22
 
@@ -290,7 +291,7 @@ Admin_License_Page_1 As screen:
         Height: =52
         Text: ="PL-900"
         Width: =75
-        X: =1250
+        X: =1255
         Y: =281
         ZIndex: =23
 
