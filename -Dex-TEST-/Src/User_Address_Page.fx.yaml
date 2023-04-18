@@ -537,7 +537,7 @@ User_Address_Page As screen:
                 Height: =128
                 Width: =Parent.Width * 0.118
                 X: =Parent.Width * 0.88
-                Y: =410
+                Y: =Parent.Height - 150
                 ZIndex: =2
 
                 Address_Send As icon.Send:
