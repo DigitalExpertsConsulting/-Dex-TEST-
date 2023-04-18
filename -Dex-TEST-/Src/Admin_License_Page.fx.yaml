@@ -33,204 +33,6 @@ Admin_License_Page As screen:
         Y: =40
         ZIndex: =3
 
-    Admin_License_DataTable As dataTable.datatable:
-        BorderColor: =RGBA( 112, 128, 144, 0.7 )
-        BorderStyle: =BorderStyle.Solid
-        BorderThickness: =5
-        DisplayMode: =DisplayMode.Edit
-        Fill: =RGBA(255, 255, 255, 0.7)
-        HeadingFill: =RGBA( 106, 170, 205, 1 )
-        Height: =420
-        Items: |
-            =Search(ability_license,License_Search.Text,"cr778_name")
-        Width: =1200
-        X: =85
-        Y: =300
-        ZIndex: =5
-
-        Name_열4 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Name"
-            FieldName: ="cr778_name"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =1
-            Text: =ThisItem.Name
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =1
-
-        "'E-mail_열4' As dataTableColumn.textualColumn":
-            AutoWidth: =false
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="E-mail"
-            FieldName: ="cr778_email"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =2
-            Text: =ThisItem.'E-mail'
-            Width: =267
-            X: =180
-            Y: =0
-            ZIndex: =2
-
-        "'PL-200_열1' As dataTableColumn.textualColumn":
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="PL-200"
-            FieldName: ="cr778_pl200"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =9
-            Text: =ThisItem.'PL-200'
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =3
-
-        "'PL-300_열1' As dataTableColumn.textualColumn":
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="PL-300"
-            FieldName: ="cr778_pl300"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =10
-            Text: =ThisItem.'PL-300'
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =4
-
-        "'PL-400_열1' As dataTableColumn.textualColumn":
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="PL-400"
-            FieldName: ="cr778_pl400"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =11
-            Text: =ThisItem.'PL-400'
-            Width: =100
-            X: =1000
-            Y: =0
-            ZIndex: =5
-
-        "'PL-600_열1' As dataTableColumn.textualColumn":
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="PL-600"
-            FieldName: ="cr778_pl600"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =12
-            Text: =ThisItem.'PL-600'
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =6
-
-        "'PL-900_열1' As dataTableColumn.textualColumn":
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="PL-900"
-            FieldName: ="cr778_pl900"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =13
-            Text: =ThisItem.'PL-900'
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =7
-
-        "'MS-100_열1' As dataTableColumn.textualColumn":
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="MS-100"
-            FieldName: ="cr778_ms100"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =5
-            Text: =ThisItem.'MS-100'
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =8
-
-        "'MS-101_열1' As dataTableColumn.textualColumn":
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="MS-101"
-            FieldName: ="cr778_ms101"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =6
-            Text: =ThisItem.'MS-101'
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =9
-
-        "'MS-700_열1' As dataTableColumn.textualColumn":
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="MS-700"
-            FieldName: ="cr778_ms700"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =7
-            Text: =ThisItem.'MS-700'
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =10
-
-        "'MS-900_열1' As dataTableColumn.textualColumn":
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="MS-900"
-            FieldName: ="cr778_ms900"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =8
-            Text: =ThisItem.'MS-900'
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =11
-
-        "'AZ-104_열1' As dataTableColumn.textualColumn":
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="AZ-104"
-            FieldName: ="cr778_az104"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =3
-            Text: =ThisItem.'AZ-104'
-            Width: =100
-            X: =1000
-            Y: =0
-            ZIndex: =12
-
-        "'AZ-305_열1' As dataTableColumn.textualColumn":
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="AZ-305"
-            FieldName: ="cr778_az305"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =4
-            Text: =ThisItem.'AZ-305'
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =13
-
     License_Search As text:
         BorderColor: =RGBA( 112, 128, 144, 0.7 )
         BorderThickness: =5
@@ -238,8 +40,8 @@ Admin_License_Page As screen:
         Height: =35
         HintText: ="검색"
         Width: =245
-        X: =1040
-        Y: =250
+        X: =1102
+        Y: =227
         ZIndex: =7
 
     License_DownLoad As button:
@@ -250,15 +52,280 @@ Admin_License_Page As screen:
         OnSelect: =PDFDownload.Run()
         Text: ="라이센스 인증서 다운로드"
         Width: =280
-        X: =85
-        Y: =245
+        X: =21
+        Y: =219
         ZIndex: =8
 
     License_Refresh As icon.Reload:
         Color: =RGBA(255, 255, 255, 1)
         Icon: =Icon.Reload
         OnSelect: =Refresh(ability_license)
-        X: =383
-        Y: =226
+        X: =314
+        Y: =202
         ZIndex: =9
+
+    Admin_License_Gallery As gallery.galleryVertical:
+        DelayItemLoading: =true
+        Fill: =RGBA(255, 255, 255, 0.9)
+        Height: =434
+        Items: =ability_license
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplateSize: |-
+            =/*If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))*/
+            35
+        Width: =1366
+        Y: =334
+        ZIndex: =13
+
+        Label8_12 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =35
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Name
+            Width: =71
+            ZIndex: =1
+
+        Label8_13 As label:
+            Font: =Font.Arial
+            Height: =35
+            OnSelect: =Select(Parent)
+            Size: =9
+            Text: =ThisItem.'AZ-104'
+            Width: =94
+            X: =97
+            ZIndex: =2
+
+        Label8_14 As label:
+            Font: =Font.Arial
+            Height: =35
+            OnSelect: =Select(Parent)
+            Size: =9
+            Text: =ThisItem.'AZ-305'
+            Width: =94
+            X: =207
+            ZIndex: =3
+
+        Label8_15 As label:
+            Font: =Font.Arial
+            Height: =35
+            OnSelect: =Select(Parent)
+            Size: =9
+            Text: =ThisItem.'MS-100'
+            Width: =94
+            X: =326
+            ZIndex: =4
+
+        Label8_16 As label:
+            Font: =Font.Arial
+            Height: =35
+            OnSelect: =Select(Parent)
+            Size: =9
+            Text: =ThisItem.'MS-101'
+            Width: =94
+            X: =448
+            ZIndex: =5
+
+        Label8_17 As label:
+            Font: =Font.Arial
+            Height: =35
+            OnSelect: =Select(Parent)
+            Size: =9
+            Text: =ThisItem.'MS-700'
+            Width: =94
+            X: =552
+            ZIndex: =6
+
+        Label8_18 As label:
+            Font: =Font.Arial
+            Height: =35
+            OnSelect: =Select(Parent)
+            Size: =9
+            Text: =ThisItem.'MS-900'
+            Width: =94
+            X: =656
+            ZIndex: =7
+
+        Label8_19 As label:
+            Font: =Font.Arial
+            Height: =35
+            OnSelect: =Select(Parent)
+            Size: =9
+            Text: =ThisItem.'PL-200'
+            Width: =94
+            X: =770
+            ZIndex: =8
+
+        Label8_20 As label:
+            Font: =Font.Arial
+            Height: =35
+            OnSelect: =Select(Parent)
+            Size: =9
+            Text: =ThisItem.'PL-300'
+            Width: =94
+            X: =887
+            ZIndex: =9
+
+        Label8_21 As label:
+            Font: =Font.Arial
+            Height: =35
+            OnSelect: =Select(Parent)
+            Size: =9
+            Text: =ThisItem.'PL-400'
+            Width: =94
+            X: =1011
+            ZIndex: =10
+
+        Label8_22 As label:
+            Font: =Font.Arial
+            Height: =35
+            OnSelect: =Select(Parent)
+            Size: =9
+            Text: =ThisItem.'PL-600'
+            Width: =94
+            X: =1128
+            ZIndex: =11
+
+        Label8_23 As label:
+            Font: =Font.Arial
+            Height: =35
+            OnSelect: =Select(Parent)
+            Size: =9
+            Text: =ThisItem.'PL-900'
+            Width: =94
+            X: =1245
+            ZIndex: =12
+
+    Admin_License_Group As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =20
+        ZIndex: =27
+
+        Rectangle1_5 As rectangle:
+            Fill: =RGBA( 106, 170, 205, 1 )
+            Height: =53
+            Width: =1366
+            Y: =281
+            ZIndex: =14
+
+        Label6_51 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Text: ="이름"
+            Width: =45
+            X: =11
+            Y: =287
+            ZIndex: =15
+
+        Label6_52 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =52
+            Text: ="AZ-104"
+            Width: =75
+            X: =110
+            Y: =281
+            ZIndex: =16
+
+        Label6_42 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =52
+            Text: ="AZ-305"
+            Width: =75
+            X: =224
+            Y: =282
+            ZIndex: =17
+
+        Label6_50 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =52
+            Text: ="MS-100"
+            Width: =75
+            X: =338
+            Y: =281
+            ZIndex: =18
+
+        Label6_49 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =52
+            Text: ="MS-101"
+            Width: =75
+            X: =453
+            Y: =281
+            ZIndex: =19
+
+        Label6_48 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =52
+            Text: ="MS-700"
+            Width: =75
+            X: =564
+            Y: =281
+            ZIndex: =20
+
+        Label6_47 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =52
+            Text: ="MS-900"
+            Width: =75
+            X: =669
+            Y: =282
+            ZIndex: =21
+
+        Label6_46 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =52
+            Text: ="PL-200"
+            Width: =75
+            X: =782
+            Y: =281
+            ZIndex: =22
+
+        Label6_45 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =52
+            Text: ="PL-300"
+            Width: =75
+            X: =899
+            Y: =281
+            ZIndex: =23
+
+        Label6_44 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =52
+            Text: ="PL-400"
+            Width: =75
+            X: =1020
+            Y: =281
+            ZIndex: =24
+
+        Label6_43 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =52
+            Text: ="PL-600"
+            Width: =75
+            X: =1140
+            Y: =281
+            ZIndex: =25
+
+        Label6_41 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =52
+            Text: ="PL-900"
+            Width: =75
+            X: =1255
+            Y: =281
+            ZIndex: =26
 

@@ -63,7 +63,7 @@ Admin_Address_Page As screen:
         Icon: =Icon.Reload
         OnSelect: =Refresh(ability_address)
         X: =222
-        Y: =212
+        Y: =198
         ZIndex: =8
 
     Admin_Address_Gallery As gallery.galleryVertical:
