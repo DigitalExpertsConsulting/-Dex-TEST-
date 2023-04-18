@@ -40,245 +40,321 @@ Admin_Skill_Page As screen:
         Height: =35
         HintText: ="검색"
         Width: =245
-        X: =1040
-        Y: =250
+        X: =1102
+        Y: =227
         ZIndex: =5
-
-    Admin_Skill_DataTable As dataTable.datatable:
-        BorderColor: =RGBA( 112, 128, 144, 0.7 )
-        BorderStyle: =BorderStyle.Solid
-        BorderThickness: =5
-        DisplayMode: =DisplayMode.Edit
-        Fill: =RGBA(255, 255, 255, 0.9)
-        HeadingFill: =RGBA( 106, 170, 205, 1 )
-        Height: =420
-        Items: =Search(ability_skill,Skill_Search.Text,"cr778_name")
-        Width: =1200
-        X: =85
-        Y: =300
-        ZIndex: =6
-
-        Name_열6 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Name"
-            FieldName: ="cr778_name"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =1
-            Text: =ThisItem.Name
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =31
-
-        "'E-mail_열3' As dataTableColumn.textualColumn":
-            AutoWidth: =false
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="E-mail"
-            FieldName: ="cr778_email"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =2
-            Text: =ThisItem.'E-mail'
-            Width: =252
-            X: =0
-            Y: =0
-            ZIndex: =32
-
-        "'365 Solution_열2' As dataTableColumn.complexOptionSetColumn":
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="365 Solution"
-            FieldName: ="cr778_solution"
-            FieldVariantName: ="complexOptionSetColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =3
-            Text: =ThisItem.'365 Solution'
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =33
-
-        "'AI Builder_열2' As dataTableColumn.complexOptionSetColumn":
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="AI Builder"
-            FieldName: ="cr778_aibuilder"
-            FieldVariantName: ="complexOptionSetColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =4
-            Text: =ThisItem.'AI Builder'
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =34
-
-        "'Api management_열2' As dataTableColumn.complexOptionSetColumn":
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Api management"
-            FieldName: ="cr778_apimanagement"
-            FieldVariantName: ="complexOptionSetColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =5
-            Text: =ThisItem.'Api management'
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =35
-
-        DataVerse_열2 As dataTableColumn.complexOptionSetColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="DataVerse"
-            FieldName: ="cr778_dataverse"
-            FieldVariantName: ="complexOptionSetColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =6
-            Text: =ThisItem.DataVerse
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =36
-
-        "'Power Apps Canvas_열2' As dataTableColumn.complexOptionSetColumn":
-            AutoWidth: =false
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Power Apps Canvas"
-            FieldName: ="cr778_powerappscanvas"
-            FieldVariantName: ="complexOptionSetColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =7
-            Text: =ThisItem.'Power Apps Canvas'
-            Width: =195
-            X: =977
-            Y: =0
-            ZIndex: =37
-
-        "'Power Apps Model_열2' As dataTableColumn.complexOptionSetColumn":
-            AutoWidth: =false
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Power Apps Model"
-            FieldName: ="cr778_powerappsmodel"
-            FieldVariantName: ="complexOptionSetColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =8
-            Text: =ThisItem.'Power Apps Model'
-            Width: =186
-            X: =0
-            Y: =0
-            ZIndex: =38
-
-        "'Power Automate_열2' As dataTableColumn.complexOptionSetColumn":
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Power Automate"
-            FieldName: ="cr778_powerautomate"
-            FieldVariantName: ="complexOptionSetColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =9
-            Text: =ThisItem.'Power Automate'
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =39
-
-        "'Power Automate Desktop_열2' As dataTableColumn.complexOptionSetColumn":
-            AutoWidth: =false
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Power Automate Desktop"
-            FieldName: ="cr778_powerautomatedesktop"
-            FieldVariantName: ="complexOptionSetColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =10
-            Text: =ThisItem.'Power Automate Desktop'
-            Width: =249
-            X: =0
-            Y: =0
-            ZIndex: =40
-
-        "'Power BI_열2' As dataTableColumn.complexOptionSetColumn":
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Power BI"
-            FieldName: ="cr778_powerbi"
-            FieldVariantName: ="complexOptionSetColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =11
-            Text: =ThisItem.'Power BI'
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =41
-
-        "'Power Page_열2' As dataTableColumn.complexOptionSetColumn":
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Power Page"
-            FieldName: ="cr778_powerpage"
-            FieldVariantName: ="complexOptionSetColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =12
-            Text: =ThisItem.'Power Page'
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =42
-
-        "'Power Page JAVA/CSS_열2' As dataTableColumn.complexOptionSetColumn":
-            AutoWidth: =false
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Power Page JAVA/CSS"
-            FieldName: ="cr778_powerpagejavacss"
-            FieldVariantName: ="complexOptionSetColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =13
-            Text: =ThisItem.'Power Page JAVA/CSS'
-            Width: =211
-            X: =0
-            Y: =0
-            ZIndex: =43
-
-        "'Power Virtual Agents_열2' As dataTableColumn.complexOptionSetColumn":
-            AutoWidth: =false
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Power Virtual Agents"
-            FieldName: ="cr778_powervirtualagents"
-            FieldVariantName: ="complexOptionSetColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =14
-            Text: =ThisItem.'Power Virtual Agents'
-            Width: =233
-            X: =0
-            Y: =0
-            ZIndex: =44
-
-        "'Process Advisor_열2' As dataTableColumn.complexOptionSetColumn":
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Process Advisor"
-            FieldName: ="cr778_processadvisor"
-            FieldVariantName: ="complexOptionSetColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =15
-            Text: =ThisItem.'Process Advisor'
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =45
 
     Skill_Refresh As icon.Reload:
         Color: =RGBA(255, 255, 255, 1)
         Icon: =Icon.Reload
         OnSelect: =Refresh(ability_skill)
-        X: =85
-        Y: =221
+        X: =46
+        Y: =204
         ZIndex: =7
+
+    Admin_Skill_Gallery As gallery.galleryVertical:
+        DelayItemLoading: =true
+        Fill: =RGBA(255, 255, 255, 0.9)
+        Height: =434
+        Items: =ability_skill
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplateSize: |-
+            =/*If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))*/
+            35
+        Width: =1366
+        Y: =334
+        ZIndex: =23
+
+        Label7_14 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =35
+            OnSelect: =Select(Parent)
+            Size: =11
+            Text: =ThisItem.Name
+            Width: =68
+            ZIndex: =1
+
+        Label7_15 As label:
+            Height: =35
+            OnSelect: =Select(Parent)
+            Size: =9
+            Text: =ThisItem.'365 Solution'
+            Width: =92
+            X: =77
+            ZIndex: =2
+
+        Label7_16 As label:
+            Height: =35
+            OnSelect: =Select(Parent)
+            Size: =9
+            Text: =ThisItem.'AI Builder'
+            Width: =99
+            X: =174
+            ZIndex: =3
+
+        Label7_17 As label:
+            Height: =35
+            OnSelect: =Select(Parent)
+            Size: =10
+            Text: =ThisItem.'Api management'
+            Width: =92
+            X: =268
+            ZIndex: =4
+
+        Label7_18 As label:
+            Height: =35
+            OnSelect: =Select(Parent)
+            Size: =9
+            Text: =ThisItem.DataVerse
+            Width: =85
+            X: =394
+            ZIndex: =5
+
+        Label7_19 As label:
+            Height: =35
+            OnSelect: =Select(Parent)
+            Size: =9
+            Text: =ThisItem.'Power Apps Canvas'
+            Width: =85
+            X: =504
+            ZIndex: =6
+
+        Label7_20 As label:
+            Height: =35
+            OnSelect: =Select(Parent)
+            Size: =9
+            Text: =ThisItem.'Power Apps Model'
+            Width: =85
+            X: =593
+            ZIndex: =7
+
+        Label7_21 As label:
+            Height: =35
+            OnSelect: =Select(Parent)
+            Size: =9
+            Text: =ThisItem.'Power Automate'
+            Width: =85
+            X: =698
+            ZIndex: =8
+
+        Label7_22 As label:
+            Height: =35
+            OnSelect: =Select(Parent)
+            Size: =9
+            Text: =ThisItem.'Power Automate Desktop'
+            Width: =85
+            X: =800
+            ZIndex: =9
+
+        Label7_23 As label:
+            Height: =35
+            OnSelect: =Select(Parent)
+            Size: =9
+            Text: =ThisItem.'Power Page'
+            Width: =85
+            X: =907
+            ZIndex: =10
+
+        Label7_24 As label:
+            Height: =35
+            OnSelect: =Select(Parent)
+            Size: =9
+            Text: =ThisItem.'Power Page JAVA/CSS'
+            Width: =85
+            X: =998
+            ZIndex: =11
+
+        Label7_25 As label:
+            Height: =35
+            OnSelect: =Select(Parent)
+            Size: =9
+            Text: =ThisItem.'Power BI'
+            Width: =85
+            X: =1079
+            ZIndex: =12
+
+        Label7_26 As label:
+            Height: =35
+            OnSelect: =Select(Parent)
+            Size: =9
+            Text: =ThisItem.'Process Advisor'
+            Width: =85
+            X: =1177
+            ZIndex: =13
+
+        Label7_27 As label:
+            Height: =35
+            OnSelect: =Select(Parent)
+            Size: =9
+            Text: =ThisItem.'Power Virtual Agents'
+            Width: =85
+            X: =1271
+            ZIndex: =14
+
+    Admin_Skill_Group As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =20
+        ZIndex: =23
+
+        Rectangle1_3 As rectangle:
+            Fill: =RGBA( 106, 170, 205, 1 )
+            Height: =53
+            Width: =1366
+            Y: =281
+            ZIndex: =8
+
+        Label6_15 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Text: ="이름"
+            Width: =45
+            X: =11
+            Y: =287
+            ZIndex: =9
+
+        Label6_16 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =53
+            Size: =10
+            Text: ="365 Solution"
+            Width: =66
+            X: =80
+            Y: =280
+            ZIndex: =10
+
+        Label6_17 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =50
+            Size: =10
+            Text: ="AI Builder"
+            Width: =64
+            X: =176
+            Y: =284
+            ZIndex: =11
+
+        Label6_39 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =53
+            Size: =10
+            Text: ="API management"
+            Width: =101
+            X: =274
+            Y: =281
+            ZIndex: =12
+
+        Label6_38 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =53
+            Size: =10
+            Text: ="Dataverse"
+            Width: =79
+            X: =394
+            Y: =281
+            ZIndex: =13
+
+        Label6_37 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =53
+            Size: =10
+            Text: ="Power Apps Canvas"
+            Width: =91
+            X: =493
+            Y: =281
+            ZIndex: =14
+
+        Label6_36 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =47
+            Size: =10
+            Text: ="Power Apps Model"
+            Width: =120
+            X: =601
+            Y: =284
+            ZIndex: =15
+
+        Label6_35 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =47
+            Size: =10
+            Text: ="Power Automate"
+            Width: =86
+            X: =706
+            Y: =284
+            ZIndex: =16
+
+        Label6_34 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =47
+            Size: =10
+            Text: ="Power Automate Desktop"
+            Width: =83
+            X: =802
+            Y: =284
+            ZIndex: =17
+
+        Label6_33 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =47
+            Size: =10
+            Text: ="Power Page"
+            Width: =107
+            X: =886
+            Y: =284
+            ZIndex: =18
+
+        Label6_32 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =50
+            Size: =10
+            Text: ="Power Page JAVA/CSS"
+            Width: =99
+            X: =983
+            Y: =283
+            ZIndex: =19
+
+        Label6_31 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =51
+            Size: =10
+            Text: ="Power BI"
+            Width: =88
+            X: =1082
+            Y: =282
+            ZIndex: =20
+
+        Label6_30 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =53
+            Size: =10
+            Text: ="Process Advisor"
+            Width: =71
+            X: =1180
+            Y: =281
+            ZIndex: =21
+
+        Label6_29 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =47
+            Size: =10
+            Text: ="Power Virtual Agents"
+            Width: =87
+            X: =1269
+            Y: =284
+            ZIndex: =22
 
