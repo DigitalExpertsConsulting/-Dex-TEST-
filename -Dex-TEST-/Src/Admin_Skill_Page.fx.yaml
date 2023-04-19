@@ -62,17 +62,19 @@ Admin_Skill_Page As screen:
             ZIndex: =2
 
             AS_Refresh_Container As groupContainer.manualLayoutContainer:
-                Height: =Parent.Width * 0.056
-                Width: =Parent.Width * 0.056
+                Height: =Parent.Width * 0.055
+                Width: =Parent.Width * 0.055
                 X: =Parent.Width * 0.04
                 ZIndex: =1
 
                 Skill_Refresh As icon.Reload:
                     Color: =RGBA(255, 255, 255, 1)
-                    Height: =Parent.Height
+                    Height: =56
                     Icon: =Icon.Reload
                     OnSelect: =Refresh(ability_skill)
-                    Width: =Parent.Width
+                    Width: =56
+                    X: =10
+                    Y: =15
                     ZIndex: =1
 
             AS_Search_Container As groupContainer.manualLayoutContainer:
