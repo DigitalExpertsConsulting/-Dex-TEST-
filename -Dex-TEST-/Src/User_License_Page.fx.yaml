@@ -1496,7 +1496,7 @@ User_License_Page As screen:
                             Text: ="취득 여부"
                             Width: =Parent.Width * 0.17
                             X: =Parent.Width * 0.27
-                            Y: =
+                            Y: =16
                             ZIndex: =7
 
                         "'AZ-104_취득일자' As label":
@@ -1507,7 +1507,7 @@ User_License_Page As screen:
                             Text: ="취득 일자"
                             Width: =Parent.Width * 0.17
                             X: =Parent.Width * 0.67
-                            Y: =
+                            Y: =16
                             ZIndex: =8
 
                     "'AZ-305_DataCard' As typedDataCard.textualEditCard":
