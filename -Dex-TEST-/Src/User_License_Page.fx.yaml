@@ -1340,6 +1340,7 @@ User_License_Page As screen:
 
         License_Header_Container As groupContainer.horizontalAutoLayoutContainer:
             FillPortions: =0
+            Height: =Parent.Height * 0.21
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutMinHeight: =100
             LayoutMinWidth: =250
@@ -1347,11 +1348,12 @@ User_License_Page As screen:
             PaddingLeft: =50
             PaddingRight: =50
             PaddingTop: =30
+            Width: =Parent.Width
             ZIndex: =1
 
             License_Back As icon.BackArrow:
                 Color: =RGBA( 106, 170, 205, 1 )
-                Height: =130
+                Height: =Parent.Width * 0.08
                 Icon: =Icon.BackArrow
                 OnSelect: =Navigate(User_Page)
                 Width: =Parent.Width * 0.08
@@ -1365,7 +1367,7 @@ User_License_Page As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 FillPortions: =1
                 FontWeight: =FontWeight.Semibold
-                Height: =186
+                Height: =Parent.Height
                 Size: =Parent.Width * 0.035
                 Text: ="License Page"
                 Width: |
@@ -1374,32 +1376,34 @@ User_License_Page As screen:
 
             License_Home As icon.Home:
                 Color: =RGBA( 106, 170, 205, 1 )
-                Height: =130
+                Height: =Parent.Width * 0.08
                 Icon: =Icon.Home
                 OnSelect: =Navigate(Main_Page)
                 Width: =Parent.Width * 0.08
                 X: =Parent.Width * 0.9
-                Y: =40
+                Y: =
                 ZIndex: =3
 
         License_Sub_Container As groupContainer.manualLayoutContainer:
+            Height: =Parent.Height - License_Header_Container.Height
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             Width: =Parent.Width
+            Y: =License_Header_Container.Height
             ZIndex: =2
 
             License_Container As groupContainer.manualLayoutContainer:
-                Height: =516
+                Height: =Parent.Height * 0.93
                 Width: =Parent.Width * 0.5
                 X: =Parent.Width * 0.02
-                Y: =10
+                Y: =Parent.Height * 0.03
                 ZIndex: =1
 
                 License_Input As form:
                     DataSource: =ability_license
                     DefaultMode: =FormMode.New
                     Fill: =RGBA(255, 255, 255, 0.4)
-                    Height: =516
+                    Height: =Parent.Height
                     Visible: |
                         =true
                     Width: =Parent.Width
@@ -1436,6 +1440,7 @@ User_License_Page As screen:
                             Text: =Parent.DisplayName
                             Width: =Parent.Width * 0.25
                             Wrap: =false
+                            Y: =
                             ZIndex: =1
 
                         ErrorMessage34 As label:
@@ -1491,7 +1496,7 @@ User_License_Page As screen:
                             Text: ="취득 여부"
                             Width: =Parent.Width * 0.17
                             X: =Parent.Width * 0.27
-                            Y: =16
+                            Y: =
                             ZIndex: =7
 
                         "'AZ-104_취득일자' As label":
@@ -1502,7 +1507,7 @@ User_License_Page As screen:
                             Text: ="취득 일자"
                             Width: =Parent.Width * 0.17
                             X: =Parent.Width * 0.67
-                            Y: =16
+                            Y: =
                             ZIndex: =8
 
                     "'AZ-305_DataCard' As typedDataCard.textualEditCard":
@@ -2658,16 +2663,16 @@ User_License_Page As screen:
                             ZIndex: =4
 
             File_Container As groupContainer.manualLayoutContainer:
-                Height: =418
+                Height: =Parent.Height * 0.72
                 Width: =Parent.Width * 0.47
                 X: =Parent.Width * 0.525
-                Y: =10
+                Y: =Parent.Height * 0.03
                 ZIndex: =2
 
                 License_File_Input As form:
                     DataSource: =ability_file
                     DefaultMode: =FormMode.New
-                    Height: =418
+                    Height: =Parent.Height
                     Width: =Parent.Width
                     ZIndex: =1
 
@@ -3660,15 +3665,15 @@ User_License_Page As screen:
                             ZIndex: =4
 
             License_Send_Container As groupContainer.manualLayoutContainer:
-                Height: =140
+                Height: =Parent.Height * 0.15
                 Width: =Parent.Width * 0.1
                 X: =Parent.Width * 0.88
-                Y: =428
+                Y: =Parent.Height * 0.75
                 ZIndex: =3
 
                 License_send As icon.Send:
                     Color: =RGBA( 106, 170, 205, 1 )
-                    Height: =130
+                    Height: =Parent.Height
                     Icon: =Icon.Send
                     OnSelect: |-
                         =//AZ-101 승인/반려 처리
@@ -4033,7 +4038,6 @@ User_License_Page As screen:
                             NewForm(License_Input);
                             ResetForm(License_Input);
                         );
-                    Width: =Parent.Width * 0.88
-                    Y: =14
+                    Width: =Parent.Width
                     ZIndex: =1
 
