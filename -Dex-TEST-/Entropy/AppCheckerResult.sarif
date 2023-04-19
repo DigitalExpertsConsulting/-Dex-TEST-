@@ -14,96 +14,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Admin_PWD_Page.PWD_Main_Container.PWD_Header_Container.Admin_Login_Back.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Admin_PWD_Page.PWD_Main_Container.PWD_Header_Container.Admin_Login_Back.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Admin_PWD_Page",
-                "type": "Admin_PWD_Page.PWD_Main_Container.PWD_Header_Container.Admin_Login_Back"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Admin_PWD_Page.PWD_Main_Container.PWD_Header_Container.Admin_Login_Back.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Admin_PWD_Page.PWD_Main_Container.PWD_Header_Container.Admin_Login_Back.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Admin_PWD_Page",
-                "type": "Admin_PWD_Page.PWD_Main_Container.PWD_Header_Container.Admin_Login_Back"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Admin_PWD_Page.PWD_Main_Container.PWD_Container.PW_TextInput.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Admin_PWD_Page.PWD_Main_Container.PWD_Container.PW_TextInput.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Admin_PWD_Page",
-                "type": "Admin_PWD_Page.PWD_Main_Container.PWD_Container.PW_TextInput"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Admin_Skill_Page.AS_Main_Container.AS_Header_Container.Admin_Skill_Back.AccessibleLabel"
                 }
               ],
@@ -357,696 +267,6 @@
                 "member": "TabIndex",
                 "module": "Admin_Skill_Page",
                 "type": "Admin_Skill_Page.AS_Main_Container.AS_Sub_Container.AS_Gallery_Container.Admin_Skill_Gallery"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_Page.User_Main_Container.User_Header_Container.UserPage_Back.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_Page.User_Main_Container.User_Header_Container.UserPage_Back.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_Page",
-                "type": "User_Page.User_Main_Container.User_Header_Container.UserPage_Back"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_Page.User_Main_Container.User_Header_Container.UserPage_Back.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_Page.User_Main_Container.User_Header_Container.UserPage_Back.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "User_Page",
-                "type": "User_Page.User_Main_Container.User_Header_Container.UserPage_Back"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Header_Container.Skill_Back.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Header_Container.Skill_Back.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_Skill_Page",
-                "type": "User_Skill_Page.Skill_Main_Container.Skill_Header_Container.Skill_Back"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Header_Container.Skill_Back.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Header_Container.Skill_Back.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "User_Skill_Page",
-                "type": "User_Skill_Page.Skill_Main_Container.Skill_Header_Container.Skill_Back"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Header_Container.Skill_Home.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Header_Container.Skill_Home.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_Skill_Page",
-                "type": "User_Skill_Page.Skill_Main_Container.Skill_Header_Container.Skill_Home"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Header_Container.Skill_Home.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Header_Container.Skill_Home.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "User_Skill_Page",
-                "type": "User_Skill_Page.Skill_Main_Container.Skill_Header_Container.Skill_Home"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'365 Solution_DataCard'.'365 Solution_DataCardValue'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'365 Solution_DataCard'.'365 Solution_DataCardValue'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_Skill_Page",
-                "type": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'365 Solution_DataCard'.'365 Solution_DataCardValue'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'AI Builder_DataCard'.'AI Builder_DataCardValue'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'AI Builder_DataCard'.'AI Builder_DataCardValue'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_Skill_Page",
-                "type": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'AI Builder_DataCard'.'AI Builder_DataCardValue'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Api management_DataCard'.'Api management_DataCardValue'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Api management_DataCard'.'Api management_DataCardValue'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_Skill_Page",
-                "type": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Api management_DataCard'.'Api management_DataCardValue'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.DataVerse_DataCard.DataVerse_DataCardValue.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.DataVerse_DataCard.DataVerse_DataCardValue.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_Skill_Page",
-                "type": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.DataVerse_DataCard.DataVerse_DataCardValue"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power Apps Canvas_DataCard'.'Power Apps Canvas_DataCardValue'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power Apps Canvas_DataCard'.'Power Apps Canvas_DataCardValue'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_Skill_Page",
-                "type": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power Apps Canvas_DataCard'.'Power Apps Canvas_DataCardValue'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power Apps Model_DataCard'.'Power Apps Model_DataCardValue'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power Apps Model_DataCard'.'Power Apps Model_DataCardValue'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_Skill_Page",
-                "type": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power Apps Model_DataCard'.'Power Apps Model_DataCardValue'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power Automate_DataCard'.'Power Automate_DataCardValue'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power Automate_DataCard'.'Power Automate_DataCardValue'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_Skill_Page",
-                "type": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power Automate_DataCard'.'Power Automate_DataCardValue'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power Automate Desktop_DataCard'.'Power Automate Desktop_DataCardValue'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power Automate Desktop_DataCard'.'Power Automate Desktop_DataCardValue'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_Skill_Page",
-                "type": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power Automate Desktop_DataCard'.'Power Automate Desktop_DataCardValue'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power Page_DataCard'.'Power Page_DataCardValue'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power Page_DataCard'.'Power Page_DataCardValue'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_Skill_Page",
-                "type": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power Page_DataCard'.'Power Page_DataCardValue'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power Page JAVA/CSS_DataCard'.'Power Page JAVA/CSS_DataCardValue'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power Page JAVA/CSS_DataCard'.'Power Page JAVA/CSS_DataCardValue'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_Skill_Page",
-                "type": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power Page JAVA/CSS_DataCard'.'Power Page JAVA/CSS_DataCardValue'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power BI_DataCard'.'Power BI_DataCardValue'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power BI_DataCard'.'Power BI_DataCardValue'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_Skill_Page",
-                "type": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power BI_DataCard'.'Power BI_DataCardValue'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Process Advisor_DataCard'.'Process Advisor_DataCardValue'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Process Advisor_DataCard'.'Process Advisor_DataCardValue'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_Skill_Page",
-                "type": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Process Advisor_DataCard'.'Process Advisor_DataCardValue'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power Virtual Agents_DataCard'.'Power Virtual Agents_DataCardValue'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power Virtual Agents_DataCard'.'Power Virtual Agents_DataCardValue'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_Skill_Page",
-                "type": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power Virtual Agents_DataCard'.'Power Virtual Agents_DataCardValue'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Skill_E-mail_DataCard'.'Skill_E-mail_DataCardValue'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Skill_E-mail_DataCard'.'Skill_E-mail_DataCardValue'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_Skill_Page",
-                "type": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Skill_E-mail_DataCard'.'Skill_E-mail_DataCardValue'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.Skill_Name_DataCard.Skill_Name_DataCardValue.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.Skill_Name_DataCard.Skill_Name_DataCardValue.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_Skill_Page",
-                "type": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.Skill_Name_DataCard.Skill_Name_DataCardValue"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Send_Container.Skill_send.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Send_Container.Skill_send.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_Skill_Page",
-                "type": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Send_Container.Skill_send"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Send_Container.Skill_send.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Send_Container.Skill_send.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "User_Skill_Page",
-                "type": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Send_Container.Skill_send"
               }
             }
           ],
@@ -2984,6 +2204,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "User_License_Page.LicenseDay_Input.LicenseDay_Name_DataCard.LicenseDay_Name_DataCardValue.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_License_Page.LicenseDay_Input.LicenseDay_Name_DataCard.LicenseDay_Name_DataCardValue.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User_License_Page",
+                "type": "User_License_Page.LicenseDay_Input.LicenseDay_Name_DataCard.LicenseDay_Name_DataCardValue"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "User_License_Page.LicenseDay_Input.'LicenseDay_E-mail_DataCard'.'LicenseDay_E-mail_DataCardValue'.AccessibleLabel"
                 }
               ],
@@ -3027,36 +2277,6 @@
                 "member": "AccessibleLabel",
                 "module": "User_License_Page",
                 "type": "User_License_Page.LicenseDay_Input.'LicenseDay_AZ-104_DataCard'.'LicenseDay_AZ-104_DataCardValue'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_License_Page.LicenseDay_Input.LicenseDay_Name_DataCard.LicenseDay_Name_DataCardValue.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_License_Page.LicenseDay_Input.LicenseDay_Name_DataCard.LicenseDay_Name_DataCardValue.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_License_Page",
-                "type": "User_License_Page.LicenseDay_Input.LicenseDay_Name_DataCard.LicenseDay_Name_DataCardValue"
               }
             }
           ],
@@ -3494,6 +2714,96 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Admin_PWD_Page.PWD_Main_Container.PWD_Header_Container.Admin_Login_Back.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Admin_PWD_Page.PWD_Main_Container.PWD_Header_Container.Admin_Login_Back.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Admin_PWD_Page",
+                "type": "Admin_PWD_Page.PWD_Main_Container.PWD_Header_Container.Admin_Login_Back"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Admin_PWD_Page.PWD_Main_Container.PWD_Header_Container.Admin_Login_Back.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Admin_PWD_Page.PWD_Main_Container.PWD_Header_Container.Admin_Login_Back.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Admin_PWD_Page",
+                "type": "Admin_PWD_Page.PWD_Main_Container.PWD_Header_Container.Admin_Login_Back"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Admin_PWD_Page.PWD_Main_Container.PWD_Container.PW_TextInput.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Admin_PWD_Page.PWD_Main_Container.PWD_Container.PW_TextInput.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Admin_PWD_Page",
+                "type": "Admin_PWD_Page.PWD_Main_Container.PWD_Container.PW_TextInput"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "User_Profile_Page.Profile_Main_Container.Profile_Header_Container.Profile_Back.AccessibleLabel"
                 }
               ],
@@ -3644,66 +2954,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Admin_Profile_Page.AP_Main_Container.AP_Header_Container.Admin_Profile_Home.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Admin_Profile_Page.AP_Main_Container.AP_Header_Container.Admin_Profile_Home.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Admin_Profile_Page",
-                "type": "Admin_Profile_Page.AP_Main_Container.AP_Header_Container.Admin_Profile_Home"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Admin_Profile_Page.AP_Main_Container.AP_Header_Container.Admin_Profile_Home.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Admin_Profile_Page.AP_Main_Container.AP_Header_Container.Admin_Profile_Home.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Admin_Profile_Page",
-                "type": "Admin_Profile_Page.AP_Main_Container.AP_Header_Container.Admin_Profile_Home"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Admin_Profile_Page.AP_Main_Container.AP_Header_Container.Admin_Profile_Back.AccessibleLabel"
                 }
               ],
@@ -3764,19 +3014,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Admin_Profile_Page.AP_Main_Container.AP_Sub_Container.AP_Search_Container.Profile_Search.AccessibleLabel"
+                  "fullyQualifiedName": "Admin_Profile_Page.AP_Main_Container.AP_Header_Container.Admin_Profile_Home.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Admin_Profile_Page.AP_Main_Container.AP_Sub_Container.AP_Search_Container.Profile_Search.AccessibleLabel",
+                  "fullyQualifiedName": "Admin_Profile_Page.AP_Main_Container.AP_Header_Container.Admin_Profile_Home.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Admin_Profile_Page",
-                "type": "Admin_Profile_Page.AP_Main_Container.AP_Sub_Container.AP_Search_Container.Profile_Search"
+                "type": "Admin_Profile_Page.AP_Main_Container.AP_Header_Container.Admin_Profile_Home"
               }
             }
           ],
@@ -3794,19 +3044,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Admin_Profile_Page.AP_Main_Container.AP_Sub_Container.AP_Refresh_Container.Profile_Refresh.TabIndex"
+                  "fullyQualifiedName": "Admin_Profile_Page.AP_Main_Container.AP_Header_Container.Admin_Profile_Home.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Admin_Profile_Page.AP_Main_Container.AP_Sub_Container.AP_Refresh_Container.Profile_Refresh.TabIndex",
+                  "fullyQualifiedName": "Admin_Profile_Page.AP_Main_Container.AP_Header_Container.Admin_Profile_Home.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Admin_Profile_Page",
-                "type": "Admin_Profile_Page.AP_Main_Container.AP_Sub_Container.AP_Refresh_Container.Profile_Refresh"
+                "type": "Admin_Profile_Page.AP_Main_Container.AP_Header_Container.Admin_Profile_Home"
               }
             }
           ],
@@ -3854,49 +3104,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Admin_Profile_Page.Admin_Profile_Gallery.AccessibleLabel"
+                  "fullyQualifiedName": "Admin_Profile_Page.AP_Main_Container.AP_Sub_Container.AP_Refresh_Container.Profile_Refresh.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Admin_Profile_Page.Admin_Profile_Gallery.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Admin_Profile_Page",
-                "type": "Admin_Profile_Page.Admin_Profile_Gallery"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Admin_Profile_Page.Admin_Profile_Gallery.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Admin_Profile_Page.Admin_Profile_Gallery.TabIndex",
+                  "fullyQualifiedName": "Admin_Profile_Page.AP_Main_Container.AP_Sub_Container.AP_Refresh_Container.Profile_Refresh.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Admin_Profile_Page",
-                "type": "Admin_Profile_Page.Admin_Profile_Gallery"
+                "type": "Admin_Profile_Page.AP_Main_Container.AP_Sub_Container.AP_Refresh_Container.Profile_Refresh"
               }
             }
           ],
@@ -3914,19 +3134,109 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Admin_Profile_Page.Profile_Template_Upload_Card.AccessibleLabel"
+                  "fullyQualifiedName": "Admin_Profile_Page.AP_Main_Container.AP_Sub_Container.AP_Search_Container.Profile_Search.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Admin_Profile_Page.Profile_Template_Upload_Card.AccessibleLabel",
+                  "fullyQualifiedName": "Admin_Profile_Page.AP_Main_Container.AP_Sub_Container.AP_Search_Container.Profile_Search.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Admin_Profile_Page",
-                "type": "Admin_Profile_Page.Profile_Template_Upload_Card"
+                "type": "Admin_Profile_Page.AP_Main_Container.AP_Sub_Container.AP_Search_Container.Profile_Search"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Admin_Profile_Page.AP_Main_Container.AP_Sub_Container.AP_Update_Container.Profile_Template_Upload_Card.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Admin_Profile_Page.AP_Main_Container.AP_Sub_Container.AP_Update_Container.Profile_Template_Upload_Card.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Admin_Profile_Page",
+                "type": "Admin_Profile_Page.AP_Main_Container.AP_Sub_Container.AP_Update_Container.Profile_Template_Upload_Card"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Admin_Profile_Page.AP_Main_Container.AP_Sub_Container.AP_Gallery_Container.Admin_Profile_Gallery.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Admin_Profile_Page.AP_Main_Container.AP_Sub_Container.AP_Gallery_Container.Admin_Profile_Gallery.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Admin_Profile_Page",
+                "type": "Admin_Profile_Page.AP_Main_Container.AP_Sub_Container.AP_Gallery_Container.Admin_Profile_Gallery"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Admin_Profile_Page.AP_Main_Container.AP_Sub_Container.AP_Gallery_Container.Admin_Profile_Gallery.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Admin_Profile_Page.AP_Main_Container.AP_Sub_Container.AP_Gallery_Container.Admin_Profile_Gallery.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Admin_Profile_Page",
+                "type": "Admin_Profile_Page.AP_Main_Container.AP_Sub_Container.AP_Gallery_Container.Admin_Profile_Gallery"
               }
             }
           ],
@@ -4274,6 +3584,696 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "User_Page.User_Main_Container.User_Header_Container.UserPage_Back.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_Page.User_Main_Container.User_Header_Container.UserPage_Back.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User_Page",
+                "type": "User_Page.User_Main_Container.User_Header_Container.UserPage_Back"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_Page.User_Main_Container.User_Header_Container.UserPage_Back.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_Page.User_Main_Container.User_Header_Container.UserPage_Back.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "User_Page",
+                "type": "User_Page.User_Main_Container.User_Header_Container.UserPage_Back"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Header_Container.Skill_Back.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Header_Container.Skill_Back.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User_Skill_Page",
+                "type": "User_Skill_Page.Skill_Main_Container.Skill_Header_Container.Skill_Back"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Header_Container.Skill_Back.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Header_Container.Skill_Back.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "User_Skill_Page",
+                "type": "User_Skill_Page.Skill_Main_Container.Skill_Header_Container.Skill_Back"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Header_Container.Skill_Home.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Header_Container.Skill_Home.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User_Skill_Page",
+                "type": "User_Skill_Page.Skill_Main_Container.Skill_Header_Container.Skill_Home"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Header_Container.Skill_Home.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Header_Container.Skill_Home.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "User_Skill_Page",
+                "type": "User_Skill_Page.Skill_Main_Container.Skill_Header_Container.Skill_Home"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'365 Solution_DataCard'.'365 Solution_DataCardValue'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'365 Solution_DataCard'.'365 Solution_DataCardValue'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User_Skill_Page",
+                "type": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'365 Solution_DataCard'.'365 Solution_DataCardValue'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'AI Builder_DataCard'.'AI Builder_DataCardValue'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'AI Builder_DataCard'.'AI Builder_DataCardValue'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User_Skill_Page",
+                "type": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'AI Builder_DataCard'.'AI Builder_DataCardValue'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Api management_DataCard'.'Api management_DataCardValue'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Api management_DataCard'.'Api management_DataCardValue'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User_Skill_Page",
+                "type": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Api management_DataCard'.'Api management_DataCardValue'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.DataVerse_DataCard.DataVerse_DataCardValue.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.DataVerse_DataCard.DataVerse_DataCardValue.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User_Skill_Page",
+                "type": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.DataVerse_DataCard.DataVerse_DataCardValue"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power Apps Canvas_DataCard'.'Power Apps Canvas_DataCardValue'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power Apps Canvas_DataCard'.'Power Apps Canvas_DataCardValue'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User_Skill_Page",
+                "type": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power Apps Canvas_DataCard'.'Power Apps Canvas_DataCardValue'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power Apps Model_DataCard'.'Power Apps Model_DataCardValue'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power Apps Model_DataCard'.'Power Apps Model_DataCardValue'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User_Skill_Page",
+                "type": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power Apps Model_DataCard'.'Power Apps Model_DataCardValue'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power Automate_DataCard'.'Power Automate_DataCardValue'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power Automate_DataCard'.'Power Automate_DataCardValue'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User_Skill_Page",
+                "type": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power Automate_DataCard'.'Power Automate_DataCardValue'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power Automate Desktop_DataCard'.'Power Automate Desktop_DataCardValue'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power Automate Desktop_DataCard'.'Power Automate Desktop_DataCardValue'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User_Skill_Page",
+                "type": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power Automate Desktop_DataCard'.'Power Automate Desktop_DataCardValue'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power Page_DataCard'.'Power Page_DataCardValue'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power Page_DataCard'.'Power Page_DataCardValue'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User_Skill_Page",
+                "type": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power Page_DataCard'.'Power Page_DataCardValue'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power Page JAVA/CSS_DataCard'.'Power Page JAVA/CSS_DataCardValue'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power Page JAVA/CSS_DataCard'.'Power Page JAVA/CSS_DataCardValue'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User_Skill_Page",
+                "type": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power Page JAVA/CSS_DataCard'.'Power Page JAVA/CSS_DataCardValue'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power BI_DataCard'.'Power BI_DataCardValue'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power BI_DataCard'.'Power BI_DataCardValue'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User_Skill_Page",
+                "type": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power BI_DataCard'.'Power BI_DataCardValue'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Process Advisor_DataCard'.'Process Advisor_DataCardValue'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Process Advisor_DataCard'.'Process Advisor_DataCardValue'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User_Skill_Page",
+                "type": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Process Advisor_DataCard'.'Process Advisor_DataCardValue'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power Virtual Agents_DataCard'.'Power Virtual Agents_DataCardValue'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power Virtual Agents_DataCard'.'Power Virtual Agents_DataCardValue'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User_Skill_Page",
+                "type": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Power Virtual Agents_DataCard'.'Power Virtual Agents_DataCardValue'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Skill_E-mail_DataCard'.'Skill_E-mail_DataCardValue'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Skill_E-mail_DataCard'.'Skill_E-mail_DataCardValue'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User_Skill_Page",
+                "type": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.'Skill_E-mail_DataCard'.'Skill_E-mail_DataCardValue'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.Skill_Name_DataCard.Skill_Name_DataCardValue.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.Skill_Name_DataCard.Skill_Name_DataCardValue.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User_Skill_Page",
+                "type": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Container.Skill_Input.Skill_Name_DataCard.Skill_Name_DataCardValue"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Send_Container.Skill_send.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Send_Container.Skill_send.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User_Skill_Page",
+                "type": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Send_Container.Skill_send"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Send_Container.Skill_send.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Send_Container.Skill_send.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "User_Skill_Page",
+                "type": "User_Skill_Page.Skill_Main_Container.Skill_Sub_Container.Skill_Send_Container.Skill_send"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.varUploadProfile"
                 }
               ],
@@ -4574,36 +4574,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Admin_PWD_Page.PWD_Main_Container.PWD_Header_Container.Admin_Login_Title.PaddingRight"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Admin_PWD_Page.PWD_Main_Container.PWD_Header_Container.Admin_Login_Title.PaddingRight",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "PaddingRight",
-                "module": "Admin_PWD_Page",
-                "type": "Admin_PWD_Page.PWD_Main_Container.PWD_Header_Container.Admin_Login_Title"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "User_License_Page.License_Main_Container.License_Sub_Container.File_Container.License_File_Input.'AZ-104_File_DataCard'.'AZ-104_File_DataCardValue'"
                 }
               ],
@@ -4626,7 +4596,7 @@
             "level": "Low"
           },
           "ruleId": "app-NumericPropertySizeWarning",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4655,7 +4625,7 @@
             "level": "Low"
           },
           "ruleId": "app-NumericPropertySizeWarning",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4684,7 +4654,7 @@
             "level": "Low"
           },
           "ruleId": "app-NumericPropertySizeWarning",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4713,7 +4683,7 @@
             "level": "Low"
           },
           "ruleId": "app-NumericPropertySizeWarning",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4742,7 +4712,7 @@
             "level": "Low"
           },
           "ruleId": "app-NumericPropertySizeWarning",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4771,7 +4741,7 @@
             "level": "Low"
           },
           "ruleId": "app-NumericPropertySizeWarning",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4800,7 +4770,7 @@
             "level": "Low"
           },
           "ruleId": "app-NumericPropertySizeWarning",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4829,7 +4799,7 @@
             "level": "Low"
           },
           "ruleId": "app-NumericPropertySizeWarning",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4858,7 +4828,7 @@
             "level": "Low"
           },
           "ruleId": "app-NumericPropertySizeWarning",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4887,7 +4857,7 @@
             "level": "Low"
           },
           "ruleId": "app-NumericPropertySizeWarning",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4916,6 +4886,36 @@
             "level": "Low"
           },
           "ruleId": "app-NumericPropertySizeWarning",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Admin_PWD_Page.PWD_Main_Container.PWD_Header_Container.Admin_Login_Title.PaddingRight"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Admin_PWD_Page.PWD_Main_Container.PWD_Header_Container.Admin_Login_Title.PaddingRight",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "PaddingRight",
+                "module": "Admin_PWD_Page",
+                "type": "Admin_PWD_Page.PWD_Main_Container.PWD_Header_Container.Admin_Login_Title"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
           "ruleIndex": 5
         },
         {
@@ -4945,25 +4945,25 @@
             "level": "Low"
           },
           "ruleId": "app-NumericPropertySizeWarning",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Admin_Profile_Page.Profile_Template_Upload_Card"
+                  "fullyQualifiedName": "Admin_Profile_Page.AP_Main_Container.AP_Sub_Container.AP_Update_Container.Profile_Template_Upload_Card"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Admin_Profile_Page.Profile_Template_Upload_Card",
+                  "fullyQualifiedName": "Admin_Profile_Page.AP_Main_Container.AP_Sub_Container.AP_Update_Container.Profile_Template_Upload_Card",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "module": "Admin_Profile_Page",
-                "type": "Admin_Profile_Page.Profile_Template_Upload_Card"
+                "type": "Admin_Profile_Page.AP_Main_Container.AP_Sub_Container.AP_Update_Container.Profile_Template_Upload_Card"
               }
             }
           ],
@@ -4974,7 +4974,7 @@
             "level": "Low"
           },
           "ruleId": "app-NumericPropertySizeWarning",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -5004,7 +5004,7 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 4
+          "ruleIndex": 5
         }
       ],
       "tool": {
@@ -5081,23 +5081,6 @@
               }
             },
             {
-              "id": "app-InefficientDelayLoading",
-              "messageStrings": {
-                "issue": {
-                  "text": "비효율적인 지연 로드"
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "대신 변수, 컬렉션 및 탐색 컨텍스트를 사용하여 화면 전체에서 상태를 공유합니다."
-                ],
-                "level": "Medium",
-                "primaryCategory": "performance",
-                "whyFix": "다른 화면의 컨트롤을 참조하는 컨트롤은 앱 로딩 및 탐색 속도를 느리게 만들 수 있습니다. 그러면 사용자가 해당 화면으로 이동할 때까지 기다리지 않고 앱이 즉시 다른 화면을 로드할 수 있습니다."
-              }
-            },
-            {
               "id": "app-NumericPropertySizeWarning",
               "messageStrings": {
                 "issue": {
@@ -5112,6 +5095,23 @@
                 "level": "Low",
                 "primaryCategory": "performance",
                 "whyFix": "지원되는 모든 플랫폼에서 테스트하여 이 크기의 첨부 파일을 업로드할 수 있는지 확인하는 것이 좋습니다."
+              }
+            },
+            {
+              "id": "app-InefficientDelayLoading",
+              "messageStrings": {
+                "issue": {
+                  "text": "비효율적인 지연 로드"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "대신 변수, 컬렉션 및 탐색 컨텍스트를 사용하여 화면 전체에서 상태를 공유합니다."
+                ],
+                "level": "Medium",
+                "primaryCategory": "performance",
+                "whyFix": "다른 화면의 컨트롤을 참조하는 컨트롤은 앱 로딩 및 탐색 속도를 느리게 만들 수 있습니다. 그러면 사용자가 해당 화면으로 이동할 때까지 기다리지 않고 앱이 즉시 다른 화면을 로드할 수 있습니다."
               }
             }
           ],

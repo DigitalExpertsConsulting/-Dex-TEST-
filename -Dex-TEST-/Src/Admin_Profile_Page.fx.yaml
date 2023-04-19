@@ -2,15 +2,6 @@ Admin_Profile_Page As screen:
     BackgroundImage: =ere
     ImagePosition: =ImagePosition.Stretch
 
-    Title_Color_Box As rectangle:
-        BorderColor: =RGBA( 112, 128, 144, 0.7 )
-        BorderThickness: =3
-        Fill: =RGBA( 106, 170, 205, 1 )
-        Height: =56
-        Width: =967
-        Y: =305
-        ZIndex: =1
-
     ConcatBox As label:
         BorderThickness: =3
         Color: =RGBA(255, 255, 255, 1)
@@ -22,234 +13,6 @@ Admin_Profile_Page As screen:
         Width: =407
         Y: =724
         ZIndex: =2
-
-    AllDownload_Button As button:
-        BorderColor: =RGBA( 112, 128, 144, 0.7 )
-        BorderThickness: =5
-        Fill: =RGBA( 106, 170, 205, 1 )
-        Height: =60
-        OnSelect: =PPTALLDOWNLOAD.Run()
-        Text: |-
-            ="전체 다운로드
-            "
-        Width: =335
-        X: =1003
-        Y: =397
-        ZIndex: =3
-
-    Admin_Profile_Gallery As gallery.galleryVertical:
-        BorderColor: =RGBA( 112, 128, 144, 0.7 )
-        BorderThickness: =3
-        DelayItemLoading: =true
-        Fill: =RGBA(255, 255, 255, 0.9)
-        Height: =407
-        Items: |
-            =Search(ability_profile,Profile_Search.Text,"cr778_name")
-        Layout: =Layout.Vertical
-        LoadingSpinner: =LoadingSpinner.Data
-        TemplateSize: =70
-        Width: =967
-        Y: =361
-        ZIndex: =4
-
-        Checkbox6_1 As checkbox:
-            Default: =Checkbox10Value
-            Height: =45
-            OnSelect: |-
-                =If(
-                    Checkbox6_1.Value = true,
-                    Collect(CheckboxCollection, Checkbox6_1.Text),
-                    Remove(CheckboxCollection, LookUp(CheckboxCollection, Value = Checkbox6_1.Text))
-                )
-            Text: =ThisItem.'E-mail'
-            Width: =43
-            X: =18
-            Y: =10
-            ZIndex: =1
-
-        Label20_1 As label:
-            OnSelect: =Select(Parent)
-            Size: =15
-            Text: =ThisItem.Profile.FileName
-            Width: =335
-            X: =426
-            Y: =20
-            ZIndex: =4
-
-        Button13_1 As button:
-            BorderColor: =RGBA( 112, 128, 144, 0.7 )
-            BorderThickness: =5
-            Fill: =RGBA( 106, 170, 205, 1 )
-            Height: =33
-            OnSelect: =PPTDownload.Run(Admin_Profile_Gallery.Selected.'E-mail')
-            Text: ="다운로드"
-            X: =779
-            Y: =20
-            ZIndex: =5
-
-        Label4 As label:
-            Align: =Align.Center
-            Height: =50
-            OnSelect: =Select(Parent)
-            Size: =15
-            Text: =ThisItem.Name
-            Width: =102
-            X: =52
-            Y: =10
-            ZIndex: =6
-
-        Label5 As label:
-            Height: =31
-            OnSelect: =Select(Parent)
-            Size: =15
-            Text: =ThisItem.'Created On'
-            Width: =249
-            X: =163
-            Y: =22
-            ZIndex: =7
-
-    User_Name As label:
-        Align: =Align.Center
-        Color: =RGBA(255, 255, 255, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =52
-        Size: =19
-        Text: ="이름"
-        Width: =217
-        Y: =306
-        ZIndex: =5
-
-    Profile_Name As label:
-        Align: =Align.Center
-        Color: =RGBA(255, 255, 255, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =52
-        Size: =20
-        Text: ="프로필"
-        Width: =332
-        X: =417
-        Y: =309
-        ZIndex: =6
-
-    Profile_Download As label:
-        Align: =Align.Center
-        Color: =RGBA(255, 255, 255, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =52
-        Size: =20
-        Text: ="다운로드"
-        Width: =215
-        X: =767
-        Y: =309
-        ZIndex: =7
-
-    Update_Date As label:
-        Align: =Align.Center
-        Color: =RGBA(255, 255, 255, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =55
-        Size: =20
-        Text: ="수정한 날짜"
-        Width: =214
-        X: =184
-        Y: =306
-        ZIndex: =9
-
-    SelectDownload_Button As button:
-        BorderColor: =RGBA( 112, 128, 144, 0.7 )
-        BorderThickness: =5
-        Fill: =RGBA( 106, 170, 205, 1 )
-        Height: =60
-        OnSelect: |-
-            =If(
-                !IsBlank(ConcatBox.Text),
-                PPTDownload.Run(Admin_Profile_Gallery.Selected.'E-mail')
-            )
-        Text: |-
-            ="선택 다운로드
-            "
-        Width: =335
-        X: =1000
-        Y: =315
-        ZIndex: =10
-
-    Profile_Template_Upload_Card As attachments:
-        AddAttachmentText: ="파일 업로드"
-        BorderColor: =RGBA( 112, 128, 144, 0.7 )
-        BorderThickness: =5
-        Color: =RGBA(255, 255, 255, 1)
-        DisplayMode: =
-        Fill: =RGBA( 106, 170, 205, 0.5)
-        Height: =101
-        HoverColor: =RGBA( 112, 128, 144, 0.7 )
-        IsInDataCard: =true
-        Items: =
-        MaxAttachments: =1
-        MaxAttachmentSize: =100
-        MaxAttachmentsText: =""
-        NoAttachmentsText: ="업데이트할 프로필 양식을 등록해주세요."
-        PaddingBottom: =5
-        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-        PaddingRight: =5
-        PaddingTop: =5
-        Tooltip: =
-        Width: =341
-        X: =1003
-        Y: =562
-        ZIndex: =11
-
-    Profile_Template_Upload As button:
-        BorderColor: =RGBA( 112, 128, 144, 0.7 )
-        BorderThickness: =5
-        Fill: =RGBA( 106, 170, 205, 1 )
-        OnSelect: |+
-            =ability_admin_upload_profile.Run(
-                User().Email,
-                User().Email,
-                User().Email,
-                First(Profile_Template_Upload_Card.Attachments).Name,
-                First(Profile_Template_Upload_Card.Attachments).Value,
-                "profile.pptx"
-            );
-            Reset(Profile_Template_Upload_Card)
-            /*
-            
-            ability_admin_update_profileform.Run(
-                User().Email,
-                User().Email,
-                User().Email,
-                First(Profile_Template_Upload_Card.Attachments).Name,
-                First(Profile_Template_Upload_Card.Attachments).Value
-            );
-            
-            */
-            
-            
-            
-        Text: ="프로필양식 업데이트"
-        Width: =208
-        X: =1136
-        Y: =684
-        ZIndex: =12
-
-    All_Checkbox As checkbox:
-        Color: =RGBA(255, 255, 255, 1)
-        Height: =52
-        OnCheck: |-
-            =UpdateContext({Checkbox10Value: true})
-        OnSelect: |-
-            =If(
-                All_Checkbox.Value = true,
-                Collect(CheckboxCollection, All_Checkbox.Text),
-                Remove(CheckboxCollection, LookUp(CheckboxCollection, Value = All_Checkbox.Text))
-            )
-        OnUncheck: |-
-            =UpdateContext({Checkbox10Value: false})
-        Text: ="전체"
-        Width: =37
-        X: =26
-        Y: =306
-        ZIndex: =16
 
     AP_Main_Container As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
@@ -338,4 +101,273 @@ Admin_Profile_Page As screen:
                     X: =35
                     Y: =25
                     ZIndex: =1
+
+            AP_Gallery_Title_Container As groupContainer.manualLayoutContainer:
+                Height: =64
+                Width: =967
+                Y: =98
+                ZIndex: =3
+
+                AP_Title_Group As group:
+                    Height: =5
+                    Width: =5
+                    X: =40
+                    Y: =-265
+                    ZIndex: =7
+
+                    Title_Color_Box As rectangle:
+                        BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                        BorderThickness: =3
+                        Fill: =RGBA( 106, 170, 205, 1 )
+                        Height: =56
+                        Width: =967
+                        Y: =8
+                        ZIndex: =1
+
+                    User_Name As label:
+                        Align: =Align.Center
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =52
+                        Size: =19
+                        Text: ="이름"
+                        Width: =217
+                        Y: =12
+                        ZIndex: =2
+
+                    Profile_Name As label:
+                        Align: =Align.Center
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =52
+                        Size: =20
+                        Text: ="프로필"
+                        Width: =332
+                        X: =457
+                        Y: =12
+                        ZIndex: =3
+
+                    Profile_Download As label:
+                        Align: =Align.Center
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =52
+                        Size: =20
+                        Text: ="다운로드"
+                        Width: =215
+                        X: =752
+                        Y: =12
+                        ZIndex: =4
+
+                    Update_Date As label:
+                        Align: =Align.Center
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =55
+                        Size: =20
+                        Text: ="수정한 날짜"
+                        Width: =214
+                        X: =224
+                        Y: =9
+                        ZIndex: =5
+
+                    All_Checkbox As checkbox:
+                        Color: =RGBA(255, 255, 255, 1)
+                        Height: =52
+                        OnCheck: |-
+                            =UpdateContext({Checkbox10Value: true})
+                        OnSelect: |-
+                            =If(
+                                All_Checkbox.Value = true,
+                                Collect(CheckboxCollection, All_Checkbox.Text),
+                                Remove(CheckboxCollection, LookUp(CheckboxCollection, Value = All_Checkbox.Text))
+                            )
+                        OnUncheck: |-
+                            =UpdateContext({Checkbox10Value: false})
+                        Text: ="전체"
+                        Width: =37
+                        X: =21
+                        Y: =10
+                        ZIndex: =6
+
+            AP_Gallery_Container As groupContainer.manualLayoutContainer:
+                Height: =406
+                Width: =967
+                Y: =162
+                ZIndex: =4
+
+                Admin_Profile_Gallery As gallery.galleryVertical:
+                    BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                    BorderThickness: =3
+                    DelayItemLoading: =true
+                    Fill: =RGBA(255, 255, 255, 0.9)
+                    Height: =406
+                    Items: |
+                        =Search(ability_profile,Profile_Search.Text,"cr778_name")
+                    Layout: =Layout.Vertical
+                    LoadingSpinner: =LoadingSpinner.Data
+                    TemplateSize: =70
+                    Width: =967
+                    ZIndex: =1
+
+                    Checkbox6_1 As checkbox:
+                        Default: =Checkbox10Value
+                        Height: =45
+                        OnSelect: |-
+                            =If(
+                                Checkbox6_1.Value = true,
+                                Collect(CheckboxCollection, Checkbox6_1.Text),
+                                Remove(CheckboxCollection, LookUp(CheckboxCollection, Value = Checkbox6_1.Text))
+                            )
+                        Text: =ThisItem.'E-mail'
+                        Width: =43
+                        X: =18
+                        Y: =10
+                        ZIndex: =1
+
+                    Label20_1 As label:
+                        OnSelect: =Select(Parent)
+                        Size: =15
+                        Text: =ThisItem.Profile.FileName
+                        Width: =335
+                        X: =426
+                        Y: =20
+                        ZIndex: =4
+
+                    Button13_1 As button:
+                        BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                        BorderThickness: =5
+                        Fill: =RGBA( 106, 170, 205, 1 )
+                        Height: =33
+                        OnSelect: =PPTDownload.Run(Admin_Profile_Gallery.Selected.'E-mail')
+                        Text: ="다운로드"
+                        X: =779
+                        Y: =20
+                        ZIndex: =5
+
+                    Label4 As label:
+                        Align: =Align.Center
+                        Height: =50
+                        OnSelect: =Select(Parent)
+                        Size: =15
+                        Text: =ThisItem.Name
+                        Width: =102
+                        X: =52
+                        Y: =10
+                        ZIndex: =6
+
+                    Label5 As label:
+                        Height: =31
+                        OnSelect: =Select(Parent)
+                        Size: =15
+                        Text: =ThisItem.'Created On'
+                        Width: =249
+                        X: =163
+                        Y: =22
+                        ZIndex: =7
+
+            AP_Down_Container As groupContainer.manualLayoutContainer:
+                Height: =197
+                Width: =399
+                X: =967
+                Y: =98
+                ZIndex: =5
+
+                AllDownload_Button As button:
+                    BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                    BorderThickness: =5
+                    Fill: =RGBA( 106, 170, 205, 1 )
+                    Height: =60
+                    OnSelect: =PPTALLDOWNLOAD.Run()
+                    Text: |-
+                        ="전체 다운로드
+                        "
+                    Width: =335
+                    X: =43
+                    Y: =114
+                    ZIndex: =1
+
+                SelectDownload_Button As button:
+                    BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                    BorderThickness: =5
+                    Fill: =RGBA( 106, 170, 205, 1 )
+                    Height: =60
+                    OnSelect: |-
+                        =If(
+                            !IsBlank(ConcatBox.Text),
+                            PPTDownload.Run(Admin_Profile_Gallery.Selected.'E-mail')
+                        )
+                    Text: |-
+                        ="선택 다운로드
+                        "
+                    Width: =335
+                    X: =40
+                    Y: =32
+                    ZIndex: =2
+
+            AP_Update_Container As groupContainer.manualLayoutContainer:
+                Height: =238
+                Width: =399
+                X: =967
+                Y: =330
+                ZIndex: =6
+
+                Profile_Template_Upload_Card As attachments:
+                    AddAttachmentText: ="파일 업로드"
+                    BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                    BorderThickness: =5
+                    Color: =RGBA(255, 255, 255, 1)
+                    DisplayMode: =
+                    Fill: =RGBA( 106, 170, 205, 0.5)
+                    Height: =101
+                    HoverColor: =RGBA( 112, 128, 144, 0.7 )
+                    IsInDataCard: =true
+                    Items: =
+                    MaxAttachments: =1
+                    MaxAttachmentSize: =100
+                    MaxAttachmentsText: =""
+                    NoAttachmentsText: ="업데이트할 프로필 양식을 등록해주세요."
+                    PaddingBottom: =5
+                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    PaddingRight: =5
+                    PaddingTop: =5
+                    Tooltip: =
+                    Width: =341
+                    X: =40
+                    Y: =40
+                    ZIndex: =1
+
+                Profile_Template_Upload As button:
+                    BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                    BorderThickness: =5
+                    Fill: =RGBA( 106, 170, 205, 1 )
+                    OnSelect: |+
+                        =ability_admin_upload_profile.Run(
+                            User().Email,
+                            User().Email,
+                            User().Email,
+                            First(Profile_Template_Upload_Card.Attachments).Name,
+                            First(Profile_Template_Upload_Card.Attachments).Value,
+                            "profile.pptx"
+                        );
+                        Reset(Profile_Template_Upload_Card)
+                        /*
+                        
+                        ability_admin_update_profileform.Run(
+                            User().Email,
+                            User().Email,
+                            User().Email,
+                            First(Profile_Template_Upload_Card.Attachments).Name,
+                            First(Profile_Template_Upload_Card.Attachments).Value
+                        );
+                        
+                        */
+                        
+                        
+                        
+                    Text: ="프로필양식 업데이트"
+                    Width: =208
+                    X: =173
+                    Y: =162
+                    ZIndex: =2
 
