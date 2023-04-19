@@ -74,6 +74,7 @@ Admin_License_Page As screen:
                     Fill: =RGBA( 106, 170, 205, 1 )
                     Height: =Parent.Height * 0.55
                     OnSelect: =PDFDownload.Run()
+                    Size: =Parent.Width * 0.033
                     Text: ="라이센스 인증서 다운로드"
                     Width: =Parent.Width * 0.7
                     X: =Parent.Width * 0.04
@@ -102,6 +103,7 @@ Admin_License_Page As screen:
                     Default: =""
                     Height: =35
                     HintText: ="검색"
+                    Size: =Parent.Width * 0.045
                     Width: =245
                     X: =40
                     Y: =25
