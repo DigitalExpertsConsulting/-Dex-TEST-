@@ -260,7 +260,7 @@ Admin_License_Page As screen:
             AL_Gallery_Container As groupContainer.manualLayoutContainer:
                 Height: =Parent.Height - AL_Gallery_Tile_Container.Height - AL_Down_Container.Height
                 Width: =1366
-                Y: =136
+                Y: =AL_Down_Container.Height + AL_Gallery_Tile_Container.Height
                 ZIndex: =4
 
                 Admin_License_Gallery As gallery.galleryVertical:
