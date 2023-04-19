@@ -2,330 +2,363 @@ Admin_License_Page As screen:
     BackgroundImage: =ere
     ImagePosition: =ImagePosition.Stretch
 
-    Admin_License_Title As label:
-        Align: =Align.Center
-        BorderColor: =RGBA(102, 182, 227, 0.7)
-        Color: =RGBA(255, 255, 255, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =186
-        Size: =50
-        Text: ="Admin License Page"
-        Width: =1366
-        ZIndex: =1
-
-    Admin_License_Back As icon.BackArrow:
-        Color: =RGBA( 106, 170, 205, 1 )
-        Height: =130
-        Icon: =Icon.BackArrow
-        OnSelect: =Navigate(Admin_Page)
-        Width: =130
-        X: =110
-        Y: =40
-        ZIndex: =2
-
-    Admin_License_Home As icon.Home:
-        Color: =RGBA( 106, 170, 205, 1 )
-        Height: =130
-        Icon: =Icon.Home
-        OnSelect: =Navigate(Main_Page)
-        Width: =130
-        X: =1120
-        Y: =40
-        ZIndex: =3
-
-    License_Search As text:
-        BorderColor: =RGBA( 112, 128, 144, 0.7 )
-        BorderThickness: =5
-        Default: =""
-        Height: =35
-        HintText: ="검색"
-        Width: =245
-        X: =1102
-        Y: =227
-        ZIndex: =7
-
-    License_DownLoad As button:
-        BorderColor: =RGBA( 112, 128, 144, 0.7 )
-        BorderThickness: =5
-        Fill: =RGBA( 106, 170, 205, 1 )
-        Height: =45
-        OnSelect: =PDFDownload.Run()
-        Text: ="라이센스 인증서 다운로드"
-        Width: =280
-        X: =21
-        Y: =219
-        ZIndex: =8
-
-    License_Refresh As icon.Reload:
-        Color: =RGBA(255, 255, 255, 1)
-        Icon: =Icon.Reload
-        OnSelect: =Refresh(ability_license)
-        X: =314
-        Y: =202
-        ZIndex: =9
-
-    Admin_License_Gallery As gallery.galleryVertical:
-        DelayItemLoading: =true
-        Fill: =RGBA(255, 255, 255, 0.9)
-        Height: =434
-        Items: =ability_license
-        Layout: =Layout.Vertical
-        LoadingSpinner: =LoadingSpinner.Data
-        TemplateSize: |-
-            =/*If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))*/
-            35
-        Width: =1366
-        Y: =334
-        ZIndex: =13
-
-        Label8_12 As label:
-            FontWeight: =FontWeight.Semibold
-            Height: =35
-            OnSelect: =Select(Parent)
-            Text: =ThisItem.Name
-            Width: =71
-            ZIndex: =1
-
-        Label8_13 As label:
-            Font: =Font.Arial
-            Height: =35
-            OnSelect: =Select(Parent)
-            Size: =9
-            Text: =ThisItem.'AZ-104'
-            Width: =94
-            X: =97
-            ZIndex: =2
-
-        Label8_14 As label:
-            Font: =Font.Arial
-            Height: =35
-            OnSelect: =Select(Parent)
-            Size: =9
-            Text: =ThisItem.'AZ-305'
-            Width: =94
-            X: =207
-            ZIndex: =3
-
-        Label8_15 As label:
-            Font: =Font.Arial
-            Height: =35
-            OnSelect: =Select(Parent)
-            Size: =9
-            Text: =ThisItem.'MS-100'
-            Width: =94
-            X: =326
-            ZIndex: =4
-
-        Label8_16 As label:
-            Font: =Font.Arial
-            Height: =35
-            OnSelect: =Select(Parent)
-            Size: =9
-            Text: =ThisItem.'MS-101'
-            Width: =94
-            X: =448
-            ZIndex: =5
-
-        Label8_17 As label:
-            Font: =Font.Arial
-            Height: =35
-            OnSelect: =Select(Parent)
-            Size: =9
-            Text: =ThisItem.'MS-700'
-            Width: =94
-            X: =552
-            ZIndex: =6
-
-        Label8_18 As label:
-            Font: =Font.Arial
-            Height: =35
-            OnSelect: =Select(Parent)
-            Size: =9
-            Text: =ThisItem.'MS-900'
-            Width: =94
-            X: =656
-            ZIndex: =7
-
-        Label8_19 As label:
-            Font: =Font.Arial
-            Height: =35
-            OnSelect: =Select(Parent)
-            Size: =9
-            Text: =ThisItem.'PL-200'
-            Width: =94
-            X: =770
-            ZIndex: =8
-
-        Label8_20 As label:
-            Font: =Font.Arial
-            Height: =35
-            OnSelect: =Select(Parent)
-            Size: =9
-            Text: =ThisItem.'PL-300'
-            Width: =94
-            X: =887
-            ZIndex: =9
-
-        Label8_21 As label:
-            Font: =Font.Arial
-            Height: =35
-            OnSelect: =Select(Parent)
-            Size: =9
-            Text: =ThisItem.'PL-400'
-            Width: =94
-            X: =1011
-            ZIndex: =10
-
-        Label8_22 As label:
-            Font: =Font.Arial
-            Height: =35
-            OnSelect: =Select(Parent)
-            Size: =9
-            Text: =ThisItem.'PL-600'
-            Width: =94
-            X: =1128
-            ZIndex: =11
-
-        Label8_23 As label:
-            Font: =Font.Arial
-            Height: =35
-            OnSelect: =Select(Parent)
-            Size: =9
-            Text: =ThisItem.'PL-900'
-            Width: =94
-            X: =1245
-            ZIndex: =12
-
-    Admin_License_Group As group:
-        Height: =5
-        Width: =5
-        X: =60
-        Y: =20
+    AL_Main_Container As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
         ZIndex: =27
 
-        Rectangle1_5 As rectangle:
-            Fill: =RGBA( 106, 170, 205, 1 )
-            Height: =53
-            Width: =1366
-            Y: =281
-            ZIndex: =14
+        AL_Header_Container As groupContainer.horizontalAutoLayoutContainer:
+            FillPortions: =0
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =50
+            PaddingRight: =50
+            PaddingTop: =30
+            ZIndex: =1
 
-        Label6_51 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            FontWeight: =FontWeight.Bold
-            Text: ="이름"
-            Width: =45
-            X: =11
-            Y: =287
-            ZIndex: =15
+            Admin_License_Back As icon.BackArrow:
+                Color: =RGBA( 106, 170, 205, 1 )
+                Height: =130
+                Icon: =Icon.BackArrow
+                OnSelect: =Navigate(Admin_Page)
+                Width: =130
+                X: =110
+                Y: =40
+                ZIndex: =1
 
-        Label6_52 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            FontWeight: =FontWeight.Bold
-            Height: =52
-            Text: ="AZ-104"
-            Width: =75
-            X: =110
-            Y: =281
-            ZIndex: =16
+            Admin_License_Title As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(102, 182, 227, 0.7)
+                Color: =RGBA(255, 255, 255, 1)
+                FillPortions: =1
+                FontWeight: =FontWeight.Bold
+                Height: =186
+                Size: =50
+                Text: ="Admin License Page"
+                Width: =1366
+                ZIndex: =2
 
-        Label6_42 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            FontWeight: =FontWeight.Bold
-            Height: =52
-            Text: ="AZ-305"
-            Width: =75
-            X: =224
-            Y: =282
-            ZIndex: =17
+            Admin_License_Home As icon.Home:
+                Color: =RGBA( 106, 170, 205, 1 )
+                Height: =130
+                Icon: =Icon.Home
+                OnSelect: =Navigate(Main_Page)
+                Width: =130
+                X: =1120
+                Y: =40
+                ZIndex: =3
 
-        Label6_50 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            FontWeight: =FontWeight.Bold
-            Height: =52
-            Text: ="MS-100"
-            Width: =75
-            X: =338
-            Y: =281
-            ZIndex: =18
+        AL_Sub_Container As groupContainer.manualLayoutContainer:
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            ZIndex: =2
 
-        Label6_49 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            FontWeight: =FontWeight.Bold
-            Height: =52
-            Text: ="MS-101"
-            Width: =75
-            X: =453
-            Y: =281
-            ZIndex: =19
+            AL_Down_Container As groupContainer.manualLayoutContainer:
+                Height: =85
+                Width: =474
+                ZIndex: =1
 
-        Label6_48 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            FontWeight: =FontWeight.Bold
-            Height: =52
-            Text: ="MS-700"
-            Width: =75
-            X: =564
-            Y: =281
-            ZIndex: =20
+                License_DownLoad As button:
+                    BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                    BorderThickness: =5
+                    Fill: =RGBA( 106, 170, 205, 1 )
+                    Height: =45
+                    OnSelect: =PDFDownload.Run()
+                    Text: ="라이센스 인증서 다운로드"
+                    Width: =280
+                    X: =30
+                    Y: =15
+                    ZIndex: =1
 
-        Label6_47 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            FontWeight: =FontWeight.Bold
-            Height: =52
-            Text: ="MS-900"
-            Width: =75
-            X: =669
-            Y: =282
-            ZIndex: =21
+                License_Refresh As icon.Reload:
+                    Color: =RGBA(255, 255, 255, 1)
+                    Icon: =Icon.Reload
+                    OnSelect: =Refresh(ability_license)
+                    X: =331
+                    Y: =5
+                    ZIndex: =2
 
-        Label6_46 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            FontWeight: =FontWeight.Bold
-            Height: =52
-            Text: ="PL-200"
-            Width: =75
-            X: =782
-            Y: =281
-            ZIndex: =22
+            AL_Search_Container As groupContainer.manualLayoutContainer:
+                Height: =70
+                Width: =316
+                X: =1050
+                ZIndex: =2
 
-        Label6_45 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            FontWeight: =FontWeight.Bold
-            Height: =52
-            Text: ="PL-300"
-            Width: =75
-            X: =899
-            Y: =281
-            ZIndex: =23
+                License_Search As text:
+                    BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                    BorderThickness: =5
+                    Default: =""
+                    Height: =35
+                    HintText: ="검색"
+                    Width: =245
+                    X: =40
+                    Y: =25
+                    ZIndex: =1
 
-        Label6_44 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            FontWeight: =FontWeight.Bold
-            Height: =52
-            Text: ="PL-400"
-            Width: =75
-            X: =1020
-            Y: =281
-            ZIndex: =24
+            AL_Gallery_Tile_Container As groupContainer.manualLayoutContainer:
+                Height: =51
+                Width: =1366
+                Y: =85
+                ZIndex: =3
 
-        Label6_43 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            FontWeight: =FontWeight.Bold
-            Height: =52
-            Text: ="PL-600"
-            Width: =75
-            X: =1140
-            Y: =281
-            ZIndex: =25
+                Admin_License_Group As group:
+                    Height: =5
+                    Width: =5
+                    X: =40
+                    Y: =-281
+                    ZIndex: =14
 
-        Label6_41 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            FontWeight: =FontWeight.Bold
-            Height: =52
-            Text: ="PL-900"
-            Width: =75
-            X: =1255
-            Y: =281
-            ZIndex: =26
+                    Rectangle1_5 As rectangle:
+                        Fill: =RGBA( 106, 170, 205, 1 )
+                        Height: =51
+                        Width: =1366
+                        ZIndex: =1
+
+                    Label6_51 As label:
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Bold
+                        Text: ="이름"
+                        Width: =45
+                        X: =51
+                        Y: =6
+                        ZIndex: =2
+
+                    Label6_52 As label:
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =51
+                        Text: ="AZ-104"
+                        Width: =75
+                        X: =150
+                        ZIndex: =3
+
+                    Label6_42 As label:
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =51
+                        Text: ="AZ-305"
+                        Width: =75
+                        X: =264
+                        ZIndex: =4
+
+                    Label6_50 As label:
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =51
+                        Text: ="MS-100"
+                        Width: =75
+                        X: =378
+                        ZIndex: =5
+
+                    Label6_49 As label:
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =51
+                        Text: ="MS-101"
+                        Width: =75
+                        X: =493
+                        ZIndex: =6
+
+                    Label6_48 As label:
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =51
+                        Text: ="MS-700"
+                        Width: =75
+                        X: =604
+                        ZIndex: =7
+
+                    Label6_47 As label:
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =51
+                        Text: ="MS-900"
+                        Width: =75
+                        X: =709
+                        ZIndex: =8
+
+                    Label6_46 As label:
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =51
+                        Text: ="PL-200"
+                        Width: =75
+                        X: =822
+                        ZIndex: =9
+
+                    Label6_45 As label:
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =51
+                        Text: ="PL-300"
+                        Width: =75
+                        X: =939
+                        ZIndex: =10
+
+                    Label6_44 As label:
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =51
+                        Text: ="PL-400"
+                        Width: =75
+                        X: =1060
+                        ZIndex: =11
+
+                    Label6_43 As label:
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =51
+                        Text: ="PL-600"
+                        Width: =75
+                        X: =1180
+                        ZIndex: =12
+
+                    Label6_41 As label:
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =51
+                        Text: ="PL-900"
+                        Width: =75
+                        X: =1291
+                        ZIndex: =13
+
+            AL_Gallery_Container As groupContainer.manualLayoutContainer:
+                Height: =432
+                Width: =1366
+                Y: =136
+                ZIndex: =4
+
+                Admin_License_Gallery As gallery.galleryVertical:
+                    DelayItemLoading: =true
+                    Fill: =RGBA(255, 255, 255, 0.9)
+                    Height: =432
+                    Items: =ability_license
+                    Layout: =Layout.Vertical
+                    LoadingSpinner: =LoadingSpinner.Data
+                    TemplateSize: |-
+                        =/*If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))*/
+                        35
+                    Width: =1366
+                    ZIndex: =1
+
+                    Label8_12 As label:
+                        FontWeight: =FontWeight.Semibold
+                        Height: =35
+                        OnSelect: =Select(Parent)
+                        Text: =ThisItem.Name
+                        Width: =71
+                        ZIndex: =1
+
+                    Label8_13 As label:
+                        Font: =Font.Arial
+                        Height: =35
+                        OnSelect: =Select(Parent)
+                        Size: =9
+                        Text: =ThisItem.'AZ-104'
+                        Width: =94
+                        X: =97
+                        ZIndex: =2
+
+                    Label8_14 As label:
+                        Font: =Font.Arial
+                        Height: =35
+                        OnSelect: =Select(Parent)
+                        Size: =9
+                        Text: =ThisItem.'AZ-305'
+                        Width: =94
+                        X: =207
+                        ZIndex: =3
+
+                    Label8_15 As label:
+                        Font: =Font.Arial
+                        Height: =35
+                        OnSelect: =Select(Parent)
+                        Size: =9
+                        Text: =ThisItem.'MS-100'
+                        Width: =94
+                        X: =326
+                        ZIndex: =4
+
+                    Label8_16 As label:
+                        Font: =Font.Arial
+                        Height: =35
+                        OnSelect: =Select(Parent)
+                        Size: =9
+                        Text: =ThisItem.'MS-101'
+                        Width: =94
+                        X: =448
+                        ZIndex: =5
+
+                    Label8_17 As label:
+                        Font: =Font.Arial
+                        Height: =35
+                        OnSelect: =Select(Parent)
+                        Size: =9
+                        Text: =ThisItem.'MS-700'
+                        Width: =94
+                        X: =552
+                        ZIndex: =6
+
+                    Label8_18 As label:
+                        Font: =Font.Arial
+                        Height: =35
+                        OnSelect: =Select(Parent)
+                        Size: =9
+                        Text: =ThisItem.'MS-900'
+                        Width: =94
+                        X: =656
+                        ZIndex: =7
+
+                    Label8_19 As label:
+                        Font: =Font.Arial
+                        Height: =35
+                        OnSelect: =Select(Parent)
+                        Size: =9
+                        Text: =ThisItem.'PL-200'
+                        Width: =94
+                        X: =770
+                        ZIndex: =8
+
+                    Label8_20 As label:
+                        Font: =Font.Arial
+                        Height: =35
+                        OnSelect: =Select(Parent)
+                        Size: =9
+                        Text: =ThisItem.'PL-300'
+                        Width: =94
+                        X: =887
+                        ZIndex: =9
+
+                    Label8_21 As label:
+                        Font: =Font.Arial
+                        Height: =35
+                        OnSelect: =Select(Parent)
+                        Size: =9
+                        Text: =ThisItem.'PL-400'
+                        Width: =94
+                        X: =1011
+                        ZIndex: =10
+
+                    Label8_22 As label:
+                        Font: =Font.Arial
+                        Height: =35
+                        OnSelect: =Select(Parent)
+                        Size: =9
+                        Text: =ThisItem.'PL-600'
+                        Width: =94
+                        X: =1128
+                        ZIndex: =11
+
+                    Label8_23 As label:
+                        Font: =Font.Arial
+                        Height: =35
+                        OnSelect: =Select(Parent)
+                        Size: =9
+                        Text: =ThisItem.'PL-900'
+                        Width: =94
+                        X: =1245
+                        ZIndex: =12
 

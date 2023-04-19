@@ -2,359 +2,400 @@ Admin_Skill_Page As screen:
     BackgroundImage: =ere
     ImagePosition: =ImagePosition.Stretch
 
-    Admin_Skill_Title As label:
-        Align: =Align.Center
-        BorderColor: =RGBA(102, 182, 227, 0.7)
-        Color: =RGBA(255, 255, 255, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =186
-        Size: =50
-        Text: ="Admin Skill Page"
-        Width: =1366
-        ZIndex: =2
+    AS_Main_Container As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =24
 
-    Admin_Skill_Back As icon.BackArrow:
-        Color: =RGBA( 106, 170, 205, 1 )
-        Height: =130
-        Icon: =Icon.BackArrow
-        OnSelect: =Navigate(Admin_Page)
-        Width: =130
-        X: =110
-        Y: =40
-        ZIndex: =3
-
-    Admin_Skill_Home As icon.Home:
-        Color: =RGBA( 106, 170, 205, 1 )
-        Height: =130
-        Icon: =Icon.Home
-        OnSelect: =Navigate(Main_Page)
-        Width: =130
-        X: =1120
-        Y: =40
-        ZIndex: =4
-
-    Skill_Search As text:
-        BorderColor: =RGBA( 112, 128, 144, 0.7 )
-        BorderThickness: =5
-        Default: =""
-        Height: =35
-        HintText: ="검색"
-        Width: =245
-        X: =1102
-        Y: =227
-        ZIndex: =5
-
-    Skill_Refresh As icon.Reload:
-        Color: =RGBA(255, 255, 255, 1)
-        Icon: =Icon.Reload
-        OnSelect: =Refresh(ability_skill)
-        X: =46
-        Y: =204
-        ZIndex: =7
-
-    Admin_Skill_Gallery As gallery.galleryVertical:
-        DelayItemLoading: =true
-        Fill: =RGBA(255, 255, 255, 0.9)
-        Height: =434
-        Items: =ability_skill
-        Layout: =Layout.Vertical
-        LoadingSpinner: =LoadingSpinner.Data
-        TemplateSize: |-
-            =/*If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))*/
-            35
-        Width: =1366
-        Y: =334
-        ZIndex: =23
-
-        Label7_14 As label:
-            FontWeight: =FontWeight.Semibold
-            Height: =35
-            OnSelect: =Select(Parent)
-            Size: =11
-            Text: =ThisItem.Name
-            Width: =68
+        AS_Header_Container As groupContainer.horizontalAutoLayoutContainer:
+            FillPortions: =0
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =50
+            PaddingRight: =50
+            PaddingTop: =30
             ZIndex: =1
 
-        Label7_15 As label:
-            Height: =35
-            OnSelect: =Select(Parent)
-            Size: =9
-            Text: =ThisItem.'365 Solution'
-            Width: =92
-            X: =77
+            Admin_Skill_Back As icon.BackArrow:
+                Color: =RGBA( 106, 170, 205, 1 )
+                Height: =130
+                Icon: =Icon.BackArrow
+                OnSelect: =Navigate(Admin_Page)
+                Width: =130
+                X: =110
+                Y: =40
+                ZIndex: =1
+
+            Admin_Skill_Title As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(102, 182, 227, 0.7)
+                Color: =RGBA(255, 255, 255, 1)
+                FillPortions: =1
+                FontWeight: =FontWeight.Bold
+                Height: =186
+                Size: =50
+                Text: ="Admin Skill Page"
+                Width: =1366
+                ZIndex: =2
+
+            Admin_Skill_Home As icon.Home:
+                Color: =RGBA( 106, 170, 205, 1 )
+                Height: =130
+                Icon: =Icon.Home
+                OnSelect: =Navigate(Main_Page)
+                Width: =130
+                X: =1120
+                Y: =40
+                ZIndex: =3
+
+        AS_Sub_Container As groupContainer.manualLayoutContainer:
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
             ZIndex: =2
 
-        Label7_16 As label:
-            Height: =35
-            OnSelect: =Select(Parent)
-            Size: =9
-            Text: =ThisItem.'AI Builder'
-            Width: =99
-            X: =174
-            ZIndex: =3
+            AS_Refresh_Container As groupContainer.manualLayoutContainer:
+                Height: =79
+                Width: =71
+                X: =60
+                ZIndex: =1
 
-        Label7_17 As label:
-            Height: =35
-            OnSelect: =Select(Parent)
-            Size: =10
-            Text: =ThisItem.'Api management'
-            Width: =92
-            X: =268
-            ZIndex: =4
+                Skill_Refresh As icon.Reload:
+                    Color: =RGBA(255, 255, 255, 1)
+                    Icon: =Icon.Reload
+                    OnSelect: =Refresh(ability_skill)
+                    X: =4
+                    Y: =12
+                    ZIndex: =1
 
-        Label7_18 As label:
-            Height: =35
-            OnSelect: =Select(Parent)
-            Size: =9
-            Text: =ThisItem.DataVerse
-            Width: =85
-            X: =394
-            ZIndex: =5
+            AS_Search_Container As groupContainer.manualLayoutContainer:
+                Height: =50
+                Width: =278
+                X: =1085
+                Y: =29
+                ZIndex: =2
 
-        Label7_19 As label:
-            Height: =35
-            OnSelect: =Select(Parent)
-            Size: =9
-            Text: =ThisItem.'Power Apps Canvas'
-            Width: =85
-            X: =504
-            ZIndex: =6
+                Skill_Search As text:
+                    BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                    BorderThickness: =5
+                    Default: =""
+                    Height: =35
+                    HintText: ="검색"
+                    Width: =245
+                    X: =16
+                    Y: =8
+                    ZIndex: =1
 
-        Label7_20 As label:
-            Height: =35
-            OnSelect: =Select(Parent)
-            Size: =9
-            Text: =ThisItem.'Power Apps Model'
-            Width: =85
-            X: =593
-            ZIndex: =7
+            AS_Gallery_Title_Container As groupContainer.manualLayoutContainer:
+                Height: =53
+                Width: =1366
+                Y: =79
+                ZIndex: =3
 
-        Label7_21 As label:
-            Height: =35
-            OnSelect: =Select(Parent)
-            Size: =9
-            Text: =ThisItem.'Power Automate'
-            Width: =85
-            X: =698
-            ZIndex: =8
+                Admin_Skill_Group As group:
+                    Height: =5
+                    Width: =5
+                    X: =60
+                    Y: =-280
+                    ZIndex: =16
 
-        Label7_22 As label:
-            Height: =35
-            OnSelect: =Select(Parent)
-            Size: =9
-            Text: =ThisItem.'Power Automate Desktop'
-            Width: =85
-            X: =800
-            ZIndex: =9
+                    Rectangle1_3 As rectangle:
+                        Fill: =RGBA( 106, 170, 205, 1 )
+                        Height: =53
+                        Width: =1366
+                        ZIndex: =1
 
-        Label7_23 As label:
-            Height: =35
-            OnSelect: =Select(Parent)
-            Size: =9
-            Text: =ThisItem.'Power Page'
-            Width: =85
-            X: =907
-            ZIndex: =10
+                    Label6_15 As label:
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Bold
+                        Text: ="이름"
+                        Width: =45
+                        X: =11
+                        Y: =7
+                        ZIndex: =2
 
-        Label7_24 As label:
-            Height: =35
-            OnSelect: =Select(Parent)
-            Size: =9
-            Text: =ThisItem.'Power Page JAVA/CSS'
-            Width: =85
-            X: =998
-            ZIndex: =11
+                    Label6_16 As label:
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =53
+                        Size: =10
+                        Text: ="365 Solution"
+                        Width: =66
+                        X: =80
+                        ZIndex: =3
 
-        Label7_25 As label:
-            Height: =35
-            OnSelect: =Select(Parent)
-            Size: =9
-            Text: =ThisItem.'Power BI'
-            Width: =85
-            X: =1079
-            ZIndex: =12
+                    Label6_17 As label:
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =50
+                        Size: =10
+                        Text: ="AI Builder"
+                        Width: =64
+                        X: =176
+                        Y: =3
+                        ZIndex: =4
 
-        Label7_26 As label:
-            Height: =35
-            OnSelect: =Select(Parent)
-            Size: =9
-            Text: =ThisItem.'Process Advisor'
-            Width: =85
-            X: =1177
-            ZIndex: =13
+                    Label6_39 As label:
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =53
+                        Size: =10
+                        Text: ="API management"
+                        Width: =101
+                        X: =274
+                        ZIndex: =5
 
-        Label7_27 As label:
-            Height: =35
-            OnSelect: =Select(Parent)
-            Size: =9
-            Text: =ThisItem.'Power Virtual Agents'
-            Width: =85
-            X: =1271
-            ZIndex: =14
+                    Label6_38 As label:
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =53
+                        Size: =10
+                        Text: ="Dataverse"
+                        Width: =79
+                        X: =394
+                        ZIndex: =6
 
-    Admin_Skill_Group As group:
-        Height: =5
-        Width: =5
-        X: =60
-        Y: =20
-        ZIndex: =23
+                    Label6_37 As label:
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =53
+                        Size: =10
+                        Text: ="Power Apps Canvas"
+                        Width: =91
+                        X: =493
+                        ZIndex: =7
 
-        Rectangle1_3 As rectangle:
-            Fill: =RGBA( 106, 170, 205, 1 )
-            Height: =53
-            Width: =1366
-            Y: =281
-            ZIndex: =8
+                    Label6_36 As label:
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =47
+                        Size: =10
+                        Text: ="Power Apps Model"
+                        Width: =120
+                        X: =601
+                        Y: =4
+                        ZIndex: =8
 
-        Label6_15 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            FontWeight: =FontWeight.Bold
-            Text: ="이름"
-            Width: =45
-            X: =11
-            Y: =287
-            ZIndex: =9
+                    Label6_35 As label:
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =47
+                        Size: =10
+                        Text: ="Power Automate"
+                        Width: =86
+                        X: =706
+                        Y: =4
+                        ZIndex: =9
 
-        Label6_16 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            FontWeight: =FontWeight.Bold
-            Height: =53
-            Size: =10
-            Text: ="365 Solution"
-            Width: =66
-            X: =80
-            Y: =280
-            ZIndex: =10
+                    Label6_34 As label:
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =47
+                        Size: =10
+                        Text: ="Power Automate Desktop"
+                        Width: =83
+                        X: =802
+                        Y: =4
+                        ZIndex: =10
 
-        Label6_17 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            FontWeight: =FontWeight.Bold
-            Height: =50
-            Size: =10
-            Text: ="AI Builder"
-            Width: =64
-            X: =176
-            Y: =284
-            ZIndex: =11
+                    Label6_33 As label:
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =47
+                        Size: =10
+                        Text: ="Power Page"
+                        Width: =107
+                        X: =886
+                        Y: =4
+                        ZIndex: =11
 
-        Label6_39 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            FontWeight: =FontWeight.Bold
-            Height: =53
-            Size: =10
-            Text: ="API management"
-            Width: =101
-            X: =274
-            Y: =281
-            ZIndex: =12
+                    Label6_32 As label:
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =50
+                        Size: =10
+                        Text: ="Power Page JAVA/CSS"
+                        Width: =99
+                        X: =983
+                        Y: =3
+                        ZIndex: =12
 
-        Label6_38 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            FontWeight: =FontWeight.Bold
-            Height: =53
-            Size: =10
-            Text: ="Dataverse"
-            Width: =79
-            X: =394
-            Y: =281
-            ZIndex: =13
+                    Label6_31 As label:
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =51
+                        Size: =10
+                        Text: ="Power BI"
+                        Width: =88
+                        X: =1082
+                        Y: =2
+                        ZIndex: =13
 
-        Label6_37 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            FontWeight: =FontWeight.Bold
-            Height: =53
-            Size: =10
-            Text: ="Power Apps Canvas"
-            Width: =91
-            X: =493
-            Y: =281
-            ZIndex: =14
+                    Label6_30 As label:
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =53
+                        Size: =10
+                        Text: ="Process Advisor"
+                        Width: =71
+                        X: =1180
+                        ZIndex: =14
 
-        Label6_36 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            FontWeight: =FontWeight.Bold
-            Height: =47
-            Size: =10
-            Text: ="Power Apps Model"
-            Width: =120
-            X: =601
-            Y: =284
-            ZIndex: =15
+                    Label6_29 As label:
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =47
+                        Size: =10
+                        Text: ="Power Virtual Agents"
+                        Width: =87
+                        X: =1269
+                        Y: =4
+                        ZIndex: =15
 
-        Label6_35 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            FontWeight: =FontWeight.Bold
-            Height: =47
-            Size: =10
-            Text: ="Power Automate"
-            Width: =86
-            X: =706
-            Y: =284
-            ZIndex: =16
+            AS_Gallery_Container As groupContainer.manualLayoutContainer:
+                Height: =436
+                Width: =1366
+                Y: =132
+                ZIndex: =4
 
-        Label6_34 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            FontWeight: =FontWeight.Bold
-            Height: =47
-            Size: =10
-            Text: ="Power Automate Desktop"
-            Width: =83
-            X: =802
-            Y: =284
-            ZIndex: =17
+                Admin_Skill_Gallery As gallery.galleryVertical:
+                    DelayItemLoading: =true
+                    Fill: =RGBA(255, 255, 255, 0.9)
+                    Height: =436
+                    Items: =ability_skill
+                    Layout: =Layout.Vertical
+                    LoadingSpinner: =LoadingSpinner.Data
+                    TemplateSize: |-
+                        =/*If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))*/
+                        35
+                    Width: =1366
+                    ZIndex: =1
 
-        Label6_33 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            FontWeight: =FontWeight.Bold
-            Height: =47
-            Size: =10
-            Text: ="Power Page"
-            Width: =107
-            X: =886
-            Y: =284
-            ZIndex: =18
+                    Label7_14 As label:
+                        FontWeight: =FontWeight.Semibold
+                        Height: =35
+                        OnSelect: =Select(Parent)
+                        Size: =11
+                        Text: =ThisItem.Name
+                        Width: =68
+                        ZIndex: =1
 
-        Label6_32 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            FontWeight: =FontWeight.Bold
-            Height: =50
-            Size: =10
-            Text: ="Power Page JAVA/CSS"
-            Width: =99
-            X: =983
-            Y: =283
-            ZIndex: =19
+                    Label7_15 As label:
+                        Height: =35
+                        OnSelect: =Select(Parent)
+                        Size: =9
+                        Text: =ThisItem.'365 Solution'
+                        Width: =92
+                        X: =77
+                        ZIndex: =2
 
-        Label6_31 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            FontWeight: =FontWeight.Bold
-            Height: =51
-            Size: =10
-            Text: ="Power BI"
-            Width: =88
-            X: =1082
-            Y: =282
-            ZIndex: =20
+                    Label7_16 As label:
+                        Height: =35
+                        OnSelect: =Select(Parent)
+                        Size: =9
+                        Text: =ThisItem.'AI Builder'
+                        Width: =99
+                        X: =174
+                        ZIndex: =3
 
-        Label6_30 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            FontWeight: =FontWeight.Bold
-            Height: =53
-            Size: =10
-            Text: ="Process Advisor"
-            Width: =71
-            X: =1180
-            Y: =281
-            ZIndex: =21
+                    Label7_17 As label:
+                        Height: =35
+                        OnSelect: =Select(Parent)
+                        Size: =10
+                        Text: =ThisItem.'Api management'
+                        Width: =92
+                        X: =268
+                        ZIndex: =4
 
-        Label6_29 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            FontWeight: =FontWeight.Bold
-            Height: =47
-            Size: =10
-            Text: ="Power Virtual Agents"
-            Width: =87
-            X: =1269
-            Y: =284
-            ZIndex: =22
+                    Label7_18 As label:
+                        Height: =35
+                        OnSelect: =Select(Parent)
+                        Size: =9
+                        Text: =ThisItem.DataVerse
+                        Width: =85
+                        X: =394
+                        ZIndex: =5
+
+                    Label7_19 As label:
+                        Height: =35
+                        OnSelect: =Select(Parent)
+                        Size: =9
+                        Text: =ThisItem.'Power Apps Canvas'
+                        Width: =85
+                        X: =504
+                        ZIndex: =6
+
+                    Label7_20 As label:
+                        Height: =35
+                        OnSelect: =Select(Parent)
+                        Size: =9
+                        Text: =ThisItem.'Power Apps Model'
+                        Width: =85
+                        X: =593
+                        ZIndex: =7
+
+                    Label7_21 As label:
+                        Height: =35
+                        OnSelect: =Select(Parent)
+                        Size: =9
+                        Text: =ThisItem.'Power Automate'
+                        Width: =85
+                        X: =698
+                        ZIndex: =8
+
+                    Label7_22 As label:
+                        Height: =35
+                        OnSelect: =Select(Parent)
+                        Size: =9
+                        Text: =ThisItem.'Power Automate Desktop'
+                        Width: =85
+                        X: =800
+                        ZIndex: =9
+
+                    Label7_23 As label:
+                        Height: =35
+                        OnSelect: =Select(Parent)
+                        Size: =9
+                        Text: =ThisItem.'Power Page'
+                        Width: =85
+                        X: =907
+                        ZIndex: =10
+
+                    Label7_24 As label:
+                        Height: =35
+                        OnSelect: =Select(Parent)
+                        Size: =9
+                        Text: =ThisItem.'Power Page JAVA/CSS'
+                        Width: =85
+                        X: =998
+                        ZIndex: =11
+
+                    Label7_25 As label:
+                        Height: =35
+                        OnSelect: =Select(Parent)
+                        Size: =9
+                        Text: =ThisItem.'Power BI'
+                        Width: =85
+                        X: =1079
+                        ZIndex: =12
+
+                    Label7_26 As label:
+                        Height: =35
+                        OnSelect: =Select(Parent)
+                        Size: =9
+                        Text: =ThisItem.'Process Advisor'
+                        Width: =85
+                        X: =1177
+                        ZIndex: =13
+
+                    Label7_27 As label:
+                        Height: =35
+                        OnSelect: =Select(Parent)
+                        Size: =9
+                        Text: =ThisItem.'Power Virtual Agents'
+                        Width: =85
+                        X: =1271
+                        ZIndex: =14
 

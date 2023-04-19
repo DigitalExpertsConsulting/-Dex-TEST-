@@ -261,7 +261,7 @@ Admin_Address_Page As screen:
                     Y: =14
                     ZIndex: =2
 
-            AA_Load_Container As groupContainer.manualLayoutContainer:
+            AA_Search_Container As groupContainer.manualLayoutContainer:
                 Height: =Parent.Height * 0.15
                 Width: =Parent.Width * 0.226
                 X: =Parent.Width * 0.774
