@@ -11,6 +11,8 @@ Admin_Address_Page As screen:
 
         AA_Header_Container As groupContainer.horizontalAutoLayoutContainer:
             FillPortions: =0
+            Height: =Parent.Height * 0.26
+            LayoutAlignItems: =LayoutAlignItems.Center
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
@@ -18,6 +20,7 @@ Admin_Address_Page As screen:
             PaddingRight: =50
             PaddingTop: |
                 =30
+            Width: =Parent.Width
             ZIndex: =1
 
             Admin_Address_Back As icon.BackArrow:
@@ -25,8 +28,8 @@ Admin_Address_Page As screen:
                 Height: =130
                 Icon: =Icon.BackArrow
                 OnSelect: =Navigate(Admin_Page)
-                Width: =130
-                X: =110
+                Width: =Parent.Width * 0.08
+                X: =Parent.Width * 0.01
                 Y: =40
                 ZIndex: =1
 
@@ -36,10 +39,15 @@ Admin_Address_Page As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 FillPortions: =1
                 FontWeight: =FontWeight.Semibold
-                Height: =186
-                Size: =40
+                Height: =Parent.Height
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingTop: =0
+                Size: =Parent.Width * 0.035
                 Text: ="Admin Address Page"
-                Width: =1366
+                Width: |-
+                    =Parent.Width - Admin_Address_Back.Width - Admin_Address_Home.Width
+                    //Parent.Width - Admin_Address_Back.Width - Admin_Address_Home.Width
                 ZIndex: =2
 
             Admin_Address_Home As icon.Home:
@@ -47,92 +55,100 @@ Admin_Address_Page As screen:
                 Height: =130
                 Icon: =Icon.Home
                 OnSelect: =Navigate(Main_Page)
-                Width: =130
-                X: =1120
+                Width: =Parent.Width * 0.08
+                X: =Parent.Width * 0.9
                 Y: =40
                 ZIndex: =3
 
         AA_Sub_Container As groupContainer.manualLayoutContainer:
+            Height: =Parent.Height * 0.74
             LayoutMinHeight: =100
             LayoutMinWidth: =250
+            Width: =Parent.Width
             ZIndex: =2
 
             AA_Gallery_Container As groupContainer.manualLayoutContainer:
-                Height: =434
-                Width: =1366
+                Height: =Parent.Height - AA_Down_Container.Height - AA_Gallery_Title_Container.Height
+                Width: =Parent.Width
                 Y: =134
                 ZIndex: =1
 
                 Admin_Address_Gallery As gallery.galleryVertical:
                     DelayItemLoading: =true
                     Fill: =RGBA(255, 255, 255, 0.9)
-                    Height: =434
+                    Height: =Parent.Height
                     Items: =ability_address
                     Layout: =Layout.Vertical
                     LoadingSpinner: =LoadingSpinner.Data
                     TemplateSize: |-
                         =/*If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))*/
                         35
-                    Width: =1366
+                    Width: =Parent.Width
                     ZIndex: =1
 
                     Label3_6 As label:
+                        Align: =Align.Center
                         Height: =35
                         OnSelect: =Select(Parent)
-                        Size: =10
+                        Size: =Parent.Width * 0.007
                         Text: =ThisItem.Name
-                        Width: =57
-                        X: =10
+                        Width: =Parent.Width * 0.04
+                        X: =Parent.Width * 0.007
                         ZIndex: =1
 
                     Label3_7 As label:
+                        Align: =Align.Center
                         Height: =35
                         OnSelect: =Select(Parent)
-                        Size: =10
+                        Size: =Parent.Width * 0.007
                         Text: =ThisItem.'E-mail'
-                        Width: =189
-                        X: =82
+                        Width: =Parent.Width * 0.13
+                        X: =Parent.Width * 0.06
                         ZIndex: =2
 
                     Label3_8 As label:
+                        Align: =Align.Center
                         Height: =35
                         OnSelect: =Select(Parent)
-                        Size: =10
+                        Size: =Parent.Width * 0.007
                         Text: =ThisItem.Address
-                        Width: =467
-                        X: =271
+                        Width: =Parent.Width * 0.34
+                        X: =Parent.Width * 0.2
                         ZIndex: =3
 
                     Label3_9 As label:
+                        Align: =Align.Center
                         Height: =35
                         OnSelect: =Select(Parent)
-                        Size: =10
+                        Size: =Parent.Width * 0.007
                         Text: =ThisItem.Zipcode
-                        Width: =57
-                        X: =763
+                        Width: =Parent.Width * 0.045
+                        X: =Parent.Width * 0.555
                         ZIndex: =4
 
                     Label3_10 As label:
+                        Align: =Align.Center
                         Height: =35
                         OnSelect: =Select(Parent)
-                        Size: =10
+                        Size: =Parent.Width * 0.007
                         Text: =ThisItem.Gift_Address
-                        Width: =415
-                        X: =835
+                        Width: =Parent.Width * 0.3
+                        X: =Parent.Width * 0.623
                         ZIndex: =5
 
                     Label3_11 As label:
+                        Align: =Align.Center
                         Height: =35
                         OnSelect: =Select(Parent)
-                        Size: =10
+                        Size: =Parent.Width * 0.007
                         Text: =ThisItem.Gift_Zipcode
-                        Width: =57
-                        X: =1270
+                        Width: =Parent.Width * 0.045
+                        X: =Parent.Width * 0.94
                         ZIndex: =6
 
             AA_Gallery_Title_Container As groupContainer.manualLayoutContainer:
-                Height: =49
-                Width: =1366
+                Height: =Parent.Height * 0.087
+                Width: =Parent.Width
                 Y: =85
                 ZIndex: =2
 
@@ -145,67 +161,80 @@ Admin_Address_Page As screen:
 
                     Rectangle1_1 As rectangle:
                         Fill: =RGBA( 106, 170, 205, 1 )
-                        Height: =49
-                        Width: =1366
+                        Height: =Parent.Height
+                        Width: =Parent.Width
                         ZIndex: =1
 
                     Label6_6 As label:
+                        Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
+                        Height: =Parent.Height
+                        Size: =Parent.Width * 0.009
                         Text: ="이름"
-                        Width: =45
-                        X: =16
-                        Y: =6
+                        Width: =Parent.Width * 0.07
                         ZIndex: =2
 
                     Label6_7 As label:
+                        Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
+                        Height: =Parent.Height
+                        Size: =Parent.Width * 0.009
                         Text: ="E-mail"
-                        Width: =79
-                        X: =143
-                        Y: =6
+                        Width: =Parent.Width * 0.15
+                        X: =Parent.Width * 0.052
                         ZIndex: =3
 
                     Label6_8 As label:
+                        Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
+                        Height: =Parent.Height
+                        Size: =Parent.Width * 0.009
                         Text: ="주소"
-                        Width: =58
-                        X: =472
-                        Y: =6
+                        Width: =Parent.Width * 0.353
+                        X: =Parent.Width * 0.194
                         ZIndex: =4
 
                     Label6_9 As label:
+                        Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
+                        Height: =Parent.Height
+                        Size: =Parent.Width * 0.009
                         Text: ="우편번호"
-                        Width: =87
-                        X: =752
-                        Y: =6
+                        Width: =Parent.Width * 0.07
+                        X: =Parent.Width * 0.545
                         ZIndex: =5
 
                     Label6_10 As label:
+                        Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
+                        Height: =Parent.Height
+                        Size: =Parent.Width * 0.009
                         Text: ="선물 주소"
-                        Width: =87
-                        X: =993
-                        Y: =6
+                        Width: =Parent.Width * 0.3
+                        X: =Parent.Width * 0.61
+                        Y: =
                         ZIndex: =6
 
                     Label6_11 As label:
+                        Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
+                        Height: =Parent.Height
+                        Size: =Parent.Width * 0.009
                         Text: ="선물 우편번호"
-                        Width: =131
-                        X: =1235
-                        Y: =6
+                        Width: =Parent.Width * 0.09
+                        X: =Parent.Width * 0.91
+                        Y: =
                         ZIndex: =7
 
             AA_Down_Container As groupContainer.manualLayoutContainer:
-                Height: =85
-                Width: =337
+                Height: =Parent.Height * 0.15
+                Width: =Parent.Width * 0.24
                 ZIndex: =3
 
                 AddressDownload_button As button:
@@ -216,9 +245,10 @@ Admin_Address_Page As screen:
                     OnSelect: |-
                         =//Test_csh_Excelexport_dataverse_list.Run("")
                         'ExcelDownload(Address)'.Run("")
+                    Size: =Parent.Width * 0.04
                     Text: ="다운로드"
-                    Width: =180
-                    X: =30
+                    Width: =Parent.Width * 0.55
+                    X: =Parent.Width * 0.1
                     Y: =25
                     ZIndex: =1
 
@@ -226,14 +256,15 @@ Admin_Address_Page As screen:
                     Color: =RGBA(255, 255, 255, 1)
                     Icon: =Icon.Reload
                     OnSelect: =Refresh(ability_address)
-                    X: =237
+                    Width: =Parent.Width * 0.25
+                    X: =Parent.Width * 0.74
                     Y: =14
                     ZIndex: =2
 
             AA_Load_Container As groupContainer.manualLayoutContainer:
-                Height: =85
-                Width: =311
-                X: =1054
+                Height: =Parent.Height * 0.15
+                Width: =Parent.Width * 0.226
+                X: =Parent.Width * 0.774
                 ZIndex: =4
 
                 Address_Search As text:
@@ -242,8 +273,9 @@ Admin_Address_Page As screen:
                     Default: =""
                     Height: =35
                     HintText: ="검색"
-                    Width: =245
-                    X: =45
+                    Size: =Parent.Width * 0.04
+                    Width: =Parent.Width * 0.75
+                    X: =Parent.Width * 0.1
                     Y: =30
                     ZIndex: =1
 
