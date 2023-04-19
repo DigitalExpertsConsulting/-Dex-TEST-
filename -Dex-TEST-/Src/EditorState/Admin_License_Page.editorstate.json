@@ -1385,7 +1385,14 @@
         "X",
         "Y",
         "Width",
-        "Height",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "432",
+          "InvariantPropertyName": "Height",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DisplayMode",
         "LayoutMode",
         "LayoutDirection",
@@ -6533,7 +6540,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label8_13",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6836,7 +6843,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label8_14",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7139,7 +7146,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label8_15",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7442,7 +7449,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label8_16",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7745,7 +7752,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label8_17",
-      "ParentIndex": 2,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

@@ -258,7 +258,7 @@ Admin_License_Page As screen:
                         ZIndex: =13
 
             AL_Gallery_Container As groupContainer.manualLayoutContainer:
-                Height: =432
+                Height: =Parent.Height - AL_Gallery_Tile_Container.Height - AL_Down_Container.Height
                 Width: =1366
                 Y: =136
                 ZIndex: =4
@@ -266,14 +266,14 @@ Admin_License_Page As screen:
                 Admin_License_Gallery As gallery.galleryVertical:
                     DelayItemLoading: =true
                     Fill: =RGBA(255, 255, 255, 0.9)
-                    Height: =432
+                    Height: =Parent.Height
                     Items: =ability_license
                     Layout: =Layout.Vertical
                     LoadingSpinner: =LoadingSpinner.Data
                     TemplateSize: |-
                         =/*If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))*/
                         35
-                    Width: =1366
+                    Width: =Parent.Width
                     ZIndex: =1
 
                     Label8_12 As label:
@@ -293,7 +293,7 @@ Admin_License_Page As screen:
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'AZ-104'
-                        Width: =Parent.Width * 0.075
+                        Width: =Parent.Width * 0.0833
                         X: =Label8_12.Width
                         ZIndex: =2
 
@@ -304,7 +304,7 @@ Admin_License_Page As screen:
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'AZ-305'
-                        Width: =Parent.Width * 0.075
+                        Width: =Parent.Width * 0.0833
                         X: =Label8_12.Width + Label8_13.Width
                         ZIndex: =3
 
@@ -315,7 +315,7 @@ Admin_License_Page As screen:
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'MS-100'
-                        Width: =Parent.Width * 0.075
+                        Width: =Parent.Width * 0.0833
                         X: =Label8_12.Width + Label8_13.Width + Label8_14.Width
                         ZIndex: =4
 
@@ -326,7 +326,7 @@ Admin_License_Page As screen:
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'MS-101'
-                        Width: =Parent.Width * 0.075
+                        Width: =Parent.Width * 0.0833
                         X: =Label8_12.Width + Label8_13.Width + Label8_14.Width + Label8_15.Width
                         ZIndex: =5
 
@@ -337,7 +337,7 @@ Admin_License_Page As screen:
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'MS-700'
-                        Width: =Parent.Width * 0.075
+                        Width: =Parent.Width * 0.0833
                         X: =Label8_12.Width + Label8_13.Width + Label8_14.Width + Label8_15.Width + Label8_16.Width
                         ZIndex: =6
 
@@ -348,7 +348,7 @@ Admin_License_Page As screen:
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'MS-900'
-                        Width: =Parent.Width * 0.075
+                        Width: =Parent.Width * 0.0833
                         X: =Label8_12.Width + Label8_13.Width + Label8_14.Width + Label8_15.Width + Label8_16.Width + Label8_17.Width
                         ZIndex: =7
 
@@ -359,7 +359,7 @@ Admin_License_Page As screen:
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'PL-200'
-                        Width: =Parent.Width * 0.075
+                        Width: =Parent.Width * 0.0833
                         X: =Label8_12.Width + Label8_13.Width + Label8_14.Width + Label8_15.Width + Label8_16.Width + Label8_17.Width +   Label8_18.Width
                         ZIndex: =8
 
@@ -370,7 +370,7 @@ Admin_License_Page As screen:
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'PL-300'
-                        Width: =Parent.Width * 0.075
+                        Width: =Parent.Width * 0.0833
                         X: =Label8_12.Width + Label8_13.Width + Label8_14.Width + Label8_15.Width + Label8_16.Width + Label8_17.Width +   Label8_18.Width + Label8_19.Width
                         ZIndex: =9
 
@@ -381,7 +381,7 @@ Admin_License_Page As screen:
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'PL-400'
-                        Width: =Parent.Width * 0.075
+                        Width: =Parent.Width * 0.0833
                         X: =Label8_12.Width + Label8_13.Width + Label8_14.Width + Label8_15.Width + Label8_16.Width + Label8_17.Width +   Label8_18.Width + Label8_19.Width + Label8_20.Width 
                         ZIndex: =10
 
@@ -392,7 +392,7 @@ Admin_License_Page As screen:
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'PL-600'
-                        Width: =Parent.Width * 0.075
+                        Width: =Parent.Width * 0.0833
                         X: =Label8_12.Width + Label8_13.Width + Label8_14.Width + Label8_15.Width + Label8_16.Width + Label8_17.Width +   Label8_18.Width + Label8_19.Width + Label8_20.Width + Label8_21.Width
                         ZIndex: =11
 
@@ -403,7 +403,7 @@ Admin_License_Page As screen:
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'PL-900'
-                        Width: =Parent.Width * 0.075
+                        Width: =Parent.Width * 0.0833
                         X: =Label8_12.Width + Label8_13.Width + Label8_14.Width + Label8_15.Width + Label8_16.Width + Label8_17.Width +   Label8_18.Width + Label8_19.Width + Label8_20.Width + Label8_21.Width + Label8_22.Width
                         ZIndex: =12
 
