@@ -1094,36 +1094,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Admin_Skill_Page.AS_Main_Container.AS_Sub_Container.AS_Gallery_Container.Admin_Skill_Gallery.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Admin_Skill_Page.AS_Main_Container.AS_Sub_Container.AS_Gallery_Container.Admin_Skill_Gallery.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Admin_Skill_Page",
-                "type": "Admin_Skill_Page.AS_Main_Container.AS_Sub_Container.AS_Gallery_Container.Admin_Skill_Gallery"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Admin_Skill_Page.AS_Main_Container.AS_Sub_Container.AS_Gallery_Container.Admin_Skill_Gallery.TabIndex"
                 }
               ],
@@ -1148,6 +1118,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Admin_Skill_Page.AS_Main_Container.AS_Sub_Container.AS_Gallery_Container.Admin_Skill_Gallery.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Admin_Skill_Page.AS_Main_Container.AS_Sub_Container.AS_Gallery_Container.Admin_Skill_Gallery.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Admin_Skill_Page",
+                "type": "Admin_Skill_Page.AS_Main_Container.AS_Sub_Container.AS_Gallery_Container.Admin_Skill_Gallery"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
         },
         {
           "locations": [
