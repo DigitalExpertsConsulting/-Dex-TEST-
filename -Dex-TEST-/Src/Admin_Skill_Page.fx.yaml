@@ -89,8 +89,7 @@ Admin_Skill_Page As screen:
                     Height: =Parent.Height * 0.7
                     HintText: ="검색"
                     Size: =Parent.Width * 0.04
-                    Width: =Parent.Width * 0.95
-                    Y: =8
+                    Width: =Parent.Width * 0.8
                     ZIndex: =1
 
             AS_Gallery_Title_Container As groupContainer.manualLayoutContainer:
