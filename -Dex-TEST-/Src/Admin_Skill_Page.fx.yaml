@@ -79,7 +79,7 @@ Admin_Skill_Page As screen:
                 Height: =Parent.Height* 0.08
                 Width: =Parent.Width * 0.2
                 X: =Parent.Width * 0.799
-                Y: =29
+                Y: =Parent.Height * 0.02
                 ZIndex: =2
 
                 Skill_Search As text:
