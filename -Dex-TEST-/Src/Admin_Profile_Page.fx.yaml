@@ -143,17 +143,6 @@ Admin_Profile_Page As screen:
         Y: =309
         ZIndex: =7
 
-    Admin_Profile_Title As label:
-        Align: =Align.Center
-        BorderColor: =RGBA(102, 182, 227, 0.7)
-        Color: =RGBA(255, 255, 255, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =186
-        Size: =50
-        Text: ="Admin Profile Page"
-        Width: =1366
-        ZIndex: =8
-
     Update_Date As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
@@ -243,37 +232,6 @@ Admin_Profile_Page As screen:
         Y: =684
         ZIndex: =12
 
-    Admin_Profile_Back As icon.BackArrow:
-        Color: =RGBA( 106, 170, 205, 1 )
-        Height: =130
-        Icon: =Icon.BackArrow
-        OnSelect: =Navigate(Admin_Page)
-        Width: =130
-        X: =99
-        Y: =20
-        ZIndex: =13
-
-    Admin_Profile_Home As icon.Home:
-        Color: =RGBA( 106, 170, 205, 1 )
-        Height: =130
-        Icon: =Icon.Home
-        OnSelect: =Navigate(Main_Page)
-        Width: =130
-        X: =1120
-        Y: =40
-        ZIndex: =14
-
-    Profile_Search As text:
-        BorderColor: =RGBA( 112, 128, 144, 0.7 )
-        BorderThickness: =5
-        Default: =
-        Height: =35
-        HintText: ="검색"
-        Width: =245
-        X: =721
-        Y: =257
-        ZIndex: =15
-
     All_Checkbox As checkbox:
         Color: =RGBA(255, 255, 255, 1)
         Height: =52
@@ -293,12 +251,91 @@ Admin_Profile_Page As screen:
         Y: =306
         ZIndex: =16
 
-    Profile_Refresh As icon.Reload:
-        BorderColor: =RGBA(241, 244, 249, 1)
-        Color: =RGBA(241, 244, 249, 1)
-        Icon: =Icon.Reload
-        OnSelect: =Refresh(ability_profile)
-        X: =9
-        Y: =228
-        ZIndex: =17
+    AP_Main_Container As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =18
+
+        AP_Header_Container As groupContainer.horizontalAutoLayoutContainer:
+            FillPortions: =0
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =50
+            PaddingRight: =50
+            PaddingTop: =30
+            ZIndex: =1
+
+            Admin_Profile_Back As icon.BackArrow:
+                Color: =RGBA( 106, 170, 205, 1 )
+                Height: =130
+                Icon: =Icon.BackArrow
+                OnSelect: =Navigate(Admin_Page)
+                Width: =130
+                X: =99
+                Y: =20
+                ZIndex: =1
+
+            Admin_Profile_Title As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(102, 182, 227, 0.7)
+                Color: =RGBA(255, 255, 255, 1)
+                FillPortions: =1
+                FontWeight: =FontWeight.Bold
+                Height: =186
+                Size: =50
+                Text: ="Admin Profile Page"
+                Width: =1366
+                ZIndex: =2
+
+            Admin_Profile_Home As icon.Home:
+                Color: =RGBA( 106, 170, 205, 1 )
+                Height: =130
+                Icon: =Icon.Home
+                OnSelect: =Navigate(Main_Page)
+                Width: =130
+                X: =1120
+                Y: =40
+                ZIndex: =3
+
+        AP_Sub_Container As groupContainer.manualLayoutContainer:
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            ZIndex: =2
+
+            AP_Refresh_Container As groupContainer.manualLayoutContainer:
+                Height: =93
+                Width: =87
+                X: =40
+                Y: =5
+                ZIndex: =1
+
+                Profile_Refresh As icon.Reload:
+                    BorderColor: =RGBA(241, 244, 249, 1)
+                    Color: =RGBA(241, 244, 249, 1)
+                    Icon: =Icon.Reload
+                    OnSelect: =Refresh(ability_profile)
+                    X: =9
+                    Y: =14
+                    ZIndex: =1
+
+            AP_Search_Container As groupContainer.manualLayoutContainer:
+                Height: =78
+                Width: =293
+                X: =674
+                Y: =20
+                ZIndex: =2
+
+                Profile_Search As text:
+                    BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                    BorderThickness: =5
+                    Default: =
+                    Height: =35
+                    HintText: ="검색"
+                    Width: =245
+                    X: =35
+                    Y: =25
+                    ZIndex: =1
 
