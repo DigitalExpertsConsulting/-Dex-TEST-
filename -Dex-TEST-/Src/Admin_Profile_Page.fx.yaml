@@ -51,7 +51,7 @@ Admin_Profile_Page As screen:
                 FillPortions: =1
                 FontWeight: =FontWeight.Bold
                 Height: =Parent.Height
-                Size: =50
+                Size: =Parent.Width * 0.035
                 Text: ="Admin Profile Page"
                 Width: =Parent.Width - Admin_Profile_Back.Width -  Admin_Profile_Home.Width
                 ZIndex: =2
@@ -372,6 +372,7 @@ Admin_Profile_Page As screen:
                         
                         
                         
+                    Size: =Parent.Width * 0.035
                     Text: ="프로필양식 업데이트"
                     Width: =Parent.Width * 0.5
                     X: =Parent.Width * 0.25
