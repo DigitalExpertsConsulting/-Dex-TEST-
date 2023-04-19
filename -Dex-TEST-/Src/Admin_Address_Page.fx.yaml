@@ -241,7 +241,7 @@ Admin_Address_Page As screen:
                     BorderColor: =RGBA( 112, 128, 144, 0.7 )
                     BorderThickness: =5
                     Fill: =RGBA( 106, 170, 205, 1 )
-                    Height: =43
+                    Height: =Parent.Height * 0.48
                     OnSelect: |-
                         =//Test_csh_Excelexport_dataverse_list.Run("")
                         'ExcelDownload(Address)'.Run("")
@@ -276,6 +276,6 @@ Admin_Address_Page As screen:
                     Size: =Parent.Width * 0.04
                     Width: =Parent.Width * 0.75
                     X: =Parent.Width * 0.1
-                    Y: =30
+                    Y: =Parent.Height * 0.25
                     ZIndex: =1
 
