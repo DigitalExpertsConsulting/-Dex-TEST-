@@ -11,21 +11,24 @@ Admin_License_Page As screen:
 
         AL_Header_Container As groupContainer.horizontalAutoLayoutContainer:
             FillPortions: =0
+            Height: =Parent.Height * 0.21
+            LayoutAlignItems: =LayoutAlignItems.Center
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
             PaddingLeft: =50
             PaddingRight: =50
             PaddingTop: =30
+            Width: =Parent.Width
             ZIndex: =1
 
             Admin_License_Back As icon.BackArrow:
                 Color: =RGBA( 106, 170, 205, 1 )
-                Height: =130
+                Height: =Parent.Width * 0.08
                 Icon: =Icon.BackArrow
                 OnSelect: =Navigate(Admin_Page)
-                Width: =130
-                X: =110
+                Width: =Parent.Width * 0.08
+                X: =Parent.Width * 0.01
                 Y: =40
                 ZIndex: =1
 
@@ -35,56 +38,62 @@ Admin_License_Page As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 FillPortions: =1
                 FontWeight: =FontWeight.Bold
-                Height: =186
-                Size: =50
+                Height: =Parent.Height
+                Size: =Parent.Width * 0.035
                 Text: ="Admin License Page"
-                Width: =1366
+                Width: =Parent.Width - Admin_License_Back.Width - Admin_License_Home.Width 
+                X: =Admin_License_Back.Width
+                Y: =
                 ZIndex: =2
 
             Admin_License_Home As icon.Home:
                 Color: =RGBA( 106, 170, 205, 1 )
-                Height: =130
+                Height: =Parent.Width * 0.08
                 Icon: =Icon.Home
                 OnSelect: =Navigate(Main_Page)
-                Width: =130
-                X: =1120
+                Width: =Parent.Width * 0.08
+                X: =Parent.Width * 0.9
                 Y: =40
                 ZIndex: =3
 
         AL_Sub_Container As groupContainer.manualLayoutContainer:
             LayoutMinHeight: =100
             LayoutMinWidth: =250
+            Width: =Parent.Width
+            Y: =AL_Header_Container.Height
             ZIndex: =2
 
             AL_Down_Container As groupContainer.manualLayoutContainer:
-                Height: =85
-                Width: =474
+                Height: =Parent.Height * 0.14
+                Width: =Parent.Width * 0.3
                 ZIndex: =1
 
                 License_DownLoad As button:
                     BorderColor: =RGBA( 112, 128, 144, 0.7 )
                     BorderThickness: =5
                     Fill: =RGBA( 106, 170, 205, 1 )
-                    Height: =45
+                    Height: =Parent.Height * 0.55
                     OnSelect: =PDFDownload.Run()
                     Text: ="라이센스 인증서 다운로드"
-                    Width: =280
-                    X: =30
-                    Y: =15
+                    Width: =Parent.Width * 0.7
+                    X: =Parent.Width * 0.04
+                    Y: =Parent.Height * 0.2
                     ZIndex: =1
 
                 License_Refresh As icon.Reload:
                     Color: =RGBA(255, 255, 255, 1)
+                    Height: =Parent.Width * 0.18
                     Icon: =Icon.Reload
                     OnSelect: =Refresh(ability_license)
-                    X: =331
+                    Width: =Parent.Width * 0.18
+                    X: =Parent.Width * 0.8
                     Y: =5
                     ZIndex: =2
 
             AL_Search_Container As groupContainer.manualLayoutContainer:
                 Height: =70
-                Width: =316
-                X: =1050
+                Width: =Parent.Width * 0.2
+                X: =Parent.Width * 0.75
                 ZIndex: =2
 
                 License_Search As text:
@@ -99,9 +108,9 @@ Admin_License_Page As screen:
                     ZIndex: =1
 
             AL_Gallery_Tile_Container As groupContainer.manualLayoutContainer:
-                Height: =51
-                Width: =1366
-                Y: =85
+                Height: =Parent.Height * 0.086
+                Width: =Parent.Width
+                Y: =AL_Down_Container.Height
                 ZIndex: =3
 
                 Admin_License_Group As group:
@@ -113,116 +122,139 @@ Admin_License_Page As screen:
 
                     Rectangle1_5 As rectangle:
                         Fill: =RGBA( 106, 170, 205, 1 )
-                        Height: =51
-                        Width: =1366
+                        Height: =Parent.Height
+                        Width: =Parent.Width
                         ZIndex: =1
 
                     Label6_51 As label:
+                        Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
+                        Height: =Parent.Height
+                        Size: =Parent.Width * 0.009
                         Text: ="이름"
-                        Width: =45
-                        X: =51
-                        Y: =6
+                        Width: =Parent.Width * 0.075
                         ZIndex: =2
 
                     Label6_52 As label:
+                        Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
-                        Height: =51
+                        Height: =Parent.Height
+                        Size: =Parent.Width * 0.009
                         Text: ="AZ-104"
-                        Width: =75
-                        X: =150
+                        Width: =Parent.Width * 0.075
+                        X: =Label6_51.Width
                         ZIndex: =3
 
                     Label6_42 As label:
+                        Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
-                        Height: =51
+                        Height: =Parent.Height
+                        Size: =Parent.Width * 0.009
                         Text: ="AZ-305"
-                        Width: =75
-                        X: =264
+                        Width: =Parent.Width * 0.075
+                        X: =Label6_51.Width + Label6_52.Width
                         ZIndex: =4
 
                     Label6_50 As label:
+                        Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
-                        Height: =51
+                        Height: =Parent.Height
+                        Size: =Parent.Width * 0.009
                         Text: ="MS-100"
-                        Width: =75
-                        X: =378
+                        Width: =Parent.Width * 0.075
+                        X: =Label6_51.Width + Label6_52.Width + Label6_42.Width
                         ZIndex: =5
 
                     Label6_49 As label:
+                        Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
-                        Height: =51
+                        Height: =Parent.Height
+                        Size: =Parent.Width * 0.009
                         Text: ="MS-101"
-                        Width: =75
-                        X: =493
+                        Width: =Parent.Width * 0.075
+                        X: =Label6_51.Width + Label6_52.Width + Label6_42.Width + Label6_50.Width
                         ZIndex: =6
 
                     Label6_48 As label:
+                        Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
-                        Height: =51
+                        Height: =Parent.Height
+                        Size: =Parent.Width * 0.009
                         Text: ="MS-700"
-                        Width: =75
-                        X: =604
+                        Width: =Parent.Width * 0.075
+                        X: =Label6_51.Width + Label6_52.Width + Label6_42.Width + Label6_50.Width + Label6_49.Width
                         ZIndex: =7
 
                     Label6_47 As label:
+                        Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
-                        Height: =51
+                        Height: =Parent.Height
+                        Size: =Parent.Width * 0.009
                         Text: ="MS-900"
-                        Width: =75
-                        X: =709
+                        Width: =Parent.Width * 0.075
+                        X: =Label6_51.Width + Label6_52.Width + Label6_42.Width + Label6_50.Width + Label6_49.Width + Label6_48.Width
                         ZIndex: =8
 
                     Label6_46 As label:
+                        Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
-                        Height: =51
+                        Height: =Parent.Height
+                        Size: =Parent.Width * 0.009
                         Text: ="PL-200"
-                        Width: =75
-                        X: =822
+                        Width: =Parent.Width * 0.075
+                        X: =Label6_51.Width + Label6_52.Width + Label6_42.Width + Label6_50.Width + Label6_49.Width + Label6_48.Width + Label6_47.Width
                         ZIndex: =9
 
                     Label6_45 As label:
+                        Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
-                        Height: =51
+                        Height: =Parent.Height
+                        Size: =Parent.Width * 0.009
                         Text: ="PL-300"
-                        Width: =75
-                        X: =939
+                        Width: =Parent.Width * 0.075
+                        X: =Label6_51.Width + Label6_52.Width + Label6_42.Width + Label6_50.Width + Label6_49.Width + Label6_48.Width + Label6_47.Width + Label6_46.Width
                         ZIndex: =10
 
                     Label6_44 As label:
+                        Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
-                        Height: =51
+                        Height: =Parent.Height
+                        Size: =Parent.Width * 0.009
                         Text: ="PL-400"
-                        Width: =75
-                        X: =1060
+                        Width: =Parent.Width * 0.075
+                        X: =Label6_51.Width + Label6_52.Width + Label6_42.Width + Label6_50.Width + Label6_49.Width + Label6_48.Width + Label6_47.Width + Label6_46.Width + Label6_45.Width
                         ZIndex: =11
 
                     Label6_43 As label:
+                        Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
-                        Height: =51
+                        Height: =Parent.Height
+                        Size: =Parent.Width * 0.009
                         Text: ="PL-600"
-                        Width: =75
-                        X: =1180
+                        Width: =Parent.Width * 0.075
+                        X: =Label6_51.Width + Label6_52.Width + Label6_42.Width + Label6_50.Width + Label6_49.Width + Label6_48.Width + Label6_47.Width + Label6_46.Width + Label6_45.Width + Label6_44.Width
                         ZIndex: =12
 
                     Label6_41 As label:
+                        Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
-                        Height: =51
+                        Height: =Parent.Height
+                        Size: =Parent.Width * 0.009
                         Text: ="PL-900"
-                        Width: =75
-                        X: =1291
+                        Width: =Parent.Width * 0.075
+                        X: =Label6_51.Width + Label6_52.Width + Label6_42.Width + Label6_50.Width + Label6_49.Width + Label6_48.Width + Label6_47.Width + Label6_46.Width + Label6_45.Width + Label6_44.Width + Label6_43.Width
                         ZIndex: =13
 
             AL_Gallery_Container As groupContainer.manualLayoutContainer:
@@ -245,120 +277,133 @@ Admin_License_Page As screen:
                     ZIndex: =1
 
                     Label8_12 As label:
+                        Align: =Align.Center
                         FontWeight: =FontWeight.Semibold
                         Height: =35
                         OnSelect: =Select(Parent)
+                        Size: =Parent.Width * 0.007
                         Text: =ThisItem.Name
-                        Width: =71
+                        Width: =Parent.Width * 0.075
                         ZIndex: =1
 
                     Label8_13 As label:
+                        Align: =Align.Center
                         Font: =Font.Arial
                         Height: =35
                         OnSelect: =Select(Parent)
-                        Size: =9
+                        Size: =Parent.Width * 0.007
                         Text: =ThisItem.'AZ-104'
-                        Width: =94
+                        Width: =Parent.Width * 0.075
                         X: =97
                         ZIndex: =2
 
                     Label8_14 As label:
+                        Align: =Align.Center
                         Font: =Font.Arial
                         Height: =35
                         OnSelect: =Select(Parent)
-                        Size: =9
+                        Size: =Parent.Width * 0.007
                         Text: =ThisItem.'AZ-305'
-                        Width: =94
+                        Width: =Parent.Width * 0.075
                         X: =207
                         ZIndex: =3
 
                     Label8_15 As label:
+                        Align: =Align.Center
                         Font: =Font.Arial
                         Height: =35
                         OnSelect: =Select(Parent)
-                        Size: =9
+                        Size: =Parent.Width * 0.007
                         Text: =ThisItem.'MS-100'
-                        Width: =94
+                        Width: =Parent.Width * 0.075
                         X: =326
                         ZIndex: =4
 
                     Label8_16 As label:
+                        Align: =Align.Center
                         Font: =Font.Arial
                         Height: =35
                         OnSelect: =Select(Parent)
-                        Size: =9
+                        Size: =Parent.Width * 0.007
                         Text: =ThisItem.'MS-101'
-                        Width: =94
+                        Width: =Parent.Width * 0.075
                         X: =448
                         ZIndex: =5
 
                     Label8_17 As label:
+                        Align: =Align.Center
                         Font: =Font.Arial
                         Height: =35
                         OnSelect: =Select(Parent)
-                        Size: =9
+                        Size: =Parent.Width * 0.007
                         Text: =ThisItem.'MS-700'
-                        Width: =94
+                        Width: =Parent.Width * 0.075
                         X: =552
                         ZIndex: =6
 
                     Label8_18 As label:
+                        Align: =Align.Center
                         Font: =Font.Arial
                         Height: =35
                         OnSelect: =Select(Parent)
-                        Size: =9
+                        Size: =Parent.Width * 0.007
                         Text: =ThisItem.'MS-900'
-                        Width: =94
+                        Width: =Parent.Width * 0.075
                         X: =656
                         ZIndex: =7
 
                     Label8_19 As label:
+                        Align: =Align.Center
                         Font: =Font.Arial
                         Height: =35
                         OnSelect: =Select(Parent)
-                        Size: =9
+                        Size: =Parent.Width * 0.007
                         Text: =ThisItem.'PL-200'
-                        Width: =94
+                        Width: =Parent.Width * 0.075
                         X: =770
                         ZIndex: =8
 
                     Label8_20 As label:
+                        Align: =Align.Center
                         Font: =Font.Arial
                         Height: =35
                         OnSelect: =Select(Parent)
-                        Size: =9
+                        Size: =Parent.Width * 0.007
                         Text: =ThisItem.'PL-300'
-                        Width: =94
+                        Width: =Parent.Width * 0.075
                         X: =887
                         ZIndex: =9
 
                     Label8_21 As label:
+                        Align: =Align.Center
                         Font: =Font.Arial
                         Height: =35
                         OnSelect: =Select(Parent)
-                        Size: =9
+                        Size: =Parent.Width * 0.007
                         Text: =ThisItem.'PL-400'
-                        Width: =94
+                        Width: =Parent.Width * 0.075
                         X: =1011
                         ZIndex: =10
 
                     Label8_22 As label:
+                        Align: =Align.Center
                         Font: =Font.Arial
                         Height: =35
                         OnSelect: =Select(Parent)
-                        Size: =9
+                        Size: =Parent.Width * 0.007
                         Text: =ThisItem.'PL-600'
-                        Width: =94
+                        Width: =Parent.Width * 0.075
                         X: =1128
                         ZIndex: =11
 
                     Label8_23 As label:
+                        Align: =Align.Center
                         Font: =Font.Arial
                         Height: =35
                         OnSelect: =Select(Parent)
-                        Size: =9
+                        Size: =Parent.Width * 0.007
                         Text: =ThisItem.'PL-900'
-                        Width: =94
+                        Width: =Parent.Width * 0.075
                         X: =1245
                         ZIndex: =12
 
