@@ -23,21 +23,24 @@ Admin_Profile_Page As screen:
 
         AP_Header_Container As groupContainer.horizontalAutoLayoutContainer:
             FillPortions: =0
+            Height: =Parent.Height * 0.21
+            LayoutAlignItems: =LayoutAlignItems.Center
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
             PaddingLeft: =50
             PaddingRight: =50
             PaddingTop: =30
+            Width: =Parent.Width
             ZIndex: =1
 
             Admin_Profile_Back As icon.BackArrow:
                 Color: =RGBA( 106, 170, 205, 1 )
-                Height: =130
+                Height: =Parent.Width * 0.08
                 Icon: =Icon.BackArrow
                 OnSelect: =Navigate(Admin_Page)
-                Width: =130
-                X: =99
+                Width: =Parent.Width * 0.08
+                X: =Parent.Width * 0.01
                 Y: =20
                 ZIndex: =1
 
@@ -47,65 +50,65 @@ Admin_Profile_Page As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 FillPortions: =1
                 FontWeight: =FontWeight.Bold
-                Height: =186
+                Height: =Parent.Height
                 Size: =50
                 Text: ="Admin Profile Page"
-                Width: =1366
+                Width: =Parent.Width - Admin_Profile_Back.Width -  Admin_Profile_Home.Width
                 ZIndex: =2
 
             Admin_Profile_Home As icon.Home:
                 Color: =RGBA( 106, 170, 205, 1 )
-                Height: =130
+                Height: =Parent.Width * 0.08
                 Icon: =Icon.Home
                 OnSelect: =Navigate(Main_Page)
-                Width: =130
-                X: =1120
+                Width: =Parent.Width * 0.08
+                X: =Parent.Width * 0.9
                 Y: =40
                 ZIndex: =3
 
         AP_Sub_Container As groupContainer.manualLayoutContainer:
+            Height: =Parent.Height - AP_Header_Container.Height
             LayoutMinHeight: =100
             LayoutMinWidth: =250
+            Width: =Parent.Width
             ZIndex: =2
 
             AP_Refresh_Container As groupContainer.manualLayoutContainer:
-                Height: =93
-                Width: =87
-                X: =40
-                Y: =5
+                Height: =Parent.Width * 0.056
+                Width: =Parent.Width * 0.056
+                X: =Parent.Width * 0.02
+                Y: =Parent.Height * 0.02
                 ZIndex: =1
 
                 Profile_Refresh As icon.Reload:
                     BorderColor: =RGBA(241, 244, 249, 1)
                     Color: =RGBA(241, 244, 249, 1)
+                    Height: =Parent.Width
                     Icon: =Icon.Reload
                     OnSelect: =Refresh(ability_profile)
-                    X: =9
-                    Y: =14
+                    Width: =Parent.Width
                     ZIndex: =1
 
             AP_Search_Container As groupContainer.manualLayoutContainer:
-                Height: =78
-                Width: =293
-                X: =674
-                Y: =20
+                Height: =Parent.Height * 0.06
+                Width: =Parent.Width * 0.178
+                X: =Parent.Width * 0.524
+                Y: =Parent.Height * 0.06
                 ZIndex: =2
 
                 Profile_Search As text:
                     BorderColor: =RGBA( 112, 128, 144, 0.7 )
                     BorderThickness: =5
                     Default: =
-                    Height: =35
+                    Height: =Parent.Height
                     HintText: ="검색"
-                    Width: =245
-                    X: =35
-                    Y: =25
+                    Width: =Parent.Width
                     ZIndex: =1
 
             AP_Gallery_Title_Container As groupContainer.manualLayoutContainer:
-                Height: =64
-                Width: =967
-                Y: =98
+                Height: =Parent.Height * 0.1
+                Width: =Parent.Width - AP_Down_Container.Width
+                Y: =AP_Refresh_Container.Height + AP_Refresh_Container.Y
                 ZIndex: =3
 
                 AP_Title_Group As group:
@@ -119,61 +122,57 @@ Admin_Profile_Page As screen:
                         BorderColor: =RGBA( 112, 128, 144, 0.7 )
                         BorderThickness: =3
                         Fill: =RGBA( 106, 170, 205, 1 )
-                        Height: =56
-                        Width: =967
-                        Y: =8
+                        Height: =Parent.Height
+                        Width: =Parent.Width
                         ZIndex: =1
 
                     User_Name As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
-                        Height: =52
-                        Size: =19
+                        Height: =Parent.Height
+                        Size: =Parent.Width * 0.015
                         Text: ="이름"
-                        Width: =217
-                        Y: =12
+                        Width: =Parent.Width * 0.1
+                        X: =All_Checkbox.Width
                         ZIndex: =2
 
                     Profile_Name As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
-                        Height: =52
-                        Size: =20
+                        Height: =Parent.Height
+                        Size: =Parent.Width * 0.015
                         Text: ="프로필"
-                        Width: =332
-                        X: =457
-                        Y: =12
+                        Width: =Parent.Width * 0.34
+                        X: =All_Checkbox.Width + User_Name.Width + Update_Date.Width
                         ZIndex: =3
 
                     Profile_Download As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
-                        Height: =52
-                        Size: =20
+                        Height: =Parent.Height
+                        Size: =Parent.Width * 0.015
                         Text: ="다운로드"
-                        Width: =215
-                        X: =752
-                        Y: =12
+                        Width: =Parent.Width * 0.21
+                        X: =All_Checkbox.Width + User_Name.Width + Update_Date.Width + Profile_Name.Width
                         ZIndex: =4
 
                     Update_Date As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
-                        Height: =55
-                        Size: =20
+                        Height: =Parent.Height
+                        Size: =Parent.Width * 0.015
                         Text: ="수정한 날짜"
-                        Width: =214
-                        X: =224
-                        Y: =9
+                        Width: =Parent.Width * 0.26
+                        X: =All_Checkbox.Width + User_Name.Width
                         ZIndex: =5
 
                     All_Checkbox As checkbox:
                         Color: =RGBA(255, 255, 255, 1)
-                        Height: =52
+                        Height: =Parent.Height
                         OnCheck: |-
                             =UpdateContext({Checkbox10Value: true})
                         OnSelect: |-
@@ -185,15 +184,13 @@ Admin_Profile_Page As screen:
                         OnUncheck: |-
                             =UpdateContext({Checkbox10Value: false})
                         Text: ="전체"
-                        Width: =37
-                        X: =21
-                        Y: =10
+                        Width: =Parent.Width * 0.09
                         ZIndex: =6
 
             AP_Gallery_Container As groupContainer.manualLayoutContainer:
-                Height: =406
-                Width: =967
-                Y: =162
+                Height: =Parent.Height - AP_Gallery_Title_Container.Height - AP_Refresh_Container.Y - AP_Refresh_Container.Height
+                Width: =Parent.Width - AP_Down_Container.Width
+                Y: =AP_Gallery_Title_Container.Y + AP_Gallery_Title_Container.Height
                 ZIndex: =4
 
                 Admin_Profile_Gallery As gallery.galleryVertical:
@@ -201,115 +198,123 @@ Admin_Profile_Page As screen:
                     BorderThickness: =3
                     DelayItemLoading: =true
                     Fill: =RGBA(255, 255, 255, 0.9)
-                    Height: =406
+                    Height: =Parent.Height
                     Items: |
                         =Search(ability_profile,Profile_Search.Text,"cr778_name")
                     Layout: =Layout.Vertical
                     LoadingSpinner: =LoadingSpinner.Data
                     TemplateSize: =70
-                    Width: =967
+                    Width: =Parent.Width
                     ZIndex: =1
 
                     Checkbox6_1 As checkbox:
                         Default: =Checkbox10Value
-                        Height: =45
+                        Height: =Parent.Height * 0.076
                         OnSelect: |-
                             =If(
                                 Checkbox6_1.Value = true,
                                 Collect(CheckboxCollection, Checkbox6_1.Text),
                                 Remove(CheckboxCollection, LookUp(CheckboxCollection, Value = Checkbox6_1.Text))
                             )
+                        Size: =Parent.Width * 0.013
                         Text: =ThisItem.'E-mail'
-                        Width: =43
-                        X: =18
-                        Y: =10
+                        Width: =Parent.Width * 0.045
+                        X: =
+                        Y: =Parent.Height * 0.04
                         ZIndex: =1
 
                     Label20_1 As label:
+                        Align: =Align.Center
+                        Height: =Parent.Height * 0.076
                         OnSelect: =Select(Parent)
-                        Size: =15
+                        Size: =Parent.Width * 0.013
                         Text: =ThisItem.Profile.FileName
-                        Width: =335
-                        X: =426
-                        Y: =20
+                        Width: =Parent.Width * 0.35
+                        X: =Checkbox6_1.Width + Label4.Width + Label5.Width
+                        Y: =Parent.Height * 0.04
                         ZIndex: =4
 
                     Button13_1 As button:
                         BorderColor: =RGBA( 112, 128, 144, 0.7 )
                         BorderThickness: =5
                         Fill: =RGBA( 106, 170, 205, 1 )
-                        Height: =33
+                        Height: =Parent.Height * 0.076
                         OnSelect: =PPTDownload.Run(Admin_Profile_Gallery.Selected.'E-mail')
+                        Size: =Parent.Width * 0.013
                         Text: ="다운로드"
-                        X: =779
-                        Y: =20
+                        Width: =Parent.Width * 0.17
+                        X: =Checkbox6_1.Width + Label4.Width + Label5.Width + Label20_1.Width
+                        Y: =Parent.Height * 0.04
                         ZIndex: =5
 
                     Label4 As label:
                         Align: =Align.Center
-                        Height: =50
+                        Height: =Parent.Height * 0.076
                         OnSelect: =Select(Parent)
-                        Size: =15
+                        Size: =Parent.Width * 0.013
                         Text: =ThisItem.Name
-                        Width: =102
-                        X: =52
-                        Y: =10
+                        Width: =Parent.Width * 0.16
+                        X: =Checkbox6_1.Width
+                        Y: =Parent.Height * 0.04
                         ZIndex: =6
 
                     Label5 As label:
-                        Height: =31
+                        Align: =Align.Center
+                        Height: =Parent.Height * 0.076
                         OnSelect: =Select(Parent)
-                        Size: =15
+                        Size: =Parent.Width * 0.013
                         Text: =ThisItem.'Created On'
-                        Width: =249
-                        X: =163
-                        Y: =22
+                        Width: =Parent.Width * 0.25
+                        X: =Checkbox6_1.Width + Label4.Width
+                        Y: =Parent.Height * 0.04
                         ZIndex: =7
 
             AP_Down_Container As groupContainer.manualLayoutContainer:
-                Height: =197
-                Width: =399
-                X: =967
-                Y: =98
+                Height: =Parent.Height * 0.32
+                Width: =Parent.Width * 0.3
+                X: =AP_Gallery_Container.Width
+                Y: =AP_Gallery_Container.Y
                 ZIndex: =5
 
                 AllDownload_Button As button:
                     BorderColor: =RGBA( 112, 128, 144, 0.7 )
                     BorderThickness: =5
                     Fill: =RGBA( 106, 170, 205, 1 )
-                    Height: =60
+                    Height: =Parent.Height*0.3
                     OnSelect: =PPTALLDOWNLOAD.Run()
+                    Size: =Parent.Width * 0.037
                     Text: |-
                         ="전체 다운로드
                         "
-                    Width: =335
-                    X: =43
-                    Y: =114
+                    Width: =Parent.Width * 0.81
+                    X: =Parent.Width * 0.1
+                    Y: =Parent.Height * 0.55
                     ZIndex: =1
 
                 SelectDownload_Button As button:
                     BorderColor: =RGBA( 112, 128, 144, 0.7 )
                     BorderThickness: =5
                     Fill: =RGBA( 106, 170, 205, 1 )
-                    Height: =60
+                    Height: =Parent.Height*0.3
                     OnSelect: |-
                         =If(
                             !IsBlank(ConcatBox.Text),
                             PPTDownload.Run(Admin_Profile_Gallery.Selected.'E-mail')
                         )
+                    Size: =Parent.Width * 0.037
                     Text: |-
                         ="선택 다운로드
                         "
-                    Width: =335
-                    X: =40
-                    Y: =32
+                    Width: =Parent.Width * 0.81
+                    X: =Parent.Width * 0.1
+                    Y: =Parent.Height * 0.12
                     ZIndex: =2
 
             AP_Update_Container As groupContainer.manualLayoutContainer:
-                Height: =238
-                Width: =399
-                X: =967
-                Y: =330
+                Height: =Parent.Height - AP_Down_Container.Height - AP_Gallery_Title_Container.Height - AP_Refresh_Container.Height - AP_Refresh_Container.Y
+                Width: =AP_Down_Container.Width
+                X: =AP_Down_Container.X
+                Y: =Parent.Height - AP_Down_Container.Height - AP_Gallery_Title_Container.Height
                 ZIndex: =6
 
                 Profile_Template_Upload_Card As attachments:
@@ -331,16 +336,18 @@ Admin_Profile_Page As screen:
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     PaddingRight: =5
                     PaddingTop: =5
+                    Size: =Parent.Width * 0.025
                     Tooltip: =
-                    Width: =341
-                    X: =40
-                    Y: =40
+                    Width: =Parent.Width * 0.8
+                    X: =Parent.Width * 0.1
+                    Y: =Parent.Height * 0.1
                     ZIndex: =1
 
                 Profile_Template_Upload As button:
                     BorderColor: =RGBA( 112, 128, 144, 0.7 )
                     BorderThickness: =5
                     Fill: =RGBA( 106, 170, 205, 1 )
+                    Height: =Parent.Height * 0.15
                     OnSelect: |+
                         =ability_admin_upload_profile.Run(
                             User().Email,
@@ -366,8 +373,8 @@ Admin_Profile_Page As screen:
                         
                         
                     Text: ="프로필양식 업데이트"
-                    Width: =208
-                    X: =173
-                    Y: =162
+                    Width: =Parent.Width * 0.5
+                    X: =Parent.Width * 0.25
+                    Y: =Parent.Height * 0.6
                     ZIndex: =2
 
