@@ -39,7 +39,7 @@ Admin_Skill_Page As screen:
                 FillPortions: =1
                 FontWeight: =FontWeight.Bold
                 Height: =Parent.Height
-                Size: =50
+                Size: =Parent.Width * 0.035
                 Text: ="Admin Skill Page"
                 Width: =Parent.Width -Admin_Skill_Back.Width - Admin_Skill_Home.Width
                 ZIndex: =2
