@@ -76,8 +76,8 @@ Admin_Skill_Page As screen:
                     ZIndex: =1
 
             AS_Search_Container As groupContainer.manualLayoutContainer:
-                Height: =Parent.Height* 0.08
-                Width: =Parent.Width * 0.2
+                Height: =Parent.Height* 0.06
+                Width: =Parent.Width * 0.17
                 X: =Parent.Width * 0.799
                 Y: =Parent.Height * 0.02
                 ZIndex: =2
@@ -86,10 +86,10 @@ Admin_Skill_Page As screen:
                     BorderColor: =RGBA( 112, 128, 144, 0.7 )
                     BorderThickness: =5
                     Default: =""
-                    Height: =Parent.Height * 0.7
+                    Height: =Parent.Height
                     HintText: ="검색"
                     Size: =Parent.Width * 0.04
-                    Width: =Parent.Width * 0.8
+                    Width: =Parent.Width
                     ZIndex: =1
 
             AS_Gallery_Title_Container As groupContainer.manualLayoutContainer:
