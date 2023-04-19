@@ -93,8 +93,8 @@ Admin_License_Page As screen:
 
             AL_Search_Container As groupContainer.manualLayoutContainer:
                 Height: =70
-                Width: =Parent.Width * 0.2
-                X: =Parent.Width * 0.75
+                Width: =Parent.Width * 0.25
+                X: =Parent.Width * 0.7
                 ZIndex: =2
 
                 License_Search As text:
@@ -106,7 +106,7 @@ Admin_License_Page As screen:
                     Size: =Parent.Width * 0.045
                     Width: =245
                     X: =40
-                    Y: =25
+                    Y: =20
                     ZIndex: =1
 
             AL_Gallery_Tile_Container As groupContainer.manualLayoutContainer:
