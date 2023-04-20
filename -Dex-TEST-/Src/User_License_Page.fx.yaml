@@ -4108,8 +4108,8 @@ User_License_Page As screen:
 
             License_Container_1 As groupContainer.manualLayoutContainer:
                 Height: =Parent.Height * 0.69
-                Width: =Parent.Width * 0.35
-                X: =Parent.Width * 0.18
+                Width: =Parent.Width * 0.45
+                X: =Parent.Width * 0.11
                 Y: =38
                 ZIndex: =1
 
@@ -4154,6 +4154,7 @@ User_License_Page As screen:
                             Text: =Parent.DisplayName
                             Width: =Parent.Width * 0.25
                             Wrap: =false
+                            X: =208
                             Y: =
                             ZIndex: =1
 
@@ -4189,16 +4190,16 @@ User_License_Page As screen:
                             Size: =Parent.Width * 0.019
                             TrueText: ="있다"
                             Width: =Parent.Width * 0.23
-                            X: =Parent.Width * 0.27
-                            Y: =75
+                            X: =177
+                            Y: =70
                             ZIndex: =5
 
                         "'AZ-104_DatePicker_1' As datepicker":
                             DisplayMode: =If('AZ-104_Toggle_1'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
-                            Height: =59
+                            Height: =49
                             Size: =Parent.Width * 0.021
-                            Width: =Parent.Width * 0.36
-                            X: =Parent.Width * 0.59
+                            Width: =195
+                            X: =361
                             Y: =71
                             ZIndex: =6
 
@@ -4209,8 +4210,8 @@ User_License_Page As screen:
                             Size: =Parent.Width * 0.025
                             Text: ="취득 여부"
                             Width: =Parent.Width * 0.17
-                            X: =Parent.Width * 0.27
-                            Y: =16
+                            X: =30
+                            Y: =71
                             ZIndex: =7
 
                         "'AZ-104_취득일자_1' As label":
@@ -5379,7 +5380,7 @@ User_License_Page As screen:
             File_Container_1 As groupContainer.manualLayoutContainer:
                 Height: =License_Container_1.Height
                 Width: =Parent.Width * 0.35
-                X: =713
+                X: =License_Container_1.X + License_Container_1.Width
                 Y: =38
                 ZIndex: =2
 
