@@ -4149,13 +4149,11 @@ User_License_Page As screen:
                         "'AZ-104DataCardKey_1' As label":
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Bold
-                            Height: =65
+                            Height: =Parent.Height * 0.4
                             Size: =Parent.Width * 0.045
                             Text: =Parent.DisplayName
                             Width: =Parent.Width * 0.25
                             Wrap: =false
-                            X: =208
-                            Y: =
                             ZIndex: =1
 
                         ErrorMessage34_1 As label:
@@ -4186,7 +4184,7 @@ User_License_Page As screen:
                         "'AZ-104_Toggle_1' As toggleSwitch":
                             Color: =RGBA(255, 255, 255, 1)
                             FalseText: ="없다"
-                            Height: =50
+                            Height: =Parent.Height * 0.3
                             Size: =Parent.Width * 0.019
                             TrueText: ="있다"
                             Width: =Parent.Width * 0.23
@@ -4196,9 +4194,9 @@ User_License_Page As screen:
 
                         "'AZ-104_DatePicker_1' As datepicker":
                             DisplayMode: =If('AZ-104_Toggle_1'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
-                            Height: =49
+                            Height: =Parent.Height * 0.3
                             Size: =Parent.Width * 0.021
-                            Width: =195
+                            Width: =Parent.Width * 0.36
                             X: =361
                             Y: =71
                             ZIndex: =6
@@ -4210,8 +4208,8 @@ User_License_Page As screen:
                             Size: =Parent.Width * 0.025
                             Text: ="취득 여부"
                             Width: =Parent.Width * 0.17
-                            X: =30
-                            Y: =71
+                            X: =Parent.Width * 0.27
+                            Y: =17
                             ZIndex: =7
 
                         "'AZ-104_취득일자_1' As label":
@@ -4252,7 +4250,7 @@ User_License_Page As screen:
                             AutoHeight: =true
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Bold
-                            Height: =65
+                            Height: =Parent.Height * 0.4
                             Size: =Parent.Width * 0.045
                             Text: =Parent.DisplayName
                             Width: =Parent.Width * 0.25
@@ -4287,7 +4285,7 @@ User_License_Page As screen:
                         "'AZ-305_Toggle_1' As toggleSwitch":
                             Color: =RGBA(255, 255, 255, 1)
                             FalseText: ="없다"
-                            Height: =50
+                            Height: =Parent.Height * 0.3
                             Size: =Parent.Width * 0.019
                             TrueText: ="있다"
                             Width: =Parent.Width * 0.23
@@ -4308,7 +4306,7 @@ User_License_Page As screen:
 
                         "'AZ-305_DatePicker_1' As datepicker":
                             DisplayMode: =If('AZ-305_Toggle_1'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
-                            Height: =59
+                            Height: =Parent.Height * 0.3
                             Size: =Parent.Width * 0.021
                             Width: =Parent.Width * 0.36
                             X: =Parent.Width * 0.59
@@ -4353,7 +4351,7 @@ User_License_Page As screen:
                             AutoHeight: =true
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Bold
-                            Height: =65
+                            Height: =Parent.Height * 0.4
                             Size: =Parent.Width * 0.045
                             Text: =Parent.DisplayName
                             Width: =Parent.Width * 0.25
@@ -4388,7 +4386,7 @@ User_License_Page As screen:
                         "'MS-100_Toggle_1' As toggleSwitch":
                             Color: =RGBA(255, 255, 255, 1)
                             FalseText: ="없다"
-                            Height: =50
+                            Height: =Parent.Height * 0.3
                             Size: = Parent.Width * 0.019
                             TrueText: ="있다"
                             Width: =Parent.Width * 0.23
@@ -4409,7 +4407,7 @@ User_License_Page As screen:
 
                         "'MS-100_DatePicker_1' As datepicker":
                             DisplayMode: =If('MS-100_Toggle_1'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
-                            Height: =59
+                            Height: =Parent.Height * 0.3
                             Size: =Parent.Width * 0.021
                             Width: =Parent.Width * 0.36
                             X: =Parent.Width * 0.59
@@ -4454,7 +4452,7 @@ User_License_Page As screen:
                             AutoHeight: =true
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Bold
-                            Height: =65
+                            Height: =Parent.Height * 0.4
                             Size: =Parent.Width * 0.045
                             Text: =Parent.DisplayName
                             Width: =Parent.Width * 0.25
@@ -4489,7 +4487,7 @@ User_License_Page As screen:
                         "'MS-101_Toggle_1' As toggleSwitch":
                             Color: =RGBA(255, 255, 255, 1)
                             FalseText: ="없다"
-                            Height: =50
+                            Height: =Parent.Height * 0.3
                             Size: =Parent.Width * 0.019
                             TrueText: ="있다"
                             Width: =Parent.Width * 0.23
@@ -4510,7 +4508,7 @@ User_License_Page As screen:
 
                         "'MS-101_DatePicker_1' As datepicker":
                             DisplayMode: =If('MS-101_Toggle_1'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
-                            Height: =59
+                            Height: =Parent.Height * 0.3
                             Size: =Parent.Width * 0.021
                             Width: = Parent.Width * 0.36
                             X: = Parent.Width * 0.59
@@ -4555,7 +4553,7 @@ User_License_Page As screen:
                             AutoHeight: =true
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Bold
-                            Height: =34
+                            Height: =Parent.Height * 0.4
                             Size: =Parent.Width * 0.045
                             Text: =Parent.DisplayName
                             Width: =Parent.Width * 0.25
@@ -4590,7 +4588,7 @@ User_License_Page As screen:
                         "'MS-700_Toggle_1' As toggleSwitch":
                             Color: =RGBA(255, 255, 255, 1)
                             FalseText: ="없다"
-                            Height: =50
+                            Height: =Parent.Height * 0.3
                             Size: =Parent.Width * 0.019
                             TrueText: ="있다"
                             Width: =Parent.Width * 0.23
@@ -4611,7 +4609,7 @@ User_License_Page As screen:
 
                         "'MS-700_DatePicker_1' As datepicker":
                             DisplayMode: =If('MS-700_Toggle_1'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
-                            Height: =59
+                            Height: =Parent.Height * 0.3
                             Size: = Parent.Width * 0.021
                             Width: = Parent.Width * 0.36
                             X: = Parent.Width * 0.59
@@ -4656,7 +4654,7 @@ User_License_Page As screen:
                             AutoHeight: =true
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Bold
-                            Height: =34
+                            Height: =Parent.Height * 0.4
                             Size: =Parent.Width * 0.045
                             Text: =Parent.DisplayName
                             Width: = Parent.Width * 0.25
@@ -4691,7 +4689,7 @@ User_License_Page As screen:
                         "'MS-900_Toggle_1' As toggleSwitch":
                             Color: =RGBA(255, 255, 255, 1)
                             FalseText: ="없다"
-                            Height: =50
+                            Height: =Parent.Height * 0.3
                             Size: =Parent.Width * 0.019
                             TrueText: ="있다"
                             Width: =Parent.Width * 0.23
@@ -4712,7 +4710,7 @@ User_License_Page As screen:
 
                         "'MS-900_DatePicker_1' As datepicker":
                             DisplayMode: =If('MS-900_Toggle_1'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
-                            Height: =59
+                            Height: =Parent.Height * 0.3
                             Size: =Parent.Width * 0.021
                             Width: =Parent.Width * 0.36
                             X: =Parent.Width * 0.59
@@ -4757,7 +4755,7 @@ User_License_Page As screen:
                             AutoHeight: =true
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Bold
-                            Height: =34
+                            Height: =Parent.Height * 0.4
                             Size: = Parent.Width * 0.045
                             Text: =Parent.DisplayName
                             Width: =Parent.Width * 0.25
@@ -4792,7 +4790,7 @@ User_License_Page As screen:
                         "'PL-200_Toggle_1' As toggleSwitch":
                             Color: =RGBA(255, 255, 255, 1)
                             FalseText: ="없다"
-                            Height: =50
+                            Height: =Parent.Height * 0.3
                             Size: = Parent.Width * 0.019
                             TrueText: ="있다"
                             Width: =Parent.Width * 0.23
@@ -4813,7 +4811,7 @@ User_License_Page As screen:
 
                         "'PL-200_DatePicker_1' As datepicker":
                             DisplayMode: =If('PL-200_Toggle_1'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
-                            Height: =59
+                            Height: =Parent.Height * 0.3
                             Size: =Parent.Width * 0.021
                             Width: = Parent.Width * 0.36
                             X: =Parent.Width * 0.59
@@ -4858,7 +4856,7 @@ User_License_Page As screen:
                             AutoHeight: =true
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Bold
-                            Height: =34
+                            Height: =Parent.Height * 0.4
                             Size: =Parent.Width * 0.045
                             Text: =Parent.DisplayName
                             Width: = Parent.Width * 0.25
@@ -4893,7 +4891,7 @@ User_License_Page As screen:
                         "'PL-300_Toggle_1' As toggleSwitch":
                             Color: =RGBA(255, 255, 255, 1)
                             FalseText: ="없다"
-                            Height: =50
+                            Height: =Parent.Height * 0.3
                             Size: =Parent.Width * 0.019
                             TrueText: ="있다"
                             Width: = Parent.Width * 0.23
@@ -4914,7 +4912,7 @@ User_License_Page As screen:
 
                         "'PL-300_DatePicker_1' As datepicker":
                             DisplayMode: =If('PL-300_Toggle_1'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
-                            Height: =59
+                            Height: =Parent.Height * 0.3
                             Size: = Parent.Width * 0.021
                             Width: = Parent.Width * 0.36
                             X: =Parent.Width * 0.59
@@ -4959,7 +4957,7 @@ User_License_Page As screen:
                             AutoHeight: =true
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Bold
-                            Height: =34
+                            Height: =Parent.Height * 0.4
                             Size: =Parent.Width * 0.045
                             Text: =Parent.DisplayName
                             Width: =Parent.Width * 0.25
@@ -4994,7 +4992,7 @@ User_License_Page As screen:
                         "'PL-400_Toggle_1' As toggleSwitch":
                             Color: =RGBA(255, 255, 255, 1)
                             FalseText: ="없다"
-                            Height: =50
+                            Height: =Parent.Height * 0.3
                             Size: =Parent.Width * 0.019
                             TrueText: ="있다"
                             Width: = Parent.Width * 0.23
@@ -5015,7 +5013,7 @@ User_License_Page As screen:
 
                         "'PL-400_DatePicker_1' As datepicker":
                             DisplayMode: =If('PL-400_Toggle_1'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
-                            Height: =59
+                            Height: =Parent.Height * 0.3
                             Size: =Parent.Width * 0.021
                             Width: = Parent.Width * 0.36
                             X: =Parent.Width * 0.59
@@ -5060,7 +5058,7 @@ User_License_Page As screen:
                             AutoHeight: =true
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Bold
-                            Height: =34
+                            Height: =Parent.Height * 0.4
                             Size: =Parent.Width * 0.045
                             Text: =Parent.DisplayName
                             Width: =Parent.Width * 0.25
@@ -5095,7 +5093,7 @@ User_License_Page As screen:
                         "'PL-600_Toggle_1' As toggleSwitch":
                             Color: =RGBA(255, 255, 255, 1)
                             FalseText: ="없다"
-                            Height: =50
+                            Height: =Parent.Height * 0.3
                             Size: =Parent.Width * 0.019
                             TrueText: ="있다"
                             Width: =Parent.Width * 0.23
@@ -5116,7 +5114,7 @@ User_License_Page As screen:
 
                         "'PL-600_DatePicker_1' As datepicker":
                             DisplayMode: =If('PL-600_Toggle_1'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
-                            Height: =59
+                            Height: =Parent.Height * 0.3
                             Size: = Parent.Width * 0.021
                             Width: =Parent.Width * 0.36
                             X: = Parent.Width * 0.59
@@ -5161,7 +5159,7 @@ User_License_Page As screen:
                             AutoHeight: =true
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Bold
-                            Height: =34
+                            Height: =Parent.Height * 0.4
                             Size: =Parent.Width * 0.045
                             Text: =Parent.DisplayName
                             Width: =Parent.Width * 0.25
@@ -5196,7 +5194,7 @@ User_License_Page As screen:
                         "'PL-900_Toggle_1' As toggleSwitch":
                             Color: =RGBA(255, 255, 255, 1)
                             FalseText: ="없다"
-                            Height: =50
+                            Height: =Parent.Height * 0.3
                             Size: =Parent.Width * 0.019
                             TrueText: ="있다"
                             Width: = Parent.Width * 0.23
@@ -5217,7 +5215,7 @@ User_License_Page As screen:
 
                         "'PL-900_DatePicker_1' As datepicker":
                             DisplayMode: =If('PL-900_Toggle_1'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
-                            Height: =59
+                            Height: =Parent.Height * 0.3
                             Size: =Parent.Width * 0.021
                             Width: =Parent.Width * 0.36
                             X: =Parent.Width * 0.59
