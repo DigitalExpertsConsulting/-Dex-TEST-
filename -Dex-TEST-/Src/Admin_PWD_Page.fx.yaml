@@ -6,6 +6,14 @@ Admin_PWD_Page As screen:
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
+        Visible: |+
+            =
+            If(
+                Parent.Width > 800,
+                true,
+                false
+            )
+            
         Width: =Parent.Width
         ZIndex: =6
 
@@ -110,6 +118,121 @@ Admin_PWD_Page As screen:
                 Text: ="확인"
                 Width: =Parent.Width * 0.14
                 X: =PW_TextInput.X
+                Y: =Parent.Height * 0.43
+                ZIndex: =3
+
+    mPWD_Main_Container As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Visible: |-
+            =If(
+                Parent.Width <= 800,
+                true,
+                false
+            )
+        Width: =Parent.Width
+        ZIndex: =7
+
+        PWD_Header_Container_1 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            FillPortions: =0
+            Height: =Parent.Height * 0.21
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =30
+            Width: =Parent.Width
+            ZIndex: =1
+
+            Admin_Login_Back_1 As icon.BackArrow:
+                Color: =RGBA( 106, 170, 205, 1 )
+                Height: =Parent.Width *0.08
+                Icon: =Icon.BackArrow
+                OnSelect: =Navigate(Main_Page)
+                Width: =Parent.Width *0.08
+                X: =Parent.Width * 0.1
+                Y: =Parent.Height * 0.05
+                ZIndex: =1
+
+            Admin_Login_Title_1 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(102, 182, 227, 0.7)
+                Color: =RGBA(255, 255, 255, 1)
+                FillPortions: =1
+                FontWeight: =FontWeight.Bold
+                Height: =Parent.Height
+                PaddingRight: =Admin_Address_Back.Width * 0.5
+                Size: =(Parent.Width * 0.035)
+                Text: ="Admin Login"
+                Width: =Parent.Width - Admin_Login_Back_1.Width
+                ZIndex: =2
+
+        PWD_Container_1 As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            Height: =500
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            Width: =Parent.Width
+            ZIndex: =2
+
+            PW_TextInput_1 As text:
+                BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                BorderThickness: =5
+                Default: =
+                Height: =Parent.Height * 0.12
+                HintText: ="비밀번호 입력하세요."
+                HoverBorderColor: =RGBA(102, 182, 227, 0.7)
+                Mode: =TextMode.Password
+                Size: =Parent.Width * 0.015
+                Width: =Parent.Width * 0.4
+                X: =Parent.Width * 0.3
+                Y: =Parent.Height * 0.27
+                ZIndex: =1
+
+            PW_C_Button_1 As button:
+                BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                BorderThickness: =5
+                Fill: =RGBA( 106, 170, 205, 1 )
+                Height: =Parent.Height * 0.11
+                HoverFill: =ColorFade(RGBA(102, 182, 227, 1), -20%)
+                OnSelect: =Reset(PW_TextInput_1);
+                PressedFill: =RGBA(102, 182, 227, 0.2)
+                RadiusBottomLeft: =25
+                RadiusBottomRight: =25
+                RadiusTopLeft: =25
+                RadiusTopRight: =25
+                Size: =(Parent.Width * 0.018)
+                Text: ="취소"
+                Width: =Parent.Width * 0.14
+                X: =764
+                Y: =261
+                ZIndex: =2
+
+            PW_S_Button_1 As button:
+                BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                BorderThickness: =5
+                Fill: =RGBA( 106, 170, 205, 1 )
+                Height: =Parent.Height * 0.11
+                HoverFill: =ColorFade(RGBA(102, 182, 227, 1), -20%)
+                OnSelect: |-
+                    =If(
+                        PW_TextInput_1.Text="dex1234%",
+                        Reset(PW_TextInput_1);
+                        Navigate(Admin_Page),
+                        Notify("틀렸습니다.");
+                        Reset(PW_TextInput_1);
+                    );
+                PressedFill: =RGBA(102, 182, 227, 0.2)
+                RadiusBottomLeft: =25
+                RadiusBottomRight: =25
+                RadiusTopLeft: =25
+                RadiusTopRight: =25
+                Size: =(Parent.Width * 0.018)
+                Text: ="확인"
+                Width: =Parent.Width * 0.14
+                X: =PW_TextInput_1.X
                 Y: =Parent.Height * 0.43
                 ZIndex: =3
 

@@ -6,6 +6,18 @@ User_Page As screen:
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
+        Visible: |-
+            =If(
+                Parent.Width > 800,
+                true,
+                false
+            )
+            
+            
+            
+            /*
+            
+            */
         Width: =Parent.Width
         ZIndex: =7
 
@@ -116,6 +128,125 @@ User_Page As screen:
                 Text: ="기술 입력"
                 Width: =Parent.Width * 0.23
                 X: =Parent.Width *0.26 + (UserPage_Address_Button.Width - UserPage_License_Button.Width)
+                Y: =Parent.Height * 0.39
+                ZIndex: =4
+
+    mUser_Main_Container As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =8
+
+        User_Header_Container_2 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            FillPortions: =0
+            Height: =Parent.Height * 0.21
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =30
+            Width: =Parent.Width
+            ZIndex: =1
+
+            UserPage_Back_1 As icon.BackArrow:
+                Color: =RGBA( 106, 170, 205, 1 )
+                Height: =Parent.Width * 0.08
+                Icon: =Icon.BackArrow
+                OnSelect: =Navigate(Main_Page)
+                Width: =Parent.Width * 0.08
+                X: =Parent.Width * 0.1
+                Y: =Parent.Width * 0.05
+                ZIndex: =1
+
+            UserPage_Title_1 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(102, 182, 227, 0.7)
+                Color: =RGBA(255, 255, 255, 1)
+                FillPortions: =1
+                FontWeight: =FontWeight.Bold
+                Height: =186
+                PaddingRight: =90
+                Size: =(Parent.Width * 0.035)
+                Text: ="User Page"
+                Width: =Parent.Width - UserPage_Back_1.Width
+                ZIndex: =2
+
+        User_Container_2 As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            Height: =Parent.Height - User_Header_Container_2.Height
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            Width: =Parent.Width
+            ZIndex: =2
+
+            UserPage_Address_Button_1 As button:
+                BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                BorderThickness: =5
+                DisabledFill: =RGBA(241, 244, 249, 1)
+                Fill: =RGBA( 106, 170, 205, 1 )
+                Height: =Parent.Height * 0.14
+                HoverBorderColor: =ColorFade(Self.BorderColor, 90%)
+                HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -50%)
+                OnSelect: =Navigate(User_Address_Page)
+                PressedFill: =RGBA(102, 182, 227, 0.2)
+                Size: =Parent.Width * 0.025
+                Text: ="주소지 입력"
+                Width: =Parent.Width * 0.5
+                X: =Parent.Width * 0.26
+                Y: =Parent.Height * 0.13
+                ZIndex: =1
+
+            UserPage_Profile_Button_1 As button:
+                BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                BorderThickness: =5
+                DisabledFill: =RGBA(241, 244, 249, 1)
+                Fill: =RGBA( 106, 170, 205, 1 )
+                FontWeight: =FontWeight.Bold
+                Height: =Parent.Height * 0.14
+                HoverBorderColor: =ColorFade(Self.BorderColor, 90%)
+                HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -50%)
+                OnSelect: =Navigate(User_Profile_Page)
+                PressedFill: =RGBA(102, 182, 227, 0.2)
+                Size: =Parent.Width * 0.025
+                Text: ="프로필 입력"
+                Width: =Parent.Width * 0.5
+                X: =Parent.Width *0.26
+                Y: =Parent.Height * 0.64
+                ZIndex: =2
+
+            UserPage_Skill_Button_1 As button:
+                BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                BorderThickness: =5
+                DisabledFill: =RGBA(241, 244, 249, 1)
+                Fill: =RGBA( 106, 170, 205, 1 )
+                Height: =Parent.Height * 0.14
+                HoverBorderColor: =ColorFade(Self.BorderColor, 90%)
+                HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -50%)
+                OnSelect: =Navigate(User_License_Page)
+                PressedFill: =RGBA(102, 182, 227, 0.2)
+                Size: =Parent.Width * 0.025
+                Text: ="자격증 입력"
+                Width: =Parent.Width * 0.23
+                X: =Parent.Width *0.26
+                Y: =Parent.Height * 0.39
+                ZIndex: =3
+
+            UserPage_License_Button_1 As button:
+                BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                BorderThickness: =5
+                DisabledFill: =RGBA(241, 244, 249, 1)
+                Fill: =RGBA( 106, 170, 205, 1 )
+                Height: =Parent.Height * 0.14
+                HoverBorderColor: =ColorFade(Self.BorderColor, 90%)
+                HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -50%)
+                OnSelect: =Navigate(User_Skill_Page)
+                PressedFill: =RGBA(102, 182, 227, 0.2)
+                Size: =Parent.Width * 0.025
+                Text: ="기술 입력"
+                Width: =Parent.Width * 0.23
+                X: =Parent.Width *0.26 + (UserPage_Address_Button_1.Width - UserPage_License_Button_1.Width)
                 Y: =Parent.Height * 0.39
                 ZIndex: =4
 

@@ -4274,6 +4274,156 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Admin_PWD_Page.mPWD_Main_Container.PWD_Header_Container_1.Admin_Login_Back_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Admin_PWD_Page.mPWD_Main_Container.PWD_Header_Container_1.Admin_Login_Back_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Admin_PWD_Page",
+                "type": "Admin_PWD_Page.mPWD_Main_Container.PWD_Header_Container_1.Admin_Login_Back_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Admin_PWD_Page.mPWD_Main_Container.PWD_Header_Container_1.Admin_Login_Back_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Admin_PWD_Page.mPWD_Main_Container.PWD_Header_Container_1.Admin_Login_Back_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Admin_PWD_Page",
+                "type": "Admin_PWD_Page.mPWD_Main_Container.PWD_Header_Container_1.Admin_Login_Back_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Admin_PWD_Page.mPWD_Main_Container.PWD_Container_1.PW_TextInput_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Admin_PWD_Page.mPWD_Main_Container.PWD_Container_1.PW_TextInput_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Admin_PWD_Page",
+                "type": "Admin_PWD_Page.mPWD_Main_Container.PWD_Container_1.PW_TextInput_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_Page.mUser_Main_Container.User_Header_Container_2.UserPage_Back_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_Page.mUser_Main_Container.User_Header_Container_2.UserPage_Back_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User_Page",
+                "type": "User_Page.mUser_Main_Container.User_Header_Container_2.UserPage_Back_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_Page.mUser_Main_Container.User_Header_Container_2.UserPage_Back_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_Page.mUser_Main_Container.User_Header_Container_2.UserPage_Back_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "User_Page",
+                "type": "User_Page.mUser_Main_Container.User_Header_Container_2.UserPage_Back_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.varUploadProfile"
                 }
               ],
@@ -4994,6 +5144,36 @@
                 "member": "PaddingRight",
                 "module": "Admin_PWD_Page",
                 "type": "Admin_PWD_Page.PWD_Main_Container.PWD_Header_Container.Admin_Login_Title"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Admin_PWD_Page.mPWD_Main_Container.PWD_Header_Container_1.Admin_Login_Title_1.PaddingRight"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Admin_PWD_Page.mPWD_Main_Container.PWD_Header_Container_1.Admin_Login_Title_1.PaddingRight",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "PaddingRight",
+                "module": "Admin_PWD_Page",
+                "type": "Admin_PWD_Page.mPWD_Main_Container.PWD_Header_Container_1.Admin_Login_Title_1"
               }
             }
           ],
