@@ -6,6 +6,16 @@ User_Profile_Page As screen:
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
+        Visible: |-
+            =/*
+            
+            */
+            
+            If(
+                Parent.Width > 800,
+                true,
+                false
+            )
         Width: =Parent.Width
         ZIndex: =10
 
