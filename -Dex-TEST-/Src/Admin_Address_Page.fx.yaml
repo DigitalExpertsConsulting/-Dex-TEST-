@@ -6,6 +6,7 @@ Admin_Address_Page As screen:
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
+        Visible: =false
         Width: =Parent.Width
         ZIndex: =17
 
@@ -268,6 +269,174 @@ Admin_Address_Page As screen:
                 ZIndex: =4
 
                 Address_Search As text:
+                    BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                    BorderThickness: =5
+                    Default: =""
+                    Height: =35
+                    HintText: ="검색"
+                    Size: =Parent.Width * 0.04
+                    Width: =Parent.Width * 0.75
+                    X: =Parent.Width * 0.1
+                    Y: =Parent.Height * 0.25
+                    ZIndex: =1
+
+    mAA_Main_Container As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =18
+
+        AA_Header_Container_1 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            FillPortions: =0
+            Height: =Parent.Height * 0.26
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =50
+            PaddingRight: =50
+            PaddingTop: |
+                =30
+            Width: =Parent.Width
+            ZIndex: =1
+
+            Admin_Address_Back_1 As icon.BackArrow:
+                Color: =RGBA( 106, 170, 205, 1 )
+                Height: =130
+                Icon: =Icon.BackArrow
+                OnSelect: =Navigate(Admin_Page)
+                Width: =Parent.Width * 0.08
+                X: =Parent.Width * 0.01
+                Y: =40
+                ZIndex: =1
+
+            Admin_Address_Title_1 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(102, 182, 227, 0.7)
+                Color: =RGBA(255, 255, 255, 1)
+                FillPortions: =1
+                FontWeight: =FontWeight.Semibold
+                Height: =Parent.Height
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingTop: =0
+                Size: =Parent.Width * 0.035
+                Text: ="Admin Address Page"
+                Width: |-
+                    =Parent.Width - Admin_Address_Back_1.Width - Admin_Address_Home_1.Width
+                    //Parent.Width - Admin_Address_Back.Width - Admin_Address_Home.Width
+                ZIndex: =2
+
+            Admin_Address_Home_1 As icon.Home:
+                Color: =RGBA( 106, 170, 205, 1 )
+                Height: =130
+                Icon: =Icon.Home
+                OnSelect: =Navigate(Main_Page)
+                Width: =Parent.Width * 0.08
+                X: =Parent.Width * 0.9
+                Y: =40
+                ZIndex: =3
+
+        AA_Sub_Container_1 As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            Height: =Parent.Height * 0.74
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            Width: =Parent.Width
+            ZIndex: =2
+
+            AA_Gallery_Container_1 As groupContainer.manualLayoutContainer:
+                Height: =Parent.Height - AA_Down_Container_1.Height
+                Width: =Parent.Width
+                Y: =134
+                ZIndex: =1
+
+                "Gallery4 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+                    DelayItemLoading: =true
+                    Fill: =RGBA(255,255,255,0.6)
+                    Height: =482.8
+                    Items: =ability_address
+                    Layout: =Layout.Vertical
+                    LoadingSpinner: =LoadingSpinner.Data
+                    TemplatePadding: =0
+                    TemplateSize: =Min(160, Self.Height - 60)
+                    Width: =Parent.Width * 0.5
+                    X: =Parent.Width * 0.25
+                    ZIndex: =1
+
+                    Title4 As label:
+                        Height: =Self.Size * 1.8
+                        OnSelect: =Select(Parent)
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =ThisItem.Name
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =Parent.Width * 0.5
+                        X: = 24
+                        Y: =44
+                        ZIndex: =2
+
+                    Subtitle3 As label:
+                        Height: =Self.Size * 1.8
+                        OnSelect: =Select(Parent)
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =ThisItem.Address
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =Title4.Width
+                        X: =Title4.X
+                        Y: =Title4.Y + Title4.Height + 4
+                        ZIndex: =3
+
+                    Separator3 As rectangle:
+                        Height: =1
+                        OnSelect: =Select(Parent)
+                        Width: =Parent.TemplateWidth
+                        Y: =Parent.TemplateHeight - 1
+                        ZIndex: =5
+
+            AA_Down_Container_1 As groupContainer.manualLayoutContainer:
+                Height: =Parent.Height * 0.15
+                Width: =Parent.Width * 0.24
+                ZIndex: =3
+
+                AddressDownload_button_1 As button:
+                    BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                    BorderThickness: =5
+                    Fill: =RGBA( 106, 170, 205, 1 )
+                    Height: =Parent.Height * 0.48
+                    OnSelect: |-
+                        =//Test_csh_Excelexport_dataverse_list.Run("")
+                        'ExcelDownload(Address)'.Run("")
+                    Size: =Parent.Width * 0.04
+                    Text: ="다운로드"
+                    Width: =Parent.Width * 0.55
+                    X: =Parent.Width * 0.1
+                    Y: =25
+                    ZIndex: =1
+
+                Admin_Refresh_1 As icon.Reload:
+                    Color: =RGBA(255, 255, 255, 1)
+                    Icon: =Icon.Reload
+                    OnSelect: =Refresh(ability_address)
+                    Width: =Parent.Width * 0.25
+                    X: =Parent.Width * 0.74
+                    Y: =14
+                    ZIndex: =2
+
+            AA_Search_Container_1 As groupContainer.manualLayoutContainer:
+                Height: =Parent.Height * 0.15
+                Width: =Parent.Width * 0.226
+                X: =Parent.Width * 0.774
+                ZIndex: =4
+
+                Address_Search_1 As text:
                     BorderColor: =RGBA( 112, 128, 144, 0.7 )
                     BorderThickness: =5
                     Default: =""
