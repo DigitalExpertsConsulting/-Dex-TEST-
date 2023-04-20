@@ -6,11 +6,8 @@ User_Page As screen:
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
-        Visible: |-
-            =false
-            
-            
-            /*
+        Visible: |+
+            =
             
             If(
                 Parent.Width > 800,
@@ -19,7 +16,6 @@ User_Page As screen:
             )
             
             
-            */
         Width: =Parent.Width
         ZIndex: =7
 
@@ -137,6 +133,12 @@ User_Page As screen:
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
+        Visible: |-
+            =If(
+                Parent.Width <= 800,
+                true,
+                false
+            )
         Width: =Parent.Width
         ZIndex: =8
 
@@ -170,7 +172,7 @@ User_Page As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =186
                 PaddingRight: =90
-                Size: =(Parent.Width * 0.035)
+                Size: =(Parent.Width * 0.025)
                 Text: ="User Page"
                 Width: =Parent.Width - UserPage_Back_1.Width
                 ZIndex: =2
@@ -195,9 +197,10 @@ User_Page As screen:
                 PressedFill: =RGBA(102, 182, 227, 0.2)
                 Size: =Parent.Width * 0.025
                 Text: ="주소지 입력"
-                Width: =Parent.Width * 0.5
-                X: =Parent.Width * 0.26
-                Y: =Parent.Height * 0.13
+                Width: |
+                    =Parent.Width * 0.35
+                X: =Parent.Width *0.25
+                Y: =23
                 ZIndex: =1
 
             UserPage_Profile_Button_1 As button:
@@ -213,8 +216,8 @@ User_Page As screen:
                 PressedFill: =RGBA(102, 182, 227, 0.2)
                 Size: =Parent.Width * 0.025
                 Text: ="프로필 입력"
-                Width: =Parent.Width * 0.5
-                X: =Parent.Width *0.26
+                Width: =Parent.Width * 0.35
+                X: =Parent.Width *0.25
                 Y: =Parent.Height * 0.64
                 ZIndex: =2
 
@@ -230,9 +233,10 @@ User_Page As screen:
                 PressedFill: =RGBA(102, 182, 227, 0.2)
                 Size: =Parent.Width * 0.025
                 Text: ="자격증 입력"
-                Width: =Parent.Width * 0.23
-                X: =Parent.Width *0.26
-                Y: =Parent.Height * 0.39
+                Width: |
+                    =Parent.Width * 0.35
+                X: =Parent.Width *0.25
+                Y: =146
                 ZIndex: =3
 
             UserPage_License_Button_1 As button:
@@ -247,8 +251,9 @@ User_Page As screen:
                 PressedFill: =RGBA(102, 182, 227, 0.2)
                 Size: =Parent.Width * 0.025
                 Text: ="기술 입력"
-                Width: =Parent.Width * 0.23
-                X: =Parent.Width *0.26 + (UserPage_Address_Button_1.Width - UserPage_License_Button_1.Width)
-                Y: =Parent.Height * 0.39
+                Width: |
+                    =Parent.Width * 0.35
+                X: =Parent.Width *0.25
+                Y: =257
                 ZIndex: =4
 
