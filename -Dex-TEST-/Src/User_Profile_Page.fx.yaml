@@ -167,3 +167,169 @@ User_Profile_Page As screen:
                     Y: =Parent.Height * 0.62
                     ZIndex: =2
 
+    mProfile_Main_Container As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =11
+
+        Profile_Header_Container_1 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            FillPortions: =0
+            Height: =Parent.Height * 0.21
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =50
+            PaddingRight: =50
+            PaddingTop: =30
+            Width: =Parent.Width
+            ZIndex: =1
+
+            Profile_Back_1 As icon.BackArrow:
+                Color: =RGBA( 106, 170, 205, 1 )
+                Height: =Parent.Width * 0.08
+                Icon: =Icon.BackArrow
+                OnSelect: =Navigate(User_Page)
+                Width: =Parent.Width * 0.08
+                X: =Parent.X * 0.01
+                Y: =40
+                ZIndex: =1
+
+            Profile_Title_1 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(102, 182, 227, 0.7)
+                Color: =RGBA(255, 255, 255, 1)
+                FillPortions: =1
+                FontWeight: =FontWeight.Bold
+                Height: =Parent.Height
+                Size: =Parent.Width * 0.035
+                Text: ="Profile Page"
+                Width: =Parent.Width - Profile_Back_1.Width - Profile_Home_1.Width
+                ZIndex: =2
+
+            Profile_Home_1 As icon.Home:
+                Color: =RGBA( 106, 170, 205, 1 )
+                Height: =Parent.Width * 0.08
+                Icon: =Icon.Home
+                OnSelect: =Navigate(Main_Page)
+                Width: =Parent.Width * 0.08
+                X: =Parent.Width * 0.9
+                Y: =40
+                ZIndex: =3
+
+        Profile_Sub_Container_1 As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            Height: =Parent.Height - Profile_Header_Container_1.Height
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            Width: =Parent.Width * 0.78
+            Y: =Parent.Height - Profile_Header_Container_1.Height
+            ZIndex: =2
+
+            Profile_Down_Container_1 As groupContainer.manualLayoutContainer:
+                Height: =Parent.Height * 0.63
+                Width: =Parent.Width * 0.35
+                X: =Parent.Width * 0.16
+                Y: =Parent.Height * 0.176
+                ZIndex: =2
+
+                Profile_intro_1 As label:
+                    Align: =Align.Center
+                    BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                    BorderThickness: =5
+                    Fill: =RGBA(237, 237, 237, 1)
+                    Height: =Parent.Height * 0.5
+                    Size: =Parent.Width * 0.055
+                    Text: ="Profile 양식 다운로드 해주세요."
+                    Width: =Parent.Width * 0.8
+                    X: =42
+                    Y: =Parent.Height * 0.06
+                    ZIndex: =1
+
+                Profile_download_btn_1 As button:
+                    BorderThickness: =5
+                    Fill: =RGBA( 106, 170, 205, 1 )
+                    Height: =Parent.Height * 0.19
+                    HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -50%)
+                    OnSelect: =ability_user_down_profile_form.Run()
+                    Size: =Parent.Width * 0.04
+                    Text: ="양식 다운로드"
+                    Width: =Parent.Width * 0.8
+                    X: =40
+                    Y: =Parent.Height * 0.62
+                    ZIndex: =2
+
+            Profile_Up_Container_1 As groupContainer.manualLayoutContainer:
+                Height: =Parent.Height * 0.63
+                Width: =Parent.Width * 0.35
+                X: |
+                    =Parent.Width * 0.56
+                Y: =Parent.Height * 0.176
+                ZIndex: =3
+
+                Upload_Profile_DataCardValue_1 As attachments:
+                    AddAttachmentText: ="파일 업로드"
+                    BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                    BorderThickness: =5
+                    DisabledColor: =RGBA(0, 0, 0, 1)
+                    DisplayMode: =
+                    Fill: =RGBA(237, 237, 237, 1)
+                    Height: =Parent.Height * 0.5
+                    IsInDataCard: =true
+                    Items: =
+                    MaxAttachments: =1
+                    MaxAttachmentSize: =100
+                    MaxAttachmentsText: =""
+                    NoAttachmentsText: ="Profile을 등록하세요."
+                    PaddingBottom: =5
+                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    PaddingRight: =5
+                    PaddingTop: =5
+                    Size: =Parent.Width * 0.055
+                    Tooltip: =
+                    Width: =Parent.Width * 0.8
+                    X: =40
+                    Y: =Parent.Height * 0.06
+                    ZIndex: =1
+
+                Profile_upload_btn_1 As button:
+                    BorderThickness: =5
+                    Fill: =RGBA( 106, 170, 205, 1 )
+                    Height: =Parent.Height * 0.19
+                    HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -50%)
+                    OnSelect: |
+                        =Set(varUploadProfile, false);
+                        
+                        ability_user_upload_profile.Run(
+                            User().Email,
+                            "Profile 승인처리 부탁드립니다.",
+                            "Profile 승인처리 부탁드립니다.",
+                            First(Upload_Profile_DataCardValue_1.Attachments).Name,
+                            First(Upload_Profile_DataCardValue_1.Attachments).Value,
+                            With(
+                            { wName: Split(User().FullName, " ") },
+                            Last(wName).Value & First(wName).Value
+                            ),
+                            User().Email,
+                            If(
+                                IsEmpty(
+                                    Search(
+                                        ability_profile,
+                                        User().Email,
+                                        "cr778_email"
+                                    )
+                                ),
+                                "true",
+                                "false"
+                            );
+                        );
+                    Size: =Parent.Width * 0.04
+                    Text: ="업로드"
+                    Width: =Parent.Width * 0.8
+                    X: =38
+                    Y: =Parent.Height * 0.62
+                    ZIndex: =2
+
