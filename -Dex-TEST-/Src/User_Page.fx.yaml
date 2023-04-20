@@ -7,15 +7,17 @@ User_Page As screen:
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
         Visible: |-
-            =If(
+            =
+            
+            
+            /*
+            
+            If(
                 Parent.Width > 800,
                 true,
                 false
             )
             
-            
-            
-            /*
             
             */
         Width: =Parent.Width
