@@ -14,7 +14,7 @@ Main_Page As screen:
             BorderColor: =RGBA(102, 182, 227, 0.7)
             Color: =RGBA(255, 255, 255, 1)
             FontWeight: =FontWeight.Bold
-            Height: =183
+            Height: =Parent.Height * 0.21
             Size: = (Parent.Width * 0.035) 
             Text: ="Dexconsulting 역량 관리"
             Width: =Parent.Width
@@ -22,9 +22,10 @@ Main_Page As screen:
 
         Main_Sub_Container As groupContainer.manualLayoutContainer:
             AlignInContainer: =AlignInContainer.End
+            Height: =Parent.Height - MainPage_Title.Height
             LayoutMinHeight: =100
             LayoutMinWidth: =250
-            Width: =1365
+            Width: =Parent.Width
             X: =Parent.X
             Y: =Parent.Y
             ZIndex: =2
@@ -34,15 +35,15 @@ Main_Page As screen:
                 BorderThickness: =5
                 DisabledFill: =RGBA(241, 244, 249, 1)
                 Fill: =RGBA( 106, 170, 205, 1 )
-                Height: =100
+                Height: =Parent.Height * 0.16
                 HoverFill: =ColorFade(RGBA(102, 182, 227, 1), -20%)
                 OnSelect: =Navigate(User_Page)
                 PressedFill: =RGBA(102, 182, 227, 0.2)
                 Size: =(Parent.Width * 0.028)
                 Text: ="User"
                 Width: =350
-                X: =927
-                Y: =258
+                X: =Parent.Width * 0.68
+                Y: =Parent.Height * 0.5
                 ZIndex: =1
 
             MainPage_Admin_Button As button:
@@ -50,14 +51,14 @@ Main_Page As screen:
                 BorderThickness: =5
                 DisabledFill: =RGBA(241, 244, 249, 1)
                 Fill: =RGBA( 106, 170, 205, 1 )
-                Height: =100
+                Height: =Parent.Height * 0.16
                 HoverFill: =ColorFade(RGBA(102, 182, 227, 1), -20%)
                 OnSelect: =Navigate(Admin_PWD_Page)
                 PressedFill: =RGBA(102, 182, 227, 0.2)
                 Size: =(Parent.Width * 0.028)
                 Text: ="Admin"
                 Width: =350
-                X: =927
-                Y: =404
+                X: =Parent.Width * 0.68
+                Y: =Parent.Height * 0.7
                 ZIndex: =2
 

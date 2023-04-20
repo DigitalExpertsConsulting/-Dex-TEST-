@@ -11,6 +11,7 @@ User_Skill_Page As screen:
 
         Skill_Header_Container As groupContainer.horizontalAutoLayoutContainer:
             FillPortions: =0
+            Height: =Parent.Height * 0.21
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutMinHeight: =100
             LayoutMinWidth: =250
@@ -23,12 +24,12 @@ User_Skill_Page As screen:
 
             Skill_Back As icon.BackArrow:
                 Color: =RGBA( 106, 170, 205, 1 )
-                Height: =130
+                Height: =Parent.Width * 0.08
                 Icon: =Icon.BackArrow
                 OnSelect: =Navigate(User_Page)
                 Width: =Parent.Width * 0.08
                 X: =Parent.X * 0.01
-                Y: =40
+                Y: =Parent.Height * 0.12
                 ZIndex: =1
 
             Skill_Title As label:
@@ -37,7 +38,7 @@ User_Skill_Page As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 FillPortions: =1
                 FontWeight: =FontWeight.Semibold
-                Height: =186
+                Height: =Parent.Height
                 Size: |
                     =Parent.Width * 0.035
                 Text: ="Skill Page"
@@ -49,32 +50,34 @@ User_Skill_Page As screen:
             Skill_Home As icon.Home:
                 Color: |
                     =RGBA( 106, 170, 205, 1 )
-                Height: =130
+                Height: =Parent.Width * 0.08
                 Icon: =Icon.Home
                 OnSelect: =Navigate(Main_Page)
                 Width: =Parent.Width * 0.08
                 X: =Parent.Width * 0.9
-                Y: =40
+                Y: =Parent.Height * 0.12
                 ZIndex: =3
 
         Skill_Sub_Container As groupContainer.manualLayoutContainer:
+            Height: =Parent.Height - Skill_Header_Container.Height
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             Width: =Parent.Width
+            Y: =Skill_Header_Container.Height
             ZIndex: =2
 
             Skill_Container As groupContainer.manualLayoutContainer:
-                Height: =420
+                Height: =Parent.Height * 0.76
                 Width: =Parent.Width * 0.67
                 X: =Parent.Width * 0.2
-                Y: =40
+                Y: =Parent.Height * 0.08
                 ZIndex: =1
 
                 Skill_Input As form:
                     DataSource: =ability_skill
                     DefaultMode: =FormMode.New
                     Fill: =RGBA(255, 255, 255, 0.4)
-                    Height: =420
+                    Height: =Parent.Height
                     Width: =Parent.Width
                     ZIndex: =1
 
@@ -85,7 +88,7 @@ User_Skill_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_skill],DataSourceInfo.DisplayName,"cr778_solution")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =50
+                        Height: =Parent.Height * 0.1
                         Required: =false
                         Update: ='365 Solution_DataCardValue'.Selected.Value
                         Width: =Parent.Width
@@ -112,7 +115,7 @@ User_Skill_Page As screen:
                                 =[Parent.Default]
                             DisplayFields: =["Value"]
                             DisplayMode: =Parent.DisplayMode
-                            Height: =55
+                            Height: =Parent.Height * 0.7
                             IsSearchable: =false
                             Items: =Choices('365 Solution_SkillLevel')
                             NoSelectionText: ="선택"
@@ -158,7 +161,7 @@ User_Skill_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_skill],DataSourceInfo.DisplayName,"cr778_aibuilder")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =50
+                        Height: =Parent.Height * 0.1
                         Required: =false
                         Update: ='AI Builder_DataCardValue'.Selected.Value
                         Width: =Parent.Width
@@ -182,7 +185,7 @@ User_Skill_Page As screen:
                             DefaultSelectedItems: =[Parent.Default]
                             DisplayFields: =["Value"]
                             DisplayMode: =Parent.DisplayMode
-                            Height: =55
+                            Height: =Parent.Height * 0.7
                             IsSearchable: =false
                             Items: =Choices('AI Builder_SkillLevel')
                             NoSelectionText: ="선택"
@@ -228,7 +231,7 @@ User_Skill_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_skill],DataSourceInfo.DisplayName,"cr778_apimanagement")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =50
+                        Height: =Parent.Height * 0.1
                         Required: =false
                         Update: ='Api management_DataCardValue'.Selected.Value
                         Width: =Parent.Width
@@ -253,7 +256,7 @@ User_Skill_Page As screen:
                             DefaultSelectedItems: =[Parent.Default]
                             DisplayFields: =["Value"]
                             DisplayMode: =Parent.DisplayMode
-                            Height: =55
+                            Height: =Parent.Height * 0.7
                             IsSearchable: =false
                             Items: =Choices('Api management_SkillLevel')
                             NoSelectionText: ="선택"
@@ -299,7 +302,7 @@ User_Skill_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_skill],DataSourceInfo.DisplayName,"cr778_dataverse")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =50
+                        Height: =Parent.Height * 0.1
                         Required: =false
                         Update: =DataVerse_DataCardValue.Selected.Value
                         Width: =Parent.Width
@@ -324,7 +327,7 @@ User_Skill_Page As screen:
                             DefaultSelectedItems: =[Parent.Default]
                             DisplayFields: =["Value"]
                             DisplayMode: =Parent.DisplayMode
-                            Height: =55
+                            Height: =Parent.Height * 0.7
                             IsSearchable: =false
                             Items: =Choices(DataVerse_SkillLevel)
                             NoSelectionText: ="선택"
@@ -370,7 +373,7 @@ User_Skill_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_skill],DataSourceInfo.DisplayName,"cr778_powerappscanvas")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =50
+                        Height: =Parent.Height * 0.1
                         Required: =false
                         Update: ='Power Apps Canvas_DataCardValue'.Selected.Value
                         Width: =Parent.Width
@@ -395,7 +398,7 @@ User_Skill_Page As screen:
                             DefaultSelectedItems: =[Parent.Default]
                             DisplayFields: =["Value"]
                             DisplayMode: =Parent.DisplayMode
-                            Height: =55
+                            Height: =Parent.Height * 0.7
                             IsSearchable: =false
                             Items: =Choices('Power Apps Canvas_SkillLevel')
                             NoSelectionText: ="선택"
@@ -441,7 +444,7 @@ User_Skill_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_skill],DataSourceInfo.DisplayName,"cr778_powerappsmodel")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =50
+                        Height: =Parent.Height * 0.1
                         Required: =false
                         Update: ='Power Apps Model_DataCardValue'.Selected.Value
                         Width: =Parent.Width
@@ -466,7 +469,7 @@ User_Skill_Page As screen:
                             DefaultSelectedItems: =[Parent.Default]
                             DisplayFields: =["Value"]
                             DisplayMode: =Parent.DisplayMode
-                            Height: =55
+                            Height: =Parent.Height * 0.7
                             IsSearchable: =false
                             Items: =Choices('Power Apps Model_SkillLevel')
                             NoSelectionText: ="선택"
@@ -512,7 +515,7 @@ User_Skill_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_skill],DataSourceInfo.DisplayName,"cr778_powerautomate")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =50
+                        Height: =Parent.Height * 0.1
                         Required: =false
                         Update: ='Power Automate_DataCardValue'.Selected.Value
                         Width: =Parent.Width
@@ -537,7 +540,7 @@ User_Skill_Page As screen:
                             DefaultSelectedItems: =[Parent.Default]
                             DisplayFields: =["Value"]
                             DisplayMode: =Parent.DisplayMode
-                            Height: =55
+                            Height: =Parent.Height * 0.7
                             IsSearchable: =false
                             Items: =Choices('Power Automate_SkillLevel')
                             NoSelectionText: ="선택"
@@ -583,7 +586,7 @@ User_Skill_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_skill],DataSourceInfo.DisplayName,"cr778_powerautomatedesktop")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =50
+                        Height: =Parent.Height * 0.1
                         Required: =false
                         Update: ='Power Automate Desktop_DataCardValue'.Selected.Value
                         Width: =Parent.Width
@@ -608,7 +611,7 @@ User_Skill_Page As screen:
                             DefaultSelectedItems: =[Parent.Default]
                             DisplayFields: =["Value"]
                             DisplayMode: =Parent.DisplayMode
-                            Height: =55
+                            Height: =Parent.Height * 0.7
                             IsSearchable: =false
                             Items: =Choices('Power Automate Desktop_SkillLevel')
                             NoSelectionText: ="선택"
@@ -654,7 +657,7 @@ User_Skill_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_skill],DataSourceInfo.DisplayName,"cr778_powerpage")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =50
+                        Height: =Parent.Height * 0.1
                         Required: =false
                         Update: ='Power Page_DataCardValue'.Selected.Value
                         Width: =Parent.Width
@@ -679,7 +682,7 @@ User_Skill_Page As screen:
                             DefaultSelectedItems: =[Parent.Default]
                             DisplayFields: =["Value"]
                             DisplayMode: =Parent.DisplayMode
-                            Height: =55
+                            Height: =Parent.Height * 0.7
                             IsSearchable: =false
                             Items: =Choices('Power Page_SkillLevel')
                             NoSelectionText: ="선택"
@@ -725,7 +728,7 @@ User_Skill_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_skill],DataSourceInfo.DisplayName,"cr778_powerpagejavacss")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =50
+                        Height: =Parent.Height * 0.1
                         Required: =false
                         Update: ='Power Page JAVA/CSS_DataCardValue'.Selected.Value
                         Width: =Parent.Width
@@ -750,7 +753,7 @@ User_Skill_Page As screen:
                             DefaultSelectedItems: =[Parent.Default]
                             DisplayFields: =["Value"]
                             DisplayMode: =Parent.DisplayMode
-                            Height: =55
+                            Height: =Parent.Height * 0.7
                             IsSearchable: =false
                             Items: =Choices('Power Page JAVA/CSS_SkillLevel')
                             NoSelectionText: ="선택"
@@ -796,7 +799,7 @@ User_Skill_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_skill],DataSourceInfo.DisplayName,"cr778_powerbi")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =50
+                        Height: =Parent.Height * 0.1
                         Required: =false
                         Update: ='Power BI_DataCardValue'.Selected.Value
                         Width: =Parent.Width
@@ -821,7 +824,7 @@ User_Skill_Page As screen:
                             DefaultSelectedItems: =[Parent.Default]
                             DisplayFields: =["Value"]
                             DisplayMode: =Parent.DisplayMode
-                            Height: =55
+                            Height: =Parent.Height * 0.7
                             IsSearchable: =false
                             Items: =Choices('Power BI_SkillLevel')
                             NoSelectionText: ="선택"
@@ -867,7 +870,7 @@ User_Skill_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_skill],DataSourceInfo.DisplayName,"cr778_processadvisor")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =50
+                        Height: =Parent.Height * 0.1
                         Required: =false
                         Update: ='Process Advisor_DataCardValue'.Selected.Value
                         Width: =Parent.Width
@@ -892,7 +895,7 @@ User_Skill_Page As screen:
                             DefaultSelectedItems: =[Parent.Default]
                             DisplayFields: =["Value"]
                             DisplayMode: =Parent.DisplayMode
-                            Height: =55
+                            Height: =Parent.Height * 0.7
                             IsSearchable: =false
                             Items: =Choices('Process Advisor_SkillLevel')
                             NoSelectionText: ="선택"
@@ -938,7 +941,7 @@ User_Skill_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_skill],DataSourceInfo.DisplayName,"cr778_powervirtualagents")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =50
+                        Height: =Parent.Height * 0.1
                         Required: =false
                         Update: ='Power Virtual Agents_DataCardValue'.Selected.Value
                         Width: =Parent.Width
@@ -963,7 +966,7 @@ User_Skill_Page As screen:
                             DefaultSelectedItems: =[Parent.Default]
                             DisplayFields: =["Value"]
                             DisplayMode: =Parent.DisplayMode
-                            Height: =55
+                            Height: =Parent.Height * 0.7
                             IsSearchable: =false
                             Items: =Choices('Power Virtual Agents_SkillLevel')
                             NoSelectionText: ="선택"
@@ -1145,15 +1148,15 @@ User_Skill_Page As screen:
                             ZIndex: =4
 
             Skill_Send_Container As groupContainer.manualLayoutContainer:
-                Height: =137
-                Width: =Parent.Width * 0.118
+                Height: =Parent.Height * 0.15
+                Width: =Parent.Width * 0.1
                 X: =Parent.Width * 0.88
-                Y: =430
+                Y: =Parent.Height * 0.75
                 ZIndex: =2
 
                 Skill_send As icon.Send:
                     Color: =RGBA( 106, 170, 205, 1 )
-                    Height: =130
+                    Height: =Parent.Height
                     Icon: =Icon.Send
                     OnSelect: |+
                         =If(
@@ -1339,8 +1342,6 @@ User_Skill_Page As screen:
                             ResetForm(Skill_Input);
                         )
                         
-                    Width: =Parent.Width * 0.88
-                    X: =20
-                    Y: =5
+                    Width: =Parent.Width 
                     ZIndex: =1
 

@@ -11,6 +11,7 @@ User_Address_Page As screen:
 
         Address_Header_Container As groupContainer.horizontalAutoLayoutContainer:
             FillPortions: =0
+            Height: =Parent.Height * 0.21
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutMinHeight: =100
             LayoutMinWidth: =250
@@ -23,12 +24,12 @@ User_Address_Page As screen:
 
             Address_Back As icon.BackArrow:
                 Color: =RGBA( 106, 170, 205, 1 )
-                Height: =130
+                Height: =Parent.Width * 0.08
                 Icon: =Icon.BackArrow
                 OnSelect: =Navigate(User_Page)
                 Width: =Parent.Width * 0.08
                 X: =Parent.X * 0.01
-                Y: =40
+                Y: =Parent.Y * 0.1
                 ZIndex: =1
 
             Address_Title As label:
@@ -37,7 +38,7 @@ User_Address_Page As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 FillPortions: =1
                 FontWeight: =FontWeight.Semibold
-                Height: =186
+                Height: =Parent.Height
                 Size: =40
                 Text: ="Address Page"
                 Width: =Parent.Width - Address_Back.Width - Address_Home.Width
@@ -45,7 +46,7 @@ User_Address_Page As screen:
 
             Address_Home As icon.Home:
                 Color: =RGBA( 106, 170, 205, 1 )
-                Height: =130
+                Height: =Parent.Width * 0.08
                 Icon: =Icon.Home
                 OnSelect: =Navigate(Main_Page)
                 Width: =Parent.Width * 0.08
@@ -54,16 +55,18 @@ User_Address_Page As screen:
                 ZIndex: =3
 
         Address_Sub_Container As groupContainer.manualLayoutContainer:
+            Height: =Parent.Height - Address_Header_Container.Height
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             Width: =Parent.Width
+            Y: =Address_Header_Container.Height
             ZIndex: =2
 
             Address_Container As groupContainer.manualLayoutContainer:
-                Height: =Parent.Height
+                Height: =Parent.Height * 0.85
                 Width: =Parent.Width * 0.7
                 X: =Parent.Width * 0.15
-                Y: =30
+                Y: =Parent.Height * 0.05
                 ZIndex: =1
 
                 Address_Input As form:
@@ -71,7 +74,7 @@ User_Address_Page As screen:
                     DataSource: =ability_address
                     DefaultMode: =FormMode.New
                     Fill: =RGBA(255, 255, 255, 0.4)
-                    Height: =Parent.Height * 0.9
+                    Height: =Parent.Height
                     Width: =Parent.Width
                     ZIndex: =1
 
@@ -96,13 +99,13 @@ User_Address_Page As screen:
                             AutoHeight: =true
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Bold
-                            Height: =34
+                            Height: =Parent.Height * 0.15
                             Size: =Parent.Width * 0.021
                             Text: =Parent.DisplayName
                             Width: =Parent.Width * 0.88
                             Wrap: =false
                             X: =Parent.Width * 0.032
-                            Y: =10
+                            Y: =Parent.Height * 0.08
                             ZIndex: =1
 
                         Address_DataCardValue As text:
@@ -112,7 +115,7 @@ User_Address_Page As screen:
                             DelayOutput: =true
                             DisplayMode: =Parent.DisplayMode
                             Fill: =RGBA( 106, 170, 205, 1)
-                            Height: =50
+                            Height: =Parent.Height * 0.4
                             HintText: ="주소를 입력하세요."
                             HoverBorderColor: =RGBA(102, 182, 227, 0.7)
                             HoverColor: =RGBA(255, 255, 255, 1)
@@ -127,7 +130,7 @@ User_Address_Page As screen:
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width * 0.88
                             X: =Parent.Width * 0.03
-                            Y: =Address_DataCardKey.Y + Address_DataCardKey.Height + 5
+                            Y: =(Address_DataCardKey.Y) + (Address_DataCardKey.Height) + 5
                             ZIndex: =2
 
                         Address_ErrorMessage As label:
@@ -175,13 +178,15 @@ User_Address_Page As screen:
                             AutoHeight: =true
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Bold
-                            Height: =34
+                            Height: =Parent.Height * 0.15
                             Size: =Parent.Width * 0.021
                             Text: =Parent.DisplayName
                             Width: =Parent.Width * 0.88
                             Wrap: =false
                             X: =Parent.Width * 0.032
-                            Y: =10
+                            Y: |-
+                                =
+                                Parent.Height * 0.08
                             ZIndex: =1
 
                         Zipcode_ErrorMessage As label:
@@ -216,7 +221,7 @@ User_Address_Page As screen:
                             DelayOutput: =true
                             DisplayMode: =Parent.DisplayMode
                             Fill: =RGBA( 106, 170, 205, 1)
-                            Height: =50
+                            Height: =Parent.Height * 0.4
                             HintText: ="우편번호를 입력하세요."
                             HoverBorderColor: =RGBA(102, 182, 227, 0.7)
                             HoverColor: =RGBA(255, 255, 255, 1)
@@ -323,13 +328,13 @@ User_Address_Page As screen:
                             AutoHeight: =true
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Bold
-                            Height: =34
+                            Height: =Parent.Height * 0.15
                             Size: =Parent.Width * 0.021
                             Text: ="Gift Address"
                             Width: =Parent.Width * 0.88
                             Wrap: =false
                             X: =Parent.Width * 0.032
-                            Y: =10
+                            Y: =Parent.Height * 0.08
                             ZIndex: =1
 
                         Gift_Address_DataCardValue As text:
@@ -339,7 +344,7 @@ User_Address_Page As screen:
                             DelayOutput: =true
                             DisplayMode: =Parent.DisplayMode
                             Fill: =RGBA( 106, 170, 205, 1)
-                            Height: =50
+                            Height: =Parent.Height * 0.4
                             HintText: ="선물 받을 주소를 입력하세요."
                             HoverBorderColor: =RGBA(102, 182, 227, 0.7)
                             HoverFill: =RGBA(102, 182, 227, 0.7)
@@ -401,12 +406,13 @@ User_Address_Page As screen:
                             AutoHeight: =true
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Bold
-                            Height: =34
+                            Height: =Parent.Height * 0.15
                             Size: =Parent.Width * 0.021
                             Text: ="Gift Zipcode"
                             Width: =Parent.Width * 0.88
                             Wrap: =false
                             X: =Parent.Width * 0.032
+                            Y: =Parent.Height * 0.08
                             ZIndex: =1
 
                         Gift_Zipcode_DataCardValue As text:
@@ -416,7 +422,7 @@ User_Address_Page As screen:
                             DelayOutput: =true
                             DisplayMode: =Parent.DisplayMode
                             Fill: =RGBA( 106, 170, 205, 1)
-                            Height: =50
+                            Height: =Parent.Height * 0.4
                             HintText: ="선물 배송지의 우편번호를 입력하세요."
                             HoverBorderColor: =RGBA(102, 182, 227, 0.7)
                             HoverFill: =RGBA(102, 182, 227, 0.7)
@@ -534,15 +540,15 @@ User_Address_Page As screen:
                             ZIndex: =4
 
             Address_Send_Container As groupContainer.manualLayoutContainer:
-                Height: =128
-                Width: =Parent.Width * 0.118
+                Height: =Parent.Height * 0.15
+                Width: =Parent.Width * 0.1
                 X: =Parent.Width * 0.88
-                Y: =Parent.Height - 150
+                Y: =Parent.Height * 0.75
                 ZIndex: =2
 
                 Address_Send As icon.Send:
                     Color: =RGBA( 106, 170, 205, 1 )
-                    Height: =128
+                    Height: =Parent.Height
                     Icon: =Icon.Send
                     OnSelect: |-
                         =If(
@@ -573,6 +579,6 @@ User_Address_Page As screen:
                             NewForm(Address_Input);
                             ResetForm(Address_Input);
                         )
-                    Width: =Parent.Width * 0.88
+                    Width: =Parent.Width
                     ZIndex: =1
 
