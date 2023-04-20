@@ -90,10 +90,10 @@ Admin_Profile_Page As screen:
                     ZIndex: =1
 
             AP_Search_Container As groupContainer.manualLayoutContainer:
-                Height: =Parent.Height - (AP_Gallery_Container.Height + AP_Gallery_Title_Container.Height + Self.Y )
+                Height: =Parent.Height * 0.06
                 Width: =Parent.Width * 0.178
                 X: =Parent.Width * 0.524
-                Y: =Parent.Height * 0.06
+                Y: =Parent.Height * 0.03
                 ZIndex: =2
 
                 Profile_Search As text:
