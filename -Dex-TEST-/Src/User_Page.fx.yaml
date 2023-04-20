@@ -199,7 +199,7 @@ User_Page As screen:
                 Text: ="주소지 입력"
                 Width: |
                     =Parent.Width * 0.35
-                X: =Parent.Width *0.25
+                X: =Parent.Width *0.33
                 Y: =Parent.Height * 0.88
                 ZIndex: =1
 
@@ -217,7 +217,7 @@ User_Page As screen:
                 Size: =Parent.Width * 0.025
                 Text: ="프로필 입력"
                 Width: =Parent.Width * 0.35
-                X: =Parent.Width *0.25
+                X: =Parent.Width *0.33
                 Y: =Parent.Height * 0.64
                 ZIndex: =2
 
@@ -235,7 +235,7 @@ User_Page As screen:
                 Text: ="자격증 입력"
                 Width: |
                     =Parent.Width * 0.35
-                X: =Parent.Width *0.25
+                X: =Parent.Width *0.33
                 Y: =Parent.Height * 0.4
                 ZIndex: =3
 
@@ -253,7 +253,7 @@ User_Page As screen:
                 Text: ="기술 입력"
                 Width: |
                     =Parent.Width * 0.35
-                X: =Parent.Width *0.25
+                X: =Parent.Width *0.33
                 Y: =Parent.Height * 0.16
                 ZIndex: =4
 
