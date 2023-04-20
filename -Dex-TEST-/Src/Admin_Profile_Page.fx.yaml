@@ -92,8 +92,8 @@ Admin_Profile_Page As screen:
             AP_Search_Container As groupContainer.manualLayoutContainer:
                 Height: =Parent.Height * 0.06
                 Width: =Parent.Width * 0.178
-                X: =Parent.Width * 0.524
-                Y: =Parent.Height * 0.03
+                X: =Parent.Width * 0.75
+                Y: =Parent.Height * 0.155
                 ZIndex: =2
 
                 Profile_Search As text:
