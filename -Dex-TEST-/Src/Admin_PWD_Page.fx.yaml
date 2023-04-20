@@ -207,7 +207,7 @@ Admin_PWD_Page As screen:
                 Text: ="취소"
                 Width: =Parent.Width * 0.14
                 X: =PW_TextInput_1.X + PW_TextInput_1.Width - Self.Width
-                Y: =261
+                Y: =Parent.Height * 0.43
                 ZIndex: =2
 
             PW_S_Button_1 As button:
