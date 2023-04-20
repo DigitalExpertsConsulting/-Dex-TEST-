@@ -6,6 +6,7 @@ Admin_Skill_Page As screen:
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
+        Visible: =false
         Width: =Parent.Width
         ZIndex: =24
 
@@ -431,4 +432,150 @@ Admin_Skill_Page As screen:
                             =Label7_14.Width + Label7_15.Width + Label7_16.Width + Label7_17.Width + Label7_18.Width
                              + Label7_19.Width + Label7_20.Width + Label7_21.Width + Label7_22.Width + Label7_23.Width + Label7_24.Width + Label7_25.Width + Label7_26.Width
                         ZIndex: =14
+
+    mAS_Main_Container As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =25
+
+        AS_Header_Container_1 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            FillPortions: =0
+            Height: =Parent.Height * 0.2
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =50
+            PaddingRight: =50
+            PaddingTop: =10
+            Width: =Parent.Width
+            ZIndex: =1
+
+            Admin_Skill_Back_1 As icon.BackArrow:
+                Color: =RGBA( 106, 170, 205, 1 )
+                Height: =Parent.Width * 0.08
+                Icon: =Icon.BackArrow
+                OnSelect: =Navigate(Admin_Page)
+                Width: =Parent.Width * 0.08
+                X: =Parent.Width * 0.01
+                Y: =40
+                ZIndex: =1
+
+            Admin_Skill_Title_1 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(102, 182, 227, 0.7)
+                Color: =RGBA(255, 255, 255, 1)
+                FillPortions: =1
+                FontWeight: =FontWeight.Bold
+                Height: =Parent.Height
+                Size: =Parent.Width * 0.035
+                Text: ="Admin Skill Page"
+                Width: =Parent.Width -Admin_Skill_Back_1.Width - Admin_Skill_Home_1.Width
+                ZIndex: =2
+
+            Admin_Skill_Home_1 As icon.Home:
+                Color: =RGBA( 106, 170, 205, 1 )
+                Height: =Parent.Width * 0.08
+                Icon: =Icon.Home
+                OnSelect: =Navigate(Main_Page)
+                Width: =Parent.Width * 0.08
+                X: =Parent.Width * 0.9
+                Y: =40
+                ZIndex: =3
+
+        AS_Sub_Container_1 As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            Height: =Parent.Height - AS_Header_Container_1.Height
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            Width: =Parent.Width
+            ZIndex: =2
+
+            AS_Refresh_Container_1 As groupContainer.manualLayoutContainer:
+                Height: =Parent.Width * 0.055
+                Width: =Parent.Width * 0.055
+                ZIndex: =1
+
+                Skill_Refresh_1 As icon.Reload:
+                    Color: =RGBA(255, 255, 255, 1)
+                    Height: =Parent.Height
+                    Icon: =Icon.Reload
+                    OnSelect: =Refresh(ability_skill)
+                    Width: =Parent.Width
+                    X: =
+                    Y: =
+                    ZIndex: =1
+
+            AS_Search_Container_1 As groupContainer.manualLayoutContainer:
+                Height: =Parent.Width * 0.055
+                Width: =Parent.Width * 0.17
+                X: =Parent.Width * 0.799
+                ZIndex: =2
+
+                Skill_Search_1 As text:
+                    BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                    BorderThickness: =5
+                    Default: =""
+                    Height: =Parent.Height * 0.6
+                    HintText: ="검색"
+                    Size: =Parent.Width * 0.04
+                    Width: =Parent.Width
+                    X: =Parent.Width - Self.Width
+                    Y: =Parent.Height * 0.2
+                    ZIndex: =1
+
+            AS_Gallery_Container_1 As groupContainer.manualLayoutContainer:
+                Height: =Parent.Height -  AS_Refresh_Container_1.Height
+                Width: =Parent.Width
+                Y: =AS_Refresh_Container_1.Height
+                ZIndex: =4
+
+                "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+                    DelayItemLoading: =true
+                    Height: =538.87
+                    Items: =ability_skill
+                    Layout: =Layout.Vertical
+                    LoadingSpinner: =LoadingSpinner.Data
+                    TemplatePadding: =0
+                    TemplateSize: =Min(160, Self.Height - 60)
+                    Width: =Parent.Width
+                    ZIndex: =1
+
+                    Title1 As label:
+                        Height: =Self.Size * 1.8
+                        OnSelect: =Select(Parent)
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =ThisItem.Name
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =
+                        X: = 24
+                        Y: =44
+                        ZIndex: =2
+
+                    Subtitle1 As label:
+                        Height: =Self.Size * 1.8
+                        OnSelect: =Select(Parent)
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =ThisItem.'Created On'
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =Title1.Width
+                        X: =Title1.X
+                        Y: =Title1.Y + Title1.Height + 4
+                        ZIndex: =3
+
+                    Separator1 As rectangle:
+                        Height: =1
+                        OnSelect: =Select(Parent)
+                        Width: =Parent.TemplateWidth
+                        Y: =Parent.TemplateHeight - 1
+                        ZIndex: =5
 
