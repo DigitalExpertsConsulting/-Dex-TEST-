@@ -7,7 +7,12 @@ Admin_Address_Page As screen:
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
         Visible: =false
-        Width: =Parent.Width
+        Width: |-
+            =If(
+                Parent.Width > 800,
+                true,
+                false
+            )
         ZIndex: =17
 
         AA_Header_Container As groupContainer.horizontalAutoLayoutContainer:
@@ -284,6 +289,12 @@ Admin_Address_Page As screen:
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
+        Visible: |-
+            =If(
+                Parent.Width <= 800,
+                true,
+                false
+            )
         Width: =Parent.Width
         ZIndex: =18
 
@@ -362,19 +373,18 @@ Admin_Address_Page As screen:
                     LoadingSpinner: =LoadingSpinner.Data
                     TemplatePadding: =0
                     TemplateSize: =Min(150,Self.Height)
-                    Width: =Parent.Width * 0.5
-                    X: =Parent.Width * 0.25
+                    Width: =Parent.Width
                     ZIndex: =1
 
                     Title4 As label:
                         Align: =Align.Center
-                        Height: =24
+                        Height: =Parent.Height * 0.08
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =Parent.Width* 0.02
+                        Size: =Parent.Width* 0.016
                         Text: =ThisItem.Name
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width * 0.16
@@ -383,7 +393,7 @@ Admin_Address_Page As screen:
 
                     Subtitle3 As label:
                         Align: =Align.Center
-                        Height: =Parent.Height * 0.05
+                        Height: =Parent.Height * 0.07
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
@@ -406,7 +416,7 @@ Admin_Address_Page As screen:
 
                     Subtitle3_1 As label:
                         Align: =Align.Center
-                        Height: =Parent.Height * 0.05
+                        Height: =Parent.Height * 0.07
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
@@ -417,12 +427,12 @@ Admin_Address_Page As screen:
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width * 0.735
                         X: =Parent.Width * 0.26
-                        Y: =Parent.Height * 0.04
+                        Y: =Parent.Height * 0.01
                         ZIndex: =6
 
                     Subtitle3_2 As label:
                         Align: =Align.Center
-                        Height: =Parent.Height * 0.05
+                        Height: =Parent.Height * 0.07
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
@@ -438,7 +448,7 @@ Admin_Address_Page As screen:
 
                     Subtitle3_3 As label:
                         Align: =Align.Center
-                        Height: =Parent.Height * 0.05
+                        Height: =Parent.Height * 0.07
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
@@ -454,7 +464,7 @@ Admin_Address_Page As screen:
 
                     Title4_1 As label:
                         Align: =Align.Center
-                        Height: =24
+                        Height: =Parent.Height * 0.07
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
@@ -465,12 +475,12 @@ Admin_Address_Page As screen:
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width * 0.15
                         X: =Parent.Width * 0.12
-                        Y: =Parent.Height * 0.04
+                        Y: =Parent.Height * 0.01
                         ZIndex: =9
 
                     Title4_2 As label:
                         Align: =Align.Center
-                        Height: =Parent.Height * 0.05
+                        Height: =Parent.Height * 0.07
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
@@ -486,7 +496,7 @@ Admin_Address_Page As screen:
 
                     Title4_3 As label:
                         Align: =Align.Center
-                        Height: =Parent.Height * 0.05
+                        Height: =Parent.Height * 0.07
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
@@ -502,7 +512,7 @@ Admin_Address_Page As screen:
 
                     Title4_4 As label:
                         Align: =Align.Center
-                        Height: =Parent.Height * 0.05
+                        Height: =Parent.Height * 0.07
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
