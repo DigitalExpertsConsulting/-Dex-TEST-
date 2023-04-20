@@ -119,7 +119,7 @@ Main_Page As screen:
                 PressedFill: =RGBA(102, 182, 227, 0.2)
                 Size: =(Parent.Width * 0.028)
                 Text: ="User"
-                Width: =Parent.Width * 0.25
+                Width: =Parent.Width * 0.5
                 X: =Parent.Width * 0.2
                 Y: =185
                 ZIndex: =1
@@ -135,8 +135,8 @@ Main_Page As screen:
                 PressedFill: =RGBA(102, 182, 227, 0.2)
                 Size: =(Parent.Width * 0.028)
                 Text: ="Admin"
-                Width: =Parent.Width * 0.25
+                Width: =Parent.Width * 0.5
                 X: =Parent.Width * 0.2
-                Y: =304
+                Y: =Parent.Width * 0.3
                 ZIndex: =2
 
