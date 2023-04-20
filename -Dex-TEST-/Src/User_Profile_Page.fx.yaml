@@ -277,9 +277,9 @@ User_Profile_Page As screen:
                     Height: =Parent.Height * 0.2
                     HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -50%)
                     OnSelect: =ability_user_down_profile_form.Run()
-                    Size: =Parent.Width * 0.04
+                    Size: =Parent.Width * 0.03
                     Text: ="양식 다운로드"
-                    Width: =219
+                    Width: =Parent.Width * 0.35
                     X: =Parent.Width * 0.57
                     Y: =Parent.Height * 0.35
                     ZIndex: =2
@@ -345,9 +345,9 @@ User_Profile_Page As screen:
                                 "false"
                             );
                         );
-                    Size: =Parent.Width * 0.04
+                    Size: =Parent.Width * 0.03
                     Text: ="업로드"
-                    Width: =229
+                    Width: =Parent.Width * 0.35
                     X: =Parent.Width * 0.57
                     Y: =Parent.Height * 0.35
                     ZIndex: =2
