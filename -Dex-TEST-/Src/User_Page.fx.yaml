@@ -200,7 +200,7 @@ User_Page As screen:
                 Width: |
                     =Parent.Width * 0.35
                 X: =Parent.Width *0.25
-                Y: =23
+                Y: =Parent.Height * 0.88
                 ZIndex: =1
 
             UserPage_Profile_Button_1 As button:
@@ -236,7 +236,7 @@ User_Page As screen:
                 Width: |
                     =Parent.Width * 0.35
                 X: =Parent.Width *0.25
-                Y: =146
+                Y: =Parent.Height * 0.4
                 ZIndex: =3
 
             UserPage_License_Button_1 As button:
@@ -254,6 +254,6 @@ User_Page As screen:
                 Width: |
                     =Parent.Width * 0.35
                 X: =Parent.Width *0.25
-                Y: =257
+                Y: =Parent.Height * 0.16
                 ZIndex: =4
 
