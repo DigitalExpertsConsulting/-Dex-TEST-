@@ -86,7 +86,7 @@ User_Address_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_address],DataSourceInfo.DisplayName,"cr778_address")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =122
+                        Height: =Parent.Height* 0.25
                         MaxLength: =DataSourceInfo([@ability_address], DataSourceInfo.MaxLength, "cr778_address")
                         Required: =false
                         Update: =Address_DataCardValue.Text
@@ -165,7 +165,7 @@ User_Address_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_address],DataSourceInfo.DisplayName,"cr778_zipcode")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =120
+                        Height: =Parent.Height* 0.25
                         MaxLength: =DataSourceInfo([@ability_address], DataSourceInfo.MaxLength, "cr778_zipcode")
                         Required: =false
                         Update: =Zipcode_DataCardValue.Text
@@ -236,7 +236,7 @@ User_Address_Page As screen:
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width * 0.88
                             X: =Parent.Width * 0.032
-                            Y: =62
+                            Y: =Zipcode_DataCardKey.Y + Zipcode_DataCardKey.Height + 5
                             ZIndex: =5
 
                     "'Address_E-mail_DataCard' As typedDataCard.textualEditCard":
@@ -315,7 +315,7 @@ User_Address_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_address],DataSourceInfo.DisplayName,"cr778_gift_address")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =120
+                        Height: =Parent.Height* 0.25
                         MaxLength: =DataSourceInfo([@ability_address], DataSourceInfo.MaxLength, "cr778_gift_address")
                         Required: =false
                         Update: =Gift_Address_DataCardValue.Text
@@ -393,7 +393,7 @@ User_Address_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_address],DataSourceInfo.DisplayName,"cr778_gift_zipcode")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =120
+                        Height: =Parent.Height* 0.25
                         MaxLength: =DataSourceInfo([@ability_address], DataSourceInfo.MaxLength, "cr778_gift_zipcode")
                         Required: =false
                         Update: =Gift_Zipcode_DataCardValue.Text

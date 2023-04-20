@@ -59,7 +59,7 @@ Admin_PWD_Page As screen:
                 HintText: ="비밀번호 입력하세요."
                 HoverBorderColor: =RGBA(102, 182, 227, 0.7)
                 Mode: =TextMode.Password
-                Size: =20
+                Size: =Parent.Width * 0.015
                 Width: =Parent.Width * 0.4
                 X: =Parent.Width * 0.3
                 Y: =Parent.Height * 0.27
