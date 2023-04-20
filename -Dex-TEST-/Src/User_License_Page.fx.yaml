@@ -1335,6 +1335,8 @@ User_License_Page As screen:
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
+        Visible: |
+            =false
         Width: =Parent.Width
         ZIndex: =10
 
@@ -4105,10 +4107,10 @@ User_License_Page As screen:
             ZIndex: =2
 
             License_Container_1 As groupContainer.manualLayoutContainer:
-                Height: =Parent.Height * 0.93
-                Width: =Parent.Width * 0.5
-                X: =Parent.Width * 0.02
-                Y: =Parent.Height * 0.03
+                Height: =Parent.Height * 0.69
+                Width: =Parent.Width * 0.35
+                X: =Parent.Width * 0.18
+                Y: =38
                 ZIndex: =1
 
                 License_Input_1 As form:
@@ -5375,10 +5377,10 @@ User_License_Page As screen:
                             ZIndex: =4
 
             File_Container_1 As groupContainer.manualLayoutContainer:
-                Height: =Parent.Height * 0.72
-                Width: =Parent.Width * 0.47
-                X: =Parent.Width * 0.525
-                Y: =Parent.Height * 0.03
+                Height: =License_Container_1.Height
+                Width: =Parent.Width * 0.35
+                X: =713
+                Y: =38
                 ZIndex: =2
 
                 License_File_Input_1 As form:
@@ -5396,7 +5398,7 @@ User_License_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_az104")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =50
+                        Height: =Parent.Height*0.4
                         Required: =false
                         Update: ='AZ-104_File_DataCardValue_1'.Attachments
                         Visible: =If('AZ-104_Toggle_1'.Value=true,true,false)
@@ -5473,7 +5475,7 @@ User_License_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_az305")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =50
+                        Height: =Parent.Height*0.4
                         Required: =false
                         Update: ='AZ-305_File_DataCardValue_1'.Attachments
                         Visible: =If('AZ-305_Toggle_1'.Value=true,true,false)
@@ -5550,7 +5552,7 @@ User_License_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_ms100")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =50
+                        Height: =Parent.Height*0.4
                         Required: =false
                         Update: ='MS-100_File_DataCardValue_1'.Attachments
                         Visible: =If('MS-100_Toggle_1'.Value=true,true,false)
@@ -5627,7 +5629,7 @@ User_License_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_ms101")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =50
+                        Height: =Parent.Height*0.4
                         Required: =false
                         Update: ='MS-101_File_DataCardValue_1'.Attachments
                         Visible: =If('MS-101_Toggle_1'.Value=true,true,false)
@@ -5704,7 +5706,7 @@ User_License_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_ms700")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =50
+                        Height: =Parent.Height*0.4
                         Required: =false
                         Update: ='MS-700_File_DataCardValue_1'.Attachments
                         Visible: =If('MS-700_Toggle_1'.Value=true,true,false)
@@ -5781,11 +5783,11 @@ User_License_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_ms900")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =50
+                        Height: =Parent.Height*0.4
                         Required: =false
                         Update: ='MS-900_File_DataCardValue_1'.Attachments
                         Visible: =If('MS-900_Toggle_1'.Value=true,true,false)
-                        Width: =594
+                        Width: =Parent.Width
                         X: =0
                         Y: =5
                         ZIndex: =1
@@ -5857,7 +5859,7 @@ User_License_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_pl200")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =50
+                        Height: =Parent.Height*0.4
                         Required: =false
                         Update: ='PL-200_File_DataCardValue_1'.Attachments
                         Visible: =If('PL-200_Toggle_1'.Value=true,true,false)
@@ -5934,11 +5936,11 @@ User_License_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_pl300")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =50
+                        Height: =Parent.Height*0.4
                         Required: =false
                         Update: ='PL-300_File_DataCardValue_1'.Attachments
                         Visible: =If('PL-300_Toggle_1'.Value=true,true,false)
-                        Width: = Parent.Width
+                        Width: =Parent.Width
                         X: =0
                         Y: =7
                         ZIndex: =1
@@ -6011,7 +6013,7 @@ User_License_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_pl400")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =50
+                        Height: =Parent.Height*0.4
                         Required: =false
                         Update: ='PL-400_File_DataCardValue_1'.Attachments
                         Visible: =If('PL-400_Toggle_1'.Value=true,true,false)
@@ -6088,7 +6090,7 @@ User_License_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_pl600")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =50
+                        Height: =Parent.Height*0.4
                         Required: =false
                         Update: ='PL-600_File_DataCardValue_1'.Attachments
                         Visible: =If('PL-600_Toggle_1'.Value=true,true,false)
@@ -6165,11 +6167,11 @@ User_License_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_pl900")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =50
+                        Height: =Parent.Height*0.4
                         Required: =false
                         Update: ='PL-900_File_DataCardValue_1'.Attachments
                         Visible: =If('PL-900_Toggle_1'.Value=true,true,false)
-                        Width: = Parent.Width
+                        Width: =Parent.Width
                         X: =0
                         Y: =10
                         ZIndex: =1
@@ -6246,7 +6248,7 @@ User_License_Page As screen:
                         Required: =true
                         Update: =Name_File_DataCardValue_1.Text
                         Visible: =false
-                        Width: =198
+                        Width: =Parent.Width
                         X: =0
                         Y: =11
                         ZIndex: =1
@@ -6319,7 +6321,7 @@ User_License_Page As screen:
                         Required: =false
                         Update: ='E-mail_File_DataCardValue_1'.Text
                         Visible: =false
-                        Width: =198
+                        Width: =Parent.Width
                         X: =1
                         Y: =11
                         ZIndex: =1
@@ -6379,7 +6381,7 @@ User_License_Page As screen:
             License_Send_Container_1 As groupContainer.manualLayoutContainer:
                 Height: =Parent.Height * 0.15
                 Width: =Parent.Width * 0.1
-                X: =Parent.Width * 0.88
+                X: =File_Container_1.X + File_Container_1.Width - Self.Width
                 Y: =Parent.Height * 0.75
                 ZIndex: =3
 
