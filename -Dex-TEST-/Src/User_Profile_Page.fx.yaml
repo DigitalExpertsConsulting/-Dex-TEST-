@@ -288,7 +288,7 @@ User_Profile_Page As screen:
                 Height: =Parent.Height * 0.5
                 Width: =Parent.Width * 0.46
                 X: =Parent.Width * 0.27
-                Y: =315
+                Y: =Parent.Height * 0.5
                 ZIndex: =3
 
                 Upload_Profile_DataCardValue_1 As attachments:
