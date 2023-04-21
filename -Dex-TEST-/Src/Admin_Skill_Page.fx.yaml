@@ -558,14 +558,13 @@ Admin_Skill_Page As screen:
 
                 "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
                     DelayItemLoading: =true
-                    Height: =418
+                    Height: =Parent.Height
                     Items: =ability_skill
                     Layout: =Layout.Vertical
                     LoadingSpinner: =LoadingSpinner.Data
                     TemplatePadding: =0
                     TemplateSize: =298
-                    Width: =745
-                    X: =15
+                    Width: =Parent.Width
                     ZIndex: =1
 
                     Title1 As label:
@@ -581,16 +580,17 @@ Admin_Skill_Page As screen:
                         ZIndex: =2
 
                     Subtitle1 As label:
-                        Height: =28
+                        Align: =Align.Center
+                        Height: =Parent.Height * 0.06
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =15
+                        Size: =Parent.Height * 0.03
                         Text: =ThisItem.'365 Solution'
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =127
+                        Width: =Parent.Width * 0.095
                         X: =232
                         Y: =36
                         ZIndex: =3
@@ -603,7 +603,7 @@ Admin_Skill_Page As screen:
                         ZIndex: =5
 
                     Subtitle1_1 As label:
-                        Height: =28
+                        Height: =Parent.Height * 0.06
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
@@ -617,22 +617,23 @@ Admin_Skill_Page As screen:
                         ZIndex: =6
 
                     Subtitle1_2 As label:
-                        Height: =28
+                        Align: =Align.Center
+                        Height: =Parent.Height * 0.06
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =15
+                        Size: =Parent.Height * 0.03
                         Text: =ThisItem.'Power Apps Canvas'
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =127
+                        Width: =Parent.Width * 0.095
                         X: =232
                         Y: =187
                         ZIndex: =7
 
                     Subtitle1_3 As label:
-                        Height: =28
+                        Height: =Parent.Height * 0.06
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
@@ -646,22 +647,23 @@ Admin_Skill_Page As screen:
                         ZIndex: =8
 
                     Subtitle1_4 As label:
-                        Height: =28
+                        Align: =Align.Center
+                        Height: =Parent.Height * 0.06
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =15
+                        Size: =Parent.Height * 0.03
                         Text: =ThisItem.'Power Automate'
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =128
-                        X: =616
+                        Width: =Parent.Width * 0.095
+                        X: =Parent.Width * 0.7
                         Y: =42
                         ZIndex: =9
 
                     Subtitle1_5 As label:
-                        Height: =28
+                        Height: =Parent.Height * 0.06
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
@@ -670,28 +672,29 @@ Admin_Skill_Page As screen:
                         Size: =16
                         Text: ="Power Automate Desktop"
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =257
+                        Width: =Parent.Width * 0.2
                         X: =359
                         Y: =36
                         ZIndex: =10
 
                     Subtitle1_6 As label:
-                        Height: =28
+                        Align: =Align.Center
+                        Height: =Parent.Height * 0.06
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =15
+                        Size: =Parent.Height * 0.03
                         Text: =ThisItem.'AI Builder'
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =127
+                        Width: =Parent.Width * 0.095
                         X: =232
                         Y: =81
                         ZIndex: =11
 
                     Subtitle1_7 As label:
-                        Height: =28
+                        Height: =Parent.Height * 0.06
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
@@ -705,22 +708,23 @@ Admin_Skill_Page As screen:
                         ZIndex: =12
 
                     Subtitle1_8 As label:
-                        Height: =28
+                        Align: =Align.Center
+                        Height: =Parent.Height * 0.06
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =15
+                        Size: =Parent.Height * 0.03
                         Text: =ThisItem.'Power Apps Model'
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =127
+                        Width: =Parent.Width * 0.095
                         X: =232
                         Y: =231
                         ZIndex: =13
 
                     Subtitle1_9 As label:
-                        Height: =28
+                        Height: =Parent.Height * 0.06
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
@@ -734,22 +738,23 @@ Admin_Skill_Page As screen:
                         ZIndex: =14
 
                     Subtitle1_10 As label:
-                        Height: =28
+                        Align: =Align.Center
+                        Height: =Parent.Height * 0.06
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =15
+                        Size: =Parent.Height * 0.03
                         Text: =ThisItem.'Power Page'
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =128
-                        X: =616
+                        Width: =Parent.Width * 0.095
+                        X: =Parent.Width * 0.7
                         Y: =80
                         ZIndex: =15
 
                     Subtitle1_11 As label:
-                        Height: =28
+                        Height: =Parent.Height * 0.06
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
@@ -758,28 +763,29 @@ Admin_Skill_Page As screen:
                         Size: =16
                         Text: ="Power Page"
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =257
+                        Width: =Parent.Width * 0.2
                         X: =359
                         Y: =80
                         ZIndex: =16
 
                     Subtitle1_12 As label:
-                        Height: =28
+                        Align: =Align.Center
+                        Height: =Parent.Height * 0.06
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =15
+                        Size: =Parent.Height * 0.03
                         Text: =ThisItem.'Api management'
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =127
+                        Width: =Parent.Width * 0.095
                         X: =232
                         Y: =116
                         ZIndex: =17
 
                     Subtitle1_13 As label:
-                        Height: =28
+                        Height: =Parent.Height * 0.06
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
@@ -793,22 +799,23 @@ Admin_Skill_Page As screen:
                         ZIndex: =18
 
                     Subtitle1_14 As label:
-                        Height: =28
+                        Align: =Align.Center
+                        Height: =Parent.Height * 0.06
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =15
+                        Size: =Parent.Height * 0.03
                         Text: =ThisItem.'Power Automate'
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =127
+                        Width: =Parent.Width * 0.095
                         X: =232
                         Y: =267
                         ZIndex: =19
 
                     Subtitle1_15 As label:
-                        Height: =29
+                        Height: =Parent.Height * 0.06
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
@@ -822,22 +829,23 @@ Admin_Skill_Page As screen:
                         ZIndex: =20
 
                     Subtitle1_16 As label:
-                        Height: =28
+                        Align: =Align.Center
+                        Height: =Parent.Height * 0.06
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =15
+                        Size: =Parent.Height * 0.03
                         Text: =ThisItem.'Power Page JAVA/CSS'
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =128
-                        X: =616
+                        Width: =Parent.Width * 0.095
+                        X: =Parent.Width * 0.7
                         Y: =116
                         ZIndex: =21
 
                     Subtitle1_17 As label:
-                        Height: =28
+                        Height: =Parent.Height * 0.06
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
@@ -846,28 +854,29 @@ Admin_Skill_Page As screen:
                         Size: =16
                         Text: ="Power Page JAVA/CSS"
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =257
+                        Width: =Parent.Width * 0.2
                         X: =359
                         Y: =116
                         ZIndex: =22
 
                     Subtitle1_18 As label:
-                        Height: =28
+                        Align: =Align.Center
+                        Height: =Parent.Height * 0.06
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =15
+                        Size: =Parent.Height * 0.03
                         Text: =ThisItem.DataVerse
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =127
+                        Width: =Parent.Width * 0.095
                         X: =232
                         Y: =155
                         ZIndex: =23
 
                     Subtitle1_19 As label:
-                        Height: =28
+                        Height: =Parent.Height * 0.06
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
@@ -881,22 +890,23 @@ Admin_Skill_Page As screen:
                         ZIndex: =24
 
                     Subtitle1_20 As label:
-                        Height: =28
+                        Align: =Align.Center
+                        Height: =Parent.Height * 0.06
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =15
+                        Size: =Parent.Height * 0.03
                         Text: =ThisItem.'Power BI'
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =127
-                        X: =616
+                        Width: =Parent.Width * 0.095
+                        X: =Parent.Width * 0.7
                         Y: =144
                         ZIndex: =25
 
                     Subtitle1_21 As label:
-                        Height: =28
+                        Height: =Parent.Height * 0.06
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
@@ -905,28 +915,29 @@ Admin_Skill_Page As screen:
                         Size: =16
                         Text: ="Power BI"
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =257
+                        Width: =Parent.Width * 0.2
                         X: =359
                         Y: =144
                         ZIndex: =26
 
                     Subtitle1_22 As label:
-                        Height: =28
+                        Align: =Align.Center
+                        Height: =Parent.Height * 0.06
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =15
+                        Size: =Parent.Height * 0.03
                         Text: =ThisItem.'Process Advisor'
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =126
-                        X: =616
+                        Width: =Parent.Width * 0.095
+                        X: =Parent.Width * 0.7
                         Y: =176
                         ZIndex: =27
 
                     Subtitle1_23 As label:
-                        Height: =28
+                        Height: =Parent.Height * 0.06
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
@@ -935,28 +946,29 @@ Admin_Skill_Page As screen:
                         Size: =16
                         Text: ="Process Advisor"
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =257
+                        Width: =Parent.Width * 0.2
                         X: =359
                         Y: =176
                         ZIndex: =28
 
                     Subtitle1_24 As label:
-                        Height: =28
+                        Align: =Align.Center
+                        Height: =Parent.Height * 0.06
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =15
+                        Size: =Parent.Height * 0.03
                         Text: =ThisItem.'Power Virtual Agents'
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =126
-                        X: =616
+                        Width: =Parent.Width * 0.095
+                        X: =Parent.Width * 0.7
                         Y: =215
                         ZIndex: =29
 
                     Subtitle1_25 As label:
-                        Height: =28
+                        Height: =Parent.Height * 0.06
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
@@ -965,7 +977,7 @@ Admin_Skill_Page As screen:
                         Size: =16
                         Text: ="Power Virtual Agents"
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =257
+                        Width: =Parent.Width * 0.2
                         X: =359
                         Y: =215
                         ZIndex: =30
