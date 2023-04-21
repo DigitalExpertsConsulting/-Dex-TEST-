@@ -10,14 +10,14 @@ Admin_Skill_Page As screen:
             =
             
             
-            /*
+            
             If(
                 Parent.Width > 800,
                 true,
                 false
             )
             
-            */
+            
             
             
             
@@ -451,16 +451,14 @@ Admin_Skill_Page As screen:
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
-        Visible: |
-            =/*
-            
+        Visible: |+
+            =
             If(
                 Parent.Width <= 800,
                 true,
                 false
             )
-            */
-            true
+            
         Width: =Parent.Width
         ZIndex: =25
 
