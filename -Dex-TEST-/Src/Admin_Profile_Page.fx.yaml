@@ -217,7 +217,7 @@ Admin_Profile_Page As screen:
 
                     Checkbox6_1 As checkbox:
                         Default: =Checkbox10Value
-                        Height: =Parent.Height * 0.076
+                        Height: =Parent.Height * 0.1
                         OnSelect: |-
                             =If(
                                 Checkbox6_1.Value = true,
@@ -226,7 +226,7 @@ Admin_Profile_Page As screen:
                             )
                         Size: =Parent.Width * 0.013
                         Text: =ThisItem.'E-mail'
-                        Width: =Parent.Width * 0.045
+                        Width: =Parent.Height * 0.1
                         X: =
                         Y: =Parent.Height * 0.04
                         ZIndex: =1
@@ -508,12 +508,13 @@ Admin_Profile_Page As screen:
 
                     Title3 As label:
                         Align: =Align.Center
-                        Height: =Self.Size * 1.8
+                        Height: =Parent.Height * 0.08
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
+                        Size: =Parent.Width * 0.018
                         Text: =ThisItem.Name
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width * 0.1
@@ -586,7 +587,7 @@ Admin_Profile_Page As screen:
 
                     Checkbox6_4 As checkbox:
                         Default: =Checkbox10Value
-                        Height: =Parent.Width * 0.04
+                        Height: =45
                         OnSelect: |-
                             =If(
                                 Checkbox6_4.Value = true,
@@ -595,7 +596,7 @@ Admin_Profile_Page As screen:
                             )
                         Size: =Parent.Width * 0.013
                         Text: =ThisItem.'E-mail'
-                        Width: =Parent.Width * 0.04
+                        Width: =45
                         X: =Parent.Width * 0.067
                         Y: =Parent.Height * 0.12
                         ZIndex: =9

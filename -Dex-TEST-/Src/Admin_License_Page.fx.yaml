@@ -11,11 +11,13 @@ Admin_License_Page As screen:
             
             
             
+            
             If(
                 Parent.Width > 800,
                 true,
                 false
             )
+            
             
         Width: =Parent.Width
         ZIndex: =27
@@ -431,6 +433,7 @@ Admin_License_Page As screen:
                 true,
                 false
             )
+            
             
         Width: =Parent.Width
         ZIndex: =28
