@@ -10,12 +10,15 @@ Admin_Skill_Page As screen:
             =
             
             
-            
+            /*
             If(
                 Parent.Width > 800,
                 true,
                 false
             )
+            
+            */
+            
             
             
         Width: =Parent.Width
@@ -449,12 +452,15 @@ Admin_Skill_Page As screen:
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
         Visible: |
-            =
+            =/*
+            
             If(
                 Parent.Width <= 800,
                 true,
                 false
             )
+            */
+            true
         Width: =Parent.Width
         ZIndex: =25
 
@@ -576,7 +582,7 @@ Admin_Skill_Page As screen:
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width * 0.14
                         X: =Parent.Width * 0.03
-                        Y: =Parent.Height * 0.35 - Self.Height
+                        Y: =Parent.Height * 0.25 - Self.Height
                         ZIndex: =2
 
                     Subtitle1 As label:
@@ -587,7 +593,7 @@ Admin_Skill_Page As screen:
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =Parent.Height * 0.03
+                        Size: =Parent.Width * 0.01
                         Text: =ThisItem.'365 Solution'
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width * 0.095
@@ -627,7 +633,7 @@ Admin_Skill_Page As screen:
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =Parent.Height * 0.03
+                        Size: =Parent.Width * 0.01
                         Text: =ThisItem.'Power Apps Canvas'
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width * 0.095
@@ -660,7 +666,7 @@ Admin_Skill_Page As screen:
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =Parent.Height * 0.03
+                        Size: =Parent.Width * 0.01
                         Text: =ThisItem.'Power Automate'
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width * 0.095
@@ -693,7 +699,7 @@ Admin_Skill_Page As screen:
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =Parent.Height * 0.03
+                        Size: =Parent.Width * 0.01
                         Text: =ThisItem.'AI Builder'
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width * 0.095
@@ -726,7 +732,7 @@ Admin_Skill_Page As screen:
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =Parent.Height * 0.03
+                        Size: =Parent.Width * 0.01
                         Text: =ThisItem.'Power Apps Model'
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width * 0.095
@@ -759,7 +765,7 @@ Admin_Skill_Page As screen:
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =Parent.Height * 0.03
+                        Size: =Parent.Width * 0.01
                         Text: =ThisItem.'Power Page'
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width * 0.095
@@ -792,7 +798,7 @@ Admin_Skill_Page As screen:
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =Parent.Height * 0.03
+                        Size: =Parent.Width * 0.01
                         Text: =ThisItem.'Api management'
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width * 0.095
@@ -825,7 +831,7 @@ Admin_Skill_Page As screen:
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =Parent.Height * 0.03
+                        Size: =Parent.Width * 0.01
                         Text: =ThisItem.'Power Automate'
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width * 0.095
@@ -858,7 +864,7 @@ Admin_Skill_Page As screen:
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =Parent.Height * 0.03
+                        Size: =Parent.Width * 0.01
                         Text: =ThisItem.'Power Page JAVA/CSS'
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width * 0.095
@@ -891,7 +897,7 @@ Admin_Skill_Page As screen:
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =Parent.Height * 0.03
+                        Size: =Parent.Width * 0.01
                         Text: =ThisItem.DataVerse
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width * 0.095
@@ -924,7 +930,7 @@ Admin_Skill_Page As screen:
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =Parent.Height * 0.03
+                        Size: =Parent.Width * 0.01
                         Text: =ThisItem.'Power BI'
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width * 0.095
@@ -957,7 +963,7 @@ Admin_Skill_Page As screen:
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =Parent.Height * 0.03
+                        Size: =Parent.Width * 0.01
                         Text: =ThisItem.'Process Advisor'
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width * 0.095
@@ -990,7 +996,7 @@ Admin_Skill_Page As screen:
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =Parent.Height * 0.03
+                        Size: =Parent.Width * 0.01
                         Text: =ThisItem.'Power Virtual Agents'
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width * 0.095
