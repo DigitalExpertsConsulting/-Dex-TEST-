@@ -6,16 +6,15 @@ Admin_License_Page As screen:
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
-        Visible: |-
+        Visible: |
             =
             
-            /*
+            
             If(
                 Parent.Width > 800,
                 true,
                 false
             )
-            */
         Width: =Parent.Width
         ZIndex: =27
 
@@ -423,15 +422,13 @@ Admin_License_Page As screen:
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
-        Visible: |-
-            =/*
+        Visible: |
+            =
             If(
                 Parent.Width <=800,
                 true,
                 false
             )
-            */
-            true
         Width: =Parent.Width
         ZIndex: =28
 
