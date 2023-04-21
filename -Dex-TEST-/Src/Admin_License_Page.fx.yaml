@@ -6,6 +6,12 @@ Admin_License_Page As screen:
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
+        Visible: |-
+            =If(
+                Parent.Width > 800,
+                true,
+                false
+            )
         Width: =Parent.Width
         ZIndex: =27
 
@@ -408,4 +414,426 @@ Admin_License_Page As screen:
                         Width: =Parent.Width * 0.0833
                         X: =Label8_12.Width + Label8_13.Width + Label8_14.Width + Label8_15.Width + Label8_16.Width + Label8_17.Width +   Label8_18.Width + Label8_19.Width + Label8_20.Width + Label8_21.Width + Label8_22.Width
                         ZIndex: =12
+
+    mAL_Main_Container As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Visible: |-
+            =If(
+                Parent.Width <=800,
+                true,
+                false
+            )
+        Width: =Parent.Width
+        ZIndex: =28
+
+        AL_Header_Container_1 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            FillPortions: =0
+            Height: =Parent.Height * 0.21
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =50
+            PaddingRight: =50
+            PaddingTop: =30
+            Width: =Parent.Width
+            ZIndex: =1
+
+            Admin_License_Back_1 As icon.BackArrow:
+                Color: =RGBA( 106, 170, 205, 1 )
+                Height: =Parent.Width * 0.08
+                Icon: =Icon.BackArrow
+                OnSelect: =Navigate(Admin_Page)
+                Width: =Parent.Width * 0.08
+                X: =Parent.Width * 0.01
+                Y: =40
+                ZIndex: =1
+
+            Admin_License_Title_1 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(102, 182, 227, 0.7)
+                Color: =RGBA(255, 255, 255, 1)
+                FillPortions: =1
+                FontWeight: =FontWeight.Bold
+                Height: =Parent.Height
+                Size: =Parent.Width * 0.035
+                Text: ="Admin License Page"
+                Width: =Parent.Width - Admin_License_Back_1.Width - Admin_License_Home_1.Width 
+                X: =Admin_License_Back_1.Width
+                Y: =
+                ZIndex: =2
+
+            Admin_License_Home_1 As icon.Home:
+                Color: =RGBA( 106, 170, 205, 1 )
+                Height: =Parent.Width * 0.08
+                Icon: =Icon.Home
+                OnSelect: =Navigate(Main_Page)
+                Width: =Parent.Width * 0.08
+                X: =Parent.Width * 0.9
+                Y: =40
+                ZIndex: =3
+
+        AL_Sub_Container_1 As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            Width: =Parent.Width
+            Y: =AL_Header_Container_1.Height
+            ZIndex: =2
+
+            AL_Down_Container_1 As groupContainer.manualLayoutContainer:
+                Height: =Parent.Height * 0.14
+                Width: =Parent.Width * 0.3
+                ZIndex: =1
+
+                License_DownLoad_1 As button:
+                    BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                    BorderThickness: =5
+                    Fill: =RGBA( 106, 170, 205, 1 )
+                    Height: =Parent.Height * 0.55
+                    OnSelect: =PDFDownload.Run()
+                    Size: =Parent.Width * 0.033
+                    Text: ="라이센스 인증서 다운로드"
+                    Width: =Parent.Width * 0.7
+                    X: =Parent.Width * 0.04
+                    Y: =Parent.Height * 0.2
+                    ZIndex: =1
+
+                License_Refresh_1 As icon.Reload:
+                    Color: =RGBA(255, 255, 255, 1)
+                    Height: =Parent.Width * 0.18
+                    Icon: =Icon.Reload
+                    OnSelect: =Refresh(ability_license)
+                    Width: =Parent.Width * 0.18
+                    X: =Parent.Width * 0.8
+                    Y: =5
+                    ZIndex: =2
+
+            AL_Search_Container_1 As groupContainer.manualLayoutContainer:
+                Height: =70
+                Width: =Parent.Width * 0.25
+                X: =Parent.Width * 0.7
+                ZIndex: =2
+
+                License_Search_1 As text:
+                    BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                    BorderThickness: =5
+                    Default: =""
+                    Height: =35
+                    HintText: ="검색"
+                    Size: =Parent.Width * 0.045
+                    Width: =245
+                    X: =40
+                    Y: =20
+                    ZIndex: =1
+
+            AL_Gallery_Container_1 As groupContainer.manualLayoutContainer:
+                Height: =Parent.Height -  AL_Down_Container_1.Height
+                Width: =Parent.Width
+                Y: =AL_Down_Container_1.Height 
+                ZIndex: =4
+
+                "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+                    DelayItemLoading: =true
+                    Fill: =RGBA(255, 255, 255, 0.6)
+                    Height: =469.818
+                    Items: =ability_license
+                    Layout: =Layout.Vertical
+                    LoadingSpinner: =LoadingSpinner.Data
+                    TemplatePadding: =0
+                    TemplateSize: =226
+                    Width: =459
+                    X: =40
+                    ZIndex: =1
+
+                    Title2 As label:
+                        Height: =37
+                        OnSelect: =Select(Parent)
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =ThisItem.Name
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =87
+                        ZIndex: =2
+
+                    Subtitle2 As label:
+                        Height: =18
+                        OnSelect: =Select(Parent)
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =13
+                        Text: =ThisItem.'AZ-104'
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =175
+                        X: =77
+                        Y: =42
+                        ZIndex: =3
+
+                    Separator2 As rectangle:
+                        Height: =1
+                        OnSelect: =Select(Parent)
+                        Width: =Parent.TemplateWidth
+                        Y: =Parent.TemplateHeight - 1
+                        ZIndex: =5
+
+                    Label1 As label:
+                        Height: =29
+                        OnSelect: =Select(Parent)
+                        Size: =15
+                        Text: ="AZ-104"
+                        Width: =87
+                        Y: =37
+                        ZIndex: =6
+
+                    Subtitle2_1 As label:
+                        Height: =18
+                        OnSelect: =Select(Parent)
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =13
+                        Text: =ThisItem.'AZ-104'
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =175
+                        X: =77
+                        Y: =71
+                        ZIndex: =7
+
+                    Label1_1 As label:
+                        Height: =29
+                        OnSelect: =Select(Parent)
+                        Size: =15
+                        Text: ="AZ-305"
+                        Width: =87
+                        Y: =66
+                        ZIndex: =8
+
+                    Subtitle2_2 As label:
+                        Height: =18
+                        OnSelect: =Select(Parent)
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =13
+                        Text: =ThisItem.'AZ-104'
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =175
+                        X: =77
+                        Y: =100
+                        ZIndex: =9
+
+                    Label1_2 As label:
+                        Height: =29
+                        OnSelect: =Select(Parent)
+                        Size: =15
+                        Text: ="MS-100"
+                        Width: =87
+                        Y: =95
+                        ZIndex: =10
+
+                    Subtitle2_3 As label:
+                        Height: =18
+                        OnSelect: =Select(Parent)
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =13
+                        Text: =ThisItem.'AZ-104'
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =175
+                        X: =77
+                        Y: =129
+                        ZIndex: =11
+
+                    Label1_3 As label:
+                        Height: =29
+                        OnSelect: =Select(Parent)
+                        Size: =15
+                        Text: ="MS-101"
+                        Width: =87
+                        Y: =124
+                        ZIndex: =12
+
+                    Subtitle2_4 As label:
+                        Height: =18
+                        OnSelect: =Select(Parent)
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =13
+                        Text: =ThisItem.'AZ-104'
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =175
+                        X: =77
+                        Y: =160
+                        ZIndex: =13
+
+                    Label1_4 As label:
+                        Height: =29
+                        OnSelect: =Select(Parent)
+                        Size: =15
+                        Text: ="MS-700"
+                        Width: =87
+                        Y: =155
+                        ZIndex: =14
+
+                    Subtitle2_5 As label:
+                        Height: =18
+                        OnSelect: =Select(Parent)
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =13
+                        Text: =ThisItem.'AZ-104'
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =175
+                        X: =77
+                        Y: =189
+                        ZIndex: =15
+
+                    Label1_5 As label:
+                        Height: =29
+                        OnSelect: =Select(Parent)
+                        Size: =15
+                        Text: ="MS-900"
+                        Width: =87
+                        Y: =184
+                        ZIndex: =16
+
+                    Subtitle2_6 As label:
+                        Height: =18
+                        OnSelect: =Select(Parent)
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =13
+                        Text: =ThisItem.'AZ-104'
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =175
+                        X: =284
+                        Y: =47
+                        ZIndex: =17
+
+                    Label1_6 As label:
+                        Height: =29
+                        OnSelect: =Select(Parent)
+                        Size: =15
+                        Text: ="PL-200"
+                        Width: =87
+                        X: =231
+                        Y: =42
+                        ZIndex: =18
+
+                    Subtitle2_7 As label:
+                        Height: =18
+                        OnSelect: =Select(Parent)
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =13
+                        Text: =ThisItem.'AZ-104'
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =175
+                        X: =284
+                        Y: =76
+                        ZIndex: =19
+
+                    Label1_7 As label:
+                        Height: =29
+                        OnSelect: =Select(Parent)
+                        Size: =15
+                        Text: ="PL-300"
+                        Width: =87
+                        X: =231
+                        Y: =71
+                        ZIndex: =20
+
+                    Subtitle2_8 As label:
+                        Height: =18
+                        OnSelect: =Select(Parent)
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =13
+                        Text: =ThisItem.'AZ-104'
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =175
+                        X: =284
+                        Y: =103
+                        ZIndex: =21
+
+                    Label1_8 As label:
+                        Height: =29
+                        OnSelect: =Select(Parent)
+                        Size: =15
+                        Text: ="PL-400"
+                        Width: =87
+                        X: =231
+                        Y: =98
+                        ZIndex: =22
+
+                    Subtitle2_9 As label:
+                        Height: =18
+                        OnSelect: =Select(Parent)
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =13
+                        Text: =ThisItem.'AZ-104'
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =175
+                        X: =284
+                        Y: =129
+                        ZIndex: =23
+
+                    Label1_9 As label:
+                        Height: =29
+                        OnSelect: =Select(Parent)
+                        Size: =15
+                        Text: ="PL-600"
+                        Width: =87
+                        X: =231
+                        Y: =124
+                        ZIndex: =24
+
+                    Subtitle2_10 As label:
+                        Height: =18
+                        OnSelect: =Select(Parent)
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =13
+                        Text: =ThisItem.'AZ-104'
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =175
+                        X: =284
+                        Y: =160
+                        ZIndex: =25
+
+                    Label1_10 As label:
+                        Height: =29
+                        OnSelect: =Select(Parent)
+                        Size: =15
+                        Text: ="PL-900"
+                        Width: =87
+                        X: =231
+                        Y: =155
+                        ZIndex: =26
 

@@ -18,6 +18,12 @@ Admin_Profile_Page As screen:
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
+        Visible: |-
+            =If(
+                Parent.Width > 800,
+                true,
+                false
+            )
         Width: =Parent.Width
         ZIndex: =18
 
@@ -358,6 +364,342 @@ Admin_Profile_Page As screen:
                             "profile.pptx"
                         );
                         Reset(Profile_Template_Upload_Card)
+                        /*
+                        
+                        ability_admin_update_profileform.Run(
+                            User().Email,
+                            User().Email,
+                            User().Email,
+                            First(Profile_Template_Upload_Card.Attachments).Name,
+                            First(Profile_Template_Upload_Card.Attachments).Value
+                        );
+                        
+                        */
+                        
+                        
+                        
+                    Size: =Parent.Width * 0.035
+                    Text: ="프로필양식 업데이트"
+                    Width: =Parent.Width * 0.5
+                    X: =Parent.Width * 0.25
+                    Y: =Parent.Height * 0.6
+                    ZIndex: =2
+
+    mAP_Main_Container As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Visible: |-
+            =If(
+                Parent.Width <=800,
+                true,
+                false
+            )
+        Width: =Parent.Width
+        ZIndex: =19
+
+        AP_Header_Container_1 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            FillPortions: =0
+            Height: =Parent.Height * 0.21
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =50
+            PaddingRight: =50
+            PaddingTop: =30
+            Width: =Parent.Width
+            ZIndex: =1
+
+            Admin_Profile_Back_1 As icon.BackArrow:
+                Color: =RGBA( 106, 170, 205, 1 )
+                Height: =Parent.Width * 0.08
+                Icon: =Icon.BackArrow
+                OnSelect: =Navigate(Admin_Page)
+                Width: =Parent.Width * 0.08
+                X: =Parent.Width * 0.01
+                Y: =20
+                ZIndex: =1
+
+            Admin_Profile_Title_1 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(102, 182, 227, 0.7)
+                Color: =RGBA(255, 255, 255, 1)
+                FillPortions: =1
+                FontWeight: =FontWeight.Bold
+                Height: =Parent.Height
+                Size: =Parent.Width * 0.035
+                Text: ="Admin Profile Page"
+                Width: =Parent.Width - Admin_Profile_Back_1.Width -  Admin_Profile_Home_1.Width
+                ZIndex: =2
+
+            Admin_Profile_Home_1 As icon.Home:
+                Color: =RGBA( 106, 170, 205, 1 )
+                Height: =Parent.Width * 0.08
+                Icon: =Icon.Home
+                OnSelect: =Navigate(Main_Page)
+                Width: =Parent.Width * 0.08
+                X: =Parent.Width * 0.9
+                Y: =40
+                ZIndex: =3
+
+        AP_Sub_Container_1 As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            Height: =Parent.Height - AP_Header_Container_1.Height
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            Width: =Parent.Width
+            ZIndex: =2
+
+            AP_Refresh_Container_1 As groupContainer.manualLayoutContainer:
+                Height: =Parent.Width * 0.056
+                Width: =Parent.Width * 0.056
+                X: =Parent.Width * 0.02
+                Y: =Parent.Height * 0.02
+                ZIndex: =1
+
+                Profile_Refresh_1 As icon.Reload:
+                    BorderColor: =RGBA(241, 244, 249, 1)
+                    Color: =RGBA(241, 244, 249, 1)
+                    Height: =Parent.Width
+                    Icon: =Icon.Reload
+                    OnSelect: =Refresh(ability_profile)
+                    Width: =Parent.Width
+                    ZIndex: =1
+
+            AP_Search_Container_1 As groupContainer.manualLayoutContainer:
+                Height: =Parent.Height * 0.06
+                Width: =Parent.Width * 0.178
+                X: =Parent.Width * 0.75
+                Y: =Parent.Height * 0.155
+                ZIndex: =2
+
+                Profile_Search_1 As text:
+                    BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                    BorderThickness: =5
+                    Default: =
+                    Height: =Parent.Height
+                    HintText: ="검색"
+                    Width: =Parent.Width
+                    ZIndex: =1
+
+            AP_Gallery_Container_1 As groupContainer.manualLayoutContainer:
+                Height: =Parent.Height - AP_Refresh_Container_1.Y - AP_Refresh_Container_1.Height
+                Width: =Parent.Width - AP_Down_Container_1.Width
+                Y: =
+                ZIndex: =4
+
+                "Gallery3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+                    DelayItemLoading: =true
+                    Fill: =RGBA(255, 255, 255, 0.6)
+                    Height: =423
+                    Items: =ability_profile
+                    Layout: =Layout.Vertical
+                    LoadingSpinner: =LoadingSpinner.Data
+                    TemplatePadding: =0
+                    TemplateSize: =Min(160, Self.Height - 60)
+                    X: =40
+                    Y: =34.66399999999999
+                    ZIndex: =1
+
+                    Title3 As label:
+                        Height: =Self.Size * 1.8
+                        OnSelect: =Select(Parent)
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =ThisItem.Name
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =104
+                        X: =38
+                        ZIndex: =2
+
+                    Subtitle4 As label:
+                        Height: =28
+                        OnSelect: =Select(Parent)
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =ThisItem.'Created On'
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =281
+                        X: =104
+                        Y: =41
+                        ZIndex: =3
+
+                    NextArrow2 As icon.ChevronRight:
+                        AccessibleLabel: =Self.Tooltip
+                        Height: =60
+                        Icon: =Icon.ChevronRight
+                        OnSelect: =Select(Parent)
+                        PaddingBottom: =10
+                        PaddingLeft: =10
+                        PaddingRight: =10
+                        PaddingTop: =10
+                        TabIndex: =0
+                        Tooltip: ="항목 세부 정보 보기"
+                        Width: =60
+                        X: =Parent.TemplateWidth - Self.Width - 5
+                        Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                        ZIndex: =4
+
+                    Separator4 As rectangle:
+                        Height: =1
+                        OnSelect: =Select(Parent)
+                        Width: =Parent.TemplateWidth
+                        Y: =Parent.TemplateHeight - 1
+                        ZIndex: =5
+
+                    Subtitle4_1 As label:
+                        Height: =28
+                        OnSelect: =Select(Parent)
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =ThisItem.Profile.FileName
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =281
+                        X: =104
+                        Y: =71
+                        ZIndex: =6
+
+                    Label2 As label:
+                        Height: =30
+                        OnSelect: =Select(Parent)
+                        Text: ="수정날짜"
+                        Width: =104
+                        Y: =41
+                        ZIndex: =7
+
+                    Label2_1 As label:
+                        Height: =30
+                        OnSelect: =Select(Parent)
+                        Text: ="프로필"
+                        Width: =104
+                        Y: =71
+                        ZIndex: =8
+
+                    Checkbox6_4 As checkbox:
+                        Default: =Checkbox10Value
+                        Height: =36
+                        OnSelect: |-
+                            =If(
+                                Checkbox6_4.Value = true,
+                                Collect(CheckboxCollection, Checkbox6_4.Text),
+                                Remove(CheckboxCollection, LookUp(CheckboxCollection, Value = Checkbox6_4.Text))
+                            )
+                        Size: =Parent.Width * 0.013
+                        Text: =ThisItem.'E-mail'
+                        Width: =38
+                        X: =
+                        ZIndex: =9
+
+                    Button13_3 As button:
+                        BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                        BorderThickness: =5
+                        Fill: =RGBA( 106, 170, 205, 1 )
+                        Height: =31
+                        OnSelect: =PPTDownload.Run(Gallery3.Selected.'E-mail')
+                        Size: =Parent.Width * 0.013
+                        Text: ="다운로드"
+                        Width: =124
+                        X: =125
+                        Y: =5
+                        ZIndex: =10
+
+            AP_Down_Container_1 As groupContainer.manualLayoutContainer:
+                Height: =Parent.Height * 0.32
+                Width: =Parent.Width * 0.3
+                X: =AP_Gallery_Container_1.Width
+                Y: =AP_Gallery_Container_1.Y
+                ZIndex: =5
+
+                AllDownload_Button_1 As button:
+                    BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                    BorderThickness: =5
+                    Fill: =RGBA( 106, 170, 205, 1 )
+                    Height: =Parent.Height*0.3
+                    OnSelect: =PPTALLDOWNLOAD.Run()
+                    Size: =Parent.Width * 0.037
+                    Text: |-
+                        ="전체 다운로드
+                        "
+                    Width: =Parent.Width * 0.81
+                    X: =Parent.Width * 0.1
+                    Y: =Parent.Height * 0.55
+                    ZIndex: =1
+
+                SelectDownload_Button_1 As button:
+                    BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                    BorderThickness: =5
+                    Fill: =RGBA( 106, 170, 205, 1 )
+                    Height: =Parent.Height*0.3
+                    OnSelect: |-
+                        =If(
+                            !IsBlank(ConcatBox.Text),
+                            PPTDownload.Run(Gallery3.Selected.'E-mail')
+                        )
+                    Size: =Parent.Width * 0.037
+                    Text: |-
+                        ="선택 다운로드
+                        "
+                    Width: =Parent.Width * 0.81
+                    X: =Parent.Width * 0.1
+                    Y: =Parent.Height * 0.12
+                    ZIndex: =2
+
+            AP_Update_Container_1 As groupContainer.manualLayoutContainer:
+                Height: =Parent.Height - AP_Down_Container_1.Height - AP_Refresh_Container_1.Height - AP_Refresh_Container_1.Y
+                Width: =AP_Down_Container_1.Width
+                X: =AP_Down_Container_1.X
+                Y: =Parent.Height - AP_Down_Container_1.Height
+                ZIndex: =6
+
+                Profile_Template_Upload_Card_1 As attachments:
+                    AddAttachmentText: ="파일 업로드"
+                    BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                    BorderThickness: =5
+                    Color: =RGBA(255, 255, 255, 1)
+                    DisplayMode: =
+                    Fill: =RGBA( 106, 170, 205, 0.5)
+                    Height: =101
+                    HoverColor: =RGBA( 112, 128, 144, 0.7 )
+                    IsInDataCard: =true
+                    Items: =
+                    MaxAttachments: =1
+                    MaxAttachmentSize: =100
+                    MaxAttachmentsText: =""
+                    NoAttachmentsText: ="업데이트할 프로필 양식을 등록해주세요."
+                    PaddingBottom: =5
+                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    PaddingRight: =5
+                    PaddingTop: =5
+                    Size: =Parent.Width * 0.025
+                    Tooltip: =
+                    Width: =Parent.Width * 0.8
+                    X: =Parent.Width * 0.1
+                    Y: =Parent.Height * 0.1
+                    ZIndex: =1
+
+                Profile_Template_Upload_1 As button:
+                    BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                    BorderThickness: =5
+                    Fill: =RGBA( 106, 170, 205, 1 )
+                    Height: =Parent.Height * 0.15
+                    OnSelect: |+
+                        =ability_admin_upload_profile.Run(
+                            User().Email,
+                            User().Email,
+                            User().Email,
+                            First(Profile_Template_Upload_Card_1.Attachments).Name,
+                            First(Profile_Template_Upload_Card_1.Attachments).Value,
+                            "profile.pptx"
+                        );
+                        Reset(Profile_Template_Upload_Card_1)
                         /*
                         
                         ability_admin_update_profileform.Run(
