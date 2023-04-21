@@ -655,7 +655,7 @@ Admin_Profile_Page As screen:
 
             AP_Update_Container_1 As groupContainer.manualLayoutContainer:
                 Height: =Parent.Height * 0.6
-                Width: =326
+                Width: =Parent.Width * 0.3
                 X: =AP_Gallery_Container_1.Width
                 Y: =Parent.Height - Self.Height
                 ZIndex: =6

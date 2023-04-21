@@ -9,12 +9,14 @@ Admin_License_Page As screen:
         Visible: |
             =
             
+            /*
             
             If(
                 Parent.Width > 800,
                 true,
                 false
             )
+            */
         Width: =Parent.Width
         ZIndex: =27
 
@@ -424,11 +426,14 @@ Admin_License_Page As screen:
         LayoutMode: =LayoutMode.Auto
         Visible: |
             =
+            /*
             If(
                 Parent.Width <=800,
                 true,
                 false
             )
+            */
+            true
         Width: =Parent.Width
         ZIndex: =28
 
@@ -577,7 +582,7 @@ Admin_License_Page As screen:
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =13
+                        Size: =Parent.Width * 0.009
                         Text: =ThisItem.'AZ-104'
                         VerticalAlign: =VerticalAlign.Top
                         Width: =175
@@ -597,7 +602,7 @@ Admin_License_Page As screen:
                         FontWeight: =FontWeight.Bold
                         Height: =Parent.Height * 0.06
                         OnSelect: =Select(Parent)
-                        Size: =15
+                        Size: =Parent.Width * 0.01
                         Text: ="AZ-104"
                         Width: =87
                         X: =Parent.Width * 0.24
@@ -612,7 +617,7 @@ Admin_License_Page As screen:
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =13
+                        Size: =Parent.Width * 0.009
                         Text: =ThisItem.'AZ-104'
                         VerticalAlign: =VerticalAlign.Top
                         Width: =175
@@ -625,7 +630,7 @@ Admin_License_Page As screen:
                         FontWeight: =FontWeight.Bold
                         Height: =Parent.Height * 0.06
                         OnSelect: =Select(Parent)
-                        Size: =15
+                        Size: =Parent.Width * 0.01
                         Text: ="AZ-305"
                         Width: =87
                         X: =Parent.Width * 0.24
@@ -640,7 +645,7 @@ Admin_License_Page As screen:
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =13
+                        Size: =Parent.Width * 0.009
                         Text: =ThisItem.'AZ-104'
                         VerticalAlign: =VerticalAlign.Top
                         Width: =175
@@ -653,7 +658,7 @@ Admin_License_Page As screen:
                         FontWeight: =FontWeight.Bold
                         Height: =Parent.Height * 0.06
                         OnSelect: =Select(Parent)
-                        Size: =15
+                        Size: =Parent.Width * 0.01
                         Text: ="MS-100"
                         Width: =87
                         X: =Parent.Width * 0.24
@@ -668,7 +673,7 @@ Admin_License_Page As screen:
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =13
+                        Size: =Parent.Width * 0.009
                         Text: =ThisItem.'AZ-104'
                         VerticalAlign: =VerticalAlign.Top
                         Width: =175
@@ -681,7 +686,7 @@ Admin_License_Page As screen:
                         FontWeight: =FontWeight.Bold
                         Height: =Parent.Height * 0.06
                         OnSelect: =Select(Parent)
-                        Size: =15
+                        Size: =Parent.Width * 0.01
                         Text: ="MS-101"
                         Width: =87
                         X: =Parent.Width * 0.24
@@ -696,7 +701,7 @@ Admin_License_Page As screen:
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =13
+                        Size: =Parent.Width * 0.009
                         Text: =ThisItem.'AZ-104'
                         VerticalAlign: =VerticalAlign.Top
                         Width: =175
@@ -709,7 +714,7 @@ Admin_License_Page As screen:
                         FontWeight: =FontWeight.Bold
                         Height: =Parent.Height * 0.06
                         OnSelect: =Select(Parent)
-                        Size: =15
+                        Size: =Parent.Width * 0.01
                         Text: ="MS-700"
                         Width: =87
                         X: =Parent.Width * 0.46
@@ -724,7 +729,7 @@ Admin_License_Page As screen:
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =13
+                        Size: =Parent.Width * 0.009
                         Text: =ThisItem.'AZ-104'
                         VerticalAlign: =VerticalAlign.Top
                         Width: =175
@@ -737,7 +742,7 @@ Admin_License_Page As screen:
                         FontWeight: =FontWeight.Bold
                         Height: =Parent.Height * 0.06
                         OnSelect: =Select(Parent)
-                        Size: =15
+                        Size: =Parent.Width * 0.01
                         Text: ="MS-900"
                         Width: =87
                         X: =Parent.Width * 0.46
@@ -752,7 +757,7 @@ Admin_License_Page As screen:
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =13
+                        Size: =Parent.Width * 0.009
                         Text: =ThisItem.'AZ-104'
                         VerticalAlign: =VerticalAlign.Top
                         Width: =175
@@ -765,7 +770,7 @@ Admin_License_Page As screen:
                         FontWeight: =FontWeight.Bold
                         Height: =Parent.Height * 0.06
                         OnSelect: =Select(Parent)
-                        Size: =15
+                        Size: =Parent.Width * 0.01
                         Text: ="PL-200"
                         Width: =87
                         X: =Parent.Width * 0.46
@@ -780,7 +785,7 @@ Admin_License_Page As screen:
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =13
+                        Size: =Parent.Width * 0.009
                         Text: =ThisItem.'AZ-104'
                         VerticalAlign: =VerticalAlign.Top
                         Width: =175
@@ -793,7 +798,7 @@ Admin_License_Page As screen:
                         FontWeight: =FontWeight.Bold
                         Height: =Parent.Height * 0.06
                         OnSelect: =Select(Parent)
-                        Size: =15
+                        Size: =Parent.Width * 0.01
                         Text: ="PL-300"
                         Width: =87
                         X: =Parent.Width * 0.46
@@ -808,7 +813,7 @@ Admin_License_Page As screen:
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =13
+                        Size: =Parent.Width * 0.009
                         Text: =ThisItem.'AZ-104'
                         VerticalAlign: =VerticalAlign.Top
                         Width: =175
@@ -821,7 +826,7 @@ Admin_License_Page As screen:
                         FontWeight: =FontWeight.Bold
                         Height: =Parent.Height * 0.06
                         OnSelect: =Select(Parent)
-                        Size: =15
+                        Size: =Parent.Width * 0.01
                         Text: ="PL-400"
                         Width: =87
                         X: =Parent.Width * 0.68
@@ -836,7 +841,7 @@ Admin_License_Page As screen:
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =13
+                        Size: =Parent.Width * 0.009
                         Text: =ThisItem.'AZ-104'
                         VerticalAlign: =VerticalAlign.Top
                         Width: =175
@@ -849,7 +854,7 @@ Admin_License_Page As screen:
                         FontWeight: =FontWeight.Bold
                         Height: =Parent.Height * 0.06
                         OnSelect: =Select(Parent)
-                        Size: =15
+                        Size: =Parent.Width * 0.01
                         Text: ="PL-600"
                         Width: =87
                         X: =Parent.Width * 0.68
@@ -864,7 +869,7 @@ Admin_License_Page As screen:
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =13
+                        Size: =Parent.Width * 0.009
                         Text: =ThisItem.'AZ-104'
                         VerticalAlign: =VerticalAlign.Top
                         Width: =175
@@ -877,7 +882,7 @@ Admin_License_Page As screen:
                         FontWeight: =FontWeight.Bold
                         Height: =Parent.Height * 0.06
                         OnSelect: =Select(Parent)
-                        Size: =15
+                        Size: =Parent.Width * 0.01
                         Text: ="PL-900"
                         Width: =87
                         X: =Parent.Width * 0.68
