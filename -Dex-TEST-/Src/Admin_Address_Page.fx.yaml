@@ -76,7 +76,7 @@ Admin_Address_Page As screen:
             AA_Gallery_Container As groupContainer.manualLayoutContainer:
                 Height: =Parent.Height - AA_Down_Container.Height - AA_Gallery_Title_Container.Height
                 Width: =Parent.Width
-                Y: =134
+                Y: =AA_Gallery_Title_Container.Y + AA_Gallery_Title_Container.Height
                 ZIndex: =1
 
                 Admin_Address_Gallery As gallery.galleryVertical:
