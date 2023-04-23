@@ -282,7 +282,7 @@ Admin_License_Page As screen:
                     DelayItemLoading: =true
                     Fill: =RGBA(255, 255, 255, 0.9)
                     Height: =Parent.Height
-                    Items: =ability_license
+                    Items: =Search(ability_license,License_Search.Text,"cr778_name")
                     Layout: =Layout.Vertical
                     LoadingSpinner: =LoadingSpinner.Data
                     TemplateSize: |-

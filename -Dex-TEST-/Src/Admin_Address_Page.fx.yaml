@@ -83,7 +83,11 @@ Admin_Address_Page As screen:
                     DelayItemLoading: =true
                     Fill: =RGBA(255, 255, 255, 0.9)
                     Height: =Parent.Height
-                    Items: =ability_address
+                    Items: |
+                        =Search(ability_address,Address_Search.Text,"cr778_name")
+                        
+                        
+                        //ability_address
                     Layout: =Layout.Vertical
                     LoadingSpinner: =LoadingSpinner.Data
                     TemplateSize: |-
