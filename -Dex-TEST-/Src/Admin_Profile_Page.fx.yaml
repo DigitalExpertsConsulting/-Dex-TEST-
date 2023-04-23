@@ -308,7 +308,7 @@ Admin_Profile_Page As screen:
                     OnSelect: |-
                         =If(
                             !IsBlank(ConcatBox.Text),
-                            PPTDownload.Run(Admin_Profile_Gallery.Selected.'E-mail')
+                            PPTDownload.Run(ConcatBox.Text)
                         )
                     Size: =Parent.Width * 0.037
                     Text: |-
