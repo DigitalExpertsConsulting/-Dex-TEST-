@@ -1428,18 +1428,18 @@ User_Skill_Page As screen:
             ZIndex: =2
 
             Skill_Container_1 As groupContainer.manualLayoutContainer:
-                Height: =Parent.Height * 0.76
-                Width: =Parent.Width * 0.67
-                X: =Parent.Width * 0.2
-                Y: =Parent.Height * 0.08
+                Height: =Parent.Height * 1.165
+                Width: =Parent.Width
+                Y: =Parent.Height * 0.05
                 ZIndex: =1
 
                 Skill_Input_1 As form:
                     DataSource: =ability_skill
                     DefaultMode: =FormMode.New
-                    Fill: =RGBA(255, 255, 255, 0.4)
-                    Height: =Parent.Height
+                    Fill: =RGBA(0, 0, 0, 0.3)
+                    Height: =Parent.Height*0.6
                     Width: =Parent.Width
+                    Y: =Parent.Y *0.1
                     ZIndex: =1
 
                     "'365 Solution_DataCard_1' As typedDataCard.comboBoxOptionSetSingleEditCard":
