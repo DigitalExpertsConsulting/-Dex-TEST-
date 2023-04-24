@@ -4207,7 +4207,7 @@ User_License_Page As screen:
                         "'AZ-104_DatePicker_1' As datepicker":
                             DisplayMode: =If('AZ-104_Toggle_1'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
                             Height: =Parent.Height * 0.22
-                            Size: =Parent.Width * 0.01
+                            Size: =Parent.Width * 0.5
                             Width: =Parent.Width * 0.5
                             X: =Parent.Width * 0.4
                             Y: =72
