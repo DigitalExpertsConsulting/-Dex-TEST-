@@ -1,5 +1,8 @@
 Main_Page As screen:
-    BackgroundImage: =ere
+    BackgroundImage: |-
+        =If(Self.Width > 800,
+            ere
+        )
     ImagePosition: =ImagePosition.Stretch
 
     Main_Main_Container As groupContainer.verticalAutoLayoutContainer:
