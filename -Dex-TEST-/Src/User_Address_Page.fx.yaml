@@ -1,11 +1,22 @@
 User_Address_Page As screen:
-    BackgroundImage: =ere
+    BackgroundImage: |-
+        =If(
+            Self.Width > 800,
+            ere,
+            '2'
+        )
     ImagePosition: =ImagePosition.Stretch
 
     Address_Main_Container As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
+        Visible: |-
+            =If(
+                Parent.Width > 800,
+                true,
+                false
+            )
         Width: =Parent.Width
         ZIndex: =6
 
@@ -578,6 +589,593 @@ User_Address_Page As screen:
                             );
                             NewForm(Address_Input);
                             ResetForm(Address_Input);
+                        )
+                    Width: =Parent.Width
+                    ZIndex: =1
+
+    mAddress_Main_Container As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Visible: |-
+            =If(
+                Parent.Width <= 800,
+                true,
+                false
+            )
+        Width: =Parent.Width
+        ZIndex: =7
+
+        Address_Header_Container_1 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            FillPortions: =0
+            Height: =Parent.Height * 0.21
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =5
+            PaddingRight: =5
+            Width: =Parent.Width
+            ZIndex: =1
+
+            Address_Back_1 As icon.BackArrow:
+                Color: =RGBA( 106, 170, 205, 1 )
+                Height: =Parent.Width * 0.08
+                Icon: =Icon.BackArrow
+                OnSelect: =Navigate(User_Page)
+                Width: =Parent.Width *0.15
+                X: =Parent.Width * 0.1
+                Y: =Parent.Width * 0.05
+                ZIndex: =1
+
+            Address_Title_1 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(102, 182, 227, 0.7)
+                Color: =RGBA(255, 255, 255, 1)
+                FillPortions: =1
+                FontWeight: =FontWeight.Semibold
+                Height: =Parent.Height
+                Size: = (Parent.Width * 0.07)
+                Text: ="Address Page"
+                Width: =Parent.Width - Address_Back_1.Width*0.5 - Address_Home_1.Width
+                ZIndex: =2
+
+            Address_Home_1 As icon.Home:
+                Color: =RGBA( 106, 170, 205, 1 )
+                Height: =Parent.Width * 0.08
+                Icon: =Icon.Home
+                OnSelect: =Navigate(Main_Page)
+                Width: =Parent.Width * 0.08
+                X: =Parent.Width * 0.9
+                Y: =40
+                ZIndex: =3
+
+        Address_Sub_Container_1 As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            Height: =Parent.Height - Address_Header_Container_1.Height
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            Width: =Parent.Width
+            Y: =Address_Header_Container_1.Height
+            ZIndex: =2
+
+            Address_Container_1 As groupContainer.manualLayoutContainer:
+                Height: =Parent.Height * 0.85
+                Width: =Parent.Width * 0.7
+                X: =Parent.Width * 0.15
+                Y: =Parent.Height * 0.05
+                ZIndex: =1
+
+                Address_Input_1 As form:
+                    BorderColor: =RGBA(204, 231, 246, 1)
+                    DataSource: =ability_address
+                    DefaultMode: =FormMode.New
+                    Fill: =RGBA(255, 255, 255, 0.4)
+                    Height: =Parent.Height
+                    Width: =Parent.Width
+                    ZIndex: =1
+
+                    Address_DataCard_1 As typedDataCard.textualEditCard:
+                        BorderStyle: =BorderStyle.Solid
+                        BorderThickness: =0
+                        DataField: ="cr778_address"
+                        Default: =ThisItem.Address
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@ability_address],DataSourceInfo.DisplayName,"cr778_address")
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =Parent.Height* 0.25
+                        MaxLength: =DataSourceInfo([@ability_address], DataSourceInfo.MaxLength, "cr778_address")
+                        Required: =false
+                        Update: =Address_DataCardValue_1.Text
+                        Width: =Parent.Width
+                        X: =0
+                        Y: =0
+                        ZIndex: =1
+
+                        Address_DataCardKey_1 As label:
+                            AutoHeight: =true
+                            Color: =RGBA(255, 255, 255, 1)
+                            FontWeight: =FontWeight.Bold
+                            Height: =Parent.Height * 0.15
+                            Size: =Parent.Width * 0.021
+                            Text: =Parent.DisplayName
+                            Width: =Parent.Width * 0.88
+                            Wrap: =false
+                            X: =Parent.Width * 0.032
+                            Y: =Parent.Height * 0.08
+                            ZIndex: =1
+
+                        Address_DataCardValue_1 As text:
+                            BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                            Color: =RGBA(255, 255, 255, 1)
+                            Default: =Parent.Default
+                            DelayOutput: =true
+                            DisplayMode: =Parent.DisplayMode
+                            Fill: =RGBA( 106, 170, 205, 1)
+                            Height: =Parent.Height * 0.4
+                            HintText: ="주소를 입력하세요."
+                            HoverBorderColor: =RGBA(102, 182, 227, 0.7)
+                            HoverColor: =RGBA(255, 255, 255, 1)
+                            HoverFill: =RGBA(102, 182, 227, 0.7)
+                            MaxLength: =Parent.MaxLength
+                            PaddingLeft: =5
+                            RadiusBottomLeft: =0
+                            RadiusBottomRight: =0
+                            RadiusTopLeft: =0
+                            RadiusTopRight: =0
+                            Size: =Parent.Width * 0.017
+                            Tooltip: =Parent.DisplayName
+                            Width: =Parent.Width * 0.88
+                            X: =Parent.Width * 0.03
+                            Y: =(Address_DataCardKey_1.Y) + (Address_DataCardKey_1.Height) + 5
+                            ZIndex: =2
+
+                        Address_ErrorMessage_1 As label:
+                            AutoHeight: =true
+                            Height: =10
+                            Live: =Live.Assertive
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Text: =Parent.Error
+                            Visible: =Parent.DisplayMode=DisplayMode.Edit
+                            Width: =Parent.Width - 60
+                            X: =30
+                            Y: =Address_DataCardValue_1.Y + Address_DataCardValue_1.Height
+                            ZIndex: =3
+
+                        Address_StarVisible_1 As label:
+                            Align: =Align.Center
+                            Height: =Address_DataCardKey_1.Height
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            Wrap: =false
+                            Y: =Address_DataCardKey_1.Y
+                            ZIndex: =4
+
+                    Zipcode_DataCard_1 As typedDataCard.textualEditCard:
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="cr778_zipcode"
+                        Default: =ThisItem.Zipcode
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@ability_address],DataSourceInfo.DisplayName,"cr778_zipcode")
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =Parent.Height* 0.25
+                        MaxLength: =DataSourceInfo([@ability_address], DataSourceInfo.MaxLength, "cr778_zipcode")
+                        Required: =false
+                        Update: =Zipcode_DataCardValue_1.Text
+                        Width: =Parent.Width
+                        X: =0
+                        Y: =1
+                        ZIndex: =1
+
+                        Zipcode_DataCardKey_1 As label:
+                            AutoHeight: =true
+                            Color: =RGBA(255, 255, 255, 1)
+                            FontWeight: =FontWeight.Bold
+                            Height: =Parent.Height * 0.15
+                            Size: =Parent.Width * 0.021
+                            Text: =Parent.DisplayName
+                            Width: =Parent.Width * 0.88
+                            Wrap: =false
+                            X: =Parent.Width * 0.032
+                            Y: |-
+                                =
+                                Parent.Height * 0.08
+                            ZIndex: =1
+
+                        Zipcode_ErrorMessage_1 As label:
+                            AutoHeight: =true
+                            Height: =10
+                            Live: =Live.Assertive
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Text: =Parent.Error
+                            Visible: =Parent.DisplayMode=DisplayMode.Edit
+                            Width: =Parent.Width - 60
+                            X: =30
+                            Y: =Zipcode_DataCardValue_1.Y + Zipcode_DataCardValue_1.Height
+                            ZIndex: =3
+
+                        Zipcode_StarVisible_1 As label:
+                            Align: =Align.Center
+                            Height: =Zipcode_DataCardKey_1.Height
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            Wrap: =false
+                            Y: =Zipcode_DataCardKey_1.Y
+                            ZIndex: =4
+
+                        Zipcode_DataCardValue_1 As text:
+                            BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                            Color: =RGBA(255, 255, 255, 1)
+                            Default: =Parent.Default
+                            DelayOutput: =true
+                            DisplayMode: =Parent.DisplayMode
+                            Fill: =RGBA( 106, 170, 205, 1)
+                            Height: =Parent.Height * 0.4
+                            HintText: ="우편번호를 입력하세요."
+                            HoverBorderColor: =RGBA(102, 182, 227, 0.7)
+                            HoverColor: =RGBA(255, 255, 255, 1)
+                            HoverFill: =RGBA(102, 182, 227, 0.7)
+                            MaxLength: =Parent.MaxLength
+                            PaddingLeft: =5
+                            RadiusBottomLeft: =0
+                            RadiusBottomRight: =0
+                            RadiusTopLeft: =0
+                            RadiusTopRight: =0
+                            Size: =Parent.Width * 0.017
+                            Tooltip: =Parent.DisplayName
+                            Width: =Parent.Width * 0.88
+                            X: =Parent.Width * 0.032
+                            Y: =Zipcode_DataCardKey_1.Y + Zipcode_DataCardKey_1.Height + 5
+                            ZIndex: =5
+
+                    "'Address_E-mail_DataCard_1' As typedDataCard.textualEditCard":
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="cr778_email"
+                        Default: =ThisItem.'E-mail'
+                        DisplayMode: =DisplayMode.View
+                        DisplayName: =DataSourceInfo([@ability_address],DataSourceInfo.DisplayName,"cr778_email")
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =50
+                        MaxLength: =DataSourceInfo([@ability_address], DataSourceInfo.MaxLength, "cr778_email")
+                        Required: =false
+                        Update: ='Address_E-mail_DataCardValue_1'.Text
+                        Visible: =false
+                        Width: =644
+                        X: =0
+                        Y: =2
+                        ZIndex: =1
+
+                        "'Address_E-mail_DataCardKey_1' As label":
+                            AutoHeight: =true
+                            Height: =34
+                            Text: =Parent.DisplayName
+                            Width: =Parent.Width - 60
+                            Wrap: =false
+                            X: =30
+                            Y: =10
+                            ZIndex: =1
+
+                        "'Address_E-mail_DataCardValue_1' As text":
+                            BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                            Default: =varUser.Email
+                            DelayOutput: =true
+                            DisplayMode: =Parent.DisplayMode
+                            MaxLength: =Parent.MaxLength
+                            PaddingLeft: =5
+                            RadiusBottomLeft: =0
+                            RadiusBottomRight: =0
+                            RadiusTopLeft: =0
+                            RadiusTopRight: =0
+                            Tooltip: =Parent.DisplayName
+                            Width: =Parent.Width - 60
+                            X: =30
+                            Y: ='Address_E-mail_DataCardKey_1'.Y + 'Address_E-mail_DataCardKey_1'.Height + 5
+                            ZIndex: =2
+
+                        "'Address_E-mail_ErrorMessage_1' As label":
+                            AutoHeight: =true
+                            Height: =10
+                            Live: =Live.Assertive
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Text: =Parent.Error
+                            Visible: =Parent.DisplayMode=DisplayMode.Edit
+                            Width: =Parent.Width - 60
+                            X: =30
+                            Y: ='Address_E-mail_DataCardValue_1'.Y + 'Address_E-mail_DataCardValue_1'.Height
+                            ZIndex: =3
+
+                        "'Address_E-mail_StarVisible_1' As label":
+                            Align: =Align.Center
+                            Height: ='Address_E-mail_DataCardKey_1'.Height
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            Wrap: =false
+                            Y: ='Address_E-mail_DataCardKey_1'.Y
+                            ZIndex: =4
+
+                    Gift_Address_DataCard_1 As typedDataCard.textualEditCard:
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="cr778_gift_address"
+                        Default: =ThisItem.Gift_Address
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@ability_address],DataSourceInfo.DisplayName,"cr778_gift_address")
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =Parent.Height* 0.25
+                        MaxLength: =DataSourceInfo([@ability_address], DataSourceInfo.MaxLength, "cr778_gift_address")
+                        Required: =false
+                        Update: =Gift_Address_DataCardValue_1.Text
+                        Width: =Parent.Width
+                        X: =0
+                        Y: =3
+                        ZIndex: =1
+
+                        Gift_Address_DataCardKey_1 As label:
+                            AutoHeight: =true
+                            Color: =RGBA(255, 255, 255, 1)
+                            FontWeight: =FontWeight.Bold
+                            Height: =Parent.Height * 0.15
+                            Size: =Parent.Width * 0.021
+                            Text: ="Gift Address"
+                            Width: =Parent.Width * 0.88
+                            Wrap: =false
+                            X: =Parent.Width * 0.032
+                            Y: =Parent.Height * 0.08
+                            ZIndex: =1
+
+                        Gift_Address_DataCardValue_1 As text:
+                            BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                            Color: =RGBA(255, 255, 255, 1)
+                            Default: =Parent.Default
+                            DelayOutput: =true
+                            DisplayMode: =Parent.DisplayMode
+                            Fill: =RGBA( 106, 170, 205, 1)
+                            Height: =Parent.Height * 0.4
+                            HintText: ="선물 받을 주소를 입력하세요."
+                            HoverBorderColor: =RGBA(102, 182, 227, 0.7)
+                            HoverFill: =RGBA(102, 182, 227, 0.7)
+                            MaxLength: =Parent.MaxLength
+                            PaddingLeft: =5
+                            RadiusBottomLeft: =0
+                            RadiusBottomRight: =0
+                            RadiusTopLeft: =0
+                            RadiusTopRight: =0
+                            Size: =Parent.Width * 0.017
+                            Tooltip: =Parent.DisplayName
+                            Width: =Parent.Width * 0.88
+                            X: =Parent.Width * 0.032
+                            Y: =Gift_Address_DataCardKey_1.Y + Gift_Address_DataCardKey_1.Height + 5
+                            ZIndex: =2
+
+                        ErrorMessage1_1 As label:
+                            AutoHeight: =true
+                            Height: =10
+                            Live: =Live.Assertive
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Text: =Parent.Error
+                            Visible: =Parent.DisplayMode=DisplayMode.Edit
+                            Width: =Parent.Width - 60
+                            X: =30
+                            Y: =Gift_Address_DataCardValue_1.Y + Gift_Address_DataCardValue_1.Height
+                            ZIndex: =3
+
+                        StarVisible1_1 As label:
+                            Align: =Align.Center
+                            Height: =Gift_Address_DataCardKey_1.Height
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            Wrap: =false
+                            Y: =Gift_Address_DataCardKey_1.Y
+                            ZIndex: =4
+
+                    Gift_Zipcode_DataCard_1 As typedDataCard.textualEditCard:
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="cr778_gift_zipcode"
+                        Default: =ThisItem.Gift_Zipcode
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@ability_address],DataSourceInfo.DisplayName,"cr778_gift_zipcode")
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =Parent.Height* 0.25
+                        MaxLength: =DataSourceInfo([@ability_address], DataSourceInfo.MaxLength, "cr778_gift_zipcode")
+                        Required: =false
+                        Update: =Gift_Zipcode_DataCardValue_1.Text
+                        Width: =Parent.Width
+                        X: =0
+                        Y: =4
+                        ZIndex: =1
+
+                        Gift_Zipcode_DataCardKey_1 As label:
+                            AutoHeight: =true
+                            Color: =RGBA(255, 255, 255, 1)
+                            FontWeight: =FontWeight.Bold
+                            Height: =Parent.Height * 0.15
+                            Size: =Parent.Width * 0.021
+                            Text: ="Gift Zipcode"
+                            Width: =Parent.Width * 0.88
+                            Wrap: =false
+                            X: =Parent.Width * 0.032
+                            Y: =Parent.Height * 0.08
+                            ZIndex: =1
+
+                        Gift_Zipcode_DataCardValue_1 As text:
+                            BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                            Color: =RGBA(255, 255, 255, 1)
+                            Default: =Parent.Default
+                            DelayOutput: =true
+                            DisplayMode: =Parent.DisplayMode
+                            Fill: =RGBA( 106, 170, 205, 1)
+                            Height: =Parent.Height * 0.4
+                            HintText: ="선물 배송지의 우편번호를 입력하세요."
+                            HoverBorderColor: =RGBA(102, 182, 227, 0.7)
+                            HoverFill: =RGBA(102, 182, 227, 0.7)
+                            MaxLength: =Parent.MaxLength
+                            PaddingLeft: =5
+                            RadiusBottomLeft: =0
+                            RadiusBottomRight: =0
+                            RadiusTopLeft: =0
+                            RadiusTopRight: =0
+                            Size: =Parent.Width * 0.017
+                            Tooltip: =Parent.DisplayName
+                            Width: =Parent.Width * 0.88
+                            X: =Parent.Width * 0.032
+                            Y: =Gift_Zipcode_DataCardKey_1.Y + Gift_Zipcode_DataCardKey_1.Height + 5
+                            ZIndex: =2
+
+                        ErrorMessage5_1 As label:
+                            AutoHeight: =true
+                            Height: =10
+                            Live: =Live.Assertive
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Text: =Parent.Error
+                            Visible: =Parent.DisplayMode=DisplayMode.Edit
+                            Width: =Parent.Width - 60
+                            X: =30
+                            Y: =Gift_Zipcode_DataCardValue_1.Y + Gift_Zipcode_DataCardValue_1.Height
+                            ZIndex: =3
+
+                        StarVisible5_1 As label:
+                            Align: =Align.Center
+                            Height: =Gift_Zipcode_DataCardKey_1.Height
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            Wrap: =false
+                            Y: =Gift_Zipcode_DataCardKey_1.Y
+                            ZIndex: =4
+
+                    Address_Name_DataCard_1 As typedDataCard.textualEditCard:
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="cr778_name"
+                        Default: =ThisItem.Name
+                        DisplayMode: =DisplayMode.Disabled
+                        DisplayName: =DataSourceInfo([@ability_address],DataSourceInfo.DisplayName,"cr778_name")
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =182
+                        MaxLength: =DataSourceInfo([@ability_address], DataSourceInfo.MaxLength, "cr778_name")
+                        Required: =true
+                        Update: =Address_Name_DataCardValue_1.Text
+                        Visible: =false
+                        Width: =Parent.Width
+                        X: =1
+                        Y: =2
+                        ZIndex: =7
+
+                        Address_Name_DataCardKey_1 As label:
+                            AutoHeight: =true
+                            Height: =34
+                            Size: =0
+                            Text: =Parent.DisplayName
+                            Width: =Parent.Width * 0.88
+                            Wrap: =false
+                            X: =Parent.Width * 0.03
+                            Y: =15
+                            ZIndex: =1
+
+                        Address_Name_DataCardValue_1 As text:
+                            BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                            Default: |-
+                                =With(
+                                    { wName: Split(User().FullName, " ") },
+                                    Last(wName).Value & First(wName).Value
+                                )
+                            DelayOutput: =true
+                            DisplayMode: =Parent.DisplayMode
+                            MaxLength: =Parent.MaxLength
+                            PaddingLeft: =5
+                            RadiusBottomLeft: =0
+                            RadiusBottomRight: =0
+                            RadiusTopLeft: =0
+                            RadiusTopRight: =0
+                            Size: =Parent.Width * 0.025
+                            Tooltip: =Parent.DisplayName
+                            Width: =Parent.Width * 0.88
+                            X: =Parent.Width * 0.03
+                            Y: =Address_Name_DataCardKey_1.Y + Address_Name_DataCardKey_1.Height + 5
+                            ZIndex: =2
+
+                        Address_Name_ErrorMessage_1 As label:
+                            AutoHeight: =true
+                            Height: =10
+                            Live: =Live.Assertive
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Text: =Parent.Error
+                            Visible: =Parent.DisplayMode=DisplayMode.Edit
+                            Width: =Parent.Width - 60
+                            X: =30
+                            Y: =Address_Name_DataCardValue_1.Y + Address_Name_DataCardValue_1.Height
+                            ZIndex: =3
+
+                        Address_Name_StarVisible_1 As label:
+                            Align: =Align.Center
+                            Height: =Address_Name_DataCardKey_1.Height
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            Wrap: =false
+                            Y: =Address_Name_DataCardKey_1.Y
+                            ZIndex: =4
+
+            Address_Send_Container_1 As groupContainer.manualLayoutContainer:
+                Height: =Parent.Height * 0.15
+                Width: =Parent.Width * 0.1
+                X: =Parent.Width * 0.88
+                Y: =Parent.Height * 0.75
+                ZIndex: =2
+
+                Address_Send_1 As icon.Send:
+                    Color: =RGBA( 106, 170, 205, 1 )
+                    Height: =Parent.Height
+                    Icon: =Icon.Send
+                    OnSelect: |-
+                        =If(
+                            IsEmpty(
+                                Search(
+                                    ability_address,
+                                    varUser.Email,
+                                    "cr778_email"
+                                )
+                            ),
+                            SubmitForm(Address_Input_1);
+                            NewForm(Address_Input_1);
+                            ResetForm(Address_Input_1);
+                            ,
+                            Patch(
+                                ability_address,
+                                LookUp(
+                                    ability_address,
+                                    'E-mail' = 'Address_E-mail_DataCard_1'.Update
+                                ),
+                                {
+                                    Address: Address_DataCardValue_1.Text,
+                                    Zipcode: Zipcode_DataCardValue_1.Text,
+                                    Gift_Address: Gift_Address_DataCardValue_1.Text,
+                                    Gift_Zipcode: Gift_Zipcode_DataCardValue_1.Text
+                                }
+                            );
+                            NewForm(Address_Input_1);
+                            ResetForm(Address_Input_1);
                         )
                     Width: =Parent.Width
                     ZIndex: =1

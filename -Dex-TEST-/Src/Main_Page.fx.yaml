@@ -1,7 +1,9 @@
 Main_Page As screen:
     BackgroundImage: |-
-        =If(Self.Width > 800,
-            ere
+        =If(
+            Self.Width > 800,
+            ere,
+            '2'
         )
     ImagePosition: =ImagePosition.Stretch
 
@@ -124,7 +126,7 @@ Main_Page As screen:
                 Text: ="User"
                 Width: =Parent.Width * 0.6
                 X: =Parent.Width * 0.2
-                Y: =Parent.Height * 0.3
+                Y: =Parent.Height * 0.13
                 ZIndex: =1
 
             MainPage_Admin_Button_1 As button:
@@ -140,6 +142,6 @@ Main_Page As screen:
                 Text: ="Admin"
                 Width: =Parent.Width * 0.6
                 X: =Parent.Width * 0.2
-                Y: =Parent.Height * 0.57
+                Y: =Parent.Height * 0.35
                 ZIndex: =2
 

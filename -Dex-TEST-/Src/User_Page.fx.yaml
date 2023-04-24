@@ -1,5 +1,10 @@
 User_Page As screen:
-    BackgroundImage: =ere
+    BackgroundImage: |-
+        =If(
+            Self.Width > 800,
+            ere,
+            '2'
+        )
     ImagePosition: =ImagePosition.Stretch
 
     User_Main_Container As groupContainer.verticalAutoLayoutContainer:
@@ -171,7 +176,7 @@ User_Page As screen:
                 FillPortions: =1
                 FontWeight: =FontWeight.Bold
                 Height: =186
-                PaddingRight: =10
+                PaddingRight: =30
                 Size: = (Parent.Width * 0.09)
                 Text: ="User Page"
                 Width: =Parent.Width - UserPage_Back_1.Width

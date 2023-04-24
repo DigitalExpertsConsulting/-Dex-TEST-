@@ -1,5 +1,10 @@
 Admin_PWD_Page As screen:
-    BackgroundImage: =ere
+    BackgroundImage: |-
+        =If(
+            Self.Width > 800,
+            ere,
+            '2'
+        )
     ImagePosition: =ImagePosition.Stretch
 
     PWD_Main_Container As groupContainer.verticalAutoLayoutContainer:
@@ -190,7 +195,7 @@ Admin_PWD_Page As screen:
                 Size: =Parent.Width * 0.015
                 Width: =Parent.Width * 0.7
                 X: =Parent.Width * 0.15
-                Y: =Parent.Height * 0.27
+                Y: =Parent.Height * 0.2
                 ZIndex: =1
 
             PW_C_Button_1 As button:
@@ -209,7 +214,7 @@ Admin_PWD_Page As screen:
                 Text: ="취소"
                 Width: =Parent.Width * 0.26
                 X: =PW_TextInput_1.X + PW_TextInput_1.Width - Self.Width
-                Y: =Parent.Height * 0.43
+                Y: =Parent.Height * 0.36
                 ZIndex: =2
 
             PW_S_Button_1 As button:
@@ -235,6 +240,6 @@ Admin_PWD_Page As screen:
                 Text: ="확인"
                 Width: =Parent.Width * 0.26
                 X: =PW_TextInput_1.X *2
-                Y: =Parent.Height * 0.43
+                Y: =Parent.Height * 0.36
                 ZIndex: =3
 
