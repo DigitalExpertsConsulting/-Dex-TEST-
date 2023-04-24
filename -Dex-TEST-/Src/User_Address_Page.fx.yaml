@@ -1145,7 +1145,8 @@ User_Address_Page As screen:
                 ZIndex: =2
 
                 Address_Send_Button1 As button:
-                    Color: =RGBA( 106, 170, 205, 1 )
+                    Color: =RGBA( 255, 255, 255, 1 )
+                    Fill: =RGBA( 106, 170, 205, 1 )
                     Height: =Parent.Height
                     OnSelect: |-
                         =If(
@@ -1180,7 +1181,7 @@ User_Address_Page As screen:
                     PaddingLeft: =
                     PaddingRight: =
                     PaddingTop: =
-                    Text: ="버튼"
+                    Text: ="Send"
                     Width: =Parent.Width *0.9
                     X: =
                     Y: =
