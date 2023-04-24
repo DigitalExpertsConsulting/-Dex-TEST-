@@ -621,7 +621,7 @@ User_Address_Page As screen:
 
             Address_Back_1 As icon.BackArrow:
                 Color: =RGBA( 106, 170, 205, 1 )
-                Height: =Parent.Width * 0.08
+                Height: =Parent.Width * 0.3
                 Icon: =Icon.BackArrow
                 OnSelect: =Navigate(User_Page)
                 Width: =Parent.Width *0.15
@@ -643,10 +643,10 @@ User_Address_Page As screen:
 
             Address_Home_1 As icon.Home:
                 Color: =RGBA( 106, 170, 205, 1 )
-                Height: =Parent.Width * 0.08
+                Height: =Parent.Width * 0.3
                 Icon: =Icon.Home
                 OnSelect: =Navigate(Main_Page)
-                Width: =Parent.Width * 0.08
+                Width: =Parent.Width * 0.15
                 X: =Parent.Width * 0.9
                 Y: =40
                 ZIndex: =3
@@ -661,9 +661,8 @@ User_Address_Page As screen:
             ZIndex: =2
 
             Address_Container_1 As groupContainer.manualLayoutContainer:
-                Height: =Parent.Height * 0.85
-                Width: =Parent.Width * 0.7
-                X: =Parent.Width * 0.15
+                Height: =Parent.Height * 1.165
+                Width: =Parent.Width
                 Y: =Parent.Height * 0.05
                 ZIndex: =1
 
@@ -671,9 +670,10 @@ User_Address_Page As screen:
                     BorderColor: =RGBA(204, 231, 246, 1)
                     DataSource: =ability_address
                     DefaultMode: =FormMode.New
-                    Fill: =RGBA(255, 255, 255, 0.4)
-                    Height: =Parent.Height
+                    Fill: =RGBA(0, 0, 0, 0.3)
+                    Height: =Parent.Height*0.6
                     Width: =Parent.Width
+                    Y: =Parent.Y *0.1
                     ZIndex: =1
 
                     Address_DataCard_1 As typedDataCard.textualEditCard:
@@ -1139,9 +1139,9 @@ User_Address_Page As screen:
 
             Address_Send_Container_1 As groupContainer.manualLayoutContainer:
                 Height: =Parent.Height * 0.15
-                Width: =Parent.Width * 0.1
-                X: =Parent.Width * 0.88
-                Y: =Parent.Height * 0.75
+                Width: =Parent.Width * 0.5
+                X: =Parent.Width * 0.43
+                Y: =Parent.Height * 0.7
                 ZIndex: =2
 
                 Address_Send_1 As icon.Send:
@@ -1179,4 +1179,42 @@ User_Address_Page As screen:
                         )
                     Width: =Parent.Width
                     ZIndex: =1
+
+                Button1 As button:
+                    Color: =RGBA( 106, 170, 205, 1 )
+                    Height: =Parent.Height * 0.5
+                    OnSelect: |-
+                        =If(
+                            IsEmpty(
+                                Search(
+                                    ability_address,
+                                    varUser.Email,
+                                    "cr778_email"
+                                )
+                            ),
+                            SubmitForm(Address_Input_1);
+                            NewForm(Address_Input_1);
+                            ResetForm(Address_Input_1);
+                            ,
+                            Patch(
+                                ability_address,
+                                LookUp(
+                                    ability_address,
+                                    'E-mail' = 'Address_E-mail_DataCard_1'.Update
+                                ),
+                                {
+                                    Address: Address_DataCardValue_1.Text,
+                                    Zipcode: Zipcode_DataCardValue_1.Text,
+                                    Gift_Address: Gift_Address_DataCardValue_1.Text,
+                                    Gift_Zipcode: Gift_Zipcode_DataCardValue_1.Text
+                                }
+                            );
+                            NewForm(Address_Input_1);
+                            ResetForm(Address_Input_1);
+                        )
+                    Text: ="버튼"
+                    Width: =Parent.Width *0.5
+                    X: =
+                    Y: =40
+                    ZIndex: =2
 
