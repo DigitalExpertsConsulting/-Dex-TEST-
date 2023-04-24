@@ -1476,7 +1476,7 @@ User_Skill_Page As screen:
                                 =[Parent.Default]
                             DisplayFields: =["Value"]
                             DisplayMode: =Parent.DisplayMode
-                            Height: =Parent.Height * 0.7
+                            Height: =Parent.Height * 0.6
                             IsSearchable: =false
                             Items: =Choices('365 Solution_SkillLevel')
                             NoSelectionText: ="선택"
@@ -1527,10 +1527,11 @@ User_Skill_Page As screen:
                         Update: ='AI Builder_DataCardValue_1'.Selected.Value
                         Width: =Parent.Width
                         X: =0
-                        Y: =1
+                        Y: =0
                         ZIndex: =1
 
                         "'AI Builder_DataCardKey_1' As label":
+                            AutoHeight: =true
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Semibold
                             Height: =55
@@ -1546,7 +1547,7 @@ User_Skill_Page As screen:
                             DefaultSelectedItems: =[Parent.Default]
                             DisplayFields: =["Value"]
                             DisplayMode: =Parent.DisplayMode
-                            Height: =Parent.Height * 0.7
+                            Height: =Parent.Height * 0.6
                             IsSearchable: =false
                             Items: =Choices('AI Builder_SkillLevel')
                             NoSelectionText: ="선택"
@@ -1617,7 +1618,7 @@ User_Skill_Page As screen:
                             DefaultSelectedItems: =[Parent.Default]
                             DisplayFields: =["Value"]
                             DisplayMode: =Parent.DisplayMode
-                            Height: =Parent.Height * 0.7
+                            Height: =Parent.Height * 0.6
                             IsSearchable: =false
                             Items: =Choices('Api management_SkillLevel')
                             NoSelectionText: ="선택"
@@ -1688,7 +1689,7 @@ User_Skill_Page As screen:
                             DefaultSelectedItems: =[Parent.Default]
                             DisplayFields: =["Value"]
                             DisplayMode: =Parent.DisplayMode
-                            Height: =Parent.Height * 0.7
+                            Height: =Parent.Height * 0.6
                             IsSearchable: =false
                             Items: =Choices(DataVerse_SkillLevel)
                             NoSelectionText: ="선택"
@@ -1759,7 +1760,7 @@ User_Skill_Page As screen:
                             DefaultSelectedItems: =[Parent.Default]
                             DisplayFields: =["Value"]
                             DisplayMode: =Parent.DisplayMode
-                            Height: =Parent.Height * 0.7
+                            Height: =Parent.Height * 0.6
                             IsSearchable: =false
                             Items: =Choices('Power Apps Canvas_SkillLevel')
                             NoSelectionText: ="선택"
@@ -1830,7 +1831,7 @@ User_Skill_Page As screen:
                             DefaultSelectedItems: =[Parent.Default]
                             DisplayFields: =["Value"]
                             DisplayMode: =Parent.DisplayMode
-                            Height: =Parent.Height * 0.7
+                            Height: =Parent.Height * 0.6
                             IsSearchable: =false
                             Items: =Choices('Power Apps Model_SkillLevel')
                             NoSelectionText: ="선택"
@@ -1901,7 +1902,7 @@ User_Skill_Page As screen:
                             DefaultSelectedItems: =[Parent.Default]
                             DisplayFields: =["Value"]
                             DisplayMode: =Parent.DisplayMode
-                            Height: =Parent.Height * 0.7
+                            Height: =Parent.Height * 0.6
                             IsSearchable: =false
                             Items: =Choices('Power Automate_SkillLevel')
                             NoSelectionText: ="선택"
@@ -1972,7 +1973,7 @@ User_Skill_Page As screen:
                             DefaultSelectedItems: =[Parent.Default]
                             DisplayFields: =["Value"]
                             DisplayMode: =Parent.DisplayMode
-                            Height: =Parent.Height * 0.7
+                            Height: =Parent.Height * 0.6
                             IsSearchable: =false
                             Items: =Choices('Power Automate Desktop_SkillLevel')
                             NoSelectionText: ="선택"
@@ -2043,7 +2044,7 @@ User_Skill_Page As screen:
                             DefaultSelectedItems: =[Parent.Default]
                             DisplayFields: =["Value"]
                             DisplayMode: =Parent.DisplayMode
-                            Height: =Parent.Height * 0.7
+                            Height: =Parent.Height * 0.6
                             IsSearchable: =false
                             Items: =Choices('Power Page_SkillLevel')
                             NoSelectionText: ="선택"
@@ -2114,7 +2115,7 @@ User_Skill_Page As screen:
                             DefaultSelectedItems: =[Parent.Default]
                             DisplayFields: =["Value"]
                             DisplayMode: =Parent.DisplayMode
-                            Height: =Parent.Height * 0.7
+                            Height: =Parent.Height * 0.6
                             IsSearchable: =false
                             Items: =Choices('Power Page JAVA/CSS_SkillLevel')
                             NoSelectionText: ="선택"
@@ -2185,7 +2186,7 @@ User_Skill_Page As screen:
                             DefaultSelectedItems: =[Parent.Default]
                             DisplayFields: =["Value"]
                             DisplayMode: =Parent.DisplayMode
-                            Height: =Parent.Height * 0.7
+                            Height: =Parent.Height * 0.6
                             IsSearchable: =false
                             Items: =Choices('Power BI_SkillLevel')
                             NoSelectionText: ="선택"
@@ -2256,7 +2257,7 @@ User_Skill_Page As screen:
                             DefaultSelectedItems: =[Parent.Default]
                             DisplayFields: =["Value"]
                             DisplayMode: =Parent.DisplayMode
-                            Height: =Parent.Height * 0.7
+                            Height: =Parent.Height * 0.6
                             IsSearchable: =false
                             Items: =Choices('Process Advisor_SkillLevel')
                             NoSelectionText: ="선택"
@@ -2327,7 +2328,7 @@ User_Skill_Page As screen:
                             DefaultSelectedItems: =[Parent.Default]
                             DisplayFields: =["Value"]
                             DisplayMode: =Parent.DisplayMode
-                            Height: =Parent.Height * 0.7
+                            Height: =Parent.Height * 0.6
                             IsSearchable: =false
                             Items: =Choices('Power Virtual Agents_SkillLevel')
                             NoSelectionText: ="선택"
@@ -2398,6 +2399,7 @@ User_Skill_Page As screen:
                             Default: =User().Email
                             DelayOutput: =true
                             DisplayMode: =Parent.DisplayMode
+                            Height: =Parent.Height * 0.6
                             MaxLength: =Parent.MaxLength
                             PaddingLeft: =5
                             RadiusBottomLeft: =0
@@ -2471,6 +2473,7 @@ User_Skill_Page As screen:
                                 )
                             DelayOutput: =true
                             DisplayMode: =Parent.DisplayMode
+                            Height: =Parent.Height * 0.6
                             MaxLength: =Parent.MaxLength
                             PaddingLeft: =5
                             RadiusBottomLeft: =0
