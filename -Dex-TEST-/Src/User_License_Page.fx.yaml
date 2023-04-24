@@ -1,5 +1,10 @@
 User_License_Page As screen:
-    BackgroundImage: =ere
+    BackgroundImage: |-
+        =If(
+            Self.Width > 800,
+            ere,
+            '2'
+        )
     ImagePosition: =ImagePosition.Stretch
 
     License_File_send As icon.Send:
@@ -4068,20 +4073,19 @@ User_License_Page As screen:
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
-            PaddingLeft: =50
-            PaddingRight: =50
-            PaddingTop: =30
+            PaddingLeft: =5
+            PaddingRight: =5
             Width: =Parent.Width
             ZIndex: =1
 
             License_Back_1 As icon.BackArrow:
                 Color: =RGBA( 106, 170, 205, 1 )
-                Height: =Parent.Width * 0.08
+                Height: =Parent.Width * 0.3
                 Icon: =Icon.BackArrow
                 OnSelect: =Navigate(User_Page)
-                Width: =Parent.Width * 0.08
-                X: =Parent.X * 0.01
-                Y: =40
+                Width: =Parent.Width *0.15
+                X: =Parent.Width * 0.1
+                Y: =Parent.Width * 0.05
                 ZIndex: =1
 
             License_Title_1 As label:
@@ -4091,20 +4095,19 @@ User_License_Page As screen:
                 FillPortions: =1
                 FontWeight: =FontWeight.Semibold
                 Height: =Parent.Height
-                Size: =Parent.Width * 0.035
+                Size: = (Parent.Width * 0.07)
                 Text: ="License Page"
-                Width: |
-                    =Parent.Width - License_Back_1.Width - License_Back_1.Width
+                Width: =Parent.Width - License_Back_1.Width*0.5 - License_Home_1.Width
                 ZIndex: =2
 
             License_Home_1 As icon.Home:
                 Color: =RGBA( 106, 170, 205, 1 )
-                Height: =Parent.Width * 0.08
+                Height: =Parent.Width * 0.3
                 Icon: =Icon.Home
                 OnSelect: =Navigate(Main_Page)
-                Width: =Parent.Width * 0.08
+                Width: =Parent.Width * 0.15
                 X: =Parent.Width * 0.9
-                Y: =
+                Y: =40
                 ZIndex: =3
 
         License_Sub_Container_1 As groupContainer.manualLayoutContainer:
