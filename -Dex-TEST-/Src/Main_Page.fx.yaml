@@ -87,7 +87,7 @@ Main_Page As screen:
             Color: =RGBA(255, 255, 255, 1)
             FontWeight: =FontWeight.Bold
             Height: =Parent.Height * 0.21
-            Size: = (Parent.Width * 0.035) 
+            Size: = (Parent.Width * 0.09) 
             Text: ="Dexconsulting 역량 관리"
             Width: =Parent.Width
             ZIndex: =1
@@ -119,9 +119,9 @@ Main_Page As screen:
                 PressedFill: =RGBA(102, 182, 227, 0.2)
                 Size: =(Parent.Width * 0.028)
                 Text: ="User"
-                Width: =Parent.Width * 0.5
-                X: =Parent.Width * 0.25
-                Y: =Parent.Height * 0.4
+                Width: =Parent.Width * 0.6
+                X: =Parent.Width * 0.2
+                Y: =Parent.Height * 0.3
                 ZIndex: =1
 
             MainPage_Admin_Button_1 As button:
@@ -135,8 +135,8 @@ Main_Page As screen:
                 PressedFill: =RGBA(102, 182, 227, 0.2)
                 Size: =(Parent.Width * 0.028)
                 Text: ="Admin"
-                Width: =Parent.Width * 0.5
-                X: =Parent.Width * 0.25
-                Y: =Parent.Height * 0.75
+                Width: =Parent.Width * 0.6
+                X: =Parent.Width * 0.2
+                Y: =Parent.Height * 0.57
                 ZIndex: =2
 

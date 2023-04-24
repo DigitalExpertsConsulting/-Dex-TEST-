@@ -25,6 +25,7 @@ Admin_PWD_Page As screen:
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
             PaddingLeft: =30
+            PaddingRight: =30
             Width: =Parent.Width
             ZIndex: =1
 
@@ -34,7 +35,7 @@ Admin_PWD_Page As screen:
                 Icon: =Icon.BackArrow
                 OnSelect: =Navigate(Main_Page)
                 Width: =Parent.Width *0.08
-                X: =Parent.Width * 0.1
+                X: =Parent.Width * 1
                 Y: =Parent.Height * 0.05
                 ZIndex: =1
 
@@ -87,7 +88,7 @@ Admin_PWD_Page As screen:
                 RadiusTopRight: =25
                 Size: =(Parent.Width * 0.018)
                 Text: ="취소"
-                Width: =Parent.Width * 0.14
+                Width: =Parent.Width * 0.17
                 X: |-
                     =//Parent.Width *0.56
                     //PW_TextInput.Width
@@ -116,8 +117,8 @@ Admin_PWD_Page As screen:
                 RadiusTopRight: =25
                 Size: =(Parent.Width * 0.018)
                 Text: ="확인"
-                Width: =Parent.Width * 0.14
-                X: =PW_TextInput.X
+                Width: =Parent.Width * 0.17
+                X: =PW_TextInput.X *1.15
                 Y: =Parent.Height * 0.43
                 ZIndex: =3
 
@@ -125,6 +126,7 @@ Admin_PWD_Page As screen:
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
+        PaddingLeft: =5
         Visible: |-
             =If(
                 Parent.Width <= 800,
@@ -142,18 +144,17 @@ Admin_PWD_Page As screen:
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
-            PaddingLeft: =30
             Width: =Parent.Width
             ZIndex: =1
 
             Admin_Login_Back_1 As icon.BackArrow:
                 Color: =RGBA( 106, 170, 205, 1 )
-                Height: =Parent.Width *0.08
+                Height: =Parent.Width *0.15
                 Icon: =Icon.BackArrow
                 OnSelect: =Navigate(Main_Page)
-                Width: =Parent.Width *0.08
-                X: =Parent.Width * 0.1
-                Y: =Parent.Height * 0.05
+                Width: =Parent.Width *0.15
+                X: =Parent.Width * 0.5
+                Y: =Parent.Height * 0.5
                 ZIndex: =1
 
             Admin_Login_Title_1 As label:
@@ -164,7 +165,7 @@ Admin_PWD_Page As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =Parent.Height
                 PaddingRight: =Admin_Address_Back.Width * 0.5
-                Size: =(Parent.Width * 0.035)
+                Size: = (Parent.Width * 0.09) 
                 Text: ="Admin Login"
                 Width: =Parent.Width - Admin_Login_Back_1.Width
                 ZIndex: =2
@@ -186,8 +187,8 @@ Admin_PWD_Page As screen:
                 HoverBorderColor: =RGBA(102, 182, 227, 0.7)
                 Mode: =TextMode.Password
                 Size: =Parent.Width * 0.015
-                Width: =Parent.Width * 0.4
-                X: =Parent.Width * 0.3
+                Width: =Parent.Width * 0.7
+                X: =Parent.Width * 0.15
                 Y: =Parent.Height * 0.27
                 ZIndex: =1
 
@@ -195,7 +196,7 @@ Admin_PWD_Page As screen:
                 BorderColor: =RGBA( 112, 128, 144, 0.7 )
                 BorderThickness: =5
                 Fill: =RGBA( 106, 170, 205, 1 )
-                Height: =Parent.Height * 0.11
+                Height: =Parent.Height * 0.09
                 HoverFill: =ColorFade(RGBA(102, 182, 227, 1), -20%)
                 OnSelect: =Reset(PW_TextInput_1);
                 PressedFill: =RGBA(102, 182, 227, 0.2)
@@ -205,7 +206,7 @@ Admin_PWD_Page As screen:
                 RadiusTopRight: =25
                 Size: =(Parent.Width * 0.018)
                 Text: ="취소"
-                Width: =Parent.Width * 0.14
+                Width: =Parent.Width * 0.26
                 X: =PW_TextInput_1.X + PW_TextInput_1.Width - Self.Width
                 Y: =Parent.Height * 0.43
                 ZIndex: =2
@@ -214,7 +215,7 @@ Admin_PWD_Page As screen:
                 BorderColor: =RGBA( 112, 128, 144, 0.7 )
                 BorderThickness: =5
                 Fill: =RGBA( 106, 170, 205, 1 )
-                Height: =Parent.Height * 0.11
+                Height: =Parent.Height * 0.09
                 HoverFill: =ColorFade(RGBA(102, 182, 227, 1), -20%)
                 OnSelect: |-
                     =If(
@@ -231,8 +232,8 @@ Admin_PWD_Page As screen:
                 RadiusTopRight: =25
                 Size: =(Parent.Width * 0.018)
                 Text: ="확인"
-                Width: =Parent.Width * 0.14
-                X: =PW_TextInput_1.X
+                Width: =Parent.Width * 0.26
+                X: =PW_TextInput_1.X *2
                 Y: =Parent.Height * 0.43
                 ZIndex: =3
 
