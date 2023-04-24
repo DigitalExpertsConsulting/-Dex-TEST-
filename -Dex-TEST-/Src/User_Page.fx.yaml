@@ -150,16 +150,16 @@ User_Page As screen:
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
-            PaddingLeft: =30
+            PaddingLeft: =5
             Width: =Parent.Width
             ZIndex: =1
 
             UserPage_Back_1 As icon.BackArrow:
                 Color: =RGBA( 106, 170, 205, 1 )
-                Height: =Parent.Width * 0.08
+                Height: =Parent.Width * 0.15
                 Icon: =Icon.BackArrow
                 OnSelect: =Navigate(Main_Page)
-                Width: =Parent.Width * 0.08
+                Width: =Parent.Width *0.15
                 X: =Parent.Width * 0.1
                 Y: =Parent.Width * 0.05
                 ZIndex: =1
@@ -171,8 +171,8 @@ User_Page As screen:
                 FillPortions: =1
                 FontWeight: =FontWeight.Bold
                 Height: =186
-                PaddingRight: =90
-                Size: =(Parent.Width * 0.025)
+                PaddingRight: =10
+                Size: = (Parent.Width * 0.09)
                 Text: ="User Page"
                 Width: =Parent.Width - UserPage_Back_1.Width
                 ZIndex: =2
@@ -198,9 +198,9 @@ User_Page As screen:
                 Size: =Parent.Width * 0.025
                 Text: ="주소지 입력"
                 Width: |
-                    =Parent.Width * 0.35
-                X: =Parent.Width *0.33
-                Y: =Parent.Height * 0.88
+                    =Parent.Width * 0.6
+                X: =Parent.Width *0.2
+                Y: =Parent.Height * 0.1
                 ZIndex: =1
 
             UserPage_Profile_Button_1 As button:
@@ -216,9 +216,10 @@ User_Page As screen:
                 PressedFill: =RGBA(102, 182, 227, 0.2)
                 Size: =Parent.Width * 0.025
                 Text: ="프로필 입력"
-                Width: =Parent.Width * 0.35
-                X: =Parent.Width *0.33
-                Y: =Parent.Height * 0.64
+                Width: |
+                    =Parent.Width * 0.6
+                X: =Parent.Width *0.2
+                Y: =Parent.Height * 0.7
                 ZIndex: =2
 
             UserPage_Skill_Button_1 As button:
@@ -234,9 +235,9 @@ User_Page As screen:
                 Size: =Parent.Width * 0.025
                 Text: ="자격증 입력"
                 Width: |
-                    =Parent.Width * 0.35
-                X: =Parent.Width *0.33
-                Y: =Parent.Height * 0.4
+                    =Parent.Width * 0.6
+                X: =Parent.Width *0.2
+                Y: =Parent.Height * 0.5
                 ZIndex: =3
 
             UserPage_License_Button_1 As button:
@@ -252,8 +253,8 @@ User_Page As screen:
                 Size: =Parent.Width * 0.025
                 Text: ="기술 입력"
                 Width: |
-                    =Parent.Width * 0.35
-                X: =Parent.Width *0.33
-                Y: =Parent.Height * 0.16
+                    =Parent.Width * 0.6
+                X: =Parent.Width *0.2
+                Y: =Parent.Height * 0.3
                 ZIndex: =4
 

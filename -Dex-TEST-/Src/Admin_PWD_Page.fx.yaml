@@ -69,9 +69,9 @@ Admin_PWD_Page As screen:
                 HoverBorderColor: =RGBA(102, 182, 227, 0.7)
                 Mode: =TextMode.Password
                 Size: =Parent.Width * 0.015
-                Width: =Parent.Width * 0.4
-                X: =Parent.Width * 0.3
-                Y: =Parent.Height * 0.27
+                Width: =Parent.Width * 0.5
+                X: =Parent.Width * 0.25
+                Y: =Parent.Height * 0.3
                 ZIndex: =1
 
             PW_C_Button As button:
@@ -93,7 +93,7 @@ Admin_PWD_Page As screen:
                     =//Parent.Width *0.56
                     //PW_TextInput.Width
                     PW_TextInput.X + (PW_TextInput.Width - PW_C_Button.Width)
-                Y: =Parent.Height * 0.43
+                Y: =Parent.Height * 0.46
                 ZIndex: =2
 
             PW_S_Button As button:
@@ -118,8 +118,8 @@ Admin_PWD_Page As screen:
                 Size: =(Parent.Width * 0.018)
                 Text: ="확인"
                 Width: =Parent.Width * 0.17
-                X: =PW_TextInput.X *1.15
-                Y: =Parent.Height * 0.43
+                X: =PW_TextInput.X *1.6
+                Y: =Parent.Height * 0.46
                 ZIndex: =3
 
     mPWD_Main_Container As groupContainer.verticalAutoLayoutContainer:
