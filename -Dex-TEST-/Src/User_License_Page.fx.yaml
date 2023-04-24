@@ -4120,16 +4120,15 @@ User_License_Page As screen:
             ZIndex: =2
 
             License_Container_1 As groupContainer.manualLayoutContainer:
-                Height: =Parent.Height * 0.69
-                Width: =Parent.Width * 0.45
-                X: =Parent.Width * 0.11
-                Y: =38
+                Height: =Parent.Height * 0.76
+                Width: =Parent.Width * 0.65
+                X: =Parent.Width * 0
                 ZIndex: =1
 
                 License_Input_1 As form:
                     DataSource: =ability_license
                     DefaultMode: =FormMode.New
-                    Fill: =RGBA(255, 255, 255, 0.4)
+                    Fill: =RGBA(0, 0, 0, 0.3)
                     Height: =Parent.Height
                     Visible: |
                         =true
@@ -4143,7 +4142,7 @@ User_License_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_license],DataSourceInfo.DisplayName,"cr778_az104")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =130
+                        Height: =120
                         MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_az104")
                         Required: =false
                         Update: |-
@@ -4201,39 +4200,41 @@ User_License_Page As screen:
                             Size: =Parent.Width * 0.019
                             TrueText: ="있다"
                             Width: =Parent.Width * 0.23
-                            X: =Parent.Width * 0.27
+                            X: =Parent.Width * 0.05
                             Y: =70
                             ZIndex: =5
 
                         "'AZ-104_DatePicker_1' As datepicker":
                             DisplayMode: =If('AZ-104_Toggle_1'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
-                            Height: =Parent.Height * 0.3
-                            Size: =Parent.Width * 0.021
-                            Width: =Parent.Width * 0.36
-                            X: =Parent.Width * 0.59
-                            Y: =71
+                            Height: =Parent.Height * 0.22
+                            Size: =Parent.Width * 0.01
+                            Width: =Parent.Width * 0.5
+                            X: =Parent.Width * 0.4
+                            Y: =72
                             ZIndex: =6
 
                         "'AZ-104_취득여부_1' As label":
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Semibold
-                            Height: =53
-                            Size: =Parent.Width * 0.025
+                            Height: =50
+                            PaddingBottom: =0
+                            Size: =Parent.Width * 0.035
                             Text: ="취득 여부"
-                            Width: =Parent.Width * 0.17
-                            X: =Parent.Width * 0.27
-                            Y: =17
+                            Width: =Parent.Width * 0.25
+                            X: =Parent.Width * 0.05
+                            Y: =20
                             ZIndex: =7
 
                         "'AZ-104_취득일자_1' As label":
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Semibold
-                            Height: =53
-                            Size: =Parent.Width * 0.025
+                            Height: =50
+                            PaddingBottom: =0
+                            Size: =Parent.Width * 0.035
                             Text: ="취득 일자"
-                            Width: =Parent.Width * 0.17
-                            X: =Parent.Width * 0.67
-                            Y: =16
+                            Width: =Parent.Width * 0.25
+                            X: =Parent.Width * 0.47
+                            Y: =20
                             ZIndex: =8
 
                     "'AZ-305_DataCard_1' As typedDataCard.textualEditCard":
@@ -4243,7 +4244,7 @@ User_License_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_license],DataSourceInfo.DisplayName,"cr778_az305")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =135
+                        Height: =120
                         MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_az305")
                         Required: =false
                         Update: |-
@@ -4312,7 +4313,7 @@ User_License_Page As screen:
                             Height: =53
                             Size: =Parent.Width * 0.025
                             Text: ="취득 여부"
-                            Width: =Parent.Width * 0.17
+                            Width: =Parent.Width * 0.25
                             X: =Parent.Width * 0.27
                             Y: =16
                             ZIndex: =6
@@ -4332,7 +4333,7 @@ User_License_Page As screen:
                             Height: =53
                             Size: =Parent.Width * 0.025
                             Text: ="취득 일자"
-                            Width: =Parent.Width * 0.17
+                            Width: =Parent.Width * 0.25
                             X: =Parent.Width * 0.67
                             Y: =16
                             ZIndex: =8
@@ -4344,7 +4345,7 @@ User_License_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_license],DataSourceInfo.DisplayName,"cr778_ms100")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =135
+                        Height: =102
                         MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_ms100")
                         Required: =false
                         Update: |-
@@ -4413,7 +4414,7 @@ User_License_Page As screen:
                             Height: =53
                             Size: =Parent.Width * 0.025
                             Text: ="취득 여부"
-                            Width: =Parent.Width * 0.17
+                            Width: =Parent.Width * 0.25
                             X: =Parent.Width * 0.27
                             Y: =16
                             ZIndex: =6
@@ -4433,7 +4434,7 @@ User_License_Page As screen:
                             Height: =53
                             Size: =Parent.Width * 0.025
                             Text: ="취득 일자"
-                            Width: =Parent.Width * 0.17
+                            Width: =Parent.Width * 0.25
                             X: =Parent.Width * 0.67
                             Y: =16
                             ZIndex: =8
@@ -4445,7 +4446,7 @@ User_License_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_license],DataSourceInfo.DisplayName,"cr778_ms101")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =135
+                        Height: =120
                         MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_ms101")
                         Required: =false
                         Update: |-
@@ -4514,7 +4515,7 @@ User_License_Page As screen:
                             Height: =53
                             Size: =Parent.Width * 0.025
                             Text: ="취득 여부"
-                            Width: = Parent.Width * 0.17
+                            Width: =Parent.Width * 0.25
                             X: = Parent.Width * 0.27
                             Y: =16
                             ZIndex: =6
@@ -4534,7 +4535,7 @@ User_License_Page As screen:
                             Height: =53
                             Size: = Parent.Width * 0.025
                             Text: ="취득 일자"
-                            Width: =Parent.Width * 0.17
+                            Width: =Parent.Width * 0.25
                             X: = Parent.Width * 0.67
                             Y: =16
                             ZIndex: =8
@@ -4546,7 +4547,7 @@ User_License_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_license],DataSourceInfo.DisplayName,"cr778_ms700")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =135
+                        Height: =120
                         MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_ms700")
                         Required: =false
                         Update: |-
@@ -4615,7 +4616,7 @@ User_License_Page As screen:
                             Height: =53
                             Size: =Parent.Width * 0.025
                             Text: ="취득 여부"
-                            Width: =Parent.Width * 0.17
+                            Width: =Parent.Width * 0.25
                             X: =Parent.Width * 0.27
                             Y: =16
                             ZIndex: =6
@@ -4635,7 +4636,7 @@ User_License_Page As screen:
                             Height: =53
                             Size: =Parent.Width * 0.025
                             Text: ="취득 일자"
-                            Width: =Parent.Width * 0.17
+                            Width: =Parent.Width * 0.25
                             X: =Parent.Width * 0.67
                             Y: =16
                             ZIndex: =8
@@ -4647,7 +4648,7 @@ User_License_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_license],DataSourceInfo.DisplayName,"cr778_ms900")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =135
+                        Height: =120
                         MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_ms900")
                         Required: =false
                         Update: |-
@@ -4716,7 +4717,7 @@ User_License_Page As screen:
                             Height: =53
                             Size: = Parent.Width * 0.025
                             Text: ="취득 여부"
-                            Width: =Parent.Width * 0.17
+                            Width: =Parent.Width * 0.25
                             X: =Parent.Width * 0.27
                             Y: =16
                             ZIndex: =6
@@ -4736,7 +4737,7 @@ User_License_Page As screen:
                             Height: =53
                             Size: =Parent.Width * 0.025
                             Text: ="취득 일자"
-                            Width: =Parent.Width * 0.17
+                            Width: =Parent.Width * 0.25
                             X: =Parent.Width * 0.67
                             Y: =16
                             ZIndex: =8
@@ -4748,7 +4749,7 @@ User_License_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_license],DataSourceInfo.DisplayName,"cr778_pl200")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =135
+                        Height: =120
                         MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_pl200")
                         Required: =false
                         Update: |-
@@ -4817,7 +4818,7 @@ User_License_Page As screen:
                             Height: =53
                             Size: = Parent.Width * 0.025
                             Text: ="취득 여부"
-                            Width: =Parent.Width * 0.17
+                            Width: =Parent.Width * 0.25
                             X: =Parent.Width * 0.27
                             Y: =16
                             ZIndex: =6
@@ -4837,7 +4838,7 @@ User_License_Page As screen:
                             Height: =53
                             Size: =Parent.Width * 0.025
                             Text: ="취득 일자"
-                            Width: =Parent.Width * 0.17
+                            Width: =Parent.Width * 0.25
                             X: =Parent.Width * 0.67
                             Y: =16
                             ZIndex: =8
@@ -4849,7 +4850,7 @@ User_License_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_license],DataSourceInfo.DisplayName,"cr778_pl300")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =135
+                        Height: =120
                         MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_pl300")
                         Required: =false
                         Update: |-
@@ -4918,7 +4919,7 @@ User_License_Page As screen:
                             Height: =53
                             Size: =Parent.Width * 0.025
                             Text: ="취득 여부"
-                            Width: =Parent.Width * 0.17
+                            Width: =Parent.Width * 0.25
                             X: =Parent.Width * 0.27
                             Y: =16
                             ZIndex: =6
@@ -4938,7 +4939,7 @@ User_License_Page As screen:
                             Height: =53
                             Size: =Parent.Width * 0.025
                             Text: ="취득 일자"
-                            Width: = Parent.Width * 0.17
+                            Width: =Parent.Width * 0.25
                             X: = Parent.Width * 0.67
                             Y: =16
                             ZIndex: =8
@@ -4950,7 +4951,7 @@ User_License_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_license],DataSourceInfo.DisplayName,"cr778_pl400")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =135
+                        Height: =120
                         MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_pl400")
                         Required: =false
                         Update: |-
@@ -5019,7 +5020,7 @@ User_License_Page As screen:
                             Height: =53
                             Size: =Parent.Width * 0.025
                             Text: ="취득 여부"
-                            Width: =Parent.Width * 0.17
+                            Width: =Parent.Width * 0.25
                             X: =Parent.Width * 0.27
                             Y: =16
                             ZIndex: =6
@@ -5039,7 +5040,7 @@ User_License_Page As screen:
                             Height: =53
                             Size: =Parent.Width * 0.025
                             Text: ="취득 일자"
-                            Width: =Parent.Width * 0.17
+                            Width: =Parent.Width * 0.25
                             X: =Parent.Width * 0.67
                             Y: =16
                             ZIndex: =8
@@ -5051,7 +5052,7 @@ User_License_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_license],DataSourceInfo.DisplayName,"cr778_pl600")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =135
+                        Height: =120
                         MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_pl600")
                         Required: =false
                         Update: |-
@@ -5120,7 +5121,7 @@ User_License_Page As screen:
                             Height: =53
                             Size: =Parent.Width * 0.025
                             Text: ="취득 여부"
-                            Width: = Parent.Width * 0.17
+                            Width: =Parent.Width * 0.25
                             X: =Parent.Width * 0.27
                             Y: =16
                             ZIndex: =6
@@ -5140,7 +5141,7 @@ User_License_Page As screen:
                             Height: =53
                             Size: =Parent.Width * 0.025
                             Text: ="취득 일자"
-                            Width: =Parent.Width * 0.17
+                            Width: =Parent.Width * 0.25
                             X: =Parent.Width * 0.67
                             Y: =16
                             ZIndex: =8
@@ -5152,7 +5153,7 @@ User_License_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_license],DataSourceInfo.DisplayName,"cr778_pl900")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =135
+                        Height: =120
                         MaxLength: =DataSourceInfo([@ability_license], DataSourceInfo.MaxLength, "cr778_pl900")
                         Required: =false
                         Update: |-
