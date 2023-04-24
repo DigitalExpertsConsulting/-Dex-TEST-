@@ -4162,9 +4162,9 @@ User_License_Page As screen:
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Bold
                             Height: =Parent.Height * 0.4
-                            Size: =Parent.Width * 0.045
+                            Size: =Parent.Width * 0.07
                             Text: =Parent.DisplayName
-                            Width: =Parent.Width * 0.25
+                            Width: =Parent.Width * 0.5
                             Wrap: =false
                             ZIndex: =1
 
@@ -4233,7 +4233,7 @@ User_License_Page As screen:
                             Size: =Parent.Width * 0.035
                             Text: ="취득 일자"
                             Width: =Parent.Width * 0.25
-                            X: =Parent.Width * 0.47
+                            X: =Parent.Width * 0.51
                             Y: =20
                             ZIndex: =8
 
