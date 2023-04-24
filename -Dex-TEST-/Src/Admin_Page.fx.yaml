@@ -169,7 +169,7 @@ Admin_Page As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =186
-                PaddingRight: =0
+                PaddingRight: =30
                 Size: = (Parent.Width * 0.085)
                 Text: ="Admin Page"
                 Width: =Parent.Width - Admin_Address_Back.Width

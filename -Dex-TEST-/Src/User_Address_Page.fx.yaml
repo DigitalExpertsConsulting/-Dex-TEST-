@@ -1138,16 +1138,15 @@ User_Address_Page As screen:
                             ZIndex: =4
 
             Address_Send_Container_1 As groupContainer.manualLayoutContainer:
-                Height: =Parent.Height * 0.15
-                Width: =Parent.Width * 0.5
-                X: =Parent.Width * 0.43
-                Y: =Parent.Height * 0.7
+                Height: =Parent.Height * 0.12
+                Width: =Parent.Width
+                X: =20
+                Y: =Parent.Height -( Self.Height * 1.5 )
                 ZIndex: =2
 
-                Address_Send_1 As icon.Send:
+                Address_Send_Button1 As button:
                     Color: =RGBA( 106, 170, 205, 1 )
                     Height: =Parent.Height
-                    Icon: =Icon.Send
                     OnSelect: |-
                         =If(
                             IsEmpty(
@@ -1177,44 +1176,13 @@ User_Address_Page As screen:
                             NewForm(Address_Input_1);
                             ResetForm(Address_Input_1);
                         )
-                    Width: =Parent.Width
-                    ZIndex: =1
-
-                Button1 As button:
-                    Color: =RGBA( 106, 170, 205, 1 )
-                    Height: =Parent.Height * 0.5
-                    OnSelect: |-
-                        =If(
-                            IsEmpty(
-                                Search(
-                                    ability_address,
-                                    varUser.Email,
-                                    "cr778_email"
-                                )
-                            ),
-                            SubmitForm(Address_Input_1);
-                            NewForm(Address_Input_1);
-                            ResetForm(Address_Input_1);
-                            ,
-                            Patch(
-                                ability_address,
-                                LookUp(
-                                    ability_address,
-                                    'E-mail' = 'Address_E-mail_DataCard_1'.Update
-                                ),
-                                {
-                                    Address: Address_DataCardValue_1.Text,
-                                    Zipcode: Zipcode_DataCardValue_1.Text,
-                                    Gift_Address: Gift_Address_DataCardValue_1.Text,
-                                    Gift_Zipcode: Gift_Zipcode_DataCardValue_1.Text
-                                }
-                            );
-                            NewForm(Address_Input_1);
-                            ResetForm(Address_Input_1);
-                        )
+                    PaddingBottom: =
+                    PaddingLeft: =
+                    PaddingRight: =
+                    PaddingTop: =
                     Text: ="버튼"
-                    Width: =Parent.Width *0.5
+                    Width: =Parent.Width *0.9
                     X: =
-                    Y: =40
+                    Y: =
                     ZIndex: =2
 
