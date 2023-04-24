@@ -144,6 +144,7 @@ Admin_PWD_Page As screen:
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =5
             Width: =Parent.Width
             ZIndex: =1
 
@@ -164,7 +165,7 @@ Admin_PWD_Page As screen:
                 FillPortions: =1
                 FontWeight: =FontWeight.Bold
                 Height: =Parent.Height
-                PaddingRight: =Admin_Address_Back.Width * 0.5
+                PaddingRight: =10
                 Size: = (Parent.Width * 0.09) 
                 Text: ="Admin Login"
                 Width: =Parent.Width - Admin_Login_Back_1.Width
