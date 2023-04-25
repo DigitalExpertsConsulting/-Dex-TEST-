@@ -369,7 +369,7 @@ Admin_Address_Page As screen:
 
                 "Gallery4 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
                     DelayItemLoading: =true
-                    Fill: =RGBA(0,0,0,0.3)
+                    Fill: =RGBA(255,255,255,0.7)
                     Height: =Parent.Height
                     Items: =Search(ability_address,Address_Search_1.Text,"cr778_name")
                     Layout: =Layout.Vertical
@@ -381,7 +381,7 @@ Admin_Address_Page As screen:
 
                     Rectangle1 As rectangle:
                         BorderColor: =RGBA(0, 0, 0, 1)
-                        Fill: =RGBA(215, 223, 240, 0.5)
+                        Fill: =RGBA(232, 244, 217, 1)
                         Height: =Title4.Height
                         Width: =Parent.Width
                         ZIndex: =1
