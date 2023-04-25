@@ -434,7 +434,7 @@ Admin_Address_Page As screen:
                         Size: =Parent.Width* 0.023
                         Text: =ThisItem.Address
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width * 0.735
+                        Width: =Parent.Width * 0.76
                         X: =Parent.Width * 0.12
                         Y: =Parent.Height * 0.1
                         ZIndex: =5
@@ -449,7 +449,7 @@ Admin_Address_Page As screen:
                         Size: =Parent.Width* 0.023
                         Text: =ThisItem.Gift_Address
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width * 0.735
+                        Width: =Parent.Width * 0.76
                         X: =Parent.Width * 0.19
                         Y: =Parent.Height * 0.22
                         ZIndex: =6
