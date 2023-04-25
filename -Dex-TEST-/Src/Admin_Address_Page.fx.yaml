@@ -375,7 +375,7 @@ Admin_Address_Page As screen:
                     Layout: =Layout.Vertical
                     LoadingSpinner: =LoadingSpinner.Data
                     TemplatePadding: =0
-                    TemplateSize: =Min(150,Self.Height)
+                    TemplateSize: =Min(200,Self.Height)
                     Width: =Parent.Width
                     ZIndex: =1
 
