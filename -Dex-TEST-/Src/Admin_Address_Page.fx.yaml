@@ -1,5 +1,10 @@
 Admin_Address_Page As screen:
-    BackgroundImage: =ere
+    BackgroundImage: |-
+        =If(
+            Self.Width > 800,
+            ere,
+            '2'
+        )
     ImagePosition: =ImagePosition.Stretch
 
     AA_Main_Container As groupContainer.verticalAutoLayoutContainer:
@@ -82,7 +87,7 @@ Admin_Address_Page As screen:
                 Admin_Address_Gallery As gallery.galleryVertical:
                     DelayItemLoading: =true
                     Fill: =RGBA(255, 255, 255, 0.9)
-                    Height: =Parent.Height
+                    Height: =433.384
                     Items: |
                         =Search(ability_address,Address_Search.Text,"cr778_name")
                         
@@ -364,7 +369,7 @@ Admin_Address_Page As screen:
 
                 "Gallery4 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
                     DelayItemLoading: =true
-                    Fill: =RGBA(255,255,255,0.6)
+                    Fill: =RGBA(0,0,0,0.3)
                     Height: =Parent.Height
                     Items: =ability_address
                     Layout: =Layout.Vertical
@@ -374,6 +379,13 @@ Admin_Address_Page As screen:
                     Width: =Parent.Width
                     ZIndex: =1
 
+                    Rectangle1 As rectangle:
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Fill: =RGBA(215, 223, 240, 0.5)
+                        Height: =Title4.Height
+                        Width: =Parent.Width
+                        ZIndex: =1
+
                     Title4 As label:
                         Align: =Align.Center
                         Height: =Parent.Height * 0.08
@@ -382,27 +394,27 @@ Admin_Address_Page As screen:
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =Parent.Width* 0.016
+                        Size: =Parent.Width* 0.05
                         Text: =ThisItem.Name
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width * 0.16
-                        Y: =Parent.Height * 0.15 - (Self.Height * 0.5)
+                        Width: =Parent.Width * 0.3
+                        X: =Rectangle1.Width *0.33
+                        Y: =1
                         ZIndex: =2
 
                     Subtitle3 As label:
-                        Align: =Align.Center
                         Height: =Parent.Height * 0.07
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =Parent.Width* 0.016
+                        Size: =Parent.Width* 0.023
                         Text: =ThisItem.Zipcode
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width * 0.74
-                        X: =Parent.Width * 0.26
-                        Y: =Subtitle3_1.Y +Subtitle3_1.Height
+                        Width: =Parent.Width * 0.3
+                        X: =Parent.Width * 0.15
+                        Y: =Parent.Height * 0.16
                         ZIndex: =3
 
                     Separator3 As rectangle:
@@ -410,123 +422,116 @@ Admin_Address_Page As screen:
                         OnSelect: =Select(Parent)
                         Width: =Parent.TemplateWidth
                         Y: =Parent.TemplateHeight - 1
-                        ZIndex: =5
+                        ZIndex: =4
 
                     Subtitle3_1 As label:
-                        Align: =Align.Center
                         Height: =Parent.Height * 0.07
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =Parent.Width* 0.016
+                        Size: =Parent.Width* 0.023
                         Text: =ThisItem.Address
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width * 0.735
-                        X: =Parent.Width * 0.26
-                        Y: =Parent.Height * 0.01
-                        ZIndex: =6
+                        X: =Parent.Width * 0.12
+                        Y: =Parent.Height * 0.1
+                        ZIndex: =5
 
                     Subtitle3_2 As label:
-                        Align: =Align.Center
                         Height: =Parent.Height * 0.07
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =Parent.Width* 0.016
+                        Size: =Parent.Width* 0.023
                         Text: =ThisItem.Gift_Address
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width * 0.74
-                        X: =Parent.Width * 0.26
-                        Y: =Subtitle3_1.Y +Subtitle3_1.Height + Subtitle3.Height
-                        ZIndex: =7
+                        Width: =Parent.Width * 0.735
+                        X: =Parent.Width * 0.19
+                        Y: =Parent.Height * 0.22
+                        ZIndex: =6
 
                     Subtitle3_3 As label:
-                        Align: =Align.Center
                         Height: =Parent.Height * 0.07
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =Parent.Width* 0.016
+                        Size: =Parent.Width* 0.023
                         Text: =ThisItem.Gift_Zipcode
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width * 0.74
-                        X: =Parent.Width * 0.26
-                        Y: =Subtitle3_1.Y +Subtitle3_1.Height + Subtitle3.Height + Subtitle3_2.Height
-                        ZIndex: =8
+                        Width: =Parent.Width * 0.3
+                        X: =Parent.Width * 0.23
+                        Y: =Parent.Height * 0.28
+                        ZIndex: =7
 
                     Title4_1 As label:
-                        Align: =Align.Center
                         Height: =Parent.Height * 0.07
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =Parent.Width* 0.016
-                        Text: ="실주소지"
+                        Size: =Parent.Width* 0.025
+                        Text: |-
+                            ="주소지:"
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width * 0.15
-                        X: =Parent.Width * 0.12
-                        Y: =Parent.Height * 0.01
-                        ZIndex: =9
+                        Width: =Parent.Width * 0.25
+                        Y: =Parent.Height * 0.1
+                        ZIndex: =8
 
                     Title4_2 As label:
-                        Align: =Align.Center
                         Height: =Parent.Height * 0.07
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =Parent.Width* 0.016
-                        Text: ="우편번호"
+                        Size: =Parent.Width* 0.025
+                        Text: |-
+                            ="우편번호:"
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width * 0.15
-                        X: =Parent.Width * 0.12
-                        Y: =Subtitle3_1.Y +Subtitle3_1.Height
-                        ZIndex: =10
+                        Width: =Parent.Width * 0.25
+                        Y: =Parent.Height * 0.16
+                        ZIndex: =9
 
                     Title4_3 As label:
-                        Align: =Align.Center
                         Height: =Parent.Height * 0.07
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =Parent.Width* 0.016
-                        Text: ="선물 주소지"
+                        Size: =Parent.Width* 0.025
+                        Text: |-
+                            ="선물 주소지:"
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width * 0.15
-                        X: =Parent.Width * 0.12
-                        Y: =Subtitle3_1.Y +Subtitle3_1.Height + Subtitle3.Height
-                        ZIndex: =11
+                        Width: =Parent.Width * 0.25
+                        Y: =Parent.Height * 0.22
+                        ZIndex: =10
 
                     Title4_4 As label:
-                        Align: =Align.Center
                         Height: =Parent.Height * 0.07
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =Parent.Width* 0.016
-                        Text: ="선물 우편번호"
+                        Size: =Parent.Width* 0.025
+                        Text: |-
+                            ="선물 우편번호:"
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width * 0.15
-                        X: =Parent.Width * 0.12
-                        Y: =Subtitle3_1.Y +Subtitle3_1.Height + Subtitle3.Height + Subtitle3_2.Height
-                        ZIndex: =12
+                        Width: =Parent.Width * 0.25
+                        Y: =Parent.Height * 0.28
+                        ZIndex: =11
 
             AA_Down_Container_1 As groupContainer.manualLayoutContainer:
                 Height: =Parent.Height * 0.15
-                Width: =Parent.Width * 0.24
+                Width: =Parent.Width * 0.5
                 X: =Gallery4.X
                 ZIndex: =3
 
@@ -540,7 +545,7 @@ Admin_Address_Page As screen:
                         'ExcelDownload(Address)'.Run("")
                     Size: =Parent.Width * 0.04
                     Text: ="다운로드"
-                    Width: =Parent.Width * 0.8
+                    Width: =Parent.Width * 0.5
                     X: =Parent.Width * 0.1
                     Y: =25
                     ZIndex: =1
@@ -549,14 +554,14 @@ Admin_Address_Page As screen:
                     Color: =RGBA(255, 255, 255, 1)
                     Icon: =Icon.Reload
                     OnSelect: =Refresh(ability_address)
-                    Width: =Parent.Width * 0.25
-                    X: =AddressDownload_button_1.Width * 1.2
+                    Width: =Parent.Width * 0.17
+                    X: =AddressDownload_button_1.Width * 1.3
                     Y: =14
                     ZIndex: =2
 
             AA_Search_Container_1 As groupContainer.manualLayoutContainer:
                 Height: =Parent.Height * 0.15
-                Width: =Parent.Width * 0.226
+                Width: =Parent.Width * 0.6
                 X: =Gallery4.X + Gallery4.Width - Self.Width
                 ZIndex: =4
 
@@ -564,11 +569,11 @@ Admin_Address_Page As screen:
                     BorderColor: =RGBA( 112, 128, 144, 0.7 )
                     BorderThickness: =5
                     Default: =""
-                    Height: =35
+                    Height: =30
                     HintText: ="검색"
                     Size: =Parent.Width * 0.04
-                    Width: =Parent.Width * 0.75
+                    Width: =Parent.Width * 0.85
                     X: =Parent.Width * 0.1
-                    Y: =Parent.Height * 0.25
+                    Y: =Parent.Height * 0.4
                     ZIndex: =1
 
