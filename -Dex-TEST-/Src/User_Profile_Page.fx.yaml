@@ -273,7 +273,7 @@ User_Profile_Page As screen:
                     Text: ="Profile 양식 다운로드 해주세요."
                     Width: =Parent.Width * 0.5
                     X: =Parent.X
-                    Y: =10
+                    Y: =15
                     ZIndex: =1
 
                 Profile_download_btn_1 As button:
@@ -286,7 +286,7 @@ User_Profile_Page As screen:
                     Text: ="양식 다운로드"
                     Width: =Parent.Width * 0.35
                     X: =Parent.X*11.5
-                    Y: =25
+                    Y: =30
                     ZIndex: =2
 
             Profile_Up_Container_1 As groupContainer.manualLayoutContainer:
@@ -318,7 +318,7 @@ User_Profile_Page As screen:
                     Tooltip: =
                     Width: =Parent.Width * 0.5
                     X: =Parent.X
-                    Y: =113
+                    Y: =118
                     ZIndex: =1
 
                 Profile_upload_btn_1 As button:
@@ -356,6 +356,6 @@ User_Profile_Page As screen:
                     Text: ="업로드"
                     Width: =Parent.Width * 0.35
                     X: =Parent.X*11.5
-                    Y: =130
+                    Y: =135
                     ZIndex: =2
 
