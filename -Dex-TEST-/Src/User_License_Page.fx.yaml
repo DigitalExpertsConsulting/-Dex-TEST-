@@ -4628,7 +4628,7 @@ User_License_Page As screen:
                         "'MS-700_DatePicker_1' As datepicker":
                             DisplayMode: =If('MS-700_Toggle_1'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
                             Height: =Parent.Height * 0.22
-                            Size: = Parent.Width * 0.021
+                            Size: =Parent.Width * 0.03
                             Width: =Parent.Width * 0.5
                             X: =Parent.Width * 0.4
                             Y: =72
@@ -4729,7 +4729,7 @@ User_License_Page As screen:
                         "'MS-900_DatePicker_1' As datepicker":
                             DisplayMode: =If('MS-900_Toggle_1'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
                             Height: =Parent.Height * 0.22
-                            Size: =Parent.Width * 0.021
+                            Size: =Parent.Width * 0.03
                             Width: =Parent.Width * 0.5
                             X: =Parent.Width * 0.4
                             Y: =72
@@ -4830,7 +4830,7 @@ User_License_Page As screen:
                         "'PL-200_DatePicker_1' As datepicker":
                             DisplayMode: =If('PL-200_Toggle_1'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
                             Height: =Parent.Height * 0.22
-                            Size: =Parent.Width * 0.021
+                            Size: =Parent.Width * 0.03
                             Width: =Parent.Width * 0.5
                             X: =Parent.Width * 0.4
                             Y: =72
@@ -4931,7 +4931,7 @@ User_License_Page As screen:
                         "'PL-300_DatePicker_1' As datepicker":
                             DisplayMode: =If('PL-300_Toggle_1'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
                             Height: =Parent.Height * 0.22
-                            Size: = Parent.Width * 0.021
+                            Size: =Parent.Width * 0.03
                             Width: =Parent.Width * 0.5
                             X: =Parent.Width * 0.4
                             Y: =72
@@ -5032,7 +5032,7 @@ User_License_Page As screen:
                         "'PL-400_DatePicker_1' As datepicker":
                             DisplayMode: =If('PL-400_Toggle_1'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
                             Height: =Parent.Height * 0.22
-                            Size: =Parent.Width * 0.021
+                            Size: =Parent.Width * 0.03
                             Width: =Parent.Width * 0.5
                             X: =Parent.Width * 0.4
                             Y: =72
@@ -5133,7 +5133,7 @@ User_License_Page As screen:
                         "'PL-600_DatePicker_1' As datepicker":
                             DisplayMode: =If('PL-600_Toggle_1'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
                             Height: =Parent.Height * 0.22
-                            Size: = Parent.Width * 0.021
+                            Size: =Parent.Width * 0.03
                             Width: =Parent.Width * 0.5
                             X: =Parent.Width * 0.4
                             Y: =72
@@ -5234,7 +5234,7 @@ User_License_Page As screen:
                         "'PL-900_DatePicker_1' As datepicker":
                             DisplayMode: =If('PL-900_Toggle_1'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
                             Height: =Parent.Height * 0.22
-                            Size: =Parent.Width * 0.021
+                            Size: =Parent.Width * 0.03
                             Width: =Parent.Width * 0.5
                             X: =Parent.Width * 0.4
                             Y: =72
