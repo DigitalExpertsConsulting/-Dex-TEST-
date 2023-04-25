@@ -1,5 +1,10 @@
 User_Profile_Page As screen:
-    BackgroundImage: =ere
+    BackgroundImage: |-
+        =If(
+            Self.Width > 800,
+            ere,
+            '2'
+        )
     ImagePosition: =ImagePosition.Stretch
 
     Profile_Main_Container As groupContainer.verticalAutoLayoutContainer:
