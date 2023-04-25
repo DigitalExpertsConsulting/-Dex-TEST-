@@ -5522,19 +5522,19 @@ User_License_Page As screen:
                             AddAttachmentText: ="인증서 업로드"
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                             DisplayMode: =Parent.DisplayMode
-                            Height: =Parent.Height*0.4
+                            Height: =Parent.Height*0.45
                             IsInDataCard: =true
                             Items: =Parent.Default
                             MaxAttachments: =1
                             MaxAttachmentSize: =100
                             MaxAttachmentsText: =""
-                            NoAttachmentsText: ="License를 등록해주세요."
+                            NoAttachmentsText: =
                             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                             Size: =Parent.Width * 0.03
                             Tooltip: =Parent.DisplayName
                             Width: = Parent.Width * 0.88
                             X: =Parent.Width * 0.045
-                            Y: =DataCardKey55_1.Y + DataCardKey55_1.Height + 5
+                            Y: =DataCardKey55_1.Y + DataCardKey55_1.Height
                             ZIndex: =2
 
                         ErrorMessage49_1 As label:
@@ -5570,7 +5570,7 @@ User_License_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_ms100")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =Parent.Height*0.4
+                        Height: =Parent.Height*0.1
                         Required: =false
                         Update: ='MS-100_File_DataCardValue_1'.Attachments
                         Visible: =If('MS-100_Toggle_1'.Value=true,true,false)
@@ -5583,35 +5583,36 @@ User_License_Page As screen:
                             AutoHeight: =true
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Semibold
-                            Height: =34
-                            Size: =Parent.Width * 0.025
+                            Height: =Parent.Height*0.35
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Size: =Parent.Width * 0.1
                             Text: =Parent.DisplayName
                             Width: =Parent.Width * 0.88
                             Wrap: =false
-                            X: =Parent.Width * 0.05
+                            X: =Parent.Width * 0.08
                             Y: =10
                             ZIndex: =1
 
                         "'MS-100_File_DataCardValue_1' As attachments":
-                            AddAttachmentText: ="파일 업로드"
+                            AddAttachmentText: ="인증서 업로드"
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                             DisplayMode: =Parent.DisplayMode
-                            Height: =90
+                            Height: =Parent.Height*0.45
                             IsInDataCard: =true
                             Items: =Parent.Default
                             MaxAttachments: =1
                             MaxAttachmentSize: =100
                             MaxAttachmentsText: =""
-                            NoAttachmentsText: ="License를 등록해주세요."
-                            PaddingBottom: =5
+                            NoAttachmentsText: =
                             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                            PaddingRight: =5
-                            PaddingTop: =5
-                            Size: =Parent.Width * 0.02
+                            Size: =Parent.Width * 0.03
                             Tooltip: =Parent.DisplayName
-                            Width: =Parent.Width * 0.88
+                            Width: = Parent.Width * 0.88
                             X: =Parent.Width * 0.045
-                            Y: ='MS-100_File_DataCardKey_1'.Y + 'MS-100_File_DataCardKey_1'.Height + 5
+                            Y: ='MS-100_File_DataCardKey_1'.Y + 'MS-100_File_DataCardKey_1'.Height
                             ZIndex: =2
 
                         ErrorMessage50_1 As label:
@@ -5647,7 +5648,7 @@ User_License_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_ms101")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =Parent.Height*0.4
+                        Height: =Parent.Height*0.1
                         Required: =false
                         Update: ='MS-101_File_DataCardValue_1'.Attachments
                         Visible: =If('MS-101_Toggle_1'.Value=true,true,false)
@@ -5660,35 +5661,36 @@ User_License_Page As screen:
                             AutoHeight: =true
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Semibold
-                            Height: =34
-                            Size: =Parent.Width * 0.025
+                            Height: =Parent.Height*0.35
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Size: =Parent.Width * 0.1
                             Text: =Parent.DisplayName
                             Width: =Parent.Width * 0.88
                             Wrap: =false
-                            X: =Parent.Width * 0.05
+                            X: =Parent.Width * 0.08
                             Y: =10
                             ZIndex: =1
 
                         "'MS-101_File_DataCardValue_1' As attachments":
-                            AddAttachmentText: ="파일 업로드"
+                            AddAttachmentText: ="인증서 업로드"
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                             DisplayMode: =Parent.DisplayMode
-                            Height: =90
+                            Height: =Parent.Height*0.45
                             IsInDataCard: =true
                             Items: =Parent.Default
                             MaxAttachments: =1
                             MaxAttachmentSize: =100
                             MaxAttachmentsText: =""
-                            NoAttachmentsText: ="License를 등록해주세요."
-                            PaddingBottom: =5
+                            NoAttachmentsText: =
                             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                            PaddingRight: =5
-                            PaddingTop: =5
-                            Size: =Parent.Width * 0.02
+                            Size: =Parent.Width * 0.03
                             Tooltip: =Parent.DisplayName
-                            Width: =Parent.Width * 0.88
+                            Width: = Parent.Width * 0.88
                             X: =Parent.Width * 0.045
-                            Y: ='MS-101_File_DataCardKey_1'.Y + 'MS-101_File_DataCardKey_1'.Height + 5
+                            Y: ='MS-101_File_DataCardKey_1'.Y + 'MS-101_File_DataCardKey_1'.Height
                             ZIndex: =2
 
                         ErrorMessage51_1 As label:
@@ -5724,7 +5726,7 @@ User_License_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_ms700")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =Parent.Height*0.4
+                        Height: =Parent.Height*0.1
                         Required: =false
                         Update: ='MS-700_File_DataCardValue_1'.Attachments
                         Visible: =If('MS-700_Toggle_1'.Value=true,true,false)
@@ -5737,35 +5739,39 @@ User_License_Page As screen:
                             AutoHeight: =true
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Semibold
-                            Height: =34
-                            Size: = Parent.Width * 0.025
+                            Height: =Parent.Height*0.35
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Size: =Parent.Width * 0.1
                             Text: =Parent.DisplayName
-                            Width: = Parent.Width * 0.88
+                            Width: =Parent.Width * 0.88
                             Wrap: =false
-                            X: =Parent.Width * 0.05
+                            X: =Parent.Width * 0.08
                             Y: =10
                             ZIndex: =1
 
                         "'MS-700_File_DataCardValue_1' As attachments":
-                            AddAttachmentText: ="파일 업로드"
+                            AddAttachmentText: ="인증서 업로드"
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                             DisplayMode: =Parent.DisplayMode
-                            Height: =90
+                            Height: =Parent.Height*0.45
                             IsInDataCard: =true
                             Items: =Parent.Default
                             MaxAttachments: =1
                             MaxAttachmentSize: =100
                             MaxAttachmentsText: =""
-                            NoAttachmentsText: ="License를 등록해주세요."
+                            NoAttachmentsText: =
                             PaddingBottom: =5
                             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                             PaddingRight: =5
                             PaddingTop: =5
-                            Size: = Parent.Width * 0.02
+                            Size: =Parent.Width * 0.03
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width * 0.88
                             X: =Parent.Width * 0.045
-                            Y: ='MS-700_File_DataCardKey_1'.Y + 'MS-700_File_DataCardKey_1'.Height + 5
+                            Y: ='MS-700_File_DataCardKey_1'.Y + 'MS-700_File_DataCardKey_1'.Height
                             ZIndex: =2
 
                         ErrorMessage52_1 As label:
@@ -5801,7 +5807,7 @@ User_License_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_ms900")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =Parent.Height*0.4
+                        Height: =Parent.Height*0.1
                         Required: =false
                         Update: ='MS-900_File_DataCardValue_1'.Attachments
                         Visible: =If('MS-900_Toggle_1'.Value=true,true,false)
@@ -5814,34 +5820,35 @@ User_License_Page As screen:
                             AutoHeight: =true
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Semibold
-                            Height: =34
-                            Size: =15
+                            Height: =Parent.Height*0.35
+                            Size: =Parent.Width * 0.1
                             Text: =Parent.DisplayName
-                            Width: =Parent.Width - 60
+                            Width: =Parent.Width * 0.88
                             Wrap: =false
-                            X: =30
+                            X: =Parent.Width * 0.08
                             Y: =10
                             ZIndex: =1
 
                         "'MS-900_File_DataCardValue_1' As attachments":
-                            AddAttachmentText: ="파일 업로드"
+                            AddAttachmentText: ="인증서 업로드"
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                             DisplayMode: =Parent.DisplayMode
-                            Height: =90
+                            Height: =Parent.Height*0.45
                             IsInDataCard: =true
                             Items: =Parent.Default
                             MaxAttachments: =1
                             MaxAttachmentSize: =100
                             MaxAttachmentsText: =""
-                            NoAttachmentsText: ="License를 등록해주세요."
+                            NoAttachmentsText: =
                             PaddingBottom: =5
                             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                             PaddingRight: =5
                             PaddingTop: =5
+                            Size: =Parent.Width * 0.03
                             Tooltip: =Parent.DisplayName
-                            Width: =Parent.Width - 60
-                            X: =30
-                            Y: ='MS-900_File_DataCardKey_1'.Y + 'MS-900_File_DataCardKey_1'.Height + 5
+                            Width: =Parent.Width * 0.88
+                            X: =Parent.Width * 0.045
+                            Y: ='MS-900_File_DataCardKey_1'.Y + 'MS-900_File_DataCardKey_1'.Height
                             ZIndex: =2
 
                         ErrorMessage53_1 As label:
@@ -5877,7 +5884,7 @@ User_License_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_pl200")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =Parent.Height*0.4
+                        Height: =Parent.Height*0.1
                         Required: =false
                         Update: ='PL-200_File_DataCardValue_1'.Attachments
                         Visible: =If('PL-200_Toggle_1'.Value=true,true,false)
@@ -5890,35 +5897,36 @@ User_License_Page As screen:
                             AutoHeight: =true
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Semibold
-                            Height: =34
-                            Size: =Parent.Width * 0.025
+                            Height: =Parent.Height*0.35
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Size: =Parent.Width * 0.1
                             Text: =Parent.DisplayName
                             Width: =Parent.Width * 0.88
                             Wrap: =false
-                            X: =Parent.Width * 0.05
+                            X: =Parent.Width * 0.08
                             Y: =10
                             ZIndex: =1
 
                         "'PL-200_File_DataCardValue_1' As attachments":
-                            AddAttachmentText: ="파일 업로드"
+                            AddAttachmentText: ="인증서 업로드"
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                             DisplayMode: =Parent.DisplayMode
-                            Height: =90
+                            Height: =Parent.Height*0.45
                             IsInDataCard: =true
                             Items: =Parent.Default
                             MaxAttachments: =1
                             MaxAttachmentSize: =100
                             MaxAttachmentsText: =""
-                            NoAttachmentsText: ="파일이 없습니다."
-                            PaddingBottom: =5
+                            NoAttachmentsText: =
                             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                            PaddingRight: =5
-                            PaddingTop: =5
-                            Size: =Parent.Width * 0.02
+                            Size: =Parent.Width * 0.03
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width * 0.88
                             X: =Parent.Width * 0.045
-                            Y: ='PL-200_File_DataCardKey_1'.Y + 'PL-200_File_DataCardKey_1'.Height + 5
+                            Y: ='PL-200_File_DataCardKey_1'.Y + 'PL-200_File_DataCardKey_1'.Height
                             ZIndex: =2
 
                         ErrorMessage54_1 As label:
@@ -5954,7 +5962,7 @@ User_License_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_pl300")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =Parent.Height*0.4
+                        Height: =Parent.Height*0.1
                         Required: =false
                         Update: ='PL-300_File_DataCardValue_1'.Attachments
                         Visible: =If('PL-300_Toggle_1'.Value=true,true,false)
@@ -5967,35 +5975,36 @@ User_License_Page As screen:
                             AutoHeight: =true
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Semibold
-                            Height: =34
-                            Size: =Parent.Width * 0.025
+                            Height: =Parent.Height*0.35
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Size: =Parent.Width * 0.1
                             Text: =Parent.DisplayName
                             Width: =Parent.Width * 0.88
                             Wrap: =false
-                            X: =Parent.Width * 0.05
+                            X: =Parent.Width * 0.08
                             Y: =10
                             ZIndex: =1
 
                         "'PL-300_File_DataCardValue_1' As attachments":
-                            AddAttachmentText: ="파일 업로드"
+                            AddAttachmentText: ="인증서 업로드"
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                             DisplayMode: =Parent.DisplayMode
-                            Height: =90
+                            Height: =Parent.Height*0.45
                             IsInDataCard: =true
                             Items: =Parent.Default
                             MaxAttachments: =1
                             MaxAttachmentSize: =100
                             MaxAttachmentsText: =""
-                            NoAttachmentsText: ="License를 등록해주세요."
-                            PaddingBottom: =5
+                            NoAttachmentsText: =
                             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                            PaddingRight: =5
-                            PaddingTop: =5
-                            Size: =Parent.Width * 0.02
+                            Size: =Parent.Width * 0.03
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width * 0.88
                             X: =Parent.Width * 0.045
-                            Y: ='PL-300_File_DataCardKey_1'.Y + 'PL-300_File_DataCardKey_1'.Height + 5
+                            Y: ='PL-300_File_DataCardKey_1'.Y + 'PL-300_File_DataCardKey_1'.Height
                             ZIndex: =2
 
                         ErrorMessage55_1 As label:
@@ -6031,7 +6040,7 @@ User_License_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_pl400")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =Parent.Height*0.4
+                        Height: =Parent.Height*0.1
                         Required: =false
                         Update: ='PL-400_File_DataCardValue_1'.Attachments
                         Visible: =If('PL-400_Toggle_1'.Value=true,true,false)
@@ -6044,35 +6053,36 @@ User_License_Page As screen:
                             AutoHeight: =true
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Semibold
-                            Height: =34
-                            Size: = Parent.Width * 0.025
+                            Height: =Parent.Height*0.35
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Size: =Parent.Width * 0.1
                             Text: =Parent.DisplayName
                             Width: =Parent.Width * 0.88
                             Wrap: =false
-                            X: =Parent.Width * 0.05
+                            X: =Parent.Width * 0.08
                             Y: =10
                             ZIndex: =1
 
                         "'PL-400_File_DataCardValue_1' As attachments":
-                            AddAttachmentText: ="파일 업로드"
+                            AddAttachmentText: ="인증서 업로드"
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                             DisplayMode: =Parent.DisplayMode
-                            Height: =90
+                            Height: =Parent.Height*0.45
                             IsInDataCard: =true
                             Items: =Parent.Default
                             MaxAttachments: =1
                             MaxAttachmentSize: =100
                             MaxAttachmentsText: =""
-                            NoAttachmentsText: ="License를 등록해주세요."
-                            PaddingBottom: =5
+                            NoAttachmentsText: =
                             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                            PaddingRight: =5
-                            PaddingTop: =5
-                            Size: =Parent.Width * 0.02
+                            Size: =Parent.Width * 0.03
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width * 0.88
                             X: =Parent.Width * 0.045
-                            Y: ='PL-400_File_DataCardKey_1'.Y + 'PL-400_File_DataCardKey_1'.Height + 5
+                            Y: ='PL-400_File_DataCardKey_1'.Y + 'PL-400_File_DataCardKey_1'.Height
                             ZIndex: =2
 
                         ErrorMessage56_1 As label:
@@ -6108,7 +6118,7 @@ User_License_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_pl600")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =Parent.Height*0.4
+                        Height: =Parent.Height*0.1
                         Required: =false
                         Update: ='PL-600_File_DataCardValue_1'.Attachments
                         Visible: =If('PL-600_Toggle_1'.Value=true,true,false)
@@ -6121,35 +6131,36 @@ User_License_Page As screen:
                             AutoHeight: =true
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Semibold
-                            Height: =34
-                            Size: =Parent.Width * 0.025
+                            Height: =Parent.Height*0.35
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Size: =Parent.Width * 0.1
                             Text: =Parent.DisplayName
                             Width: =Parent.Width * 0.88
                             Wrap: =false
-                            X: =Parent.Width * 0.05
+                            X: =Parent.Width * 0.08
                             Y: =10
                             ZIndex: =1
 
                         "'PL-600_File_DataCardValue_1' As attachments":
-                            AddAttachmentText: ="파일 업로드"
+                            AddAttachmentText: ="인증서 업로드"
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                             DisplayMode: =Parent.DisplayMode
-                            Height: =90
+                            Height: =Parent.Height*0.45
                             IsInDataCard: =true
                             Items: =Parent.Default
                             MaxAttachments: =1
                             MaxAttachmentSize: =100
                             MaxAttachmentsText: =""
-                            NoAttachmentsText: ="License를 등록해주세요."
-                            PaddingBottom: =5
+                            NoAttachmentsText: =
                             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                            PaddingRight: =5
-                            PaddingTop: =5
-                            Size: =Parent.Width * 0.02
+                            Size: =Parent.Width * 0.03
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width * 0.88
                             X: =Parent.Width * 0.045
-                            Y: ='PL-600_File_DataCardKey_1'.Y + 'PL-600_File_DataCardKey_1'.Height + 5
+                            Y: ='PL-600_File_DataCardKey_1'.Y + 'PL-600_File_DataCardKey_1'.Height
                             ZIndex: =2
 
                         ErrorMessage57_1 As label:
@@ -6185,7 +6196,7 @@ User_License_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_pl900")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =Parent.Height*0.4
+                        Height: =Parent.Height*0.1
                         Required: =false
                         Update: ='PL-900_File_DataCardValue_1'.Attachments
                         Visible: =If('PL-900_Toggle_1'.Value=true,true,false)
@@ -6198,35 +6209,35 @@ User_License_Page As screen:
                             AutoHeight: =true
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Semibold
-                            Height: =34
-                            Size: =Parent.Width * 0.025
+                            Height: =Parent.Height*0.35
+                            Size: =Parent.Width * 0.1
                             Text: =Parent.DisplayName
                             Width: =Parent.Width * 0.88
                             Wrap: =false
-                            X: =Parent.Width * 0.05
+                            X: =Parent.Width * 0.08
                             Y: =10
                             ZIndex: =1
 
                         "'PL-900_File_DataCardValue_1' As attachments":
-                            AddAttachmentText: ="파일 업로드"
+                            AddAttachmentText: ="인증서 업로드"
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                             DisplayMode: =Parent.DisplayMode
-                            Height: =90
+                            Height: =Parent.Height*0.45
                             IsInDataCard: =true
                             Items: =Parent.Default
                             MaxAttachments: =1
                             MaxAttachmentSize: =100
                             MaxAttachmentsText: =""
-                            NoAttachmentsText: ="License를 등록해주세요."
+                            NoAttachmentsText: =
                             PaddingBottom: =5
                             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                             PaddingRight: =5
                             PaddingTop: =5
-                            Size: =Parent.Width * 0.02
+                            Size: =Parent.Width * 0.03
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width * 0.88
                             X: =Parent.Width * 0.045
-                            Y: ='PL-900_File_DataCardKey_1'.Y + 'PL-900_File_DataCardKey_1'.Height + 5
+                            Y: ='PL-900_File_DataCardKey_1'.Y + 'PL-900_File_DataCardKey_1'.Height
                             ZIndex: =2
 
                         ErrorMessage58_1 As label:
