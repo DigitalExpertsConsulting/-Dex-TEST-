@@ -5690,7 +5690,7 @@ User_License_Page As screen:
                             MaxAttachmentsText: =""
                             NoAttachmentsText: =
                             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                            Size: =Parent.Width * 0.03
+                            Size: =Parent.Width * 0.05
                             Tooltip: =Parent.DisplayName
                             Width: = Parent.Width * 0.88
                             X: =Parent.Width * 0.045
