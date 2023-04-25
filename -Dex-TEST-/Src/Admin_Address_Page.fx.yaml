@@ -371,11 +371,11 @@ Admin_Address_Page As screen:
                     DelayItemLoading: =true
                     Fill: =RGBA(0,0,0,0.3)
                     Height: =Parent.Height
-                    Items: =ability_address
+                    Items: =Search(ability_address,Address_Search_1.Text,"cr778_name")
                     Layout: =Layout.Vertical
                     LoadingSpinner: =LoadingSpinner.Data
                     TemplatePadding: =0
-                    TemplateSize: =Min(200,Self.Height)
+                    TemplateSize: =Min(190,Self.Height)
                     Width: =Parent.Width
                     ZIndex: =1
 
@@ -432,7 +432,7 @@ Admin_Address_Page As screen:
                         PaddingRight: =0
                         PaddingTop: =0
                         Size: =Parent.Width* 0.023
-                        Text: =ThisItem.Address
+                        Text: =ThisItem.'Created On'
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width * 0.735
                         X: =Parent.Width * 0.12
