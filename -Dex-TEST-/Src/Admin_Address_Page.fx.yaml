@@ -302,54 +302,48 @@ Admin_Address_Page As screen:
         Width: =Parent.Width
         ZIndex: =18
 
-        AA_Header_Container_1 As groupContainer.horizontalAutoLayoutContainer:
+        AA_Header_Container_2 As groupContainer.horizontalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
-            Height: =Parent.Height * 0.26
+            Height: =Parent.Height * 0.21
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
-            PaddingLeft: =50
-            PaddingRight: =50
-            PaddingTop: |
-                =30
+            PaddingLeft: =5
+            PaddingRight: =5
             Width: =Parent.Width
             ZIndex: =1
 
-            Admin_Address_Back_1 As icon.BackArrow:
+            License_Back_3 As icon.BackArrow:
                 Color: =RGBA( 106, 170, 205, 1 )
-                Height: =130
+                Height: =Parent.Width * 0.3
                 Icon: =Icon.BackArrow
                 OnSelect: =Navigate(Admin_Page)
-                Width: =Parent.Width * 0.08
-                X: =Parent.Width * 0.01
-                Y: =40
+                Width: =Parent.Width *0.15
+                X: =Parent.Width * 0.1
+                Y: =Parent.Width * 0.05
                 ZIndex: =1
 
-            Admin_Address_Title_1 As label:
+            License_Title_3 As label:
                 Align: =Align.Center
                 BorderColor: =RGBA(102, 182, 227, 0.7)
                 Color: =RGBA(255, 255, 255, 1)
                 FillPortions: =1
                 FontWeight: =FontWeight.Semibold
                 Height: =Parent.Height
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingTop: =0
-                Size: =Parent.Width * 0.035
+                Size: = (Parent.Width * 0.07)
                 Text: ="Admin Address Page"
-                Width: |-
-                    =Parent.Width - Admin_Address_Back_1.Width - Admin_Address_Home_1.Width
-                    //Parent.Width - Admin_Address_Back.Width - Admin_Address_Home.Width
+                Width: |
+                    =Parent.Width - License_Back_3.Width*0.5 - License_Home_3.Width
                 ZIndex: =2
 
-            Admin_Address_Home_1 As icon.Home:
+            License_Home_3 As icon.Home:
                 Color: =RGBA( 106, 170, 205, 1 )
-                Height: =130
+                Height: =Parent.Width * 0.3
                 Icon: =Icon.Home
                 OnSelect: =Navigate(Main_Page)
-                Width: =Parent.Width * 0.08
+                Width: =Parent.Width * 0.15
                 X: =Parent.Width * 0.9
                 Y: =40
                 ZIndex: =3

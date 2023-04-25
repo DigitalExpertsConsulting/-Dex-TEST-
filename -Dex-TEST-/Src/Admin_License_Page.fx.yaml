@@ -438,50 +438,49 @@ Admin_License_Page As screen:
         Width: =Parent.Width
         ZIndex: =28
 
-        AL_Header_Container_1 As groupContainer.horizontalAutoLayoutContainer:
+        AL_Header_Container_3 As groupContainer.horizontalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
+            ContentLanguage: ="A"
             FillPortions: =0
             Height: =Parent.Height * 0.21
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
-            PaddingLeft: =50
-            PaddingRight: =50
-            PaddingTop: =30
+            PaddingLeft: =5
+            PaddingRight: =5
             Width: =Parent.Width
             ZIndex: =1
 
-            Admin_License_Back_1 As icon.BackArrow:
+            License_Back_5 As icon.BackArrow:
                 Color: =RGBA( 106, 170, 205, 1 )
-                Height: =Parent.Width * 0.08
+                Height: =Parent.Width * 0.3
                 Icon: =Icon.BackArrow
                 OnSelect: =Navigate(Admin_Page)
-                Width: =Parent.Width * 0.08
-                X: =Parent.Width * 0.01
-                Y: =40
+                Width: =Parent.Width *0.15
+                X: =Parent.Width * 0.1
+                Y: =Parent.Width * 0.05
                 ZIndex: =1
 
-            Admin_License_Title_1 As label:
+            License_Title_5 As label:
                 Align: =Align.Center
                 BorderColor: =RGBA(102, 182, 227, 0.7)
                 Color: =RGBA(255, 255, 255, 1)
                 FillPortions: =1
-                FontWeight: =FontWeight.Bold
+                FontWeight: =FontWeight.Semibold
                 Height: =Parent.Height
-                Size: =Parent.Width * 0.035
+                Size: = (Parent.Width * 0.07)
                 Text: ="Admin License Page"
-                Width: =Parent.Width - Admin_License_Back_1.Width - Admin_License_Home_1.Width 
-                X: =Admin_License_Back_1.Width
-                Y: =
+                Width: |
+                    =Parent.Width - License_Back_5.Width*0.5 - License_Home_5.Width
                 ZIndex: =2
 
-            Admin_License_Home_1 As icon.Home:
+            License_Home_5 As icon.Home:
                 Color: =RGBA( 106, 170, 205, 1 )
-                Height: =Parent.Width * 0.08
+                Height: =Parent.Width * 0.3
                 Icon: =Icon.Home
                 OnSelect: =Navigate(Main_Page)
-                Width: =Parent.Width * 0.08
+                Width: =Parent.Width * 0.15
                 X: =Parent.Width * 0.9
                 Y: =40
                 ZIndex: =3
@@ -491,8 +490,8 @@ Admin_License_Page As screen:
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             Width: =Parent.Width
-            Y: =AL_Header_Container_1.Height
-            ZIndex: =2
+            Y: =AL_Header_Container_3.Height
+            ZIndex: =3
 
             AL_Down_Container_1 As groupContainer.manualLayoutContainer:
                 Height: =Parent.Height * 0.14
