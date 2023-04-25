@@ -425,7 +425,7 @@ Admin_Address_Page As screen:
                         ZIndex: =4
 
                     Subtitle3_1 As label:
-                        Height: =Parent.Height * 0.09
+                        Height: =Parent.Height * 0.1
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
@@ -440,7 +440,7 @@ Admin_Address_Page As screen:
                         ZIndex: =5
 
                     Subtitle3_2 As label:
-                        Height: =Parent.Height * 0.09
+                        Height: =Parent.Height * 0.1
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
