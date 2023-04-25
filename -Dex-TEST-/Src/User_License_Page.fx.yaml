@@ -1382,7 +1382,7 @@ User_License_Page As screen:
                 Size: =Parent.Width * 0.035
                 Text: ="License Page"
                 Width: |
-                    =Parent.Width - License_Back.Width - License_Back.Width
+                    =Parent.Width - License_Back.Width - License_Home.Width
                 ZIndex: =2
 
             License_Home As icon.Home:

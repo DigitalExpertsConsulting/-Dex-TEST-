@@ -209,40 +209,40 @@ User_Profile_Page As screen:
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
-            PaddingLeft: =50
-            PaddingRight: =50
-            PaddingTop: =30
+            PaddingLeft: =5
+            PaddingRight: =5
             Width: =Parent.Width
             ZIndex: =1
 
-            Profile_Back_1 As icon.BackArrow:
+            License_Back_2 As icon.BackArrow:
                 Color: =RGBA( 106, 170, 205, 1 )
-                Height: =Parent.Width * 0.08
+                Height: =Parent.Width * 0.3
                 Icon: =Icon.BackArrow
                 OnSelect: =Navigate(User_Page)
-                Width: =Parent.Width * 0.08
-                X: =Parent.X * 0.01
-                Y: =40
+                Width: =Parent.Width *0.15
+                X: =Parent.Width * 0.1
+                Y: =Parent.Width * 0.05
                 ZIndex: =1
 
-            Profile_Title_1 As label:
+            License_Title_2 As label:
                 Align: =Align.Center
                 BorderColor: =RGBA(102, 182, 227, 0.7)
                 Color: =RGBA(255, 255, 255, 1)
                 FillPortions: =1
-                FontWeight: =FontWeight.Bold
+                FontWeight: =FontWeight.Semibold
                 Height: =Parent.Height
-                Size: =Parent.Width * 0.035
+                Size: = (Parent.Width * 0.07)
                 Text: ="Profile Page"
-                Width: =Parent.Width - Profile_Back_1.Width - Profile_Home_1.Width
+                Width: |
+                    =Parent.Width - License_Back_2.Width*0.5 - License_Home_2.Width
                 ZIndex: =2
 
-            Profile_Home_1 As icon.Home:
+            License_Home_2 As icon.Home:
                 Color: =RGBA( 106, 170, 205, 1 )
-                Height: =Parent.Width * 0.08
+                Height: =Parent.Width * 0.3
                 Icon: =Icon.Home
                 OnSelect: =Navigate(Main_Page)
-                Width: =Parent.Width * 0.08
+                Width: =Parent.Width * 0.15
                 X: =Parent.Width * 0.9
                 Y: =40
                 ZIndex: =3
@@ -254,12 +254,12 @@ User_Profile_Page As screen:
             LayoutMinWidth: =250
             Width: =Parent.Width
             Y: =Parent.Height - Profile_Header_Container_1.Height
-            ZIndex: =2
+            ZIndex: =3
 
             Profile_Down_Container_1 As groupContainer.manualLayoutContainer:
                 Height: =Parent.Height * 0.5
-                Width: =Parent.Width * 0.46
-                X: =Parent.Width * 0.27
+                Width: =Parent.Width *0.5
+                X: =Parent.Width * 0.1
                 Y: =
                 ZIndex: =2
 
@@ -268,14 +268,14 @@ User_Profile_Page As screen:
                     BorderColor: =RGBA( 112, 128, 144, 0.7 )
                     BorderThickness: =5
                     Fill: =RGBA(237, 237, 237, 1)
-                    Height: =Parent.Height
+                    Height: =Parent.Height*0.5
                     Size: =Parent.Width * 0.025
                     Text: ="Profile 양식 다운로드 해주세요."
-                    Width: =Parent.Width * 0.5
+                    Width: =Parent.Width * 0.7
                     ZIndex: =1
 
                 Profile_download_btn_1 As button:
-                    BorderThickness: =5
+                    BorderThickness: =1
                     Fill: =RGBA( 106, 170, 205, 1 )
                     Height: =Parent.Height * 0.2
                     HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -50%)
@@ -289,8 +289,8 @@ User_Profile_Page As screen:
 
             Profile_Up_Container_1 As groupContainer.manualLayoutContainer:
                 Height: =Parent.Height * 0.5
-                Width: =Parent.Width * 0.46
-                X: =Parent.Width * 0.27
+                Width: =Parent.Width * 0.5
+                X: =Parent.Width * 0.1
                 Y: =Parent.Height * 0.5
                 ZIndex: =3
 
@@ -301,7 +301,7 @@ User_Profile_Page As screen:
                     DisabledColor: =RGBA(0, 0, 0, 1)
                     DisplayMode: =
                     Fill: =RGBA(237, 237, 237, 1)
-                    Height: =Parent.Height
+                    Height: =Parent.Height*0.3
                     IsInDataCard: =true
                     Items: =
                     MaxAttachments: =1
@@ -314,7 +314,7 @@ User_Profile_Page As screen:
                     PaddingTop: =5
                     Size: =Parent.Width * 0.025
                     Tooltip: =
-                    Width: =Parent.Width * 0.5
+                    Width: =Parent.Width * 0.8
                     ZIndex: =1
 
                 Profile_upload_btn_1 As button:
@@ -350,7 +350,7 @@ User_Profile_Page As screen:
                         );
                     Size: =Parent.Width * 0.03
                     Text: ="업로드"
-                    Width: =Parent.Width * 0.35
+                    Width: =Parent.Width * 0.5
                     X: =Parent.Width * 0.57
                     Y: =Parent.Height * 0.35
                     ZIndex: =2

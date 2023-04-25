@@ -7814,49 +7814,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "User_Profile_Page.mProfile_Main_Container.Profile_Header_Container_1.Profile_Back_1.AccessibleLabel"
+                  "fullyQualifiedName": "User_Profile_Page.mProfile_Main_Container.Profile_Header_Container_1.License_Home_2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "User_Profile_Page.mProfile_Main_Container.Profile_Header_Container_1.Profile_Back_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User_Profile_Page",
-                "type": "User_Profile_Page.mProfile_Main_Container.Profile_Header_Container_1.Profile_Back_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "User_Profile_Page.mProfile_Main_Container.Profile_Header_Container_1.Profile_Back_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "User_Profile_Page.mProfile_Main_Container.Profile_Header_Container_1.Profile_Back_1.TabIndex",
+                  "fullyQualifiedName": "User_Profile_Page.mProfile_Main_Container.Profile_Header_Container_1.License_Home_2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "User_Profile_Page",
-                "type": "User_Profile_Page.mProfile_Main_Container.Profile_Header_Container_1.Profile_Back_1"
+                "type": "User_Profile_Page.mProfile_Main_Container.Profile_Header_Container_1.License_Home_2"
               }
             }
           ],
@@ -7874,19 +7844,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "User_Profile_Page.mProfile_Main_Container.Profile_Header_Container_1.Profile_Home_1.AccessibleLabel"
+                  "fullyQualifiedName": "User_Profile_Page.mProfile_Main_Container.Profile_Header_Container_1.License_Home_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "User_Profile_Page.mProfile_Main_Container.Profile_Header_Container_1.Profile_Home_1.AccessibleLabel",
+                  "fullyQualifiedName": "User_Profile_Page.mProfile_Main_Container.Profile_Header_Container_1.License_Home_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "User_Profile_Page",
-                "type": "User_Profile_Page.mProfile_Main_Container.Profile_Header_Container_1.Profile_Home_1"
+                "type": "User_Profile_Page.mProfile_Main_Container.Profile_Header_Container_1.License_Home_2"
               }
             }
           ],
@@ -7904,19 +7874,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "User_Profile_Page.mProfile_Main_Container.Profile_Header_Container_1.Profile_Home_1.TabIndex"
+                  "fullyQualifiedName": "User_Profile_Page.mProfile_Main_Container.Profile_Header_Container_1.License_Back_2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "User_Profile_Page.mProfile_Main_Container.Profile_Header_Container_1.Profile_Home_1.TabIndex",
+                  "fullyQualifiedName": "User_Profile_Page.mProfile_Main_Container.Profile_Header_Container_1.License_Back_2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "User_Profile_Page",
-                "type": "User_Profile_Page.mProfile_Main_Container.Profile_Header_Container_1.Profile_Home_1"
+                "type": "User_Profile_Page.mProfile_Main_Container.Profile_Header_Container_1.License_Back_2"
               }
             }
           ],
@@ -7928,6 +7898,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "User_Profile_Page.mProfile_Main_Container.Profile_Header_Container_1.License_Back_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "User_Profile_Page.mProfile_Main_Container.Profile_Header_Container_1.License_Back_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User_Profile_Page",
+                "type": "User_Profile_Page.mProfile_Main_Container.Profile_Header_Container_1.License_Back_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
         },
         {
           "locations": [
