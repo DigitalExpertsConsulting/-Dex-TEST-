@@ -4572,9 +4572,9 @@ User_License_Page As screen:
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Bold
                             Height: =Parent.Height * 0.4
-                            Size: =Parent.Width * 0.045
+                            Size: =Parent.Width * 0.07
                             Text: =Parent.DisplayName
-                            Width: =Parent.Width * 0.25
+                            Width: =Parent.Width * 0.5
                             Wrap: =false
                             ZIndex: =1
 
@@ -4610,39 +4610,39 @@ User_License_Page As screen:
                             Size: =Parent.Width * 0.019
                             TrueText: ="있다"
                             Width: =Parent.Width * 0.23
-                            X: =Parent.Width * 0.27
-                            Y: =75
+                            X: =Parent.Width * 0.05
+                            Y: =70
                             ZIndex: =5
 
                         "'MS-700_취득여부_1' As label":
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Semibold
-                            Height: =53
-                            Size: =Parent.Width * 0.025
+                            Height: =50
+                            Size: =Parent.Width * 0.035
                             Text: ="취득 여부"
                             Width: =Parent.Width * 0.25
-                            X: =Parent.Width * 0.27
-                            Y: =16
+                            X: =Parent.Width * 0.05
+                            Y: =20
                             ZIndex: =6
 
                         "'MS-700_DatePicker_1' As datepicker":
                             DisplayMode: =If('MS-700_Toggle_1'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
-                            Height: =Parent.Height * 0.3
+                            Height: =Parent.Height * 0.22
                             Size: = Parent.Width * 0.021
-                            Width: = Parent.Width * 0.36
-                            X: = Parent.Width * 0.59
-                            Y: =71
+                            Width: =Parent.Width * 0.5
+                            X: =Parent.Width * 0.4
+                            Y: =72
                             ZIndex: =7
 
                         "'MS-700_취득일자_1' As label":
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Semibold
-                            Height: =53
+                            Height: =50
                             Size: =Parent.Width * 0.025
                             Text: ="취득 일자"
                             Width: =Parent.Width * 0.25
-                            X: =Parent.Width * 0.67
-                            Y: =16
+                            X: =Parent.Width * 0.51
+                            Y: =20
                             ZIndex: =8
 
                     "'MS-900_DataCard_1' As typedDataCard.textualEditCard":
@@ -4673,9 +4673,9 @@ User_License_Page As screen:
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Bold
                             Height: =Parent.Height * 0.4
-                            Size: =Parent.Width * 0.045
+                            Size: =Parent.Width * 0.07
                             Text: =Parent.DisplayName
-                            Width: = Parent.Width * 0.25
+                            Width: =Parent.Width * 0.5
                             Wrap: =false
                             ZIndex: =1
 
@@ -4711,39 +4711,39 @@ User_License_Page As screen:
                             Size: =Parent.Width * 0.019
                             TrueText: ="있다"
                             Width: =Parent.Width * 0.23
-                            X: =Parent.Width * 0.27
-                            Y: =75
+                            X: =Parent.Width * 0.05
+                            Y: =70
                             ZIndex: =5
 
                         "'MS-900_취득여부_1' As label":
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Semibold
-                            Height: =53
-                            Size: = Parent.Width * 0.025
+                            Height: =50
+                            Size: =Parent.Width * 0.035
                             Text: ="취득 여부"
                             Width: =Parent.Width * 0.25
-                            X: =Parent.Width * 0.27
-                            Y: =16
+                            X: =Parent.Width * 0.05
+                            Y: =20
                             ZIndex: =6
 
                         "'MS-900_DatePicker_1' As datepicker":
                             DisplayMode: =If('MS-900_Toggle_1'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
-                            Height: =Parent.Height * 0.3
+                            Height: =Parent.Height * 0.22
                             Size: =Parent.Width * 0.021
-                            Width: =Parent.Width * 0.36
-                            X: =Parent.Width * 0.59
-                            Y: =71
+                            Width: =Parent.Width * 0.5
+                            X: =Parent.Width * 0.4
+                            Y: =72
                             ZIndex: =7
 
                         "'MS-900_취득일자_1' As label":
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Semibold
-                            Height: =53
+                            Height: =50
                             Size: =Parent.Width * 0.025
                             Text: ="취득 일자"
                             Width: =Parent.Width * 0.25
-                            X: =Parent.Width * 0.67
-                            Y: =16
+                            X: =Parent.Width * 0.51
+                            Y: =20
                             ZIndex: =8
 
                     "'PL-200_DataCard_1' As typedDataCard.textualEditCard":
@@ -4774,9 +4774,9 @@ User_License_Page As screen:
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Bold
                             Height: =Parent.Height * 0.4
-                            Size: = Parent.Width * 0.045
+                            Size: =Parent.Width * 0.07
                             Text: =Parent.DisplayName
-                            Width: =Parent.Width * 0.25
+                            Width: =Parent.Width * 0.5
                             Wrap: =false
                             ZIndex: =1
 
@@ -4812,39 +4812,39 @@ User_License_Page As screen:
                             Size: = Parent.Width * 0.019
                             TrueText: ="있다"
                             Width: =Parent.Width * 0.23
-                            X: = Parent.Width * 0.27
-                            Y: =75
+                            X: =Parent.Width * 0.05
+                            Y: =70
                             ZIndex: =5
 
                         "'PL-200_취득여부_1' As label":
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Semibold
-                            Height: =53
-                            Size: = Parent.Width * 0.025
+                            Height: =50
+                            Size: =Parent.Width * 0.035
                             Text: ="취득 여부"
                             Width: =Parent.Width * 0.25
-                            X: =Parent.Width * 0.27
-                            Y: =16
+                            X: =Parent.Width * 0.05
+                            Y: =20
                             ZIndex: =6
 
                         "'PL-200_DatePicker_1' As datepicker":
                             DisplayMode: =If('PL-200_Toggle_1'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
-                            Height: =Parent.Height * 0.3
+                            Height: =Parent.Height * 0.22
                             Size: =Parent.Width * 0.021
-                            Width: = Parent.Width * 0.36
-                            X: =Parent.Width * 0.59
-                            Y: =71
+                            Width: =Parent.Width * 0.5
+                            X: =Parent.Width * 0.4
+                            Y: =72
                             ZIndex: =7
 
                         "'PL-200_취득일자_1' As label":
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Semibold
-                            Height: =53
+                            Height: =50
                             Size: =Parent.Width * 0.025
                             Text: ="취득 일자"
                             Width: =Parent.Width * 0.25
-                            X: =Parent.Width * 0.67
-                            Y: =16
+                            X: =Parent.Width * 0.51
+                            Y: =20
                             ZIndex: =8
 
                     "'PL-300_DataCard_1' As typedDataCard.textualEditCard":
@@ -4875,9 +4875,9 @@ User_License_Page As screen:
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Bold
                             Height: =Parent.Height * 0.4
-                            Size: =Parent.Width * 0.045
+                            Size: =Parent.Width * 0.07
                             Text: =Parent.DisplayName
-                            Width: = Parent.Width * 0.25
+                            Width: =Parent.Width * 0.5
                             Wrap: =false
                             ZIndex: =1
 
@@ -4912,40 +4912,40 @@ User_License_Page As screen:
                             Height: =Parent.Height * 0.3
                             Size: =Parent.Width * 0.019
                             TrueText: ="있다"
-                            Width: = Parent.Width * 0.23
-                            X: =Parent.Width * 0.27
-                            Y: =75
+                            Width: =Parent.Width * 0.23
+                            X: =Parent.Width * 0.05
+                            Y: =70
                             ZIndex: =5
 
                         "'PL-300_취득여부_1' As label":
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Semibold
-                            Height: =53
-                            Size: =Parent.Width * 0.025
+                            Height: =50
+                            Size: =Parent.Width * 0.035
                             Text: ="취득 여부"
                             Width: =Parent.Width * 0.25
-                            X: =Parent.Width * 0.27
-                            Y: =16
+                            X: =Parent.Width * 0.05
+                            Y: =20
                             ZIndex: =6
 
                         "'PL-300_DatePicker_1' As datepicker":
                             DisplayMode: =If('PL-300_Toggle_1'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
-                            Height: =Parent.Height * 0.3
+                            Height: =Parent.Height * 0.22
                             Size: = Parent.Width * 0.021
-                            Width: = Parent.Width * 0.36
-                            X: =Parent.Width * 0.59
-                            Y: =71
+                            Width: =Parent.Width * 0.5
+                            X: =Parent.Width * 0.4
+                            Y: =72
                             ZIndex: =7
 
                         "'PL-300_취득일자_1' As label":
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Semibold
-                            Height: =53
+                            Height: =50
                             Size: =Parent.Width * 0.025
                             Text: ="취득 일자"
                             Width: =Parent.Width * 0.25
-                            X: = Parent.Width * 0.67
-                            Y: =16
+                            X: =Parent.Width * 0.51
+                            Y: =20
                             ZIndex: =8
 
                     "'PL-400_DataCard_1' As typedDataCard.textualEditCard":
@@ -4976,9 +4976,9 @@ User_License_Page As screen:
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Bold
                             Height: =Parent.Height * 0.4
-                            Size: =Parent.Width * 0.045
+                            Size: =Parent.Width * 0.07
                             Text: =Parent.DisplayName
-                            Width: =Parent.Width * 0.25
+                            Width: =Parent.Width * 0.5
                             Wrap: =false
                             ZIndex: =1
 
@@ -5013,40 +5013,40 @@ User_License_Page As screen:
                             Height: =Parent.Height * 0.3
                             Size: =Parent.Width * 0.019
                             TrueText: ="있다"
-                            Width: = Parent.Width * 0.23
-                            X: =Parent.Width * 0.27
-                            Y: =75
+                            Width: =Parent.Width * 0.23
+                            X: =Parent.Width * 0.05
+                            Y: =70
                             ZIndex: =5
 
                         "'PL-400_취득여부_1' As label":
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Semibold
-                            Height: =53
-                            Size: =Parent.Width * 0.025
+                            Height: =50
+                            Size: =Parent.Width * 0.035
                             Text: ="취득 여부"
                             Width: =Parent.Width * 0.25
-                            X: =Parent.Width * 0.27
-                            Y: =16
+                            X: =Parent.Width * 0.05
+                            Y: =20
                             ZIndex: =6
 
                         "'PL-400_DatePicker_1' As datepicker":
                             DisplayMode: =If('PL-400_Toggle_1'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
-                            Height: =Parent.Height * 0.3
+                            Height: =Parent.Height * 0.22
                             Size: =Parent.Width * 0.021
-                            Width: = Parent.Width * 0.36
-                            X: =Parent.Width * 0.59
-                            Y: =71
+                            Width: =Parent.Width * 0.5
+                            X: =Parent.Width * 0.4
+                            Y: =72
                             ZIndex: =7
 
                         "'PL-400_취득일자_1' As label":
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Semibold
-                            Height: =53
+                            Height: =50
                             Size: =Parent.Width * 0.025
                             Text: ="취득 일자"
                             Width: =Parent.Width * 0.25
-                            X: =Parent.Width * 0.67
-                            Y: =16
+                            X: =Parent.Width * 0.51
+                            Y: =20
                             ZIndex: =8
 
                     "'PL-600_DataCard_1' As typedDataCard.textualEditCard":
@@ -5077,9 +5077,9 @@ User_License_Page As screen:
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Bold
                             Height: =Parent.Height * 0.4
-                            Size: =Parent.Width * 0.045
+                            Size: =Parent.Width * 0.07
                             Text: =Parent.DisplayName
-                            Width: =Parent.Width * 0.25
+                            Width: =Parent.Width * 0.5
                             Wrap: =false
                             ZIndex: =1
 
@@ -5115,39 +5115,39 @@ User_License_Page As screen:
                             Size: =Parent.Width * 0.019
                             TrueText: ="있다"
                             Width: =Parent.Width * 0.23
-                            X: =Parent.Width * 0.27
-                            Y: =75
+                            X: =Parent.Width * 0.05
+                            Y: =70
                             ZIndex: =5
 
                         "'PL-600_취득여부_1' As label":
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Semibold
-                            Height: =53
-                            Size: =Parent.Width * 0.025
+                            Height: =50
+                            Size: =Parent.Width * 0.035
                             Text: ="취득 여부"
                             Width: =Parent.Width * 0.25
-                            X: =Parent.Width * 0.27
-                            Y: =16
+                            X: =Parent.Width * 0.05
+                            Y: =20
                             ZIndex: =6
 
                         "'PL-600_DatePicker_1' As datepicker":
                             DisplayMode: =If('PL-600_Toggle_1'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
-                            Height: =Parent.Height * 0.3
+                            Height: =Parent.Height * 0.22
                             Size: = Parent.Width * 0.021
-                            Width: =Parent.Width * 0.36
-                            X: = Parent.Width * 0.59
-                            Y: =71
+                            Width: =Parent.Width * 0.5
+                            X: =Parent.Width * 0.4
+                            Y: =72
                             ZIndex: =7
 
                         "'PL-600_취득일자_1' As label":
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Semibold
-                            Height: =53
+                            Height: =50
                             Size: =Parent.Width * 0.025
                             Text: ="취득 일자"
                             Width: =Parent.Width * 0.25
-                            X: =Parent.Width * 0.67
-                            Y: =16
+                            X: =Parent.Width * 0.51
+                            Y: =20
                             ZIndex: =8
 
                     "'PL-900_DataCard_1' As typedDataCard.textualEditCard":
@@ -5178,9 +5178,9 @@ User_License_Page As screen:
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Bold
                             Height: =Parent.Height * 0.4
-                            Size: =Parent.Width * 0.045
+                            Size: =Parent.Width * 0.07
                             Text: =Parent.DisplayName
-                            Width: =Parent.Width * 0.25
+                            Width: =Parent.Width * 0.5
                             Wrap: =false
                             ZIndex: =1
 
@@ -5215,40 +5215,40 @@ User_License_Page As screen:
                             Height: =Parent.Height * 0.3
                             Size: =Parent.Width * 0.019
                             TrueText: ="있다"
-                            Width: = Parent.Width * 0.23
-                            X: =Parent.Width * 0.27
-                            Y: =75
+                            Width: =Parent.Width * 0.23
+                            X: =Parent.Width * 0.05
+                            Y: =70
                             ZIndex: =5
 
                         "'PL-900_취득여부_1' As label":
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Semibold
-                            Height: =53
-                            Size: =Parent.Width * 0.025
+                            Height: =50
+                            Size: =Parent.Width * 0.035
                             Text: ="취득 여부"
-                            Width: =Parent.Width * 0.17
-                            X: =Parent.Width * 0.27
-                            Y: =16
+                            Width: =Parent.Width * 0.25
+                            X: =Parent.Width * 0.05
+                            Y: =20
                             ZIndex: =6
 
                         "'PL-900_DatePicker_1' As datepicker":
                             DisplayMode: =If('PL-900_Toggle_1'.Value=true,DisplayMode.Edit,DisplayMode.Disabled)
-                            Height: =Parent.Height * 0.3
+                            Height: =Parent.Height * 0.22
                             Size: =Parent.Width * 0.021
-                            Width: =Parent.Width * 0.36
-                            X: =Parent.Width * 0.59
-                            Y: =71
+                            Width: =Parent.Width * 0.5
+                            X: =Parent.Width * 0.4
+                            Y: =72
                             ZIndex: =7
 
                         "'PL-900_취득일자_1' As label":
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Semibold
-                            Height: =53
+                            Height: =50
                             Size: =Parent.Width * 0.025
                             Text: ="취득 일자"
-                            Width: =Parent.Width * 0.17
-                            X: =Parent.Width * 0.67
-                            Y: =16
+                            Width: =Parent.Width * 0.25
+                            X: =Parent.Width * 0.51
+                            Y: =20
                             ZIndex: =8
 
                     Name_License_DataCard_1 As typedDataCard.textualEditCard:
@@ -5397,7 +5397,6 @@ User_License_Page As screen:
                 Height: =License_Container_1.Height
                 Width: =Parent.Width * 0.35
                 X: =License_Container_1.X + License_Container_1.Width
-                Y: =38
                 ZIndex: =2
 
                 License_File_Input_1 As form:
@@ -5415,48 +5414,49 @@ User_License_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_az104")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =Parent.Height*0.4
+                        Height: =Parent.Height*0.1
                         Required: =false
                         Update: ='AZ-104_File_DataCardValue_1'.Attachments
                         Visible: =If('AZ-104_Toggle_1'.Value=true,true,false)
                         Width: =Parent.Width
                         X: =0
-                        Y: =0
+                        Y: =Parent.Y
                         ZIndex: =1
 
                         "'AZ-104_File_DataCardKey_1' As label":
                             AutoHeight: =true
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Semibold
-                            Height: =34
-                            Size: =Parent.Width * 0.025
+                            Height: =Parent.Height*0.35
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Size: =Parent.Width * 0.1
                             Text: =Parent.DisplayName
                             Width: =Parent.Width * 0.88
                             Wrap: =false
-                            X: =Parent.Width * 0.05
+                            X: =Parent.Width * 0.08
                             Y: =10
                             ZIndex: =1
 
                         "'AZ-104_File_DataCardValue_1' As attachments":
-                            AddAttachmentText: ="파일 업로드"
+                            AddAttachmentText: ="인증서 업로드"
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                             DisplayMode: =Parent.DisplayMode
-                            Height: =90
+                            Height: =Parent.Height*0.45
                             IsInDataCard: =true
                             Items: =Parent.Default
                             MaxAttachments: =1
                             MaxAttachmentSize: =100
                             MaxAttachmentsText: =""
-                            NoAttachmentsText: ="License를 등록해주세요."
-                            PaddingBottom: =5
+                            NoAttachmentsText: =
                             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                            PaddingRight: =5
-                            PaddingTop: =5
-                            Size: =Parent.Width * 0.02
+                            Size: =Parent.Width * 0.03
                             Tooltip: =Parent.DisplayName
                             Width: = Parent.Width * 0.88
                             X: =Parent.Width * 0.045
-                            Y: ='AZ-104_File_DataCardKey_1'.Y + 'AZ-104_File_DataCardKey_1'.Height + 5
+                            Y: ='AZ-104_File_DataCardKey_1'.Y + 'AZ-104_File_DataCardKey_1'.Height
                             ZIndex: =2
 
                         ErrorMessage48_1 As label:
@@ -5492,46 +5492,47 @@ User_License_Page As screen:
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@ability_file],DataSourceInfo.DisplayName,"cr778_az305")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =Parent.Height*0.4
+                        Height: =Parent.Height*0.1
                         Required: =false
                         Update: ='AZ-305_File_DataCardValue_1'.Attachments
                         Visible: =If('AZ-305_Toggle_1'.Value=true,true,false)
                         Width: =Parent.Width
                         X: =0
-                        Y: =1
+                        Y: =Parent.Y
                         ZIndex: =1
 
                         DataCardKey55_1 As label:
                             AutoHeight: =true
                             Color: =RGBA(255, 255, 255, 1)
                             FontWeight: =FontWeight.Semibold
-                            Height: =34
-                            Size: =Parent.Width * 0.025
+                            Height: =Parent.Height*0.35
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Size: =Parent.Width * 0.1
                             Text: =Parent.DisplayName
                             Width: =Parent.Width * 0.88
                             Wrap: =false
-                            X: =Parent.Width * 0.05
+                            X: =Parent.Width * 0.08
                             Y: =10
                             ZIndex: =1
 
                         "'AZ-305_File_DataCardValue_1' As attachments":
-                            AddAttachmentText: ="파일 업로드"
+                            AddAttachmentText: ="인증서 업로드"
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                             DisplayMode: =Parent.DisplayMode
-                            Height: =90
+                            Height: =Parent.Height*0.4
                             IsInDataCard: =true
                             Items: =Parent.Default
                             MaxAttachments: =1
                             MaxAttachmentSize: =100
                             MaxAttachmentsText: =""
                             NoAttachmentsText: ="License를 등록해주세요."
-                            PaddingBottom: =5
                             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                            PaddingRight: =5
-                            PaddingTop: =5
-                            Size: =Parent.Width * 0.02
+                            Size: =Parent.Width * 0.03
                             Tooltip: =Parent.DisplayName
-                            Width: =Parent.Width * 0.88
+                            Width: = Parent.Width * 0.88
                             X: =Parent.Width * 0.045
                             Y: =DataCardKey55_1.Y + DataCardKey55_1.Height + 5
                             ZIndex: =2
