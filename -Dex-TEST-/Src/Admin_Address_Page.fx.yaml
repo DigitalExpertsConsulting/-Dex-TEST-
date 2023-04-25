@@ -540,7 +540,7 @@ Admin_Address_Page As screen:
                         'ExcelDownload(Address)'.Run("")
                     Size: =Parent.Width * 0.04
                     Text: ="다운로드"
-                    Width: =Parent.Width * 0.55
+                    Width: =Parent.Width * 0.8
                     X: =Parent.Width * 0.1
                     Y: =25
                     ZIndex: =1
@@ -550,7 +550,7 @@ Admin_Address_Page As screen:
                     Icon: =Icon.Reload
                     OnSelect: =Refresh(ability_address)
                     Width: =Parent.Width * 0.25
-                    X: =Parent.Width * 0.74
+                    X: =AddressDownload_button_1.Width * 1.2
                     Y: =14
                     ZIndex: =2
 
