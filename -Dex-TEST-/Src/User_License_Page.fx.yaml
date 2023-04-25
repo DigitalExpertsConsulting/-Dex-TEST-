@@ -5443,6 +5443,7 @@ User_License_Page As screen:
                         "'AZ-104_File_DataCardValue_1' As attachments":
                             AddAttachmentText: ="인증서 업로드"
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                            Color: =RGBA(255, 0, 0, 1)
                             DisplayMode: =Parent.DisplayMode
                             Height: =Parent.Height*0.45
                             IsInDataCard: =true
@@ -5521,6 +5522,7 @@ User_License_Page As screen:
                         "'AZ-305_File_DataCardValue_1' As attachments":
                             AddAttachmentText: ="인증서 업로드"
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                            Color: =RGBA(255, 0, 0, 1)
                             DisplayMode: =Parent.DisplayMode
                             Height: =Parent.Height*0.45
                             IsInDataCard: =true
@@ -5599,6 +5601,7 @@ User_License_Page As screen:
                         "'MS-100_File_DataCardValue_1' As attachments":
                             AddAttachmentText: ="인증서 업로드"
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                            Color: =RGBA(255, 0, 0, 1)
                             DisplayMode: =Parent.DisplayMode
                             Height: =Parent.Height*0.45
                             IsInDataCard: =true
@@ -5677,6 +5680,7 @@ User_License_Page As screen:
                         "'MS-101_File_DataCardValue_1' As attachments":
                             AddAttachmentText: ="인증서 업로드"
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                            Color: =RGBA(255, 0, 0, 1)
                             DisplayMode: =Parent.DisplayMode
                             Height: =Parent.Height*0.45
                             IsInDataCard: =true
@@ -5755,6 +5759,7 @@ User_License_Page As screen:
                         "'MS-700_File_DataCardValue_1' As attachments":
                             AddAttachmentText: ="인증서 업로드"
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                            Color: =RGBA(255, 0, 0, 1)
                             DisplayMode: =Parent.DisplayMode
                             Height: =Parent.Height*0.45
                             IsInDataCard: =true
@@ -5833,6 +5838,7 @@ User_License_Page As screen:
                         "'MS-900_File_DataCardValue_1' As attachments":
                             AddAttachmentText: ="인증서 업로드"
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                            Color: =RGBA(255, 0, 0, 1)
                             DisplayMode: =Parent.DisplayMode
                             Height: =Parent.Height*0.45
                             IsInDataCard: =true
@@ -5911,6 +5917,7 @@ User_License_Page As screen:
                         "'PL-200_File_DataCardValue_1' As attachments":
                             AddAttachmentText: ="인증서 업로드"
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                            Color: =RGBA(255, 0, 0, 1)
                             DisplayMode: =Parent.DisplayMode
                             Height: =Parent.Height*0.45
                             IsInDataCard: =true
@@ -5989,6 +5996,7 @@ User_License_Page As screen:
                         "'PL-300_File_DataCardValue_1' As attachments":
                             AddAttachmentText: ="인증서 업로드"
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                            Color: =RGBA(255, 0, 0, 1)
                             DisplayMode: =Parent.DisplayMode
                             Height: =Parent.Height*0.45
                             IsInDataCard: =true
@@ -6067,6 +6075,7 @@ User_License_Page As screen:
                         "'PL-400_File_DataCardValue_1' As attachments":
                             AddAttachmentText: ="인증서 업로드"
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                            Color: =RGBA(255, 0, 0, 1)
                             DisplayMode: =Parent.DisplayMode
                             Height: =Parent.Height*0.45
                             IsInDataCard: =true
@@ -6145,6 +6154,7 @@ User_License_Page As screen:
                         "'PL-600_File_DataCardValue_1' As attachments":
                             AddAttachmentText: ="인증서 업로드"
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                            Color: =RGBA(255, 0, 0, 1)
                             DisplayMode: =Parent.DisplayMode
                             Height: =Parent.Height*0.45
                             IsInDataCard: =true
@@ -6223,6 +6233,7 @@ User_License_Page As screen:
                         "'PL-900_File_DataCardValue_1' As attachments":
                             AddAttachmentText: ="인증서 업로드"
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                            Color: =RGBA(255, 0, 0, 1)
                             DisplayMode: =Parent.DisplayMode
                             Height: =Parent.Height*0.45
                             IsInDataCard: =true
