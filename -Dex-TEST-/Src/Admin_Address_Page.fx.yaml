@@ -432,7 +432,7 @@ Admin_Address_Page As screen:
                         PaddingRight: =0
                         PaddingTop: =0
                         Size: =Parent.Width* 0.023
-                        Text: =ThisItem.'Created On'
+                        Text: =ThisItem.Address
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width * 0.735
                         X: =Parent.Width * 0.12
