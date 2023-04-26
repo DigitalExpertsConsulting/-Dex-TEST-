@@ -1,5 +1,10 @@
 Admin_Skill_Page As screen:
-    BackgroundImage: =ere
+    BackgroundImage: |-
+        =If(
+            Self.Width > 800,
+            ere,
+            '2'
+        )
     ImagePosition: =ImagePosition.Stretch
 
     AS_Main_Container As groupContainer.verticalAutoLayoutContainer:

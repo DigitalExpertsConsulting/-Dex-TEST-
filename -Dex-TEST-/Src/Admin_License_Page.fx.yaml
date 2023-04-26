@@ -1,5 +1,10 @@
 Admin_License_Page As screen:
-    BackgroundImage: =ere
+    BackgroundImage: |-
+        =If(
+            Self.Width > 800,
+            ere,
+            '2'
+        )
     ImagePosition: =ImagePosition.Stretch
 
     AL_Main_Container As groupContainer.verticalAutoLayoutContainer:

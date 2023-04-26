@@ -1,5 +1,10 @@
 Admin_Profile_Page As screen:
-    BackgroundImage: =ere
+    BackgroundImage: |-
+        =If(
+            Self.Width > 800,
+            ere,
+            '2'
+        )
     ImagePosition: =ImagePosition.Stretch
 
     ConcatBox As label:
@@ -520,7 +525,9 @@ Admin_Profile_Page As screen:
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width * 0.2
                         X: =Parent.Width * 0.12
-                        Y: =Parent.Height * 0.09
+                        Y: |-
+                            =//Parent.Height * 0.09
+                            Gallery3.TemplateHeight *0.41
                         ZIndex: =2
 
                     Subtitle4 As label:
@@ -536,7 +543,7 @@ Admin_Profile_Page As screen:
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width * 0.5
                         X: =Parent.Width * 0.3
-                        Y: =Parent.Height * 0.35
+                        Y: =Parent.Height * 0.15
                         ZIndex: =3
 
                     Separator4 As rectangle:
@@ -571,7 +578,7 @@ Admin_Profile_Page As screen:
                         Text: ="수정날짜"
                         Width: =Parent.Width * 0.4
                         X: =Parent.Width * 0.34
-                        Y: =Parent.Height * 0.3
+                        Y: =Parent.Height * 0.1
                         ZIndex: =7
 
                     Label2_1 As label:
@@ -598,21 +605,21 @@ Admin_Profile_Page As screen:
                         Size: =Parent.Width * 0.013
                         Text: =ThisItem.'E-mail'
                         Width: =40
-                        X: =Parent.Width * 0.01
+                        X: =Gallery3.TemplateWidth*0.01
                         Y: =Parent.Height * 0.06
                         ZIndex: =9
 
                     Button13_3 As button:
                         BorderColor: =RGBA( 112, 128, 144, 0.7 )
-                        BorderThickness: =5
+                        BorderThickness: =1
                         Fill: =RGBA( 106, 170, 205, 1 )
-                        Height: =Parent.Height * 0.1
+                        Height: =Parent.Height * 0.19
                         OnSelect: =PPTDownload.Run(Gallery3.Selected.'E-mail')
                         Size: =Parent.Width * 0.013
                         Text: ="다운로드"
-                        Width: =Parent.Width * 0.13
-                        X: =Parent.Width * 0.7
-                        Y: =Parent.Height * 0.1
+                        Width: =Parent.Width * 0.11
+                        X: =Parent.Width * 0.88
+                        Y: =Parent.Height * 0.01
                         ZIndex: =10
 
             AP_Down_Container_1 As groupContainer.manualLayoutContainer:
