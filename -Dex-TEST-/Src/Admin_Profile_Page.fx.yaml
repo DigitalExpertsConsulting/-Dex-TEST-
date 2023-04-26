@@ -475,7 +475,9 @@ Admin_Profile_Page As screen:
                     Height: =Parent.Width
                     Icon: =Icon.Reload
                     OnSelect: =Refresh(ability_profile)
-                    Width: =Parent.Width
+                    Width: =Parent.Width * 0.17
+                    X: =14
+                    Y: =14
                     ZIndex: =1
 
             AP_Search_Container_1 As groupContainer.manualLayoutContainer:
