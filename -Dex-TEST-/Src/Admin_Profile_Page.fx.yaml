@@ -612,7 +612,9 @@ Admin_Profile_Page As screen:
                         Text: =ThisItem.'E-mail'
                         Width: =40
                         X: =Gallery3.TemplateWidth*0.01
-                        Y: =Parent.Height * 0.06
+                        Y: |-
+                            =//Parent.Height * 0.06
+                            Gallery3.TemplateHeight *0.2
                         ZIndex: =9
 
                     Button13_3 As button:
