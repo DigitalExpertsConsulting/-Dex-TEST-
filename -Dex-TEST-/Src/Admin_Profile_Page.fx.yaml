@@ -533,6 +533,7 @@ Admin_Profile_Page As screen:
                         ZIndex: =2
 
                     Subtitle4 As label:
+                        Align: =Align.Center
                         Height: =Parent.Height * 0.06
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
@@ -559,6 +560,7 @@ Admin_Profile_Page As screen:
                         ZIndex: =5
 
                     Subtitle4_1 As label:
+                        Align: =Align.Center
                         Height: =Parent.Height * 0.06
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
