@@ -546,8 +546,7 @@ Admin_Profile_Page As screen:
                         Width: =Parent.Width * 0.5
                         X: |-
                             =//Parent.Width * 0.3
-                            //Gallery3.Width * 0.2
-                            Title3.X + (Title3.Width * 0.85)
+                            Gallery3.Width * 0.3
                         Y: |-
                             =//Parent.Height * 0.15
                             Gallery3.Height * 0.15
@@ -574,7 +573,7 @@ Admin_Profile_Page As screen:
                         Width: =Parent.Width * 0.9
                         X: |-
                             =//Parent.Width * 0.13
-                            Gallery3.TemplateWidth *0.12
+                            Gallery3.TemplateWidth *0.18
                         Y: =Parent.Height*0.05
                         ZIndex: =6
 
@@ -606,7 +605,7 @@ Admin_Profile_Page As screen:
                         Width: =Parent.Width * 0.4
                         X: |-
                             =//Parent.Width * 0.34
-                            Gallery3.TemplateWidth *0.3
+                            Gallery3.TemplateWidth *0.4
                         Y: |-
                             =//Parent.Height * 0
                             Gallery3.TemplateHeight *0.03
