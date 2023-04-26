@@ -154,7 +154,7 @@ Admin_Skill_Page As screen:
                         Size: =Parent.Width * 0.007
                         Text: ="365 Solution"
                         Width: =Parent.Width *0.07
-                        X: =Parent.Width*0.09
+                        X: =Parent.Width*0.07
                         ZIndex: =3
 
                     Label6_17 As label:
@@ -165,7 +165,7 @@ Admin_Skill_Page As screen:
                         Size: =Parent.Width * 0.007
                         Text: ="AI Builder"
                         Width: =Parent.Width *0.07
-                        X: =Parent.Width*0.155
+                        X: =Parent.Width*0.147
                         ZIndex: =4
 
                     Label6_39 As label:
@@ -325,7 +325,7 @@ Admin_Skill_Page As screen:
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'365 Solution'
                         Width: =Parent.Width * 0.07
-                        X: =Label6_16.X*0.75
+                        X: =Label6_16.X*0.9
                         ZIndex: =2
 
                     Label7_16 As label:
@@ -335,7 +335,7 @@ Admin_Skill_Page As screen:
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'AI Builder'
                         Width: =Parent.Width * 0.07
-                        X: =Label6_17.X*0.92
+                        X: =Label6_17.X*0.97
                         ZIndex: =3
 
                     Label7_17 As label:
@@ -355,7 +355,7 @@ Admin_Skill_Page As screen:
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.DataVerse
                         Width: =Parent.Width * 0.08
-                        X: =Label6_38.X*0.95
+                        X: =Label6_38.X*0.97
                         ZIndex: =5
 
                     Label7_19 As label:
@@ -405,7 +405,7 @@ Admin_Skill_Page As screen:
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'Power Page'
                         Width: =Parent.Width * 0.075
-                        X: =Label6_33.X*1
+                        X: =Label6_33.X*0.99
                         ZIndex: =10
 
                     Label7_24 As label:
@@ -415,7 +415,7 @@ Admin_Skill_Page As screen:
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'Power Page JAVA/CSS'
                         Width: =Parent.Width * 0.07
-                        X: =Label6_32.X*1
+                        X: =Label6_32.X*0.99
                         ZIndex: =11
 
                     Label7_25 As label:
