@@ -89,10 +89,10 @@ Admin_Skill_Page As screen:
 
                 Skill_Refresh As icon.Reload:
                     Color: =RGBA(255, 255, 255, 1)
-                    Height: =Parent.Height
+                    Height: =Parent.Height*0.8
                     Icon: =Icon.Reload
                     OnSelect: =Refresh(ability_skill)
-                    Width: =Parent.Width
+                    Width: =Parent.Width*0.8
                     X: =
                     Y: =
                     ZIndex: =1
