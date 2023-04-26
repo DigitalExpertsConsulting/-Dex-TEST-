@@ -231,7 +231,7 @@ Admin_Profile_Page As screen:
                                 Collect(CheckboxCollection, Checkbox6_1.Text),
                                 Remove(CheckboxCollection, LookUp(CheckboxCollection, Value = Checkbox6_1.Text))
                             )
-                        Size: =Parent.Width * 0.013
+                        Size: =0
                         Text: =ThisItem.'E-mail'
                         Width: =Parent.Height * 0.1
                         X: =
