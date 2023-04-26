@@ -645,7 +645,7 @@ Admin_Profile_Page As screen:
                     Text: |-
                         ="전체 다운로드
                         "
-                    Width: =Parent.Width * 0.75
+                    Width: =Parent.Width * 0.77
                     X: =Parent.Width*0.1
                     Y: =Parent.Y*0.1
                     ZIndex: =1
@@ -664,7 +664,7 @@ Admin_Profile_Page As screen:
                     Text: |-
                         ="선택 다운로드
                         "
-                    Width: =Parent.Width * 0.75
+                    Width: =Parent.Width * 0.77
                     X: =Parent.Width * 0.1
                     Y: =Parent.Height * 0.55
                     ZIndex: =2
@@ -673,7 +673,7 @@ Admin_Profile_Page As screen:
                 Height: =Parent.Height * 0.6
                 Width: =Parent.Width * 0.3
                 X: =AP_Gallery_Container_1.Width
-                Y: =Parent.Height - Self.Height*0.88
+                Y: =Parent.Height - Self.Height*0.9
                 ZIndex: =4
 
                 Profile_Template_Upload_Card_1 As attachments:
@@ -690,10 +690,7 @@ Admin_Profile_Page As screen:
                     MaxAttachments: =1
                     MaxAttachmentSize: =100
                     MaxAttachmentsText: =""
-                    NoAttachmentsText: |-
-                        ="업데이트할 
-                        프로필 양식을 
-                        등록해주세요."
+                    NoAttachmentsText: = "업데이트 파일"
                     PaddingBottom: =5
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     PaddingRight: =5
@@ -709,7 +706,7 @@ Admin_Profile_Page As screen:
                     BorderColor: =RGBA( 112, 128, 144, 0.7 )
                     BorderThickness: =5
                     Fill: =RGBA( 106, 170, 205, 1 )
-                    Height: =Parent.Height * 0.15
+                    Height: =Parent.Height * 0.18
                     OnSelect: |+
                         =ability_admin_upload_profile.Run(
                             User().Email,
@@ -734,11 +731,11 @@ Admin_Profile_Page As screen:
                         
                         
                         
-                    Size: =Parent.Width * 0.035
-                    Text: ="프로필양식 업데이트"
-                    Width: =Parent.Width * 0.5
-                    X: =Parent.Width * 0.25
-                    Y: =Parent.Height * 0.6
+                    Size: =Parent.Width * 0.07
+                    Text: ="프로필 업데이트"
+                    Width: =Parent.Width * 0.77
+                    X: =Parent.Width * 0.13
+                    Y: =Parent.Height * 0.5
                     ZIndex: =2
 
             AP_Refresh_Container_1 As groupContainer.manualLayoutContainer:
