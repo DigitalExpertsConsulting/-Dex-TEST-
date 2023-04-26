@@ -198,8 +198,9 @@ Admin_Profile_Page As screen:
                         OnUncheck: |-
                             =UpdateContext({Checkbox10Value: false})
                         Size: =Parent.Height*0.2
-                        Text: ="전체"
-                        Width: =Parent.Width * 0.09
+                        Text: =
+                        Width: =Parent.Width * 0.04
+                        X: =6
                         ZIndex: =6
 
             AP_Gallery_Container As groupContainer.manualLayoutContainer:
@@ -235,7 +236,7 @@ Admin_Profile_Page As screen:
                         Text: =ThisItem.'E-mail'
                         Width: =Parent.Height * 0.1
                         X: =
-                        Y: =Parent.Height * 0.04
+                        Y: =Parent.Height * 0.025
                         ZIndex: =1
 
                     Label20_1 As label:
@@ -245,7 +246,7 @@ Admin_Profile_Page As screen:
                         Size: =Parent.Width * 0.013
                         Text: =ThisItem.Profile.FileName
                         Width: =Parent.Width * 0.35
-                        X: =Checkbox6_1.Width + Label4.Width + Label5.Width
+                        X: =Checkbox6_1.Width + Label4.Width + Label5.Width*1.2
                         Y: =Parent.Height * 0.04
                         ZIndex: =4
 
@@ -258,7 +259,7 @@ Admin_Profile_Page As screen:
                         Size: =Parent.Width * 0.013
                         Text: ="다운로드"
                         Width: =Parent.Width * 0.17
-                        X: =Checkbox6_1.Width + Label4.Width + Label5.Width + Label20_1.Width
+                        X: =Checkbox6_1.Width + Label4.Width + Label5.Width + Label20_1.Width*1.09
                         Y: =Parent.Height * 0.04
                         ZIndex: =5
 
@@ -268,8 +269,8 @@ Admin_Profile_Page As screen:
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.013
                         Text: =ThisItem.Name
-                        Width: =Parent.Width * 0.16
-                        X: =Checkbox6_1.Width
+                        Width: =Parent.Width * 0.12
+                        X: =Checkbox6_1.Width*1.4
                         Y: =Parent.Height * 0.04
                         ZIndex: =6
 
@@ -280,7 +281,7 @@ Admin_Profile_Page As screen:
                         Size: =Parent.Width * 0.013
                         Text: =ThisItem.'Created On'
                         Width: =Parent.Width * 0.25
-                        X: =Checkbox6_1.Width + Label4.Width
+                        X: =Checkbox6_1.Width + Label4.Width*1.2
                         Y: =Parent.Height * 0.04
                         ZIndex: =7
 
