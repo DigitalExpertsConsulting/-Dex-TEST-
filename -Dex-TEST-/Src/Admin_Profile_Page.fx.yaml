@@ -104,19 +104,19 @@ Admin_Profile_Page As screen:
                     ZIndex: =1
 
             AP_Search_Container As groupContainer.manualLayoutContainer:
-                Height: =Parent.Height * 0.06
-                Width: =Parent.Width * 0.178
-                X: =Parent.Width * 0.75
-                Y: =Parent.Height * 0.155
+                Height: =Parent.Height * 0.07
+                Width: =Parent.Width * 0.2
+                X: =Parent.Width * 0.5
+                Y: =Parent.Height *0.05
                 ZIndex: =2
 
                 Profile_Search As text:
                     BorderColor: =RGBA( 112, 128, 144, 0.7 )
                     BorderThickness: =5
                     Default: =
-                    Height: =Parent.Height
+                    Height: =Parent.Height*0.9
                     HintText: ="검색"
-                    Width: =Parent.Width
+                    Width: =Parent.Width*0.9
                     ZIndex: =1
 
             AP_Gallery_Title_Container As groupContainer.manualLayoutContainer:
