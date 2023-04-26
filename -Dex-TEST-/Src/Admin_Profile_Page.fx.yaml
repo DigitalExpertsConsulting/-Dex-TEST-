@@ -578,7 +578,9 @@ Admin_Profile_Page As screen:
                     Label2 As label:
                         Align: =Align.Center
                         FontWeight: =FontWeight.Bold
-                        Height: =Parent.Height *0.05
+                        Height: |-
+                            =//Parent.Height *0.05
+                            Gallery3.TemplateHeight *0.3
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.03
                         Text: ="수정날짜"
