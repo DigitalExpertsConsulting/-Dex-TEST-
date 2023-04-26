@@ -567,11 +567,13 @@ Admin_Profile_Page As screen:
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =Parent.Width * 0.012
+                        Size: =Parent.Width * 0.03
                         Text: =ThisItem.Profile.FileName
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width * 0.9
-                        X: =Parent.Width * 0.13
+                        X: |-
+                            =//Parent.Width * 0.13
+                            Gallery3.TemplateWidth *0.1
                         Y: =Parent.Height*0.05
                         ZIndex: =6
 
@@ -601,7 +603,7 @@ Admin_Profile_Page As screen:
                         Width: =Parent.Width * 0.4
                         X: |-
                             =//Parent.Width * 0.34
-                            Gallery3.TemplateWidth *0.25
+                            Gallery3.TemplateWidth *0.23
                         Y: |-
                             =//Parent.Height * 0
                             Gallery3.TemplateHeight *0.03
