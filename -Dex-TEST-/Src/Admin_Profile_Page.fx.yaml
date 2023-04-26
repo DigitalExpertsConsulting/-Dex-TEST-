@@ -546,7 +546,7 @@ Admin_Profile_Page As screen:
                         Width: =Parent.Width * 0.5
                         X: |-
                             =//Parent.Width * 0.3
-                            Gallery3.Width * 0.35
+                            Gallery3.Width * 0.36
                         Y: |-
                             =//Parent.Height * 0.15
                             Gallery3.Height * 0.13
@@ -589,10 +589,10 @@ Admin_Profile_Page As screen:
                         Width: =Parent.Width * 0.5
                         X: |-
                             =//Parent.Width * 0.34
-                            Gallery3.TemplateWidth *0.35
+                            Gallery3.TemplateWidth *0.36
                         Y: |-
                             =//Parent.Height * 0.1
-                            Gallery3.TemplateHeight *0.5
+                            Gallery3.TemplateHeight *0.4
                         ZIndex: =7
 
                     Label2_1 As label:
