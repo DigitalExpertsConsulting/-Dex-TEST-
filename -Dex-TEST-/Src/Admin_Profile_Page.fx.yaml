@@ -462,30 +462,12 @@ Admin_Profile_Page As screen:
             Width: =Parent.Width
             ZIndex: =2
 
-            AP_Refresh_Container_1 As groupContainer.manualLayoutContainer:
-                Height: =Parent.Width * 0.056
-                Width: =Parent.Width * 0.056
-                X: =Parent.Width * 0.02
-                Y: =Parent.Height * 0.02
-                ZIndex: =1
-
-                Profile_Refresh_1 As icon.Reload:
-                    BorderColor: =RGBA(241, 244, 249, 1)
-                    Color: =RGBA(241, 244, 249, 1)
-                    Height: =Parent.Width
-                    Icon: =Icon.Reload
-                    OnSelect: =Refresh(ability_profile)
-                    Width: =Parent.Width * 0.17
-                    X: =14
-                    Y: =14
-                    ZIndex: =1
-
             AP_Search_Container_1 As groupContainer.manualLayoutContainer:
                 Height: =Parent.Height * 0.06
                 Width: =Parent.Width * 0.178
                 X: =Parent.Width * 0.79
                 Y: =AP_Gallery_Container_1.Y
-                ZIndex: =2
+                ZIndex: =1
 
                 Profile_Search_1 As text:
                     BorderColor: =RGBA( 112, 128, 144, 0.7 )
@@ -500,7 +482,7 @@ Admin_Profile_Page As screen:
                 Height: =Parent.Height - AP_Refresh_Container_1.Y - AP_Refresh_Container_1.Height
                 Width: =Parent.Width - AP_Update_Container_1.Width
                 Y: =AP_Refresh_Container_1.Height + AP_Refresh_Container_1.Y
-                ZIndex: =4
+                ZIndex: =2
 
                 "Gallery3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
                     DelayItemLoading: =true
@@ -649,7 +631,7 @@ Admin_Profile_Page As screen:
                 Height: =Parent.Height - AP_Gallery_Container_1.Height
                 Width: =Parent.Width * 0.6
                 X: =AP_Refresh_Container_1.Width + AP_Refresh_Container_1.X
-                ZIndex: =5
+                ZIndex: =3
 
                 AllDownload_Button_1 As button:
                     BorderColor: =RGBA( 112, 128, 144, 0.7 )
@@ -690,7 +672,7 @@ Admin_Profile_Page As screen:
                 Width: =Parent.Width * 0.3
                 X: =AP_Gallery_Container_1.Width
                 Y: =Parent.Height - Self.Height
-                ZIndex: =6
+                ZIndex: =4
 
                 Profile_Template_Upload_Card_1 As attachments:
                     AddAttachmentText: ="파일 업로드"
@@ -753,4 +735,20 @@ Admin_Profile_Page As screen:
                     X: =Parent.Width * 0.25
                     Y: =Parent.Height * 0.6
                     ZIndex: =2
+
+            AP_Refresh_Container_1 As groupContainer.manualLayoutContainer:
+                Height: =Parent.Width * 0.08
+                Width: =Parent.Width * 0.08
+                X: =Parent.Width * 0.02
+                Y: =Parent.Height *0.0
+                ZIndex: =5
+
+                Profile_Refresh_1 As icon.Reload:
+                    BorderColor: =RGBA(241, 244, 249, 1)
+                    Color: =RGBA(241, 244, 249, 1)
+                    Height: =Parent.Height
+                    Icon: =Icon.Reload
+                    OnSelect: =Refresh(ability_profile)
+                    Width: = Parent .Width
+                    ZIndex: =1
 
