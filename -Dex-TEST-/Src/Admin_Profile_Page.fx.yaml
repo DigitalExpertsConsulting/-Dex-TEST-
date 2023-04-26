@@ -463,10 +463,10 @@ Admin_Profile_Page As screen:
             ZIndex: =2
 
             AP_Search_Container_1 As groupContainer.manualLayoutContainer:
-                Height: =Parent.Height * 0.04
+                Height: =Parent.Height * 0.05
                 Width: =Parent.Width * 0.3
                 X: =Parent.Width * 0.4
-                Y: =Parent.Height*0.1
+                Y: =Parent.Height*0.01
                 ZIndex: =1
 
                 Profile_Search_1 As text:
@@ -475,6 +475,7 @@ Admin_Profile_Page As screen:
                     Default: =
                     Height: =Parent.Height
                     HintText: ="검색"
+                    Size: =10
                     Width: =Parent.Width
                     ZIndex: =1
 
@@ -737,7 +738,7 @@ Admin_Profile_Page As screen:
                     ZIndex: =2
 
             AP_Refresh_Container_1 As groupContainer.manualLayoutContainer:
-                Height: =Parent.Width * 0.08
+                Height: =Parent.Width * 0.06
                 Width: =Parent.Width * 0.08
                 X: =Parent.Width * 0.02
                 Y: =Parent.Height *0.0
