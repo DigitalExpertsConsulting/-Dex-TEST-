@@ -129,162 +129,164 @@ Admin_Skill_Page As screen:
 
                     Rectangle1_3 As rectangle:
                         Fill: =RGBA( 106, 170, 205, 1 )
-                        Height: =Parent.Height
-                        Width: =Parent.Width
+                        Height: =54
+                        Width: =1366
+                        X: =
+                        Y: =0.6460000000000008
                         ZIndex: =1
 
                     Label6_15 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
-                        Height: =Parent.Height
+                        Height: =54
                         Size: =Parent.Width * 0.007
                         Text: ="이름"
-                        Width: =Parent.Width * 0.04
-                        X: =Parent.Width * 0.01
+                        Width: =54
+                        X: =12
                         ZIndex: =2
 
                     Label6_16 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
-                        Height: =Parent.Height
+                        Height: =54
                         Size: =Parent.Width * 0.007
                         Text: ="365 Solution"
-                        Width: =Parent.Width * 0.05
-                        X: =Parent.Width * 0.07
+                        Width: =68
+                        X: =77
                         ZIndex: =3
 
                     Label6_17 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
-                        Height: =Parent.Height
+                        Height: =54
                         Size: =Parent.Width * 0.007
                         Text: ="AI Builder"
-                        Width: =Parent.Width * 0.06
-                        X: =Parent.Width * 0.141
+                        Width: =81
+                        X: =155
                         ZIndex: =4
 
                     Label6_39 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
-                        Height: =Parent.Height
+                        Height: =54
                         Size: =Parent.Width * 0.007
                         Text: ="API management"
-                        Width: =Parent.Width * 0.08
-                        X: =Parent.Width * 0.196
+                        Width: =108
+                        X: =232
                         ZIndex: =5
 
                     Label6_38 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
-                        Height: =Parent.Height
+                        Height: =54
                         Size: =Parent.Width * 0.007
                         Text: ="Dataverse"
-                        Width: =79
-                        X: =Parent.Width * 0.294
+                        Width: =87
+                        X: =341
                         ZIndex: =6
 
                     Label6_37 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
-                        Height: =Parent.Height
+                        Height: =54
                         Size: =Parent.Width * 0.007
                         Text: ="Power Apps Canvas"
-                        Width: =Parent.Width * 0.07
-                        X: =Parent.Width * 0.37
+                        Width: =95
+                        X: =435
                         ZIndex: =7
 
                     Label6_36 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
-                        Height: =Parent.Height
+                        Height: =54
                         Size: =Parent.Width * 0.007
                         Text: ="Power Apps Model"
-                        Width: =Parent.Width * 0.09
-                        X: =Parent.Width * 0.425
+                        Width: =122
+                        X: =529
                         ZIndex: =8
 
                     Label6_35 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
-                        Height: =Parent.Height
+                        Height: =54
                         Size: =Parent.Width * 0.007
                         Text: ="Power Automate"
-                        Width: =Parent.Width * 0.06
-                        X: =Parent.Width * 0.513
+                        Width: =81
+                        X: =654
                         ZIndex: =9
 
                     Label6_34 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
-                        Height: =Parent.Height
+                        Height: =54
                         Size: =Parent.Width * 0.007
                         Text: ="Power Automate Desktop"
-                        Width: =Parent.Width * 0.06
-                        X: =Parent.Width * 0.59
+                        Width: =81
+                        X: =755
                         ZIndex: =10
 
                     Label6_33 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
-                        Height: =Parent.Height
+                        Height: =54
                         Size: =Parent.Width * 0.007
                         Text: ="Power Page"
-                        Width: =Parent.Width * 0.08
-                        X: =Parent.Width * 0.658
+                        Width: =108
+                        X: =839
                         ZIndex: =11
 
                     Label6_32 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
-                        Height: =Parent.Height
+                        Height: =54
                         Size: =Parent.Width * 0.007
                         Text: ="Power Page JAVA/CSS"
-                        Width: =Parent.Width * 0.08
-                        X: =Parent.Width * 0.73
+                        Width: =108
+                        X: =949
                         ZIndex: =12
 
                     Label6_31 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
-                        Height: =Parent.Height
+                        Height: =54
                         Size: =Parent.Width * 0.007
                         Text: ="Power BI"
-                        Width: =Parent.Width * 0.08
-                        X: =Parent.Width * 0.796
+                        Width: =108
+                        X: =1056
                         ZIndex: =13
 
                     Label6_30 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
-                        Height: =Parent.Height
+                        Height: =54
                         Size: =Parent.Width * 0.007
                         Text: ="Process Advisor"
-                        Width: =Parent.Width * 0.06
-                        X: =Parent.Width * 0.87
+                        Width: =81
+                        X: =1174
                         ZIndex: =14
 
                     Label6_29 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
-                        Height: =Parent.Height
+                        Height: =54
                         Size: =Parent.Width * 0.007
                         Text: ="Power Virtual Agents"
-                        Width: =Parent.Width * 0.07
-                        X: =Parent.Width * 0.931
+                        Width: =95
+                        X: =1264
                         ZIndex: =15
 
             AS_Gallery_Container As groupContainer.manualLayoutContainer:
@@ -313,7 +315,7 @@ Admin_Skill_Page As screen:
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.Name
-                        Width: =Parent.Width * 0.06
+                        Width: =Parent.Width * 0.05
                         ZIndex: =1
 
                     Label7_15 As label:
@@ -323,7 +325,7 @@ Admin_Skill_Page As screen:
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'365 Solution'
                         Width: =Parent.Width * 0.07
-                        X: =Label7_14.Width
+                        X: =Label6_16.X*0.75
                         ZIndex: =2
 
                     Label7_16 As label:
@@ -333,7 +335,7 @@ Admin_Skill_Page As screen:
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'AI Builder'
                         Width: =Parent.Width * 0.07
-                        X: =Label7_14.Width + Label7_15.Width
+                        X: =Label6_17.X*0.92
                         ZIndex: =3
 
                     Label7_17 As label:
@@ -343,7 +345,7 @@ Admin_Skill_Page As screen:
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'Api management'
                         Width: =Parent.Width * 0.08
-                        X: =Label7_14.Width + Label7_15.Width + Label7_16.Width
+                        X: =Label6_39.X*0.97
                         ZIndex: =4
 
                     Label7_18 As label:
@@ -353,7 +355,7 @@ Admin_Skill_Page As screen:
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.DataVerse
                         Width: =Parent.Width * 0.08
-                        X: =Label7_14.Width + Label7_15.Width + Label7_16.Width + Label7_17.Width
+                        X: =Label6_38.X*0.95
                         ZIndex: =5
 
                     Label7_19 As label:
@@ -363,7 +365,7 @@ Admin_Skill_Page As screen:
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'Power Apps Canvas'
                         Width: =Parent.Width * 0.07
-                        X: =Label7_14.Width + Label7_15.Width + Label7_16.Width + Label7_17.Width + Label7_18.Width
+                        X: =Label6_37.X*0.99
                         ZIndex: =6
 
                     Label7_20 As label:
@@ -373,7 +375,7 @@ Admin_Skill_Page As screen:
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'Power Apps Model'
                         Width: =Parent.Width * 0.07
-                        X: =Label7_14.Width + Label7_15.Width + Label7_16.Width + Label7_17.Width + Label7_18.Width + Label7_19.Width
+                        X: =Label6_36.X*1.01
                         ZIndex: =7
 
                     Label7_21 As label:
@@ -383,7 +385,7 @@ Admin_Skill_Page As screen:
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'Power Automate'
                         Width: =Parent.Width * 0.078
-                        X: =Label7_14.Width + Label7_15.Width + Label7_16.Width + Label7_17.Width + Label7_18.Width + Label7_19.Width + Label7_20.Width
+                        X: =Label6_35.X*0.975
                         ZIndex: =8
 
                     Label7_22 As label:
@@ -393,7 +395,7 @@ Admin_Skill_Page As screen:
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'Power Automate Desktop'
                         Width: =Parent.Width * 0.075
-                        X: =Label7_14.Width + Label7_15.Width + Label7_16.Width + Label7_17.Width + Label7_18.Width + Label7_19.Width + Label7_20.Width + Label7_21.Width
+                        X: =Label6_34.X*0.98
                         ZIndex: =9
 
                     Label7_23 As label:
@@ -403,7 +405,7 @@ Admin_Skill_Page As screen:
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'Power Page'
                         Width: =Parent.Width * 0.075
-                        X: =Label7_14.Width + Label7_15.Width + Label7_16.Width + Label7_17.Width + Label7_18.Width + Label7_19.Width + Label7_20.Width + Label7_21.Width + Label7_22.Width
+                        X: =Label6_33.X*1
                         ZIndex: =10
 
                     Label7_24 As label:
@@ -413,7 +415,7 @@ Admin_Skill_Page As screen:
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'Power Page JAVA/CSS'
                         Width: =Parent.Width * 0.07
-                        X: =Label7_14.Width + Label7_15.Width + Label7_16.Width + Label7_17.Width + Label7_18.Width + Label7_19.Width + Label7_20.Width + Label7_21.Width + Label7_22.Width + Label7_23.Width
+                        X: =Label6_32.X*1
                         ZIndex: =11
 
                     Label7_25 As label:
@@ -423,9 +425,7 @@ Admin_Skill_Page As screen:
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'Power BI'
                         Width: =Parent.Width * 0.07
-                        X: |-
-                            =Label7_14.Width + Label7_15.Width + Label7_16.Width + Label7_17.Width + Label7_18.Width
-                             + Label7_19.Width + Label7_20.Width + Label7_21.Width + Label7_22.Width + Label7_23.Width + Label7_24.Width
+                        X: =Label6_31.X*1
                         ZIndex: =12
 
                     Label7_26 As label:
@@ -435,9 +435,7 @@ Admin_Skill_Page As screen:
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'Process Advisor'
                         Width: =Parent.Width * 0.07
-                        X: |-
-                            =Label7_14.Width + Label7_15.Width + Label7_16.Width + Label7_17.Width + Label7_18.Width
-                             + Label7_19.Width + Label7_20.Width + Label7_21.Width + Label7_22.Width + Label7_23.Width + Label7_24.Width + Label7_25.Width
+                        X: =Label6_30.X*0.99
                         ZIndex: =13
 
                     Label7_27 As label:
@@ -447,9 +445,7 @@ Admin_Skill_Page As screen:
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'Power Virtual Agents'
                         Width: =Parent.Width * 0.07
-                        X: |-
-                            =Label7_14.Width + Label7_15.Width + Label7_16.Width + Label7_17.Width + Label7_18.Width
-                             + Label7_19.Width + Label7_20.Width + Label7_21.Width + Label7_22.Width + Label7_23.Width + Label7_24.Width + Label7_25.Width + Label7_26.Width
+                        X: =Label6_29.X*1
                         ZIndex: =14
 
     mAS_Main_Container As groupContainer.verticalAutoLayoutContainer:

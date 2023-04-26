@@ -105,13 +105,13 @@ Admin_License_Page As screen:
                     Icon: =Icon.Reload
                     OnSelect: =Refresh(ability_license)
                     Width: =Parent.Width * 0.1
-                    X: =Parent.Width * 0.75
+                    X: =Parent.Width * 0.7
                     Y: =Parent.Height * 0
                     ZIndex: =2
 
             AL_Search_Container As groupContainer.manualLayoutContainer:
                 Height: =70
-                Width: =Parent.Width * 0.25
+                Width: =Parent.Width * 0.3
                 X: =Parent.Width * 0.7
                 ZIndex: =2
 
@@ -122,9 +122,9 @@ Admin_License_Page As screen:
                     Height: =35
                     HintText: ="검색"
                     Size: =Parent.Width * 0.045
-                    Width: =245
-                    X: =40
-                    Y: =20
+                    Width: =Parent.Width *0.7
+                    X: =Parent.Width * 0.2
+                    Y: =25
                     ZIndex: =1
 
             AL_Gallery_Tile_Container As groupContainer.manualLayoutContainer:

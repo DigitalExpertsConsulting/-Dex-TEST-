@@ -3685,7 +3685,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label6_15",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3996,7 +3996,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label6_16",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4314,7 +4314,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label6_17",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4632,7 +4632,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label6_29",
-      "ParentIndex": 14,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4943,7 +4943,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label6_30",
-      "ParentIndex": 13,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5261,7 +5261,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label6_31",
-      "ParentIndex": 12,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5519,7 +5519,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "983",
+          "AutoRuleBindingString": "962",
           "InvariantPropertyName": "X",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
@@ -5579,7 +5579,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label6_32",
-      "ParentIndex": 11,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5897,7 +5897,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label6_33",
-      "ParentIndex": 10,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6215,7 +6215,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label6_34",
-      "ParentIndex": 9,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6533,7 +6533,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label6_35",
-      "ParentIndex": 8,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6851,7 +6851,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label6_36",
-      "ParentIndex": 7,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7162,7 +7162,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label6_37",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7466,7 +7466,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label6_38",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7777,7 +7777,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label6_39",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -13274,16 +13274,23 @@
         "BorderStyle",
         "FocusedBorderColor",
         "DisplayMode",
-        "X",
-        "Y",
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "1366",
-          "InvariantPropertyName": "Width",
+          "AutoRuleBindingString": "0",
+          "InvariantPropertyName": "X",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "0",
+          "InvariantPropertyName": "Y",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        "Width",
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -13306,7 +13313,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Rectangle1_3",
-      "ParentIndex": 0,
+      "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
