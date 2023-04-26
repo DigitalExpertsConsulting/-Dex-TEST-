@@ -152,7 +152,7 @@ Admin_Profile_Page As screen:
                         Size: =Parent.Width * 0.015
                         Text: ="이름"
                         Width: =Parent.Width * 0.1
-                        X: =All_Checkbox.Width
+                        X: =All_Checkbox.Width*2
                         ZIndex: =2
 
                     Profile_Name As label:
@@ -163,7 +163,7 @@ Admin_Profile_Page As screen:
                         Size: =Parent.Width * 0.015
                         Text: ="프로필"
                         Width: =Parent.Width * 0.34
-                        X: =All_Checkbox.Width + User_Name.Width + Update_Date.Width
+                        X: =All_Checkbox.Width + User_Name.Width + Update_Date.Width*1.2
                         ZIndex: =3
 
                     Profile_Download As label:
@@ -185,7 +185,7 @@ Admin_Profile_Page As screen:
                         Size: =Parent.Width * 0.015
                         Text: ="수정한 날짜"
                         Width: =Parent.Width * 0.26
-                        X: =All_Checkbox.Width + User_Name.Width
+                        X: =All_Checkbox.Width + User_Name.Width *1.6
                         ZIndex: =5
 
                     All_Checkbox As checkbox:
@@ -250,7 +250,7 @@ Admin_Profile_Page As screen:
                         Size: =Parent.Width * 0.013
                         Text: =ThisItem.Profile.FileName
                         Width: =Parent.Width * 0.35
-                        X: =Checkbox6_1.Width + Label4.Width + Label5.Width*1.2
+                        X: =Checkbox6_1.Width + Label4.Width + Label5.Width*1.1
                         Y: =Parent.Height * 0.04
                         ZIndex: =4
 
