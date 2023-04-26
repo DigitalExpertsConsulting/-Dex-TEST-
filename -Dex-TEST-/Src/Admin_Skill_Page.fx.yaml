@@ -129,7 +129,7 @@ Admin_Skill_Page As screen:
 
                     Rectangle1_3 As rectangle:
                         Fill: =RGBA( 106, 170, 205, 1 )
-                        Height: =54
+                        Height: =Parent.Height
                         Width: =Parent.Width
                         X: =
                         Y: =0.6460000000000008
@@ -154,7 +154,7 @@ Admin_Skill_Page As screen:
                         Size: =Parent.Width * 0.007
                         Text: ="365 Solution"
                         Width: =68
-                        X: =77
+                        X: =Parent.Width*0.09
                         ZIndex: =3
 
                     Label6_17 As label:
@@ -165,7 +165,7 @@ Admin_Skill_Page As screen:
                         Size: =Parent.Width * 0.007
                         Text: ="AI Builder"
                         Width: =81
-                        X: =155
+                        X: =Parent.Width*0.155
                         ZIndex: =4
 
                     Label6_39 As label:
@@ -176,7 +176,7 @@ Admin_Skill_Page As screen:
                         Size: =Parent.Width * 0.007
                         Text: ="API management"
                         Width: =108
-                        X: =232
+                        X: =Parent.Width*0.22
                         ZIndex: =5
 
                     Label6_38 As label:
@@ -187,7 +187,7 @@ Admin_Skill_Page As screen:
                         Size: =Parent.Width * 0.007
                         Text: ="Dataverse"
                         Width: =87
-                        X: =341
+                        X: =Parent.Width*0.29
                         ZIndex: =6
 
                     Label6_37 As label:
@@ -198,7 +198,7 @@ Admin_Skill_Page As screen:
                         Size: =Parent.Width * 0.007
                         Text: ="Power Apps Canvas"
                         Width: =95
-                        X: =435
+                        X: =Parent.Width*0.36
                         ZIndex: =7
 
                     Label6_36 As label:
@@ -209,7 +209,7 @@ Admin_Skill_Page As screen:
                         Size: =Parent.Width * 0.007
                         Text: ="Power Apps Model"
                         Width: =122
-                        X: =529
+                        X: =Parent.Width*0.42
                         ZIndex: =8
 
                     Label6_35 As label:
@@ -220,7 +220,7 @@ Admin_Skill_Page As screen:
                         Size: =Parent.Width * 0.007
                         Text: ="Power Automate"
                         Width: =81
-                        X: =654
+                        X: =Parent.Width*0.51
                         ZIndex: =9
 
                     Label6_34 As label:
@@ -231,7 +231,7 @@ Admin_Skill_Page As screen:
                         Size: =Parent.Width * 0.007
                         Text: ="Power Automate Desktop"
                         Width: =81
-                        X: =755
+                        X: =Parent.Width*0.577
                         ZIndex: =10
 
                     Label6_33 As label:
@@ -242,7 +242,7 @@ Admin_Skill_Page As screen:
                         Size: =Parent.Width * 0.007
                         Text: ="Power Page"
                         Width: =108
-                        X: =839
+                        X: =Parent.Width*0.64
                         ZIndex: =11
 
                     Label6_32 As label:
@@ -253,7 +253,7 @@ Admin_Skill_Page As screen:
                         Size: =Parent.Width * 0.007
                         Text: ="Power Page JAVA/CSS"
                         Width: =108
-                        X: =949
+                        X: =Parent.Width*0.72
                         ZIndex: =12
 
                     Label6_31 As label:
@@ -264,7 +264,7 @@ Admin_Skill_Page As screen:
                         Size: =Parent.Width * 0.007
                         Text: ="Power BI"
                         Width: =108
-                        X: =1056
+                        X: =Parent.Width*0.79
                         ZIndex: =13
 
                     Label6_30 As label:
@@ -275,7 +275,7 @@ Admin_Skill_Page As screen:
                         Size: =Parent.Width * 0.007
                         Text: ="Process Advisor"
                         Width: =81
-                        X: =1174
+                        X: =Parent.Width*0.865
                         ZIndex: =14
 
                     Label6_29 As label:
@@ -286,7 +286,7 @@ Admin_Skill_Page As screen:
                         Size: =Parent.Width * 0.007
                         Text: ="Power Virtual Agents"
                         Width: =95
-                        X: =1264
+                        X: =Parent.Width*0.927
                         ZIndex: =15
 
             AS_Gallery_Container As groupContainer.manualLayoutContainer:
