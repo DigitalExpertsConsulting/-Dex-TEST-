@@ -590,7 +590,7 @@ Admin_Profile_Page As screen:
                         Width: =Parent.Width * 0.5
                         X: |-
                             =//Parent.Width * 0.34
-                            Gallery3.TemplateWidth *0.2
+                            Gallery3.TemplateWidth *0.35
                         Y: |-
                             =//Parent.Height * 0.1
                             Gallery3.TemplateHeight *0.5
@@ -606,7 +606,7 @@ Admin_Profile_Page As screen:
                         Width: =Parent.Width * 0.4
                         X: |-
                             =//Parent.Width * 0.34
-                            Gallery3.TemplateWidth *0.23
+                            Gallery3.TemplateWidth *0.3
                         Y: |-
                             =//Parent.Height * 0
                             Gallery3.TemplateHeight *0.03
