@@ -629,7 +629,7 @@ Admin_Profile_Page As screen:
                         ZIndex: =10
 
             AP_Down_Container_1 As groupContainer.manualLayoutContainer:
-                Height: =Parent.Height - AP_Gallery_Container_1.Height*0.9
+                Height: =Parent.Height - AP_Gallery_Container_1.Height*0.8
                 Width: =Parent.Width *0.3
                 X: =Gallery3.Width
                 Y: =Parent.Y*0.65
@@ -639,9 +639,9 @@ Admin_Profile_Page As screen:
                     BorderColor: =RGBA( 112, 128, 144, 0.7 )
                     BorderThickness: =5
                     Fill: =RGBA( 106, 170, 205, 1 )
-                    Height: =Parent.Height * 0.3
+                    Height: =Parent.Height * 0.4
                     OnSelect: =PPTALLDOWNLOAD.Run()
-                    Size: =Parent.Width * 0.021
+                    Size: =Parent.Width * 0.07
                     Text: |-
                         ="전체 다운로드
                         "
@@ -654,19 +654,19 @@ Admin_Profile_Page As screen:
                     BorderColor: =RGBA( 112, 128, 144, 0.7 )
                     BorderThickness: =5
                     Fill: =RGBA( 106, 170, 205, 1 )
-                    Height: =Parent.Height * 0.3
+                    Height: =Parent.Height * 0.4
                     OnSelect: |-
                         =If(
                             !IsBlank(ConcatBox.Text),
                             PPTDownload.Run(Gallery3.Selected.'E-mail')
                         )
-                    Size: =Parent.Width * 0.021
+                    Size: =Parent.Width * 0.07
                     Text: |-
                         ="선택 다운로드
                         "
                     Width: =Parent.Width * 0.75
                     X: =Parent.Width * 0.1
-                    Y: =Parent.Height * 0.5
+                    Y: =Parent.Height * 0.7
                     ZIndex: =2
 
             AP_Update_Container_1 As groupContainer.manualLayoutContainer:
