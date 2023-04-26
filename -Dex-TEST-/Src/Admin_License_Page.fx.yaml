@@ -83,7 +83,7 @@ Admin_License_Page As screen:
 
             AL_Down_Container As groupContainer.manualLayoutContainer:
                 Height: =Parent.Height * 0.14
-                Width: =Parent.Width * 0.3
+                Width: =Parent.Width * 0.5
                 ZIndex: =1
 
                 License_DownLoad As button:
@@ -94,19 +94,19 @@ Admin_License_Page As screen:
                     OnSelect: =PDFDownload.Run()
                     Size: =Parent.Width * 0.033
                     Text: ="라이센스 인증서 다운로드"
-                    Width: =Parent.Width * 0.7
-                    X: =Parent.Width * 0.04
+                    Width: =Parent.Width * 0.6
+                    X: =Parent.Width * 0.03
                     Y: =Parent.Height * 0.2
                     ZIndex: =1
 
                 License_Refresh As icon.Reload:
                     Color: =RGBA(255, 255, 255, 1)
-                    Height: =Parent.Width * 0.18
+                    Height: =Parent.Width * 0.1
                     Icon: =Icon.Reload
                     OnSelect: =Refresh(ability_license)
-                    Width: =Parent.Width * 0.18
-                    X: =Parent.Width * 0.8
-                    Y: =5
+                    Width: =Parent.Width * 0.1
+                    X: =Parent.Width * 0.75
+                    Y: =Parent.Height * 0
                     ZIndex: =2
 
             AL_Search_Container As groupContainer.manualLayoutContainer:
