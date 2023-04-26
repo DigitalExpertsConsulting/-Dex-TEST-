@@ -591,8 +591,12 @@ Admin_Profile_Page As screen:
                         Size: =Parent.Width * 0.03
                         Text: ="프로필"
                         Width: =Parent.Width * 0.4
-                        X: =Parent.Width * 0.34
-                        Y: =Parent.Height * 0
+                        X: |-
+                            =//Parent.Width * 0.34
+                            Gallery3.TemplateWidth *0.3
+                        Y: |-
+                            =//Parent.Height * 0
+                            Gallery3.TemplateHeight *0.03
                         ZIndex: =8
 
                     Checkbox6_4 As checkbox:
