@@ -544,8 +544,12 @@ Admin_Profile_Page As screen:
                         Text: =ThisItem.'Created On'
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width * 0.5
-                        X: =Parent.Width * 0.3
-                        Y: =Parent.Height * 0.15
+                        X: |-
+                            =//Parent.Width * 0.3
+                            Gallery3.Width * 0.2
+                        Y: |-
+                            =//Parent.Height * 0.15
+                            Gallery3.Height * 0.15
                         ZIndex: =3
 
                     Separator4 As rectangle:
@@ -578,9 +582,13 @@ Admin_Profile_Page As screen:
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.03
                         Text: ="수정날짜"
-                        Width: =Parent.Width * 0.4
-                        X: =Parent.Width * 0.34
-                        Y: =Parent.Height * 0.1
+                        Width: =Parent.Width * 0.5
+                        X: |-
+                            =//Parent.Width * 0.34
+                            Gallery3.TemplateWidth *0.25
+                        Y: |-
+                            =//Parent.Height * 0.1
+                            Gallery3.TemplateHeight *0.5
                         ZIndex: =7
 
                     Label2_1 As label:
@@ -593,7 +601,7 @@ Admin_Profile_Page As screen:
                         Width: =Parent.Width * 0.4
                         X: |-
                             =//Parent.Width * 0.34
-                            Gallery3.TemplateWidth *0.3
+                            Gallery3.TemplateWidth *0.25
                         Y: |-
                             =//Parent.Height * 0
                             Gallery3.TemplateHeight *0.03
