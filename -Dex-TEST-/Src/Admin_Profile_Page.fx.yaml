@@ -91,16 +91,16 @@ Admin_Profile_Page As screen:
                 Height: =Parent.Width * 0.056
                 Width: =Parent.Width * 0.056
                 X: =Parent.Width * 0.02
-                Y: =Parent.Height * 0.02
+                Y: =Parent.Height * 0.01
                 ZIndex: =1
 
                 Profile_Refresh As icon.Reload:
                     BorderColor: =RGBA(241, 244, 249, 1)
                     Color: =RGBA(241, 244, 249, 1)
-                    Height: =Parent.Width
+                    Height: =Parent.Width*0.9
                     Icon: =Icon.Reload
                     OnSelect: =Refresh(ability_profile)
-                    Width: =Parent.Width
+                    Width: =Parent.Width*0.9
                     ZIndex: =1
 
             AP_Search_Container As groupContainer.manualLayoutContainer:
@@ -133,8 +133,8 @@ Admin_Profile_Page As screen:
                     ZIndex: =7
 
                     Title_Color_Box As rectangle:
-                        BorderColor: =RGBA( 112, 128, 144, 0.7 )
-                        BorderThickness: =3
+                        BorderColor: =RGBA(56, 96, 178, 1)
+                        BorderThickness: =5
                         Fill: =RGBA( 106, 170, 205, 1 )
                         Height: =Parent.Height
                         Width: =Parent.Width
@@ -212,7 +212,7 @@ Admin_Profile_Page As screen:
                     BorderThickness: =3
                     DelayItemLoading: =true
                     Fill: =RGBA(255, 255, 255, 0.9)
-                    Height: =Parent.Height
+                    Height: =Parent.Height*1
                     Items: |
                         =Search(ability_profile,Profile_Search.Text,"cr778_name")
                     Layout: =Layout.Vertical
