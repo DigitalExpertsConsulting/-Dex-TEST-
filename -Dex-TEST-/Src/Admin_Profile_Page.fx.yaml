@@ -197,6 +197,7 @@ Admin_Profile_Page As screen:
                             )
                         OnUncheck: |-
                             =UpdateContext({Checkbox10Value: false})
+                        Size: =Parent.Height*0.3
                         Text: ="전체"
                         Width: =Parent.Width * 0.09
                         ZIndex: =6
