@@ -503,7 +503,7 @@ Admin_Profile_Page As screen:
                     Layout: =Layout.Vertical
                     LoadingSpinner: =LoadingSpinner.Data
                     TemplatePadding: =0
-                    TemplateSize: =Min(160, Self.Height - 60)
+                    TemplateSize: =Min(100, Self.Height - 60)
                     Width: =Parent.Width
                     ZIndex: =1
 
@@ -515,12 +515,12 @@ Admin_Profile_Page As screen:
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =Parent.Width * 0.018
+                        Size: =Parent.Width * 0.04
                         Text: =ThisItem.Name
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width * 0.1
-                        X: =Parent.Width * 0.1
-                        Y: =Parent.Height * 0.13
+                        Width: =Parent.Width * 0.2
+                        X: =Parent.Width * 0.12
+                        Y: =Parent.Height * 0.09
                         ZIndex: =2
 
                     Subtitle4 As label:
@@ -534,9 +534,9 @@ Admin_Profile_Page As screen:
                         Size: =Parent.Width * 0.012
                         Text: =ThisItem.'Created On'
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width * 0.3
-                        X: =Parent.Width * 0.36
-                        Y: =Parent.Height * 0.08
+                        Width: =Parent.Width * 0.5
+                        X: =Parent.Width * 0.3
+                        Y: =Parent.Height * 0.35
                         ZIndex: =3
 
                     Separator4 As rectangle:
@@ -557,38 +557,38 @@ Admin_Profile_Page As screen:
                         Size: =Parent.Width * 0.012
                         Text: =ThisItem.Profile.FileName
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width * 0.3
-                        X: =Parent.Width * 0.36
-                        Y: =Parent.Height * 0.17
+                        Width: =Parent.Width * 0.9
+                        X: =Parent.Width * 0.13
+                        Y: =Parent.Height*0.05
                         ZIndex: =6
 
                     Label2 As label:
                         Align: =Align.Center
                         FontWeight: =FontWeight.Bold
-                        Height: =Parent.Height * 0.06
+                        Height: =Parent.Height *0.05
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.015
+                        Size: =Parent.Width * 0.03
                         Text: ="수정날짜"
-                        Width: =Parent.Width * 0.1
-                        X: =Parent.Width * 0.25
-                        Y: =Parent.Height * 0.08
+                        Width: =Parent.Width * 0.4
+                        X: =Parent.Width * 0.34
+                        Y: =Parent.Height * 0.3
                         ZIndex: =7
 
                     Label2_1 As label:
                         Align: =Align.Center
                         FontWeight: =FontWeight.Bold
-                        Height: =Parent.Height * 0.06
+                        Height: =Parent.Height *0.05
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.015
+                        Size: =Parent.Width * 0.03
                         Text: ="프로필"
-                        Width: =Parent.Width * 0.1
-                        X: =Parent.Width * 0.25
-                        Y: =Parent.Height * 0.17
+                        Width: =Parent.Width * 0.4
+                        X: =Parent.Width * 0.34
+                        Y: =Parent.Height * 0
                         ZIndex: =8
 
                     Checkbox6_4 As checkbox:
                         Default: =Checkbox10Value
-                        Height: =45
+                        Height: =40
                         OnSelect: |-
                             =If(
                                 Checkbox6_4.Value = true,
@@ -597,9 +597,9 @@ Admin_Profile_Page As screen:
                             )
                         Size: =Parent.Width * 0.013
                         Text: =ThisItem.'E-mail'
-                        Width: =45
-                        X: =Parent.Width * 0.067
-                        Y: =Parent.Height * 0.12
+                        Width: =40
+                        X: =Parent.Width * 0.01
+                        Y: =Parent.Height * 0.06
                         ZIndex: =9
 
                     Button13_3 As button:
