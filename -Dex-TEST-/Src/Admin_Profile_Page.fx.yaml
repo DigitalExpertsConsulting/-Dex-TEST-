@@ -547,7 +547,7 @@ Admin_Profile_Page As screen:
                         X: |-
                             =//Parent.Width * 0.3
                             //Gallery3.Width * 0.2
-                            Title3.X + (Title3.Width * 0.7)
+                            Title3.X + (Title3.Width * 0.85)
                         Y: |-
                             =//Parent.Height * 0.15
                             Gallery3.Height * 0.15
@@ -638,6 +638,7 @@ Admin_Profile_Page As screen:
                         OnSelect: =PPTDownload.Run(Gallery3.Selected.'E-mail')
                         Size: =Parent.Width * 0.013
                         Text: ="다운로드"
+                        Visible: =false
                         Width: =Parent.Width * 0.11
                         X: =Parent.Width * 0.88
                         Y: =Parent.Height * 0.01
