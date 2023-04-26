@@ -463,10 +463,10 @@ Admin_Profile_Page As screen:
             ZIndex: =2
 
             AP_Search_Container_1 As groupContainer.manualLayoutContainer:
-                Height: =Parent.Height * 0.06
-                Width: =Parent.Width * 0.178
-                X: =Parent.Width * 0.79
-                Y: =AP_Gallery_Container_1.Y
+                Height: =Parent.Height * 0.04
+                Width: =Parent.Width * 0.3
+                X: =Parent.Width * 0.4
+                Y: =Parent.Height*0.1
                 ZIndex: =1
 
                 Profile_Search_1 As text:
