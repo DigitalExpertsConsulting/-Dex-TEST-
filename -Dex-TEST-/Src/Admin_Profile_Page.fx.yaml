@@ -524,10 +524,12 @@ Admin_Profile_Page As screen:
                         Text: =ThisItem.Name
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width * 0.2
-                        X: =Parent.Width * 0.12
+                        X: |-
+                            =//Parent.Width * 0.12
+                            Gallery3.TemplateWidth *0.14
                         Y: |-
                             =//Parent.Height * 0.09
-                            Gallery3.TemplateHeight *0.41
+                            Gallery3.TemplateHeight *0.42
                         ZIndex: =2
 
                     Subtitle4 As label:
