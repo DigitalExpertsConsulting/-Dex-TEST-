@@ -99,7 +99,7 @@ Admin_Skill_Page As screen:
 
             AS_Search_Container As groupContainer.manualLayoutContainer:
                 Height: =Parent.Width * 0.055
-                Width: =Parent.Width * 0.17
+                Width: =Parent.Width * 0.2
                 X: =Parent.Width * 0.799
                 ZIndex: =2
 
@@ -110,7 +110,7 @@ Admin_Skill_Page As screen:
                     Height: =Parent.Height * 0.6
                     HintText: ="검색"
                     Size: =Parent.Width * 0.04
-                    Width: =Parent.Width
+                    Width: =Parent.Width*0.9
                     Y: =Parent.Height * 0.2
                     ZIndex: =1
 
@@ -154,7 +154,7 @@ Admin_Skill_Page As screen:
                         Size: =Parent.Width * 0.007
                         Text: ="365 Solution"
                         Width: =Parent.Width *0.07
-                        X: =Parent.Width*0.07
+                        X: =Parent.Width*0.065
                         ZIndex: =3
 
                     Label6_17 As label:
@@ -304,147 +304,148 @@ Admin_Skill_Page As screen:
                     LoadingSpinner: =LoadingSpinner.Data
                     TemplateSize: |-
                         =/*If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))*/
-                        35
+                        60
                     Width: =Parent.Width
                     ZIndex: =1
 
                     Label7_14 As label:
                         Align: =Align.Center
                         FontWeight: =FontWeight.Semibold
-                        Height: =Parent.Height * 0.07
+                        Height: =Label6_15.Height
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.Name
-                        Width: =Parent.Width * 0.05
+                        Width: =Label6_15.Width
+                        X: =Label6_15.X*0.97
                         ZIndex: =1
 
                     Label7_15 As label:
                         Align: =Align.Center
-                        Height: =Parent.Height * 0.07
+                        Height: =Label6_16.Height
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'365 Solution'
-                        Width: =Parent.Width * 0.07
-                        X: =Label6_16.X*0.9
+                        Width: =Label6_16.Width
+                        X: =Label6_16.X*0.97
                         ZIndex: =2
 
                     Label7_16 As label:
                         Align: =Align.Center
-                        Height: =Parent.Height * 0.07
+                        Height: =Label6_16.Height
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'AI Builder'
-                        Width: =Parent.Width * 0.07
+                        Width: =Label6_17.Width
                         X: =Label6_17.X*0.97
                         ZIndex: =3
 
                     Label7_17 As label:
                         Align: =Align.Center
-                        Height: =Parent.Height * 0.07
+                        Height: =Label6_39.Height
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'Api management'
-                        Width: =Parent.Width * 0.08
-                        X: =Label6_39.X*0.97
+                        Width: =Label6_39.Width
+                        X: =Label6_39.X*0.99
                         ZIndex: =4
 
                     Label7_18 As label:
                         Align: =Align.Center
-                        Height: =Parent.Height * 0.07
+                        Height: =Label6_38.Height
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.DataVerse
-                        Width: =Parent.Width * 0.08
-                        X: =Label6_38.X*0.97
+                        Width: =Label6_38.Width
+                        X: =Label6_38.X*0.99
                         ZIndex: =5
 
                     Label7_19 As label:
                         Align: =Align.Center
-                        Height: =Parent.Height * 0.07
+                        Height: =Label6_37.Height
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'Power Apps Canvas'
-                        Width: =Parent.Width * 0.07
+                        Width: =Label6_37.Width
                         X: =Label6_37.X*0.99
                         ZIndex: =6
 
                     Label7_20 As label:
                         Align: =Align.Center
-                        Height: =Parent.Height * 0.07
+                        Height: =Label6_36.Height
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'Power Apps Model'
-                        Width: =Parent.Width * 0.07
+                        Width: =Label6_36.Width
                         X: =Label6_36.X*0.99
                         ZIndex: =7
 
                     Label7_21 As label:
                         Align: =Align.Center
-                        Height: =Parent.Height * 0.07
+                        Height: =Label6_35.Height
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'Power Automate'
-                        Width: =Parent.Width * 0.078
-                        X: =Label6_35.X*0.975
+                        Width: =Label6_35.Width
+                        X: =Label6_35.X*0.99
                         ZIndex: =8
 
                     Label7_22 As label:
                         Align: =Align.Center
-                        Height: =Parent.Height * 0.07
+                        Height: =Label6_34.Height
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'Power Automate Desktop'
-                        Width: =Parent.Width * 0.075
-                        X: =Label6_34.X*0.98
+                        Width: =Label6_34.Width
+                        X: =Label6_34.X*0.995
                         ZIndex: =9
 
                     Label7_23 As label:
                         Align: =Align.Center
-                        Height: =Parent.Height * 0.07
+                        Height: =Label6_33.Height
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'Power Page'
-                        Width: =Parent.Width * 0.075
-                        X: =Label6_33.X*0.99
+                        Width: =Label6_33.Width
+                        X: =Label6_33.X*0.997
                         ZIndex: =10
 
                     Label7_24 As label:
                         Align: =Align.Center
-                        Height: =Parent.Height * 0.07
+                        Height: =Label6_32.Height
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'Power Page JAVA/CSS'
-                        Width: =Parent.Width * 0.07
-                        X: =Label6_32.X*0.99
+                        Width: =Label6_32.Width
+                        X: =Label6_32.X*0.997
                         ZIndex: =11
 
                     Label7_25 As label:
                         Align: =Align.Center
-                        Height: =Parent.Height * 0.07
+                        Height: =Label6_31.Height
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'Power BI'
-                        Width: =Parent.Width * 0.07
-                        X: =Label6_31.X*1
+                        Width: =Label6_31.Width
+                        X: =Label6_31.X*0.997
                         ZIndex: =12
 
                     Label7_26 As label:
                         Align: =Align.Center
-                        Height: =Parent.Height * 0.07
+                        Height: =Label6_30.Height
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'Process Advisor'
-                        Width: =Parent.Width * 0.07
-                        X: =Label6_30.X*0.99
+                        Width: =Label6_30.Width
+                        X: =Label6_30.X*0.997
                         ZIndex: =13
 
                     Label7_27 As label:
                         Align: =Align.Center
-                        Height: =Parent.Height * 0.07
+                        Height: =Label6_29.Height
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'Power Virtual Agents'
-                        Width: =Parent.Width * 0.07
+                        Width: =Label6_29.Width
                         X: =Label6_29.X*1
                         ZIndex: =14
 
