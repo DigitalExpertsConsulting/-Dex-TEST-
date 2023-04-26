@@ -465,8 +465,8 @@ Admin_Profile_Page As screen:
             AP_Search_Container_1 As groupContainer.manualLayoutContainer:
                 Height: =Parent.Height * 0.05
                 Width: =Parent.Width * 0.45
-                X: =Parent.Width * 0.231
-                Y: =Parent.Height*0.07
+                X: =Parent.Width * 0.25
+                Y: =AP_Gallery_Container_1.Height*0.1
                 ZIndex: =1
 
                 Profile_Search_1 As text:
@@ -741,8 +741,8 @@ Admin_Profile_Page As screen:
             AP_Refresh_Container_1 As groupContainer.manualLayoutContainer:
                 Height: =Parent.Width * 0.08
                 Width: =Parent.Width * 0.08
-                X: =Parent.Width * 0.02
-                Y: =Parent.Height *0.07
+                X: =Parent.Width * 0.03
+                Y: =Parent.Height *0.08
                 ZIndex: =5
 
                 Profile_Refresh_1 As icon.Reload:
