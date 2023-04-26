@@ -549,7 +549,7 @@ Admin_Profile_Page As screen:
                             Gallery3.Width * 0.35
                         Y: |-
                             =//Parent.Height * 0.15
-                            Gallery3.Height * 0.15
+                            Gallery3.Height * 0.13
                         ZIndex: =3
 
                     Separator4 As rectangle:
@@ -605,10 +605,10 @@ Admin_Profile_Page As screen:
                         Width: =Parent.Width * 0.4
                         X: |-
                             =//Parent.Width * 0.34
-                            Gallery3.TemplateWidth *0.45
+                            Gallery3.TemplateWidth *0.41
                         Y: |-
                             =//Parent.Height * 0
-                            Gallery3.TemplateHeight *0.03
+                            Gallery3.TemplateHeight *0.01
                         ZIndex: =8
 
                     Checkbox6_4 As checkbox:
