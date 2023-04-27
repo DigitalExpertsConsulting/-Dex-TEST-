@@ -43,7 +43,7 @@ Screen1 As screen:
                 Color: =RGBA( 106, 170, 205, 1 )
                 Height: =Parent.Width * 0.3
                 Icon: =Icon.BackArrow
-                OnSelect: =Navigate(Admin_Page)
+                OnSelect: =Navigate(Admin_Skill_Page_1)
                 Width: =Parent.Width *0.15
                 X: =Parent.Width * 0.1
                 Y: =Parent.Width * 0.05
