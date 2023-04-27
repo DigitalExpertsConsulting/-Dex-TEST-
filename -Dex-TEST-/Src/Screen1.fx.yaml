@@ -81,20 +81,22 @@ Screen1 As screen:
             ZIndex: =2
 
             AS_Gallery_Container_4 As groupContainer.manualLayoutContainer:
-                Fill: =RGBA(255,255,255,0.6)
+                Fill: =RGBA(255,255,255,0.0)
                 Height: =Parent.Height
                 Width: =Parent.Width
                 ZIndex: =4
 
                 Gallery6 As gallery.galleryVertical:
                     DelayItemLoading: =true
-                    Height: =Parent.Height
+                    Fill: =RGBA(255,255,255,0.6)
+                    Height: =Parent.Height  * 0.5
                     Items: =Gallery1_1.Selected
                     Layout: =Layout.Vertical
                     LoadingSpinner: =LoadingSpinner.Data
                     ShowScrollbar: =false
                     TemplateSize: =Self.Height
                     Width: =Parent.Width
+                    Y: =Parent.Height * 0.25
                     ZIndex: =1
 
                     Label3 As label:
