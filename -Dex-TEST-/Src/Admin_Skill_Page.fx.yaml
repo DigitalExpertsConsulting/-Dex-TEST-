@@ -561,7 +561,7 @@ Admin_Skill_Page As screen:
                     Layout: =Layout.Vertical
                     LoadingSpinner: =LoadingSpinner.Data
                     TemplatePadding: =0
-                    TemplateSize: =Min( Icon1.Height + 10 , Self.Height*0.2)
+                    TemplateSize: =Min( Icon1.Height + 15 , Self.Height*0.2)
                     Width: =Parent.Width
                     Y: =
                     ZIndex: =1
