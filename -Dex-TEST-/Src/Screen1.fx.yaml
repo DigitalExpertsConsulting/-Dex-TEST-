@@ -89,7 +89,7 @@ Screen1 As screen:
                 Gallery6 As gallery.galleryVertical:
                     DelayItemLoading: =true
                     Fill: =RGBA(255,255,255,0.6)
-                    Height: =Parent.Height  * 0.5
+                    Height: =Parent.Height  * 0.6
                     Items: =Gallery1_1.Selected
                     Layout: =Layout.Vertical
                     LoadingSpinner: =LoadingSpinner.Data
