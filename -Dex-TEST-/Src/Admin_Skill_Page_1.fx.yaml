@@ -587,8 +587,7 @@ Admin_Skill_Page_1 As screen:
                         Text: =ThisItem.Name
                         VerticalAlign: =VerticalAlign.Top
                         Width: =287
-                        X: =328
-                        Y: =29
+                        Y: =40
                         ZIndex: =2
 
                     Separator1_1 As rectangle:
@@ -603,7 +602,8 @@ Admin_Skill_Page_1 As screen:
                         Icon: =Icon.ChevronRight
                         OnSelect: =Select(Parent)
                         Width: =166
-                        X: =685
+                        X: |
+                            =150
                         Y: =40
                         ZIndex: =6
 
