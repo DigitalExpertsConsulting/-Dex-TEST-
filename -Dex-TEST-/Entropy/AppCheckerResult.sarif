@@ -74,6 +74,126 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Admin_License_Page_Detail.mAL_Main_Container_1.AL_Header_Container_4.License_Back_9.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Admin_License_Page_Detail.mAL_Main_Container_1.AL_Header_Container_4.License_Back_9.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Admin_License_Page_Detail",
+                "type": "Admin_License_Page_Detail.mAL_Main_Container_1.AL_Header_Container_4.License_Back_9"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Admin_License_Page_Detail.mAL_Main_Container_1.AL_Header_Container_4.License_Home_9.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Admin_License_Page_Detail.mAL_Main_Container_1.AL_Header_Container_4.License_Home_9.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Admin_License_Page_Detail",
+                "type": "Admin_License_Page_Detail.mAL_Main_Container_1.AL_Header_Container_4.License_Home_9"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Admin_License_Page_Detail.mAL_Main_Container_1.AL_Header_Container_4.License_Back_9.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Admin_License_Page_Detail.mAL_Main_Container_1.AL_Header_Container_4.License_Back_9.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Admin_License_Page_Detail",
+                "type": "Admin_License_Page_Detail.mAL_Main_Container_1.AL_Header_Container_4.License_Back_9"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Admin_License_Page_Detail.mAL_Main_Container_1.AL_Sub_Container_2.AL_Down_Container_2.License_Refresh_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Admin_License_Page_Detail.mAL_Main_Container_1.AL_Sub_Container_2.AL_Down_Container_2.License_Refresh_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Admin_License_Page_Detail",
+                "type": "Admin_License_Page_Detail.mAL_Main_Container_1.AL_Sub_Container_2.AL_Down_Container_2.License_Refresh_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Admin_Skill_Page.AS_Main_Container_1.AS_Header_Container_1.Admin_Skill_Back_1.AccessibleLabel"
                 }
               ],
@@ -6038,6 +6158,156 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Admin_License_Page_Detail.mAL_Main_Container_1.AL_Sub_Container_2.AL_Gallery_Container_2.Gallery2_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Admin_License_Page_Detail.mAL_Main_Container_1.AL_Sub_Container_2.AL_Gallery_Container_2.Gallery2_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Admin_License_Page_Detail",
+                "type": "Admin_License_Page_Detail.mAL_Main_Container_1.AL_Sub_Container_2.AL_Gallery_Container_2.Gallery2_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Admin_License_Page_Detail.mAL_Main_Container_1.AL_Sub_Container_2.AL_Gallery_Container_2.Gallery2_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Admin_License_Page_Detail.mAL_Main_Container_1.AL_Sub_Container_2.AL_Gallery_Container_2.Gallery2_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Admin_License_Page_Detail",
+                "type": "Admin_License_Page_Detail.mAL_Main_Container_1.AL_Sub_Container_2.AL_Gallery_Container_2.Gallery2_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Admin_License_Page_Detail.mAL_Main_Container_1.AL_Header_Container_4.License_Home_9.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Admin_License_Page_Detail.mAL_Main_Container_1.AL_Header_Container_4.License_Home_9.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Admin_License_Page_Detail",
+                "type": "Admin_License_Page_Detail.mAL_Main_Container_1.AL_Header_Container_4.License_Home_9"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Admin_License_Page_Detail.mAL_Main_Container_1.AL_Sub_Container_2.AL_Search_Container_2.License_Search_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Admin_License_Page_Detail.mAL_Main_Container_1.AL_Sub_Container_2.AL_Search_Container_2.License_Search_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Admin_License_Page_Detail",
+                "type": "Admin_License_Page_Detail.mAL_Main_Container_1.AL_Sub_Container_2.AL_Search_Container_2.License_Search_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Admin_License_Page_Detail.mAL_Main_Container_1.AL_Sub_Container_2.AL_Down_Container_2.License_Refresh_2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Admin_License_Page_Detail.mAL_Main_Container_1.AL_Sub_Container_2.AL_Down_Container_2.License_Refresh_2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Admin_License_Page_Detail",
+                "type": "Admin_License_Page_Detail.mAL_Main_Container_1.AL_Sub_Container_2.AL_Down_Container_2.License_Refresh_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
         },
         {
           "locations": [
