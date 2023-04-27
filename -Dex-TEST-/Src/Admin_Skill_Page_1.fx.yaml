@@ -605,7 +605,7 @@ Admin_Skill_Page_1 As screen:
                     Icon1 As icon.ChevronRight:
                         Height: =Gallery1_1.TemplateWidth * 0.1
                         Icon: =Icon.ChevronRight
-                        OnSelect: =Select(Parent)
+                        OnSelect: =Navigate(Screen1)
                         Width: =Gallery1_1.TemplateWidth * 0.1
                         X: =Gallery1_1.TemplateWidth * 0.7
                         Y: =Parent.TemplateHeight * 0.1

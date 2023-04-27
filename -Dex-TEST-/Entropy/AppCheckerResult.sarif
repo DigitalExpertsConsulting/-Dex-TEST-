@@ -8713,6 +8713,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Admin_Skill_Page_1.mAS_Main_Container_1.AS_Sub_Container_3.AS_Gallery_Container_3.Gallery1_1.Icon1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Admin_Skill_Page_1.mAS_Main_Container_1.AS_Sub_Container_3.AS_Gallery_Container_3.Gallery1_1.Icon1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Admin_Skill_Page_1",
+                "type": "Admin_Skill_Page_1.mAS_Main_Container_1.AS_Sub_Container_3.AS_Gallery_Container_3.Gallery1_1.Icon1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Admin_Skill_Page_1.mAS_Main_Container_1.AS_Sub_Container_3.AS_Gallery_Container_3.Gallery1_1.Icon1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Admin_Skill_Page_1.mAS_Main_Container_1.AS_Sub_Container_3.AS_Gallery_Container_3.Gallery1_1.Icon1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Admin_Skill_Page_1",
+                "type": "Admin_Skill_Page_1.mAS_Main_Container_1.AS_Sub_Container_3.AS_Gallery_Container_3.Gallery1_1.Icon1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.varUploadProfile"
                 }
               ],
