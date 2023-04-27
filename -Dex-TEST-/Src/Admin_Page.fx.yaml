@@ -79,7 +79,7 @@ Admin_Page As screen:
                 Y: =Parent.Height * 0.07
                 ZIndex: =1
 
-            AdminPage_Skill_Button As button:
+            AdminPage_License_Button As button:
                 BorderColor: =RGBA( 112, 128, 144, 0.7 )
                 BorderThickness: =5
                 DisabledFill: =RGBA(241, 244, 249, 1)
@@ -95,7 +95,7 @@ Admin_Page As screen:
                 Y: =Parent.Height * 0.26
                 ZIndex: =2
 
-            AdminPage_License_Button As button:
+            AdminPage_Skill_Button As button:
                 BorderColor: =RGBA( 112, 128, 144, 0.7 )
                 BorderThickness: =5
                 DisabledFill: =RGBA(241, 244, 249, 1)
@@ -225,7 +225,7 @@ Admin_Page As screen:
                 Fill: =RGBA( 106, 170, 205, 1 )
                 Height: =Parent.Height * 0.14
                 HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -20%)
-                OnSelect: =Navigate(Admin_Skill_Page_1)
+                OnSelect: =Navigate(Admin_Skill_Page)
                 PressedFill: =RGBA(102, 182, 227, 0.2)
                 Size: =Parent.Width * 0.025
                 Text: ="기술 관리"

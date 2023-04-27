@@ -7,17 +7,12 @@ Admin_Skill_Page As screen:
         )
     ImagePosition: =ImagePosition.Stretch
 
-    AS_Main_Container As groupContainer.verticalAutoLayoutContainer:
+    AS_Main_Container_1 As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
         Visible: |+
-            =
-            
-            
-            
-            
-            If(
+            =If(
                 Parent.Width > 800,
                 true,
                 false
@@ -26,12 +21,10 @@ Admin_Skill_Page As screen:
             
             
             
-            
-            
         Width: =Parent.Width
         ZIndex: =24
 
-        AS_Header_Container As groupContainer.horizontalAutoLayoutContainer:
+        AS_Header_Container_1 As groupContainer.horizontalAutoLayoutContainer:
             FillPortions: =0
             Height: =Parent.Height * 0.2
             LayoutAlignItems: =LayoutAlignItems.Center
@@ -44,7 +37,7 @@ Admin_Skill_Page As screen:
             Width: =Parent.Width
             ZIndex: =1
 
-            Admin_Skill_Back As icon.BackArrow:
+            Admin_Skill_Back_1 As icon.BackArrow:
                 Color: =RGBA( 106, 170, 205, 1 )
                 Height: =Parent.Width * 0.08
                 Icon: =Icon.BackArrow
@@ -54,7 +47,7 @@ Admin_Skill_Page As screen:
                 Y: =40
                 ZIndex: =1
 
-            Admin_Skill_Title As label:
+            Admin_Skill_Title_1 As label:
                 Align: =Align.Center
                 BorderColor: =RGBA(102, 182, 227, 0.7)
                 Color: =RGBA(255, 255, 255, 1)
@@ -63,10 +56,10 @@ Admin_Skill_Page As screen:
                 Height: =Parent.Height
                 Size: =Parent.Width * 0.035
                 Text: ="Admin Skill Page"
-                Width: =Parent.Width -Admin_Skill_Back.Width - Admin_Skill_Home.Width
+                Width: =Parent.Width -Admin_Skill_Back_1.Width - Admin_Skill_Home_1.Width
                 ZIndex: =2
 
-            Admin_Skill_Home As icon.Home:
+            Admin_Skill_Home_1 As icon.Home:
                 Color: =RGBA( 106, 170, 205, 1 )
                 Height: =Parent.Width * 0.08
                 Icon: =Icon.Home
@@ -76,20 +69,20 @@ Admin_Skill_Page As screen:
                 Y: =40
                 ZIndex: =3
 
-        AS_Sub_Container As groupContainer.manualLayoutContainer:
-            Height: =Parent.Height - AS_Header_Container.Height
+        AS_Sub_Container_2 As groupContainer.manualLayoutContainer:
+            Height: =Parent.Height - AS_Header_Container_1.Height
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             Width: =Parent.Width
             ZIndex: =2
 
-            AS_Refresh_Container As groupContainer.manualLayoutContainer:
+            AS_Refresh_Container_2 As groupContainer.manualLayoutContainer:
                 Height: =Parent.Width * 0.05
                 Width: =Parent.Width * 0.055
                 X: =Parent.Width * 0.04
                 ZIndex: =1
 
-                Skill_Refresh As icon.Reload:
+                Skill_Refresh_2 As icon.Reload:
                     Color: =RGBA(255, 255, 255, 1)
                     Height: =Parent.Height*0.8
                     Icon: =Icon.Reload
@@ -99,13 +92,13 @@ Admin_Skill_Page As screen:
                     Y: =
                     ZIndex: =1
 
-            AS_Search_Container As groupContainer.manualLayoutContainer:
+            AS_Search_Container_2 As groupContainer.manualLayoutContainer:
                 Height: =Parent.Width * 0.055
                 Width: =Parent.Width * 0.2
                 X: =Parent.Width * 0.799
                 ZIndex: =2
 
-                Skill_Search As text:
+                Skill_Search_2 As text:
                     BorderColor: =RGBA( 112, 128, 144, 0.7 )
                     BorderThickness: =5
                     Default: =""
@@ -116,20 +109,20 @@ Admin_Skill_Page As screen:
                     Y: =Parent.Height * 0.2
                     ZIndex: =1
 
-            AS_Gallery_Title_Container As groupContainer.manualLayoutContainer:
+            AS_Gallery_Title_Container_1 As groupContainer.manualLayoutContainer:
                 Height: =Parent.Height * 0.089
                 Width: =Parent.Width
-                Y: =AS_Refresh_Container.Height
+                Y: =AS_Refresh_Container_2.Height
                 ZIndex: =3
 
-                Admin_Skill_Group As group:
+                Admin_Skill_Group_1 As group:
                     Height: =5
                     Width: =5
                     X: =60
                     Y: =-280
                     ZIndex: =16
 
-                    Rectangle1_3 As rectangle:
+                    Rectangle1_4 As rectangle:
                         Fill: =RGBA( 106, 170, 205, 1 )
                         Height: =Parent.Height
                         Width: =Parent.Width
@@ -137,18 +130,18 @@ Admin_Skill_Page As screen:
                         Y: =0.6460000000000008
                         ZIndex: =1
 
-                    Label6_15 As label:
+                    Label6_18 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
                         Height: =54
                         Size: =Parent.Width * 0.007
                         Text: ="이름"
-                        Width: =65
+                        Width: =54
                         X: =12
                         ZIndex: =2
 
-                    Label6_16 As label:
+                    Label6_19 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
@@ -159,7 +152,7 @@ Admin_Skill_Page As screen:
                         X: =Parent.Width*0.065
                         ZIndex: =3
 
-                    Label6_17 As label:
+                    Label6_20 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
@@ -170,7 +163,7 @@ Admin_Skill_Page As screen:
                         X: =Parent.Width*0.147
                         ZIndex: =4
 
-                    Label6_39 As label:
+                    Label6_40 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
@@ -181,7 +174,7 @@ Admin_Skill_Page As screen:
                         X: =Parent.Width*0.22
                         ZIndex: =5
 
-                    Label6_38 As label:
+                    Label6_53 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
@@ -192,7 +185,7 @@ Admin_Skill_Page As screen:
                         X: =Parent.Width*0.29
                         ZIndex: =6
 
-                    Label6_37 As label:
+                    Label6_54 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
@@ -203,7 +196,7 @@ Admin_Skill_Page As screen:
                         X: =Parent.Width*0.36
                         ZIndex: =7
 
-                    Label6_36 As label:
+                    Label6_55 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
@@ -214,7 +207,7 @@ Admin_Skill_Page As screen:
                         X: =Parent.Width*0.435
                         ZIndex: =8
 
-                    Label6_35 As label:
+                    Label6_56 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
@@ -225,7 +218,7 @@ Admin_Skill_Page As screen:
                         X: =Parent.Width*0.51
                         ZIndex: =9
 
-                    Label6_34 As label:
+                    Label6_57 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
@@ -236,7 +229,7 @@ Admin_Skill_Page As screen:
                         X: =Parent.Width*0.577
                         ZIndex: =10
 
-                    Label6_33 As label:
+                    Label6_58 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
@@ -247,7 +240,7 @@ Admin_Skill_Page As screen:
                         X: =Parent.Width*0.645
                         ZIndex: =11
 
-                    Label6_32 As label:
+                    Label6_59 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
@@ -258,7 +251,7 @@ Admin_Skill_Page As screen:
                         X: =Parent.Width*0.72
                         ZIndex: =12
 
-                    Label6_31 As label:
+                    Label6_60 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
@@ -269,7 +262,7 @@ Admin_Skill_Page As screen:
                         X: =Parent.Width*0.79
                         ZIndex: =13
 
-                    Label6_30 As label:
+                    Label6_61 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
@@ -280,7 +273,7 @@ Admin_Skill_Page As screen:
                         X: =Parent.Width*0.865
                         ZIndex: =14
 
-                    Label6_29 As label:
+                    Label6_62 As label:
                         Align: =Align.Center
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
@@ -291,17 +284,17 @@ Admin_Skill_Page As screen:
                         X: =Parent.Width*0.927
                         ZIndex: =15
 
-            AS_Gallery_Container As groupContainer.manualLayoutContainer:
-                Height: =Parent.Height - AS_Gallery_Title_Container.Height - AS_Refresh_Container.Height
+            AS_Gallery_Container_2 As groupContainer.manualLayoutContainer:
+                Height: =Parent.Height - AS_Gallery_Title_Container_1.Height - AS_Refresh_Container_2.Height
                 Width: =Parent.Width
-                Y: =AS_Refresh_Container.Height + AS_Gallery_Title_Container.Height
+                Y: =AS_Refresh_Container_2.Height + AS_Gallery_Title_Container_1.Height
                 ZIndex: =4
 
-                Admin_Skill_Gallery As gallery.galleryVertical:
+                Admin_Skill_Gallery_1 As gallery.galleryVertical:
                     DelayItemLoading: =true
                     Fill: =RGBA(255, 255, 255, 0.9)
                     Height: =Parent.Height
-                    Items: =Search(ability_skill,Skill_Search.Text,"cr778_name")
+                    Items: =Search(ability_skill,Skill_Search_2.Text,"cr778_name")
                     Layout: =Layout.Vertical
                     LoadingSpinner: =LoadingSpinner.Data
                     TemplateSize: |-
@@ -310,155 +303,153 @@ Admin_Skill_Page As screen:
                     Width: =Parent.Width
                     ZIndex: =1
 
-                    Label7_14 As label:
+                    Label7_28 As label:
                         Align: =Align.Center
                         FontWeight: =FontWeight.Semibold
-                        Height: =Label6_15.Height
+                        Height: =Label6_18.Height
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.Name
-                        Width: =Label6_15.Width *1.1
-                        X: =Label6_15.Width *0
+                        Width: =Label6_18.Width
+                        X: =Label6_18.X*0.97
                         ZIndex: =1
 
-                    Label7_15 As label:
+                    Label7_29 As label:
                         Align: =Align.Center
-                        Height: =Label6_16.Height
+                        Height: =Label6_19.Height
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'365 Solution'
-                        Width: =Label6_16.Width
-                        X: =Label6_16.X*0.97
+                        Width: =Label6_19.Width
+                        X: =Label6_19.X*0.97
                         ZIndex: =2
 
-                    Label7_16 As label:
+                    Label7_30 As label:
                         Align: =Align.Center
-                        Height: =Label6_16.Height
+                        Height: =Label6_19.Height
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'AI Builder'
-                        Width: =Label6_17.Width
-                        X: =Label6_17.X*0.97
+                        Width: =Label6_20.Width
+                        X: =Label6_20.X*0.97
                         ZIndex: =3
 
-                    Label7_17 As label:
+                    Label7_31 As label:
                         Align: =Align.Center
-                        Height: =Label6_39.Height
+                        Height: =Label6_40.Height
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'Api management'
-                        Width: =Label6_39.Width
-                        X: =Label6_39.X*0.99
+                        Width: =Label6_40.Width
+                        X: =Label6_40.X*0.99
                         ZIndex: =4
 
-                    Label7_18 As label:
+                    Label7_32 As label:
                         Align: =Align.Center
-                        Height: =Label6_38.Height
+                        Height: =Label6_53.Height
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.DataVerse
-                        Width: =Label6_38.Width
-                        X: =Label6_38.X*0.99
+                        Width: =Label6_53.Width
+                        X: =Label6_53.X*0.99
                         ZIndex: =5
 
-                    Label7_19 As label:
+                    Label7_33 As label:
                         Align: =Align.Center
-                        Height: =Label6_37.Height
+                        Height: =Label6_54.Height
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'Power Apps Canvas'
-                        Width: =Label6_37.Width
-                        X: =Label6_37.X*0.99
+                        Width: =Label6_54.Width
+                        X: =Label6_54.X*0.99
                         ZIndex: =6
 
-                    Label7_20 As label:
+                    Label7_34 As label:
                         Align: =Align.Center
-                        Height: =Label6_36.Height
+                        Height: =Label6_55.Height
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'Power Apps Model'
-                        Width: =Label6_36.Width
-                        X: =Label6_36.X*0.99
+                        Width: =Label6_55.Width
+                        X: =Label6_55.X*0.99
                         ZIndex: =7
 
-                    Label7_21 As label:
+                    Label7_35 As label:
                         Align: =Align.Center
-                        Height: =Label6_35.Height
+                        Height: =Label6_56.Height
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'Power Automate'
-                        Width: =Label6_35.Width
-                        X: =Label6_35.X*0.99
+                        Width: =Label6_56.Width
+                        X: =Label6_56.X*0.99
                         ZIndex: =8
 
-                    Label7_22 As label:
+                    Label7_36 As label:
                         Align: =Align.Center
-                        Height: =Label6_34.Height
+                        Height: =Label6_57.Height
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'Power Automate Desktop'
-                        Width: =Label6_34.Width
-                        X: =Label6_34.X*0.995
+                        Width: =Label6_57.Width
+                        X: =Label6_57.X*0.995
                         ZIndex: =9
 
-                    Label7_23 As label:
+                    Label7_37 As label:
                         Align: =Align.Center
-                        Height: =Label6_33.Height
+                        Height: =Label6_58.Height
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'Power Page'
-                        Width: =Label6_33.Width
-                        X: =Label6_33.X*0.997
+                        Width: =Label6_58.Width
+                        X: =Label6_58.X*0.997
                         ZIndex: =10
 
-                    Label7_24 As label:
+                    Label7_38 As label:
                         Align: =Align.Center
-                        Height: =Label6_32.Height
+                        Height: =Label6_59.Height
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'Power Page JAVA/CSS'
-                        Width: =Label6_32.Width
-                        X: =Label6_32.X*0.997
+                        Width: =Label6_59.Width
+                        X: =Label6_59.X*0.997
                         ZIndex: =11
 
-                    Label7_25 As label:
+                    Label7_39 As label:
                         Align: =Align.Center
-                        Height: =Label6_31.Height
+                        Height: =Label6_60.Height
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'Power BI'
-                        Width: =Label6_31.Width
-                        X: =Label6_31.X*0.997
+                        Width: =Label6_60.Width
+                        X: =Label6_60.X*0.997
                         ZIndex: =12
 
-                    Label7_26 As label:
+                    Label7_40 As label:
                         Align: =Align.Center
-                        Height: =Label6_30.Height
+                        Height: =Label6_61.Height
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'Process Advisor'
-                        Width: =Label6_30.Width
-                        X: =Label6_30.X*0.997
+                        Width: =Label6_61.Width
+                        X: =Label6_61.X*0.997
                         ZIndex: =13
 
-                    Label7_27 As label:
+                    Label7_41 As label:
                         Align: =Align.Center
-                        Height: =Label6_29.Height
+                        Height: =Label6_62.Height
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'Power Virtual Agents'
-                        Width: =Label6_29.Width
-                        X: =Label6_29.X*1
+                        Width: =Label6_62.Width
+                        X: =Label6_62.X*1
                         ZIndex: =14
 
-    mAS_Main_Container As groupContainer.verticalAutoLayoutContainer:
+    mAS_Main_Container_1 As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
-        Visible: |
-            =
-            
-            If(
+        Visible: |-
+            =If(
                 Parent.Width <= 800,
                 true,
                 false
@@ -466,7 +457,7 @@ Admin_Skill_Page As screen:
         Width: =Parent.Width
         ZIndex: =25
 
-        AS_Header_Container_3 As groupContainer.horizontalAutoLayoutContainer:
+        AS_Header_Container_4 As groupContainer.horizontalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =Parent.Height * 0.21
@@ -479,7 +470,7 @@ Admin_Skill_Page As screen:
             Width: =Parent.Width
             ZIndex: =1
 
-            License_Back_4 As icon.BackArrow:
+            License_Back_7 As icon.BackArrow:
                 Color: =RGBA( 106, 170, 205, 1 )
                 Height: =Parent.Width * 0.3
                 Icon: =Icon.BackArrow
@@ -489,7 +480,7 @@ Admin_Skill_Page As screen:
                 Y: =Parent.Width * 0.05
                 ZIndex: =1
 
-            License_Title_4 As label:
+            License_Title_7 As label:
                 Align: =Align.Center
                 BorderColor: =RGBA(102, 182, 227, 0.7)
                 Color: =RGBA(255, 255, 255, 1)
@@ -499,10 +490,10 @@ Admin_Skill_Page As screen:
                 Size: = (Parent.Width * 0.07)
                 Text: ="Admin Skill Page"
                 Width: |
-                    =Parent.Width - License_Back_4.Width*0.5 - License_Home_4.Width
+                    =Parent.Width - License_Back_7.Width*0.5 - License_Home_7.Width
                 ZIndex: =2
 
-            License_Home_4 As icon.Home:
+            License_Home_7 As icon.Home:
                 Color: =RGBA( 106, 170, 205, 1 )
                 Height: =Parent.Width * 0.3
                 Icon: =Icon.Home
@@ -512,514 +503,99 @@ Admin_Skill_Page As screen:
                 Y: =40
                 ZIndex: =3
 
-        AS_Sub_Container_1 As groupContainer.manualLayoutContainer:
+        AS_Sub_Container_3 As groupContainer.manualLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
-            Height: =Parent.Height - AS_Header_Container_3.Height
+            Height: =Parent.Height - AS_Header_Container_4.Height
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             Width: =Parent.Width
             ZIndex: =2
 
-            AS_Refresh_Container_1 As groupContainer.manualLayoutContainer:
+            AS_Refresh_Container_3 As groupContainer.manualLayoutContainer:
                 Height: =Parent.Width * 0.075
                 Width: =Parent.Width * 0.075
                 ZIndex: =1
 
-                Skill_Refresh_1 As icon.Reload:
+                Skill_Refresh_3 As icon.Reload:
                     Color: =RGBA(255, 255, 255, 1)
-                    Height: =Parent.Height
+                    Height: =Parent.Height*0.9
                     Icon: =Icon.Reload
                     OnSelect: =Refresh(ability_skill)
-                    Width: =Parent.Width
+                    Width: =Parent.Width *0.9
                     X: =
                     Y: =
                     ZIndex: =1
 
-            AS_Search_Container_1 As groupContainer.manualLayoutContainer:
+            AS_Search_Container_3 As groupContainer.manualLayoutContainer:
                 Height: =Parent.Width * 0.075
-                Width: =Parent.Width * 0.25
-                X: =Parent.Width * 0.7
+                Width: =Parent.Width * 0.3
+                X: =Parent.Width * 0.65
                 ZIndex: =2
 
-                Skill_Search_1 As text:
+                Skill_Search_3 As text:
                     BorderColor: =RGBA( 112, 128, 144, 0.7 )
-                    BorderThickness: =5
                     Default: =""
                     Height: =Parent.Height * 0.6
                     HintText: ="검색"
+                    RadiusBottomLeft: =2
+                    RadiusBottomRight: =2
+                    RadiusTopLeft: =2
+                    RadiusTopRight: =2
                     Size: =Parent.Width * 0.04
-                    Width: =Parent.Width
-                    X: =Parent.Width - Self.Width
+                    Width: =Parent.Width *0.8
+                    X: =Parent.Width*0.85 - Self.Width
                     Y: =Parent.Height * 0.2
                     ZIndex: =1
 
-            AS_Gallery_Container_1 As groupContainer.manualLayoutContainer:
+            AS_Gallery_Container_3 As groupContainer.manualLayoutContainer:
                 Fill: =RGBA(255,255,255,0.6)
-                Height: =Parent.Height -  AS_Refresh_Container_1.Height
+                Height: =Parent.Height -  AS_Refresh_Container_3.Height
                 Width: =Parent.Width
-                Y: =AS_Refresh_Container_1.Height
+                Y: =AS_Refresh_Container_3.Height
                 ZIndex: =4
 
-                "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+                "Gallery1_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
                     DelayItemLoading: =true
                     Height: =Parent.Height
                     Items: =ability_skill
                     Layout: =Layout.Vertical
                     LoadingSpinner: =LoadingSpinner.Data
                     TemplatePadding: =0
-                    TemplateSize: =Min(200, Self.Height - 60)
+                    TemplateSize: =Min( Icon1.Height + 10 , Self.Height*0.2)
                     Width: =Parent.Width
+                    Y: =
                     ZIndex: =1
 
-                    Title1 As label:
+                    Title1_1 As label:
                         Align: =Align.Center
-                        Height: =Self.Size * 1.8
+                        AutoHeight: =true
+                        Height: =133
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =Parent.Width * 0.03
+                        Size: =Gallery1_1.TemplateWidth * 0.05
                         Text: =ThisItem.Name
-                        VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width * 0.14
-                        X: =Parent.Width * 0.03
-                        Y: =Parent.Height * 0.25 - Self.Height
+                        VerticalAlign: =Align.Center
+                        Width: =Parent.Width * 0.3
+                        X: =Parent.TemplateWidth * 0.25
+                        Y: =Parent.TemplateHeight * 0.1
                         ZIndex: =2
 
-                    Subtitle1 As label:
-                        Align: =Align.Center
-                        Height: =Parent.Height * 0.06
-                        OnSelect: =Select(Parent)
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =Parent.Width * 0.01
-                        Text: =ThisItem.'365 Solution'
-                        VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width * 0.095
-                        X: =Parent.Width * 0.45
-                        Y: =Parent.Height * 0.01
-                        ZIndex: =3
-
-                    Separator1 As rectangle:
+                    Separator1_1 As rectangle:
                         Height: =1
                         OnSelect: =Select(Parent)
                         Width: =Parent.TemplateWidth
                         Y: =Parent.TemplateHeight - 1
                         ZIndex: =5
 
-                    Subtitle1_1 As label:
-                        Align: =Align.Center
-                        FontWeight: =FontWeight.Bold
-                        Height: =Parent.Height * 0.06
-                        OnSelect: =Select(Parent)
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =Parent.Width * 0.013
-                        Text: ="365 Solution"
-                        VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width * 0.20
-                        X: =Parent.Width * 0.23
-                        Y: =Parent.Height * 0.01
+                    Icon1 As icon.ChevronRight:
+                        Height: =Gallery1_1.TemplateWidth * 0.1
+                        Icon: =Icon.ChevronRight
+                        OnSelect: =Navigate(Admin_Skill_Page_Detail)
+                        Width: =Gallery1_1.TemplateWidth * 0.1
+                        X: =Gallery1_1.TemplateWidth * 0.7
+                        Y: =Parent.TemplateHeight * 0.1
                         ZIndex: =6
-
-                    Subtitle1_2 As label:
-                        Align: =Align.Center
-                        Height: =Parent.Height * 0.06
-                        OnSelect: =Select(Parent)
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =Parent.Width * 0.01
-                        Text: =ThisItem.'Power Apps Canvas'
-                        VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width * 0.095
-                        X: =Parent.Width * 0.45
-                        Y: =(Parent.Height * 0.01 * 5) + (Self.Height * 4)
-                        ZIndex: =7
-
-                    Subtitle1_3 As label:
-                        Align: =Align.Center
-                        FontWeight: =FontWeight.Bold
-                        Height: =Parent.Height * 0.06
-                        OnSelect: =Select(Parent)
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =Parent.Width * 0.013
-                        Text: ="Power Apps Canvas"
-                        VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width * 0.20
-                        X: =Parent.Width * 0.23
-                        Y: =(Parent.Height * 0.01 * 5) + (Self.Height * 4)
-                        ZIndex: =8
-
-                    Subtitle1_4 As label:
-                        Align: =Align.Center
-                        Height: =Parent.Height * 0.06
-                        OnSelect: =Select(Parent)
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =Parent.Width * 0.01
-                        Text: =ThisItem.'Power Automate'
-                        VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width * 0.095
-                        X: =Parent.Width * 0.8
-                        Y: =Parent.Height * 0.01
-                        ZIndex: =9
-
-                    Subtitle1_5 As label:
-                        Align: =Align.Center
-                        FontWeight: =FontWeight.Bold
-                        Height: =Parent.Height * 0.06
-                        OnSelect: =Select(Parent)
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =Parent.Width * 0.013
-                        Text: ="Power Automate Desktop"
-                        VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width * 0.23
-                        X: =Parent.Width * 0.55
-                        Y: =Parent.Height * 0.01
-                        ZIndex: =10
-
-                    Subtitle1_6 As label:
-                        Align: =Align.Center
-                        Height: =Parent.Height * 0.06
-                        OnSelect: =Select(Parent)
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =Parent.Width * 0.01
-                        Text: =ThisItem.'AI Builder'
-                        VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width * 0.095
-                        X: =Parent.Width * 0.45
-                        Y: =(Parent.Height * 0.01 * 2) +Self.Height
-                        ZIndex: =11
-
-                    Subtitle1_7 As label:
-                        Align: =Align.Center
-                        FontWeight: =FontWeight.Bold
-                        Height: =Parent.Height * 0.06
-                        OnSelect: =Select(Parent)
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =Parent.Width * 0.013
-                        Text: ="AI Builder"
-                        VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width * 0.20
-                        X: =Parent.Width * 0.23
-                        Y: =(Parent.Height * 0.01 * 2) +Self.Height
-                        ZIndex: =12
-
-                    Subtitle1_8 As label:
-                        Align: =Align.Center
-                        Height: =Parent.Height * 0.06
-                        OnSelect: =Select(Parent)
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =Parent.Width * 0.01
-                        Text: =ThisItem.'Power Apps Model'
-                        VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width * 0.095
-                        X: =Parent.Width * 0.45
-                        Y: =(Parent.Height * 0.01 * 6) + (Self.Height * 5)
-                        ZIndex: =13
-
-                    Subtitle1_9 As label:
-                        Align: =Align.Center
-                        FontWeight: =FontWeight.Bold
-                        Height: =Parent.Height * 0.06
-                        OnSelect: =Select(Parent)
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =Parent.Width * 0.013
-                        Text: ="Power Apps Model"
-                        VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width * 0.20
-                        X: =Parent.Width * 0.23
-                        Y: =(Parent.Height * 0.01 * 6) + (Self.Height * 5)
-                        ZIndex: =14
-
-                    Subtitle1_10 As label:
-                        Align: =Align.Center
-                        Height: =Parent.Height * 0.06
-                        OnSelect: =Select(Parent)
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =Parent.Width * 0.01
-                        Text: =ThisItem.'Power Page'
-                        VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width * 0.095
-                        X: =Parent.Width * 0.8
-                        Y: =(Parent.Height * 0.01 * 2) +Self.Height
-                        ZIndex: =15
-
-                    Subtitle1_11 As label:
-                        Align: =Align.Center
-                        FontWeight: =FontWeight.Bold
-                        Height: =Parent.Height * 0.06
-                        OnSelect: =Select(Parent)
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =Parent.Width * 0.013
-                        Text: ="Power Page"
-                        VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width * 0.23
-                        X: =Parent.Width * 0.55
-                        Y: =(Parent.Height * 0.01 * 2) +Self.Height
-                        ZIndex: =16
-
-                    Subtitle1_12 As label:
-                        Align: =Align.Center
-                        Height: =Parent.Height * 0.06
-                        OnSelect: =Select(Parent)
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =Parent.Width * 0.01
-                        Text: =ThisItem.'Api management'
-                        VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width * 0.095
-                        X: =Parent.Width * 0.45
-                        Y: =(Parent.Height * 0.01 * 3) + (Self.Height * 2)
-                        ZIndex: =17
-
-                    Subtitle1_13 As label:
-                        Align: =Align.Center
-                        FontWeight: =FontWeight.Bold
-                        Height: =Parent.Height * 0.06
-                        OnSelect: =Select(Parent)
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =Parent.Width * 0.013
-                        Text: ="API management"
-                        VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width * 0.20
-                        X: =Parent.Width * 0.23
-                        Y: =(Parent.Height * 0.01 * 3) + (Self.Height * 2)
-                        ZIndex: =18
-
-                    Subtitle1_14 As label:
-                        Align: =Align.Center
-                        Height: =Parent.Height * 0.06
-                        OnSelect: =Select(Parent)
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =Parent.Width * 0.01
-                        Text: =ThisItem.'Power Automate'
-                        VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width * 0.095
-                        X: =Parent.Width * 0.45
-                        Y: =(Parent.Height * 0.01 * 7) + (Self.Height * 6)
-                        ZIndex: =19
-
-                    Subtitle1_15 As label:
-                        Align: =Align.Center
-                        FontWeight: =FontWeight.Bold
-                        Height: =Parent.Height * 0.06
-                        OnSelect: =Select(Parent)
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =Parent.Width * 0.013
-                        Text: ="Power Automate"
-                        VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width * 0.20
-                        X: =Parent.Width * 0.23
-                        Y: =(Parent.Height * 0.01 * 7) + (Self.Height * 6)
-                        ZIndex: =20
-
-                    Subtitle1_16 As label:
-                        Align: =Align.Center
-                        Height: =Parent.Height * 0.06
-                        OnSelect: =Select(Parent)
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =Parent.Width * 0.01
-                        Text: =ThisItem.'Power Page JAVA/CSS'
-                        VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width * 0.095
-                        X: =Parent.Width * 0.8
-                        Y: =(Parent.Height * 0.01 * 3) + (Self.Height * 2)
-                        ZIndex: =21
-
-                    Subtitle1_17 As label:
-                        Align: =Align.Center
-                        FontWeight: =FontWeight.Bold
-                        Height: =Parent.Height * 0.06
-                        OnSelect: =Select(Parent)
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =Parent.Width * 0.013
-                        Text: ="Power Page JAVA/CSS"
-                        VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width * 0.23
-                        X: =Parent.Width * 0.55
-                        Y: =(Parent.Height * 0.01 * 3) + (Self.Height * 2)
-                        ZIndex: =22
-
-                    Subtitle1_18 As label:
-                        Align: =Align.Center
-                        Height: =Parent.Height * 0.06
-                        OnSelect: =Select(Parent)
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =Parent.Width * 0.01
-                        Text: =ThisItem.DataVerse
-                        VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width * 0.095
-                        X: =Parent.Width * 0.45
-                        Y: =(Parent.Height * 0.01 * 4) + (Self.Height * 3)
-                        ZIndex: =23
-
-                    Subtitle1_19 As label:
-                        Align: =Align.Center
-                        FontWeight: =FontWeight.Bold
-                        Height: =Parent.Height * 0.06
-                        OnSelect: =Select(Parent)
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =Parent.Width * 0.013
-                        Text: ="Dataverse"
-                        VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width * 0.20
-                        X: =Parent.Width * 0.23
-                        Y: =(Parent.Height * 0.01 * 4) + (Self.Height * 3)
-                        ZIndex: =24
-
-                    Subtitle1_20 As label:
-                        Align: =Align.Center
-                        Height: =Parent.Height * 0.06
-                        OnSelect: =Select(Parent)
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =Parent.Width * 0.01
-                        Text: =ThisItem.'Power BI'
-                        VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width * 0.095
-                        X: =Parent.Width * 0.8
-                        Y: =(Parent.Height * 0.01 * 4) + (Self.Height * 3)
-                        ZIndex: =25
-
-                    Subtitle1_21 As label:
-                        Align: =Align.Center
-                        FontWeight: =FontWeight.Bold
-                        Height: =Parent.Height * 0.06
-                        OnSelect: =Select(Parent)
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =Parent.Width * 0.013
-                        Text: ="Power BI"
-                        VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width * 0.23
-                        X: =Parent.Width * 0.55
-                        Y: =(Parent.Height * 0.01 * 4) + (Self.Height * 3)
-                        ZIndex: =26
-
-                    Subtitle1_22 As label:
-                        Align: =Align.Center
-                        Height: =Parent.Height * 0.06
-                        OnSelect: =Select(Parent)
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =Parent.Width * 0.01
-                        Text: =ThisItem.'Process Advisor'
-                        VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width * 0.095
-                        X: =Parent.Width * 0.8
-                        Y: =(Parent.Height * 0.01 * 5) + (Self.Height * 4)
-                        ZIndex: =27
-
-                    Subtitle1_23 As label:
-                        Align: =Align.Center
-                        FontWeight: =FontWeight.Bold
-                        Height: =Parent.Height * 0.06
-                        OnSelect: =Select(Parent)
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =Parent.Width * 0.013
-                        Text: ="Process Advisor"
-                        VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width * 0.23
-                        X: =Parent.Width * 0.55
-                        Y: =(Parent.Height * 0.01 * 5) + (Self.Height * 4)
-                        ZIndex: =28
-
-                    Subtitle1_24 As label:
-                        Align: =Align.Center
-                        Height: =Parent.Height * 0.06
-                        OnSelect: =Select(Parent)
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =Parent.Width * 0.01
-                        Text: =ThisItem.'Power Virtual Agents'
-                        VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width * 0.095
-                        X: =Parent.Width * 0.8
-                        Y: =(Parent.Height * 0.01 * 6) + (Self.Height * 5)
-                        ZIndex: =29
-
-                    Subtitle1_25 As label:
-                        Align: =Align.Center
-                        FontWeight: =FontWeight.Bold
-                        Height: =Parent.Height * 0.06
-                        OnSelect: =Select(Parent)
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =Parent.Width * 0.013
-                        Text: ="Power Virtual Agents"
-                        VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width * 0.23
-                        X: =Parent.Width * 0.55
-                        Y: =(Parent.Height * 0.01 * 6) + (Self.Height * 5)
-                        ZIndex: =30
 
