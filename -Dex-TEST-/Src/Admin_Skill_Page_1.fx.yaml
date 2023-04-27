@@ -577,7 +577,7 @@ Admin_Skill_Page_1 As screen:
 
                     Title1_1 As label:
                         Align: =Align.Center
-                        Height: =Self.Size * 1.8
+                        Height: =133
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
@@ -586,9 +586,9 @@ Admin_Skill_Page_1 As screen:
                         Size: =Gallery1_1.TemplateWidth * 0.03
                         Text: =ThisItem.Name
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width * 0.14
-                        X: =415
-                        Y: =60
+                        Width: =287
+                        X: =328
+                        Y: =29
                         ZIndex: =2
 
                     Separator1_1 As rectangle:
@@ -599,11 +599,11 @@ Admin_Skill_Page_1 As screen:
                         ZIndex: =5
 
                     Icon1 As icon.ChevronRight:
-                        Height: =Gallery1_1.TemplateWidth * 0.03
+                        Height: =112
                         Icon: =Icon.ChevronRight
                         OnSelect: =Select(Parent)
-                        Width: =Gallery1_1.TemplateWidth * 0.03
-                        X: =662
-                        Y: =76
+                        Width: =166
+                        X: =685
+                        Y: =40
                         ZIndex: =6
 
