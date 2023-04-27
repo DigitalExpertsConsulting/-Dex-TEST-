@@ -102,7 +102,7 @@ Admin_Page As screen:
                 Fill: =RGBA( 106, 170, 205, 1 )
                 Height: =Parent.Height * 0.146
                 HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -20%)
-                OnSelect: =Navigate(Admin_Skill_Page)
+                OnSelect: =Navigate(Admin_Skill_Page_1)
                 PressedFill: =RGBA(102, 182, 227, 0.2)
                 Size: =Parent.Width * 0.025
                 Text: ="기술 관리"
