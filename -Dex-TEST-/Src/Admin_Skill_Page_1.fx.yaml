@@ -576,7 +576,7 @@ Admin_Skill_Page_1 As screen:
                     TemplatePadding: =0
                     TemplateSize: =Min( Icon1.Height + 10 , Self.Height*0.2)
                     Width: =Parent.Width
-                    Y: =Parent.Height * 0.25
+                    Y: =
                     ZIndex: =1
 
                     Title1_1 As label:
