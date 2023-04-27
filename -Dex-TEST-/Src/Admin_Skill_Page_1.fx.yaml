@@ -583,7 +583,7 @@ Admin_Skill_Page_1 As screen:
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =Parent.Width * 0.03
+                        Size: =Gallery1_1.TemplateWidth * 0.03
                         Text: =ThisItem.Name
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width * 0.14
@@ -599,9 +599,11 @@ Admin_Skill_Page_1 As screen:
                         ZIndex: =5
 
                     Icon1 As icon.ChevronRight:
+                        Height: =Gallery1_1.TemplateWidth * 0.03
                         Icon: =Icon.ChevronRight
                         OnSelect: =Select(Parent)
-                        X: =827
-                        Y: =60
+                        Width: =Gallery1_1.TemplateWidth * 0.03
+                        X: =662
+                        Y: =76
                         ZIndex: =6
 
