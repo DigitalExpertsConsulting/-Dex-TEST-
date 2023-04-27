@@ -412,7 +412,7 @@ Screen1 As screen:
 
                     Rectangle2 As rectangle:
                         Fill: =RGBA(56, 96, 178, 0.3)
-                        Height: =Parent.Height *0.18
+                        Height: =Label3.Height + Label3.Y
                         OnSelect: =Select(Parent)
                         Width: =Parent.Width
                         Y: =Parent.Y

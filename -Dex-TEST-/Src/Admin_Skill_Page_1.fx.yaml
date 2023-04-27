@@ -531,18 +531,18 @@ Admin_Skill_Page_1 As screen:
 
                 Skill_Refresh_3 As icon.Reload:
                     Color: =RGBA(255, 255, 255, 1)
-                    Height: =Parent.Height
+                    Height: =Parent.Height*0.9
                     Icon: =Icon.Reload
                     OnSelect: =Refresh(ability_skill)
-                    Width: =Parent.Width
+                    Width: =Parent.Width *0.9
                     X: =
                     Y: =
                     ZIndex: =1
 
             AS_Search_Container_3 As groupContainer.manualLayoutContainer:
                 Height: =Parent.Width * 0.075
-                Width: =Parent.Width * 0.25
-                X: =Parent.Width * 0.7
+                Width: =Parent.Width * 0.3
+                X: =Parent.Width * 0.65
                 ZIndex: =2
 
                 Skill_Search_3 As text:
@@ -555,8 +555,8 @@ Admin_Skill_Page_1 As screen:
                     RadiusTopLeft: =2
                     RadiusTopRight: =2
                     Size: =Parent.Width * 0.04
-                    Width: =Parent.Width
-                    X: =Parent.Width - Self.Width
+                    Width: =Parent.Width *0.8
+                    X: =Parent.Width*0.85 - Self.Width
                     Y: =Parent.Height * 0.2
                     ZIndex: =1
 
