@@ -137,7 +137,7 @@ Screen1 As screen:
                         AutoHeight: =true
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.022
-                        Text: ="365 Solution"
+                        Text: =ThisItem.'365 Solution'
                         Width: =Parent.Width*0.4
                         X: =Parent.Width * 0.1
                         Y: =Label8_1.Y + Label8_1.Height
