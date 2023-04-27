@@ -569,13 +569,14 @@ Admin_Skill_Page_1 As screen:
 
                 "Gallery1_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
                     DelayItemLoading: =true
-                    Height: =Parent.Height
+                    Height: =Parent.Height * 0.5
                     Items: =ability_skill
                     Layout: =Layout.Vertical
                     LoadingSpinner: =LoadingSpinner.Data
                     TemplatePadding: =0
                     TemplateSize: =Min( Icon1.Height + 10 , Self.Height*0.2)
                     Width: =Parent.Width
+                    Y: =Parent.Height * 0.25
                     ZIndex: =1
 
                     Title1_1 As label:
