@@ -528,9 +528,10 @@ Admin_Skill_Page As screen:
                     ZIndex: =1
 
             AS_Search_Container_3 As groupContainer.manualLayoutContainer:
-                Height: =Parent.Width * 0.08
-                Width: =Parent.Width * 0.3
+                Height: =Parent.Width * 0.085
+                Width: =Parent.Width * 0.4
                 X: =Parent.Width * 0.6
+                Y: =10
                 ZIndex: =2
 
                 Skill_Search_3 As text:
@@ -543,9 +544,11 @@ Admin_Skill_Page As screen:
                     RadiusTopLeft: =2
                     RadiusTopRight: =2
                     Size: =Parent.Width * 0.04
-                    Width: =Parent.Width
-                    X: =Parent.Width*0.85 - Self.Width
-                    Y: =Parent.Height * 0.2
+                    Width: =Parent.Width *0.9
+                    X: |-
+                        =//Parent.Width*0.85 - Self.Width
+                        Parent.Width*0.01
+                    Y: =Parent.Height * 0.16
                     ZIndex: =1
 
             AS_Gallery_Container_3 As groupContainer.manualLayoutContainer:
