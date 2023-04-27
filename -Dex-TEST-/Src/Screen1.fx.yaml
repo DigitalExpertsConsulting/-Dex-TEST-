@@ -1,0 +1,398 @@
+Screen1 As screen:
+    BackgroundImage: |-
+        =If(
+            Self.Width > 800,
+            ere,
+            '2'
+        )
+    ImagePosition: =ImagePosition.Stretch
+
+    mAS_Main_Container_2 As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Visible: |-
+            =/*
+            
+            If(
+                Parent.Width <= 800,
+                true,
+                false
+            )
+            
+            
+            */
+            true
+        Width: =Parent.Width
+        ZIndex: =2
+
+        AS_Header_Container_5 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            FillPortions: =0
+            Height: =Parent.Height * 0.21
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =5
+            PaddingRight: =5
+            Width: =Parent.Width
+            ZIndex: =1
+
+            License_Back_8 As icon.BackArrow:
+                Color: =RGBA( 106, 170, 205, 1 )
+                Height: =Parent.Width * 0.3
+                Icon: =Icon.BackArrow
+                OnSelect: =Navigate(Admin_Page)
+                Width: =Parent.Width *0.15
+                X: =Parent.Width * 0.1
+                Y: =Parent.Width * 0.05
+                ZIndex: =1
+
+            License_Title_8 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(102, 182, 227, 0.7)
+                Color: =RGBA(255, 255, 255, 1)
+                FillPortions: =1
+                FontWeight: =FontWeight.Semibold
+                Height: =Parent.Height
+                Size: = (Parent.Width * 0.07)
+                Text: ="Skill List"
+                Width: |
+                    =Parent.Width - License_Back_8.Width*0.5 - License_Home_8.Width
+                ZIndex: =2
+
+            License_Home_8 As icon.Home:
+                Color: =RGBA( 106, 170, 205, 1 )
+                Height: =Parent.Width * 0.3
+                Icon: =Icon.Home
+                OnSelect: =Navigate(Main_Page)
+                Width: =Parent.Width * 0.15
+                X: =Parent.Width * 0.9
+                Y: =40
+                ZIndex: =3
+
+        AS_Sub_Container_4 As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            Height: =Parent.Height - AS_Header_Container_5.Height
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            Width: =Parent.Width
+            ZIndex: =2
+
+            AS_Gallery_Container_4 As groupContainer.manualLayoutContainer:
+                Fill: =RGBA(255,255,255,0.6)
+                Height: =Parent.Height
+                Width: =Parent.Width
+                ZIndex: =4
+
+                Gallery6 As gallery.galleryVertical:
+                    DelayItemLoading: =true
+                    Height: =Parent.Height
+                    Items: =Gallery1_1.Selected
+                    Layout: =Layout.Vertical
+                    LoadingSpinner: =LoadingSpinner.Data
+                    ShowScrollbar: =false
+                    TemplateSize: =Self.Height
+                    Width: =Parent.Width
+                    ZIndex: =1
+
+                    Label3 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        FontWeight: =FontWeight.Bold
+                        OnSelect: =Select(Parent)
+                        Size: =Parent.Width * 0.016
+                        Text: =ThisItem.'E-mail'
+                        Width: =Parent.Width
+                        Y: =108
+                        ZIndex: =1
+
+                    Label6 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        OnSelect: =Select(Parent)
+                        Text: =ThisItem.'AI Builder'
+                        Width: =Label6_1.Width
+                        X: =Parent.Width * 0.4
+                        Y: =Label8_1.Y + (Label8_1.Height * 1.2)
+                        ZIndex: =2
+
+                    Label7 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        OnSelect: =Select(Parent)
+                        Text: =ThisItem.'Api management'
+                        Width: =Label6_1.Width
+                        X: =Parent.Width * 0.7
+                        Y: =Label8_1.Y + (Label8_1.Height * 1.2)
+                        ZIndex: =3
+
+                    Label8 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        OnSelect: =Select(Parent)
+                        Text: ="365 Solution"
+                        Width: =Label6_1.Width
+                        X: =Parent.Width * 0.1
+                        Y: =Label8_1.Y + (Label8_1.Height * 1.2)
+                        ZIndex: =4
+
+                    Label9 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        OnSelect: =Select(Parent)
+                        Text: =ThisItem.'Power Automate Desktop'
+                        Width: =Label6_1.Width
+                        X: =Parent.Width * 0.7
+                        Y: =313
+                        ZIndex: =5
+
+                    Label10 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        FontWeight: =FontWeight.Bold
+                        OnSelect: =Select(Parent)
+                        Size: =Parent.Width * 0.03
+                        Text: =ThisItem.Name
+                        Width: =Parent.Width
+                        ZIndex: =6
+
+                    Label11 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        OnSelect: =Select(Parent)
+                        Text: =ThisItem.'Power Apps Model'
+                        Width: =Label6_1.Width
+                        X: =Parent.Width * 0.4
+                        Y: =313
+                        ZIndex: =7
+
+                    Label12 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        OnSelect: =Select(Parent)
+                        Text: =ThisItem.'Power Apps Canvas'
+                        Width: =Label6_1.Width
+                        X: =Parent.Width * 0.1
+                        Y: =316
+                        ZIndex: =8
+
+                    Label13 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        OnSelect: =Select(Parent)
+                        Text: =ThisItem.'Power Page JAVA/CSS'
+                        Width: =Label6_1.Width
+                        X: =Parent.Width * 0.7
+                        Y: =406
+                        ZIndex: =9
+
+                    Label14 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        OnSelect: =Select(Parent)
+                        Text: =ThisItem.'Power BI'
+                        Width: =Label6_1.Width
+                        X: =Parent.Width * 0.4
+                        Y: =406
+                        ZIndex: =10
+
+                    Label15 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        OnSelect: =Select(Parent)
+                        Text: =ThisItem.'Power Automate'
+                        Width: =Label6_1.Width
+                        X: =Parent.Width * 0.1
+                        Y: =406
+                        ZIndex: =11
+
+                    Label16 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        OnSelect: =Select(Parent)
+                        Text: =ThisItem.'Power Page'
+                        Width: =Label6_1.Width
+                        X: =Parent.Width * 0.1
+                        Y: =528
+                        ZIndex: =12
+
+                    Label17 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        OnSelect: =Select(Parent)
+                        Text: |
+                            =ThisItem.'Power Virtual Agents'
+                        Width: =Label6_1.Width
+                        X: =Parent.Width * 0.4
+                        Y: =528
+                        ZIndex: =13
+
+                    Label18 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        OnSelect: =Select(Parent)
+                        Text: =ThisItem.'Process Advisor'
+                        Width: =Label6_1.Width
+                        X: =Parent.Width * 0.7
+                        Y: =528
+                        ZIndex: =14
+
+                    Label6_1 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        FontWeight: =FontWeight.Semibold
+                        Height: =Parent.Height * 0.1
+                        OnSelect: =Select(Parent)
+                        Size: =Parent.Width * 0.016
+                        Text: ="AI Builder"
+                        Width: =Parent.Width * 0.23
+                        X: =Parent.Width * 0.4
+                        Y: =Label3.Y + Label3.Height
+                        ZIndex: =15
+
+                    Label7_1 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        FontWeight: =FontWeight.Semibold
+                        Height: =Parent.Height * 0.1
+                        OnSelect: =Select(Parent)
+                        Size: =Parent.Width * 0.016
+                        Text: ="Api management"
+                        Width: =Parent.Width * 0.23
+                        X: =Parent.Width * 0.7
+                        Y: =Label3.Y + Label3.Height
+                        ZIndex: =16
+
+                    Label8_1 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        FontWeight: =FontWeight.Semibold
+                        Height: =Parent.Height * 0.1
+                        OnSelect: =Select(Parent)
+                        Size: =Parent.Width * 0.016
+                        Text: ="365 Solution"
+                        Width: =Parent.Width * 0.23
+                        X: =Parent.Width * 0.1
+                        Y: =Label3.Y + Label3.Height
+                        ZIndex: =17
+
+                    Label9_1 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        FontWeight: =FontWeight.Semibold
+                        Height: =Parent.Height * 0.1
+                        OnSelect: =Select(Parent)
+                        Size: =Parent.Width * 0.016
+                        Text: ="Power Automate Desktop"
+                        Width: =Parent.Width * 0.23
+                        X: =Parent.Width * 0.7
+                        Y: =(Label8.Y + Label8.Height) * 1.15
+                        ZIndex: =18
+
+                    Label11_1 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        FontWeight: =FontWeight.Semibold
+                        Height: =Parent.Height * 0.1
+                        OnSelect: =Select(Parent)
+                        Size: =Parent.Width * 0.016
+                        Text: ="Power Apps Model"
+                        Width: =Parent.Width * 0.23
+                        X: =Parent.Width * 0.4
+                        Y: =(Label8.Y + Label8.Height) * 1.15
+                        ZIndex: =19
+
+                    Label12_1 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        FontWeight: =FontWeight.Semibold
+                        Height: =Parent.Height * 0.1
+                        OnSelect: =Select(Parent)
+                        Size: =Parent.Width * 0.016
+                        Text: ="Power Apps Canvas"
+                        Width: =Parent.Width * 0.23
+                        X: =Parent.Width * 0.1
+                        Y: =(Label8.Y + Label8.Height) * 1.15
+                        ZIndex: =20
+
+                    Label13_1 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        FontWeight: =FontWeight.Semibold
+                        Height: =Parent.Height * 0.1
+                        OnSelect: =Select(Parent)
+                        Size: =Parent.Width * 0.016
+                        Text: ="Power Page JAVA/CSS"
+                        Width: =Parent.Width * 0.23
+                        X: =Parent.Width * 0.7
+                        Y: =354
+                        ZIndex: =21
+
+                    Label14_1 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        FontWeight: =FontWeight.Semibold
+                        Height: =Parent.Height * 0.1
+                        OnSelect: =Select(Parent)
+                        Size: =Parent.Width * 0.016
+                        Text: ="Power BI"
+                        Width: =Parent.Width * 0.23
+                        X: =Parent.Width * 0.4
+                        Y: =367
+                        ZIndex: =22
+
+                    Label15_1 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        FontWeight: =FontWeight.Semibold
+                        Height: =Parent.Height * 0.1
+                        OnSelect: =Select(Parent)
+                        Size: =Parent.Width * 0.016
+                        Text: ="Power Automate"
+                        Width: =Parent.Width * 0.23
+                        X: =Parent.Width * 0.1
+                        Y: =352
+                        ZIndex: =23
+
+                    Label16_1 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        FontWeight: =FontWeight.Semibold
+                        Height: =Parent.Height * 0.1
+                        OnSelect: =Select(Parent)
+                        Size: =Parent.Width * 0.016
+                        Text: ="Power Page"
+                        Width: =Parent.Width * 0.23
+                        X: =Parent.Width * 0.1
+                        Y: =483
+                        ZIndex: =24
+
+                    Label17_1 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        FontWeight: =FontWeight.Semibold
+                        Height: =Parent.Height * 0.1
+                        OnSelect: =Select(Parent)
+                        Size: =Parent.Width * 0.016
+                        Text: |
+                            ="Power Virtual Agents"
+                        Width: =Parent.Width * 0.23
+                        X: =Parent.Width * 0.4
+                        Y: =456
+                        ZIndex: =25
+
+                    Label18_1 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        FontWeight: =FontWeight.Semibold
+                        Height: =Parent.Height * 0.1
+                        OnSelect: =Select(Parent)
+                        Size: =Parent.Width * 0.016
+                        Text: ="Process Advisor"
+                        Width: =Parent.Width * 0.23
+                        X: =Parent.Width * 0.7
+                        Y: =467
+                        ZIndex: =26
+
