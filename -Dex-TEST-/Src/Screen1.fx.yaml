@@ -96,7 +96,7 @@ Screen1 As screen:
                     ShowScrollbar: =false
                     TemplateSize: =Self.Height
                     Width: =Parent.Width
-                    Y: =Parent.Height * 0.25
+                    Y: =Parent.Height * 0.15
                     ZIndex: =1
 
                     Label3 As label:
@@ -104,7 +104,7 @@ Screen1 As screen:
                         AutoHeight: =true
                         FontWeight: =FontWeight.Bold
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.016
+                        Size: =Parent.Width * 0.019
                         Text: =ThisItem.'E-mail'
                         Width: =Parent.Width
                         Y: =Label10.Y + Label10.Height
@@ -114,7 +114,7 @@ Screen1 As screen:
                         Align: =Align.Center
                         AutoHeight: =true
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.01
+                        Size: =Parent.Width * 0.013
                         Text: =ThisItem.'AI Builder'
                         Width: =Parent.Width*0.29
                         X: =Label12.X + Label12.Width
@@ -125,7 +125,7 @@ Screen1 As screen:
                         Align: =Align.Center
                         AutoHeight: =true
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.01
+                        Size: =Parent.Width * 0.013
                         Text: =ThisItem.'Api management'
                         Width: =Parent.Width*0.29
                         X: =Label14.X + Label14.Width 
@@ -136,7 +136,7 @@ Screen1 As screen:
                         Align: =Align.Center
                         AutoHeight: =true
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.01
+                        Size: =Parent.Width * 0.013
                         Text: ="365 Solution"
                         Width: =Parent.Width*0.29
                         X: =Parent.Width * 0.07
@@ -147,7 +147,7 @@ Screen1 As screen:
                         Align: =Align.Center
                         AutoHeight: =true
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.01
+                        Size: =Parent.Width * 0.013
                         Text: =ThisItem.'Power Automate Desktop'
                         Width: =Parent.Width*0.29
                         X: =Label14.X + Label14.Width 
@@ -159,7 +159,7 @@ Screen1 As screen:
                         AutoHeight: =true
                         FontWeight: =FontWeight.Bold
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.03
+                        Size: =Parent.Width * 0.033
                         Text: =ThisItem.Name
                         Width: =Parent.Width
                         ZIndex: =6
@@ -168,7 +168,7 @@ Screen1 As screen:
                         Align: =Align.Center
                         AutoHeight: =true
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.01
+                        Size: =Parent.Width * 0.013
                         Text: =ThisItem.'Power Apps Model'
                         Width: =Parent.Width*0.29
                         X: =Label12.X + Label12.Width
@@ -179,7 +179,7 @@ Screen1 As screen:
                         Align: =Align.Center
                         AutoHeight: =true
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.01
+                        Size: =Parent.Width * 0.013
                         Text: =ThisItem.'Power Apps Canvas'
                         Width: =Parent.Width*0.29
                         X: =Parent.Width * 0.07
@@ -190,7 +190,7 @@ Screen1 As screen:
                         Align: =Align.Center
                         AutoHeight: =true
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.01
+                        Size: =Parent.Width * 0.013
                         Text: =ThisItem.'Power Page JAVA/CSS'
                         Width: =Parent.Width*0.29
                         X: =Label14.X + Label14.Width 
@@ -201,7 +201,7 @@ Screen1 As screen:
                         Align: =Align.Center
                         AutoHeight: =true
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.01
+                        Size: =Parent.Width * 0.013
                         Text: =ThisItem.'Power BI'
                         Width: =Parent.Width*0.29
                         X: =Label12.X + Label12.Width
@@ -212,7 +212,7 @@ Screen1 As screen:
                         Align: =Align.Center
                         AutoHeight: =true
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.01
+                        Size: =Parent.Width * 0.013
                         Text: =ThisItem.'Power Automate'
                         Width: =Parent.Width*0.29
                         X: =Parent.Width * 0.07
@@ -223,7 +223,7 @@ Screen1 As screen:
                         Align: =Align.Center
                         AutoHeight: =true
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.01
+                        Size: =Parent.Width * 0.013
                         Text: =ThisItem.'Power Page'
                         Width: =Parent.Width*0.29
                         X: =Parent.Width * 0.07
@@ -234,7 +234,7 @@ Screen1 As screen:
                         Align: =Align.Center
                         AutoHeight: =true
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.01
+                        Size: =Parent.Width * 0.013
                         Text: |
                             =ThisItem.'Power Virtual Agents'
                         Width: =Parent.Width*0.29
@@ -246,7 +246,7 @@ Screen1 As screen:
                         Align: =Align.Center
                         AutoHeight: =true
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.01
+                        Size: =Parent.Width * 0.013
                         Text: =ThisItem.'Process Advisor'
                         Width: =Parent.Width*0.29
                         X: =Label14.X + Label14.Width 
@@ -259,7 +259,7 @@ Screen1 As screen:
                         FontWeight: =FontWeight.Semibold
                         Height: =Parent.Height * 0.1
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.016
+                        Size: =Parent.Width * 0.019
                         Text: ="AI Builder"
                         Width: =Parent.Width*0.29
                         X: =Label12.X + Label12.Width
@@ -272,7 +272,7 @@ Screen1 As screen:
                         FontWeight: =FontWeight.Semibold
                         Height: =Parent.Height * 0.1
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.016
+                        Size: =Parent.Width * 0.019
                         Text: ="Api management"
                         Width: =Parent.Width*0.29
                         X: =Label14.X + Label14.Width 
@@ -285,7 +285,7 @@ Screen1 As screen:
                         FontWeight: =FontWeight.Semibold
                         Height: =Parent.Height * 0.1
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.016
+                        Size: =Parent.Width * 0.019
                         Text: ="365 Solution"
                         Width: =Parent.Width*0.29
                         X: =Parent.Width * 0.07
@@ -298,7 +298,7 @@ Screen1 As screen:
                         FontWeight: =FontWeight.Semibold
                         Height: =Parent.Height * 0.1
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.016
+                        Size: =Parent.Width * 0.019
                         Text: ="Power Automate Desktop"
                         Width: =Parent.Width*0.29
                         X: =Label14.X + Label14.Width 
@@ -311,7 +311,7 @@ Screen1 As screen:
                         FontWeight: =FontWeight.Semibold
                         Height: =Parent.Height * 0.1
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.016
+                        Size: =Parent.Width * 0.019
                         Text: ="Power Apps Model"
                         Width: =Parent.Width*0.29
                         X: =Label12.X + Label12.Width
@@ -324,7 +324,7 @@ Screen1 As screen:
                         FontWeight: =FontWeight.Semibold
                         Height: =Parent.Height * 0.1
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.016
+                        Size: =Parent.Width * 0.019
                         Text: ="Power Apps Canvas"
                         Width: =Parent.Width*0.29
                         X: =Parent.Width * 0.07
@@ -337,7 +337,7 @@ Screen1 As screen:
                         FontWeight: =FontWeight.Semibold
                         Height: =Parent.Height * 0.1
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.016
+                        Size: =Parent.Width * 0.019
                         Text: ="Power Page JAVA/CSS"
                         Width: =Parent.Width*0.29
                         X: =Label14.X + Label14.Width 
@@ -350,7 +350,7 @@ Screen1 As screen:
                         FontWeight: =FontWeight.Semibold
                         Height: =Parent.Height * 0.1
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.016
+                        Size: =Parent.Width * 0.019
                         Text: ="Power BI"
                         Width: =Parent.Width*0.29
                         X: =Label12.X + Label12.Width
@@ -363,7 +363,7 @@ Screen1 As screen:
                         FontWeight: =FontWeight.Semibold
                         Height: =Parent.Height * 0.1
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.016
+                        Size: =Parent.Width * 0.019
                         Text: ="Power Automate"
                         Width: =Parent.Width*0.29
                         X: =Parent.Width * 0.07
@@ -376,7 +376,7 @@ Screen1 As screen:
                         FontWeight: =FontWeight.Semibold
                         Height: =Parent.Height * 0.1
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.016
+                        Size: =Parent.Width * 0.019
                         Text: ="Power Page"
                         Width: =Parent.Width*0.29
                         X: =Parent.Width * 0.07
@@ -389,7 +389,7 @@ Screen1 As screen:
                         FontWeight: =FontWeight.Semibold
                         Height: =Parent.Height * 0.1
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.016
+                        Size: =Parent.Width * 0.019
                         Text: |
                             ="Power Virtual Agents"
                         Width: =Parent.Width*0.29
@@ -403,7 +403,7 @@ Screen1 As screen:
                         FontWeight: =FontWeight.Semibold
                         Height: =Parent.Height * 0.1
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.016
+                        Size: =Parent.Width * 0.019
                         Text: ="Process Advisor"
                         Width: =Parent.Width*0.29
                         X: =Label14.X + Label14.Width 
