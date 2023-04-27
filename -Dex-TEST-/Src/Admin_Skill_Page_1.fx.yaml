@@ -547,10 +547,13 @@ Admin_Skill_Page_1 As screen:
 
                 Skill_Search_3 As text:
                     BorderColor: =RGBA( 112, 128, 144, 0.7 )
-                    BorderThickness: =5
                     Default: =""
                     Height: =Parent.Height * 0.6
                     HintText: ="검색"
+                    RadiusBottomLeft: =2
+                    RadiusBottomRight: =2
+                    RadiusTopLeft: =2
+                    RadiusTopRight: =2
                     Size: =Parent.Width * 0.04
                     Width: =Parent.Width
                     X: =Parent.Width - Self.Width
@@ -571,7 +574,7 @@ Admin_Skill_Page_1 As screen:
                     Layout: =Layout.Vertical
                     LoadingSpinner: =LoadingSpinner.Data
                     TemplatePadding: =0
-                    TemplateSize: =Self.Height * 0.3
+                    TemplateSize: =Min( Icon1.Height + 10 , Self.Height*0.2)
                     Width: =Parent.Width
                     ZIndex: =1
 
