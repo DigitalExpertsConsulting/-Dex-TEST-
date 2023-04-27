@@ -144,7 +144,7 @@ Admin_Skill_Page As screen:
                         Height: =54
                         Size: =Parent.Width * 0.007
                         Text: ="이름"
-                        Width: =54
+                        Width: =65
                         X: =12
                         ZIndex: =2
 
@@ -317,8 +317,8 @@ Admin_Skill_Page As screen:
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.Name
-                        Width: =Label6_15.Width
-                        X: =Label6_15.X*0.97
+                        Width: =Label6_15.Width *1.1
+                        X: =Label6_15.Width *0
                         ZIndex: =1
 
                     Label7_15 As label:
