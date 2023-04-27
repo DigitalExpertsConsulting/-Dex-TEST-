@@ -512,9 +512,10 @@ Admin_Skill_Page As screen:
             ZIndex: =2
 
             AS_Refresh_Container_3 As groupContainer.manualLayoutContainer:
-                Height: =Parent.Width * 0.075
-                Width: =Parent.Width * 0.075
+                Height: =Parent.Width * 0.09
+                Width: =Parent.Width * 0.09
                 X: =Parent.Width*0.05
+                Y: =10
                 ZIndex: =1
 
                 Skill_Refresh_3 As icon.Reload:
