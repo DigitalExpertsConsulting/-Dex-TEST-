@@ -500,7 +500,8 @@ Admin_License_Page As screen:
 
             AL_Down_Container_1 As groupContainer.manualLayoutContainer:
                 Height: =Parent.Height * 0.14
-                Width: =Parent.Width * 0.3
+                Width: =Parent.Width * 0.5
+                Y: =Parent.Y*-0.1
                 ZIndex: =1
 
                 License_DownLoad_1 As button:
@@ -527,21 +528,27 @@ Admin_License_Page As screen:
                     ZIndex: =2
 
             AL_Search_Container_1 As groupContainer.manualLayoutContainer:
-                Height: =70
-                Width: =Parent.Width * 0.25
-                X: =Parent.Width * 0.7
+                Height: =Parent.Width * 0.085
+                Width: =Parent.Width * 0.4
+                X: =Parent.Width * 0.6
+                Y: =10
                 ZIndex: =2
 
                 License_Search_1 As text:
                     BorderColor: =RGBA( 112, 128, 144, 0.7 )
-                    BorderThickness: =5
                     Default: =""
-                    Height: =35
+                    Height: =Parent.Height * 0.8
                     HintText: ="검색"
+                    RadiusBottomLeft: =2
+                    RadiusBottomRight: =2
+                    RadiusTopLeft: =2
+                    RadiusTopRight: =2
                     Size: =Parent.Width * 0.045
-                    Width: =245
-                    X: =40
-                    Y: =20
+                    Width: =Parent.Width *0.9
+                    X: |-
+                        =//Parent.Width*0.85 - Self.Width
+                        Parent.Width*0.01
+                    Y: =Parent.Height * 0.16
                     ZIndex: =1
 
             AL_Gallery_Container_1 As groupContainer.manualLayoutContainer:

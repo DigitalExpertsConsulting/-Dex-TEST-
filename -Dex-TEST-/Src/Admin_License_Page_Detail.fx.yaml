@@ -1,4 +1,11 @@
 Admin_License_Page_Detail As screen:
+    BackgroundImage: |-
+        =If(
+            Self.Width > 800,
+            ere,
+            '2'
+        )
+    ImagePosition: =ImagePosition.Stretch
 
     mAL_Main_Container_1 As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height

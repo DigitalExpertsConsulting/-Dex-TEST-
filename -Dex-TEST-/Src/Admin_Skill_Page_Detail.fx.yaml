@@ -27,9 +27,12 @@ Admin_Skill_Page_Detail As screen:
         ZIndex: =2
 
         AS_Header_Container_5 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =Parent.Height * 0.20
             LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
             PaddingLeft: =5
             PaddingRight: =5
@@ -70,7 +73,10 @@ Admin_Skill_Page_Detail As screen:
                 ZIndex: =3
 
         AS_Sub_Container_4 As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
             Height: =Parent.Height - AS_Header_Container_5.Height
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
             Width: =Parent.Width
             ZIndex: =2
 
