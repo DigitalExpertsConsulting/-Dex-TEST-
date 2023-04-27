@@ -410,3 +410,11 @@ Screen1 As screen:
                         Y: =Label13.Y + Label13.Height * 1.5
                         ZIndex: =26
 
+                    Rectangle2 As rectangle:
+                        Fill: =RGBA(56, 96, 178, 0.3)
+                        Height: =Parent.Height *0.18
+                        OnSelect: =Select(Parent)
+                        Width: =Parent.Width
+                        Y: =Parent.Y
+                        ZIndex: =27
+
