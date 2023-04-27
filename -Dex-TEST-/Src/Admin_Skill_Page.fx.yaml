@@ -579,8 +579,8 @@ Admin_Skill_Page As screen:
                         Text: =ThisItem.Name
                         VerticalAlign: =Align.Center
                         Width: =Parent.Width * 0.3
-                        X: =Parent.TemplateWidth * 0.25
-                        Y: =Parent.TemplateHeight * 0.1
+                        X: =Parent.TemplateWidth * 0.27
+                        Y: =Parent.TemplateHeight * 0.12
                         ZIndex: =2
 
                     Separator1_1 As rectangle:
@@ -595,7 +595,7 @@ Admin_Skill_Page As screen:
                         Icon: =Icon.ChevronRight
                         OnSelect: =Navigate(Admin_Skill_Page_Detail)
                         Width: =Gallery1_1.TemplateWidth * 0.1
-                        X: =Gallery1_1.TemplateWidth * 0.7
+                        X: =Gallery1_1.TemplateWidth * 0.6
                         Y: =Parent.TemplateHeight * 0.1
                         ZIndex: =6
 
