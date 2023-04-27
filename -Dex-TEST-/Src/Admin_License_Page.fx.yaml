@@ -499,9 +499,9 @@ Admin_License_Page As screen:
             ZIndex: =3
 
             AL_Down_Container_1 As groupContainer.manualLayoutContainer:
-                Height: =Parent.Height * 0.14
-                Width: =Parent.Width * 0.5
-                Y: =Parent.Y*-0.1
+                Height: =Parent.Height * 0.11
+                Width: =Parent.Width * 0.6
+                Y: =3
                 ZIndex: =1
 
                 License_DownLoad_1 As button:
@@ -519,19 +519,19 @@ Admin_License_Page As screen:
 
                 License_Refresh_1 As icon.Reload:
                     Color: =RGBA(255, 255, 255, 1)
-                    Height: =Parent.Width * 0.18
+                    Height: =Parent.Width * 0.16
                     Icon: =Icon.Reload
                     OnSelect: =Refresh(ability_license)
-                    Width: =Parent.Width * 0.18
+                    Width: =Parent.Width * 0.16
                     X: =Parent.Width * 0.8
-                    Y: =5
+                    Y: =10
                     ZIndex: =2
 
             AL_Search_Container_1 As groupContainer.manualLayoutContainer:
                 Height: =Parent.Width * 0.085
                 Width: =Parent.Width * 0.4
-                X: =Parent.Width * 0.6
-                Y: =10
+                X: =Parent.Width * 0.62
+                Y: =20
                 ZIndex: =2
 
                 License_Search_1 As text:
