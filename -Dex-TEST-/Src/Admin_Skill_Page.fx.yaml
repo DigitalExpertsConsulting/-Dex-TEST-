@@ -460,7 +460,7 @@ Admin_Skill_Page As screen:
                     Height: =Parent.Height * 0.6
                     OnSelect: ='ExcelDownload(Skill)_1'.Run("")
                     Size: =Parent.Width * 0.033
-                    Text: ="다운로드"
+                    Text: ="Excel 다운로드"
                     Width: =Parent.Width * 0.7
                     X: =Parent.Width * 0.04
                     Y: =Parent.Height * 0.25
