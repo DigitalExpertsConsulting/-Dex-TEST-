@@ -587,11 +587,11 @@ Admin_License_Page As screen:
                         ZIndex: =2
 
                     Icon1_1 As icon.ChevronRight:
-                        Height: =105.19800000000001
+                        Height: =Parent.Height*0.55
                         Icon: =Icon.ChevronRight
                         OnSelect: =Navigate(Admin_License_Page_Detail)
-                        Width: =Gallery2.TemplateWidth * 0.1
-                        X: =Gallery2.TemplateWidth * 0.6
+                        Width: =Gallery2.TemplateWidth * 0.08
+                        X: =Gallery2.TemplateWidth * 0.55
                         Y: =Separator1_2.Y * -0.6
                         ZIndex: =3
 
