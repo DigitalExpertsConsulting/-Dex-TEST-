@@ -93,8 +93,8 @@ Admin_License_Page As screen:
                     Height: =Parent.Height * 0.55
                     OnSelect: =PDFDownload.Run()
                     Size: =Parent.Width * 0.02
-                    Text: ="라이센스 인증서 다운로드"
-                    Width: =Parent.Width * 0.4
+                    Text: ="인증서 다운로드"
+                    Width: =Parent.Width * 0.3
                     X: =Parent.Width * 0.03
                     Y: =Parent.Height * 0.2
                     ZIndex: =1
@@ -118,9 +118,9 @@ Admin_License_Page As screen:
                         ='ExcelDownload(License)'.Run("");
                         'ExcelDownload(LicenseDay)'.Run("")
                     Size: =Parent.Width * 0.02
-                    Text: ="라이센스 Excel 다운로드"
-                    Width: =Parent.Width * 0.4
-                    X: =Parent.Width * 0.45
+                    Text: ="Excel 다운로드"
+                    Width: =Parent.Width * 0.3
+                    X: =Parent.Width * 0.37
                     Y: =Parent.Height * 0.2
                     ZIndex: =3
 
@@ -524,11 +524,11 @@ Admin_License_Page As screen:
                     Fill: =RGBA( 106, 170, 205, 1 )
                     Height: =Parent.Height * 0.7
                     OnSelect: =PDFDownload.Run()
-                    Size: =Parent.Width * 0.033
-                    Text: ="라이센스 인증서 다운로드"
-                    Width: =Parent.Width * 0.3
+                    Size: =Parent.Width * 0.052
+                    Text: ="인증서" & Char(10) & "다운로드"
+                    Width: =Parent.Width * 0.33
                     X: =Parent.Width * 0.04
-                    Y: =Parent.Height * 0
+                    Y: =Parent.Height * 0.1
                     ZIndex: =1
 
                 License_Refresh_1 As icon.Reload:
@@ -538,14 +538,28 @@ Admin_License_Page As screen:
                     OnSelect: =Refresh(ability_license)
                     Width: =Parent.Width * 0.16
                     X: =Parent.Width * 0.8
-                    Y: =10
+                    Y: =20
                     ZIndex: =2
+
+                License_DownLoad_4 As button:
+                    BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                    Fill: =RGBA( 106, 170, 205, 1 )
+                    Height: =Parent.Height * 0.7
+                    OnSelect: |-
+                        ='ExcelDownload(License)'.Run("");
+                        'ExcelDownload(LicenseDay)'.Run("")
+                    Size: =Parent.Width * 0.052
+                    Text: ="Excel" & Char(10) & "다운로드"
+                    Width: =Parent.Width * 0.33
+                    X: =Parent.Width * 0.4
+                    Y: =Parent.Height * 0.1
+                    ZIndex: =3
 
             AL_Search_Container_1 As groupContainer.manualLayoutContainer:
                 Height: =Parent.Width * 0.085
                 Width: =Parent.Width * 0.4
                 X: =Parent.Width * 0.62
-                Y: =17
+                Y: =30
                 ZIndex: =2
 
                 License_Search_1 As text:
