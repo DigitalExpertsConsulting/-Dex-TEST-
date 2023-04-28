@@ -3,7 +3,7 @@ Admin_License_Page As screen:
         =If(
             Self.Width > 800,
             ere,
-            '2'
+            '214'
         )
     ImagePosition: =ImagePosition.Stretch
 
@@ -120,12 +120,12 @@ Admin_License_Page As screen:
                     BorderColor: =RGBA( 112, 128, 144, 0.7 )
                     BorderThickness: =5
                     Default: =""
-                    Height: =Parent.Height*0.6
+                    Height: =Parent.Height*0.65
                     HintText: ="검색"
                     Size: =Parent.Width * 0.04
                     Width: =Parent.Width *0.7
                     X: =Parent.Width * 0.2
-                    Y: =Parent.Y*1.3
+                    Y: =Parent.Y*1.8
                     ZIndex: =1
 
             AL_Gallery_Tile_Container As groupContainer.manualLayoutContainer:

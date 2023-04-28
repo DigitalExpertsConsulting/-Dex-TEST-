@@ -3,7 +3,7 @@ Admin_Profile_Page As screen:
         =If(
             Self.Width > 800,
             ere,
-            '2'
+            '214'
         )
     ImagePosition: =ImagePosition.Stretch
 
@@ -97,10 +97,10 @@ Admin_Profile_Page As screen:
                 Profile_Refresh As icon.Reload:
                     BorderColor: =RGBA(241, 244, 249, 1)
                     Color: =RGBA(241, 244, 249, 1)
-                    Height: =Parent.Width*0.9
+                    Height: =Parent.Width*0.8
                     Icon: =Icon.Reload
                     OnSelect: =Refresh(ability_profile)
-                    Width: =Parent.Width*0.9
+                    Width: =Parent.Width*0.8
                     Y: =4
                     ZIndex: =1
 

@@ -8834,6 +8834,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.2"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.2",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "2",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.3472506057227258212_20230428094537444"
                 }
               ],
@@ -8875,6 +8905,36 @@
               },
               "properties": {
                 "member": "3472506057228737381_20230428094537440",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.213"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.213",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "213",
                 "module": "App",
                 "type": "App"
               }

@@ -3,7 +3,7 @@ Admin_Address_Page As screen:
         =If(
             Self.Width > 800,
             ere,
-            '2'
+            '214'
         )
     ImagePosition: =ImagePosition.Stretch
 
@@ -381,7 +381,7 @@ Admin_Address_Page As screen:
 
                     Rectangle1 As rectangle:
                         BorderColor: =RGBA(0, 0, 0, 1)
-                        Fill: =RGBA(232, 244, 217, 1)
+                        Fill: =RGBA(56, 96, 178, 0.3)
                         Height: =Title4.Height
                         Width: =Parent.Width
                         ZIndex: =1
