@@ -101,30 +101,31 @@ Admin_License_Page As screen:
 
                 License_Refresh As icon.Reload:
                     Color: =RGBA(255, 255, 255, 1)
-                    Height: =Parent.Width * 0.1
+                    Height: =Parent.Width * 0.08
                     Icon: =Icon.Reload
                     OnSelect: =Refresh(ability_license)
-                    Width: =Parent.Width * 0.1
+                    Width: =Parent.Width * 0.08
                     X: =Parent.Width * 0.7
-                    Y: =Parent.Height * 0
+                    Y: =Parent.Height * 0.1
                     ZIndex: =2
 
             AL_Search_Container As groupContainer.manualLayoutContainer:
                 Height: =70
                 Width: =Parent.Width * 0.3
                 X: =Parent.Width * 0.7
+                Y: =Parent.Y*0.05
                 ZIndex: =2
 
                 License_Search As text:
                     BorderColor: =RGBA( 112, 128, 144, 0.7 )
                     BorderThickness: =5
                     Default: =""
-                    Height: =35
+                    Height: =Parent.Height*0.6
                     HintText: ="검색"
-                    Size: =Parent.Width * 0.045
+                    Size: =Parent.Width * 0.04
                     Width: =Parent.Width *0.7
                     X: =Parent.Width * 0.2
-                    Y: =25
+                    Y: =Parent.Y*1
                     ZIndex: =1
 
             AL_Gallery_Tile_Container As groupContainer.manualLayoutContainer:
