@@ -565,7 +565,7 @@ Admin_License_Page As screen:
                     Layout: =Layout.Vertical
                     LoadingSpinner: =LoadingSpinner.Data
                     TemplatePadding: =0
-                    TemplateSize: =Min( Icon1_1.Height + 15 , Self.Height*0.1)
+                    TemplateSize: =Min( Icon1_1.Height + 15 , Self.Height*0.14)
                     Width: =Parent.Width
                     X: =
                     ZIndex: =1
@@ -587,12 +587,12 @@ Admin_License_Page As screen:
                         ZIndex: =2
 
                     Icon1_1 As icon.ChevronRight:
-                        Height: =Parent.Height*0.55
+                        Height: =Parent.Height*0.2
                         Icon: =Icon.ChevronRight
                         OnSelect: =Navigate(Admin_License_Page_Detail)
                         Width: =Gallery2.TemplateWidth * 0.08
-                        X: =Gallery2.TemplateWidth * 0.55
-                        Y: =Separator1_2.Y * -0.4
+                        X: =Gallery2.TemplateWidth * 0.56
+                        Y: =Gallery2.TemplateHeight*-0.23
                         ZIndex: =3
 
                     Separator1_2 As rectangle:
