@@ -1,5 +1,10 @@
 Main_Page As screen:
-    BackgroundImage: ='3472506057228737381_20230428094537440'
+    BackgroundImage: |-
+        =If(
+            Self.Width > 800,
+            ere,
+            '2'
+        )
     ImagePosition: =ImagePosition.Stretch
 
     Main_Main_Container As groupContainer.verticalAutoLayoutContainer:
@@ -18,6 +23,7 @@ Main_Page As screen:
         MainPage_Title As label:
             Align: =Align.Center
             BorderColor: =RGBA(102, 182, 227, 0.7)
+            Color: =RGBA(255, 255, 255, 1)
             FontWeight: =FontWeight.Bold
             Height: =Parent.Height * 0.21
             Size: = (Parent.Width * 0.035) 
