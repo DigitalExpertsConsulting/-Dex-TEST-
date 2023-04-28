@@ -536,7 +536,7 @@ Admin_Skill_Page As screen:
             AS_Refresh_Container_3 As groupContainer.manualLayoutContainer:
                 Height: =Parent.Width * 0.09
                 Width: =Parent.Width * 0.09
-                X: =Parent.Width*0.05
+                X: =Parent.Width*0.45
                 Y: =10
                 ZIndex: =1
 
@@ -625,4 +625,25 @@ Admin_Skill_Page As screen:
                         X: =Gallery1_1.TemplateWidth * 0.6
                         Y: =Parent.TemplateHeight * 0.1
                         ZIndex: =6
+
+            AA_Down_Container_2 As groupContainer.manualLayoutContainer:
+                Height: =Parent.Height * 0.15
+                Width: =Parent.Width * 0.6
+                X: =Gallery4.X*0.01
+                ZIndex: =5
+
+                AddressDownload_button_2 As button:
+                    BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                    BorderThickness: =5
+                    Fill: =RGBA( 106, 170, 205, 1 )
+                    Height: =Parent.Height * 0.48
+                    OnSelect: |-
+                        =//Test_csh_Excelexport_dataverse_list.Run("")
+                        'ExcelDownload(Address)'.Run("")
+                    Size: =Parent.Width * 0.04
+                    Text: ="다운로드"
+                    Width: =Parent.Width * 0.6
+                    X: =Parent.Width*0.05
+                    Y: =10
+                    ZIndex: =1
 

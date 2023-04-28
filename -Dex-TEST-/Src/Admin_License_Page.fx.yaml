@@ -83,7 +83,7 @@ Admin_License_Page As screen:
 
             AL_Down_Container As groupContainer.manualLayoutContainer:
                 Height: =Parent.Height * 0.14
-                Width: =Parent.Width * 0.5
+                Width: =Parent.Width * 0.7
                 ZIndex: =1
 
                 License_DownLoad As button:
@@ -92,9 +92,9 @@ Admin_License_Page As screen:
                     Fill: =RGBA( 106, 170, 205, 1 )
                     Height: =Parent.Height * 0.55
                     OnSelect: =PDFDownload.Run()
-                    Size: =Parent.Width * 0.033
+                    Size: =Parent.Width * 0.02
                     Text: ="라이센스 인증서 다운로드"
-                    Width: =Parent.Width * 0.6
+                    Width: =Parent.Width * 0.4
                     X: =Parent.Width * 0.03
                     Y: =Parent.Height * 0.2
                     ZIndex: =1
@@ -105,9 +105,22 @@ Admin_License_Page As screen:
                     Icon: =Icon.Reload
                     OnSelect: =Refresh(ability_license)
                     Width: =Parent.Width * 0.08
-                    X: =Parent.Width * 0.7
+                    X: =Parent.Width * 0.9
                     Y: =Parent.Height * 0.1
                     ZIndex: =2
+
+                License_DownLoad_3 As button:
+                    BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                    BorderThickness: =5
+                    Fill: =RGBA( 106, 170, 205, 1 )
+                    Height: =Parent.Height * 0.55
+                    OnSelect: =PDFDownload.Run()
+                    Size: =Parent.Width * 0.02
+                    Text: ="라이센스 Excel 다운로드"
+                    Width: =Parent.Width * 0.4
+                    X: =Parent.Width * 0.45
+                    Y: =Parent.Height * 0.2
+                    ZIndex: =3
 
             AL_Search_Container As groupContainer.manualLayoutContainer:
                 Height: =70

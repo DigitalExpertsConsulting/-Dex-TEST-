@@ -1,0 +1,9 @@
+Screen2 As screen:
+
+    Button1 As button:
+        OnSelect: ='ExcelDownload(License)'.Run("")
+        Text: ="버튼"
+        X: =40
+        Y: =40
+        ZIndex: =1
+
