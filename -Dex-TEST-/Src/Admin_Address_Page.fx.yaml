@@ -117,7 +117,7 @@ Admin_Address_Page As screen:
                         OnSelect: =Select(Parent)
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.'E-mail'
-                        Width: =Parent.Width * 0.13
+                        Width: =Parent.Width * 0.14
                         X: =Parent.Width * 0.06
                         ZIndex: =2
 
