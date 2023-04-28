@@ -592,7 +592,7 @@ Admin_License_Page As screen:
                         OnSelect: =Navigate(Admin_License_Page_Detail)
                         Width: =Gallery2.TemplateWidth * 0.1
                         X: =Gallery2.TemplateWidth * 0.6
-                        Y: =Separator1_2.Y * -0.5
+                        Y: =Separator1_2.Y * -0.6
                         ZIndex: =3
 
                     Separator1_2 As rectangle:
