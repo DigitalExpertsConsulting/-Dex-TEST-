@@ -588,7 +588,6 @@ User_Address_Page As screen:
                                 }
                             );
                             NewForm(Address_Input);
-                            ResetForm(Address_Input);
                         )
                     Width: =Parent.Width
                     ZIndex: =1
