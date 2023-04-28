@@ -101,10 +101,10 @@ Admin_License_Page As screen:
 
                 License_Refresh As icon.Reload:
                     Color: =RGBA(255, 255, 255, 1)
-                    Height: =Parent.Width * 0.08
+                    Height: =Parent.Width * 0.07
                     Icon: =Icon.Reload
                     OnSelect: =Refresh(ability_license)
-                    Width: =Parent.Width * 0.08
+                    Width: =Parent.Width * 0.07
                     X: =Parent.Width * 0.9
                     Y: =Parent.Height * 0.1
                     ZIndex: =2
