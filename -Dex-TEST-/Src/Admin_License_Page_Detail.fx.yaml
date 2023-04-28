@@ -97,7 +97,9 @@ Admin_License_Page_Detail As screen:
 
                     Title2_1 As label:
                         Align: =Align.Center
-                        Height: =Parent.Height * 0.15
+                        AutoHeight: =true
+                        FontWeight: =FontWeight.Bold
+                        Height: =35
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
@@ -106,16 +108,326 @@ Admin_License_Page_Detail As screen:
                         Size: =Parent.Width * 0.038
                         Text: =ThisItem.Name
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =Parent.Width
+                        Width: =1366
                         ZIndex: =2
 
                     Label19 As label:
                         Align: =Align.Center
-                        Height: =61
+                        AutoHeight: =true
+                        FontWeight: =FontWeight.Semibold
+                        Height: =49
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.027
+                        Size: =Parent.Width * 0.025
                         Text: =ThisItem.'E-mail'
-                        Width: =Parent.Width
-                        Y: =84
+                        Width: =1366
+                        Y: =Title2_1.Height
                         ZIndex: =27
+
+                    Label1 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        BorderThickness: =1
+                        FontWeight: =FontWeight.Semibold
+                        OnSelect: =Select(Parent)
+                        Size: =Parent.Width * 0.018
+                        Text: =ThisItem.'PL-200'
+                        Width: =Parent.Width * 0.3
+                        X: =68
+                        Y: =Label28_1.Y + Label28_1.Height
+                        ZIndex: =28
+
+                    Label20 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        BorderThickness: =1
+                        FontWeight: =FontWeight.Semibold
+                        OnSelect: =Select(Parent)
+                        Size: =Parent.Width * 0.018
+                        Text: =ThisItem.'MS-101'
+                        Width: =Parent.Width * 0.3
+                        X: =68
+                        Y: =Label29_1.Y + Label29_1.Height
+                        ZIndex: =29
+
+                    Label21 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        BorderThickness: =1
+                        FontWeight: =FontWeight.Semibold
+                        OnSelect: =Select(Parent)
+                        Size: =Parent.Width * 0.018
+                        Text: =ThisItem.'PL-900'
+                        Width: =Parent.Width * 0.3
+                        X: =478
+                        Y: =Label21_1.Y + Label21_1.Height
+                        ZIndex: =30
+
+                    Label22 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        BorderThickness: =1
+                        FontWeight: =FontWeight.Semibold
+                        OnSelect: =Select(Parent)
+                        Size: =Parent.Width * 0.018
+                        Text: =ThisItem.'PL-600'
+                        Width: =Parent.Width * 0.3
+                        X: =68
+                        Y: =Label21_1.Y + Label21_1.Height
+                        ZIndex: =31
+
+                    Label23 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        BorderThickness: =1
+                        FontWeight: =FontWeight.Semibold
+                        OnSelect: =Select(Parent)
+                        Size: =Parent.Width * 0.018
+                        Text: =ThisItem.'AZ-104'
+                        Width: =Parent.Width * 0.3
+                        X: =Parent.Width * 0.05
+                        Y: =Label25_1.Y + Label25_1.Height
+                        ZIndex: =32
+
+                    Label24 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        BorderThickness: =1
+                        FontWeight: =FontWeight.Semibold
+                        OnSelect: =Select(Parent)
+                        Size: =Parent.Width * 0.018
+                        Text: =ThisItem.'PL-300'
+                        Width: =Parent.Width * 0.3
+                        X: =478
+                        Y: =Label28_1.Y + Label28_1.Height
+                        ZIndex: =33
+
+                    Label25 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        BorderThickness: =1
+                        FontWeight: =FontWeight.Semibold
+                        OnSelect: =Select(Parent)
+                        Size: =Parent.Width * 0.018
+                        Text: =ThisItem.'AZ-305'
+                        Width: =Parent.Width * 0.3
+                        X: =Label23.X + Label23.Width
+                        Y: =Label25_1.Y + Label25_1.Height
+                        ZIndex: =34
+
+                    Label26 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        BorderThickness: =1
+                        FontWeight: =FontWeight.Semibold
+                        OnSelect: =Select(Parent)
+                        Size: =Parent.Width * 0.018
+                        Text: =ThisItem.'MS-100'
+                        Width: =Parent.Width * 0.3
+                        X: =Label25.X+Label25.Width
+                        Y: =Label25_1.Y + Label25_1.Height
+                        ZIndex: =35
+
+                    Label27 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        BorderThickness: =1
+                        FontWeight: =FontWeight.Semibold
+                        OnSelect: =Select(Parent)
+                        Size: =Parent.Width * 0.018
+                        Text: =ThisItem.'MS-700'
+                        Width: =Parent.Width * 0.3
+                        X: =478
+                        Y: =Label29_1.Y + Label29_1.Height
+                        ZIndex: =36
+
+                    Label28 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        BorderThickness: =1
+                        FontWeight: =FontWeight.Semibold
+                        OnSelect: =Select(Parent)
+                        Size: =Parent.Width * 0.018
+                        Text: =ThisItem.'PL-400'
+                        Width: =Parent.Width * 0.3
+                        X: =887
+                        Y: =Label28_1.Y + Label28_1.Height
+                        ZIndex: =37
+
+                    Label29 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        BorderThickness: =1
+                        FontWeight: =FontWeight.Semibold
+                        OnSelect: =Select(Parent)
+                        Size: =Parent.Width * 0.018
+                        Text: =ThisItem.'MS-900'
+                        Width: =Parent.Width * 0.3
+                        X: =887
+                        Y: =Label29_1.Y + Label29_1.Height
+                        ZIndex: =38
+
+                    Label1_1 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        BorderThickness: =1
+                        FontWeight: =FontWeight.Semibold
+                        OnSelect: =Select(Parent)
+                        Size: =Parent.Width * 0.02
+                        Text: ="PL-200"
+                        Width: =Parent.Width * 0.3
+                        X: =68
+                        Y: =Label29.Y + Label29.Height * 1.5
+                        ZIndex: =39
+
+                    Label20_2 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        BorderThickness: =1
+                        FontWeight: =FontWeight.Semibold
+                        OnSelect: =Select(Parent)
+                        Size: =Parent.Width * 0.02
+                        Text: ="MS-101"
+                        Width: =Parent.Width * 0.3
+                        X: =68
+                        Y: =Label25.Y+ Label25.Height * 1.5
+                        ZIndex: =40
+
+                    Label21_1 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        BorderThickness: =1
+                        FontWeight: =FontWeight.Semibold
+                        OnSelect: =Select(Parent)
+                        Size: =Parent.Width * 0.02
+                        Text: ="PL-900"
+                        Width: =Parent.Width * 0.3
+                        X: =478
+                        Y: =Label1.Y + Label1.Height *1.5
+                        ZIndex: =41
+
+                    Label22_1 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        BorderThickness: =1
+                        FontWeight: =FontWeight.Semibold
+                        OnSelect: =Select(Parent)
+                        Size: =Parent.Width * 0.02
+                        Text: ="PL-600"
+                        Width: =Parent.Width * 0.3
+                        X: =68
+                        Y: =Label1.Y + Label1.Height *1.5
+                        ZIndex: =42
+
+                    Label23_1 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        BorderThickness: =1
+                        FontWeight: =FontWeight.Semibold
+                        OnSelect: =Select(Parent)
+                        Size: =Parent.Width * 0.02
+                        Text: ="AZ-104"
+                        Width: =Parent.Width * 0.3
+                        X: =Parent.Width * 0.05
+                        Y: =Label19.Y + Label19.Height * 3
+                        ZIndex: =43
+
+                    Label24_1 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        BorderThickness: =1
+                        FontWeight: =FontWeight.Semibold
+                        OnSelect: =Select(Parent)
+                        Size: =Parent.Width * 0.02
+                        Text: ="PL-300"
+                        Width: =Parent.Width * 0.3
+                        X: =478
+                        Y: =Label29.Y + Label29.Height * 1.5
+                        ZIndex: =44
+
+                    Label25_1 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        BorderThickness: =1
+                        FontWeight: =FontWeight.Semibold
+                        OnSelect: =Select(Parent)
+                        Size: =Parent.Width * 0.02
+                        Text: ="AZ-305"
+                        Width: =Parent.Width * 0.3
+                        X: =Label23.X + Label23.Width
+                        Y: =Label19.Y + Label19.Height * 3
+                        ZIndex: =45
+
+                    Label26_1 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        BorderThickness: =1
+                        FontWeight: =FontWeight.Semibold
+                        OnSelect: =Select(Parent)
+                        Size: =Parent.Width * 0.02
+                        Text: ="MS-100"
+                        Width: =Parent.Width * 0.3
+                        X: =Label25.X+Label25.Width
+                        Y: =Label19.Y + Label19.Height * 3
+                        ZIndex: =46
+
+                    Label27_1 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        BorderThickness: =1
+                        FontWeight: =FontWeight.Semibold
+                        OnSelect: =Select(Parent)
+                        Size: =Parent.Width * 0.02
+                        Text: ="MS-700"
+                        Width: =Parent.Width * 0.3
+                        X: =478
+                        Y: =Label25.Y+ Label25.Height * 1.5
+                        ZIndex: =47
+
+                    Label28_1 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        BorderThickness: =1
+                        FontWeight: =FontWeight.Semibold
+                        OnSelect: =Select(Parent)
+                        Size: =Parent.Width * 0.02
+                        Text: ="PL-400"
+                        Width: =Parent.Width * 0.3
+                        X: =887
+                        Y: =Label29.Y + Label29.Height * 1.5
+                        ZIndex: =48
+
+                    Label29_1 As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        BorderThickness: =1
+                        FontWeight: =FontWeight.Semibold
+                        OnSelect: =Select(Parent)
+                        Size: =Parent.Width * 0.02
+                        Text: ="MS-900"
+                        Width: =Parent.Width * 0.3
+                        X: =887
+                        Y: =Label25.Y+ Label25.Height * 1.5
+                        ZIndex: =49
 
