@@ -554,49 +554,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Admin_License_Page_Detail.mAL_Main_Container_1.AL_Sub_Container_2.AL_Down_Container_2.License_Refresh_2.AccessibleLabel"
+                  "fullyQualifiedName": "Admin_License_Page.mAL_Main_Container.AL_Sub_Container_1.AL_Gallery_Container_1.Gallery2.Icon1_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Admin_License_Page_Detail.mAL_Main_Container_1.AL_Sub_Container_2.AL_Down_Container_2.License_Refresh_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Admin_License_Page_Detail",
-                "type": "Admin_License_Page_Detail.mAL_Main_Container_1.AL_Sub_Container_2.AL_Down_Container_2.License_Refresh_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Admin_License_Page_Detail.mAL_Main_Container_1.AL_Sub_Container_2.AL_Down_Container_2.License_Refresh_2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Admin_License_Page_Detail.mAL_Main_Container_1.AL_Sub_Container_2.AL_Down_Container_2.License_Refresh_2.TabIndex",
+                  "fullyQualifiedName": "Admin_License_Page.mAL_Main_Container.AL_Sub_Container_1.AL_Gallery_Container_1.Gallery2.Icon1_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Admin_License_Page_Detail",
-                "type": "Admin_License_Page_Detail.mAL_Main_Container_1.AL_Sub_Container_2.AL_Down_Container_2.License_Refresh_2"
+                "module": "Admin_License_Page",
+                "type": "Admin_License_Page.mAL_Main_Container.AL_Sub_Container_1.AL_Gallery_Container_1.Gallery2.Icon1_1"
               }
             }
           ],
@@ -614,19 +584,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Admin_License_Page_Detail.mAL_Main_Container_1.AL_Sub_Container_2.AL_Search_Container_2.License_Search_2.AccessibleLabel"
+                  "fullyQualifiedName": "Admin_License_Page.mAL_Main_Container.AL_Sub_Container_1.AL_Gallery_Container_1.Gallery2.Icon1_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Admin_License_Page_Detail.mAL_Main_Container_1.AL_Sub_Container_2.AL_Search_Container_2.License_Search_2.AccessibleLabel",
+                  "fullyQualifiedName": "Admin_License_Page.mAL_Main_Container.AL_Sub_Container_1.AL_Gallery_Container_1.Gallery2.Icon1_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Admin_License_Page_Detail",
-                "type": "Admin_License_Page_Detail.mAL_Main_Container_1.AL_Sub_Container_2.AL_Search_Container_2.License_Search_2"
+                "module": "Admin_License_Page",
+                "type": "Admin_License_Page.mAL_Main_Container.AL_Sub_Container_1.AL_Gallery_Container_1.Gallery2.Icon1_1"
               }
             }
           ],
@@ -8935,6 +8905,66 @@
                 "member": "Width",
                 "module": "Admin_Page",
                 "type": "Admin_Page.Admin_Main_Container.User_Header_Container_1.AdminPage_Title_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Admin_License_Page_Detail.mAL_Main_Container_1.AL_Sub_Container_2.AL_Gallery_Container_2.Gallery2_1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Admin_License_Page_Detail.mAL_Main_Container_1.AL_Sub_Container_2.AL_Gallery_Container_2.Gallery2_1.Items",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "Admin_License_Page_Detail",
+                "type": "Admin_License_Page_Detail.mAL_Main_Container_1.AL_Sub_Container_2.AL_Gallery_Container_2.Gallery2_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Admin_License_Page_Detail.mAL_Main_Container_1.AL_Sub_Container_2.AL_Gallery_Container_2.Gallery2_1.Rectangle2_1.Height"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Admin_License_Page_Detail.mAL_Main_Container_1.AL_Sub_Container_2.AL_Gallery_Container_2.Gallery2_1.Rectangle2_1.Height",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Height",
+                "module": "Admin_License_Page_Detail",
+                "type": "Admin_License_Page_Detail.mAL_Main_Container_1.AL_Sub_Container_2.AL_Gallery_Container_2.Gallery2_1.Rectangle2_1"
               }
             }
           ],
