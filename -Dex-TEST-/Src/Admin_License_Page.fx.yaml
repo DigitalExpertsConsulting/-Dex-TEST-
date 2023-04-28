@@ -515,22 +515,20 @@ Admin_License_Page As screen:
             ZIndex: =3
 
             AL_Down_Container_1 As groupContainer.manualLayoutContainer:
-                Height: =Parent.Height * 0.11
+                Height: =Parent.Height * 0.16
                 Width: =Parent.Width * 0.6
-                Y: =3
                 ZIndex: =1
 
                 License_DownLoad_1 As button:
                     BorderColor: =RGBA( 112, 128, 144, 0.7 )
-                    BorderThickness: =5
                     Fill: =RGBA( 106, 170, 205, 1 )
-                    Height: =Parent.Height * 0.55
+                    Height: =Parent.Height * 0.7
                     OnSelect: =PDFDownload.Run()
                     Size: =Parent.Width * 0.033
                     Text: ="라이센스 인증서 다운로드"
-                    Width: =Parent.Width * 0.7
+                    Width: =Parent.Width * 0.3
                     X: =Parent.Width * 0.04
-                    Y: =Parent.Height * 0.2
+                    Y: =Parent.Height * 0
                     ZIndex: =1
 
                 License_Refresh_1 As icon.Reload:
