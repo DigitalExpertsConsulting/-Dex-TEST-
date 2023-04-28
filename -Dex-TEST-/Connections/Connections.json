@@ -136,47 +136,6 @@
     ],
     "id": "2294928e-a69e-4756-aaaf-d0319e7167e0"
   },
-  "3971a667-c536-4e40-bb25-5f180d7c31d7": {
-    "connectionRef": {
-      "displayName": "Logic flows",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1615/1.0.1615.3163/logicflows/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
-      "parameterHints": {
-        "9571b5ea-a429-41b8-b65b-dee168d7202a": {
-          "value": "shared_commondataserviceforapps"
-        },
-        "e1261159-5cc4-4e6b-ac09-b371ba40b6ee": {
-          "value": "shared_onedriveforbusiness"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "2e2fbb98-35a2-4aec-a781-ec2078bc9175"
-        }
-      },
-      "parameterHintsV2": {
-        "shared_commondataserviceforapps": {
-          "value": "9571b5ea-a429-41b8-b65b-dee168d7202a"
-        },
-        "shared_onedriveforbusiness": {
-          "value": "e1261159-5cc4-4e6b-ac09-b371ba40b6ee"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "2e2fbb98-35a2-4aec-a781-ec2078bc9175"
-        }
-      }
-    },
-    "datasets": {},
-    "dataSources": [
-      "ExcelDownload(Skill)"
-    ],
-    "dependencies": {
-      "shared_commondataserviceforapps": "9571b5ea-a429-41b8-b65b-dee168d7202a",
-      "shared_onedriveforbusiness": "e1261159-5cc4-4e6b-ac09-b371ba40b6ee"
-    },
-    "dependents": [],
-    "id": "3971a667-c536-4e40-bb25-5f180d7c31d7"
-  },
   "49285404-2c76-47fe-a3bc-77692a24eaf8": {
     "connectionRef": {
       "displayName": "Logic flows",
@@ -408,51 +367,10 @@
       "16e63f76-78ff-426e-915d-8ba75f4d797f",
       "06e81149-86b9-4a99-9eea-ec3d2385bdae",
       "49285404-2c76-47fe-a3bc-77692a24eaf8",
-      "3971a667-c536-4e40-bb25-5f180d7c31d7",
-      "96870297-ec51-4da8-8a1f-3492a371d618"
+      "ef74088a-0e7a-429f-b521-1799550bf68a",
+      "f8b9fbe1-a715-4c55-b993-4c7451a7ac80"
     ],
     "id": "9571b5ea-a429-41b8-b65b-dee168d7202a"
-  },
-  "96870297-ec51-4da8-8a1f-3492a371d618": {
-    "connectionRef": {
-      "displayName": "Logic flows",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1615/1.0.1615.3163/logicflows/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
-      "parameterHints": {
-        "9571b5ea-a429-41b8-b65b-dee168d7202a": {
-          "value": "shared_commondataserviceforapps"
-        },
-        "e1261159-5cc4-4e6b-ac09-b371ba40b6ee": {
-          "value": "shared_onedriveforbusiness"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "e2d00cf5-3aab-45d5-b65b-4eb303930611"
-        }
-      },
-      "parameterHintsV2": {
-        "shared_commondataserviceforapps": {
-          "value": "9571b5ea-a429-41b8-b65b-dee168d7202a"
-        },
-        "shared_onedriveforbusiness": {
-          "value": "e1261159-5cc4-4e6b-ac09-b371ba40b6ee"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "e2d00cf5-3aab-45d5-b65b-4eb303930611"
-        }
-      }
-    },
-    "datasets": {},
-    "dataSources": [
-      "ExcelDownload(Skill)_1"
-    ],
-    "dependencies": {
-      "shared_commondataserviceforapps": "9571b5ea-a429-41b8-b65b-dee168d7202a",
-      "shared_onedriveforbusiness": "e1261159-5cc4-4e6b-ac09-b371ba40b6ee"
-    },
-    "dependents": [],
-    "id": "96870297-ec51-4da8-8a1f-3492a371d618"
   },
   "ab5b9c24-5c27-42f2-912d-451e96a6d6e0": {
     "connectionRef": {
@@ -530,8 +448,8 @@
       "16e63f76-78ff-426e-915d-8ba75f4d797f",
       "06e81149-86b9-4a99-9eea-ec3d2385bdae",
       "49285404-2c76-47fe-a3bc-77692a24eaf8",
-      "3971a667-c536-4e40-bb25-5f180d7c31d7",
-      "96870297-ec51-4da8-8a1f-3492a371d618"
+      "ef74088a-0e7a-429f-b521-1799550bf68a",
+      "f8b9fbe1-a715-4c55-b993-4c7451a7ac80"
     ],
     "id": "e1261159-5cc4-4e6b-ac09-b371ba40b6ee"
   },
@@ -568,5 +486,75 @@
     },
     "dependents": [],
     "id": "ec851dea-6610-4256-a5ef-3d45a6556b81"
+  },
+  "ef74088a-0e7a-429f-b521-1799550bf68a": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1615/1.0.1615.3163/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "9571b5ea-a429-41b8-b65b-dee168d7202a": {
+          "value": "shared_commondataserviceforapps"
+        },
+        "e1261159-5cc4-4e6b-ac09-b371ba40b6ee": {
+          "value": "shared_onedriveforbusiness"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "e2d00cf5-3aab-45d5-b65b-4eb303930611"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_commondataserviceforapps": {
+          "value": "9571b5ea-a429-41b8-b65b-dee168d7202a"
+        },
+        "shared_onedriveforbusiness": {
+          "value": "e1261159-5cc4-4e6b-ac09-b371ba40b6ee"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "e2d00cf5-3aab-45d5-b65b-4eb303930611"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "ExcelDownload(Skill)_1"
+    ],
+    "dependencies": {
+      "shared_commondataserviceforapps": "9571b5ea-a429-41b8-b65b-dee168d7202a",
+      "shared_onedriveforbusiness": "e1261159-5cc4-4e6b-ac09-b371ba40b6ee"
+    },
+    "dependents": [],
+    "id": "ef74088a-0e7a-429f-b521-1799550bf68a"
+  },
+  "f8b9fbe1-a715-4c55-b993-4c7451a7ac80": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1615/1.0.1615.3163/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "2e2fbb98-35a2-4aec-a781-ec2078bc9175"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "2e2fbb98-35a2-4aec-a781-ec2078bc9175"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "ExcelDownload(Skill)2"
+    ],
+    "dependencies": {
+      "shared_commondataserviceforapps": "9571b5ea-a429-41b8-b65b-dee168d7202a",
+      "shared_onedriveforbusiness": "e1261159-5cc4-4e6b-ac09-b371ba40b6ee"
+    },
+    "dependents": [],
+    "id": "f8b9fbe1-a715-4c55-b993-4c7451a7ac80"
   }
 }
