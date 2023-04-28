@@ -79,7 +79,7 @@ Admin_Skill_Page As screen:
             AS_Refresh_Container_2 As groupContainer.manualLayoutContainer:
                 Height: =Parent.Width * 0.05
                 Width: =Parent.Width * 0.055
-                X: =Parent.Width * 0.04
+                X: =Parent.Width * 0.25
                 Y: =
                 ZIndex: =1
 
@@ -445,6 +445,26 @@ Admin_Skill_Page As screen:
                         Width: =Label6_62.Width
                         X: =Label6_62.X*1
                         ZIndex: =14
+
+            AL_Down_Container_2 As groupContainer.manualLayoutContainer:
+                Height: =Parent.Height * 0.11
+                Width: =Parent.Width * 0.3
+                X: =Parent.Width*0
+                Y: =
+                ZIndex: =5
+
+                License_DownLoad_2 As button:
+                    BorderColor: =RGBA( 112, 128, 144, 0.7 )
+                    BorderThickness: =5
+                    Fill: =RGBA( 106, 170, 205, 1 )
+                    Height: =Parent.Height * 0.59
+                    OnSelect: ='ExcelDownload(Skill)'.Run("")
+                    Size: =Parent.Width * 0.033
+                    Text: ="다운로드"
+                    Width: =Parent.Width * 0.7
+                    X: =Parent.Width * 0.04
+                    Y: =Parent.Height * 0.2
+                    ZIndex: =1
 
     mAS_Main_Container_1 As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height

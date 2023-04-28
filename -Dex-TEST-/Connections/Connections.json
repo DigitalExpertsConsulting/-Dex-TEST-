@@ -408,9 +408,51 @@
       "16e63f76-78ff-426e-915d-8ba75f4d797f",
       "06e81149-86b9-4a99-9eea-ec3d2385bdae",
       "49285404-2c76-47fe-a3bc-77692a24eaf8",
-      "3971a667-c536-4e40-bb25-5f180d7c31d7"
+      "3971a667-c536-4e40-bb25-5f180d7c31d7",
+      "96870297-ec51-4da8-8a1f-3492a371d618"
     ],
     "id": "9571b5ea-a429-41b8-b65b-dee168d7202a"
+  },
+  "96870297-ec51-4da8-8a1f-3492a371d618": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1615/1.0.1615.3163/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "9571b5ea-a429-41b8-b65b-dee168d7202a": {
+          "value": "shared_commondataserviceforapps"
+        },
+        "e1261159-5cc4-4e6b-ac09-b371ba40b6ee": {
+          "value": "shared_onedriveforbusiness"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "e2d00cf5-3aab-45d5-b65b-4eb303930611"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_commondataserviceforapps": {
+          "value": "9571b5ea-a429-41b8-b65b-dee168d7202a"
+        },
+        "shared_onedriveforbusiness": {
+          "value": "e1261159-5cc4-4e6b-ac09-b371ba40b6ee"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "e2d00cf5-3aab-45d5-b65b-4eb303930611"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "ExcelDownload(Skill)_1"
+    ],
+    "dependencies": {
+      "shared_commondataserviceforapps": "9571b5ea-a429-41b8-b65b-dee168d7202a",
+      "shared_onedriveforbusiness": "e1261159-5cc4-4e6b-ac09-b371ba40b6ee"
+    },
+    "dependents": [],
+    "id": "96870297-ec51-4da8-8a1f-3492a371d618"
   },
   "ab5b9c24-5c27-42f2-912d-451e96a6d6e0": {
     "connectionRef": {
@@ -488,7 +530,8 @@
       "16e63f76-78ff-426e-915d-8ba75f4d797f",
       "06e81149-86b9-4a99-9eea-ec3d2385bdae",
       "49285404-2c76-47fe-a3bc-77692a24eaf8",
-      "3971a667-c536-4e40-bb25-5f180d7c31d7"
+      "3971a667-c536-4e40-bb25-5f180d7c31d7",
+      "96870297-ec51-4da8-8a1f-3492a371d618"
     ],
     "id": "e1261159-5cc4-4e6b-ac09-b371ba40b6ee"
   },
