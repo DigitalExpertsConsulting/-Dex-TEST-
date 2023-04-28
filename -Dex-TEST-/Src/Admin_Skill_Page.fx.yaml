@@ -80,6 +80,7 @@ Admin_Skill_Page As screen:
                 Height: =Parent.Width * 0.05
                 Width: =Parent.Width * 0.055
                 X: =Parent.Width * 0.04
+                Y: =
                 ZIndex: =1
 
                 Skill_Refresh_2 As icon.Reload:
@@ -89,13 +90,13 @@ Admin_Skill_Page As screen:
                     OnSelect: =Refresh(ability_skill)
                     Width: =Parent.Width*0.8
                     X: =
-                    Y: =
+                    Y: =7
                     ZIndex: =1
 
             AS_Search_Container_2 As groupContainer.manualLayoutContainer:
                 Height: =Parent.Width * 0.055
-                Width: =Parent.Width * 0.2
-                X: =Parent.Width * 0.799
+                Width: =Parent.Width * 0.25
+                X: =Parent.Width * 0.75
                 ZIndex: =2
 
                 Skill_Search_2 As text:
@@ -106,6 +107,7 @@ Admin_Skill_Page As screen:
                     HintText: ="검색"
                     Size: =Parent.Width * 0.04
                     Width: =Parent.Width*0.9
+                    X: =Parent.Width *0.03
                     Y: =Parent.Height * 0.2
                     ZIndex: =1
 
@@ -137,7 +139,7 @@ Admin_Skill_Page As screen:
                         Height: =54
                         Size: =Parent.Width * 0.007
                         Text: ="이름"
-                        Width: =54
+                        Width: =70
                         X: =12
                         ZIndex: =2
 
@@ -223,7 +225,7 @@ Admin_Skill_Page As screen:
                         Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
                         Height: =54
-                        Size: =Parent.Width * 0.007
+                        Size: =Parent.Width * 0.006
                         Text: ="Power Automate Desktop"
                         Width: =Parent.Width *0.07
                         X: =Parent.Width*0.577
@@ -311,7 +313,7 @@ Admin_Skill_Page As screen:
                         Size: =Parent.Width * 0.007
                         Text: =ThisItem.Name
                         Width: =Label6_18.Width
-                        X: =Label6_18.X*0.97
+                        X: =Label6_18.X*0.75
                         ZIndex: =1
 
                     Label7_29 As label:
