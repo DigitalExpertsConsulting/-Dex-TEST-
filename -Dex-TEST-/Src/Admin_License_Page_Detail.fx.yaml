@@ -105,7 +105,7 @@ Admin_License_Page_Detail As screen:
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =Parent.Width * 0.038
+                        Size: =Parent.Width * 0.045
                         Text: =ThisItem.Name
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width
@@ -117,7 +117,7 @@ Admin_License_Page_Detail As screen:
                         FontWeight: =FontWeight.Semibold
                         Height: =49
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.025
+                        Size: =Parent.Width * 0.033
                         Text: =ThisItem.'E-mail'
                         Width: =Parent.Width
                         Y: =Title2_1.Height
@@ -130,7 +130,7 @@ Admin_License_Page_Detail As screen:
                         BorderThickness: =1
                         FontWeight: =FontWeight.Semibold
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.018
+                        Size: =Parent.Width * 0.023
                         Text: =ThisItem.'PL-200'
                         Width: =Parent.Width * 0.3
                         X: =Parent.Width * 0.05
@@ -144,7 +144,7 @@ Admin_License_Page_Detail As screen:
                         BorderThickness: =1
                         FontWeight: =FontWeight.Semibold
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.018
+                        Size: =Parent.Width * 0.023
                         Text: =ThisItem.'MS-101'
                         Width: =Parent.Width * 0.3
                         X: =Parent.Width * 0.05
@@ -158,7 +158,7 @@ Admin_License_Page_Detail As screen:
                         BorderThickness: =1
                         FontWeight: =FontWeight.Semibold
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.018
+                        Size: =Parent.Width * 0.023
                         Text: =ThisItem.'PL-900'
                         Width: =Parent.Width * 0.3
                         X: =Label23.X + Label23.Width
@@ -172,7 +172,7 @@ Admin_License_Page_Detail As screen:
                         BorderThickness: =1
                         FontWeight: =FontWeight.Semibold
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.018
+                        Size: =Parent.Width * 0.023
                         Text: =ThisItem.'PL-600'
                         Width: =Parent.Width * 0.3
                         X: =Parent.Width * 0.05
@@ -186,7 +186,7 @@ Admin_License_Page_Detail As screen:
                         BorderThickness: =1
                         FontWeight: =FontWeight.Semibold
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.018
+                        Size: =Parent.Width * 0.023
                         Text: =ThisItem.'AZ-104'
                         Width: =Parent.Width * 0.3
                         X: =Parent.Width * 0.05
@@ -200,7 +200,7 @@ Admin_License_Page_Detail As screen:
                         BorderThickness: =1
                         FontWeight: =FontWeight.Semibold
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.018
+                        Size: =Parent.Width * 0.023
                         Text: =ThisItem.'PL-300'
                         Width: =Parent.Width * 0.3
                         X: =Label23.X + Label23.Width
@@ -214,7 +214,7 @@ Admin_License_Page_Detail As screen:
                         BorderThickness: =1
                         FontWeight: =FontWeight.Semibold
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.018
+                        Size: =Parent.Width * 0.023
                         Text: =ThisItem.'AZ-305'
                         Width: =Parent.Width * 0.3
                         X: =Label23.X + Label23.Width
@@ -228,7 +228,7 @@ Admin_License_Page_Detail As screen:
                         BorderThickness: =1
                         FontWeight: =FontWeight.Semibold
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.018
+                        Size: =Parent.Width * 0.023
                         Text: =ThisItem.'MS-100'
                         Width: =Parent.Width * 0.3
                         X: =Label25.X+Label25.Width
@@ -242,7 +242,7 @@ Admin_License_Page_Detail As screen:
                         BorderThickness: =1
                         FontWeight: =FontWeight.Semibold
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.018
+                        Size: =Parent.Width * 0.023
                         Text: =ThisItem.'MS-700'
                         Width: =Parent.Width * 0.3
                         X: =Label23.X + Label23.Width
@@ -256,7 +256,7 @@ Admin_License_Page_Detail As screen:
                         BorderThickness: =1
                         FontWeight: =FontWeight.Semibold
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.018
+                        Size: =Parent.Width * 0.023
                         Text: =ThisItem.'PL-400'
                         Width: =Parent.Width * 0.3
                         X: =Label25.X+Label25.Width
@@ -270,7 +270,7 @@ Admin_License_Page_Detail As screen:
                         BorderThickness: =1
                         FontWeight: =FontWeight.Semibold
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.018
+                        Size: =Parent.Width * 0.023
                         Text: =ThisItem.'MS-900'
                         Width: =Parent.Width * 0.3
                         X: =Label25.X+Label25.Width
@@ -284,7 +284,7 @@ Admin_License_Page_Detail As screen:
                         BorderThickness: =1
                         FontWeight: =FontWeight.Semibold
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.02
+                        Size: =Parent.Width * 0.026
                         Text: ="PL-200"
                         Width: =Parent.Width * 0.3
                         X: =Parent.Width * 0.05
@@ -298,7 +298,7 @@ Admin_License_Page_Detail As screen:
                         BorderThickness: =1
                         FontWeight: =FontWeight.Semibold
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.02
+                        Size: =Parent.Width * 0.026
                         Text: ="MS-101"
                         Width: =Parent.Width * 0.3
                         X: =Parent.Width * 0.05
@@ -312,7 +312,7 @@ Admin_License_Page_Detail As screen:
                         BorderThickness: =1
                         FontWeight: =FontWeight.Semibold
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.02
+                        Size: =Parent.Width * 0.026
                         Text: ="PL-900"
                         Width: =Parent.Width * 0.3
                         X: =Label23.X + Label23.Width
@@ -326,7 +326,7 @@ Admin_License_Page_Detail As screen:
                         BorderThickness: =1
                         FontWeight: =FontWeight.Semibold
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.02
+                        Size: =Parent.Width * 0.026
                         Text: ="PL-600"
                         Width: =Parent.Width * 0.3
                         X: =Parent.Width * 0.05
@@ -340,7 +340,7 @@ Admin_License_Page_Detail As screen:
                         BorderThickness: =1
                         FontWeight: =FontWeight.Semibold
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.02
+                        Size: =Parent.Width * 0.026
                         Text: ="AZ-104"
                         Width: =Parent.Width * 0.3
                         X: =Parent.Width * 0.05
@@ -354,7 +354,7 @@ Admin_License_Page_Detail As screen:
                         BorderThickness: =1
                         FontWeight: =FontWeight.Semibold
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.02
+                        Size: =Parent.Width * 0.026
                         Text: ="PL-300"
                         Width: =Parent.Width * 0.3
                         X: =Label23.X + Label23.Width
@@ -368,7 +368,7 @@ Admin_License_Page_Detail As screen:
                         BorderThickness: =1
                         FontWeight: =FontWeight.Semibold
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.02
+                        Size: =Parent.Width * 0.026
                         Text: ="AZ-305"
                         Width: =Parent.Width * 0.3
                         X: =Label23.X + Label23.Width
@@ -382,7 +382,7 @@ Admin_License_Page_Detail As screen:
                         BorderThickness: =1
                         FontWeight: =FontWeight.Semibold
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.02
+                        Size: =Parent.Width * 0.026
                         Text: ="MS-100"
                         Width: =Parent.Width * 0.3
                         X: =Label25.X+Label25.Width
@@ -396,7 +396,7 @@ Admin_License_Page_Detail As screen:
                         BorderThickness: =1
                         FontWeight: =FontWeight.Semibold
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.02
+                        Size: =Parent.Width * 0.026
                         Text: ="MS-700"
                         Width: =Parent.Width * 0.3
                         X: =Label23.X + Label23.Width
@@ -410,7 +410,7 @@ Admin_License_Page_Detail As screen:
                         BorderThickness: =1
                         FontWeight: =FontWeight.Semibold
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.02
+                        Size: =Parent.Width * 0.026
                         Text: ="PL-400"
                         Width: =Parent.Width * 0.3
                         X: =Label25.X+Label25.Width
@@ -424,7 +424,7 @@ Admin_License_Page_Detail As screen:
                         BorderThickness: =1
                         FontWeight: =FontWeight.Semibold
                         OnSelect: =Select(Parent)
-                        Size: =Parent.Width * 0.02
+                        Size: =Parent.Width * 0.026
                         Text: ="MS-900"
                         Width: =Parent.Width * 0.3
                         X: =Label25.X+Label25.Width
