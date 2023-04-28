@@ -1349,8 +1349,8 @@ User_Skill_Page As screen:
                         
                                 }
                             );
+                            Notify("등록 완료되었습니다.",NotificationType.Success);
                             NewForm(Skill_Input);
-                            ResetForm(Skill_Input);
                         )
                         
                     Width: =Parent.Width 

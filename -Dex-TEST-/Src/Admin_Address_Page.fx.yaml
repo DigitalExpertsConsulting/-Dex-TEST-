@@ -259,7 +259,8 @@ Admin_Address_Page As screen:
                     Height: =Parent.Height * 0.48
                     OnSelect: |-
                         =//Test_csh_Excelexport_dataverse_list.Run("")
-                        'ExcelDownload(Address)'.Run("")
+                        'ExcelDownload(Address)'.Run("");
+                        Notify("OneDrive로 다운로드 완료",NotificationType.Success)
                     Size: =Parent.Width * 0.04
                     Text: ="다운로드"
                     Width: =Parent.Width * 0.55

@@ -4046,8 +4046,8 @@ User_License_Page As screen:
                                     )
                                 }
                             );
+                            Notify("등록 완료되었습니다.",NotificationType.Success);
                             NewForm(License_Input);
-                            ResetForm(License_Input);
                         );
                     Width: =Parent.Width
                     ZIndex: =1

@@ -91,7 +91,7 @@ Admin_License_Page As screen:
                     BorderThickness: =5
                     Fill: =RGBA( 106, 170, 205, 1 )
                     Height: =Parent.Height * 0.55
-                    OnSelect: =PDFDownload.Run()
+                    OnSelect: =PDFDownload.Run();Notify("OneDrive로 다운로드 완료",NotificationType.Success)
                     Size: =Parent.Width * 0.02
                     Text: ="인증서 다운로드"
                     Width: =Parent.Width * 0.3
@@ -116,7 +116,8 @@ Admin_License_Page As screen:
                     Height: =Parent.Height * 0.55
                     OnSelect: |
                         ='ExcelDownload(License)'.Run("");
-                        'ExcelDownload(LicenseDay)'.Run("")
+                        'ExcelDownload(LicenseDay)'.Run("");
+                        Notify("OneDrive로 다운로드 완료",NotificationType.Success)
                     Size: =Parent.Width * 0.02
                     Text: ="Excel 다운로드"
                     Width: =Parent.Width * 0.3

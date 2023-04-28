@@ -587,6 +587,7 @@ User_Address_Page As screen:
                                     Gift_Zipcode: Gift_Zipcode_DataCardValue.Text
                                 }
                             );
+                            Notify("등록 완료되었습니다.",NotificationType.Success);
                             NewForm(Address_Input);
                         )
                     Width: =Parent.Width

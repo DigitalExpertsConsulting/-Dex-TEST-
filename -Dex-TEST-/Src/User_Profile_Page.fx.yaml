@@ -176,6 +176,7 @@ User_Profile_Page As screen:
                                 "false"
                             );
                         );
+                        Notify("등록 완료되었습니다.",NotificationType.Success);
                     Size: =Parent.Width * 0.04
                     Text: ="업로드"
                     Width: =Parent.Width * 0.8

@@ -260,7 +260,7 @@ Admin_Profile_Page As screen:
                         BorderThickness: =5
                         Fill: =RGBA( 106, 170, 205, 1 )
                         Height: =Parent.Height * 0.076
-                        OnSelect: =PPTDownload.Run(Admin_Profile_Gallery.Selected.'E-mail')
+                        OnSelect: =PPTDownload.Run(Admin_Profile_Gallery.Selected.'E-mail');Notify("OneDrive로 다운로드 완료",NotificationType.Success)
                         Size: =Parent.Width * 0.013
                         Text: ="다운로드"
                         Width: =Parent.Width * 0.17
@@ -302,7 +302,9 @@ Admin_Profile_Page As screen:
                     BorderThickness: =5
                     Fill: =RGBA( 106, 170, 205, 1 )
                     Height: =Parent.Height*0.3
-                    OnSelect: =PPTALLDOWNLOAD.Run()
+                    OnSelect: |-
+                        =PPTALLDOWNLOAD.Run();
+                        Notify("OneDrive로 다운로드 완료",NotificationType.Success)
                     Size: =Parent.Width * 0.037
                     Text: |-
                         ="전체 다운로드
@@ -321,7 +323,8 @@ Admin_Profile_Page As screen:
                         =If(
                             !IsBlank(ConcatBox.Text),
                             PPTDownload.Run(ConcatBox.Text)
-                        )
+                        );
+                        Notify("OneDrive로 다운로드 완료",NotificationType.Success)
                     Size: =Parent.Width * 0.037
                     Text: |-
                         ="선택 다운로드
@@ -378,6 +381,7 @@ Admin_Profile_Page As screen:
                             First(Profile_Template_Upload_Card.Attachments).Value,
                             "profile.pptx"
                         );
+                        Notify("업데이트 완료",NotificationType.Success);
                         Reset(Profile_Template_Upload_Card)
                         /*
                         
