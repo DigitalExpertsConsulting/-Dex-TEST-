@@ -161,7 +161,7 @@ Admin_License_Page_Detail As screen:
                         Size: =Parent.Width * 0.018
                         Text: =ThisItem.'PL-900'
                         Width: =Parent.Width * 0.3
-                        X: =478
+                        X: =Label23.X + Label23.Width
                         Y: =Label21_1.Y + Label21_1.Height
                         ZIndex: =30
 
@@ -175,7 +175,7 @@ Admin_License_Page_Detail As screen:
                         Size: =Parent.Width * 0.018
                         Text: =ThisItem.'PL-600'
                         Width: =Parent.Width * 0.3
-                        X: =68
+                        X: =Parent.Width * 0.05
                         Y: =Label21_1.Y + Label21_1.Height
                         ZIndex: =31
 
@@ -288,7 +288,7 @@ Admin_License_Page_Detail As screen:
                         Text: ="PL-200"
                         Width: =Parent.Width * 0.3
                         X: =Parent.Width * 0.05
-                        Y: =Label29.Y + Label29.Height * 1.5
+                        Y: =Label29.Y + Label29_1.Height * 1.5 
                         ZIndex: =39
 
                     Label20_2 As label:
@@ -315,8 +315,8 @@ Admin_License_Page_Detail As screen:
                         Size: =Parent.Width * 0.02
                         Text: ="PL-900"
                         Width: =Parent.Width * 0.3
-                        X: =478
-                        Y: =Label1.Y + Label1.Height *1.5
+                        X: =Label23.X + Label23.Width
+                        Y: =Label1.Y + Label1_1.Height *1.5
                         ZIndex: =41
 
                     Label22_1 As label:
@@ -329,8 +329,8 @@ Admin_License_Page_Detail As screen:
                         Size: =Parent.Width * 0.02
                         Text: ="PL-600"
                         Width: =Parent.Width * 0.3
-                        X: =68
-                        Y: =Label1.Y + Label1.Height *1.5
+                        X: =Parent.Width * 0.05
+                        Y: =Label1.Y + Label1_1.Height *1.5
                         ZIndex: =42
 
                     Label23_1 As label:
@@ -358,7 +358,7 @@ Admin_License_Page_Detail As screen:
                         Text: ="PL-300"
                         Width: =Parent.Width * 0.3
                         X: =Label23.X + Label23.Width
-                        Y: =Label29.Y + Label29.Height * 1.5
+                        Y: =Label29.Y + Label29_1.Height * 1.5 
                         ZIndex: =44
 
                     Label25_1 As label:
@@ -414,7 +414,7 @@ Admin_License_Page_Detail As screen:
                         Text: ="PL-400"
                         Width: =Parent.Width * 0.3
                         X: =Label25.X+Label25.Width
-                        Y: =Label29.Y + Label29.Height * 1.5
+                        Y: =Label29.Y + Label29_1.Height * 1.5 
                         ZIndex: =48
 
                     Label29_1 As label:
