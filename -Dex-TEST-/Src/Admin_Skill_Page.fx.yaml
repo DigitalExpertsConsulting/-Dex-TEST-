@@ -457,7 +457,7 @@ Admin_Skill_Page As screen:
                     BorderColor: =RGBA( 112, 128, 144, 0.7 )
                     BorderThickness: =5
                     Fill: =RGBA( 106, 170, 205, 1 )
-                    Height: =Parent.Height * 0.7
+                    Height: =Parent.Height * 0.6
                     OnSelect: ='ExcelDownload(Skill)_1'.Run("")
                     Size: =Parent.Width * 0.033
                     Text: ="다운로드"
