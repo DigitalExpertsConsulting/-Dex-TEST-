@@ -87,7 +87,7 @@ Admin_Address_Page As screen:
                 Admin_Address_Gallery As gallery.galleryVertical:
                     DelayItemLoading: =true
                     Fill: =RGBA(255, 255, 255, 0.9)
-                    Height: =433.384
+                    Height: =Parent.Height
                     Items: |
                         =Search(ability_address,Address_Search.Text,"cr778_name")
                         
