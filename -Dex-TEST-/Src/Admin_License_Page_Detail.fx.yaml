@@ -133,7 +133,7 @@ Admin_License_Page_Detail As screen:
                         Size: =Parent.Width * 0.018
                         Text: =ThisItem.'PL-200'
                         Width: =Parent.Width * 0.3
-                        X: =68
+                        X: =Parent.Width * 0.05
                         Y: =Label28_1.Y + Label28_1.Height
                         ZIndex: =28
 
