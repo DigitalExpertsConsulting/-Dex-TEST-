@@ -76,28 +76,11 @@ Admin_Skill_Page As screen:
             Width: =Parent.Width
             ZIndex: =2
 
-            AS_Refresh_Container_2 As groupContainer.manualLayoutContainer:
-                Height: =Parent.Width * 0.05
-                Width: =Parent.Width * 0.055
-                X: =Parent.Width * 0.25
-                Y: =
-                ZIndex: =1
-
-                Skill_Refresh_2 As icon.Reload:
-                    Color: =RGBA(255, 255, 255, 1)
-                    Height: =Parent.Height*0.8
-                    Icon: =Icon.Reload
-                    OnSelect: =Refresh(ability_skill)
-                    Width: =Parent.Width*0.8
-                    X: =
-                    Y: =7
-                    ZIndex: =1
-
             AS_Search_Container_2 As groupContainer.manualLayoutContainer:
                 Height: =Parent.Width * 0.055
                 Width: =Parent.Width * 0.25
                 X: =Parent.Width * 0.75
-                ZIndex: =2
+                ZIndex: =1
 
                 Skill_Search_2 As text:
                     BorderColor: =RGBA( 112, 128, 144, 0.7 )
@@ -115,7 +98,7 @@ Admin_Skill_Page As screen:
                 Height: =Parent.Height * 0.089
                 Width: =Parent.Width
                 Y: =AS_Refresh_Container_2.Height
-                ZIndex: =3
+                ZIndex: =2
 
                 Admin_Skill_Group_1 As group:
                     Height: =5
@@ -290,7 +273,7 @@ Admin_Skill_Page As screen:
                 Height: =Parent.Height - AS_Gallery_Title_Container_1.Height - AS_Refresh_Container_2.Height
                 Width: =Parent.Width
                 Y: =AS_Refresh_Container_2.Height + AS_Gallery_Title_Container_1.Height
-                ZIndex: =4
+                ZIndex: =3
 
                 Admin_Skill_Gallery_1 As gallery.galleryVertical:
                     DelayItemLoading: =true
@@ -451,7 +434,7 @@ Admin_Skill_Page As screen:
                 Width: =Parent.Width * 0.3
                 X: =Parent.Width*0
                 Y: =
-                ZIndex: =5
+                ZIndex: =4
 
                 License_DownLoad_2 As button:
                     BorderColor: =RGBA( 112, 128, 144, 0.7 )
@@ -464,6 +447,23 @@ Admin_Skill_Page As screen:
                     Width: =Parent.Width * 0.7
                     X: =Parent.Width * 0.04
                     Y: =Parent.Height * 0.25
+                    ZIndex: =1
+
+            AS_Refresh_Container_2 As groupContainer.manualLayoutContainer:
+                Height: =Parent.Width * 0.05
+                Width: =Parent.Width * 0.055
+                X: =Parent.Width * 0.25
+                Y: =
+                ZIndex: =5
+
+                Skill_Refresh_2 As icon.Reload:
+                    Color: =RGBA(255, 255, 255, 1)
+                    Height: =Parent.Height*0.8
+                    Icon: =Icon.Reload
+                    OnSelect: =Refresh(ability_skill)
+                    Width: =Parent.Width*0.8
+                    X: =
+                    Y: =7
                     ZIndex: =1
 
     mAS_Main_Container_1 As groupContainer.verticalAutoLayoutContainer:
