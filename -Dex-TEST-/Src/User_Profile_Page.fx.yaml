@@ -150,7 +150,7 @@ User_Profile_Page As screen:
                     Fill: =RGBA( 106, 170, 205, 1 )
                     Height: =Parent.Height * 0.19
                     HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -50%)
-                    OnSelect: |
+                    OnSelect: |-
                         =Set(varUploadProfile, false);
                         
                         ability_user_upload_profile.Run(
