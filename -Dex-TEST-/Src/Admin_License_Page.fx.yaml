@@ -125,7 +125,7 @@ Admin_License_Page As screen:
                     Size: =Parent.Width * 0.04
                     Width: =Parent.Width *0.7
                     X: =Parent.Width * 0.2
-                    Y: =Parent.Y*1
+                    Y: =Parent.Y*1.3
                     ZIndex: =1
 
             AL_Gallery_Tile_Container As groupContainer.manualLayoutContainer:
