@@ -3687,7 +3687,8 @@ User_License_Page As screen:
                     Height: =Parent.Height
                     Icon: =Icon.Send
                     OnSelect: |-
-                        =//AZ-101 승인/반려 처리
+                        =/*
+                        //AZ-101 승인/반려 처리
                         If(
                             !IsBlank(First('AZ-104_File_DataCardValue'.Attachments).Value),
                             If(
@@ -3884,6 +3885,7 @@ User_License_Page As screen:
                                 'LicenseDay_PL-900_DataCard'.Update = Blank(); 
                             )
                         );
+                        */
                         
                         
                         
