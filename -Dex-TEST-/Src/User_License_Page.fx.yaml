@@ -6794,6 +6794,7 @@ User_License_Page As screen:
                                     )
                                 }
                             );
+                            Notify("등록이 완료되었습니다",NotificationType.Success);
                             NewForm(License_Input_1);
                             ResetForm(License_Input_1);
                         );
