@@ -291,7 +291,7 @@ Admin_License_Page_Detail As screen:
                         Text: ="MS-101"
                         Width: =Parent.Width * 0.3
                         X: =Parent.Width * 0.05
-                        Y: =Label25.Y+ Label25.Height * 2
+                        Y: =Label25.Y+ Label25.Height * 5
                         ZIndex: =40
 
                     Label21_1 As label:
@@ -333,7 +333,7 @@ Admin_License_Page_Detail As screen:
                         Text: ="AZ-104"
                         Width: =Parent.Width * 0.3
                         X: =Parent.Width * 0.05
-                        Y: =Label19.Y + Label19.Height * 3
+                        Y: =Label19.Y + Label19.Height * 2
                         ZIndex: =43
 
                     Label24_1 As label:
@@ -361,7 +361,7 @@ Admin_License_Page_Detail As screen:
                         Text: ="AZ-305"
                         Width: =Parent.Width * 0.3
                         X: =Label23.X + Label23.Width
-                        Y: =Label19.Y + Label19.Height * 3
+                        Y: =Label19.Y + Label19.Height * 2
                         ZIndex: =45
 
                     Label26_1 As label:
@@ -375,7 +375,7 @@ Admin_License_Page_Detail As screen:
                         Text: ="MS-100"
                         Width: =Parent.Width * 0.3
                         X: =Label25.X+Label25.Width
-                        Y: =Label19.Y + Label19.Height * 3
+                        Y: =Label19.Y + Label19.Height * 2
                         ZIndex: =46
 
                     Label27_1 As label:
@@ -389,7 +389,7 @@ Admin_License_Page_Detail As screen:
                         Text: ="MS-700"
                         Width: =Parent.Width * 0.3
                         X: =Label23.X + Label23.Width
-                        Y: =Label25.Y+ Label25.Height * 2
+                        Y: =Label25.Y+ Label25.Height * 5
                         ZIndex: =47
 
                     Label28_1 As label:
@@ -417,7 +417,7 @@ Admin_License_Page_Detail As screen:
                         Text: ="MS-900"
                         Width: =Parent.Width * 0.3
                         X: =Label25.X+Label25.Width
-                        Y: =Label25.Y+ Label25.Height * 2
+                        Y: =Label25.Y+ Label25.Height * 5
                         ZIndex: =49
 
                     Rectangle2_1 As rectangle:
