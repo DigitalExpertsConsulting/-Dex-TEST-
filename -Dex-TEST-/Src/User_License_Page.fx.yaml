@@ -6802,7 +6802,8 @@ User_License_Page As screen:
                     Fill: =RGBA( 106, 170, 205, 1 )
                     Height: =Parent.Height
                     OnSelect: |-
-                        =//AZ-101 승인/반려 처리
+                        =/*
+                        //AZ-101 승인/반려 처리
                         If(
                             !IsBlank(First('AZ-104_File_DataCardValue'.Attachments).Value),
                             If(
@@ -7000,6 +7001,7 @@ User_License_Page As screen:
                             )
                         );
                         
+                        */
                         
                         
                         
