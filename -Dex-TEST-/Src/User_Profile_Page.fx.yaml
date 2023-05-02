@@ -104,7 +104,9 @@ User_Profile_Page As screen:
                     Fill: =RGBA( 106, 170, 205, 1 )
                     Height: =Parent.Height * 0.19
                     HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -50%)
-                    OnSelect: =ability_user_down_profile_form.Run()
+                    OnSelect: |-
+                        =ability_user_down_profile_form.Run();
+                        Notify("양식이 다운로드 되었습니다, OneDrive -> profile 확인 부탁드립니다",NotificationType.Success);
                     Size: =Parent.Width * 0.04
                     Text: ="양식 다운로드"
                     Width: =Parent.Width * 0.8
@@ -282,7 +284,9 @@ User_Profile_Page As screen:
                     Fill: =RGBA( 106, 170, 205, 1 )
                     Height: =Parent.Height * 0.18
                     HoverFill: =ColorFade(RGBA(102, 182, 227, 0.7), -50%)
-                    OnSelect: =ability_user_down_profile_form.Run()
+                    OnSelect: |-
+                        =ability_user_down_profile_form.Run();
+                        Notify("양식이 다운로드 되었습니다, OneDrive -> profile 확인 부탁드립니다",NotificationType.Success);
                     Size: =Parent.Width * 0.03
                     Text: ="양식 다운로드"
                     Width: =Parent.Width * 0.35
@@ -353,6 +357,7 @@ User_Profile_Page As screen:
                                 "false"
                             );
                         );
+                        Notify("등록 완료되었습니다.",NotificationType.Success);
                     Size: =Parent.Width * 0.03
                     Text: ="업로드"
                     Width: =Parent.Width * 0.35
