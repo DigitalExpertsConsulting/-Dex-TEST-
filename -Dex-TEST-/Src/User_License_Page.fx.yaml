@@ -34,134 +34,134 @@ User_License_Page As screen:
                         'AZ-104':
                         If(
                             IsBlank(
-                                'LicenseDay_AZ-104_DataCard'.Update
+                                'LicenseDay_AZ-104_DataCardValue'.Text
                             ),
                             LookUp(
                                 ability_licenseDay,
                                 'E-mail' = 'LicenseDay_E-mail_DataCard'.Update,
                                 'AZ-104'
                             ),
-                            'LicenseDay_AZ-104_DataCard'.Update
+                            'LicenseDay_AZ-104_DataCardValue'.Text
                         ),
                         'AZ-305':
                         If(
                             IsBlank(
-                                'LicenseDay_AZ-305_DataCard'.Update
+                                'LicenseDay_AZ-305_DataCardValue'.Text
                             ),
                             LookUp(
                                 ability_licenseDay,
                                 'E-mail' = 'LicenseDay_E-mail_DataCard'.Update,
                                 'AZ-305'
                             ),
-                            'LicenseDay_AZ-305_DataCard'.Update
+                            'LicenseDay_AZ-305_DataCardValue'.Text
                         ),
                         'MS-100':
                         If(
                             IsBlank(
-                                'LicenseDay_MS-100_DataCard'.Update
+                                'LicenseDay_MS-100_DataCardValue'.Text
                             ),
                             LookUp(
                                 ability_licenseDay,
                                 'E-mail' = 'LicenseDay_E-mail_DataCard'.Update,
                                 'MS-100'
                             ),
-                            'LicenseDay_MS-100_DataCard'.Update
+                            'LicenseDay_MS-100_DataCardValue'.Text
                         ),
                         'MS-101':
                         If(
                             IsBlank(
-                                'LicenseDay_MS-101_DataCard'.Update
+                                'LicenseDay_MS-101_DataCardValue'.Text
                             ),
                             LookUp(
                                 ability_licenseDay,
                                 'E-mail' = 'LicenseDay_E-mail_DataCard'.Update,
                                 'MS-101'
                             ),
-                            'LicenseDay_MS-101_DataCard'.Update
+                            'LicenseDay_MS-101_DataCardValue'.Text
                         ),
                         'MS-700':
                         If(
                             IsBlank(
-                                'LicenseDay_MS-700_DataCard'.Update
+                                'LicenseDay_MS-700_DataCardValue'.Text
                             ),
                             LookUp(
                                 ability_licenseDay,
                                 'E-mail' = 'LicenseDay_E-mail_DataCard'.Update,
                                 'MS-700'
                             ),
-                            'LicenseDay_MS-700_DataCard'.Update
+                            'LicenseDay_MS-700_DataCardValue'.Text
                         ),
                         'MS-900':
                         If(
                             IsBlank(
-                                'LicenseDay_MS-900_DataCard'.Update
+                                'LicenseDay_MS-900_DataCardValue'.Text
                             ),
                             LookUp(
                                 ability_licenseDay,
                                 'E-mail' = 'LicenseDay_E-mail_DataCard'.Update,
                                 'MS-900'
                             ),
-                            'LicenseDay_MS-900_DataCard'.Update
+                            'LicenseDay_MS-900_DataCardValue'.Text
                         ),
                         'PL-200':
                         If(
                             IsBlank(
-                                'LicenseDay_PL-200_DataCard'.Update
+                                'LicenseDay_PL-200_DataCardValue'.Text
                             ),
                             LookUp(
                                 ability_licenseDay,
                                 'E-mail' = 'LicenseDay_E-mail_DataCard'.Update,
                                 'PL-200'
                             ),
-                            'LicenseDay_PL-200_DataCard'.Update
+                            'LicenseDay_PL-200_DataCardValue'.Text
                         ),
                         'PL-300':
                         If(
                             IsBlank(
-                                'LicenseDay_PL-300_DataCard'.Update
+                                'LicenseDay_PL-300_DataCardValue'.Text
                             ),
                             LookUp(
                                 ability_licenseDay,
                                 'E-mail' = 'LicenseDay_E-mail_DataCard'.Update,
                                 'PL-300'
                             ),
-                            'LicenseDay_PL-300_DataCard'.Update
+                            'LicenseDay_PL-300_DataCardValue'.Text
                         ),
                         'PL-400':
                         If(
                             IsBlank(
-                                'LicenseDay_PL-400_DataCard'.Update
+                                'LicenseDay_PL-400_DataCardValue'.Text
                             ),
                             LookUp(
                                 ability_licenseDay,
                                 'E-mail' = 'LicenseDay_E-mail_DataCard'.Update,
                                 'PL-400'
                             ),
-                            'LicenseDay_PL-400_DataCard'.Update
+                            'LicenseDay_PL-400_DataCardValue'.Text
                         ),
                         'PL-600':
                         If(
                             IsBlank(
-                                'LicenseDay_PL-600_DataCard'.Update
+                                'LicenseDay_PL-600_DataCardValue'.Text
                             ),
                             LookUp(
                                 ability_licenseDay,
                                 'E-mail' = 'LicenseDay_E-mail_DataCard'.Update,
                                 'PL-600'
                             ),
-                            'LicenseDay_PL-600_DataCard'.Update
+                            'LicenseDay_PL-600_DataCardValue'.Text
                         ),
                         'PL-900':
                         If(
                             IsBlank(
-                                'LicenseDay_PL-900_DataCard'.Update
+                                'LicenseDay_PL-900_DataCardValue'.Text
                             ),
                             LookUp(
                                 ability_licenseDay,
                                 'E-mail' = 'LicenseDay_E-mail_DataCard'.Update,
                                 'PL-900'
                             ),
-                            'LicenseDay_PL-900_DataCard'.Update
+                            'LicenseDay_PL-900_DataCardValue'.Text
                         )
                     }
                 );
@@ -7182,8 +7182,8 @@ User_License_Page As screen:
     LicenseDay_Input As form:
         DataSource: =ability_licenseDay
         DefaultMode: =FormMode.New
-        Height: =17
-        Width: =719
+        Height: =0
+        Width: =634
         X: =310
         ZIndex: =6
 
@@ -7199,7 +7199,7 @@ User_License_Page As screen:
             Required: =false
             Update: ='LicenseDay_E-mail_DataCardValue'.Text
             Visible: =false
-            Width: =478
+            Width: =422
             X: =0
             Y: =1
             ZIndex: =1
@@ -7272,7 +7272,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('AZ-104_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =478
+            Width: =422
             X: =0
             Y: =2
             ZIndex: =1
@@ -7351,7 +7351,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('AZ-305_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =478
+            Width: =422
             X: =1
             Y: =2
             ZIndex: =1
@@ -7430,7 +7430,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('MS-100_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =478
+            Width: =422
             X: =2
             Y: =2
             ZIndex: =1
@@ -7509,7 +7509,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('MS-101_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =478
+            Width: =422
             X: =0
             Y: =3
             ZIndex: =1
@@ -7588,7 +7588,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('MS-700_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =478
+            Width: =422
             X: =1
             Y: =3
             ZIndex: =1
@@ -7667,7 +7667,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('MS-900_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =478
+            Width: =422
             X: =2
             Y: =3
             ZIndex: =1
@@ -7744,9 +7744,9 @@ User_License_Page As screen:
                 =If(
                     'PL-200_Toggle'.Value=true,
                     DateAdd(DateValue('PL-200_DatePicker'.SelectedDate),356-30),
-                    ""
+                    'PL-200_DataCard1'.Default
                 )
-            Width: =478
+            Width: =422
             X: =0
             Y: =4
             ZIndex: =1
@@ -7826,7 +7826,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('PL-300_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =478
+            Width: =422
             X: =1
             Y: =4
             ZIndex: =1
@@ -7905,7 +7905,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('PL-400_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =478
+            Width: =422
             X: =2
             Y: =4
             ZIndex: =1
@@ -7985,7 +7985,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('PL-600_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =478
+            Width: =422
             X: =0
             Y: =5
             ZIndex: =1
@@ -8064,7 +8064,7 @@ User_License_Page As screen:
                     DateAdd(DateValue('PL-900_DatePicker'.SelectedDate),356-30),
                     ""
                 )
-            Width: =478
+            Width: =422
             X: =1
             Y: =5
             ZIndex: =1
@@ -8139,7 +8139,7 @@ User_License_Page As screen:
             Required: =true
             Update: =LicenseDay_Name_DataCardValue.Text
             Visible: =false
-            Width: =478
+            Width: =422
             X: =0
             Y: =-81
             ZIndex: =11
