@@ -7287,9 +7287,9 @@ User_License_Page As screen:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: |-
                     =If(
-                        'AZ-104_DatePicker'.InputTextPlaceholder = DisplayMode.Disabled,
-                        "X",
-                        "O"
+                        'AZ-104_DatePicker'.DisplayMode = DisplayMode.Disabled,
+                        " ",
+                        'AZ-104_DatePicker'
                     )
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -7358,7 +7358,12 @@ User_License_Page As screen:
 
             DataCardValue5 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
+                Default: |-
+                    =If(
+                        'AZ-305_DatePicker'.DisplayMode = DisplayMode.Disabled,
+                        " ",
+                        'AZ-305_DatePicker'
+                    )
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 MaxLength: =Parent.MaxLength
@@ -7426,7 +7431,12 @@ User_License_Page As screen:
 
             DataCardValue6 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
+                Default: |-
+                    =If(
+                        'MS-100_DatePicker'.DisplayMode = DisplayMode.Disabled,
+                        " ",
+                        'MS-100_DatePicker'
+                    )
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 MaxLength: =Parent.MaxLength
@@ -7494,7 +7504,12 @@ User_License_Page As screen:
 
             DataCardValue7 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
+                Default: |-
+                    =If(
+                        'MS-101_DatePicker'.DisplayMode = DisplayMode.Disabled,
+                        " ",
+                        'MS-101_DatePicker'
+                    )
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 MaxLength: =Parent.MaxLength
