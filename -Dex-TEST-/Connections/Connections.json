@@ -15,6 +15,47 @@
     ],
     "id": "04ea744e-6da7-40a2-965d-707c7cd1daa9"
   },
+  "0742bac2-3dac-49f2-beb9-f533af36f9d9": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1636/1.0.1636.3297/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "4f95a787-4b12-41b1-94a6-124bb3aa2fee": {
+          "value": "shared_commondataserviceforapps_1"
+        },
+        "aa2e492a-243b-40b3-bf74-78e44b5d9138": {
+          "value": "shared_onedriveforbusiness_1"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "19b396fa-76bf-4cd5-8901-f5926b35e3a5"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_commondataserviceforapps_1": {
+          "value": "4f95a787-4b12-41b1-94a6-124bb3aa2fee"
+        },
+        "shared_onedriveforbusiness_1": {
+          "value": "aa2e492a-243b-40b3-bf74-78e44b5d9138"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "19b396fa-76bf-4cd5-8901-f5926b35e3a5"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "ExcelDownload(License)"
+    ],
+    "dependencies": {
+      "shared_commondataserviceforapps_1": "4f95a787-4b12-41b1-94a6-124bb3aa2fee",
+      "shared_onedriveforbusiness_1": "aa2e492a-243b-40b3-bf74-78e44b5d9138"
+    },
+    "dependents": [],
+    "id": "0742bac2-3dac-49f2-beb9-f533af36f9d9"
+  },
   "18389118-7f5a-4e0d-a816-21ce9ccc9ae9": {
     "connectionRef": {
       "displayName": "Logic flows",
@@ -114,7 +155,9 @@
       "18389118-7f5a-4e0d-a816-21ce9ccc9ae9",
       "714f976e-2060-4601-b533-6a0f3c8349ac",
       "7b223700-78d7-4ade-8dcb-dcba45a2d9fc",
-      "a1a463e3-da42-4ea2-bea8-5425c370ceee"
+      "a1a463e3-da42-4ea2-bea8-5425c370ceee",
+      "0742bac2-3dac-49f2-beb9-f533af36f9d9",
+      "97468918-a16e-4d8a-bcb0-4ac85abfe7cc"
     ],
     "id": "4f95a787-4b12-41b1-94a6-124bb3aa2fee"
   },
@@ -256,7 +299,7 @@
     "dependents": [],
     "id": "7b223700-78d7-4ade-8dcb-dcba45a2d9fc"
   },
-  "a1a463e3-da42-4ea2-bea8-5425c370ceee": {
+  "97468918-a16e-4d8a-bcb0-4ac85abfe7cc": {
     "connectionRef": {
       "displayName": "Logic flows",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1636/1.0.1636.3297/logicflows/icon.png",
@@ -264,10 +307,51 @@
       "parameterHints": {
         "workflowEntityId": {},
         "workflowName": {
+          "value": "3b4d0a64-a67b-46d2-a00d-c89fc55b9df2"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "3b4d0a64-a67b-46d2-a00d-c89fc55b9df2"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "ExcelDownload(LicenseDay)"
+    ],
+    "dependencies": {
+      "shared_commondataserviceforapps_1": "4f95a787-4b12-41b1-94a6-124bb3aa2fee",
+      "shared_onedriveforbusiness_1": "aa2e492a-243b-40b3-bf74-78e44b5d9138"
+    },
+    "dependents": [],
+    "id": "97468918-a16e-4d8a-bcb0-4ac85abfe7cc"
+  },
+  "a1a463e3-da42-4ea2-bea8-5425c370ceee": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1636/1.0.1636.3297/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "4f95a787-4b12-41b1-94a6-124bb3aa2fee": {
+          "value": "shared_commondataserviceforapps_1"
+        },
+        "aa2e492a-243b-40b3-bf74-78e44b5d9138": {
+          "value": "shared_onedriveforbusiness_1"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
           "value": "cda38484-c09c-4839-8cad-8a544a83df22"
         }
       },
       "parameterHintsV2": {
+        "shared_commondataserviceforapps_1": {
+          "value": "4f95a787-4b12-41b1-94a6-124bb3aa2fee"
+        },
+        "shared_onedriveforbusiness_1": {
+          "value": "aa2e492a-243b-40b3-bf74-78e44b5d9138"
+        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "cda38484-c09c-4839-8cad-8a544a83df22"
@@ -299,7 +383,9 @@
       "18389118-7f5a-4e0d-a816-21ce9ccc9ae9",
       "714f976e-2060-4601-b533-6a0f3c8349ac",
       "7b223700-78d7-4ade-8dcb-dcba45a2d9fc",
-      "a1a463e3-da42-4ea2-bea8-5425c370ceee"
+      "a1a463e3-da42-4ea2-bea8-5425c370ceee",
+      "0742bac2-3dac-49f2-beb9-f533af36f9d9",
+      "97468918-a16e-4d8a-bcb0-4ac85abfe7cc"
     ],
     "id": "aa2e492a-243b-40b3-bf74-78e44b5d9138"
   },
