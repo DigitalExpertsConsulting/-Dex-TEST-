@@ -1,0 +1,56 @@
+<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://asia-001.azure-apim.net/apim/logicflows" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="ability_user_upload_profile" xmlns="http://wadl.dev.java.net/2009/02">
+  <doc title="ability_user_upload_profile" />
+  <grammars>
+    <jsonTypes targetNamespace="https://asia-001.azure-apim.net/apim/logicflows" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+      <string name="ManualTriggerInput_Sendanemail_ux28_V2_ux29__To_def" />
+      <string name="ManualTriggerInput_Sendanemail_ux28_V2_ux29__Subject_def" />
+      <string name="ManualTriggerInput_Sendanemail_ux28_V2_ux29__Body_def" />
+      <string name="ManualTriggerInput_Sendanemail_ux28_V2_ux29___UxCCA8_UxBD80_UxD30C_UxC77C_UxC774_UxB984__def" />
+      <base64Binary name="ManualTriggerInput_Sendanemail_ux28_V2_ux29___UxCCA8_UxBD80_UxD30C_UxC77C_UxCF58_UxD150_UxCE20__def" />
+      <string name="ManualTriggerInput__UxC0C8_UxD589_UxCD94_UxAC00__Name_def" />
+      <string name="ManualTriggerInput__UxC0C8_UxD589_UxCD94_UxAC00__E-mail_def" />
+      <string name="ManualTriggerInput__UxC870_UxAC74_2__UxAC1C_UxCCB4_UxC774_UxB984__def" />
+      <object name="ManualTriggerInput">
+        <property name="Sendanemail(V2)_To" type="string" />
+        <property name="Sendanemail(V2)_Subject" type="string" />
+        <property name="Sendanemail(V2)_Body" type="string" />
+        <property name="Sendanemail(V2)_첨부파일이름" type="string" />
+        <property name="Sendanemail(V2)_첨부파일콘텐츠" typeRef="ManualTriggerInput_Sendanemail_ux28_V2_ux29___UxCCA8_UxBD80_UxD30C_UxC77C_UxCF58_UxD150_UxCE20__def" />
+        <property name="새행추가_Name" type="string" />
+        <property name="새행추가_E-mail" type="string" />
+        <property name="조건2_개체이름" type="string" />
+      </object>
+    </jsonTypes>
+  </grammars>
+  <resources siena:authenticationProviderHref="#PowerAppAuth" base="https://asia-001.azure-apim.net/apim/logicflows">
+    <resource path="/{connectionId}/triggers/manual/run">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="POST" id="Run">
+        <doc title="Runs a logic flow trigger." />
+        <request>
+          <param style="query" name="api-version" type="xs:string" required="true" fixed="2015-02-01-preview">
+            <doc title="The api version" />
+          </param>
+          <representation mediaType="application/json">
+            <param style="plain" name="Sendanemail(V2)_To" path="/Sendanemail(V2)_To" type="xs:string" required="true" />
+            <param style="plain" name="Sendanemail(V2)_Subject" path="/Sendanemail(V2)_Subject" type="xs:string" required="true" />
+            <param style="plain" name="Sendanemail(V2)_Body" path="/Sendanemail(V2)_Body" type="xs:string" required="true" />
+            <param style="plain" name="Sendanemail(V2)_첨부파일이름" path="/Sendanemail(V2)_첨부파일이름" type="xs:string" required="true" />
+            <param style="plain" name="Sendanemail(V2)_첨부파일콘텐츠" path="/Sendanemail(V2)_첨부파일콘텐츠" type="service:ManualTriggerInput_Sendanemail_ux28_V2_ux29___UxCCA8_UxBD80_UxD30C_UxC77C_UxCF58_UxD150_UxCE20__def" required="true" />
+            <param style="plain" name="새행추가_Name" path="/새행추가_Name" type="xs:string" required="true" />
+            <param style="plain" name="새행추가_E-mail" path="/새행추가_E-mail" type="xs:string" required="true" />
+            <param style="plain" name="조건2_개체이름" path="/조건2_개체이름" type="xs:string" required="true" />
+          </representation>
+        </request>
+      </method>
+    </resource>
+  </resources>
+  <authenticationProviders xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <connectionProvider id="PowerAppAuth" siena:connectionProviderId="logicflows" />
+  </authenticationProviders>
+  <template xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <variable name="connectionId">
+      <modifyParams style="template" name="connectionId" attribute="fixed" />
+    </variable>
+  </template>
+</application>

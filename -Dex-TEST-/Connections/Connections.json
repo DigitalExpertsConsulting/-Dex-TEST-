@@ -1,4 +1,61 @@
 {
+  "106e0c27-02ab-4025-bed4-5d14c54b7c56": {
+    "connectionRef": {
+      "displayName": "Microsoft Dataverse",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1636/1.0.1636.3297/commondataserviceforapps/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_commondataserviceforapps"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "98683425-0e7c-475f-8adf-14b54345eabb"
+    ],
+    "id": "106e0c27-02ab-4025-bed4-5d14c54b7c56"
+  },
+  "12e5cc64-7516-402b-95e9-717b609f1ca4": {
+    "connectionRef": {
+      "displayName": "Office 365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1626/1.0.1626.3238/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "98683425-0e7c-475f-8adf-14b54345eabb"
+    ],
+    "id": "12e5cc64-7516-402b-95e9-717b609f1ca4"
+  },
+  "98683425-0e7c-475f-8adf-14b54345eabb": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1636/1.0.1636.3297/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "89b317ba-665d-40ef-830a-0d85012f2b4b"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "89b317ba-665d-40ef-830a-0d85012f2b4b"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "ability_user_upload_profile"
+    ],
+    "dependencies": {
+      "shared_commondataserviceforapps_1": "106e0c27-02ab-4025-bed4-5d14c54b7c56",
+      "shared_office365_1": "12e5cc64-7516-402b-95e9-717b609f1ca4"
+    },
+    "dependents": [],
+    "id": "98683425-0e7c-475f-8adf-14b54345eabb"
+  },
   "ab5b9c24-5c27-42f2-912d-451e96a6d6e0": {
     "connectionRef": {
       "displayName": "Office 365 Outlook",
