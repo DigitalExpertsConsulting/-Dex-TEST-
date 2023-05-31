@@ -122,20 +122,6 @@
     "dependents": [],
     "id": "16e63f76-78ff-426e-915d-8ba75f4d797f"
   },
-  "2294928e-a69e-4756-aaaf-d0319e7167e0": {
-    "connectionRef": {
-      "displayName": "SharePoint",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1627/1.0.1627.3238/sharepointonline/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
-    },
-    "datasets": {},
-    "dataSources": [],
-    "dependencies": {},
-    "dependents": [
-      "6bb178ef-2b03-412f-bc60-32d510898f79"
-    ],
-    "id": "2294928e-a69e-4756-aaaf-d0319e7167e0"
-  },
   "29e8f618-83c3-4dea-a02f-8569e4b34d3b": {
     "connectionRef": {
       "displayName": "Logic flows",
@@ -299,54 +285,6 @@
     },
     "dependents": [],
     "id": "61e91004-0805-4e78-8eb1-90e8618ad386"
-  },
-  "6bb178ef-2b03-412f-bc60-32d510898f79": {
-    "connectionRef": {
-      "displayName": "Logic flows",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1615/1.0.1615.3163/logicflows/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
-      "parameterHints": {
-        "2294928e-a69e-4756-aaaf-d0319e7167e0": {
-          "value": "shared_sharepointonline"
-        },
-        "9571b5ea-a429-41b8-b65b-dee168d7202a": {
-          "value": "shared_commondataserviceforapps"
-        },
-        "e1261159-5cc4-4e6b-ac09-b371ba40b6ee": {
-          "value": "shared_onedriveforbusiness"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "d4f52e86-edd8-47d1-87dd-63b4059eecad"
-        }
-      },
-      "parameterHintsV2": {
-        "shared_commondataserviceforapps": {
-          "value": "9571b5ea-a429-41b8-b65b-dee168d7202a"
-        },
-        "shared_onedriveforbusiness": {
-          "value": "e1261159-5cc4-4e6b-ac09-b371ba40b6ee"
-        },
-        "shared_sharepointonline": {
-          "value": "2294928e-a69e-4756-aaaf-d0319e7167e0"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "d4f52e86-edd8-47d1-87dd-63b4059eecad"
-        }
-      }
-    },
-    "datasets": {},
-    "dataSources": [
-      "Test_csh_Excelexport_dataverse_list"
-    ],
-    "dependencies": {
-      "shared_commondataserviceforapps": "9571b5ea-a429-41b8-b65b-dee168d7202a",
-      "shared_onedriveforbusiness": "e1261159-5cc4-4e6b-ac09-b371ba40b6ee",
-      "shared_sharepointonline": "2294928e-a69e-4756-aaaf-d0319e7167e0"
-    },
-    "dependents": [],
-    "id": "6bb178ef-2b03-412f-bc60-32d510898f79"
   },
   "8260b764-4a13-45c7-b864-c936720be088": {
     "connectionRef": {

@@ -111,6 +111,8 @@
       "FileAttachment_msfp_fileresponse_msfp_file7": "Customer Voice file responses (FileAttachment_msfp_fileresponse_msfp_file7)",
       "FileAttachment_msfp_fileresponse_msfp_file8": "Customer Voice file responses (FileAttachment_msfp_fileresponse_msfp_file8)",
       "FileAttachment_msfp_fileresponse_msfp_file9": "Customer Voice file responses (FileAttachment_msfp_fileresponse_msfp_file9)",
+      "FileAttachment_mspcat_CatalogSubmissionFiles_mspcat_File": "Catalog Submission Files",
+      "FileAttachment_mspcat_PackageStore_mspcat_PackageFile": "Package Submission Stores",
       "FileAttachment_new_docu_manage_table_new_ksc_uploadfile": "문서관리테이블",
       "FileAttachment_new_Han1_base_new_Attachment": "Han1_base",
       "FileAttachment_new_HSYIM_Request_new_Attach1": "HSYIM_Request (FileAttachment_new_HSYIM_Request_new_Attach1)",
@@ -129,6 +131,8 @@
       "FileAttachment_pluginpackage_Package": "Plugin Packages (FileAttachment_pluginpackage_Package)",
       "FileAttachment_powerbidataset_Package": "Power BI Datasets",
       "FileAttachment_powerbireport_Package": "Power BI Reports",
+      "FileAttachment_retaineddataexcel_ExcelContent": "RetainedData Excels",
+      "FileAttachment_searchcustomanalyzer_analyzers": "SearchCustomAnalyzer",
       "FileAttachment_StageSolutionUpload_SolutionFile": "StageSolutionUpload",
       "FileAttachment_SyncErrors": "Sync Errors",
       "FileAttachment_WebResource_ContentFileRef": "Web Resources (FileAttachment_WebResource_ContentFileRef)",
@@ -140,6 +144,7 @@
       "filename": "File Name",
       "filesizeinbytes": "File Size (Bytes)",
       "mimetype": "MIME Type",
+      "msft_datastate": "msft_DataState",
       "regardingfieldname": "Regarding Attribute Schema Name",
       "solution_fileid": "Solutions",
       "versionnumber": "Version Number"
@@ -191,6 +196,26 @@
     },
     "OptionSetTypeKey": "EntityNameType",
     "RelatedColumnInvariantName": "objecttypecode",
+    "RelatedEntityName": "FileAttachments",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "DataState",
+    "Name": "msft_datastate",
+    "OptionSetInfoNameMapping": {
+      "0": "Default",
+      "1": "Retain"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msft_datastate",
+        "OptionSetReferenceEntityName": "FileAttachments"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "msft_datastate",
     "RelatedEntityName": "FileAttachments",
     "Type": "OptionSetInfo"
   }
