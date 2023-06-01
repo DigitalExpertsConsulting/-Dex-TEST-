@@ -303,7 +303,7 @@ Admin_Profile_Page As screen:
                     Fill: =RGBA( 106, 170, 205, 1 )
                     Height: =Parent.Height*0.3
                     OnSelect: |-
-                        =PPTALLDOWNLOAD.Run();
+                        =PPTALLDownload.Run();
                         Notify("OneDrive로 다운로드 완료",NotificationType.Success)
                     Size: =Parent.Width * 0.037
                     Text: |-
@@ -653,7 +653,7 @@ Admin_Profile_Page As screen:
                     BorderThickness: =5
                     Fill: =RGBA( 106, 170, 205, 1 )
                     Height: =Parent.Height * 0.35
-                    OnSelect: =PPTALLDOWNLOAD.Run()
+                    OnSelect: =//PPTALLDOWNLOAD.Run()
                     Size: =Parent.Width * 0.07
                     Text: |-
                         ="전체 다운로드

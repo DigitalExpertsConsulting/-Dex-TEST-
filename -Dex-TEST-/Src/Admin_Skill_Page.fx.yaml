@@ -442,7 +442,7 @@ Admin_Skill_Page As screen:
                     Fill: =RGBA( 106, 170, 205, 1 )
                     Height: =Parent.Height * 0.6
                     OnSelect: |-
-                        ='ExcelDownload(Skill)_1'.Run("");
+                        ='ExcelDownload(Skill)'.Run("");
                         Notify("OneDrive로 다운로드 완료",NotificationType.Success)
                     Size: =Parent.Width * 0.033
                     Text: ="Excel 다운로드"
