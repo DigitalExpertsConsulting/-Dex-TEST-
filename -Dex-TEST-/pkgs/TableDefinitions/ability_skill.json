@@ -2,6 +2,10 @@
   "DatasetName": "default.cds",
   "EntityName": "ability_skill",
   "InstanceUrl": "https://org03f871d8.crm5.dynamics.com/",
+  "LocalReferenceDSJson": {
+    "entitySetName": "cr778_ability_skills",
+    "logicalName": "cr778_ability_skill"
+  },
   "state": "Configured",
   "TableDefinition": {
     "BooleanOptionSetAttribute": "{\"@odata.context\":\"https://org03f871d8.crm5.dynamics.com/api/data/v9.0/$metadata#EntityDefinitions('cr778_ability_skill')/Attributes/Microsoft.Dynamics.CRM.BooleanAttributeMetadata(MetadataId,LogicalName,SchemaName,DisplayName,OptionSet())\",\"value\":[]}",
